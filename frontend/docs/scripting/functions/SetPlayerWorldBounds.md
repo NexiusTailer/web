@@ -57,6 +57,12 @@ This function doesn't work in interiors!
 
 :::
 
+:::warning
+
+This function does not work if used in [OnPlayerConnect](../callbacks/OnPlayerConnect).
+
+:::
+
 ## Related Functions
 
 - [ClearPlayerWorldBounds](ClearPlayerWorldBounds): Reset the player's world boundaries to default world boundaries.

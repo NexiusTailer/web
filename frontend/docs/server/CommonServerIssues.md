@@ -81,3 +81,15 @@ This problem regularly occurs on Windows servers when trying to load a plugin th
 | 11.0           | Microsoft Visual C++ 2012 x86 Redistributable |
 | 12.0           | Microsoft Visual C++ 2013 x86 Redistributable |
 | 14.0           | Microsoft Visual C++ 2015 x86 Redistributable |
+
+## Pawno
+
+The following issues concern Pawno, the original SA:MP script editor (open.mp ships with [Qawno](https://github.com/openmultiplayer/qawno) instead).
+
+### Unable to execute compiler on Windows Vista/7
+
+Run `pawno.exe` as an administrator.
+
+### Failed to set data for ' '
+
+In the directory where you have `pawno.exe`, you'll find a file called `settings.ini`. Open it using any text editor (such as Notepad) and change `FileAssoc` from 1 to 0. If that doesn't work, run `pawno.exe` as an administrator.

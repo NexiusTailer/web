@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Description
 
-Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See this page for extensive information about textdraws.
+Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can be boxes, sprites and model previews (skins/vehicles/weapons/objects too) that is drawn on a player's screens. See [this page](../resources/textdraws) for extensive information about textdraws.
 
 | Name             | Description                                              |
 | ---------------- | -------------------------------------------------------- |
@@ -64,6 +64,13 @@ It is recommended to use WHOLE numbers instead of decimal positions when creatin
 :::warning
 
 Keyboard key mapping codes (such as `~k~~VEHICLE_ENTER_EXIT~`) don't work beyond 255th character.
+
+:::
+
+:::warning
+
+- If you choose values for `y` that are less than 1, the first text row will be invisible and only the shadow is visible.
+- If part of the text is off-screen, the color of the text will not show, only the shadow (if enabled) will.
 
 :::
 
