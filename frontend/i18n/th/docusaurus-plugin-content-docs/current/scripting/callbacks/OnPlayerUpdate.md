@@ -78,6 +78,8 @@ public OnPlayerUpdate(playerid)
 }
 ```
 
+This can be used against health hacks. If you set players' health through your own wrapper function for [SetPlayerHealth](../functions/SetPlayerHealth) that stores the health you have set, you can track health changes more accurately.
+
 ## บันทึก
 
 :::note

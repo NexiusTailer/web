@@ -57,6 +57,12 @@ This function doesn't work in interiors!
 
 :::
 
+:::warning
+
+This function does not work if used in [OnPlayerConnect](../callbacks/OnPlayerConnect).
+
+:::
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - GangZoneCreate: Create a gangzone.

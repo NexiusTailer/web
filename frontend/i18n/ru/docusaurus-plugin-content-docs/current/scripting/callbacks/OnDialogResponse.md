@@ -53,7 +53,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**DIALOG_STYLE_INPUT/DIALOG_STYLE_PASSWORD**
 
 ```c
 #define DIALOG_LOGIN 2

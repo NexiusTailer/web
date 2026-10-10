@@ -18,6 +18,8 @@ This callback is called when a player exits a mod shop, even if the colors weren
 
 ## ส่งคืน
 
+Returning 0 in this callback will deny the colour change. Returning 1 will allow it. This can be used to prevent hackers from changing vehicle colours using cheats.
+
 It is always called first in gamemode so returning 0 there also blocks other filterscripts from seeing it.
 
 ## ตัวอย่าง

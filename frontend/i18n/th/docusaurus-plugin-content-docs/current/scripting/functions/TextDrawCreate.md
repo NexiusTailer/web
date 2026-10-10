@@ -63,6 +63,13 @@ Keyboard key mapping codes (such as `~k~~VEHICLE_ENTER_EXIT~` don't work beyond 
 
 :::
 
+:::warning
+
+- If you choose values for `y` that are less than 1, the first text row will be invisible and only the shadow is visible.
+- If part of the text is off-screen, the color of the text will not show, only the shadow (if enabled) will.
+
+:::
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [TextDrawDestroy](TextDrawDestroy): Destroy a textdraw.

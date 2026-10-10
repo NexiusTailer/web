@@ -56,6 +56,12 @@ Esta função não funciona em interiores!
 
 :::
 
+:::warning
+
+Usar esta função em [OnPlayerConnect](../callbacks/OnPlayerConnect) não funciona.
+
+:::
+
 ## Funções Relacionadas
 
 - [ClearPlayerWorldBounds](ClearPlayerWorldBounds): Redefina os limites mundiais do jogador para os limites mundiais padrão.

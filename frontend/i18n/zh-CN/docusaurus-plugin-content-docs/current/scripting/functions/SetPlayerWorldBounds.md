@@ -57,6 +57,12 @@ public OnPlayerSpawn(playerid)
 
 :::
 
+:::warning
+
+在[OnPlayerConnect](../callbacks/OnPlayerConnect)回调中使用此函数无效。
+
+:::
+
 ## 相关函数
 
 - [ClearPlayerWorldBounds](ClearPlayerWorldBounds): 重置玩家的世界边界至默认值

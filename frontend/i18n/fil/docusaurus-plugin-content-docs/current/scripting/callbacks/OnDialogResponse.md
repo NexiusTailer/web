@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**DIALOG_STYLE_INPUT/DIALOG_STYLE_PASSWORD**
 
 ```c
 // Panagalawang halimbawa

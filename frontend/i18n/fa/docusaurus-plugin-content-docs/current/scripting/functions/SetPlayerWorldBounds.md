@@ -57,6 +57,12 @@ public OnPlayerSpawn(playerid)
 
 :::
 
+:::warning
+
+استفاده از این تابع توی [OnPlayerConnect](../callbacks/OnPlayerConnect) کار نمی‌کنه.
+
+:::
+
 ## توابع مرتبط
 
 - [ClearPlayerWorldBounds](ClearPlayerWorldBounds): ریست کردن مرزهای دنیای بازیکن به مرزهای پیش‌فرض دنیا.

@@ -57,6 +57,12 @@ Ova funkcija ne radi u enterijerima!
 
 :::
 
+:::warning
+
+Korištenje ove funkcije unutar [OnPlayerConnect](../callbacks/OnPlayerConnect) neće raditi.
+
+:::
+
 ## Srodne Funkcije
 
 - [GangZoneCreate](GangZoneCreate): Kreiraj gangzonu.
