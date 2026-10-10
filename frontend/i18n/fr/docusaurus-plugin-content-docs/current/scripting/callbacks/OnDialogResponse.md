@@ -62,6 +62,8 @@ Les paramètres peuvent changer selon le style de dialog ([voir plus de styles d
 
 Il est important d'avoir plusieurs dialogids, surtout si vous en faites plusieurs.
 
+C'est approprié d'utiliser switch à travers les différents IDs de dialog/listitem si vous en avez beaucoup.
+
 :::
 
 :::warning
@@ -71,5 +73,7 @@ Le dialog ouvert par un joueur ne se cache pas quand le serveur redémarre, le s
 :::
 
 ## Fonctions connexes
+
+Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): affiche le Dialog à un joueur.

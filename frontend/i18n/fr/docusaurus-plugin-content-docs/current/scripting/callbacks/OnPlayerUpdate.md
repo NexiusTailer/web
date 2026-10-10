@@ -76,6 +76,8 @@ public OnPlayerUpdate(playerid)
 }
 ```
 
+Le script du dessus peut être utilisé pour détecter la triche sur la vie. Stockez la vie du joueur dans une variable lorsque vous la modifiez, de façon à voir si la valeur a été modifié par un hack.
+
 ## Astuces
 
 <NoteNPCCallbacks />

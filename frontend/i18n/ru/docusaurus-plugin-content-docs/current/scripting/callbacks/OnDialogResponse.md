@@ -175,4 +175,6 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 ## Функции
 
+Следующие функции могут быть полезны, т.к. они так или иначе связаны с текущей функцией.
+
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Показать диалог игроку.
