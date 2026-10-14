@@ -41,20 +41,21 @@ Le mot de passe est le même que celui que vous avez défini dans [config.json](
 
 ### Bannir un joueur
 
-##### samp.ban
+##### bans.json
 
-samp.ban est le fichier utilisé pour stocker les joueurs bannis, y compris les informations suivantes sur l'interdiction :
+bans.json est le fichier utilisé pour stocker les joueurs bannis, y compris les informations suivantes sur l'interdiction :
 
-- IP
-- Date
-- Temps
-- Nom (Nom de la personne ou un motif, voir [BanEx](../scripting/functions/BanEx))
-- Type d'interdiction
+- `address`: Adresse IP
+- `player`: Nom du joueur
+- `reason`: Motif du ban ([BanEx](../scripting/functions/BanEx))
+- `time`: Date et heure (ISO 8601)
 
-Pour ajouter un nouveau joueur à bannir, ajoutez simplement une ligne comme ceci :
+Pour ajouter un ban, ajoutez un objet au tableau JSON, par exemple :
 
-```
-ADRESSE_IP [28/05/09 | 13:37:00] JOUEUR - RAISON DU BAN
+```json
+[
+    {"address": "ADRESSE_IP", "player": "JOUEUR", "reason": "RAISON DU BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 `ADRESSE_IP` étant l'adresse IP du joueur à bannir.
@@ -63,8 +64,10 @@ ADRESSE_IP [28/05/09 | 13:37:00] JOUEUR - RAISON DU BAN
 
 La fonction [Ban](../scripting/functions/Ban) peut être utilisée pour bannir un joueur à partir d'un script. La fonction [BanEx](../scripting/functions/BanEx) ajoutera une raison facultative comme ceci :
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] JOUEUR - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "JOUEUR", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### Commande de ban avec RCON
@@ -100,27 +103,28 @@ banip IP
 
 Une fois que quelqu'un est banni, il y a deux façons de le débannir.
 
-- Supprimer de samp.ban
+- Supprimer l’objet correspondant de `bans.json`
 - La commande RCON `unbanip`
 
-#### samp.ban
+#### bans.json
 
-samp.ban se trouve dans le répertoire de votre serveur sa-mp, il contient des lignes avec les informations suivantes sur chaque interdiction :
+`bans.json` se trouve dans le répertoire de votre serveur open.mp. Il contient un tableau JSON avec les informations suivantes sur chaque ban :
 
-- IP
-- Date
-- Temps
-- Nom (Nom de la personne ou un motif (voir [BanEx](../scripting/functions/BanEx)))
-- Type d'interdiction (INGAME, IP BAN etc,)
+- `address`: Adresse IP
+- `player`: Nom du joueur
+- `reason`: Motif du ban ([BanEx](../scripting/functions/BanEx))
+- `time`: Date et heure (ISO 8601)
 
 Exemples:
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] AUCUN - INTERDICTION IP
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INTERDICTION DE JEU
+```json
+[
+    {"address": "127.8.57.32", "player": "AUCUN", "reason": "INTERDICTION IP", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INTERDICTION DE JEU", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-Pour les débannir, supprimez simplement la ligne, puis exécutez la commande RCON `reloadbans` pour actualiser la liste des joueurs bannis à partir du fichier samp.ban.
+Pour les débannir, supprimez l’objet correspondant du tableau, puis exécutez la commande RCON `reloadbans` pour relire `bans.json`.
 
 #### unbanip
 
@@ -128,8 +132,10 @@ La commande RCON unbanip peut être utilisée dans le jeu ou depuis la console d
 
 Exemple:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INTERDICTION DE JEU
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INTERDICTION DE JEU", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -140,11 +146,11 @@ Exemple:
 unbanip 13.37.13.37
 ```
 
-Pour les débannir, utilisez simplement la commande `unbanip`, puis exécutez la commande RCON `reloadbans` pour actualiser la liste des joueurs bannis à partir du fichier samp.ban.
+La commande `unbanip` met automatiquement à jour `bans.json`.
 
 #### reloadbans
 
-`samp.ban` est un fichier qui contient les informations sur les adresses IP actuellement bannies du serveur. Ce fichier est lu au démarrage du serveur, donc si vous débloquez une adresse IP/personne, vous DEVEZ taper la commande RCON `reloadbans` pour que le serveur lise à nouveau `samp.ban` et lui permette de rejoindre le serveur.
+`bans.json` contient les adresses IP actuellement bannies du serveur. Ce fichier est lu au démarrage du serveur. Après avoir ajouté ou supprimé des entrées manuellement, exécutez la commande RCON `reloadbans` pour appliquer les modifications.
 
 ### Commandes RCON
 
@@ -166,7 +172,7 @@ Voici les fonctions que vous pouvez utiliser en tant qu'administrateur :
 | `/rcon ban [ID]`                  | Ban le joueur ayant l'identifiant ID (_exemple: /rcon ban 2_).                                                                                                                          |
 | `/rcon changemode [mode]`         | Change le mode de jeu actuel (relance le serveur avec un nouveu fichier .amx) (_exemple: si tu veux lancer le mode sftdm.amx: /rcon changemode sftdm_).                                 |
 | `/rcon gmx`                       | Charge le prochain gamemode du fichier [config.json](config.json).                                                                                                                      |
-| `/rcon reloadbans`                | Recharge le fichier `samp.ban` où sont stockés les joueurs et IP bannis. Doit être utilisé après avoir modifié le fichier.                                                              |
+| `/rcon reloadbans`                | Recharge `bans.json`, qui contient les adresses IP bannies. À utiliser après avoir modifié le fichier manuellement. |
 | `/rcon reloadlog`                 | Recharge le fichier `server_log.txt`. Utile pour une rotation automatique de journalisation. Peut être déclenché en envoyant un signal `SIGUSR1` au serveur (Serveur Linux uniquement). |
 | `/rcon say`                       | Affiche un message dans le chat des joueurs (exemple: `/rcon say hello` affichera dans le chat: `Admin: hello`).                                                                        |
 | `/rcon players`                   | Affiche la liste des joueurs connectés (nom, IP et ping).                                                                                                                               |

@@ -42,20 +42,21 @@ Het password is hetzelfde als je in [server.cfg](server.cfg) hebt ingesteld.
 
 ### Bans toevoegen
 
-##### samp.ban
+##### bans.json
 
-`samp.ban` is het bestand waarin bans worden opgeslagen, met o.a. deze info:
+`bans.json` is het bestand waarin bans worden opgeslagen, met o.a. deze info:
 
-- IP
-- Datum
-- Tijd
-- Naam (naam van persoon of reden, zie [BanEx](../scripting/functions/BanEx))
-- Type ban
+- `address`: IP-adres
+- `player`: Spelernaam
+- `reason`: Reden voor de ban ([BanEx](../scripting/functions/BanEx))
+- `time`: Datum en tijd (ISO 8601)
 
-Een ban toevoegen doe je door een regel te plaatsen als:
+Voeg een object toe aan de JSON-array om een ban toe te voegen, bijvoorbeeld:
 
-```
-IP_HERE [28/05/09 | 13:37:00] PLAYER - BAN REASON
+```json
+[
+    {"address": "IP_HERE", "player": "PLAYER", "reason": "BAN REASON", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 Op de plek van `IP_HERE` zet je het IP dat je wilt bannen.
@@ -64,8 +65,10 @@ Op de plek van `IP_HERE` zet je het IP dat je wilt bannen.
 
 De functie [Ban](../scripting/functions/Ban) kun je vanuit een script gebruiken om een speler te bannen. De functie [BanEx](../scripting/functions/BanEx) voegt optioneel een reden toe, zoals:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Cheater - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Cheater", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ##### RCON ban command
@@ -100,27 +103,28 @@ banip IP
 
 Als iemand geband is, kun je op twee manieren unbannen:
 
-- Regel verwijderen uit `samp.ban`
+- Het bijbehorende object verwijderen uit `bans.json`
 - Het RCON-commando `unbanip`
 
-#### samp.ban
+#### bans.json
 
-`samp.ban` staat in je SA-MP-servermap en bevat regels met o.a.:
+`bans.json` staat in je open.mp-servermap en bevat een JSON-array met deze informatie over elke ban:
 
-- IP
-- Datum
-- Tijd
-- Naam (naam van persoon of reden, zie [BanEx](../scripting/functions/BanEx))
-- Type ban (INGAME, IP BAN, etc.)
+- `address`: IP-adres
+- `player`: Spelernaam
+- `reason`: Reden voor de ban ([BanEx](../scripting/functions/BanEx))
+- `time`: Datum en tijd (ISO 8601)
 
 Voorbeelden:
 
-```
-127.8.57.32 [13/06/09 | 69:69:69] NONE - IP BAN
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "127.8.57.32", "player": "NONE", "reason": "IP BAN", "time": "2009-06-13T13:37:00+0000"},
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
-Unban door de regel te verwijderen, en voer daarna het RCON-commando `reloadbans` uit zodat de server `samp.ban` opnieuw inleest.
+Verwijder het bijbehorende object uit de array en voer daarna het RCON-commando `reloadbans` uit zodat de server `bans.json` opnieuw inleest.
 
 #### unbanip
 
@@ -128,8 +132,10 @@ Het RCON-commando `unbanip` kan in-game of vanuit de serverconsole (zwarte box) 
 
 Voorbeeld:
 
-```
-13.37.13.37 [28/05/09 | 13:37:00] Kyeman - INGAME BAN
+```json
+[
+    {"address": "13.37.13.37", "player": "Kyeman", "reason": "INGAME BAN", "time": "2009-05-28T13:37:00+0000"}
+]
 ```
 
 ```
@@ -140,11 +146,11 @@ Voorbeeld:
 unbanip 13.37.13.37
 ```
 
-Unban uitgevoerd? Gebruik daarna RCON `reloadbans` zodat de server `samp.ban` opnieuw leest.
+Het commando `unbanip` werkt `bans.json` automatisch bij.
 
 #### reloadbans
 
-`samp.ban` bevat de IP's die momenteel geband zijn. Dit bestand wordt bij serverstart ingelezen. Als je een IP/persoon unbant, MOET je het RCON-commando `reloadbans` uitvoeren zodat `samp.ban` opnieuw wordt ingelezen en ze weer kunnen joinen.
+`bans.json` bevat de IP-adressen die momenteel geband zijn. Dit bestand wordt bij het starten van de server ingelezen. Voer na het handmatig toevoegen of verwijderen van items het RCON-commando `reloadbans` uit om de wijzigingen toe te passen.
 
 ### RCON-commands
 
@@ -166,7 +172,7 @@ Dit zijn de commands die je als admin kunt gebruiken:
 | `/rcon ban [ID]`                  | Bannt de player met de opgegeven ID (_voorbeeld: `/rcon ban 2`_).                                                         |
 | `/rcon changemode [mode]`         | Wisselt naar de opgegeven gamemode (_voorbeeld: `/rcon changemode sftdm`_).                                               |
 | `/rcon gmx`                       | Laadt de volgende gamemode uit [server.cfg](server.cfg).                                                                  |
-| `/rcon reloadbans`                | Laadt `samp.ban` opnieuw (lijst met gebande IP's). Gebruik dit na unbannen.                                               |
+| `/rcon reloadbans`                | Laadt `bans.json` met de gebande IP-adressen opnieuw. Gebruik dit na handmatig bewerken van het bestand. |
 | `/rcon reloadlog`                 | Laadt `server_log.txt` opnieuw. Handig voor automatische logrotatie. Op Linux ook te triggeren met het `SIGUSR1`-signaal. |
 | `/rcon say`                       | Toont een bericht in de client-console van spelers (bijv. `/rcon say hello` toont `Admin: hello`).                        |
 | `/rcon players`                   | Toont de players in de server (met naam, IP en ping).                                                                     |
