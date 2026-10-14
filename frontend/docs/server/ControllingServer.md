@@ -18,14 +18,26 @@ description: Useful commands for controlling a server.
 The same as running a custom gamemode, except:
 
 - Place the .amx in a folder called `filterscripts`
-- Add the following to server.cfg: `filterscripts <scriptname>`
+- Add the filterscript path without the `.amx` extension to `pawn.side_scripts` in [config.json](config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Passwording your server
 
-- If you want to add a password so only your friends can join, add this to [server.cfg](server.cfg):
+- If you want to add a password so only your friends can join, add this to [config.json](config.json):
 
-```
-password whatever
+```json
+{
+    "password": "whatever"
+}
 ```
 
 - This will make your server password-protected with the password set as 'whatever' - change it to whatever you want.
@@ -38,7 +50,7 @@ password whatever
 
 You can log in either while ingame by typing `/rcon login password` or out of game by using the RCON mode in the [Remote Console](RemoteConsole).
 
-The password is the same as what you set it as in [server.cfg](server.cfg)
+Use the `rcon.password` value from [config.json](config.json) when logging in.
 
 ### Adding Bans
 
@@ -177,7 +189,7 @@ These are the functions that you as admin can use:
 | `/rcon kick [ID]`                 | Kick the player with the given ID (_example: /rcon kick 2_).                                                                                         |
 | `/rcon ban [ID]`                  | Ban the player with the given ID (_example: /rcon ban 2_).                                                                                           |
 | `/rcon changemode [mode]`         | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_).                       |
-| `/rcon gmx`                       | Will load the next gamemode in [server.cfg](server.cfg).                                                                                             |
+| `/rcon gmx`                       | Will load the next gamemode configured in `pawn.main_scripts` in [config.json](config.json). |
 | `/rcon reloadbans`                | Reloads the `bans.json` file where the banned IP addresses are stored. Should be used after unbanning and IP address by editing the file.                                 |
 | `/rcon reloadlog`                 | Reloads the `log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only). |
 | `/rcon say`                       | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`).                                       |

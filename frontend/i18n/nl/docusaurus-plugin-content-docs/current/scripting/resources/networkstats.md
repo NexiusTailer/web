@@ -15,7 +15,7 @@ tags: []
 | RWObjects                         | Aantal gerenderde objecten.                                        |
 | PedSlotsUsed                      | Aantal gebruikte ped-slots (NPC’s/spelers gebruiken een ped-slot). |
 | ObjectSlotsUsed                   | Gebruikte objectsloten.                                            |
-| OnFoot Send Rate                  | Interval (in ms) van on-foot sync. Instelbaar in server.cfg.       |
+| OnFoot Send Rate                  | Interval (in ms) van on-foot sync. Instelbaar in [config.json](../../server/config.json) (`network.on_foot_sync_rate`).       |
 | Streaming Mem Used (incl. totaal) | Gebruikt streaminggeheugen en totaal beschikbaar.                  |
 | Messages in Send buffer           | Aantal netwerkmeldingen in de verzendbuffer.                       |
 | Messages sent                     | Aantal verzonden meldingen.                                        |

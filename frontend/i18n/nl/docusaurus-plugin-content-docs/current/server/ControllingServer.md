@@ -18,14 +18,26 @@ description: Handige commands om je server te beheren.
 Hetzelfde als een custom gamemode draaien, behalve:
 
 - Plaats de `.amx` in de map `filterscripts`
-- Voeg dit toe aan `server.cfg`: `filterscripts <scriptname>`
+- Voeg het pad van het filterscript zonder de `.amx`-extensie toe aan `pawn.side_scripts` in [config.json](config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Je server voorzien van een wachtwoord
 
-- Als je een password wilt instellen zodat alleen vrienden kunnen joinen, voeg dit toe aan [server.cfg](server.cfg):
+- Als je een password wilt instellen zodat alleen vrienden kunnen joinen, voeg dit toe aan [config.json](config.json):
 
-```
-password whatever
+```json
+{
+    "password": "whatever"
+}
 ```
 
 - Hiermee is je server met het wachtwoord 'whatever' beschermd – verander dat natuurlijk naar iets eigens
@@ -38,7 +50,7 @@ password whatever
 
 Je kunt inloggen terwijl je in-game bent met `/rcon login password`, of buiten de game via de RCON-modus in de [Remote Console](RemoteConsole).
 
-Het password is hetzelfde als je in [server.cfg](server.cfg) hebt ingesteld.
+Het RCON-wachtwoord is de waarde van `rcon.password` die je in [config.json](config.json) hebt ingesteld.
 
 ### Bans toevoegen
 
@@ -171,7 +183,7 @@ Dit zijn de commands die je als admin kunt gebruiken:
 | `/rcon kick [ID]`                 | Kickt de player met de opgegeven ID (_voorbeeld: `/rcon kick 2`_).                                                        |
 | `/rcon ban [ID]`                  | Bannt de player met de opgegeven ID (_voorbeeld: `/rcon ban 2`_).                                                         |
 | `/rcon changemode [mode]`         | Wisselt naar de opgegeven gamemode (_voorbeeld: `/rcon changemode sftdm`_).                                               |
-| `/rcon gmx`                       | Laadt de volgende gamemode uit [server.cfg](server.cfg).                                                                  |
+| `/rcon gmx`                       | Laadt de volgende gamemode uit [config.json](config.json) (`pawn.main_scripts`).                                                                  |
 | `/rcon reloadbans`                | Laadt `bans.json` opnieuw (lijst met gebande IP's). Gebruik dit na unbannen via het bestand.                                               |
 | `/rcon reloadlog`                 | Laadt `log.txt` opnieuw. Handig voor automatische logrotatie. Op Linux ook te triggeren met het `SIGUSR1`-signaal. |
 | `/rcon say`                       | Toont een bericht in de client-console van spelers (bijv. `/rcon say hello` toont `Admin: hello`).                        |

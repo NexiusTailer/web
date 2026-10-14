@@ -18,14 +18,26 @@ description: Sunucuyu kontrol etmek için kullanışlı komutlar.
 Özel bir oyun modu çalıştırmakla aynıdır, fakat farklı olarak:
 
 - .amx uzantılı Filterscriptler, sunucu ana dizininde bulunan `filterscripts` adlı klasörde barındırılır.
-- server.cfg yapılandırma dosyasına şöyle eklenir: `filterscripts <scriptadı>`
+- Filterscript yolunu `.amx` uzantısı olmadan [config.json](config.json) dosyasındaki `pawn.side_scripts` listesine ekleyin:
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Sunucunuza Şifre Koyma
 
-- Sadece arkadaşlarınızın katılmasını istiyorsanız, [server.cfg](server.cfg) - sunucu yapılandırma dosyasına şunu ekleyin:
+- Sadece arkadaşlarınızın katılmasını istiyorsanız, [config.json](config.json) - sunucu yapılandırma dosyasına şunu ekleyin:
 
-```
-password herneyse
+```json
+{
+    "password": "herneyse"
+}
 ```
 
 - Bu, sunucunuzu 'herneyse' olarak ayarlanmış bir şifre ile korumalı hale getirecektir - istediğiniz şeyi yazarak değiştirebilirsiniz.
@@ -36,7 +48,7 @@ password herneyse
 
 ### Giriş Yapma
 
-Girişi oyun içi `/rcon login sifre` yazarak veya [server.cfg](server.cfg) dosyasında ayarladığınız şifreyi kullanarak oyun dışından RCON modunu kullanarak yapabilirsiniz.
+Girişi oyun içi `/rcon login sifre` yazarak veya [config.json](config.json) dosyasında `rcon.password` ile ayarladığınız şifreyi kullanarak oyun dışından RCON modunu kullanarak yapabilirsiniz.
 
 ### Oyuncu Yasaklama
 
@@ -171,7 +183,7 @@ Aşağıdaki komutları sadece RCON girişi yapmış yöneticiler kullanabilir:
 | `/rcon kick [ID]`                | Belirtilen ID'ye sahip oyuncuyu sunucudan atar (_örnek: /rcon kick 2_).                                                                                  |
 | `/rcon ban [ID]`                 | Belirtilen ID'ye sahip oyuncuyu yasaklar (_örnek: /rcon ban 2_).                                                                                         |
 | `/rcon changemode [mod]`         | Bu komut, mevcut oyun modunu belirtilen oyun modu ile değiştirecek (_örnek: sftdm oynamak istiyorsanız: /rcon changemode sftdm_).                        |
-| `/rcon gmx`                      | [server.cfg](server.cfg) dosyasındaki bir sonraki oyun modunu yükler.                                                                                    |
+| `/rcon gmx`                      | [config.json](config.json) (`pawn.main_scripts`) dosyasındaki bir sonraki oyun modunu yükler.                                                                                    |
 | `/rcon reloadbans`               | Yasaklı IP adreslerini içeren `bans.json` dosyasını tekrar yükler. Bu, dosyayı düzenleyerek bir IP'yi yasakladıktan sonra kullanılmalıdır.                                     |
 | `/rcon reloadlog`                | `log.txt` dosyasını tekrar yükler. Otomatik log döndürme için kullanışlıdır. Sadece Linux sunucuda `SIGUSR1` sinyali gönderilerek tetiklenebilir. |
 | `/rcon say`                      | Oyuncu konsoluna mesaj gösterir (örnek: `/rcon say merhaba` "Admin: merhaba" olarak görüntülenir).                                                       |

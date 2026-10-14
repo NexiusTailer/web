@@ -18,14 +18,26 @@ description: 控制服务器的实用命令。
 与运行自定义游戏模式相同，除了：
 
 - 将 .amx 文件放入名为 `filterscripts` 的文件夹中
-- 在 server.cfg 中添加以下内容：`filterscripts <脚本名称>`
+- 在 [config.json](config.json) 的 `pawn.side_scripts` 中添加不含 `.amx` 扩展名的脚本路径：
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## 为服务器设置密码
 
-- 如果你想添加密码，只有你的朋友可以加入，请在 [server.cfg](server.cfg) 中添加以下内容：
+- 如果你想添加密码，只有你的朋友可以加入，请在 [config.json](config.json) 中添加以下内容：
 
-```
-password whatever
+```json
+{
+    "password": "whatever"
+}
 ```
 
 - 这将使你的服务器受密码保护，密码设置为 'whatever' —— 你可以将其更改为你想要的任何内容。
@@ -38,7 +50,7 @@ password whatever
 
 你可以在游戏内通过输入 `/rcon login 密码` 登录，也可以在游戏外使用 [远程控制台](RemoteConsole) 中的 RCON 模式登录。
 
-密码与你在 [server.cfg](server.cfg) 中设置的密码相同。
+RCON 密码是你在 [config.json](config.json) 中设置的 `rcon.password` 值。
 
 ### 添加封禁
 
@@ -175,7 +187,7 @@ unbanip 13.37.13.37
 | `/rcon kick [ID]`                | 踢出指定 ID 的玩家（_示例：/rcon kick 2_）。                                                                  |
 | `/rcon ban [ID]`                 | 封禁指定 ID 的玩家（_示例：/rcon ban 2_）。                                                                   |
 | `/rcon changemode [模式]`        | 此命令将当前游戏模式更改为指定模式（_示例：如果你想玩 sftdm：/rcon changemode sftdm_）。                      |
-| `/rcon gmx`                      | 将加载 [server.cfg](server.cfg) 中的下一个游戏模式。                                                          |
+| `/rcon gmx`                      | 将加载 [config.json](config.json) (`pawn.main_scripts`) 中的下一个游戏模式。                                                          |
 | `/rcon reloadbans`               | 重新加载存储被封禁 IP 地址的 `bans.json` 文件。通过编辑文件解封 IP 地址后应使用此命令。                                    |
 | `/rcon reloadlog`                | 重新加载 `log.txt`。适用于自动日志轮换。可以通过向服务器发送 `SIGUSR1` 信号触发（仅限 Linux 服务器）。 |
 | `/rcon say`                      | 向玩家显示消息到客户端控制台（示例：`/rcon say 你好` 将显示为 `管理员：你好`）。                              |

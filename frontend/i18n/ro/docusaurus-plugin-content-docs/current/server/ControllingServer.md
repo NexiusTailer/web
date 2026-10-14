@@ -17,19 +17,31 @@ descriere: Comenzi utile pentru controlarea unui server.
 La fel ca și folosirea unui gamemode custom, doar că:
 
 - Puneți fișierul .amx în folderul `filterscripts`
-- Adăugați următorul lucru în server.cfg: `filterscripts <numele fișierului>`
+- Adăugați calea filterscriptului fără extensia `.amx` în `pawn.side_scripts` din [config.json](config.json):
+
+```json
+{
+    "pawn": {
+        "side_scripts": [
+            "filterscripts/scriptname"
+        ]
+    }
+}
+```
 
 ## Cum să puneți o parolă la server?
 
-- Dacă vreți să folosiți o parolă ca să vă poată intra doar prietenii pe server, adăugați asta în [server.cfg](server.cfg):
+- Dacă vreți să folosiți o parolă ca să vă poată intra doar prietenii pe server, adăugați asta în [config.json](config.json):
 
-```
-password orice
+```json
+{
+    "password": "orice"
+}
 ```
 
 - Astfel, parola serverului o sa devină 'orice', dar o puteți schimba cu orice doriți.
 - De asemenea, puteți să schimbați parola direct din joc cu `/rcon password orice`
-- Puteți să scoateți parola dacă folosiți `/rcon password 0`, sau dacă restartați serverul. (parola o să rămână dacă ați scris-o în server.cfg, va trebui sa o ștergeți și de acolo)
+- Puteți să scoateți parola dacă folosiți `/rcon password 0`, sau dacă restartați serverul. (parola o să rămână dacă ați scris-o în config.json, va trebui sa o ștergeți și de acolo)
 
 ## Despre RCON
 
@@ -37,7 +49,7 @@ password orice
 
 Puteți să vă logați dacă tastați `/rcon login parola` în joc sau dacă folosiți modul RCON în [Remote Console](RemoteConsole).
 
-Parola va fi aceeași ca și în [server.cfg](server.cfg).
+Parola RCON este valoarea `rcon.password` setată în [config.json](config.json).
 
 ### Cum să adăugați interdicții
 
@@ -170,7 +182,7 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon kick [ID]`                  | Dă kick jucătorului cu ID-ul respectiv (_exemplu: /rcon kick 2_).                                                                                            |
 | `/rcon ban [ID]`                   | Dă ban jucătorului cu ID-ul respectiv (_exemplu: /rcon ban 2_).                                                                                              |
 | `/rcon changemode [mod]`           | Această comandă o să schimbe gamemode-ul curent cu cel pe care l-ați scris în `[mod]` (_exemplu: dacă vreți să schimbați cu sftdm: /rcon changemode sftdm_). |
-| `/rcon gmx`                        | Această comandă va încărca următorul gamemode din [server.cfg](server.cfg).                                                                                  |
+| `/rcon gmx`                        | Această comandă va încărca următorul gamemode din [config.json](config.json) (`pawn.main_scripts`).                                                                                  |
 | `/rcon reloadbans`                 | Va reîncărca fișierul bans.json unde sunt scrise toate adresele de IP banate. Această comandă ar trebui folosită după ce debanați o adresă IP editând fișierul.                |
 | `/rcon reloadlog`                  | Reîncarcă log.txt. Nu are efecte considerabile pe absolut nimic.                                                                                      |
 | `/rcon say`                        | Trimite un mesaj jucătorilor. (exemplu: `/rcon say salut` va afișa `Admin: salut`).                                                                          |

@@ -15,7 +15,7 @@ tags: []
 | RWObjects                                                | 当前渲染的物体数量                                                          |
 | PedSlotsUsed                                             | 已占用的角色槽数量（NPC/玩家都会占用'角色'槽）                              |
 | ObjectSlotsUsed                                          | 已占用的物体槽数量                                                          |
-| OnFoot Send Rate                                         | 步行状态数据同步频率（单位：毫秒）。可在 server.cfg 中设置                  |
+| OnFoot Send Rate                                         | 步行状态数据同步频率（单位：毫秒）。可在 [config.json](../../server/config.json) (`network.on_foot_sync_rate`) 中设置                  |
 | Streaming Mem (Memory) Used (Also shows total allowance) | 当前使用的流内存容量及总可用容量                                            |
 | Messages in Send buffer                                  | 等待发送的网络消息数量                                                      |
 | Messages sent                                            | 已发送的网络消息总数                                                        |
