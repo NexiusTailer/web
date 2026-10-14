@@ -46,12 +46,13 @@ Het password is hetzelfde als je in [server.cfg](server.cfg) hebt ingesteld.
 
 `bans.json` is het bestand waarin bans worden opgeslagen, met o.a. deze info:
 
-- `address`: IP-adres
-- `player`: Spelernaam
-- `reason`: Reden voor de ban ([BanEx](../scripting/functions/BanEx))
-- `time`: Datum en tijd (ISO 8601)
+- IP
+- Datum
+- Tijd
+- Naam (naam van persoon)
+- Reden (zie [BanEx](../scripting/functions/BanEx))
 
-Voeg een object toe aan de JSON-array om een ban toe te voegen, bijvoorbeeld:
+Een ban toevoegen doe je door een object in de JSON-array te plaatsen als:
 
 ```json
 [
@@ -103,17 +104,18 @@ banip IP
 
 Als iemand geband is, kun je op twee manieren unbannen:
 
-- Het bijbehorende object verwijderen uit `bans.json`
+- Object verwijderen uit `bans.json`
 - Het RCON-commando `unbanip`
 
 #### bans.json
 
-`bans.json` staat in je open.mp-servermap en bevat een JSON-array met deze informatie over elke ban:
+`bans.json` staat in je open.mp-servermap en bevat objecten met o.a.:
 
-- `address`: IP-adres
-- `player`: Spelernaam
-- `reason`: Reden voor de ban ([BanEx](../scripting/functions/BanEx))
-- `time`: Datum en tijd (ISO 8601)
+- IP
+- Datum
+- Tijd
+- Naam (naam van persoon)
+- Reden (zie [BanEx](../scripting/functions/BanEx))
 
 Voorbeelden:
 
@@ -124,7 +126,7 @@ Voorbeelden:
 ]
 ```
 
-Verwijder het bijbehorende object uit de array en voer daarna het RCON-commando `reloadbans` uit zodat de server `bans.json` opnieuw inleest.
+Unban door het object te verwijderen, en voer daarna het RCON-commando `reloadbans` uit zodat de server `bans.json` opnieuw inleest.
 
 #### unbanip
 
@@ -146,11 +148,9 @@ Voorbeeld:
 unbanip 13.37.13.37
 ```
 
-Het commando `unbanip` werkt `bans.json` automatisch bij.
-
 #### reloadbans
 
-`bans.json` bevat de IP-adressen die momenteel geband zijn. Dit bestand wordt bij het starten van de server ingelezen. Voer na het handmatig toevoegen of verwijderen van items het RCON-commando `reloadbans` uit om de wijzigingen toe te passen.
+`bans.json` bevat de IP's die momenteel geband zijn. Dit bestand wordt bij serverstart ingelezen. Als je een IP/persoon unbant door het bestand te bewerken, MOET je het RCON-commando `reloadbans` uitvoeren zodat `bans.json` opnieuw wordt ingelezen en ze weer kunnen joinen.
 
 ### RCON-commands
 
@@ -172,7 +172,7 @@ Dit zijn de commands die je als admin kunt gebruiken:
 | `/rcon ban [ID]`                  | Bannt de player met de opgegeven ID (_voorbeeld: `/rcon ban 2`_).                                                         |
 | `/rcon changemode [mode]`         | Wisselt naar de opgegeven gamemode (_voorbeeld: `/rcon changemode sftdm`_).                                               |
 | `/rcon gmx`                       | Laadt de volgende gamemode uit [server.cfg](server.cfg).                                                                  |
-| `/rcon reloadbans`                | Laadt `bans.json` met de gebande IP-adressen opnieuw. Gebruik dit na handmatig bewerken van het bestand. |
+| `/rcon reloadbans`                | Laadt `bans.json` opnieuw (lijst met gebande IP's). Gebruik dit na unbannen via het bestand.                                               |
 | `/rcon reloadlog`                 | Laadt `server_log.txt` opnieuw. Handig voor automatische logrotatie. Op Linux ook te triggeren met het `SIGUSR1`-signaal. |
 | `/rcon say`                       | Toont een bericht in de client-console van spelers (bijv. `/rcon say hello` toont `Admin: hello`).                        |
 | `/rcon players`                   | Toont de players in de server (met naam, IP en ping).                                                                     |

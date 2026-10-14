@@ -48,12 +48,13 @@ A ban prevents an IP address from connecting to the server.
 
 bans.json is the file used for storing bans, including the following information about the ban:
 
-- `address`: IP address
-- `player`: Player name
-- `reason`: Ban reason ([BanEx](../scripting/functions/BanEx))
-- `time`: Date and time (ISO 8601)
+- IP
+- Date
+- Time
+- Name (Name of person)
+- Reason (see [BanEx](../scripting/functions/BanEx))
 
-To add a ban, add an object to the JSON array, for example:
+To add a ban, simply add an object to the JSON array like so:
 
 ```json
 [
@@ -105,17 +106,18 @@ banip IP
 
 Once somebody is banned, there are two ways to unban them.
 
-- Remove the corresponding object from `bans.json`
+- Remove from bans.json
 - The RCON `unbanip` command
 
 #### bans.json
 
-`bans.json` can be found in your open.mp server directory. It contains a JSON array with the following information about each ban:
+bans.json can be found in your open.mp server directory, it contains objects with the following information about each ban:
 
-- `address`: IP address
-- `player`: Player name
-- `reason`: Ban reason ([BanEx](../scripting/functions/BanEx))
-- `time`: Date and time (ISO 8601)
+- IP
+- Date
+- Time
+- Name (Name of person)
+- Reason (see [BanEx](../scripting/functions/BanEx))
 
 Examples:
 
@@ -126,7 +128,7 @@ Examples:
 ]
 ```
 
-To unban them, remove the corresponding object from the array, then execute the RCON `reloadbans` command to make the server re-read `bans.json`.
+To unban them, simply remove the object, then execute the RCON reloadbans command to make the server re-read bans.json.
 
 #### unbanip
 
@@ -148,11 +150,11 @@ Example:
 unbanip 13.37.13.37
 ```
 
-The `unbanip` command updates `bans.json` automatically.
+To unban them, simply use the `unbanip` command.
 
 #### reloadbans
 
-`bans.json` stores the IP addresses currently banned from the server. This file is read when the server starts. After manually adding or removing entries, execute the RCON `reloadbans` command to apply the changes.
+`bans.json` is a file that holds the information for the IP's that are currently banned from the server. This file is read when the server is started, so if you unban an IP/person by editing the file you MUST type the RCON `reloadbans` command to make the server read `bans.json` again and allow them to join the server.
 
 ### RCON Commands
 
@@ -176,7 +178,7 @@ These are the functions that you as admin can use:
 | `/rcon ban [ID]`                  | Ban the player with the given ID (_example: /rcon ban 2_).                                                                                           |
 | `/rcon changemode [mode]`         | This command will change the current gamemode to the given one (_example: if you want to play sftdm: /rcon changemode sftdm_).                       |
 | `/rcon gmx`                       | Will load the next gamemode in [server.cfg](server.cfg).                                                                                             |
-| `/rcon reloadbans`                | Reloads `bans.json`, where banned IP addresses are stored. Use this after manually editing the file. |
+| `/rcon reloadbans`                | Reloads the `bans.json` file where the banned IP addresses are stored. Should be used after unbanning and IP address by editing the file.                                 |
 | `/rcon reloadlog`                 | Reloads the `server_log.txt`. Useful for automatic log rotation. Can be triggered by sending the `SIGUSR1` signal to the server (Linux server only). |
 | `/rcon say`                       | shows a message to the players in the client-console (example: `/rcon say hello` will show as `Admin: hello`).                                       |
 | `/rcon players`                   | Shows the players that are in the server (with their name, IP & ping).                                                                               |

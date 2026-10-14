@@ -45,12 +45,13 @@ Kata sandinya sama dengan yang Anda tetap di file [server.cfg](server.cfg)
 
 bans.json adalah file yang digunakan untuk menyimpan pelarangan, termasuk informasi tentang pelarangan:
 
-- `address`: Alamat IP
-- `player`: Nama pemain
-- `reason`: Alasan pelarangan ([BanEx](../scripting/functions/BanEx))
-- `time`: Tanggal dan waktu (ISO 8601)
+- IP
+- Tanggal
+- Waktu
+- Nama (Nama dari orang)
+- Alasan (lihat [BanEx](../scripting/functions/BanEx))
 
-Untuk menambah pelarangan, tambahkan objek ke array JSON, misalnya:
+Untuk menambah sebuah pelarangan, tambahkan sebuah objek ke array JSON seperti ini:
 
 ```json
 [
@@ -102,17 +103,18 @@ banip IP
 
 Ketika seseorang telah dilarang, ada dua cara untuk menghapusnya.
 
-- Hapus objek yang sesuai dari `bans.json`
+- Hapus dari bans.json
 - Menggunakan perintah RCON `unbanip`
 
 #### bans.json
 
-`bans.json` dapat ditemukan di direktori server open.mp Anda. File ini berisi array JSON dengan informasi berikut untuk setiap pelarangan:
+bans.json dapat ditemukan di direktori server open.mp Anda, terdapat objek yang berisi informasi di setiap pelarangannya:
 
-- `address`: Alamat IP
-- `player`: Nama pemain
-- `reason`: Alasan pelarangan ([BanEx](../scripting/functions/BanEx))
-- `time`: Tanggal dan waktu (ISO 8601)
+- IP
+- Date
+- Time
+- Nama (Nama dari orang)
+- Alasan (lihat [BanEx](../scripting/functions/BanEx))
 
 Examples:
 
@@ -123,7 +125,7 @@ Examples:
 ]
 ```
 
-Untuk menghapus pelarangan, hapus objek yang sesuai dari array, lalu jalankan perintah RCON `reloadbans` agar server membaca ulang `bans.json`.
+Untuk menghapus larangannya, cukup harus objek tersebut, kemudian eksekusi perintah RCON `reloadbans` untuk membuat server membaca ulang bans.json.
 
 #### unbanip
 
@@ -145,11 +147,11 @@ Contoh:
 unbanip 13.37.13.37
 ```
 
-Perintah `unbanip` memperbarui `bans.json` secara otomatis.
+Untuk menghapus larangannya, cukup gunakan perintah `unbanip`.
 
 #### reloadbans
 
-`bans.json` menyimpan alamat IP yang saat ini dilarang dari server. File ini dibaca saat server dinyalakan. Setelah menambah atau menghapus entri secara manual, jalankan perintah RCON `reloadbans` untuk menerapkan perubahan.
+`bans.json` adalah sebuah file yang menyimpan informasi alamat IP yang saat ini telah dilarang dari server. File ini dibaca ketika server dinyalakan, jadi ketika Anda menghapus larangan IP atau pemain dengan mengedit file, Anda HARUS mengetika perintah RCON `reloadbans` untuk membuat server membaca ulang `bans.json` dan memperbolehkan mereka untuk bergabung ke server.
 
 ### Perintah RCON
 
@@ -171,7 +173,7 @@ Berikut adalah fungsi yang bisa Anda bisa gunakan sebagai admin:
 | `/rcon ban [ID]`                  | Melarang pemain berdasarkan ID pemain (_contoh: /rcon ban 2_).                                                                               |
 | `/rcon changemode [mode]`         | Perintah ini akan mengganti gamemode saat ini ke gamemode yang diinginkan (_contoh: jika Anda ingin bermain sftdm: /rcon changemode sftdm_). |
 | `/rcon gmx`                       | Memuat gamemode selanjutnya di [server.cfg](server.cfg).                                                                                     |
-| `/rcon reloadbans`                | Memuat ulang `bans.json`, tempat alamat IP yang dilarang disimpan. Gunakan setelah mengedit file secara manual. |
+| `/rcon reloadbans`                | Memuat ulang bans.json yang di mana alamat IP yang telah dilarang disimpan. Seharusnya digunakan setelah menghapus pelarangannya dari file.             |
 | `/rcon reloadlog`                 | Memuat ulang server_log.txt. Tidak menampak efek apapun.                                                                                     |
 | `/rcon say`                       | Memunculkan sebuah pesan ke pemain di konsol klien. (contoh: `/rcon say hello` akan muncul `Admin: hello`).                                  |
 | `/rcon players`                   | Memunculkan pemain yang ada di server (nama, alamat IP, dan ping).                                                                           |

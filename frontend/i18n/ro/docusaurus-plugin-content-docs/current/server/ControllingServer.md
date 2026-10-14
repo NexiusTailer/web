@@ -45,12 +45,13 @@ Parola va fi aceeași ca și în [server.cfg](server.cfg).
 
 bans.json este fișierul în care se scriu banurile, dar și alte informații despre acestea, printre care:
 
-- `address`: Adresa IP
-- `player`: Numele jucătorului
-- `reason`: Motivul banului ([BanEx](../scripting/functions/BanEx))
-- `time`: Data și ora (ISO 8601)
+- IP-ul jucătorului
+- Data banului
+- Ora banului
+- Numele (Numele jucătorului)
+- Motiv (consultați [BanEx](../scripting/functions/BanEx))
 
-Pentru a adăuga un ban, adăugați un obiect în array-ul JSON, de exemplu:
+Pentru a adăuga un ban, pur și simplu adăugați un obiect ca acesta în array-ul JSON din bans.json:
 
 ```json
 [
@@ -102,17 +103,18 @@ banip IP
 
 Din moment ce cineva este banat, există două moduri în care puteți să-i dați unban.
 
-- Eliminați obiectul corespunzător din `bans.json`
+- Eliminați banul din bans.json
 - Folosiți comanda RCON `unbanip`
 
 #### bans.json
 
-`bans.json` se află în directorul serverului open.mp și conține un array JSON cu următoarele informații despre fiecare ban:
+bans.json poate fi găsit în fișierele serverului dumneavoastră, acesta conține următoarele informații pentru fiecare ban:
 
-- `address`: Adresa IP
-- `player`: Numele jucătorului
-- `reason`: Motivul banului ([BanEx](../scripting/functions/BanEx))
-- `time`: Data și ora (ISO 8601)
+- IP
+- Dată
+- Oră
+- Nume (Numele jucătorului)
+- Motiv (consultați [BanEx](../scripting/functions/BanEx))
 
 Exemple:
 
@@ -123,7 +125,7 @@ Exemple:
 ]
 ```
 
-Pentru a debana, ștergeți obiectul corespunzător din array, apoi folosiți comanda RCON `reloadbans` pentru a reciti `bans.json`.
+Ca să-i debanați, pur și simplu ștergeți obiectul cu pricina, apoi folosiți comanda RCON reloadbans.
 
 #### unbanip
 
@@ -145,11 +147,9 @@ Exemplu:
 unbanip 13.37.13.37
 ```
 
-Comanda `unbanip` actualizează automat `bans.json`.
-
 #### reloadbans
 
-`bans.json` conține adresele IP banate pe server. Fișierul este citit la pornirea serverului. După adăugarea sau eliminarea manuală a intrărilor, folosiți comanda RCON `reloadbans` pentru a aplica modificările.
+`bans.json` este un fișier care conține informații despre IP-urile care sunt banate pe server. Acest fișier este citit atunci când serverul pornește, deci dacă debanați o persoană editând fișierul, trebuie neapărat să folosiți această comandă pentru a face serverul să citească `bans.json` din nou.
 
 ### Comenzi RCON
 
@@ -171,7 +171,7 @@ Acestea sunt comenzile pe care le puteți folosi ca admin:
 | `/rcon ban [ID]`                   | Dă ban jucătorului cu ID-ul respectiv (_exemplu: /rcon ban 2_).                                                                                              |
 | `/rcon changemode [mod]`           | Această comandă o să schimbe gamemode-ul curent cu cel pe care l-ați scris în `[mod]` (_exemplu: dacă vreți să schimbați cu sftdm: /rcon changemode sftdm_). |
 | `/rcon gmx`                        | Această comandă va încărca următorul gamemode din [server.cfg](server.cfg).                                                                                  |
-| `/rcon reloadbans`                 | Reîncarcă `bans.json`, unde sunt stocate adresele IP banate. Folosiți comanda după editarea manuală a fișierului. |
+| `/rcon reloadbans`                 | Va reîncărca fișierul bans.json unde sunt scrise toate adresele de IP banate. Această comandă ar trebui folosită după ce debanați o adresă IP editând fișierul.                |
 | `/rcon reloadlog`                  | Reîncarcă server_log.txt. Nu are efecte considerabile pe absolut nimic.                                                                                      |
 | `/rcon say`                        | Trimite un mesaj jucătorilor. (exemplu: `/rcon say salut` va afișa `Admin: salut`).                                                                          |
 | `/rcon players`                    | Afișează jucătorii de pe server (cu tot cu nume, IP & ping).                                                                                                 |

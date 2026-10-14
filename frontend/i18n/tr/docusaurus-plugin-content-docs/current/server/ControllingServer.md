@@ -44,12 +44,13 @@ Girişi oyun içi `/rcon login sifre` yazarak veya [server.cfg](server.cfg) dosy
 
 bans.json, yasaklamalar hakkında bilgileri içeren bir dosyadır, yasaklamalar hakkında aşağıdaki bilgileri içerir:
 
-- `address`: IP adresi
-- `player`: Oyuncu adı
-- `reason`: Yasaklama nedeni ([BanEx](../scripting/functions/BanEx))
-- `time`: Tarih ve saat (ISO 8601)
+- IP
+- Tarih
+- Saat
+- Ad (Kişinin adı)
+- Neden ([BanEx](../scripting/functions/BanEx) sayfasına bakın)
 
-Yasaklama eklemek için JSON dizisine bir nesne ekleyin, örneğin:
+Oyuncu yasaklamak için, basitçe JSON dizisine şu şekilde bir nesne ekleyin:
 
 ```json
 [
@@ -101,17 +102,18 @@ banip IP
 
 Birisi oyuncunun yasağını kaldırmanın iki yolu vardır.
 
-- `bans.json` dosyasından ilgili nesneyi kaldırmak
+- bans.json dosyasından kaldırmak
 - Konsoldan veya oyun içinden RCON `unbanip` komutunu kullanmak
 
 #### bans.json
 
-`bans.json`, open.mp sunucu dizininde bulunur ve her yasaklama için aşağıdaki bilgileri içeren bir JSON dizisi barındırır:
+bans.json, open.mp sunucu dizininde bulunabilir ve içinde şu bilgileri içeren IP'ler hakkında bilgi içerir:
 
-- `address`: IP adresi
-- `player`: Oyuncu adı
-- `reason`: Yasaklama nedeni ([BanEx](../scripting/functions/BanEx))
-- `time`: Tarih ve saat (ISO 8601)
+- IP
+- Tarih
+- Saat
+- Ad (Kişinin adı)
+- Neden (bkz: [BanEx](../scripting/functions/BanEx))
 
 Örnekler:
 
@@ -122,7 +124,7 @@ Birisi oyuncunun yasağını kaldırmanın iki yolu vardır.
 ]
 ```
 
-Yasağı kaldırmak için diziden ilgili nesneyi kaldırın, ardından sunucunun `bans.json` dosyasını tekrar okuması için RCON `reloadbans` komutunu kullanın.
+Yasaklanan oyunucunun yasağını kaldırmak için, sadece nesneyi kaldırın ve ardından sunucunun bans.json'ı tekrar okumasını sağlamak için RCON `reloadbans` komutunu kullanın.
 
 #### unbanip
 
@@ -144,11 +146,11 @@ RCON unbanip komutu oyun içi `/rcon unbanip IP_BURAYA` yazarak veya konsol'a "u
 unbanip 13.37.13.37
 ```
 
-`unbanip` komutu `bans.json` dosyasını otomatik olarak günceller.
+Yasağı kaldırmak için, sadece `unbanip` komutunu kullanın.
 
 #### reloadbans
 
-`bans.json`, sunucuda yasaklı olan IP adreslerini içerir. Bu dosya sunucu başlatıldığında okunur. Kayıtları elle ekledikten veya kaldırdıktan sonra değişiklikleri uygulamak için RCON `reloadbans` komutunu kullanın.
+`bans.json`, sunucudan yasaklanan IP adresleri hakkındaki bilgileri içeren bir dosyadır. Bu dosya, sunucu çalıştırıldığında okunur, bu nedenle dosyayı düzenleyerek bir IP'yi veya oyuncuyu yasaklarsanız, sunucunun `bans.json`'ı tekrar okumasını sağlamak için RCON `reloadbans` komutunu yazmalısınız, böylece tekrar sunucuya giremezler.
 
 ### RCON Komutları
 
@@ -170,7 +172,7 @@ Aşağıdaki komutları sadece RCON girişi yapmış yöneticiler kullanabilir:
 | `/rcon ban [ID]`                 | Belirtilen ID'ye sahip oyuncuyu yasaklar (_örnek: /rcon ban 2_).                                                                                         |
 | `/rcon changemode [mod]`         | Bu komut, mevcut oyun modunu belirtilen oyun modu ile değiştirecek (_örnek: sftdm oynamak istiyorsanız: /rcon changemode sftdm_).                        |
 | `/rcon gmx`                      | [server.cfg](server.cfg) dosyasındaki bir sonraki oyun modunu yükler.                                                                                    |
-| `/rcon reloadbans`               | Yasaklı IP adreslerinin saklandığı `bans.json` dosyasını tekrar yükler. Dosyayı elle düzenledikten sonra kullanın. |
+| `/rcon reloadbans`               | Yasaklı IP adreslerini içeren `bans.json` dosyasını tekrar yükler. Bu, dosyayı düzenleyerek bir IP'yi yasakladıktan sonra kullanılmalıdır.                                     |
 | `/rcon reloadlog`                | `server_log.txt` dosyasını tekrar yükler. Otomatik log döndürme için kullanışlıdır. Sadece Linux sunucuda `SIGUSR1` sinyali gönderilerek tetiklenebilir. |
 | `/rcon say`                      | Oyuncu konsoluna mesaj gösterir (örnek: `/rcon say merhaba` "Admin: merhaba" olarak görüntülenir).                                                       |
 | `/rcon players`                  | Sunucuda bulunan oyuncuları (adları, IP'leri ve ping'leri ile birlikte) gösterir.                                                                        |

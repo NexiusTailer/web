@@ -45,12 +45,13 @@ Le mot de passe est le même que celui que vous avez défini dans [config.json](
 
 bans.json est le fichier utilisé pour stocker les joueurs bannis, y compris les informations suivantes sur l'interdiction :
 
-- `address`: Adresse IP
-- `player`: Nom du joueur
-- `reason`: Motif du ban ([BanEx](../scripting/functions/BanEx))
-- `time`: Date et heure (ISO 8601)
+- IP
+- Date
+- Temps
+- Nom (Nom de la personne)
+- Motif (voir [BanEx](../scripting/functions/BanEx))
 
-Pour ajouter un ban, ajoutez un objet au tableau JSON, par exemple :
+Pour ajouter un nouveau joueur à bannir, ajoutez simplement un objet au tableau JSON comme ceci :
 
 ```json
 [
@@ -103,17 +104,18 @@ banip IP
 
 Une fois que quelqu'un est banni, il y a deux façons de le débannir.
 
-- Supprimer l’objet correspondant de `bans.json`
+- Supprimer de bans.json
 - La commande RCON `unbanip`
 
 #### bans.json
 
-`bans.json` se trouve dans le répertoire de votre serveur open.mp. Il contient un tableau JSON avec les informations suivantes sur chaque ban :
+bans.json se trouve dans le répertoire de votre serveur open.mp, il contient des objets avec les informations suivantes sur chaque interdiction :
 
-- `address`: Adresse IP
-- `player`: Nom du joueur
-- `reason`: Motif du ban ([BanEx](../scripting/functions/BanEx))
-- `time`: Date et heure (ISO 8601)
+- IP
+- Date
+- Temps
+- Nom (Nom de la personne)
+- Motif (voir [BanEx](../scripting/functions/BanEx))
 
 Exemples:
 
@@ -124,7 +126,7 @@ Exemples:
 ]
 ```
 
-Pour les débannir, supprimez l’objet correspondant du tableau, puis exécutez la commande RCON `reloadbans` pour relire `bans.json`.
+Pour les débannir, supprimez simplement l'objet, puis exécutez la commande RCON `reloadbans` pour actualiser la liste des joueurs bannis à partir du fichier bans.json.
 
 #### unbanip
 
@@ -146,11 +148,11 @@ Exemple:
 unbanip 13.37.13.37
 ```
 
-La commande `unbanip` met automatiquement à jour `bans.json`.
+Pour les débannir, utilisez simplement la commande `unbanip`.
 
 #### reloadbans
 
-`bans.json` contient les adresses IP actuellement bannies du serveur. Ce fichier est lu au démarrage du serveur. Après avoir ajouté ou supprimé des entrées manuellement, exécutez la commande RCON `reloadbans` pour appliquer les modifications.
+`bans.json` est un fichier qui contient les informations sur les adresses IP actuellement bannies du serveur. Ce fichier est lu au démarrage du serveur, donc si vous débloquez une adresse IP/personne en modifiant le fichier, vous DEVEZ taper la commande RCON `reloadbans` pour que le serveur lise à nouveau `bans.json` et lui permette de rejoindre le serveur.
 
 ### Commandes RCON
 
@@ -172,7 +174,7 @@ Voici les fonctions que vous pouvez utiliser en tant qu'administrateur :
 | `/rcon ban [ID]`                  | Ban le joueur ayant l'identifiant ID (_exemple: /rcon ban 2_).                                                                                                                          |
 | `/rcon changemode [mode]`         | Change le mode de jeu actuel (relance le serveur avec un nouveu fichier .amx) (_exemple: si tu veux lancer le mode sftdm.amx: /rcon changemode sftdm_).                                 |
 | `/rcon gmx`                       | Charge le prochain gamemode du fichier [config.json](config.json).                                                                                                                      |
-| `/rcon reloadbans`                | Recharge `bans.json`, qui contient les adresses IP bannies. À utiliser après avoir modifié le fichier manuellement. |
+| `/rcon reloadbans`                | Recharge le fichier `bans.json` où sont stockés les joueurs et IP bannis. Doit être utilisé après avoir modifié le fichier.                                                              |
 | `/rcon reloadlog`                 | Recharge le fichier `server_log.txt`. Utile pour une rotation automatique de journalisation. Peut être déclenché en envoyant un signal `SIGUSR1` au serveur (Serveur Linux uniquement). |
 | `/rcon say`                       | Affiche un message dans le chat des joueurs (exemple: `/rcon say hello` affichera dans le chat: `Admin: hello`).                                                                        |
 | `/rcon players`                   | Affiche la liste des joueurs connectés (nom, IP et ping).                                                                                                                               |

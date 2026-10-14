@@ -48,12 +48,13 @@ password whatever
 
 bans.json 是用于存储封禁信息的文件，包括以下内容：
 
-- `address`: IP 地址
-- `player`: 玩家名称
-- `reason`: 封禁原因 ([BanEx](../scripting/functions/BanEx))
-- `time`: 日期和时间（ISO 8601）
+- IP
+- 日期
+- 时间
+- 名称（人名）
+- 原因（参见 [BanEx](../scripting/functions/BanEx)）
 
-要添加封禁，请向 JSON 数组添加一个对象，例如：
+要添加封禁，只需向 JSON 数组添加如下对象：
 
 ```json
 [
@@ -105,17 +106,18 @@ banip IP
 
 一旦某人被封禁，有两种方法可以解封。
 
-- 从 `bans.json` 中移除对应的对象
+- 从 bans.json 中移除
 - 使用 RCON `unbanip` 命令
 
 #### bans.json
 
-`bans.json` 位于 open.mp 服务器目录中，包含一个 JSON 数组，其中每条封禁记录具有以下信息：
+bans.json 可以在你的 open.mp 服务器目录中找到，它包含以下信息的对象：
 
-- `address`: IP 地址
-- `player`: 玩家名称
-- `reason`: 封禁原因 ([BanEx](../scripting/functions/BanEx))
-- `time`: 日期和时间（ISO 8601）
+- IP
+- 日期
+- 时间
+- 名称（人名）
+- 原因（参见 [BanEx](../scripting/functions/BanEx)）
 
 示例：
 
@@ -126,7 +128,7 @@ banip IP
 ]
 ```
 
-要解封，请从数组中移除对应的对象，然后执行 RCON `reloadbans` 命令使服务器重新读取 `bans.json`。
+要解封，只需移除该对象，然后执行 RCON reloadbans 命令使服务器重新读取 bans.json。
 
 #### unbanip
 
@@ -148,11 +150,11 @@ RCON unbanip 命令可以在游戏内或服务器控制台（黑框）中使用�
 unbanip 13.37.13.37
 ```
 
-`unbanip` 命令会自动更新 `bans.json`。
+要解封，只需使用 `unbanip` 命令。
 
 #### reloadbans
 
-`bans.json` 存储当前被服务器封禁的 IP 地址。该文件在服务器启动时读取。手动添加或删除条目后，请执行 RCON `reloadbans` 命令以应用更改。
+`bans.json` 是一个存储当前被封禁 IP 信息的文件。该文件在服务器启动时读取，因此如果你通过编辑文件解封了一个 IP/人，你必须输入 RCON `reloadbans` 命令使服务器重新读取 `bans.json` 并允许他们加入服务器。
 
 ### RCON 命令
 
@@ -174,7 +176,7 @@ unbanip 13.37.13.37
 | `/rcon ban [ID]`                 | 封禁指定 ID 的玩家（_示例：/rcon ban 2_）。                                                                   |
 | `/rcon changemode [模式]`        | 此命令将当前游戏模式更改为指定模式（_示例：如果你想玩 sftdm：/rcon changemode sftdm_）。                      |
 | `/rcon gmx`                      | 将加载 [server.cfg](server.cfg) 中的下一个游戏模式。                                                          |
-| `/rcon reloadbans`               | 重新加载存储被封禁 IP 地址的 `bans.json` 文件。手动编辑文件后应使用此命令。 |
+| `/rcon reloadbans`               | 重新加载存储被封禁 IP 地址的 `bans.json` 文件。通过编辑文件解封 IP 地址后应使用此命令。                                    |
 | `/rcon reloadlog`                | 重新加载 `server_log.txt`。适用于自动日志轮换。可以通过向服务器发送 `SIGUSR1` 信号触发（仅限 Linux 服务器）。 |
 | `/rcon say`                      | 向玩家显示消息到客户端控制台（示例：`/rcon say 你好` 将显示为 `管理员：你好`）。                              |
 | `/rcon players`                  | 显示服务器中的玩家（包括他们的名字、IP 和 ping）。                                                            |
