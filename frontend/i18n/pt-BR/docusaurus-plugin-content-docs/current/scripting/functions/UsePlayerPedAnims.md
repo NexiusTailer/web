@@ -1,7 +1,7 @@
 ---
 title: UsePlayerPedAnims
 sidebar_label: UsePlayerPedAnims
-description: "Usa animação de caminhada padrão do jogador (animação da skin CJ) em vez de animações personalizadas para cada skin (por exemplo, patinação para skins de skatista)."
+description: "Usa a animação de caminhada padrão do jogador (skin CJ) em vez das animações específicas de cada skin."
 tags: ["player"]
 ---
 

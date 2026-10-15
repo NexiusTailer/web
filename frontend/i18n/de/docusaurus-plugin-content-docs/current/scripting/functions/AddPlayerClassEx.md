@@ -1,7 +1,7 @@
 ---
 title: AddPlayerClassEx
 sidebar_label: AddPlayerClassEx
-description: Fügt eine Klasse zur Klassen-Auswahl(class-selection) hinzu. Genau wie "AddPlayerClass" nur mit einem team Parameter.
+description: Fügt wie AddPlayerClass eine Klasse zur Klassenauswahl hinzu, mit einem zusätzlichen Team-Parameter.
 tags: ["player"]
 ---
 

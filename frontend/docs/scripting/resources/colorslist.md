@@ -1,7 +1,7 @@
 ---
 title: Color List
 sidebar_label: Color List
-description: Colors are everywhere in SA-MP - vehicles, player names and blips, textdraws, gametext, chat, 3D texts and dialogs (as color embedding)! Below you can find information about these different things.
+description: A guide to colors for vehicles, player names, map icons, textdraws, game text, chat, 3D text and dialogs in SA-MP.
 ---
 
 ## Chat text and player color

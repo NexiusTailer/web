@@ -1,7 +1,7 @@
 ---
 title: GetPVarsUpperIndex
 sidebar_label: GetPVarsUpperIndex
-description: "Cada PVar (variável do jogador) possui seu próprio número de identificação exclusivo para pesquisa, esta função retorna o conjunto ID mais alto para um jogador."
+description: "Retorna o maior ID de PVar definido para um jogador."
 tags: ["player variable", "pvar"]
 ---
 
