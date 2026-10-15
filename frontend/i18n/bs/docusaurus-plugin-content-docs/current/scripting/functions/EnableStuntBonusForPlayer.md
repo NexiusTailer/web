@@ -16,9 +16,9 @@ Omogućuje ili onemogućava stunt bonuse za igrača. Omogućeno po zadanim posta
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

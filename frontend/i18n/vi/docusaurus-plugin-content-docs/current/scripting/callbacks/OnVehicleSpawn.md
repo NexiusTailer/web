@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Callback này chỉ được gọi khi xe **hồi sinh** (respawn)! Hàm `CreateVehicle` và `AddStaticVehicle(Ex)` **không** kích hoạt callback này.
+Callback này **chỉ** được gọi khi xe **hồi sinh** (respawn)! Hàm `CreateVehicle` và `AddStaticVehicle(Ex)` **không** kích hoạt callback này.
 
 :::
 

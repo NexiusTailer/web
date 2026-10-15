@@ -29,7 +29,7 @@ Prikvači objekat na određenu kost igrača.
 
 ## Returns
 
-1 uspješno, 0 pri grešci.
+**1** uspješno, **0** pri grešci.
 
 ## Primjeri
 

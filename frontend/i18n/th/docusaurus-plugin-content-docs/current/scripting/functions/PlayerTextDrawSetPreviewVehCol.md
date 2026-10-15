@@ -24,7 +24,7 @@ This function does not return any specific values.
 
 :::warning
 
-The textdraw MUST use the font TEXT_DRAW_FONT_MODEL_PREVIEW and be showing a vehicle in order for this function to have effect.
+The textdraw MUST use the font `TEXT_DRAW_FONT_MODEL_PREVIEW` and be showing a vehicle in order for this function to have effect.
 
 :::
 

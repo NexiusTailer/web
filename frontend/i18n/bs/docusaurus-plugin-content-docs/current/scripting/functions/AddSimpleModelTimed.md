@@ -27,9 +27,9 @@ Dodaje novi prilagođen/custom prost model objekta za preuzimanje. Fajlovi model
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena.
+**0**: Funkcija neuspješno izvršena.
 
 ## Primjeri
 

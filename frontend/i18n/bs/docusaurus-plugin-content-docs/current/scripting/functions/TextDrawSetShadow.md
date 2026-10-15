@@ -16,9 +16,9 @@ Postavlja veličinu sjene teksta u textdrawu.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Textdraw ne postoji.
+**0**: Funkcija neuspješno izvršena. Textdraw ne postoji.
 
 ## Primjeri
 

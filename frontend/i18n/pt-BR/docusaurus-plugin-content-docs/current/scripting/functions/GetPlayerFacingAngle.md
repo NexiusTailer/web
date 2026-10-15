@@ -16,9 +16,9 @@ Obtém o ângulo que um jogador está voltado (rotação Z).
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: Falha ao executar a função. Isso significa que o jogador não existe.
+**0**: Falha ao executar a função. Isso significa que o jogador não existe.
 
 O ângulo do jogador é armazenado na variável especificada.
 

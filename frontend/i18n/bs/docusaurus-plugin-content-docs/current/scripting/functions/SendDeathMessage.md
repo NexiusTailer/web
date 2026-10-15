@@ -17,7 +17,7 @@ Dodaje smrt 'killfeedu' s desne strane ekrana za sve igrače.
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, bilo da se funkcija neuspješno izvrši. Funkcija će neuspješno da se izvrši (neće se prikazati poruka o smrti) ako je 'playerid' nevažeći. Ako je 'reason' nevažeći, prikazana je generička ikona lobanje i kostiju. 'killerid' nevažeći (INVALID_PLAYER_ID) je važeći.
+Ova funkcija uvijek returna (vraća) **1**, bilo da se funkcija neuspješno izvrši. Funkcija će neuspješno da se izvrši (neće se prikazati poruka o smrti) ako je 'playerid' nevažeći. Ako je 'reason' nevažeći, prikazana je generička ikona lobanje i kostiju. 'killerid' nevažeći (`INVALID_PLAYER_ID`) je važeći.
 
 ## Primjeri
 

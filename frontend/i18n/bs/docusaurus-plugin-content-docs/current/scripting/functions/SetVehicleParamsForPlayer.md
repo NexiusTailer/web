@@ -18,9 +18,9 @@ Postavi parametre vozila za igrača.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač i/ili vozilo ne postoje.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač i/ili vozilo ne postoje.
 
 ## Primjeri
 

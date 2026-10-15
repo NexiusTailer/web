@@ -13,7 +13,7 @@ tags: []
 | ---------- | -------------------------------------------------------------------------------------------------------------- |
 | index      | ID koji se koristi za razlikovanje zahtjeva koji se šalju na isti povratni poziv/callback (korisno za playids) |
 | type       | Tip zahtjeva koji želite poslati.                                                                              |
-| url[]      | URL koji želite zatražiti. (Bez 'http://')                                                                     |
+| url[]      | URL koji želite zatražiti. **(Bez 'http://')**                                                                     |
 | data[]     | Sve POST podatke koje želite poslati sa zahtjevom.                                                             |
 | callback[] | Ime funkcije povratnog poziva/callbacka koju želite koristiti za obradu odgovora na ovaj zahtjev.              |
 

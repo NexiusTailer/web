@@ -16,11 +16,11 @@ Sets the name of a player.
 
 ## ส่งคืน
 
-1 The name was changed successfully
+**1** The name was changed successfully
 
-0 The player already has that name
+**0** The player already has that name
 
--1 The name can not be changed (it's already in use, too long or has invalid characters)
+**-1** The name can not be changed (it's already in use, too long or has invalid characters)
 
 ## ตัวอย่าง
 

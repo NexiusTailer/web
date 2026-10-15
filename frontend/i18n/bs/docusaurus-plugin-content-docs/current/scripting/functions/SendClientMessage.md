@@ -17,9 +17,9 @@ Ova funkcija šalje poruku navedenom igraču sa odabranom bojom u chatu. Cijela 
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Uspješno je prijavljeno i kada je string veći od 144 karaktera, ali poruka neće biti poslana.
+**1**: Funkcija uspješno izvršena. Uspješno je prijavljeno i kada je string veći od 144 karaktera, ali poruka neće biti poslana.
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

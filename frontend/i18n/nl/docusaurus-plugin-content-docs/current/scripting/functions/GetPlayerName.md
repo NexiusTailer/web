@@ -17,7 +17,7 @@ Haal de naam van een speler op.
 
 ## Retourneert
 
-De lengte van de spelersnaam, of 0 als de speler niet bestaat.
+De lengte van de spelersnaam, of **0** als de speler niet bestaat.
 
 ## Voorbeeld
 

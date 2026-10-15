@@ -65,7 +65,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 :::warning
 
 - 点击区域由[TextDrawTextSize](../functions/TextDrawTextSize)定义。此函数的x/y参数值不可为零或负数
-- 禁止无条件调用[CancelSelectTextDraw](../functions/CancelSelectTextDraw)，否则会导致无限循环
+- 禁止无条件调用[CancelSelectTextDraw](../functions/CancelSelectTextDraw)，否则会导致**无限循环**
 
 :::
 

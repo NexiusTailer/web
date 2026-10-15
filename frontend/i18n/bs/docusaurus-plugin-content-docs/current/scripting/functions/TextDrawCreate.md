@@ -17,7 +17,7 @@ Kreira textdraw. Textdraw-ovi su, kako samo ime implicira, tekst (uglavnom - ovd
 
 ## Returns
 
-ID kreiranog textdraw-a. Textdraw IDs start at 0.
+ID kreiranog textdraw-a. Textdraw IDs start at **0**.
 
 ## Primjeri
 

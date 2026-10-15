@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Kameru možete pomicati tijekom uređivanja pritiskom i držanjem razmaknice (ili W u vozilu) i pomicanjem miša.
+Kameru možete pomicati tijekom uređivanja pritiskom i držanjem **razmaknice** (ili **W** u vozilu) i pomicanjem miša.
 
 :::
 

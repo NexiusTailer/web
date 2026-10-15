@@ -16,7 +16,7 @@ Onemogućite određeni red u meniju za sve igrače. Bit će zasjenjeno i igrači
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1, bilo i da funkcija ne uspije. Ako je naveden nevaljani redak, ništa se neće dogoditi.
+Ova funkcija uvijek returna (vraća) **1**, bilo i da funkcija ne uspije. Ako je naveden nevaljani redak, ništa se neće dogoditi.
 
 ## Primjeri
 

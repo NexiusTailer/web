@@ -16,9 +16,9 @@ Postavi skin igrača. Igračev skin je njegov model karaktera.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
 Zapamti da je 'success' (uspješno) prijavljeno i kada je ID skina nevažeći (nije 0-311, ili 74), ali skin će biti postavljen na ID 0 (CJ).
 

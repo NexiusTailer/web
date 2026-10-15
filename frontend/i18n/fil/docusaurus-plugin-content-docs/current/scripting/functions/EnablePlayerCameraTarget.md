@@ -18,9 +18,9 @@ I-toggle ang mga function sa pag-target ng camera para sa isang player. Naka-dis
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Hindi konektado ang player.
+**0**: Nabigo ang function na isagawa. Hindi konektado ang player.
 
 ## Examples
 

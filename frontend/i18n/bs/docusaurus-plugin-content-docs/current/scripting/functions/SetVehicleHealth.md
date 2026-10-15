@@ -16,9 +16,9 @@ Postavlja helte (zdravlje/health) vozila. Kada se health stanje vozila smanji, m
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da vozilo ne postoji.
 
 ## Primjeri
 

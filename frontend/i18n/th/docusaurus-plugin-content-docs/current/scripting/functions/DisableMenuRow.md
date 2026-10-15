@@ -16,7 +16,7 @@ Disable a specific row in a menu for all players. It will be greyed-out and can'
 
 ## ส่งคืน
 
-This function always returns 1, even if the function fails. If an invalid row is specified, nothing will happen.
+This function always returns **1**, even if the function fails. If an invalid row is specified, nothing will happen.
 
 ## ตัวอย่าง
 

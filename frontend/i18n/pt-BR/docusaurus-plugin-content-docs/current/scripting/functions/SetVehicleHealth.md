@@ -16,9 +16,9 @@ Define a vida de um veículo. Quando a vida do veículo diminui, o motor irá fa
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. Isso significa que o veículo não existe.
+**0**: A função falhou ao ser executada. Isso significa que o veículo não existe.
 
 ## Exemplos
 

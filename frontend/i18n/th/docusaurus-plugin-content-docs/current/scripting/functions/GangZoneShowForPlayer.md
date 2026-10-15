@@ -17,7 +17,7 @@ Show a gangzone for a player. Must be created with GangZoneCreate first.
 
 ## ส่งคืน
 
-1 if the gangzone was shown, otherwise 0 (non-existant).
+**1** if the gangzone was shown, otherwise **0** (non-existant).
 
 ## ตัวอย่าง
 

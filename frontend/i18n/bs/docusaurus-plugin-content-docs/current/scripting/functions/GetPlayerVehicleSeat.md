@@ -15,7 +15,7 @@ Saznaj u kojem je igrač sjedištu.
 
 ## Returns
 
-ID sjedišta u kojem je igrač. -1 ako nije u vozilu, 0 ako je vozač, 1 ako je suvozač, i 2 i 3 su zadnja sjedišta.
+ID sjedišta u kojem je igrač. **-1** ako nije u vozilu, **0** ako je vozač, **1** ako je suvozač, i **2** i **3** su zadnja sjedišta.
 
 ## Primjeri
 

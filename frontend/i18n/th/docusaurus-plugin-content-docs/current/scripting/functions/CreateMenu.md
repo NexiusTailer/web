@@ -20,7 +20,7 @@ Creates a menu.
 
 ## ส่งคืน
 
-The ID of the new menu or -1 on failure.
+The ID of the new menu or **-1** on failure.
 
 ## ตัวอย่าง
 

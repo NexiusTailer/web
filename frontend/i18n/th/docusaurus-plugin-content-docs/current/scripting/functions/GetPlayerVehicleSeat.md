@@ -15,7 +15,7 @@ Find out which seat a player is in.
 
 ## ส่งคืน
 
-The ID of the seat the player is in. -1 is not in vehicle, 0 is the driver, 1 is the front passenger, and 2 & 3 are the rear passengers.
+The ID of the seat the player is in. **-1** is not in vehicle, **0** is the driver, **1** is the front passenger, and **2** & **3** are the rear passengers.
 
 ## ตัวอย่าง
 

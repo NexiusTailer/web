@@ -15,7 +15,7 @@ Check who a player is aiming at.
 
 ## ส่งคืน
 
-The ID of the target player, or INVALID_PLAYER_ID if none.
+The ID of the target player, or `INVALID_PLAYER_ID` if none.
 
 ## ตัวอย่าง
 

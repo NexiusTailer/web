@@ -13,8 +13,8 @@ Mencari sebuah sub-string di dalam sebuah string.
 | --------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | const string[]        | String yang ingin anda telusuri (haystack).                                                                          |
 | const sub[]           | String yang ingin anda cari (needle).                                                                                |
-| ignorecase (opsional) | Saat di set true, besar/kecil huruf tidak mempengaruhi - HeLLo sama dengan Hello. Saat di set false, mereka berbeda. |
-| Position (opsional)   | Posisi untuk memulai pencarian                                                                                       |
+| ignorecase _(opsional)_ | Saat di set true, besar/kecil huruf tidak mempengaruhi - HeLLo sama dengan Hello. Saat di set false, mereka berbeda. |
+| Position _(opsional)_   | Posisi untuk memulai pencarian                                                                                       |
 
 ## Returns
 

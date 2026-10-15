@@ -21,7 +21,7 @@ Dobij id aktora koji je naciljan od strane nekog igrača.
 
 ## Returns
 
-ID naciljanog aktora, ili INVALID_ACTOR_ID ako ga nema.
+ID naciljanog aktora, ili `INVALID_ACTOR_ID` ako ga nema.
 
 ## Primjeri
 

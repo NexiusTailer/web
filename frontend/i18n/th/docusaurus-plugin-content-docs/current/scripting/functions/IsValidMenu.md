@@ -15,9 +15,9 @@ Checks if a menu ID is valid.
 
 ## ส่งคืน
 
-1 - The menu is valid.
+**1** - The menu is valid.
 
-0 - The menu is not valid.
+**0** - The menu is not valid.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 

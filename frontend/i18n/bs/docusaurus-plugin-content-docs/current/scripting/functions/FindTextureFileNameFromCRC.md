@@ -23,9 +23,9 @@ Pronađite postojeću prilagođenu datoteku teksture kože ili jednostavnog obje
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena.
+**0**: Funkcija neuspješno izvršena.
 
 ## Srodne Funkcije
 

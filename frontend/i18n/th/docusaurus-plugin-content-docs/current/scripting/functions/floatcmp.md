@@ -16,7 +16,7 @@ floatcmp can be used to compare float values to each other, to validate the comp
 
 ## ส่งคืน
 
-0 if value does match, 1 if the first value is bigger and -1 if the 2nd value is bigger.
+**0** if value does match, **1** if the first value is bigger and **-1** if the 2nd value is bigger.
 
 ## ตัวอย่าง
 

@@ -18,7 +18,7 @@ Pronađite naziv datoteke koji odgovara uzorku.
 
 ## Returns
 
-Tačno(true) na uspjehu, netačno(false) na neuspjehu.
+Tačno(**true**) na uspjehu, netačno(**false**) na neuspjehu.
 
 ## Zabilješke
 

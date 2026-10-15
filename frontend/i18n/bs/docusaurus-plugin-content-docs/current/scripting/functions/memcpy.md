@@ -19,7 +19,7 @@ Kopirajte bajtove s jedne lokacije na drugu.
 
 ## Returns
 
-True/tačno pri uspješnom, false/netačno pri grešci.
+**True**/tačno pri uspješnom, **false**/netačno pri grešci.
 
 ## Primjeri
 

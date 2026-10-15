@@ -15,7 +15,7 @@ Ova funkcija vraća ID javne funkcije po imenu.
 
 ## Returns
 
-ID funkcije (ID-ovi počinju na 0). -1 ako funkcija ne postoji.
+ID funkcije (ID-ovi počinju na **0**). **-1** ako funkcija ne postoji.
 
 ## Primjeri
 

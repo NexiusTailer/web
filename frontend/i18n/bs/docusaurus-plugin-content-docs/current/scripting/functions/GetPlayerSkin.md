@@ -15,7 +15,7 @@ Vraća klasu skina igrača.
 
 ## Returns
 
-ID skina (0 ako je nevažeći)
+ID skina (**0** ako je nevažeći)
 
 ## Primjeri
 

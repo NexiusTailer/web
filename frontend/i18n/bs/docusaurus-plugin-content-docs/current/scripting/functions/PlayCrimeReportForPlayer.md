@@ -17,9 +17,9 @@ Ova funkcija reproducira prijavu zločina za igrača - baš kao i kod jednog igr
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni igrač ne postoji.
 
 ## Primjeri
 

@@ -13,7 +13,7 @@ Pretvori cijeli broj u string.
 | --------------- | ---------------------------------------------------------------------- |
 | dest            | Odredište stringa.                                                     |
 | value           | Vrijednost koju treba pretvoriti u string.                             |
-| pack (optional) | Da li treba spakirati odredište (isključeno prema zadanim postavkama). |
+| pack _(optional)_ | Da li treba spakirati odredište (isključeno prema zadanim postavkama). |
 
 ## Returns
 

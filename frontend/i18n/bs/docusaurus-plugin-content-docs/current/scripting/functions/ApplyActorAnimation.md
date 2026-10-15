@@ -29,9 +29,9 @@ Primijeni animaciju na aktora.
 
 ## Returns
 
-1: Funkcija upsješno izvršena.
+**1**: Funkcija upsješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni aktor ne postoji.
 
 ## Primjeri
 

@@ -16,9 +16,9 @@ Toggle whether a player is in spectator mode or not. While in spectator mode a p
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The player does not exist.
+**0**: The function failed to execute. The player does not exist.
 
 ## ตัวอย่าง
 

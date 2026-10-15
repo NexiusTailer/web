@@ -15,9 +15,9 @@ Briše prethodno postavljenu server varijablu.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. There is no variable set with the given name.
+**0**: Funkcija neuspješno izvršena. There is no variable set with the given name.
 
 ## Primjeri
 

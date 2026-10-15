@@ -24,9 +24,9 @@ Adds a new custom character model for download. The model files will be stored i
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ตัวอย่าง
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork must be enabled first in server settings in order for this to work
+**useartwork** must be enabled first in server settings in order for this to work
 
 :::
 

@@ -80,9 +80,9 @@ SA-MP limitează caracterele care pot fi stocate într-un singur șir și împie
 | **Textdraw string** | Destul de auto-explicativ.                                                                                                | 1024 |
 | **Dialog info**     | Textul afișat pe toate casetele de dialog de tipul `DIALOG_STYLE_MSGBOX`,`DIALOG_STYLE_INPUT` și `DIALOG_STYLE_PASSWORD`. | 4096 |
 | **Dialog caption**  | Legenda / titlul din partea de sus a dialogului.                                                                          | 64   |
-| **Dialog input**    | Caseta de introducere de pe „DIALOG_STYLE_INPUT” și „DIALOG_STYLE_PASSWORD”.                                              | 128  |
+| **Dialog input**    | Caseta de introducere de pe „`DIALOG_STYLE_INPUT`” și „`DIALOG_STYLE_PASSWORD`”.                                              | 128  |
 | **Dialog columnt**  | Caracterele din fiecare coloană din „DIALOG_STYLE_TABLIST_HEADER” și „DIALOG_STYLE_TABLIST”.                              | 128  |
-| **Dialog row**      | Caracterele din fiecare coloană din "DIALOG_STYLE_TABLIST_HEADER", "DIALOG_STYLE_TABLIST" și "DIALOG_STYLE_LIST".         | 256  |
+| **Dialog row**      | Caracterele din fiecare coloană din "`DIALOG_STYLE_TABLIST_HEADER`", "`DIALOG_STYLE_TABLIST`" și "`DIALOG_STYLE_LIST`".         | 256  |
 | **Chat bubble**     | Balonul de chat care se afișează deasupra etichetei de nume a jucătorului.                                                | 144  |
 | **Menu title**      | Antetul meniului nativ GTA San Andreas (cel mai utilizat pentru magazine\_).                                              | 31   |
 | **Menu item**       | Meniul nativ GTA San Andreas (_ cel mai utilizat pentru magazine_) element / rând.                                        | 31   |

@@ -39,7 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Saat ini hanya ada satu 'source' (0 - CLICK_SOURCE_SCOREBOARD). Keberadaan argumen ini menunjukkan akan adanya sumber lain yang akan didukung di masa depan nanti.
+Saat ini hanya ada satu 'source' (0 - `CLICK_SOURCE_SCOREBOARD`). Keberadaan argumen ini menunjukkan akan adanya sumber lain yang akan didukung di masa depan nanti.
 
 :::
 

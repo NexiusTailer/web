@@ -16,7 +16,7 @@ Remove an attached object from a player.
 
 ## ส่งคืน
 
-1 on success, 0 on failure.
+**1** on success, **0** on failure.
 
 ## ตัวอย่าง
 

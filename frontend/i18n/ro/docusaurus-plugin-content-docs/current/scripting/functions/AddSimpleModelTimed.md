@@ -23,9 +23,9 @@ Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierel
 
 ## Se intoarce
 
-1: Funcția executată cu succes.
+**1**: Funcția executată cu succes.
 
-0: Funcția nu a putut fi executată.
+**0**: Funcția nu a putut fi executată.
 
 ## Exemple
 

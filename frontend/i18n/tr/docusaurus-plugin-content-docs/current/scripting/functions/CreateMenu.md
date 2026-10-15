@@ -20,7 +20,7 @@ Menü oluşturma.
 
 ## Çalışınca Vereceği Sonuçlar
 
-Oluşturulan menünün ID'si veya oluşturulamama durumunda -1.
+Oluşturulan menünün ID'si veya oluşturulamama durumunda **-1**.
 
 ## Örnekler
 

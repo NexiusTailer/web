@@ -16,7 +16,7 @@ Prikazuje poruku u chatu za sve igrače. Ovo je ekvivalent SendClientMessage za 
 
 ## Returns
 
-Ova funkcija ubijek vraća true/uspješno (1).
+Ova funkcija ubijek vraća **true**/uspješno (**1**).
 
 ## Primjeri
 

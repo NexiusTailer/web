@@ -7,7 +7,7 @@ tags: ["车辆"]
 
 :::info
 
-此函数基于世界坐标系而非局部坐标系。如需进行局部坐标系角速度调整，必须基于[GetVehicleRotationQuat](GetVehicleRotationQuat)应用旋转矩阵。
+此函数基于*世界坐标系*而非*局部坐标系*。如需进行局部坐标系角速度调整，必须基于[GetVehicleRotationQuat](GetVehicleRotationQuat)应用旋转矩阵。
 
 :::
 

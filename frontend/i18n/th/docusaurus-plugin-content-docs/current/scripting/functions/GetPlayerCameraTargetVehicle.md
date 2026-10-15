@@ -21,7 +21,7 @@ Get the ID of the vehicle the player is looking at.
 
 ## ส่งคืน
 
-The vehicle ID of the vehicle the player is looking at. INVALID_VEHICLE_ID if none.
+The vehicle ID of the vehicle the player is looking at. `INVALID_VEHICLE_ID` if none.
 
 ## ตัวอย่าง
 

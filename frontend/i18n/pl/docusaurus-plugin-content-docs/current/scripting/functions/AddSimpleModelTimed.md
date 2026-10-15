@@ -23,9 +23,9 @@ Dodaje nowy niestandardowy obiekt do pobrania. Pliki modelu będą przechowywane
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo.
+**0**: Funkcja nie wykonała się prawidłowo.
 
 ## Przykłady
 
@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork musi być włączone w ustawieniach serwera, aby ta funkcja działała. Jeżeli ustawiony jest konkretny wirtualny świat, to gracz pobierze obiekty w momencie wejścia do niego.
+**useartwork** musi być włączone w ustawieniach serwera, aby ta funkcja działała. Jeżeli ustawiony jest konkretny wirtualny świat, to gracz pobierze obiekty w momencie wejścia do niego.
 
 :::
 

@@ -21,9 +21,9 @@ Dodaje nowy niestandardowy obiekt do pobrania. Pliki modelu będą przechowywane
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo.
+**0**: Funkcja nie wykonała się prawidłowo.
 
 ## Przykłady
 

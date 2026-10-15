@@ -15,9 +15,9 @@ Fecha uma conexão de banco de dados SQLite que foi aberta com [db_open](db_open
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao executar. Isso pode significar que o identificador de conexão do banco de dados é inválido.
+**0**: A função falhou ao executar. Isso pode significar que o identificador de conexão do banco de dados é inválido.
 
 ## Exemplos
 

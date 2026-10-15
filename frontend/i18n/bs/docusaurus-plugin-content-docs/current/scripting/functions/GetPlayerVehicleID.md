@@ -15,7 +15,7 @@ Ova funkcija dobija ID vozila u kojem je igrač trenutno. Zabilješka: NE ID mod
 
 ## Returns
 
-ID vozila ili 0 ako nije u vozilu.
+ID vozila ili **0** ako nije u vozilu.
 
 ## Primjeri
 

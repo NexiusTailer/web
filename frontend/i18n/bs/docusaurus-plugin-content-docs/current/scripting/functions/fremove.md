@@ -15,9 +15,9 @@ Obriši datoteku.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Datoteka ne postoji ili nemate dozvolu da je izbrišete.
+**0**: Funkcija neuspješno izvršena. Datoteka ne postoji ili nemate dozvolu da je izbrišete.
 
 ## Primjeri
 

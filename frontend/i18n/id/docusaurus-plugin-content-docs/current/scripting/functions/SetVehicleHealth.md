@@ -16,9 +16,9 @@ Mengatur Health kendaraan. Ketika kendaraan menurun, mesin kendaraan akan mengel
 
 ## Returns
 
-1: Fungsi berhasil dijalankan.
+**1**: Fungsi berhasil dijalankan.
 
-0: Fungsi gagal dijalankan. Ini berarti kendaraan tidak ada.
+**0**: Fungsi gagal dijalankan. Ini berarti kendaraan tidak ada.
 
 ## Contoh
 

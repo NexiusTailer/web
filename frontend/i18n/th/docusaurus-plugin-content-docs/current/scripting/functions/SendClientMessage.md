@@ -17,9 +17,9 @@ This function sends a message to a specific player with a chosen color in the ch
 
 ## ส่งคืน
 
-1: The function was executed successfully. Success is reported when the string is over 144 characters, but the message won't be sent.
+**1**: The function was executed successfully. Success is reported when the string is over 144 characters, but the message won't be sent.
 
-0: The function failed to execute. The player is not connected.
+**0**: The function failed to execute. The player is not connected.
 
 ## ตัวอย่าง
 

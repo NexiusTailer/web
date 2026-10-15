@@ -13,8 +13,8 @@ Potraži podstring u stringu.
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | const string[]        | String u kojem želite tražiti (haystack).                                                                                         |
 | const sub[]           | String kojeg želite tražiti (needle).                                                                                             |
-| ignorecase (optional) | Kada je postavljeno na 'true', velika slova nemaju veze - HeLLo je isto kao Hello. Kada je postavljeno na 'false', oni nisu isti. |
-| Position (optional)   | Pomak od kojeg treba započeti pretragu.                                                                                           |
+| ignorecase _(optional)_ | Kada je postavljeno na 'true', velika slova nemaju veze - HeLLo je isto kao Hello. Kada je postavljeno na 'false', oni nisu isti. |
+| Position _(optional)_   | Pomak od kojeg treba započeti pretragu.                                                                                           |
 
 ## Returns
 

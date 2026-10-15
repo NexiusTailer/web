@@ -20,9 +20,9 @@ Ajoute un nouveau modèle de personnage personnalisé à télécharger. Les fich
 
 ## Retour
 
-1: La fonction s'est exécutée avec succès.
+**1**: La fonction s'est exécutée avec succès.
 
-0: La fonction n'a pas pu s'exécuter.
+**0**: La fonction n'a pas pu s'exécuter.
 
 ## Exemples
 

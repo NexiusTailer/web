@@ -17,9 +17,9 @@ Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacak
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: İşlev başarıyla yürütüldü.
+**1**: İşlev başarıyla yürütüldü.
 
-0: İşlev yürütülemedi.
+**0**: İşlev yürütülemedi.
 
 ## Örnekler
 

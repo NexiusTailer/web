@@ -17,9 +17,9 @@ This function plays a crime report for a player - just like in single-player whe
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**0**: The function failed to execute. This means the player specified does not exist.
 
 ## ตัวอย่าง
 

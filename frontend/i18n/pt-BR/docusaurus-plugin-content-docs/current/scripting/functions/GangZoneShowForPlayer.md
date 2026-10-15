@@ -17,7 +17,7 @@ Mostra a gangzone para um jogador. Deve ser criado com GangZoneCreate primeiro.
 
 ## Retorno
 
-1 se a gangzone for mostrada, caso contrário 0 (não-existente).
+**1** se a gangzone for mostrada, caso contrário **0** (não-existente).
 
 ## Exemplos
 

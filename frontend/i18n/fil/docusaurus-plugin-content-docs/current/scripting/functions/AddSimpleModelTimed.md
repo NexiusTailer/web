@@ -23,9 +23,9 @@ Nagdaragdag ng bagong custom na simpleng object model para sa pag-download. Ang 
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa.
+**0**: Nabigo ang function na isagawa.
 
 ## Examples
 
@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-ang useartwork ay dapat munang paganahin sa mga setting ng server upang ito ay gumana Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang player ay pumasok sa partikular na mundo
+ang **useartwork** ay dapat munang paganahin sa mga setting ng server upang ito ay gumana Kapag ang virtualworld ay nakatakda, ang mga modelo ay mada-download kapag ang player ay pumasok sa partikular na mundo
 
 :::
 

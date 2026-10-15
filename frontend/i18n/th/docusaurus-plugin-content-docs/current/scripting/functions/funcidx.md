@@ -15,7 +15,7 @@ This function returns the ID of a public function by its name.
 
 ## ส่งคืน
 
-The ID of the function (IDs start at 0). -1 if the function doesn't exist.
+The ID of the function (IDs start at **0**). **-1** if the function doesn't exist.
 
 ## ตัวอย่าง
 

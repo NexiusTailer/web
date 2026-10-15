@@ -17,7 +17,7 @@ Prikaži gang zonu za igrača. Prvo mora biti kreirana sa GangZoneCreate.
 
 ## Returns
 
-1 ako je gangzona prikazana, usotalom 0 (ne postoji).
+**1** ako je gangzona prikazana, usotalom **0** (ne postoji).
 
 ## Primjeri
 

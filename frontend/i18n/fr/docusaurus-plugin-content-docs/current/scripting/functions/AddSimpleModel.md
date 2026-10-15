@@ -20,9 +20,9 @@ Ajoute un nouveau modèle d'objet simple personnalisé à télécharger. Les fic
 
 ## Retour
 
-1 : La fonction s'est exécutée avec succès.
+**1** : La fonction s'est exécutée avec succès.
 
-0 : La fonction n'a pas pu s'exécuter.
+**0** : La fonction n'a pas pu s'exécuter.
 
 ## Exemples
 

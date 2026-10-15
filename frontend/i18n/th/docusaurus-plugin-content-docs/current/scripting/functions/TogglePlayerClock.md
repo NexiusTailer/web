@@ -16,9 +16,9 @@ Toggle the in-game clock (top-right corner) for a specific player. When this is 
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The specified player does not exist.
+**0**: The function failed to execute. The specified player does not exist.
 
 ## ตัวอย่าง
 

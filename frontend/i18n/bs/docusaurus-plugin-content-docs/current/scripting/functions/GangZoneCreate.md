@@ -18,7 +18,7 @@ Kreiraj gangzonu (radarsko područje u boji).
 
 ## Returns
 
-ID kreirane zone, returna/vraća -1 ako nije kreirana.
+ID kreirane zone, returna/vraća **-1** ako nije kreirana.
 
 ## Primjeri
 

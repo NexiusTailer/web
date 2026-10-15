@@ -21,9 +21,9 @@ Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pad
 
 ## Returns
 
-1: Function berhasil dijalankan.
+**1**: Function berhasil dijalankan.
 
-0: Function gagal dijalankan
+**0**: Function gagal dijalankan
 
 ## Examples
 

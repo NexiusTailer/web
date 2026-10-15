@@ -16,9 +16,9 @@ Uključite ili isključite da li textdraw koristi box ili ne.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
+**0**: Funkcija neuspješno izvršena. Ovo znači da navedeni textdraw ne postoji.
 
 ## Primjeri
 

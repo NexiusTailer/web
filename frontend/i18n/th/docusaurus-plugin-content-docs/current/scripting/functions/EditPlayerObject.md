@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-You can move the camera while editing by pressing and holding the spacebar (or W in vehicle) and moving your mouse.
+You can move the camera while editing by pressing and holding the **spacebar** (or **W** in vehicle) and moving your mouse.
 
 :::
 

@@ -21,9 +21,9 @@ Shows the player a synchronous (only one at a time) dialog box.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the player is not connected.
+**0**: The function failed to execute. This means the player is not connected.
 
 ## ตัวอย่าง
 

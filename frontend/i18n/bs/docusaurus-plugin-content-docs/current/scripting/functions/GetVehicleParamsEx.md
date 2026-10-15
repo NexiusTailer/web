@@ -22,9 +22,9 @@ Gets a vehicle's parameters.
 
 ## Returns
 
-1 - uspješno
+**1** - uspješno
 
-0 - greška (nevažeći ID vozila).
+**0** - greška (nevažeći ID vozila).
 
 Parametri vozila pohranjeni su u referentnim varijablama, a ne u povratnoj vrijednosti.
 

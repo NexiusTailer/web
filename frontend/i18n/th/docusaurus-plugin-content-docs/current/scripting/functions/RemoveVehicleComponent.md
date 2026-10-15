@@ -16,9 +16,9 @@ Remove a component from a vehicle.
 
 ## ส่งคืน
 
-0 - The component was not removed because the vehicle does not exist.
+**0** - The component was not removed because the vehicle does not exist.
 
-1 - The component was successfully removed from the vehicle.
+**1** - The component was successfully removed from the vehicle.
 
 ## ตัวอย่าง
 

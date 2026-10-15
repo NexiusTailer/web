@@ -17,7 +17,7 @@ Postavlja 'timer' za pozvati funkciju nakon određenog vremena. Može biti posta
 
 ## Returns
 
-ID tajmera koji je pokrenut. ID-ovi tajmera počinju od 1.
+ID tajmera koji je pokrenut. ID-ovi tajmera počinju od **1**.
 
 ## Primjeri
 

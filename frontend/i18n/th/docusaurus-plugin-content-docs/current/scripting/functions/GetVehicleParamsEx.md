@@ -22,9 +22,9 @@ Gets a vehicle's parameters.
 
 ## ส่งคืน
 
-1 - success
+**1** - success
 
-0 - failure (invalid vehicle ID).
+**0** - failure (invalid vehicle ID).
 
 The vehicle's parameters are stored in the referenced variables, not in the return value.
 

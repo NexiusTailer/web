@@ -27,9 +27,9 @@ Adds a new custom simple object model for download. The model files will be stor
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ตัวอย่าง
 
@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork must be enabled first in server settings in order for this to work When virtualworld is set, the models will be downloaded once the player enters the specific world
+**useartwork** must be enabled first in server settings in order for this to work When virtualworld is set, the models will be downloaded once the player enters the specific world
 
 :::
 

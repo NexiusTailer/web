@@ -13,7 +13,7 @@ SA:MP 查询机制是通过 UDP 数据包传输服务器统计信息的标准协
 
 查询是通过 UDP 协议向服务器地址发送的序列化数据包。
 
-你可能会疑惑："服务器如何区分查询数据包与常规 RakNet 协议数据？" 其原理在于底层 RakNet 套接字层会识别数据包头部的"SAMP"标识（十六进制值：53 41 4D 50），并采用特殊处理流程。[查看源码](https://github.com/openmultiplayer/RakNet/blob/master/Source/SocketLayer.cpp#L371)
+你可能会疑惑："服务器如何区分查询数据包与常规 RakNet 协议数据？" 其原理在于底层 RakNet 套接字层会识别数据包头部的"SAMP"标识（十六进制值：53 41 4D 50），并采用特殊处理流程。**[查看源码](https://github.com/openmultiplayer/RakNet/blob/master/Source/SocketLayer.cpp#L371)**
 
 ## 序列化数据包
 
@@ -122,4 +122,4 @@ _(从第 13 字节开始循环，共循环 PlayerCount 次)_
 
 ## C 语言实现示例
 
-开源 C 语言库 sampquery-c 实现了完整的查询功能，可作为开发参考：[代码仓库](https://github.com/Louzindev/sampquery-c)
+开源 C 语言库 sampquery-c 实现了完整的查询功能，可作为开发参考：**[代码仓库](https://github.com/Louzindev/sampquery-c)**

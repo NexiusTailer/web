@@ -21,9 +21,9 @@ Afișează jucătorlui un dialog sincron (doar unul o dată).
 
 ## Returnări
 
-1: Funcția a fost executată cu succes.
+**1**: Funcția a fost executată cu succes.
 
-0: Executarea funcției a eșuat. Asta înseamnă că jucătorului nu e conectat.
+**0**: Executarea funcției a eșuat. Asta înseamnă că jucătorului nu e conectat.
 
 ## Exemple
 

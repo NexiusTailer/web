@@ -16,9 +16,9 @@ Briše prethodno postavljenu varijablu igrača.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Ili navedeni igrač nije konektovan ili nema postavljene varijable sa tim imenom.
+**0**: Funkcija neuspješno izvršena. Ili navedeni igrač nije konektovan ili nema postavljene varijable sa tim imenom.
 
 ## Primjeri
 

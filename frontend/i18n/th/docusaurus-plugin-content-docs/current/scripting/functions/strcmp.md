@@ -13,12 +13,12 @@ Compares two strings to see if they are the same.
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | string1               | The first string to compare.                                                                                                                |
 | string2               | The second string to compare.                                                                                                               |
-| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same.                                   |
-| length (optional)     | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
+| ignorecase _(optional)_ | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same.                                   |
+| length _(optional)_     | When this length is set, the first x chars will be compared - doing "Hello" and "Hell No" with a length of 4 will say it's the same string. |
 
 ## ส่งคืน
 
-0 if strings match each other on given length;1 o r -1 if some character do not match: string1[i] - string2[i] ('i' represents character index starting from 0);difference in number of characters if one string matches only part of another string.
+**0** if strings match each other on given length;**1** o r **-1** if some character do not match: string1[i] - string2[i] ('i' represents character index starting from 0);**difference in number of characters** if one string matches only part of another string.
 
 ## ตัวอย่าง
 

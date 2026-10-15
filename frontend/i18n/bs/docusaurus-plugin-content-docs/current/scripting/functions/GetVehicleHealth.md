@@ -16,9 +16,9 @@ Dobij healthe vozila.
 
 ## Returns
 
-1 - uspješno
+**1** - uspješno
 
-0 - greška (nevažeći ID vozila).
+**0** - greška (nevažeći ID vozila).
 
 Healthi vozila su pohranjeni u varijablama, ne u return vrijednosti.
 

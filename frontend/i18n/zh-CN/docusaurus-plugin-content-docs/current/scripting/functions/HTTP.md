@@ -13,7 +13,7 @@ tags: ["http"]
 | ------------------ | -------------------------------------------------------------- |
 | index              | 用于区分相同回调请求的标识符（通常使用玩家 ID）                |
 | HTTP_METHOD:method | 请求[类型](../resources/http-request-methods)（GET/POST/HEAD） |
-| const url[]        | 目标 URL（无需包含'http://'前缀）                              |
+| const url[]        | 目标 URL（**无需包含'http://'前缀**）                              |
 | const data[]       | 需要随请求发送的 POST 数据                                     |
 | const callback[]   | 处理该请求响应的回调函数名称                                   |
 

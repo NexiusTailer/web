@@ -15,7 +15,7 @@ Geeft de skin‑ID van een speler terug.
 
 ## Retourneert
 
-De skin‑ID, of 0 als ongeldig.
+De skin‑ID, of **0** als ongeldig.
 
 ## Voorbeeld
 

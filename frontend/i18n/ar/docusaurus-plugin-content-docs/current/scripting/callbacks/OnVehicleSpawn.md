@@ -11,7 +11,7 @@ tags: ["vehicle"]
     
 :::warning
 
-هذا الكال باك يتم إستدعائه فقط عندم يتم إعادة رسبنت السيارة . CreateVehicle و AddStaticVehicle(Ex) لن يفعلو هذا الكال باك
+هذا الكال باك يتم إستدعائه **فقط** عندم يتم **إعادة** رسبنت السيارة . CreateVehicle و AddStaticVehicle(Ex) **لن يفعلو** هذا الكال باك
 
 :::
 

@@ -15,9 +15,9 @@ Provjerava da li je ID menija važeći.
 
 ## Returns
 
-1 - Meni je važeći.
+**1** - Meni je važeći.
 
-0 - Meni je nevažeći.
+**0** - Meni je nevažeći.
 
 ## Srodne Funkcije
 

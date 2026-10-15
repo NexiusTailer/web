@@ -13,12 +13,12 @@ Fungsi ini membandingkan kedua string untuk mengecek apakah mereka sama.
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | string1               | String pertama yang akan di bandingkan.                                                                                                      |
 | string2               | String kedua yang akan di bandingkan.                                                                                                        |
-| ignorecase (opsional) | Saat di set true, besar/kecil huruf tidak mempengaruhi - HeLLo sama dengan Hello. Saat di set false, mereka berbeda.                         |
-| length (opsional)     | Saat panjang nya di set, karakter pertama x akan di bandingkan - "Hello" dan "Hell No" dengan panjang nya 4 akan melaporkan string nya sama. |
+| ignorecase _(opsional)_ | Saat di set true, besar/kecil huruf tidak mempengaruhi - HeLLo sama dengan Hello. Saat di set false, mereka berbeda.                         |
+| length _(opsional)_     | Saat panjang nya di set, karakter pertama x akan di bandingkan - "Hello" dan "Hell No" dengan panjang nya 4 akan melaporkan string nya sama. |
 
 ## Returns
 
-0 jika stringnya sama dengan lainnya pada panjang tertentu;1 atau -1 jika sebuah karakter tidak sama: string1[i] - string2[i] ('i' mewakili indeks karakter dimulai dari 0);perbedaan jumlah karakter jika satu string cocok dengan bagian dari string lain.
+**0** jika stringnya sama dengan lainnya pada panjang tertentu;**1** atau **-1** jika sebuah karakter tidak sama: string1[i] - string2[i] ('i' mewakili indeks karakter dimulai dari 0);**perbedaan jumlah karakter** jika satu string cocok dengan bagian dari string lain.
 
 ## Contoh
 

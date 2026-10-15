@@ -15,7 +15,7 @@ Sinisira ang tinukoy na menu.
 
 ## Returns
 
-True kung matagumpay ang pagsira, kung hindi man ay False
+**True** kung matagumpay ang pagsira, kung hindi man ay **False**
 
 ## Examples
 

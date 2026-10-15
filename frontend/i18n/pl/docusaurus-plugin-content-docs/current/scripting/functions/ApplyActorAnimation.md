@@ -25,9 +25,9 @@ Włącza animację aktorowi.
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo. Podany aktor nie istnieje.
+**0**: Funkcja nie wykonała się prawidłowo. Podany aktor nie istnieje.
 
 ## Przykłady
 

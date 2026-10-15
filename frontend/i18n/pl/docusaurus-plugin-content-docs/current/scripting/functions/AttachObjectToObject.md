@@ -23,9 +23,9 @@ Możesz używać tej funkcji, aby przyczepiać obiekty do innych obiektów. Obie
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo. To oznacza, że pierwszy obiekt (objectid) nie istnieje. Nie ma żadnej wbudowanej weryfikacji tego, czy drugi obiekt (attachtoid) istnieje.
+**0**: Funkcja nie wykonała się prawidłowo. To oznacza, że pierwszy obiekt (objectid) nie istnieje. Nie ma żadnej wbudowanej weryfikacji tego, czy drugi obiekt (attachtoid) istnieje.
 
 ## Przykłady
 

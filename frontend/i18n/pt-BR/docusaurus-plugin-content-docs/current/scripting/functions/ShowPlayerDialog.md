@@ -21,9 +21,9 @@ Mostra um dialog (janela) asíncrono (um único por vez).
 
 ## Retorno
 
-1: A função foi executada corretamente.
+**1**: A função foi executada corretamente.
 
-0: A função falhou ao executar. Isto significa que o jogador não está conectado.
+**0**: A função falhou ao executar. Isto significa que o jogador não está conectado.
 
 ## Exemplos
 

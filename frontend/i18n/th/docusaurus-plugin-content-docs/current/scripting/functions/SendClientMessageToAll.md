@@ -16,7 +16,7 @@ Displays a message in chat to all players. This is a multi-player equivalent of 
 
 ## ส่งคืน
 
-This function always returns true (1).
+This function always returns **true** (**1**).
 
 ## ตัวอย่าง
 

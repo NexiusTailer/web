@@ -15,9 +15,9 @@ Restore the camera to a place behind the player, after using a function like Set
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**0**: The function failed to execute. This means the player specified does not exist.
 
 ## ตัวอย่าง
 

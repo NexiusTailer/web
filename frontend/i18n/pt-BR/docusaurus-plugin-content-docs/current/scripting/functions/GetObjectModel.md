@@ -17,7 +17,7 @@ Obtém o ID do modelo de um objeto (CreateObject).
 
 ## Retorno
 
-O modelo ID do objeto. -1 se o objeto não existir.
+O modelo ID do objeto. **-1** se o objeto não existir.
 
 ## Exemplos
 

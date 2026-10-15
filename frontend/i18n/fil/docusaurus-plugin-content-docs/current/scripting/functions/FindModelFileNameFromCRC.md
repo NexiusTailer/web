@@ -19,9 +19,9 @@ Maghanap ng umiiral nang custom skin o simple object model file. Ang mga file ng
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa.
+**0**: Nabigo ang function na isagawa.
 
 ## Related Functions
 

@@ -16,7 +16,7 @@ floatcmp se može koristiti za međusobno uspoređivanje vrijednosti plutajućeg
 
 ## Returns
 
-0 ako se vrijednost podudara, 1 ako je prva vrijednost veća i -1 ako je druga vrijednost veća.
+**0** ako se vrijednost podudara, **1** ako je prva vrijednost veća i **-1** ako je druga vrijednost veća.
 
 ## Primjeri
 

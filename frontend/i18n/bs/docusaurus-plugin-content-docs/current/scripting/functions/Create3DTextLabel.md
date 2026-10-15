@@ -28,7 +28,7 @@ Kreira 3D Text Label na određenoj lokaciji u svijetu.
 
 ## Returns
 
-ID novokreiranog 3D Text Labela, ili INVALID_3DTEXT_ID ako je dostignut 3D Text Label limit (MAX_3DTEXT_GLOBAL).
+ID novokreiranog 3D Text Labela, ili `INVALID_3DTEXT_ID` ako je dostignut 3D Text Label limit (`MAX_3DTEXT_GLOBAL`).
 
 ## Primjeri
 

@@ -23,9 +23,9 @@ Find an existing custom skin or simple object texture file. The model files are 
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 

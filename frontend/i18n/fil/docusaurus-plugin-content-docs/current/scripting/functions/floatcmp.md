@@ -16,7 +16,7 @@ Ang floatcmp ay maaaring gamitin upang ihambing ang mga halaga ng float sa bawat
 
 ## Returns
 
-0 kung tumutugma ang value, 1 kung mas malaki ang unang value at -1 kung mas malaki ang 2nd value.
+**0** kung tumutugma ang value, **1** kung mas malaki ang unang value at **-1** kung mas malaki ang 2nd value.
 
 ## Examples
 

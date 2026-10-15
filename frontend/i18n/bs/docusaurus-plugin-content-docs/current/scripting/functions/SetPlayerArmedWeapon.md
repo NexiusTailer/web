@@ -16,9 +16,9 @@ Postavlja koje oružje (koje igrač posjeduje) igrač trenutno drži.
 
 ## Returns
 
-1: Funkcija uspješno izvršena. Uspješno je vraćeno i kada se funkcija neuspješno izvrši (igrač ne posjeduje navedeno oružje ili je proslijeđen nevažeći ID oružja).
+**1**: Funkcija uspješno izvršena. Uspješno je vraćeno i kada se funkcija neuspješno izvrši (igrač ne posjeduje navedeno oružje ili je proslijeđen nevažeći ID oružja).
 
-0: Funkcija neuspješno izvršena. Igrač nije konektovan.
+**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

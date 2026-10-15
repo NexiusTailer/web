@@ -24,9 +24,9 @@ Adiciona um novo modelo de personagem personalizado para download. Os arquivos d
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: Falha ao executar a função.
+**0**: Falha ao executar a função.
 
 ## Exemplos
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-"useartwork" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
+"**useartwork**" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
 
 :::
 

@@ -17,9 +17,9 @@ Sends a message in the name of a player to another player on the server. The mes
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**0**: The function failed to execute. This means the player specified does not exist.
 
 ## ตัวอย่าง
 

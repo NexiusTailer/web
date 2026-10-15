@@ -66,7 +66,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 La zone cliquable est définie par TextDrawTextSize. Les paramètres x et y ne doivent pas retourner une valeur de 0 ou une valeur négative.
 
-N'utilisez pas CancelSelectTextDraw sans condition dans cette callback. Il en résulterait une loop infinie.
+N'utilisez pas CancelSelectTextDraw sans condition dans cette callback. Il en résulterait une **loop infinie**.
 
 :::
 

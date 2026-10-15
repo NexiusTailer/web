@@ -39,7 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Sa kasalukuyan, isa lang ang 'source' (0 - CLICK_SOURCE_SCOREBOARD). Ang existence ng argument na ito ay nagmumungkahi na pwede magkaroon ng iba pang sources na darating.
+Sa kasalukuyan, isa lang ang 'source' (0 - `CLICK_SOURCE_SCOREBOARD`). Ang existence ng argument na ito ay nagmumungkahi na pwede magkaroon ng iba pang sources na darating.
 
 :::
 

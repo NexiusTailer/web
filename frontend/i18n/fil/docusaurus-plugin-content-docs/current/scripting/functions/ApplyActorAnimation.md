@@ -25,9 +25,9 @@ Mag-apply ng animation sa isang artista.
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Ang aktor na tinukoy ay wala.
+**0**: Nabigo ang function na isagawa. Ang aktor na tinukoy ay wala.
 
 ## Examples
 

@@ -18,7 +18,7 @@ Cria uma gangzone (zona colorida no radar).
 
 ## Retorno
 
-O ID da zona criada, retorna -1 se não for criada.
+O ID da zona criada, retorna **-1** se não for criada.
 
 ## Exemplos
 

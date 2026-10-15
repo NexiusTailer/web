@@ -20,9 +20,9 @@ Dodaje niestandardowy model postaci do pobrania. Pliki modelu będą przechowywa
 
 ## Zwracane wartości
 
-1: Funkcja wykonała się prawidłowo.
+**1**: Funkcja wykonała się prawidłowo.
 
-0: Funkcja nie wykonała się prawidłowo.
+**0**: Funkcja nie wykonała się prawidłowo.
 
 ## Przykłady
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork musi być włączone w ustawieniach serwera, aby ta funkcja działała.
+**useartwork** musi być włączone w ustawieniach serwera, aby ta funkcja działała.
 
 :::
 

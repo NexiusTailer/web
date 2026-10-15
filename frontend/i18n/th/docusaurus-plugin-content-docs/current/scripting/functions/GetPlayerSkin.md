@@ -15,7 +15,7 @@ Returns the class of the players skin
 
 ## ส่งคืน
 
-The skin id (0 if invalid)
+The skin id (**0** if invalid)
 
 ## ตัวอย่าง
 

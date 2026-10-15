@@ -13,8 +13,8 @@ Search for a sub string in a string.
 | --------------------- | --------------------------------------------------------------------------------------------------------- |
 | const string[]        | The string you want to search in (haystack).                                                              |
 | const sub[]           | The string you want to search for (needle).                                                               |
-| ignorecase (optional) | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same. |
-| Position (optional)   | The offset to start searching from.                                                                       |
+| ignorecase _(optional)_ | When set to true, the case doesn't matter - HeLLo is the same as Hello. When false, they're not the same. |
+| Position _(optional)_   | The offset to start searching from.                                                                       |
 
 ## ส่งคืน
 

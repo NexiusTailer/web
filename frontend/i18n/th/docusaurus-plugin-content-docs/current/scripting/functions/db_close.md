@@ -15,9 +15,9 @@ Closes an SQLite database that was opened with db_open.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. May mean that the database handle specified is not open.
+**0**: The function failed to execute. May mean that the database handle specified is not open.
 
 ## ตัวอย่าง
 

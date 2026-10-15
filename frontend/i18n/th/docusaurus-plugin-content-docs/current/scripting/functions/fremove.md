@@ -15,9 +15,9 @@ Delete a file.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The file doesn't exist, or you don't have permission to delete it.
+**0**: The function failed to execute. The file doesn't exist, or you don't have permission to delete it.
 
 ## ตัวอย่าง
 

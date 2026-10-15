@@ -21,11 +21,11 @@ Vraća stanje sirene vozila (upaljena/ugašena).
 
 ## Returns
 
--1: Sirena za vozilo još nije postavljena (off/ugašena)
+**-1**: Sirena za vozilo još nije postavljena (off/ugašena)
 
-0: Sirena vozila ugašena
+**0**: Sirena vozila ugašena
 
-1: Sirena vozila upaljena
+**1**: Sirena vozila upaljena
 
 ## Primjeri
 

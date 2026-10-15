@@ -19,7 +19,7 @@ Copy bytes from one location to another.
 
 ## ส่งคืน
 
-True on success, false on failure.
+**True** on success, **false** on failure.
 
 ## ตัวอย่าง
 

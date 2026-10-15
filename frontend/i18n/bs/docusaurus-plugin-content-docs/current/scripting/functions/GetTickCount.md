@@ -25,13 +25,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-Jedna uobičajena upotreba GetTickCount je za benčmarking. Pomoću njega se može izračunati koliko vremena je potrebno nekom izvršnom kodu.
+Jedna uobičajena upotreba `GetTickCount` je za benčmarking. Pomoću njega se može izračunati koliko vremena je potrebno nekom izvršnom kodu.
 
 :::
 
 :::warning
 
-GetTickCount će uzrokovati probleme na serverima s vremenom neprekidnog rada duže od 24 dana, jer će GetTickCount na kraju iskriviti ograničenja cijele veličine.
+`GetTickCount` će uzrokovati probleme na serverima s vremenom neprekidnog rada duže od 24 dana, jer će `GetTickCount` na kraju iskriviti ograničenja cijele veličine.
 
 :::
 

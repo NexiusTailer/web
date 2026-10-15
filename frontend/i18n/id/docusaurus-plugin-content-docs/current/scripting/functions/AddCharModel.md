@@ -20,9 +20,9 @@ Menambah sebuah custom character model untuk didownload. Model file biasanya ter
 
 ## Returns
 
-1: Function berhasil dijalankan.
+**1**: Function berhasil dijalankan.
 
-0: Function gagal dijalankan.
+**0**: Function gagal dijalankan.
 
 ## Contoh
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork harus diaktifkan terlebih dahulu di server settings agar fungsi ini berfungsi.
+**useartwork** harus diaktifkan terlebih dahulu di server settings agar fungsi ini berfungsi.
 
 :::
 

@@ -16,9 +16,9 @@ Uključite sat u igri (gornji desni kut) za određenog igrača. Kada je ovo omog
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. The specified player does not exist.
+**0**: Funkcija neuspješno izvršena. The specified player does not exist.
 
 ## Primjeri
 

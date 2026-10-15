@@ -6,7 +6,7 @@ sidebar_label: Dialog Styles
 :::note
 
 - Em [OnDialogResponse](../callbacks/OnDialogResponse), pressionar **button1** define **response** para **1**, enquanto pressionar **button2** define **response** para **0**.
-- Todo dialog tem um button2 opcional. Para que ele não seja mostrado, mantenha o parâmetro vazio, como no primeiro exemplo. Os jogadores não poderão clicá-lo, mas eles ainda poderão apertar ESC e chamar [OnDialogResponse](../callbacks/OnDialogResponse) com **response** = **0**.
+- Todo dialog tem um **button2** opcional. Para que ele não seja mostrado, mantenha o parâmetro vazio, como no primeiro exemplo. Os jogadores não poderão clicá-lo, mas eles ainda poderão apertar ESC e chamar [OnDialogResponse](../callbacks/OnDialogResponse) com **response** = **0**.
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): As cores embutidas podem ser utilizadas nos parâmetros: **caption**, **info**, **button1** e **button2**.
 
 :::

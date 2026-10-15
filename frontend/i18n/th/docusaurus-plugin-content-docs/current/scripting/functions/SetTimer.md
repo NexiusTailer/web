@@ -17,7 +17,7 @@ Sets a 'timer' to call a function after some time. Can be set to repeat.
 
 ## ส่งคืน
 
-The ID of the timer that was started. Timer IDs start at 1.
+The ID of the timer that was started. Timer IDs start at **1**.
 
 ## ตัวอย่าง
 

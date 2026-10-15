@@ -16,9 +16,9 @@ Ukloni komponentu sa vozila.
 
 ## Returns
 
-0 - Komponenta nije uklonjena jer vozilo ne postoji.
+**0** - Komponenta nije uklonjena jer vozilo ne postoji.
 
-1 - Komponenta je uspješno uklonjena sa vozila.
+**1** - Komponenta je uspješno uklonjena sa vozila.
 
 ## Primjeri
 

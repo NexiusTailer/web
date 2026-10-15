@@ -24,9 +24,9 @@ Dodaje novog prilagođenog karaktera za preuzimanje. Fajlovi modela će biti poh
 
 ## Returns
 
-1: Funkcija je uspješno izvršena.
+**1**: Funkcija je uspješno izvršena.
 
-0: Funkcija je neuspješno izvršena.
+**0**: Funkcija je neuspješno izvršena.
 
 ## Primjeri
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork mora biti omogućen (u server settings) da bi ovo radilo
+**useartwork** mora biti omogućen (u server settings) da bi ovo radilo
 
 :::
 

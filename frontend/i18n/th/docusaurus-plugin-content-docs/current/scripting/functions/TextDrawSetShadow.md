@@ -16,9 +16,9 @@ Sets the size of a textdraw's text's shadow.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The textdraw does not exist.
+**0**: The function failed to execute. The textdraw does not exist.
 
 ## ตัวอย่าง
 

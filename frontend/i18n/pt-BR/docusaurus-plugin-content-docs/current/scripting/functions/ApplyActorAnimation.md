@@ -25,9 +25,9 @@ Aplica uma animação a um ator.
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou a ser executada. O ator específico não existe.
+**0**: A função falhou a ser executada. O ator específico não existe.
 
 ## Exemplos
 

@@ -23,9 +23,9 @@ Maaari mong gamitin ang function na ito upang ilagay ang mga object sa iba pang 
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa. Nangangahulugan ito na ang unang object (objectid) ay wala. Walang mga panloob na pagsusuri upang i-verify na ang pangalawang object (attachtoid) ay umiiral.
+**0**: Nabigo ang function na isagawa. Nangangahulugan ito na ang unang object (objectid) ay wala. Walang mga panloob na pagsusuri upang i-verify na ang pangalawang object (attachtoid) ay umiiral.
 
 ## Examples
 

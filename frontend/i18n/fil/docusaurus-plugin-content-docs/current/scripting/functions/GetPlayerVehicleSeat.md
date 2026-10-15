@@ -15,7 +15,7 @@ Alamin kung nasaang upuan nakaupo ang manlalaro.
 
 ## Returns
 
-- Ang ID ng upuan na kinaroroonan ng manlalaro. -1 ay wala sa sasakyan, 0 ang driver, 1 ang pasahero sa harap, at 2 & 3 ang mga pasahero sa likuran.
+- Ang ID ng upuan na kinaroroonan ng manlalaro. **-1** ay wala sa sasakyan, **0** ang driver, **1** ang pasahero sa harap, at **2** & **3** ang mga pasahero sa likuran.
 
 ## Halimbawa ng Paggamit
 

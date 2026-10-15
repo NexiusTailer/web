@@ -13,13 +13,13 @@ Compara duas strings para ver se são iguais.
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | string1               | A primeira string a ser comparada.                                                                                                                              |
 | string2               | A segunda string a ser comparada.                                                                                                                               |
-| ignorecase (opcional) | Quando definido como true, o caso não importa - oLÁ é o mesmo que Olá. Quando "false", eles não são os mesmos.                                                  |
-| length (optional)     | Quando esse comprimento é definido, os primeiros x caracteres serão comparados - fazendo "Olá Mundo" e "Olá" com um comprimento de 3 dirá que é a mesma string. |
+| ignorecase _(opcional)_ | Quando definido como true, o caso não importa - oLÁ é o mesmo que Olá. Quando "false", eles não são os mesmos.                                                  |
+| length _(optional)_     | Quando esse comprimento é definido, os primeiros x caracteres serão comparados - fazendo "Olá Mundo" e "Olá" com um comprimento de 3 dirá que é a mesma string. |
 
 ## Retorno
 
-0 se as strings combinam entre si em determinado comprimento;
-1 ou -1 se algum caractere não combina: string1[i] - string2[i] ('i' representa o índice de caracteres começando em 0); Diferença no número de caracteres se uma string corresponde apenas a parte de outra string.
+**0** se as strings combinam entre si em determinado comprimento;
+**1** ou **-1** se algum caractere não combina: string1[i] - string2[i] ('i' representa o índice de caracteres começando em 0); **Diferença no número de caracteres** se uma string corresponde apenas a parte de outra string.
 
 ## Exemplos
 

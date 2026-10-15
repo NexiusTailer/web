@@ -16,7 +16,7 @@ Enter edition mode for an attached object.
 
 ## ส่งคืน
 
-1 on success and 0 on failure.
+**1** on success and **0** on failure.
 
 ## ตัวอย่าง
 

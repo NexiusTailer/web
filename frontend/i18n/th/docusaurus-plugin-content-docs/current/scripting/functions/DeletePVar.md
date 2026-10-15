@@ -16,9 +16,9 @@ Deletes a previously set player variable.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. Either the player specified isn't connected or there is no variable set with the given name.
+**0**: The function failed to execute. Either the player specified isn't connected or there is no variable set with the given name.
 
 ## ตัวอย่าง
 

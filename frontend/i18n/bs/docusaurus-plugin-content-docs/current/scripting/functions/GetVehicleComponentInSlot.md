@@ -16,7 +16,7 @@ Dohvaća ID instalirane komponente (modshop mod(ifikacija)) na vozilu u određen
 
 ## Returns
 
-ID instalirane komponente u određenom slotu. Returna/vraća 0 ako nema komponente u određenom slotu tog vozila, ili vozilo ne postoji.
+ID instalirane komponente u određenom slotu. Returna/vraća **0** ako nema komponente u određenom slotu tog vozila, ili vozilo ne postoji.
 
 ## Primjeri
 

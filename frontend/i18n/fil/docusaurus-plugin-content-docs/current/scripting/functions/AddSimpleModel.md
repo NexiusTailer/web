@@ -21,9 +21,9 @@ Nagdaragdag ng bagong custom na simpleng object model para sa pag-download. Ang 
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigo ang function na isagawa.
+**0**: Nabigo ang function na isagawa.
 
 ## Examples
 

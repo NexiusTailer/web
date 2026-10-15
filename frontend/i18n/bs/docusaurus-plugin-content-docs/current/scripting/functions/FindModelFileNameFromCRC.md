@@ -23,9 +23,9 @@ Pronađite postojeću prilagođenu kožu ili datoteku jednostavnog objektnog mod
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena.
+**0**: Funkcija neuspješno izvršena.
 
 ## Srodne Funkcije
 

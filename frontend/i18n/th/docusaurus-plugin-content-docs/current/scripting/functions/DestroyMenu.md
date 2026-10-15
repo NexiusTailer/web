@@ -15,7 +15,7 @@ Destroys the specified menu.
 
 ## ส่งคืน
 
-True if the destroying was successful, otherwise false
+**True** if the destroying was successful, otherwise **false**
 
 ## ตัวอย่าง
 

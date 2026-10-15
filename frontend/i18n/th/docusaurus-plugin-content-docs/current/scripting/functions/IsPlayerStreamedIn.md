@@ -16,9 +16,9 @@ Checks if a player is streamed in another player's client.
 
 ## ส่งคืน
 
-1: The player is streamed in.
+**1**: The player is streamed in.
 
-0: The player is not streamed in.
+**0**: The player is not streamed in.
 
 ## ตัวอย่าง
 
@@ -33,9 +33,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**SA-MP server:** Players stream out if they are more than 200.0 meters away (see server.cfg - stream_distance)
+**SA-MP server:** Players stream out if they are more than 200.0 meters away (see server.cfg - **stream_distance**)
 
-**open.mp server:** Players stream out if they are more than 200.0 meters away (see config.json - network.stream_radius)
+**open.mp server:** Players stream out if they are more than 200.0 meters away (see config.json - **network.stream_radius**)
 
 :::
 

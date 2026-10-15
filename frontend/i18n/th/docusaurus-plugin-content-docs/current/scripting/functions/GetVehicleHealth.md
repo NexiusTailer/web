@@ -16,9 +16,9 @@ Get the health of a vehicle.
 
 ## ส่งคืน
 
-1 - success
+**1** - success
 
-0 - failure (invalid vehicle ID).
+**0** - failure (invalid vehicle ID).
 
 The vehicle's health is stored in the referenced variable, not in the return value.
 

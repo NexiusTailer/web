@@ -15,9 +15,9 @@ Deletes a previously set server variable.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. There is no variable set with the given name.
+**0**: The function failed to execute. There is no variable set with the given name.
 
 ## ตัวอย่าง
 

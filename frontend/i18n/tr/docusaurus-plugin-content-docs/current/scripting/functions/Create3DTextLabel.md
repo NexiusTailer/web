@@ -22,7 +22,7 @@ tags: ["3dtextlabel"]
 
 ## Çalışınca Vereceği Sonuçlar
 
-Yeni oluşturulan 3D Metin Etiketinin ID'si, veya 3D Metin Etiketinin limitine (MAX_3DTEXT_GLOBAL) ulaşıldığında INVALID_3DTEXT_ID.
+Yeni oluşturulan 3D Metin Etiketinin ID'si, veya 3D Metin Etiketinin limitine (`MAX_3DTEXT_GLOBAL`) ulaşıldığında `INVALID_3DTEXT_ID`.
 
 ## Örnekler
 

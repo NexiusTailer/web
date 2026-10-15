@@ -16,11 +16,11 @@ Postavlja ime igrača.
 
 ## Returns
 
-1 Ime je uspješno promijenjeno
+**1** Ime je uspješno promijenjeno
 
-0 Igrač već ima to ime
+**0** Igrač već ima to ime
 
--1 Ime se ne može promijeniti (već je u upitrebi, previše je veliko ili sadrži nevažeće karaktere)
+**-1** Ime se ne može promijeniti (već je u upitrebi, previše je veliko ili sadrži nevažeće karaktere)
 
 ## Primjeri
 

@@ -15,9 +15,9 @@ Closes a file. Files should always be closed when the script no longer needs the
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. The file could not be closed. It may already be closed.
+**0**: The function failed to execute. The file could not be closed. It may already be closed.
 
 ## ตัวอย่าง
 

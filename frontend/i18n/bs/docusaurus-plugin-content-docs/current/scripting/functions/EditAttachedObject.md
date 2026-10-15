@@ -16,7 +16,7 @@ Pristupi modu uređivanja za prikvačeni objekat.
 
 ## Returns
 
-1 uspješno i 0 neuspješno.
+**1** uspješno i **0** neuspješno.
 
 ## Primjeri
 

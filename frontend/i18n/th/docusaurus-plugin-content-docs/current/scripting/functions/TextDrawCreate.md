@@ -17,7 +17,7 @@ Creates a textdraw. Textdraws are, as the name implies, text (mainly - there can
 
 ## ส่งคืน
 
-The ID of the created textdraw. Textdraw IDs start at 0.
+The ID of the created textdraw. Textdraw IDs start at **0**.
 
 ## ตัวอย่าง
 

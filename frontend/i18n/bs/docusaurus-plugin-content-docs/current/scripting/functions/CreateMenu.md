@@ -20,7 +20,7 @@ Kreiraj meni.
 
 ## Returns
 
-ID novog menija ili -1 ako je greška.
+ID novog menija ili **-1** ako je greška.
 
 ## Primjeri
 

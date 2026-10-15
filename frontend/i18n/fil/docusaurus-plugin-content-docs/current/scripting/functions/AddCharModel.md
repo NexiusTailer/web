@@ -20,9 +20,9 @@ Nagdaragdag ng bagong custom na modelo ng character para sa pag-download. Ang mg
 
 ## Returns
 
-1: Matagumpay na naisakatuparan ang function.
+**1**: Matagumpay na naisakatuparan ang function.
 
-0: Nabigong maisagawa ang function.
+**0**: Nabigong maisagawa ang function.
 
 ## Examples
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-ang useartwork ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
+ang **useartwork** ay dapat munang paganahin sa mga setting ng server upang ito ay gumana
 
 :::
 

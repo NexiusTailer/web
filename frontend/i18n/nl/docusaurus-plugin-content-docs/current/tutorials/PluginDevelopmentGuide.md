@@ -32,12 +32,12 @@ Voorbeeld-exports skeleton zie originele guide; hieronder beknopte highlights.
 
 | Functie          | Doel                                                                        |
 | ---------------- | --------------------------------------------------------------------------- |
-| Supports()       | Retourneert capabilities (bijv. `SUPPORTS_VERSION`, `SUPPORTS_AMX_NATIVES`) |
+| **Supports()**       | Retourneert capabilities (bijv. `SUPPORTS_VERSION`, `SUPPORTS_AMX_NATIVES`) |
 | Load(void\*\*)   | Ontvangt pointers (AMX export table, `logprintf`)                           |
-| Unload()         | Opruimen bij server shutdown                                                |
+| **Unload()**         | Opruimen bij server shutdown                                                |
 | AmxLoad(AMX\*)   | Geregistreerde natives koppelen per AMX-instance                            |
 | AmxUnload(AMX\*) | AMX-instance uit eigen lijsten verwijderen                                  |
-| ProcessTick()    | (Optioneel) periodiek aangeroepen per server-loop                           |
+| **ProcessTick()**    | (Optioneel) periodiek aangeroepen per server-loop                           |
 
 ## Kern-defines/structs (selectie)
 

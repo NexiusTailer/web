@@ -20,9 +20,9 @@ Adaugă un nou model de caractere personalizat pentru descărcare. Fișierele mo
 
 ## Se intoarce
 
-1: Funcția executată cu succes.
+**1**: Funcția executată cu succes.
 
-0: Funcția nu a putut fi executată.
+**0**: Funcția nu a putut fi executată.
 
 ## Exemple
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork trebuie activat mai întâi în setările serverului pentru ca acest lucru să funcționeze
+**useartwork** trebuie activat mai întâi în setările serverului pentru ca acest lucru să funcționeze
 
 :::
 
