@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Callback này được gọi khi một người chơi phản hồi một hộp thoại được hiển thị bằng ShowPlayerDialog.
+description: Callback này được gọi khi một người chơi phản hồi một hộp thoại được hiển thị bằng cách sử dụng ShowPlayerDialog.
 tags: ["dialog"]
 ---
 

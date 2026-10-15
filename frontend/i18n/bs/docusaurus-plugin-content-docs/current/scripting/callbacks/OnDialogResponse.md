@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Ovaj callback se poziva kada igrač odgovori na dijalog prikazan funkcijom ShowPlayerDialog.
+description: Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom.
 tags: []
 ---
 

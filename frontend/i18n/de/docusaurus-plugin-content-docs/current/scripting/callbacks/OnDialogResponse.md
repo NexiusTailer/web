@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Dieses Callback wird ausgeführt, wenn ein Spieler auf einen mit ShowPlayerDialog angezeigten Dialog antwortet.
+description: Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antwortet.
 tags: [Pickup]
 ---
 

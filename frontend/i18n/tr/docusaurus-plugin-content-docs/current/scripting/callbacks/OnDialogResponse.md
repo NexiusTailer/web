@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir diyaloğa yanıt verdiğinde tetiklenir.
+description: Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialoga yanıt verdiğinde tetiklenir.
 tags: []
 ---
 

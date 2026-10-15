@@ -1,7 +1,7 @@
 ---
 title: "Ghid de aranjare Pawn"
 sidebar_label: "Ghid de aranjare Pawn"
-description: A short guide to Pawn naming conventions and code style for clearer, easier-to-debug code.
+description: A short guide on the generally accepted naming conventions and other aspects of Pawn source code.
 ---
 
 Acest document este un scurt ghid privind convențiile de denumire general acceptate și alte aspecte ale codului sursă Pawn pentru a facilita comunicarea intenției și a simplifica depanarea și partajarea codului.

@@ -1,7 +1,7 @@
 ---
 title: OnPlayerEnterVehicle
 sidebar_label: OnPlayerEnterVehicle
-description: Deze callback wordt aangeroepen wanneer een speler begint in te stappen, voordat de speler in het voertuig zit.
+description: Deze callback wordt aangeroepen wanneer een speler begint een voertuig in te gaan.
 tags: ["player", "vehicle"]
 ---
 

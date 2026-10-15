@@ -1,7 +1,7 @@
 ---
 title: ClearAnimations
 sidebar_label: ClearAnimations
-description: Clears all animations and current tasks for the given player.
+description: Clears all animations for the given player.
 tags: ["player", "animation"]
 ---
 

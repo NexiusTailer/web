@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Ова повратна функција се позива када играч одговори на дијалог приказан коришћењем ShowPlayerDialog.
+description: Ова повратна функција се позива када играч одговори на дијалог који је приказан коришћењем ShowPlayerDialog.
 tags: ["dialog"]
 ---
 

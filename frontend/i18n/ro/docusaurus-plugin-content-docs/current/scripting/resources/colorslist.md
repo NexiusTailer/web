@@ -1,7 +1,7 @@
 ---
 title: Lista de culori
 sidebar_label: Lista de culori
-description: Un ghid al culorilor pentru vehicule, nume de jucători, pictograme pe hartă, textdraw-uri, gametext, chat, texte 3D și dialoguri în SA-MP.
+description: Culorile sunt pretutindeni în SA-MP - vehicule, nume de jucători și clipuri, extrase de text, gametext, chat, texte 3D și dialoguri (ca încorporare a culorilor)!
 ---
 
 ## Chat text and player color

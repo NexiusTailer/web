@@ -1,7 +1,7 @@
 ---
 title: Per-player variable system
 sidebar_label: Per-player variable system
-description: Sistem per-player variable (PVar) menyimpan variabel tiap pemain yang dapat digunakan bersama oleh gamemode dan filterscripts.
+description: Sistem per-player variable (atau pendeknya, PVar) adalah cara baru untuk membuat variabel player dalam bentuk yang efisien membuat method secara global.
 ---
 
 **Sistem per-player variable** (atau pendeknya, **PVar**) adalah cara baru untuk membuat variabel player dalam bentuk yang efisien membuat method secara global, artinya mereka dapan menggunakan gamemode server dan filterscripts secara bersamaan.

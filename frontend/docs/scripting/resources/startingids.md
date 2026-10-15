@@ -1,7 +1,7 @@
 ---
 title: Starting IDs
 sidebar_label: Starting IDs
-description: Objects, players and vehicles use IDs that start at either 0 or 1.
+description: Everything like objects, players or vehicles use IDs. Some IDs start with 0, others start with 1.
 ---
 
 This page contains all of the starting IDs for numerous entities.  

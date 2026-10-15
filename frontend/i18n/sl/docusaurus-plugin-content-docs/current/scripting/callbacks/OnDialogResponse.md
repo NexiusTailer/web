@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Ta callback se pokliče, ko se igralec odzove na pogovorno okno, prikazano s funkcijo ShowPlayerDialog.
+description: Ta "callback" se pokliče, ko se predvajalnik odzove na pogovorno okno, imenovano "ShowPlayerDialog".
 tags: []
 ---
 

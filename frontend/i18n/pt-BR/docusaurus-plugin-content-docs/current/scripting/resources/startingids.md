@@ -1,7 +1,7 @@
 ---
 title: Starting IDs
 sidebar_label: Starting IDs
-description: "Objetos, jogadores e veículos usam IDs que começam com 0 ou 1."
+description: "Tudo como objetos, jogadores ou veículos usam IDs. Alguns IDs começam com 0, outros começam com 1."
 ---
 
 

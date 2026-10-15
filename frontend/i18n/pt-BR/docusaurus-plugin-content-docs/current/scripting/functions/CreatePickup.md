@@ -1,7 +1,7 @@
 ---
 title: CreatePickup
 sidebar_label: CreatePickup
-description: Cria um pickup e retorna seu ID para destruí-lo posteriormente ou rastreá-lo usando OnPlayerPickUpPickup.
+description: Esta função faz exatamente o mesmo que AddStaticPickup, exceto que retorna um ID de pickup.
 tags: ["pickup"]
 ---
 

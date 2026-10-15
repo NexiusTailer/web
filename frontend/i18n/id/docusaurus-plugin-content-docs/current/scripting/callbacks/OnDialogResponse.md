@@ -1,7 +1,7 @@
 ---
 title: OnDialogResponse
 sidebar_label: OnDialogResponse
-description: Callback ini terpanggil ketika pemain merespons dialog yang ditampilkan menggunakan ShowPlayerDialog.
+description: Callback ini akan terpanggil ketika pemain merespon kepada dialog yang muncul menggunakan ShowPlayerDialog.
 tags: []
 ---
 

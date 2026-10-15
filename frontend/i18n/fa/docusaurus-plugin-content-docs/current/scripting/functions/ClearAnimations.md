@@ -1,7 +1,7 @@
 ---
 title: ClearAnimations
 sidebar_label: ClearAnimations
-description: تمام انیمیشن‌ها و وظایف جاری بازیکن مشخص‌شده را پاک می‌کند.
+description: تمام انیمیشن‌ها را برای بازیکن داده شده پاک می‌کند.
 tags: ["player", "animation"]
 ---
 

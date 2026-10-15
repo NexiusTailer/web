@@ -1,7 +1,7 @@
 ---
 title: ClearAnimations
 sidebar_label: ClearAnimations
-description: Limpa todas as animações e tarefas atuais do jogador especificado.
+description: Limpa todas as animações para o jogador especificado.
 tags: ["player", "animation"]
 ---
 

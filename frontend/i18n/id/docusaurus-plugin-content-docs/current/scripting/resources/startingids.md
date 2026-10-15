@@ -1,7 +1,7 @@
 ---
 id: startingids
 title: ID Permulaan
-description: Objek, pemain, dan kendaraan menggunakan ID yang dimulai dari 0 atau 1.
+description: Semuanya, seperti objek, pemain, atau ID kendaraan menggunakan ID. Beberapa ID dimulai dari 0, ada juga yang dimulai dari 1.
 ---
 
 Semuanya, seperti objek, pemain, atau ID kendaraan menggunakan ID. Beberapa ID dimulai dari 0, ada juga yang dimulai dari 1.

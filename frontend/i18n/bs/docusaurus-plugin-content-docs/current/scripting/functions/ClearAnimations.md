@@ -1,7 +1,7 @@
 ---
 title: ClearAnimations
 sidebar_label: ClearAnimations
-description: Čisti sve animacije i trenutne zadatke za navedenog igrača.
+description: Čisti sve animacije koje su date igraču.
 tags: []
 ---
 
