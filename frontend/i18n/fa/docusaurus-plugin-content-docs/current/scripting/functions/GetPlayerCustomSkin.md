@@ -5,7 +5,7 @@ description: کلاس اسکین سفارشی بازیکن که از سرور د
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## توضیحات
 

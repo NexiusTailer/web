@@ -5,7 +5,7 @@ description: Menambahkan sebuah simpel objek model untuk diunggah.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Description
 

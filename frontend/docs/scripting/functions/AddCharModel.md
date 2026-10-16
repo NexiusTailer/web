@@ -5,7 +5,7 @@ description: Adds a new custom character model for download.
 tags: ["custom skin", "char model"]
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Description
 

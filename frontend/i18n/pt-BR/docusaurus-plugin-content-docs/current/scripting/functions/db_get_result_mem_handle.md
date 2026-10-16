@@ -5,7 +5,7 @@ description: Obtém o handle de memória para um conjunto de resultados de banco
 tags: ["sqlite"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7 R1' />
+<VersionWarn version='SA-MP 0.3.7-R1' />
 
 ## Descrição
 

@@ -29,7 +29,7 @@ tags: []
 | [菜单](../functions/CreateMenu)                                                                                                               | 128           |
 | [玩家附加物体](../functions/SetPlayerAttachedObject)                                                                                          | 10            |
 | [玩家变量](../functions/SetPVarInt)                                                                                                           | 800           |
-| [服务器变量 (0.3.7 R2/omp)](../functions/SetSVarInt)                                                                                          | 无限制        |
+| [服务器变量 (0.3.7-R2/omp)](../functions/SetSVarInt)                                                                                          | 无限制        |
 | [角色](../functions/CreateActor) (0.3.7 起)<sup>(4)(5)</sup>                                                                                  | 1000          |
 | [爆炸效果](../functions/CreateExplosion)                                                                                                      | 10            |
 

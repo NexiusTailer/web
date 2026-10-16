@@ -24,7 +24,7 @@ description: Danh sách tất cả các lệnh của Client.
 | /fontsize      | Thay đổi kích thước phông chữ của UI (chat, hộp thoại, v.v.). Kích thước phông chữ hợp lệ là từ -3 đến 5.                                                                                                                                                                                                                        |
 | /ctd           | Lệnh này được thêm vào trong SA-MP 0.3.7 RC2. Nó bật chế độ gỡ lỗi client của mục tiêu camera của người chơi.                                                                                                                                                                                                                    |
 | /rcon          | Liên quan nhiều hơn đến máy chủ hơn là client. Lệnh này được sử dụng để thực thi các lệnh RCON. RCON là hệ thống quản trị tích hợp. RCON là viết tắt của [Remote Control](../server/ControllingServer#using-rcon).                                                                                                               |
-| /hudscalefix   | Lệnh này được thêm vào trong SA-MP 0.3.7 R3. Bật/tắt sửa lỗi tỷ lệ radar, để radar của trò chơi có tỷ lệ tốt hơn trong các độ phân giải màn hình rộng (tức là không còn 'egg of finding'). Lệnh này thiết lập tùy chọn 'nohudscale' trong sa-mp.cfg.                                                                             |
+| /hudscalefix   | Lệnh này được thêm vào trong SA-MP 0.3.7-R3. Bật/tắt sửa lỗi tỷ lệ radar, để radar của trò chơi có tỷ lệ tốt hơn trong các độ phân giải màn hình rộng (tức là không còn 'egg of finding'). Lệnh này thiết lập tùy chọn 'nohudscale' trong sa-mp.cfg.                                                                             |
 
 ## File sa-mp.cfg
 
@@ -42,4 +42,4 @@ description: Danh sách tất cả các lệnh của Client.
 | nonametagstatus | Đọc /nametagstatus.                                                                                                                                                |
 | fontface        | Cho phép bạn thay đổi phông chữ của chat, hộp thoại và bảng điểm. Ví dụ: fontface="Comic Sans MS". Không được hỗ trợ chính thức và có thể gây ra lỗi xung đột.     |
 | fontweight      | Tùy chọn này bật/tắt việc phông chữ chat của bạn có đậm hay không. 0 = ĐẬM (mặc định) và 1 = BÌNH THƯỜNG.                                                          |
-| nohudscale      | Tùy chọn này được thêm vào trong 0.3.7 R3. Xem /hudscalefix.                                                                                                       |
+| nohudscale      | Tùy chọn này được thêm vào trong 0.3.7-R3. Xem /hudscalefix.                                                                                                       |

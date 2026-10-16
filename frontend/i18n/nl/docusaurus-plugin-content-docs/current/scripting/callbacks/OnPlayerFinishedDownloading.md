@@ -5,7 +5,7 @@ description: Deze callback wordt aangeroepen wanneer een speler klaar is met het
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL-R1' />
 
 ## Beschrijving
 

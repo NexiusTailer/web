@@ -5,7 +5,7 @@ description: Magtakda ng server variable na float.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.7 R2' />
+<VersionWarn version='SA-MP 0.3.7-R2' />
 
 ## Description
 

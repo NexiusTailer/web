@@ -5,7 +5,7 @@ description: یک مدل کاراکتر سفارشی جدید برای دانل�
 tags: ["custom skin", "char model"]
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## توضیحات
 

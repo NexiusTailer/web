@@ -5,7 +5,7 @@ description: Dodaje nowy model postaci do pobrania.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Opis
 

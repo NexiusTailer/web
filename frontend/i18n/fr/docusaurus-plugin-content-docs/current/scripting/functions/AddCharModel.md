@@ -5,7 +5,7 @@ description: Ajoute un nouveau modèle de personnage personnalisé à téléchar
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Description
 

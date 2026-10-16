@@ -31,7 +31,7 @@ Esta função não retorna nenhum valor específico.
 | %x | Número hexadecimal |
 | %b | Número binário |
 | %% | Literal '%' |
-| %q | Escape de um texto para SQLite. (Adicionado em 0.3.7 R2) |
+| %q | Escape de um texto para SQLite. (Adicionado em 0.3.7-R2) |
 
 Os valores dos placeholders seguem exatamente a mesma ordem dos parâmetros da chamada, ou seja, `"I am %i years old"` - o `%i` será substituído por uma variável inteira, que é a idade da pessoa.
 

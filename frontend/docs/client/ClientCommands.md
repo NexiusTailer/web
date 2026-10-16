@@ -24,7 +24,7 @@ description: List of all client commands.
 | /fontsize      | Changes the font size of the UI (chat, dialogs etc.). Valid fontsize is -3 to 5.                                                                                                                                                                                                                                                       |
 | /ctd           | This command was added in SA-MP 0.3.7 RC2. It enables client debugging of the player camera target.                                                                                                                                                                                                                                    |
 | /rcon          | More related to the server rather than the client. This command is used to execute RCON commands. RCON is the built-in admin system. RCON stands for [Remote Control](../server/ControllingServer#using-rcon).                                                                                                                         |
-| /hudscalefix   | This command was added in SA-MP 0.3.7 R3. Enables/disables the radar scale fix, so that the game's radar scales better in widescreen resolutions (i.e. no more 'egg of finding'). This sets the sa-mp.cfg 'nohudscale' option.                                                                                                         |
+| /hudscalefix   | This command was added in SA-MP 0.3.7-R3. Enables/disables the radar scale fix, so that the game's radar scales better in widescreen resolutions (i.e. no more 'egg of finding'). This sets the sa-mp.cfg 'nohudscale' option.                                                                                                         |
 
 ## File sa-mp.cfg
 
@@ -42,4 +42,4 @@ description: List of all client commands.
 | nonametagstatus | See /nametagstatus.                                                                                                                                           |
 | fontface        | Allows you to change the font of chat, dialogs and the scoreboard. i.e. fontface="Comic Sans MS". Not officially supported, and may cause problems.           |
 | fontweight      | This option toggles whether your chat font is bold or not. 0 = BOLD (default) and 1 = NORMAL.                                                                 |
-| nohudscale      | This option was added in 0.3.7 R3. See /hudscalefix.                                                                                                          |
+| nohudscale      | This option was added in 0.3.7-R3. See /hudscalefix.                                                                                                          |

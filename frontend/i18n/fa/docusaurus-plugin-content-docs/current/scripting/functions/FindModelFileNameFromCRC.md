@@ -5,7 +5,7 @@ description: پیدا کردن فایل مدل کاستوم اسکین یا شی
 tags: ["custom model", "custom skin", "simple model"]
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## توضیحات
 

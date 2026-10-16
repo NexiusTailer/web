@@ -10,7 +10,7 @@ Hal ini mirip dengan [SVars](servervariablesystem), namun dalam basis per-player
 
 ## Keuntungan
 
-Sistem baru diperkenalkan di SA-MP 0.3a R5 server di update dengan beberapa keuntungan besar dalam membuat array sized MAX_PLAYERS.
+Sistem baru diperkenalkan di SA-MP 0.3a-R5 server di update dengan beberapa keuntungan besar dalam membuat array sized MAX_PLAYERS.
 
 - PVars dapat di bagi/akses keseluruh skrip gamemode dan filterscripts, memudahkan anda untuk memodularisasikan kodingan anda.
 

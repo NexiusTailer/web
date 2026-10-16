@@ -30,7 +30,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 | %x        | Hexadecimalni broj                              |
 | %b        | Binarni broj                                    |
 | %%        | Literal '%'                                     |
-| %q        | Izbjegnite tekst za SQLite. (Dodano u 0.3.7 R2) |
+| %q        | Izbjegnite tekst za SQLite. (Dodano u 0.3.7-R2) |
 
 Vrijednosti rezerviranih mjesta slijede se potpuno istim redoslijedom kao i parametri u pozivu, tj. "Imam %i godina" - `%i` će biti zamijenjena cjelobrojnom varijablom, što je dob osobe.
 

@@ -5,7 +5,7 @@ description: Returns the class of the players custom skin downloaded from the se
 tags: ["player"]
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Description
 

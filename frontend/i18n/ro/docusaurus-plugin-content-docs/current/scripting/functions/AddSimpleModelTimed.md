@@ -5,7 +5,7 @@ description: Adaugă un nou model de obiect simplu personalizat pentru descărca
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Descriere
 

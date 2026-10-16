@@ -10,7 +10,7 @@ Ze lijken op [PVars](perplayervariablesystem), maar zijn niet gekoppeld aan een 
 
 :::warning
 
-Dit systeem is geïntroduceerd in SA-MP 0.3.7 R2-1 en werkt niet in eerdere versies.
+Dit systeem is geïntroduceerd in SA-MP 0.3.7-R2-1 en werkt niet in eerdere versies.
 
 :::
 

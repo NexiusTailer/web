@@ -17,9 +17,9 @@ Acest callback este apelat atunci când clientul unui jucător actualizează/sin
 | new_x          | Noua coordonată X a vehiculului. Acest parametru a fost adăugat în 0.3z. Lasă-l afară dacă folosești o versiune anterioară.                                                           |
 | new_y          | Noua coordonată Y a vehiculului. Acest parametru a fost adăugat în 0.3z. Lasă-l afară dacă folosești o versiune anterioară.                                                           |
 | new_z          | Noua coordonată Z a vehiculului. Acest parametru a fost adăugat în 0.3z. Lasă-l afară dacă folosești o versiune anterioară.                                                           |
-| vel_x          | Noua viteză X a vehiculului. Acest parametru a fost adăugat în 0.3z R4. Lasă-l afară dacă folosești o versiune anterioară.                                                            |
-| vel_y          | Noua viteză X a vehiculului. Acest parametru a fost adăugat în 0.3z R4. Lasă-l afară dacă folosești o versiune anterioară.                                                            |
-| vel_z          | Noua viteză X a vehiculului. Acest parametru a fost adăugat în 0.3z R4. Lasă-l afară dacă folosești o versiune anterioară.                                                            |
+| vel_x          | Noua viteză X a vehiculului. Acest parametru a fost adăugat în 0.3z-R4. Lasă-l afară dacă folosești o versiune anterioară.                                                            |
+| vel_y          | Noua viteză X a vehiculului. Acest parametru a fost adăugat în 0.3z-R4. Lasă-l afară dacă folosești o versiune anterioară.                                                            |
+| vel_z          | Noua viteză X a vehiculului. Acest parametru a fost adăugat în 0.3z-R4. Lasă-l afară dacă folosești o versiune anterioară.                                                            |
 
 ## Returnări
 

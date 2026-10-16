@@ -5,7 +5,7 @@ description: Nagdaragdag ng bagong custom na simpleng object model para sa pag-d
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Description
 

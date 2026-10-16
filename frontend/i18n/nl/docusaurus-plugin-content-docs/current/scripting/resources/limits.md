@@ -29,7 +29,7 @@ tags: []
 | [Menu’s](../functions/CreateMenu)                                                                                                                | 128            |
 | [Attached player objects](../functions/SetPlayerAttachedObject)                                                                                  | 10             |
 | [Player Variables](../functions/SetPVarInt)                                                                                                      | 800            |
-| [Server Variables (0.3.7 R2/omp)](../functions/SetSVarInt)                                                                                       | Onbeperkt      |
+| [Server Variables (0.3.7-R2/omp)](../functions/SetSVarInt)                                                                                       | Onbeperkt      |
 | [Actors](../functions/CreateActor) (sinds 0.3.7)<sup>(4)(5)</sup>                                                                                | 1000           |
 | [Explosies](../functions/CreateExplosion)                                                                                                        | 10             |
 

@@ -5,7 +5,7 @@ description: Adaugă un nou model de caractere personalizat pentru descărcare.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Descriere
 

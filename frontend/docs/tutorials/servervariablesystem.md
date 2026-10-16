@@ -11,7 +11,7 @@ They are similar to [PVars](perplayervariablesystem), but are not tied to a play
 
 :::warning
 
-This system was introduced in SA-MP 0.3.7 R2-1 and will not work in earlier versions!
+This system was introduced in SA-MP 0.3.7-R2-1 and will not work in earlier versions!
 
 :::
 

@@ -46,7 +46,7 @@ public OnGameModeInit()
 :::note
 
 - Actors are designed to just stand somewhere, for example cashiers and bartenders. They can perform animations (once or looping) using ApplyActorAnimation.
-- As of 0.3.7 R2 actors default to being invulnerable.
+- As of 0.3.7-R2 actors default to being invulnerable.
 
 :::
 

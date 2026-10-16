@@ -10,7 +10,7 @@ Sunt similare cu [SVars](servervariablesystem), dar sunt pe bază de jucător. V
 
 ## Avantaje
 
-Noul sistem introdus în serverul SA-MP 0.3a R5 actualizat are câteva avantaje majore față de crearea unei matrice de dimensiuni MAX_PLAYERS.
+Noul sistem introdus în serverul SA-MP 0.3a-R5 actualizat are câteva avantaje majore față de crearea unei matrice de dimensiuni MAX_PLAYERS.
 
 - PVars pot fi partajate / accesate prin scripturi de moduri de joc și scripturi de filtre, ceea ce face mai ușoară modularizarea codului.
 

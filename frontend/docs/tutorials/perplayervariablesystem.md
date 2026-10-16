@@ -10,7 +10,7 @@ They are similar to [SVars](servervariablesystem), but are on a per-player basis
 
 :::warning
 
-This system was introduced in SA-MP 0.3a R5 and will not work in earlier versions!
+This system was introduced in SA-MP 0.3a-R5 and will not work in earlier versions!
 
 :::
 

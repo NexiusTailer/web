@@ -5,7 +5,7 @@ description: 获取通过`db_query`分配的SQLite数据库结果集内存句柄
 tags: ["sqlite"]
 ---
 
-<VersionWarnZH_CN version='SA-MP 0.3.7 R1' />
+<VersionWarnZH_CN version='SA-MP 0.3.7-R1' />
 
 :::warning
 

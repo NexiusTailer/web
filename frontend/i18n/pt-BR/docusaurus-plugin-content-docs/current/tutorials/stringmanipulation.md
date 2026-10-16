@@ -1075,7 +1075,7 @@ Vejamos os diferentes tipos de saída que podem ser usados:
 | `%x` | Número hexadecimal |
 | `%b` | Número binário |
 | `%%` | Literal `'%'` |
-| `%q` | Escape de um texto para SQLite. (_Adicionado em 0.3.7 R2_) |
+| `%q` | Escape de um texto para SQLite. (_Adicionado em 0.3.7-R2_) |
 
 - **Os especificadores de número inteiro - `%i` e `%d`**
 

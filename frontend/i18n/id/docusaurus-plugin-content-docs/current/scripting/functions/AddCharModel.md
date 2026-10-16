@@ -5,7 +5,7 @@ description: Menambah sebuah custom character model untuk didownload.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Deskripsi
 

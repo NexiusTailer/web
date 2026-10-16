@@ -45,7 +45,7 @@ Esta função envia uma mensagem formatada para um jogador específico com uma c
 | %x | Número hexadecimal |
 | %b | Número binário |
 | %% | Literal '%' |
-| %q | Escape de um texto para SQLite. (Adicionado em 0.3.7 R2) |
+| %q | Escape de um texto para SQLite. (Adicionado em 0.3.7-R2) |
 
 ## Exemplos
 

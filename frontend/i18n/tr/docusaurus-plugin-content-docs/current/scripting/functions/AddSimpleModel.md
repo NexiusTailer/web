@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-Bu işlev SA-MP 0.3.DL R1'e eklenmiştir ve önceki sürümlerde çalışmayacaktır!
+Bu işlev SA-MP 0.3.DL-R1'e eklenmiştir ve önceki sürümlerde çalışmayacaktır!
 
 :::
 

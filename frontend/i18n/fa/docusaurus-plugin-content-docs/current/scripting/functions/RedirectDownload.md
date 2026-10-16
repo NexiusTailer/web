@@ -5,7 +5,7 @@ description: هدایت دانلود AddCharModel یا AddSimpleModel بازیک
 tags: ["custom model", "custom skin", "simple model"]
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## توضیحات
 

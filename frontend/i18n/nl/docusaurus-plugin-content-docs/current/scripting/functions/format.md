@@ -32,7 +32,7 @@ Geen specifieke returnwaarde.
 | %x   | Hexadecimaal getal            |
 | %b   | Binair getal                  |
 | %%   | Letterlijk '%'                |
-| %q   | Escape voor SQLite (0.3.7 R2) |
+| %q   | Escape voor SQLite (0.3.7-R2) |
 
 ## Voorbeelden
 

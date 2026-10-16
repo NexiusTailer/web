@@ -5,7 +5,7 @@ description: Maghanap ng umiiral nang custom skin o simple object model file.
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Description
 

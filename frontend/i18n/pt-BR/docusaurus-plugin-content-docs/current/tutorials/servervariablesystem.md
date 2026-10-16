@@ -11,7 +11,7 @@ Eles são semelhantes às [PVars](perplayervariablesystem), mas não estão vinc
 
 :::warning
 
-Este sistema foi introduzido no SA-MP 0.3.7 R2-1 e não funcionará em versões anteriores!
+Este sistema foi introduzido no SA-MP 0.3.7-R2-1 e não funcionará em versões anteriores!
 
 :::
 

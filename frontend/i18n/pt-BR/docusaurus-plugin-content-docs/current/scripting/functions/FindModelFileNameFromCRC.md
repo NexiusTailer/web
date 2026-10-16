@@ -5,7 +5,7 @@ description: Encontra um arquivo de modelo existente de skin customizada ou obje
 tags: ["custom model", "custom skin", "simple model"]
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Descrição
 

@@ -5,7 +5,7 @@ description: 当玩家请求下载自定义模型时触发此回调函数
 tags: ["玩家"]
 ---
 
-<VersionWarnZH_CN name='回调' version='SA-MP 0.3.DL R1' />
+<VersionWarnZH_CN name='回调' version='SA-MP 0.3.DL-R1' />
 
 ## 描述
 

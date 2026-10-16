@@ -4,7 +4,7 @@ descripción: Este callback se llama cuando un jugador solicita por descargas de
 tags: ["player"]
 ---
 
-<VersionWarnES name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarnES name='callback' version='SA-MP 0.3.DL-R1' />
 
 ## Descripción
 

@@ -11,7 +11,7 @@ Sistem ini mirip seperti [PVars](perplayervariablesystem), tetapi tidak terikat 
 
 :::warning
 
-Sistem ini dikenalkan pada SA-MP 0.3.7 R2-1 dan tidak akan bisa berjalan pada versi dibawahnya!
+Sistem ini dikenalkan pada SA-MP 0.3.7-R2-1 dan tidak akan bisa berjalan pada versi dibawahnya!
 
 :::
 

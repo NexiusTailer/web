@@ -30,7 +30,7 @@ tags: []
 | [Menus](../functions/CreateMenu) | 128 |
 | [Attached player objects](../functions/SetPlayerAttachedObject) | 10 |
 | [Player Variables](../functions/SetPVarInt) | 800 |
-| [Server Variables (0.3.7 R2/omp)](../functions/SetSVarInt) | Ilimitado |
+| [Server Variables (0.3.7-R2/omp)](../functions/SetSVarInt) | Ilimitado |
 | [Actors](../functions/CreateActor) (since 0.3.7)<sup>(4)(5)</sup> | 1000 |
 | [Explosions](../functions/CreateExplosion) | 10 |
 

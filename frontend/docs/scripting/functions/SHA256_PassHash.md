@@ -5,7 +5,7 @@ description: Hashes a password using the SHA-256 hashing algorithm.
 tags: ["encryption"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7 R1' />
+<VersionWarn version='SA-MP 0.3.7-R1' />
 
 :::warning
 

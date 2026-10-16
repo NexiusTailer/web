@@ -5,7 +5,7 @@ description: Cette callback est appelée quand un joueur sollicite le téléchar
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL-R1' />
 
 ## Paramètres
 

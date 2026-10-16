@@ -1168,7 +1168,7 @@ Let us look at the different output types that can be used:
 | `%x`             | Număr hexazecimal                                      |
 | `%b`             | Număr binar                                            |
 | `%%`             | Literal `'%'`                                          |
-| `%q`             | Scăpați un text pentru SQLite. (_Adăugat în 0.3.7 R2_) |
+| `%q`             | Scăpați un text pentru SQLite. (_Adăugat în 0.3.7-R2_) |
 
 - ** Specificatorii întregi - `%i` și `%d` **
 

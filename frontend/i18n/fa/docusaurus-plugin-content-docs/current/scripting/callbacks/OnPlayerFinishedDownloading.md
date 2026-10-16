@@ -5,7 +5,7 @@ description: این کالبک زمانی فراخوانده می‌شود که 
 tags: ["player"]
 ---
 
-<VersionWarn name='callback' version='SA-MP 0.3.DL R1' />
+<VersionWarn name='callback' version='SA-MP 0.3.DL-R1' />
 
 ## توضیحات
 

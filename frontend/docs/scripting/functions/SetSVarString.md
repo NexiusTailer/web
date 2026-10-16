@@ -5,7 +5,7 @@ description: Set a string server variable.
 tags: ["server variable", "svar"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7 R2' />
+<VersionWarn version='SA-MP 0.3.7-R2' />
 
 ## Description
 

@@ -5,7 +5,7 @@ description: یه پسورد رو با استفاده از الگوریتم هش
 tags: ["encryption"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7 R1' />
+<VersionWarn version='SA-MP 0.3.7-R1' />
 
 :::warning
 

@@ -5,7 +5,7 @@ description: یه متغیر سرور از نوع float تنظیم می‌کنه
 tags: ["server variable", "svar"]
 ---
 
-<VersionWarn version='SA-MP 0.3.7 R2' />
+<VersionWarn version='SA-MP 0.3.7-R2' />
 
 ## توضیحات
 

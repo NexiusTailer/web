@@ -4,7 +4,7 @@ description: Ajoute un nouveau modèle d'objet simple personnalisé à télécha
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Description
 

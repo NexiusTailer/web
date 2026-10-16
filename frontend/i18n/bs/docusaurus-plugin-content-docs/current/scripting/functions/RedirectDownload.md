@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function was added in SA-MP 0.3.DL R1 and neće raditi u ranijim verzijama!
+This function was added in SA-MP 0.3.DL-R1 and neće raditi u ranijim verzijama!
 
 :::
 

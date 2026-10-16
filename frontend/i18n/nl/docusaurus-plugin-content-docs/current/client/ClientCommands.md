@@ -24,7 +24,7 @@ description: Lijst van alle client commands.
 | /fontsize      | Wijzigt de font size van de UI (chat, dialogs etc.). Geldige `fontsize` is -3 t/m 5.                                                                                                                                                                                                                      |
 | /ctd           | Toegevoegd in SA-MP 0.3.7 RC2. Schakelt client debugging van de player camera target in.                                                                                                                                                                                                                  |
 | /rcon          | Meer serverspecifiek dan client. Wordt gebruikt om RCON commands uit te voeren. RCON is het ingebouwde adminsysteem. RCON staat voor [Remote Control](../server/ControllingServer#rcon-gebruiken).                                                                                                        |
-| /hudscalefix   | Toegevoegd in SA-MP 0.3.7 R3. Schakelt de radar scale fix in/uit, zodat de radar beter schaalt op widescreen resoluties (dus geen 'egg of finding' meer). Stelt de `nohudscale` optie in `sa-mp.cfg` in.                                                                                                  |
+| /hudscalefix   | Toegevoegd in SA-MP 0.3.7-R3. Schakelt de radar scale fix in/uit, zodat de radar beter schaalt op widescreen resoluties (dus geen 'egg of finding' meer). Stelt de `nohudscale` optie in `sa-mp.cfg` in.                                                                                                  |
 
 ## Bestand sa-mp.cfg
 
@@ -42,4 +42,4 @@ description: Lijst van alle client commands.
 | nonametagstatus | Zie /nametagstatus.                                                                                                                                      |
 | fontface        | Wijzigt het lettertype van chat, dialogen en scoreboard. Bijvoorbeeld `fontface="Comic Sans MS"`. Niet officieel ondersteund; kan problemen veroorzaken. |
 | fontweight      | Schakelt vetgedrukte chatlettertypes. 0 = VET (standaard) en 1 = NORMAAL.                                                                                |
-| nohudscale      | Toegevoegd in 0.3.7 R3. Zie /hudscalefix.                                                                                                                |
+| nohudscale      | Toegevoegd in 0.3.7-R3. Zie /hudscalefix.                                                                                                                |

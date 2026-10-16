@@ -48,7 +48,7 @@ public OnGameModeExit()
 :::note
 
 - Aktörler, kasiyerler ve barmenler gibi sadece bir yerde duracak şekilde tasarlanmıştır. ApplyActorAnimation kullanarak (döngü veya bir kez) animasyonlar gerçekleştirebilir.
-- 0.3.7 R2 sürümü ve sonraki sürümlerde aktörler dokunulmaz (hasar almaz) olarak ayarlanabilir.
+- 0.3.7-R2 sürümü ve sonraki sürümlerde aktörler dokunulmaz (hasar almaz) olarak ayarlanabilir.
 
 :::
 

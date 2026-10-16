@@ -44,7 +44,7 @@ This function sends a formatted message to a specific player with a chosen color
 | %x        | Hexadecimal number                            |
 | %b        | Binary number                                 |
 | %%        | Literal '%'                                   |
-| %q        | Escape a text for SQLite. (Added in 0.3.7 R2) |
+| %q        | Escape a text for SQLite. (Added in 0.3.7-R2) |
 
 ## Examples
 

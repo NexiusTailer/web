@@ -5,7 +5,7 @@ description: مدل object ساده سفارشی جدیدی برای دانلو�
 tags: ["custom model", "simple model"]
 ---
 
-<VersionWarnFA version='SA-MP 0.3.DL R1' />
+<VersionWarnFA version='SA-MP 0.3.DL-R1' />
 
 ## توضیحات
 

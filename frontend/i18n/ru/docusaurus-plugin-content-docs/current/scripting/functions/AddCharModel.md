@@ -5,7 +5,7 @@ description: Добавляет новую стороннюю модель (ск
 tags: []
 ---
 
-<VersionWarn version='SA-MP 0.3.DL R1' />
+<VersionWarn version='SA-MP 0.3.DL-R1' />
 
 ## Описание
 

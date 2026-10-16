@@ -52,7 +52,7 @@ public OnGameModeExit()
 :::note
 
 - Aktori su zamišljeni da samo negdje stanu, na primjer blagajnici i barmeni. Oni mogu izvoditi animacije (jednom ili petljom) pomoću ApplyActorAnimation.
-- Od 0.3.7 R2 aktori su zadani da budu neranjivi.
+- Od 0.3.7-R2 aktori su zadani da budu neranjivi.
 
 :::
 

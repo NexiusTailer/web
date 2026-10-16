@@ -24,7 +24,7 @@ descripion: 所有在用戶端可使用的指令表。
 | /fontsize      | 該指令可以更改介面的字體大小，比如聊天訊息欄、對話框等，可使用的大小範圍在 -3 至 5 之間。                                                                                                                      |
 | /ctd           | 該指令在 0.3.7 RC2版本 後可用。該功能可以為你在除錯時，針對鏡頭的目標物來提供幫助。                                                                                                                            |
 | /rcon          | 該指令為控制伺服器端用的指令，此功能可以執行RCON的指令，它相當於一個內建的管理系統，同時也可以在遠端進行操控。詳細可以了解[遠端控制](../server/ControllingServer#using-rcon)                                   |
-| /hudscalefix   | 此指令於 SA-MP 0.3.7 R3 版本中被加入。啟用/禁用雷達地圖比例修正，使遊戲的雷達地圖在寬螢幕解析度下有更好的縮放（不再有"找彩蛋"）。這將設定 sa-mp.cfg 中的 'nohudscale' 選項。                                   |
+| /hudscalefix   | 此指令於 SA-MP 0.3.7-R3 版本中被加入。啟用/禁用雷達地圖比例修正，使遊戲的雷達地圖在寬螢幕解析度下有更好的縮放（不再有"找彩蛋"）。這將設定 sa-mp.cfg 中的 'nohudscale' 選項。                                   |
 
 ## sa-mp.cfg 設定檔
 
@@ -42,4 +42,4 @@ descripion: 所有在用戶端可使用的指令表。
 | nonametagstatus | 此選項於 0.3x 版本中被加入，請查閱指令 /nametagstatus                                                                            |
 | fontface        | 此選項於 0.3.7 版本中被加入。允許您更改聊天、對話框和計分板的字體。例如：fontface="Comic Sans MS" 尚未正式支援，可能會發生錯誤。 |
 | fontweight      | 此選項於 0.3.7 版本中被加入。此選項用於切換聊天字體是否為粗體，預設為粗體（0 = 粗體），正常字體為 1                              |
-| nohudscale      | 此選項於 0.3.7 R3 版本中被加入，請查閱指令 /hudscalefix.                                                                         |
+| nohudscale      | 此選項於 0.3.7-R3 版本中被加入，請查閱指令 /hudscalefix.                                                                         |
