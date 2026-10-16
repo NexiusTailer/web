@@ -44,3 +44,7 @@ Using the camera functions directly after enabling spectator mode doesn't work.
 - SetCameraBehindPlayer: Set a player's camera behind them.
 - GetPlayerCameraPos: Find out where the player's camera is.
 - GetPlayerCameraFrontVector: Get the player's camera front vector
+
+## Related Resources
+
+- [Camera Cut Styles](../resources/cameracutstyles)

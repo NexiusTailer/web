@@ -38,9 +38,3 @@ Les Callbacks ci-dessous sont indirectement ou directement liées à cette Callb
 - [OnGameModeInit](OnGameModeInit) : callback appelée quand le gamemode démarre
 - [OnFilterScriptInit](OnFilterScriptInit) : Appelée lorsqu'un filterscript est chargé.
 - [OnFilterScriptExit](OnFilterScriptExit) : Appelée lorsqu'un filterscript se ferme.
-
-## Fonctions connexes
-
-Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
-
-- GameModeExit : Ferme le gamemode courant.

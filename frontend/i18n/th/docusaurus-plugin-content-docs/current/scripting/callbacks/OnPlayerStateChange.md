@@ -43,6 +43,10 @@ NPC สามารถเรียก Callback นี้ได้
 
 :::
 
+## Related Callbacks
+
+- [OnPlayerInteriorChange](OnPlayerInteriorChange): This callback is called when a player changes interior.
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [GetPlayerState](../functions/GetPlayerState): Get a player's current state.

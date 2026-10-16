@@ -51,6 +51,12 @@ Timer IDs are never used twice. You can use KillTimer() on a timer ID and it won
 
 :::
 
+## Definitions
+
+| Definition    | Value |
+| ------------- | ----- |
+| INVALID_TIMER | 0     |
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - SetTimerEx: Set a timer with parameters.

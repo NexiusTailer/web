@@ -61,3 +61,11 @@ Apenas a FUNÇÃO das teclas pode ser detectada; não as teclas reais. Por exemp
 :::
 
 ## Funções Relacionadas
+
+## Callbacks Relacionadas
+
+- [OnPlayerKeyStateChange](../callbacks/OnPlayerKeyStateChange): Esta callback é chamada quando o estado de qualquer tecla suportada muda (pressionado/solto)
+
+## Recursos relacionados
+
+- [Teclas](../resources/keys)

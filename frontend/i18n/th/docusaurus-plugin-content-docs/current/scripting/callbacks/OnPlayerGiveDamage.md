@@ -65,3 +65,8 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 If you want to prevent certain players from damaging eachother, use SetPlayerTeam.
 
 :::
+
+## Related Callbacks
+
+- [OnPlayerTakeDamage](OnPlayerTakeDamage): This callback is called when a player takes damage.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon.

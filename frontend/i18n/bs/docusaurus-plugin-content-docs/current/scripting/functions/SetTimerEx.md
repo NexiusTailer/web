@@ -67,6 +67,12 @@ Varijable ID-a tajmera trebaju se inicijalizirati na -1 kada mogu kako bi se sma
 
 :::
 
+## Definicije
+
+| Definicija    | Vrijednost |
+| ------------- | ---------- |
+| INVALID_TIMER | 0          |
+
 ## Srodne Funkcije
 
 - [SetTimer](SetTimer): Postavi tajmer.

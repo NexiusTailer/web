@@ -42,3 +42,7 @@ The skill parameter is NOT the weapon ID, it is the skill type. Click here for a
 
 - SetPlayerArmedWeapon: Set a player's armed weapon.
 - GivePlayerWeapon: Give a player a weapon.
+
+## Related Information
+
+- [Weapon Skills](../resources/weaponskills#skill-levels): List of weapon skills that are used to set player's skill level.

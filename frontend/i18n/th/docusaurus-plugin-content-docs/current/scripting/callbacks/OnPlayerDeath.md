@@ -62,6 +62,10 @@ You MUST check whether 'killerid' is valid (not INVALID_PLAYER_ID) before using 
 
 :::
 
+## Related Callbacks
+
+- [OnPlayerSpawn](OnPlayerSpawn): This callback is called when a player spawns.
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [SendDeathMessage](../functions/SendDeathMessage): Add a kill to the death list.

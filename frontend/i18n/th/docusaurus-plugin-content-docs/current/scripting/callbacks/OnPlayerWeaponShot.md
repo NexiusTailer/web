@@ -66,6 +66,10 @@ Known Bug(s):
 
 :::
 
+## Related Callbacks
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage.
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [GetPlayerLastShotVectors](../functions/GetPlayerLastShotVectors): Retrieves the vector of the last shot a player fired.

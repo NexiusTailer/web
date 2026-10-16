@@ -30,3 +30,7 @@ public OnPlayerSpawn(playerid)
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - GivePlayerWeapon: Give a player a weapon.
+
+## Related Resources
+
+- [Weapon States](../resources/weaponstates)

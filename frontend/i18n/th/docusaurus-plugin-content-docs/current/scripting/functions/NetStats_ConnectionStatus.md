@@ -47,3 +47,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 - [IsPlayerConnected](IsPlayerConnected): Check if a player is connected to the server.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.
+
+## Related Resources
+
+- [Connection Status](../resources/connectionstatus)

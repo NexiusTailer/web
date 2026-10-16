@@ -53,3 +53,7 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 - SetVehicleHealth: Set the health of a vehicle.
 - GetPlayerHealth: Find out how much health a player has.
 - GetPlayerArmour: Find out how much armour a player has.
+
+## Related Resources
+
+- [Vehicle Health Values](../resources/vehiclehealth)

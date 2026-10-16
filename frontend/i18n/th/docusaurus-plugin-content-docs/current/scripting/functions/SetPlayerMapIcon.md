@@ -55,3 +55,8 @@ You can only have 100 map icons! Marker type 1 (![](https://assets.open.mp/asset
 
 - [RemovePlayerMapIcon](RemovePlayerMapIcon): Remove a map icon for a player.
 - [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer): Set a player's marker.
+
+## Related Resources
+
+- [Map Icons](../resources/mapicons): A list of map icons.
+- [Map Icon Styles](../resources/mapiconstyles): A list of map icon styles.

@@ -81,3 +81,8 @@ The weaponid will return 37 (flame thrower) from any fire sources (e.g. molotov,
 GetPlayerHealth and GetPlayerArmour will return the old amounts of the player before this callback. Always check if issuerid is valid before using it as an array index.
 
 :::
+
+## Related Callbacks
+
+- [OnPlayerGiveDamage](OnPlayerGiveDamage): This callback is called when a player gives damage.
+- [OnPlayerWeaponShot](OnPlayerWeaponShot): This callback is called when a player fires a weapon.

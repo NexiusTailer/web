@@ -60,6 +60,12 @@ public DisableVehicleAlarm(vehicleid)
 }
 ```
 
+## Definitions
+
+- `VEHICLE_PARAMS_UNSET` (-1)
+- `VEHICLE_PARAMS_OFF` (0)
+- `VEHICLE_PARAMS_ON` (1)
+
 ## บันทึก
 
 :::note

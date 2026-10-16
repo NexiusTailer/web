@@ -42,3 +42,8 @@ public OnGameModeInit()
 - [AddStaticVehicleEx](AddStaticVehicleEx): Add a static vehicle with custom respawn time.
 - [CreateVehicle](CreateVehicle): Create a vehicle.
 - [DestroyVehicle](DestroyVehicle): Destroy a vehicle.
+
+## Related Callbacks
+
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Called when a vehicle respawns.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Called when a vehicle's siren is toggled on/off.

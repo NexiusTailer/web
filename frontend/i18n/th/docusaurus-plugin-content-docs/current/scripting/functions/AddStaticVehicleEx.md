@@ -43,3 +43,8 @@ public OnGameModeInit()
 
 - [AddStaticVehicle](AddStaticVehicle): Add a static vehicle.
 - [CreateVehicle](CreateVehicle): Create a vehicle.
+
+## Related Callbacks
+
+- [OnVehicleSpawn](../callbacks/OnVehicleSpawn): Called when a vehicle respawns.
+- [OnVehicleSirenStateChange](../callbacks/OnVehicleSirenStateChange): Called when a vehicle's siren is toggled on/off.

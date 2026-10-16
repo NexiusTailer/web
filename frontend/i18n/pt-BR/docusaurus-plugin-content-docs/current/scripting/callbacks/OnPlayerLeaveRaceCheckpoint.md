@@ -31,6 +31,14 @@ public OnPlayerLeaveRaceCheckpoint(playerid)
 
 <NoteNPCCallbacks />
 
+## Related Callbacks
+
+The following callbacks might be useful, as they're related to this callback in one way or another.
+
+- [OnPlayerEnterCheckpoint](OnPlayerEnterCheckpoint): This callback is called when a player enters a checkpoint.
+- [OnPlayerLeaveCheckpoint](OnPlayerLeaveCheckpoint): This callback is called when a player leaves a checkpoint.
+- [OnPlayerEnterRaceCheckpoint](OnPlayerEnterRaceCheckpoint): This callback is called when a player enters a race checkpoint.
+
 ## Related Functions
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Create a checkpoint for a player.

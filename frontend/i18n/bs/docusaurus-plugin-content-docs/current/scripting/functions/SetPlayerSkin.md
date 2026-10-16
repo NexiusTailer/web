@@ -98,3 +98,7 @@ Poznati Bug(ovi): Ako je igračeva koža postavljena kada čuči, u vozilu ili i
 
 - [GetPlayerSkin](GetPlayerSkin): Dobij igračev trenutni skin.
 - [SetSpawnInfo](SetSpawnInfo): Postavi postavke spawnovanja za igrača.
+
+## Srodne Resources
+
+- [Skinovi](../resources/skins)

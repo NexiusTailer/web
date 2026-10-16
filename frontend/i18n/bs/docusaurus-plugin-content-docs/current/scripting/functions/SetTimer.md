@@ -51,6 +51,12 @@ ID-ovi tajmera nikada se ne koriste dva puta. Možete koristiti KillTimer () na 
 
 :::
 
+## Definicije
+
+| Definicija    | Vrijednost |
+| ------------- | ---------- |
+| INVALID_TIMER | 0          |
+
 ## Srodne Funkcije
 
 - [SetTimerEx](SetTimerEx): Postavi tajmer sa parametrima.

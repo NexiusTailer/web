@@ -62,3 +62,8 @@ You MUST use ARGB color format, not RGBA like used in client messages etc.
 - Ultimate Creator by Nexius
 - SetObjectMaterialText Editor by RIDE2DAY
 - Fusez's Map Editor by RedFusion
+
+## Related Resources
+
+- [Material Text Sizes](../resources/materialtextsizes)
+- [Material Text Alignments](../resources/materialtextalignment)

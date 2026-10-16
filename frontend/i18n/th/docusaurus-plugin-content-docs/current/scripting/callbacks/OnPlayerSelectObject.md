@@ -49,3 +49,7 @@ public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:f
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [SelectObject](../functions/SelectObject): Select an object.
+
+## Related Resources
+
+- [Select Object Types](../resources/selectobjecttypes)

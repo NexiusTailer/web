@@ -93,6 +93,12 @@ The function to be called must be public. That means it has to be forwarded.
 
 :::
 
+## Definitions
+
+| Definition    | Value |
+| ------------- | ----- |
+| INVALID_TIMER | 0     |
+
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - SetTimer: Set a timer.

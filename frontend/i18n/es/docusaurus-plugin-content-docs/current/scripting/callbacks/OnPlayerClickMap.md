@@ -40,11 +40,3 @@ public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)
 Como dice el nombre del callback, sólo se llama cuando el jugador hace click para marcar el punto y no cuando presiona la tecla. El valor Z devuelto será 0 (inválido) si el área clickeada en el mapa está muy lejos del jugador; usá los plugins MapAndreas o ColAndreas para recibir una coordenada Z más precisa.
 
 :::
-
-## Funciones Relacionadas
-
-Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnPlayerClickMap:
-
-- GetPlayerPos: Obtiene la posicion en el mapa de un jugador.
-- SetPlayerPos: Setea la posicion en el mapa de un jugador.
-- SetPlayerPosFindZ: Cambia la posición en el mapa de un jugador en el punto de colisión más cercano al suelo.

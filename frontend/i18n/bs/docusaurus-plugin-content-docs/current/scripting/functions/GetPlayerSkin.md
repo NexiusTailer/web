@@ -34,3 +34,7 @@ Vraća novi skin nakon što se pozove SetSpawnInfo, ali prije nego što se igra�
 ## Srodne Funkcije
 
 - [SetPlayerSkin](SetPlayerSkin): Postavi skin igraču.
+
+## Srodne Resources
+
+- [Skinovi](../resources/skins)
