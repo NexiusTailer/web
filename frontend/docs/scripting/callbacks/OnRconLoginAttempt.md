@@ -9,11 +9,11 @@ tags: ["rcon", "administration"]
 
 This callback is called when someone attempts to log in to RCON in-game, regardless of whether this attempt is successful or not.
 
-| Name       | Description                                                   |
-| ---------- | ------------------------------------------------------------- |
-| ip[]       | The IP address of the player who attempted to log in to RCON. |
-| password[] | The password used in the login attempt.                       |
-| success    | 0 if the password was incorrect, or 1 if it was correct.      |
+| Name       | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| ip[]       | The IP address of the player who attempted to log in to RCON.    |
+| password[] | The password used in the login attempt.                          |
+| success    | **0** if the password was incorrect, or **1** if it was correct. |
 
 ## Returns
 

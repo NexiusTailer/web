@@ -17,7 +17,7 @@ Gets the number of messages the server has received from the player.
 
 This function returns the number of messages the server has received from the player.
 
-0 is returned if the player is not connected.
+**0** is returned if the player is not connected.
 
 ## Examples
 
@@ -45,4 +45,4 @@ public OnPlayerCommandText(playerid,cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Get the number of network messages the server has received from the player in the last second.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Get a player's packet loss percent.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Get a player's connection status.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP **and port**.

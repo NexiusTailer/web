@@ -17,7 +17,7 @@ Gets a player's network stats and saves them into a string.
 
 ## Returns
 
-This function always returns 1.
+This function always returns **1**.
 
 ## Examples
 
@@ -53,4 +53,4 @@ This function may not return accurate data when used under [OnPlayerDisconnect](
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Get the number of network messages the server has received from the player in the last second.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Get a player's packet loss percent.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Get a player's connection status.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP **and port**.
