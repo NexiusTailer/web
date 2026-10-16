@@ -19,9 +19,9 @@ Provjerava ako je igrač u blizinu određene tačke. Ova izvorna funkcija je br�
 
 ## Returns
 
-true - Igrač je u dometu/blizini točke.
+**true** - Igrač je u dometu/blizini točke.
 
-false - Igrač nije u dometu/blizini točke.
+**false** - Igrač nije u dometu/blizini točke.
 
 ## Primjeri
 

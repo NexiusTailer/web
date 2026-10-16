@@ -82,7 +82,7 @@ Le montant est toujours le maximum de dégâts que l'arme peut faire, même si l
 
 GetPlayerHealth et GetPlayerArmour renverront les anciens montants du joueur avant cette callback.
 
-Vérifiez toujours si `issuerid` est valide avant de l'utiliser comme index de tableau.
+Vérifiez **toujours** si `issuerid` est valide avant de l'utiliser comme index de tableau.
 
 :::
 

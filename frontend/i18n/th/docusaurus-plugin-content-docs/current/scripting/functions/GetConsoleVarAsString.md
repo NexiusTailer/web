@@ -46,7 +46,7 @@ Type 'varlist' in the server console to display a list of available console vari
 
 :::warning
 
-- Using this function with anything other than a string (integer, boolean or float) will cause your server to crash. (Fixed in open.mp)
+- Using this function with anything other than a **string** (integer, boolean or float) will cause your server to crash. (Fixed in open.mp)
 - Using it with a nonexistent console variable will also cause your server to crash. (Fixed in open.mp)
 
 :::

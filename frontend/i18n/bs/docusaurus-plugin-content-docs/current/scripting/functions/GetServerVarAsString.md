@@ -52,7 +52,7 @@ Napiši 'varlist' u server konzoli da prikažeš listu dostupnih server varijabl
 
 :::warning
 
-Korištenje ove funkcije na bilo čemu osim stringa (cijeli broj, bool ili float) ili nepostojeće varijable servera srušit će vaš server! Ovo je bug.
+Korištenje ove funkcije na bilo čemu osim **stringa** (cijeli broj, bool ili float) ili **nepostojeće** varijable servera **srušit** će vaš server! Ovo je bug.
 
 :::
 

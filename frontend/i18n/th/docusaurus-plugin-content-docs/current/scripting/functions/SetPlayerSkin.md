@@ -16,9 +16,9 @@ Set the skin of a player. A player's skin is their character model.
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute. This means the player specified does not exist.
+**0**: The function failed to execute. This means the player specified does not exist.
 
 Note that 'success' is reported even when skin ID is invalid (not 0-311, or 74), but the skin will be set to ID 0 (CJ).
 

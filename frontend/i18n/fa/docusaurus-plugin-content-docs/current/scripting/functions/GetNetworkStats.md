@@ -18,7 +18,7 @@ tags: []
 
 ## مقادیر برگشتی
 
-این تابع همیشه 1 برمیگردونه.
+این تابع همیشه **1** برمیگردونه.
 
 ## مثال‌ها
 
@@ -76,6 +76,6 @@ KBits per second received: 2.7
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): تعداد پیام‌های شبکه‌ای که سرور تو ثانیه گذشته از بازیکن دریافت کرده رو برمیگردونه.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): درصد packet loss بازیکن رو برمیگردونه.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): وضعیت اتصال بازیکن رو برمیگردونه.
-- [NetStats_GetIpPort](NetStats_GetIpPort): IP و پورت بازیکن رو برمیگردونه.
+- [NetStats_GetIpPort](NetStats_GetIpPort): IP **و پورت** بازیکن رو برمیگردونه.
 
 </div>

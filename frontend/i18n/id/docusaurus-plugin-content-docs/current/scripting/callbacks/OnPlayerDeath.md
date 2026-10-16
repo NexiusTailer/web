@@ -17,9 +17,9 @@ Callback ini akan terpanggil ketika pemain mati, entah itu dengan bunuh diri ata
 
 ## Returns
 
-0 - Akan melarang filterscript lain untuk menerima callback ini.
+**0** - Akan melarang filterscript lain untuk menerima callback ini.
 
-1 - Mengindikasikan bahwa callback ini akan dilanjutkan ke filtercript lain.
+**1** - Mengindikasikan bahwa callback ini akan dilanjutkan ke filtercript lain.
 
 Selalu terpanggil pertama di filterscripts.
 
@@ -52,7 +52,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 - Alasan akan mengembalikan nilai 37 (flame thrower) dari jenis api apapun (seperti molotov, 18)
 - Alasan akan mengembalikan nilai 51 dari senjata apapun yang membuat ledakan (seperti RPG, grenade)
 - Anda tidak perlu mengecek apakah killerid valid sebelum menggunakannya di SendDeathMessage. INVALID_PLAYER_ID adalah parameter killer ID yang valid didalam fungsi itu.
-- playerid hanyalah satu-satunya yang dapat memanggil callback. (baik untuk anti fake death)
+- **playerid** hanyalah satu-satunya yang dapat memanggil callback. (baik untuk anti fake death)
 
 :::
 

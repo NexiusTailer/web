@@ -18,7 +18,7 @@ Find a filename matching a pattern.
 
 ## ส่งคืน
 
-true on success, false on failure
+**true** on success, **false** on failure
 
 ## บันทึก
 

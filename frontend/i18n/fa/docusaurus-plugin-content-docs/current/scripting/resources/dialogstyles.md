@@ -39,7 +39,7 @@ public OnDialogResponse( playerid, dialogid, response, listitem, inputtext[ ] )
 
 - **\t** مقداری فاصله ایجاد میکند.
 - **\n** یک خط جدید میسازد.
-- روش Color-Embedding بعد از \n \t ریست نمیشود و رنگ آن عوض نمیشود.
+- روش Color-Embedding بعد از **\n** **\t** ریست نمیشود و رنگ آن عوض نمیشود.
 
 :::
 
@@ -228,7 +228,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 - **\t** مقداری فاصله ایجاد میکند.
 - **\n** یک خط جدید میسازد.
-- روش Color-Embedding بعد از \n یا \t ریست میشود.
+- روش Color-Embedding بعد از **\n** یا **\t** ریست میشود.
 
 :::
 

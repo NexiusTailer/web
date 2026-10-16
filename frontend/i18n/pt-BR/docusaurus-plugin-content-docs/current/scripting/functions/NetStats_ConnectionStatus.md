@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_BytesSent](NetStats_BytesSent): Obtenha a quantidade de informações (em bytes) que o servidor enviou ao jogador.
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Obtenha o número de mensagens de rede que o servidor recebeu do jogador no último segundo.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Obtenha a porcentagem de perda de pacotes de um jogador.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP e a porta de um jogador.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP **e a porta** de um jogador.
 - [IsPlayerConnected](IsPlayerConnected): Verifique se um jogador está conectado ao servidor.
 
 ## Callbacks Relacionadas

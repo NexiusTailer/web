@@ -19,9 +19,9 @@ Checks if a player is in range of a point. This native function is faster than t
 
 ## ส่งคืน
 
-true - The player is in range of the point.
+**true** - The player is in range of the point.
 
-false - The player is not in range of the point.
+**false** - The player is not in range of the point.
 
 ## ตัวอย่าง
 

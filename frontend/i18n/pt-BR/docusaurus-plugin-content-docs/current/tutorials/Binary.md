@@ -238,7 +238,7 @@ Isso foi um pouco fácil, vamos dar uma olhada em um mais difícil:
 00001000 //8
 ```
 
-Olhando os exemplos deve te dar uma boa ideia do que este operador faz. Ele compara dois conjuntos de bits juntos, se ambos compartilham um bit de 1, o resultado terá o mesmo bit ligado. Se eles não compartilham nenhum bit, então o resultado é 0.
+Olhando os exemplos deve te dar uma boa ideia do que este operador faz. Ele compara dois conjuntos de bits juntos, se **ambos** compartilham um bit de 1, o resultado terá o mesmo bit ligado. Se eles não compartilham nenhum bit, então o resultado é 0.
 
 ### OR bit a bit
 

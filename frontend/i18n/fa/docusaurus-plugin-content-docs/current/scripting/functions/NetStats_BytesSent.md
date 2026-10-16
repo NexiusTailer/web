@@ -45,4 +45,4 @@ public OnPlayerCommandText(playerid,cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): تعداد پیام‌های شبکه‌ای که سرور در ثانیه گذشته از بازیکن دریافت کرده را بگیر.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): درصد packet loss بازیکن را بگیر.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): وضعیت اتصال بازیکن را بگیر.
-- [NetStats_GetIpPort](NetStats_GetIpPort): IP و port بازیکن را بگیر.
+- [NetStats_GetIpPort](NetStats_GetIpPort): IP **و port** بازیکن را بگیر.

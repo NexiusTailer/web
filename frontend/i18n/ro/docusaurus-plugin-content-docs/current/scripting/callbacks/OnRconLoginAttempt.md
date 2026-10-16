@@ -9,11 +9,11 @@ tags: []
 
 Acest callback este apelat atunci când cineva încearcă să se conecteze la RCON în joc; succes sau nu.
 
-| Nume       | Descriere                                                  |
-| ---------- | ---------------------------------------------------------- |
-| ip[]       | IP-ul jucătorului care a încercat să se conecteze la RCON. |
-| password[] | Parola folosită pentru a vă autentifica.                   |
-| success    | 0 dacă parola a fost incorectă sau 1 dacă a fost corectă.  |
+| Nume       | Descriere                                                         |
+| ---------- | ----------------------------------------------------------------- |
+| ip[]       | IP-ul jucătorului care a încercat să se conecteze la RCON.        |
+| password[] | Parola folosită pentru a vă autentifica.                          |
+| success    | **0** dacă parola a fost incorectă sau **1** dacă a fost corectă. |
 
 ## Returnări
 

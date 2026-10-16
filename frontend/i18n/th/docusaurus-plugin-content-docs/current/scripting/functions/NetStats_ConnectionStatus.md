@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid,cmdtext[])
 - [NetStats_BytesSent](NetStats_BytesSent): Get the amount of information (in bytes) that the server has sent to the player.
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Get the number of network messages the server has received from the player in the last second.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Get a player's packet loss percent.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP **and port**.
 - [IsPlayerConnected](IsPlayerConnected): Check if a player is connected to the server.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Called when a player connects to the server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Called when a player leaves the server.

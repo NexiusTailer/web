@@ -12,7 +12,7 @@ Cria um arquivo no diretório “tmp”, “temp” ou raiz com nome aleatório 
 
 ## Retornos
 
-O identificador do arquivo temporário. 0 se falhar.
+O identificador do arquivo temporário. **0** se falhar.
 
 ## Exemplos
 

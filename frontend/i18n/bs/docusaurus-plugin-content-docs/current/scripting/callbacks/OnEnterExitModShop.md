@@ -12,7 +12,7 @@ Ovaj callback se poziva kada igrač uđe ili izađe iz mod shopa.
 | Ime        | Deskripcija                                              |
 | ---------- | -------------------------------------------------------- |
 | playerid   | ID igrača koji je ušao ili izašao iz modshop-a           |
-| enterexit  | 1 ako je igrač ušao 0 ako je izašao iz modshop-a         |
+| enterexit  | **1** ako je igrač ušao **0** ako je izašao iz modshop-a |
 | interiorid | ID interijera modshopa u koji igrač ulazi (0 ako izlazi) |
 
 ## Returns

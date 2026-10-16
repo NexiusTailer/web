@@ -25,9 +25,9 @@ Bu fonksiyon aktörlere animasyon uygulatmak için kullanılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1: Fonksiyon başarıyla çalıştı.
+**1**: Fonksiyon başarıyla çalıştı.
 
-0: Fonksiyon çalışamadı. Hatalı aktör ID'si.
+**0**: Fonksiyon çalışamadı. Hatalı aktör ID'si.
 
 ## Örnekler
 

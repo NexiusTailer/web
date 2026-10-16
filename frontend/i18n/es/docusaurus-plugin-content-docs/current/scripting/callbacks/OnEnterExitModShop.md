@@ -11,7 +11,7 @@ Este callback se llama cuando un jugador entra o sale de un taller de modificaci
 | Nombre     | Descripción                                                         |
 | ---------- | ------------------------------------------------------------------- |
 | playerid   | El ID del jugador que entró o salió del taller de modificación.     |
-| enterexit  | 1 si el jugador entró o 0 si salió.                                 |
+| enterexit  | **1** si el jugador entró o **0** si salió.                         |
 | interiorid | El ID del interior del taller al que el jugador entró (0 si salió). |
 
 ## Devoluciones

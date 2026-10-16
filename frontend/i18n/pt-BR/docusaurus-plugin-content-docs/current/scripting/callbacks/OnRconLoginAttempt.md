@@ -9,11 +9,11 @@ tags: []
 
 Essa callback é executada quando algum jogador tenta login na RCON; seja ele bem sucedido ou não.
 
-| Nome       | Descrição                                               |
-| ---------- | ------------------------------------------------------- |
-| ip[]       | IP do jogador que tentou fazer login na RCON.           |
-| password[] | A senha utilizada no login.                             |
-| success    | 0 caso a senha esteja incorreta, 1 caso esteja correta. |
+| Nome       | Descrição                                                       |
+| ---------- | --------------------------------------------------------------- |
+| ip[]       | IP do jogador que tentou fazer login na RCON.                   |
+| password[] | A senha utilizada no login.                                     |
+| success    | **0** caso a senha esteja incorreta, **1** caso esteja correta. |
 
 ## Retornos
 

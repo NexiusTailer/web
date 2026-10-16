@@ -16,16 +16,16 @@ Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierel
 | virtualworld | ID-ul lumii virtuale pentru a face modelul disponibil la. Folosiți -1 pentru toate lumile.                                                           |
 | baseid       | ID-ul modelului de obiect de bază de utilizat (obiectul original de utilizat atunci când descărcarea eșuează).                                       |
 | newid        | ID-ul noului model de obiect a variat de la -1000 la -30000 (29000 de sloturi) pentru a fi utilizat ulterior cu CreateObject sau CreatePlayerObject. |
-| dffname      | Numele fișierului de coliziune a modelului .dff situat în dosarul serverului de modele în mod implicit (setare artpath).                             |
-| txdname      | Numele fișierului de textură model .txd situat în dosarul serverului modele în mod implicit (setare artpath).                                        |
+| dffname      | Numele fișierului de coliziune a modelului **.dff** situat în dosarul serverului de modele în mod implicit (setare artpath).                         |
+| txdname      | Numele fișierului de textură model **.txd** situat în dosarul serverului modele în mod implicit (setare artpath).                                    |
 | timeon       | Ora jocului mondial (ora) va apărea acest obiect                                                                                                     |
 | timeoff      | Timpul de joc mondial (ora) acestui obiect va dispărea                                                                                               |
 
 ## Se intoarce
 
-1: Funcția executată cu succes.
+**1**: Funcția executată cu succes.
 
-0: Funcția nu a putut fi executată.
+**0**: Funcția nu a putut fi executată.
 
 ## Exemple
 
@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-Useartwork trebuie să fie activat mai întâi în setările serverului pentru ca acest lucru să funcționeze Când virtualworld este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
+**Useartwork** trebuie să fie activat mai întâi în setările serverului pentru ca acest lucru să funcționeze Când virtualworld este setat, modelele vor fi descărcate odată ce jucătorul intră în lumea specifică
 
 :::
 

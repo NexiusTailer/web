@@ -46,7 +46,7 @@ Upišite 'varlist' u konzolu servera da biste prikazali listu dostupnih console 
 
 :::warning
 
-Korištenje ove funkcije s bilo čim drugim osim stringom (integerom, booleanom ili floatom) će uzrokovati pad vašeg servera. Korištenje s nepostojećom console varijablom također će uzrokovati pad vašeg servera.
+Korištenje ove funkcije s bilo čim drugim osim **stringom** (integerom, booleanom ili floatom) će uzrokovati pad vašeg servera. Korištenje s nepostojećom console varijablom također će uzrokovati pad vašeg servera.
 
 :::
 

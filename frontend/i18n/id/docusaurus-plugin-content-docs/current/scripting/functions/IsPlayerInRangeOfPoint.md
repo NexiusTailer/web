@@ -19,9 +19,9 @@ Memeriksa apakah pemain berada dalam jangkauan suatu titik. Fungsi asalnya lebih
 
 ## Returns
 
-true - Pemain berada didalam titik jangkauan.
+**true** - Pemain berada didalam titik jangkauan.
 
-false - Pemain tidak berada didalam titik jangkauan.
+**false** - Pemain tidak berada didalam titik jangkauan.
 
 ## Contoh
 

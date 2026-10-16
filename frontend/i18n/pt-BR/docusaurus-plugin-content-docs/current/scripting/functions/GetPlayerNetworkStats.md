@@ -18,7 +18,7 @@ Obtém as estatísticas de rede de um jogador e as salva em uma string.
 
 ## Retornos
 
-Esta função sempre retorna 1.
+Esta função sempre retorna **1**.
 
 ## Exemplos
 
@@ -53,4 +53,4 @@ Esta função pode não retornar dados precisos quando usada em [OnPlayerDisconn
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Obtenha o número de mensagens de rede que o servidor recebeu do jogador no último segundo.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Obtenha a porcentagem de perda de pacotes de um jogador.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Obtenha o status de conexão de um jogador.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP e a porta de um jogador.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP **e a porta** de um jogador.

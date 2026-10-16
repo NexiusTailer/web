@@ -48,7 +48,7 @@ Digite 'varlist' no console do servidor para exibir uma lista de variáveis de c
 
 :::warning
 
-- Usar esta função com qualquer coisa que não seja uma string (inteira, booleana ou flutuante) fará com que seu servidor trave. (Corrigido em open.mp)
+- Usar esta função com qualquer coisa que não seja uma **string** (inteira, booleana ou flutuante) fará com que seu servidor trave. (Corrigido em open.mp)
 - Usá-lo com uma variável de console inexistente também fará com que seu servidor trave. (Corrigido em open.mp)
 
 :::

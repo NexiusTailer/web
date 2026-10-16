@@ -17,9 +17,9 @@ Apelat atunci când un jucător dă dublu clic pe un jucător de pe scoreboard.
 
 ## Returnări
 
-1 - Va împiedica alte filterscript-uri să primească acest callback.
+**1** - Va împiedica alte filterscript-uri să primească acest callback.
 
-0 - Indică faptul că acest callback va fi transmis următorului filterscript.
+**0** - Indică faptul că acest callback va fi transmis următorului filterscript.
 
 Este întotdeauna numit primul în filterscript.
 

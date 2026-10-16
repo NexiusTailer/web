@@ -15,14 +15,14 @@ Adaugă un nou model de caractere personalizat pentru descărcare. Fișierele mo
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | ID-ul modelului de bază de bază de utilizat (comportamentul caracterului și caracterul original de utilizat atunci când descărcarea eșuează) |
 | newid   | Noul ID al modelului skin a variat între 20000 și 30000 (10000 sloturi) pentru a fi utilizat ulterior cu SetPlayerSkin                       |
-| dffname | Numele fișierului de coliziune a modelului .dff situat în dosarul serverului de modele în mod implicit (setare artpath).                     |
-| txdname | Numele fișierului de textură model .txd situat în dosarul serverului modele în mod implicit (setare artpath).                                |
+| dffname | Numele fișierului de coliziune a modelului **.dff** situat în dosarul serverului de modele în mod implicit (setare artpath).                 |
+| txdname | Numele fișierului de textură model **.txd** situat în dosarul serverului modele în mod implicit (setare artpath).                            |
 
 ## Se intoarce
 
-1: Funcția executată cu succes.
+**1**: Funcția executată cu succes.
 
-0: Funcția nu a putut fi executată.
+**0**: Funcția nu a putut fi executată.
 
 ## Exemple
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork trebuie activat mai întâi în setările serverului pentru ca acest lucru să funcționeze
+**useartwork** trebuie activat mai întâi în setările serverului pentru ca acest lucru să funcționeze
 
 :::
 
