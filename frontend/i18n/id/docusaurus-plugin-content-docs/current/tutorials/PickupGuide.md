@@ -7,7 +7,7 @@ Tutorial singkat yang menjelaskan cara menggunakan pickups.
 
 ## Pengdeklarasian pickupid
 
-Hal pertama kali yang harus dikerjakan saat membuat pickups adalah membuat sebuah tempat untuk menyimpan ID nya. Hal ini dapat dibuat didalam sebuah variabel global supaya nilainya dapat di tetapkan pada saat anda membuat pickup dan membaca nilai pickup, memanggil callback dengan nilai ID pickup tersebut. Untuk contohnya kita akan menggunakan contoh dengan nama "gMyPickup".
+Hal pertama kali yang harus dikerjakan saat membuat pickups adalah membuat sebuah tempat untuk menyimpan ID nya. Hal ini dapat dibuat didalam sebuah variabel global supaya nilainya dapat di tetapkan pada saat anda membuat pickup dan membaca nilai pickup, memanggil callback dengan nilai ID pickup tersebut. Untuk contohnya kita akan menggunakan contoh dengan nama `gMyPickup`.
 
 ```c
 new gMyPickup;
@@ -38,7 +38,7 @@ Pada akhirnya kita perlu sebuah [Type](../scripting/resources/pickuptypes) untuk
 
 Pickups pada umumnya dibuat saat skrip berjalan, di [OnGameModeInit](../scripting/callbacks/OnGameModeInit) atau [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) tergantung pada tipe skripnya, namun semuanya dapat berjalan di function apa saja (untuk contohnya anda bisa membuat skrip weapon drop pada saat `OnPlayerDeath` untuk membuat weapon pickups).
 
-jadi ini adalah code untuk membuat pickup kita, dan menyimpan ID nya di 'gMyPickup':
+jadi ini adalah code untuk membuat pickup kita, dan menyimpan ID nya di `gMyPickup`:
 
 ```c
 gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);

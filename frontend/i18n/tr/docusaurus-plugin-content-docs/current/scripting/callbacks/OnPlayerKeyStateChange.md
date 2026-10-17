@@ -58,7 +58,7 @@ Bir oyuncunun ATEŞ ETME düğmesine bastığını tespit etmek istediğinizi va
 if (newkeys == KEY_FIRE)
 ```
 
-Bu kod testinizde bile işe yarayabilir, ancak bu yanlış ve testiniz yetersiz. Çömelmeyi ve ateşe basmayı deneyin - kodunuz anında çalışmayı durduracaktır. Neden? "newkeys" artık "KEY_FIRE" ile aynı olmadığından, "KEY_CROUCH" İLE BİRLEŞTİRİLEN "KEY_FIRE" ile aynıdır.
+Bu kod testinizde bile işe yarayabilir, ancak bu yanlış ve testiniz yetersiz. Çömelmeyi ve ateşe basmayı deneyin - kodunuz anında çalışmayı durduracaktır. Neden? `newkeys` artık `KEY_FIRE` ile aynı olmadığından, `KEY_CROUCH` İLE BİRLEŞTİRİLEN `KEY_FIRE` ile aynıdır.
 
 ### Tuş nasıl kontrol edilir
 
@@ -74,7 +74,7 @@ Tekli <strong>&</strong> 'nin doğru olduğunu unutmayın - bu, iki ve işareti 
 
 ### Basılan bir tuş nasıl kontrol edilir
 
-Burası "oldkeys" in devreye girdiği yerdir. Bir tuşa yeni basılmış olup olmadığını kontrol etmek için önce "yeni tuşlar" olarak ayarlanıp ayarlanmadığını kontrol etmeniz gerekir - yani basılı tutulduğu anlamına gelir ve sonra "oldkeys" de OLMADIĞINI kontrol edin - yani sadece tutuldu. Aşağıdaki kod bunu yapar:
+Burası `oldkeys` in devreye girdiği yerdir. Bir tuşa yeni basılmış olup olmadığını kontrol etmek için önce "yeni tuşlar" olarak ayarlanıp ayarlanmadığını kontrol etmeniz gerekir - yani basılı tutulduğu anlamına gelir ve sonra `oldkeys` de OLMADIĞINI kontrol edin - yani sadece tutuldu. Aşağıdaki kod bunu yapar:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
@@ -104,13 +104,13 @@ Ancak, İLK ateşe bastığında ve çömeldiklerinde tespit etmek istiyorsanız
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Neden olmasın? Çünkü `OnPlayerKeyStateChange`, tek bir tuş her değiştiğinde çağrılır. Böylece "KEY_FIRE" tuşuna basarlar - `OnPlayerKeyStateChange`, "oldkeys" değil "KEY_FIRE" ile çağrılır, sonra "KEY_CROUCH" tuşuna basarlar - `OnPlayerKeyStateChange`, "KEY_CROUCH" ve "KEY_FIRE" ile çağrılır "newkeys", ancak " `KEY_FIRE` "zaten basıldığı için artık "oldkeys"de bulunuyor, bu nedenle (`oldkeys` & `KEY_FIRE`) başarısız olacaktır. Neyse ki çözüm çok basittir (aslında orijinal koddan daha basit):
+Neden olmasın? Çünkü `OnPlayerKeyStateChange`, tek bir tuş her değiştiğinde çağrılır. Böylece `KEY_FIRE` tuşuna basarlar - `OnPlayerKeyStateChange`, `oldkeys` değil `KEY_FIRE` ile çağrılır, sonra `KEY_CROUCH` tuşuna basarlar - `OnPlayerKeyStateChange`, `KEY_CROUCH` ve `KEY_FIRE` ile çağrılır `newkeys`, ancak " `KEY_FIRE` "zaten basıldığı için artık `oldkeys`de bulunuyor, bu nedenle (`oldkeys` & `KEY_FIRE`) başarısız olacaktır. Neyse ki çözüm çok basittir (aslında orijinal koddan daha basit):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-Bu karmaşık görünebilir, ancak her iki tuşun da "newkeys" olarak ayarlandığını ve her iki tuşun da "oldkeys" olarak ayarlanıp ayarlanmadığını kontrol eder, eğer bunlardan biri "oldkeys" olarak ayarlanmışsa, her ikisi de önemli değildir. Tüm bunlar tanımlarla büyük ölçüde basitleştirilebilir.
+Bu karmaşık görünebilir, ancak her iki tuşun da `newkeys` olarak ayarlandığını ve her iki tuşun da `oldkeys` olarak ayarlanıp ayarlanmadığını kontrol eder, eğer bunlardan biri `oldkeys` olarak ayarlanmışsa, her ikisi de önemli değildir. Tüm bunlar tanımlarla büyük ölçüde basitleştirilebilir.
 
 ## Basitleştirme
 

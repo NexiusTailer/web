@@ -106,7 +106,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 
 :::note
 
-Vehicles must be respawned for the 'objective' to be removed.
+Vehicles must be respawned for the `objective` to be removed.
 
 :::
 

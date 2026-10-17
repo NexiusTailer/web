@@ -7,7 +7,7 @@ sidebar_label: راهنمای Pickup
 
 ## تعریف pickupid
 
-اولین کاری که هنگام ایجاد pickup ها انجام می‌شود، ایجاد مکانی برای ذخیره ID آنها است. این کار در متغیر سراسری انجام می‌شود تا بتواند هنگام ایجاد pickup تنظیم و هنگام برداشتن pickup خوانده شود، و callback ای با ID pickup که برداشته‌اید صدا زده شود. برای این مثال از نام "gMyPickup" استفاده خواهیم کرد.
+اولین کاری که هنگام ایجاد pickup ها انجام می‌شود، ایجاد مکانی برای ذخیره ID آنها است. این کار در متغیر سراسری انجام می‌شود تا بتواند هنگام ایجاد pickup تنظیم و هنگام برداشتن pickup خوانده شود، و callback ای با ID pickup که برداشته‌اید صدا زده شود. برای این مثال از نام `gMyPickup` استفاده خواهیم کرد.
 
 ```pawn
 new gMyPickup;
@@ -38,7 +38,7 @@ new gMyPickup;
 
 Pickup ها معمولاً هنگام شروع اسکریپت، در [OnGameModeInit](../scripting/callbacks/OnGameModeInit) یا [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) بسته به نوع اسکریپت ایجاد می‌شوند، هرچند می‌تواند در هر تابعی باشد (مثلاً می‌توانید یک اسکریپت weapon drop بسازید که از `OnPlayerDeath` برای ایجاد weapon pickup استفاده می‌کند).
 
-پس در اینجا کدی برای ایجاد pickup ما و ذخیره ID در 'gMyPickup' آورده شده:
+پس در اینجا کدی برای ایجاد pickup ما و ذخیره ID در `gMyPickup` آورده شده:
 
 ```pawn
 gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);

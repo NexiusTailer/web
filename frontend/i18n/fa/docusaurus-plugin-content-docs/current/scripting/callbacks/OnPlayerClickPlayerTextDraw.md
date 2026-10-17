@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-وقتی بازیکن ESC را فشار می‌دهد تا انتخاب textdraw را لغو کند، [OnPlayerClickTextDraw](OnPlayerClickTextDraw) با شناسه textdraw برابر 'INVALID_TEXT_DRAW' فراخوانده می‌شود. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) نیز فراخوانده نخواهد شد.
+وقتی بازیکن ESC را فشار می‌دهد تا انتخاب textdraw را لغو کند، [OnPlayerClickTextDraw](OnPlayerClickTextDraw) با شناسه textdraw برابر `INVALID_TEXT_DRAW` فراخوانده می‌شود. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) نیز فراخوانده نخواهد شد.
 
 :::
 

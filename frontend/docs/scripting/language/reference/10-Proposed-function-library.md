@@ -86,13 +86,13 @@ argument list (see page 80).
 | --------- | ----------------------------------------------------------------------------------------------- | ------------------------------------: |
 | Syntax    | `swapchars(c)`                                                                                  |                                       |
 |           | c                                                                                               | The value for which to swap the bytes |
-| Returns   | A value where the bytes in parameter "c" are swapped (the lowest byte becomes the highest byte) |                                       |
+| Returns   | A value where the bytes in parameter `c` are swapped (the lowest byte becomes the highest byte) |                                       |
 
 | tolower  |                                                                                                                                                      |       Convert a character to lower case |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
 | Syntax   | `tolower(c)`                                                                                                                                         |                                         |
 |          | c                                                                                                                                                    | The character to convert to lower case. |
-| Returns  | The upper case variant of the input character, if one exists, or the unchanged character code of “c” if the letter “c” has no lower case equivalent. |                                         |
+| Returns  | The upper case variant of the input character, if one exists, or the unchanged character code of `c` if the letter `c` has no lower case equivalent. |                                         |
 | Notes:   | Support for accented characters is platform-dependent                                                                                                |                                         |
 | See also | `toupper`                                                                                                                                            |                                         |
 
@@ -100,7 +100,7 @@ argument list (see page 80).
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
 | Syntax   | `toupper(c)`                                                                                                                                         |                                         |
 |          | c                                                                                                                                                    | The character to convert to upper case. |
-| Returns  | The lower case variant of the input character, if one exists, or the unchanged character code of “c” if the letter “c” has no upper case equivalent. |                                         |
+| Returns  | The lower case variant of the input character, if one exists, or the unchanged character code of `c` if the letter `c` has no upper case equivalent. |                                         |
 | Notes:   | Support for accented characters is platform-dependent                                                                                                |                                         |
 | See also | `tolower`                                                                                                                                            |                                         |
 
@@ -111,7 +111,7 @@ routines maintain a list of these name/value pairs that is shared among all abst
 machines. The property list is therefore a way for concurrent abstract machines
 to exchange information.
 
-All “property maintenance” functions have an optional “id” parameter. You
+All “property maintenance” functions have an optional `id` parameter. You
 can use this parameter to indicate which abstract machine the property belongs
 to. (A host application that supports concurrent abstract machines will usually
 provide each abstract machine with a unique id.) When querying (or deleting)
@@ -124,7 +124,7 @@ of an object) to a name of your choosing. The value-based interface allows you
 to attach a string to a number. The difference between the two is basically the
 search key versus the output parameter.
 
-All property maintenance functions have a “name” and a “value” parameter.
+All property maintenance functions have a `name` and a `value` parameter.
 Only one of this pair must be filled in. When you give the value, the getprop-
 erty function stores the result in the string argument and the `setproperty`
 function reads the string to store from the string argument.

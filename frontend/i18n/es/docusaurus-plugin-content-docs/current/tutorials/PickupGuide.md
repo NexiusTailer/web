@@ -7,7 +7,7 @@ Un breve tutorial que describe cómo usar pickups.
 
 ## Definir el pickup
 
-Lo primero que se debe hacer al crear pickup es crear su identificación. Esto se hará en una variable global. Para este ejemplo usaremos el nombre "gMiPickup".
+Lo primero que se debe hacer al crear pickup es crear su identificación. Esto se hará en una variable global. Para este ejemplo usaremos el nombre `gMiPickup`.
 
 ```c
 new gMiPickup;
@@ -38,7 +38,7 @@ Finalmente, necesitamos un [Tipo](../scripting/resources/pickuptypes) para la pi
 
 Las pickups se crean más comúnmente cuando se inicia el script, en [OnGameModeInit](../scripting/callbacks/OnGameModeInit) o en [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) dependiendo del tipo de la script, también se puede ir en cualquier función (por ejemplo, podría crear un script de deja los armas del jugardor, eso se usaría `OnPlayerDeath` para crear pickup de armas).
 
-Aquí hacemos la pickup en la variable 'gMiPickup':
+Aquí hacemos la pickup en la variable `gMiPickup`:
 
 ```c
 gMiPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);

@@ -164,7 +164,7 @@ Los parámetros pueden contener diferentes valores, según el estilo del diálog
 
 :::tip
 
-Es apropiado usar la sentencia 'switch' para ir cambiando entre los diferentes ID's de diálogos, si tenés muchos.
+Es apropiado usar la sentencia `switch` para ir cambiando entre los diferentes ID's de diálogos, si tenés muchos.
 
 :::
 

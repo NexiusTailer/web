@@ -106,21 +106,21 @@ Variáveis devem ser declaradas antes de serem usadas em qualquer expressão. A 
 
 O nome `getvalue` é seguido por parênteses porque o valor retornado é armazenado em uma variável. Normalmente os argumentos da função apareceriam entre os parênteses, mas `getvalue` (neste programa) não recebe parâmetros explícitos. Se você não atribuir o resultado de uma função a uma variável nem o usar em outra expressão, os parênteses são opcionais —como acontece com `print` e `printf`. Você pode mantê-los se preferir, mas não é necessário.
 
-Loop instructions, like “while”, repeat a single instruction as long as the loop condition (the expression between parentheses) is “true”. One can execute multiple instructions in a loop by grouping them in a compound statement. The if–else instruction has one instruction for the “true” clause and one for the “false”.
+Loop instructions, like `while`, repeat a single instruction as long as the loop condition (the expression between parentheses) is “true”. One can execute multiple instructions in a loop by grouping them in a compound statement. The if–else instruction has one instruction for the “true” clause and one for the “false”.
 
 Observe that some statements, like while and if–else, contain (or “fold around”) another instruction —in the case of if–else even two other instructions. The complete bundle is, again, a single instruction. That is:
 
-- the assignment statements “a = a - b” below the if and “b = b - a” below the else are statements;
+- the assignment statements `a = a - b` below the if and `b = b - a` below the else are statements;
 - the if–else statement folds around these two assignment statements and forms a single statement of itself;
 - the while statement folds around the if–else statement and forms, again, a single statement.
 
 It is common to make the nesting of the statements explicit by indenting any sub-statements below a statement in the source text. In the “Greatest Common Divisor” example, the left margin indent increases by four space characters after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both `printf` invocations and the while loop, have the same indentation.
 
-The loop condition for the while loop is “(a != b)”; the symbol != is the “not equal to” operator. That is, the if–else instruction is repeated until “a” equals “b”. It is good practice to indent the instructions that run under control of another statement, as is done in the preceding example.
+The loop condition for the while loop is `(a != b)`; the symbol != is the “not equal to” operator. That is, the if–else instruction is repeated until `a` equals `b`. It is good practice to indent the instructions that run under control of another statement, as is done in the preceding example.
 
 ---
 
-The call to `printf`, near the bottom of the example, differs from the `print` call right below the opening brace (“\{”). The “f” in `printf` stands for “formatted”, which means that the function can format and print numeric values and other data (in a user-specified format), as well as literal text. The %d symbol in the string is a token that indicates the position and the format that the subsequent argument to function `printf` should be printed. At run time, the token %d is replaced by the value of variable “a” (the second argument of `printf`).
+The call to `printf`, near the bottom of the example, differs from the `print` call right below the opening brace (“\{”). The “f” in `printf` stands for “formatted”, which means that the function can format and print numeric values and other data (in a user-specified format), as well as literal text. The %d symbol in the string is a token that indicates the position and the format that the subsequent argument to function `printf` should be printed. At run time, the token %d is replaced by the value of variable `a` (the second argument of `printf`).
 
 A função `print` imprime apenas texto e é mais rápida do que `printf`. Se quiser exibir um caractere “%” literal, use `print` ou duplique o símbolo ao usar `printf`. Ou seja:
 
@@ -402,7 +402,7 @@ The program uses the value 1.8 for the quotient 9/₅. When rational number supp
 
 The only other non-trivial change from earlier programs is that the format string for the `printf` function now has variable placeholders denoted with “%r” instead of “%d”. The placeholder %r prints a rational number at the position; %d is only for integers (“whole numbers”).
 
-I used the include file “rational” rather than “float” or “fixed” in an attempt to make the example program portable. If you know that the host application supports floating point arithmetic, it may be more convenient to “#include” the definitions from the file float and use the tag Float: instead of Rational —when doing so, you should also replace %r by %f in the call to `printf`. For details on fixed point and floating point support, please see the application notes “Fixed Point Support Library” and “Floating Point Support Library” that are available separately.
+I used the include file “rational” rather than “float” or “fixed” in an attempt to make the example program portable. If you know that the host application supports floating point arithmetic, it may be more convenient to `#include` the definitions from the file float and use the tag Float: instead of Rational —when doing so, you should also replace %r by %f in the call to `printf`. For details on fixed point and floating point support, please see the application notes “Fixed Point Support Library” and “Floating Point Support Library” that are available separately.
 
 ### • Strings
 
@@ -626,7 +626,7 @@ Immediately at the top of function main, a new array variable is declared with t
 
 Further in main are two loops. The for loop reads strings and priority values from the console and inserts them in a queue. The while loop below that extracts element by element from the queue and prints the information on the screen. The point to note, is that the for loop stores both the string and the priority number (an integer) in the same variable msg; indeed, function main declares only a single variable. Function `getstring` stores the message text that you type starting at array msg[text] while the priority value is stored (by an assignment a few lines lower) in msg[priority]. The `printf` function in the while loop reads the string and the value from those positions as well.
 
-At the same time, the msg array is an entity on itself: it is passed in its entirety to function insert. That function, near the end, says “queue[queueitems] = item”, where item is an array with size message and queue is a two-dimensional array that holds queuesize elements of size message. The declaration of queue and queuesize are just above function insert.
+At the same time, the msg array is an entity on itself: it is passed in its entirety to function insert. That function, near the end, says `queue[queueitems] = item`, where item is an array with size message and queue is a two-dimensional array that holds queuesize elements of size message. The declaration of queue and queuesize are just above function insert.
 
 The example implements a “priority queue”. You can insert a number of messages into the queue and when these messages all have the same priority, they are extracted from the queue in the same order. However, when the messages have different priorities, the one with the highest priority comes out first. The “intelligence” for this operation is inside function insert: it first determines the position of the new message to add, then moves a few messages one position upward to make space for the new message. Function extract simply always retrieves the first element of the queue and shifts all remaining elements down by one position.
 
@@ -634,7 +634,7 @@ Note that both functions insert and extract work on two shared variables, queue 
 
 ---
 
-Function extract returns the messages with the highest priority via its function argument item. That is, it changes its function argument by copying the first element of the queue array into item. Function insert copies in the other direction and it does not change its function argument item. In such a case, it is advised to mark the function argument as “const”. This helps the pawn parser to both check for errors and to generate better (more compact, quicker) code.
+Function extract returns the messages with the highest priority via its function argument item. That is, it changes its function argument by copying the first element of the queue array into item. Function insert copies in the other direction and it does not change its function argument item. In such a case, it is advised to mark the function argument as `const`. This helps the pawn parser to both check for errors and to generate better (more compact, quicker) code.
 
 A final remark on this latest sample is the call to `getstring` in function main: note how the parameters are attributed with a description. The first parameter is labeled “.string”, the second “.maxlength” and the third “.pack”. Function `getstring` receives “named parameters” rather than positional parameters. The order in which named parameters are listed is not important. Named parameters are convenient in specifying —and deciphering— long parameter lists.
 
@@ -899,7 +899,7 @@ O primeiro ponto curioso em `rpnparse.inc` é a declaração `enum`, na qual um 
 
 ---
 
-If you know C/C⁺⁺ or Java, you may want to look at the switch statement. The switch statement differs in a number of ways from the other languages that provide it. The cases are not fall-through, for example, which in turn means that the break statement for the case EndOfExpr breaks out of the enclosing loop, instead of out of the switch. On the top of the for loop in function rpncalc, you will find the instruction “field = gettoken(string, index)”. As already exemplified in the wcount.p (“word count”) program on page 19, functions may return arrays. It gets more interesting for a similar line in function gettoken: `field[t_word] = word` where word is an array of 20 cells and field is an array of 22 cells. However, as the t_word enumeration field is declared as having a size of 20 cells, “field[t_word]” is considered a sub-array of 20 cells, precisely matching the array size of word.
+If you know C/C⁺⁺ or Java, you may want to look at the switch statement. The switch statement differs in a number of ways from the other languages that provide it. The cases are not fall-through, for example, which in turn means that the break statement for the case EndOfExpr breaks out of the enclosing loop, instead of out of the switch. On the top of the for loop in function rpncalc, you will find the instruction “field = gettoken(string, index)”. As already exemplified in the wcount.p (“word count”) program on page 19, functions may return arrays. It gets more interesting for a similar line in function gettoken: `field[t_word] = word` where word is an array of 20 cells and field is an array of 22 cells. However, as the t_word enumeration field is declared as having a size of 20 cells, `field[t_word]` is considered a sub-array of 20 cells, precisely matching the array size of word.
 
 Listing: strtok.inc
 
@@ -977,7 +977,7 @@ clearstack()
 
 ---
 
-The file stack.inc includes the file rational again. This is technically not necessary (rpnparse.inc already included the definitions for rational number support), but it does not do any harm either and, for the sake of code re-use, it is better to make any file include the definitions of the libraries that it depends on. Notice how the two global variables stack and stackidx are declared as “static” variables; using the keyword static instead of new. Doing this makes the global variables “visible” in that file only. For all other files in a larger project, the symbols stack and stackidx are invisible and they cannot (accidentally) modify the variables. It also allows the other modules to declare their own private variables with these names, so it avoids name clashing.
+The file stack.inc includes the file rational again. This is technically not necessary (rpnparse.inc already included the definitions for rational number support), but it does not do any harm either and, for the sake of code re-use, it is better to make any file include the definitions of the libraries that it depends on. Notice how the two global variables stack and stackidx are declared as `static` variables; using the keyword static instead of new. Doing this makes the global variables “visible” in that file only. For all other files in a larger project, the symbols stack and stackidx are invisible and they cannot (accidentally) modify the variables. It also allows the other modules to declare their own private variables with these names, so it avoids name clashing.
 
 Embora a calculadora RPN continue sendo um programa pequeno, estruturamos o código como se fosse maior para demonstrar vários elementos da linguagem. Em um cenário real, poderíamos implementá-la de maneira mais compacta.
 
@@ -1532,7 +1532,7 @@ The format of the XML file created by “.Net” developer products is documente
 
 | name       | info                                                                                                                                                                                                                               |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| attribute  | Attributes for a function, such as “native” or “stock”.                                                                                                                                                                            |
+| attribute  | Attributes for a function, such as `native` or `stock`.                                                                                                                                                                            |
 | automaton  | The automaton that the function belongs to (if any).                                                                                                                                                                               |
 | dependency | The names of the symbols (other functions, global variables and/global constants) that the function requires. If desired, a call tree can be constructed from the dependencies.                                                    |
 | param      | Function parameters. When you add a parameter description in a documentation comment, this description is combined with the auto-generated content for the parameter.                                                              |

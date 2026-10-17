@@ -72,7 +72,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Cuando un jugador presiona ESC para cancelar la selección de un textdraw, `OnPlayerClickTextDraw` es llamado con un textdraw ID 'INVALID_TEXT_DRAW'. En estos casos, `OnPlayerClickPlayerTextDraw` no se llamará.
+Cuando un jugador presiona ESC para cancelar la selección de un textdraw, `OnPlayerClickTextDraw` es llamado con un textdraw ID `INVALID_TEXT_DRAW`. En estos casos, `OnPlayerClickPlayerTextDraw` no se llamará.
 
 :::
 

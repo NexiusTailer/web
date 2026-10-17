@@ -54,7 +54,7 @@ Let's presume that you want to detect when a player presses their FIRE button, t
 if (newkeys == KEY_FIRE)
 ```
 
-This code may even work in your testing, but it is wrong and your testing is insufficient. Try crouching and pressing fire - your code will instantly stop working. Why? Because "newkeys" is no longer the same as "KEY_FIRE", it is the same as "KEY_FIRE" COMBINED WITH "KEY_CROUCH".
+This code may even work in your testing, but it is wrong and your testing is insufficient. Try crouching and pressing fire - your code will instantly stop working. Why? Because `newkeys` is no longer the same as `KEY_FIRE`, it is the same as `KEY_FIRE` COMBINED WITH `KEY_CROUCH`.
 
 ### How to check for a key
 
@@ -70,7 +70,7 @@ Now if you test this code it will work whether you are crouching or standing whe
 
 ### How to check for a key that has been pressed
 
-This is where "oldkeys" comes in. To check if a key has just been pressed you need to first check whether it is set in "newkeys" - meaning it's held down, and then check that it's NOT in "oldkeys" - meaning it's only just been held down. The following code does this:
+This is where `oldkeys` comes in. To check if a key has just been pressed you need to first check whether it is set in `newkeys` - meaning it's held down, and then check that it's NOT in `oldkeys` - meaning it's only just been held down. The following code does this:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
@@ -100,13 +100,13 @@ However if you want to detect when they FIRST press fire and crouch the followin
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Why not? Because `OnPlayerKeyStateChange` is called every time a single key changes. So they press "KEY_FIRE" - `OnPlayerKeyStateChange` is called with "KEY_FIRE" in "newkeys" and not in "oldkeys", then they press "KEY_CROUCH" - `OnPlayerKeyStateChange` is called with "KEY_CROUCH" and "KEY_FIRE" in "newkeys", but "KEY_FIRE" is now also in "oldkeys" as it's already been pressed, so "!(oldkeys & `KEY_FIRE`)" will fail. Fortunately the solution is very simple (in fact simpler than the original code):
+Why not? Because `OnPlayerKeyStateChange` is called every time a single key changes. So they press `KEY_FIRE` - `OnPlayerKeyStateChange` is called with `KEY_FIRE` in `newkeys` and not in `oldkeys`, then they press `KEY_CROUCH` - `OnPlayerKeyStateChange` is called with `KEY_CROUCH` and `KEY_FIRE` in `newkeys`, but `KEY_FIRE` is now also in `oldkeys` as it's already been pressed, so "!(oldkeys & `KEY_FIRE`)" will fail. Fortunately the solution is very simple (in fact simpler than the original code):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-This may look complicated, but it checks that both keys are set in "newkeys" and that both the keys were not set in "oldkeys", if one of them was set in "oldkeys" that doesn't matter as not both of them were. All these things can be simplified greatly with defines.
+This may look complicated, but it checks that both keys are set in `newkeys` and that both the keys were not set in `oldkeys`, if one of them was set in `oldkeys` that doesn't matter as not both of them were. All these things can be simplified greatly with defines.
 
 ## Simplification
 

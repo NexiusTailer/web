@@ -71,7 +71,7 @@ The {}s (braces (curly brackets), not parenthesis (brackets)) enclose a group of
 main() print("Hello World!"); return 1;
 ```
 
-You would get an error because now the "return 1;" statement is not grouped so is not part of main. Braces group a set of statements into a single statement (called a compound statement) and functions have a single statement with them. Without the braces `print` and return are entirely separate statements, so there's two of them so, as a function can only have a single statement, the second is not in a function, which code can't be.
+You would get an error because now the `return 1;` statement is not grouped so is not part of main. Braces group a set of statements into a single statement (called a compound statement) and functions have a single statement with them. Without the braces `print` and return are entirely separate statements, so there's two of them so, as a function can only have a single statement, the second is not in a function, which code can't be.
 
 But generally, you can expand compound statements with the use of the comma (,) operator but this is not suggested as it is not the best coding practice. An example follows:
 
@@ -91,7 +91,7 @@ A function is basically a chunk of code which does something and can be told to 
 print("Hello World!");
 ```
 
-As described in the first example, this calls the function called "print" (defined in a_samp.inc, which is why you need to include it) and tells it to display something in the server console (the word hello).
+As described in the first example, this calls the function called `print` (defined in a_samp.inc, which is why you need to include it) and tells it to display something in the server console (the word hello).
 
 A function consists of the function name (e.g. `print`), which tells the system which chunk of code you want to call, and a parameter list, enclosed in ()s after the function name, which pass additional data to the function to help it run. If you didn't have parameters you would need millions of functions:
 
@@ -132,7 +132,7 @@ MyFunction()
 }
 ```
 
-This just does exactly the same as the original code but is arranged differently. When main() is called when the mode is started (it's called automatically) it calls the new custom function called MyFunction(). This function prints the message in the server console then returns the number 1 to main(). main() takes the returned value (1) and then returns it to the server itself (i.e. the place which called main in the first place). As "return MyFunction();" is a single statement you could do:
+This just does exactly the same as the original code but is arranged differently. When main() is called when the mode is started (it's called automatically) it calls the new custom function called MyFunction(). This function prints the message in the server console then returns the number 1 to main(). main() takes the returned value (1) and then returns it to the server itself (i.e. the place which called main in the first place). As `return MyFunction();` is a single statement you could do:
 
 ```c
 #include <a_samp>
@@ -575,7 +575,7 @@ new
 
 ### local
 
-A local variable is one declared "new" inside a function or part of a function:
+A local variable is one declared `new` inside a function or part of a function:
 
 ```c
 MyFunc()

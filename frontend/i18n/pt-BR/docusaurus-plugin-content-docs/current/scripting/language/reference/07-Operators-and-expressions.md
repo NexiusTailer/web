@@ -85,7 +85,7 @@ O resultado de uma expressão de atribuição é o valor do operando esquerdo ap
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | =     | v = e                                                                                                                                                                                      |
 |       | atribui o valor de e à variável v.                                                                                                                                                         |
-|       | Se "v" é um array, ele deve ter um tamanho explícito e "e" deve ser um array do mesmo tamanho; "e" pode ser uma string ou um array literal.                                                |
+|       | Se `v` é um array, ele deve ter um tamanho explícito e `e` deve ser um array do mesmo tamanho; `e` pode ser uma string ou um array literal.                                                |
 | Nota  | os seguintes operadores combinam uma atribuição com uma operação aritmética ou bit a bit; o resultado da expressão é o valor do operando esquerdo após a operação aritmética ou bit a bit. |
 | +=    | v += e                                                                                                                                                                                     |
 |       | incrementa v com e.                                                                                                                                                                        |
@@ -132,7 +132,7 @@ Um "falso" lógico é representado por um valor inteiro de 0; um "verdadeiro" l�
 
 ### • Booleanos
 
-Um "falso" lógico é representado por um valor inteiro de 0; um "verdadeiro" lógico é representado por qualquer valor diferente de 0. Os resultados de valor das expressões booleanas são 0 ou 1, e sua tag é definida como "bool".
+Um "falso" lógico é representado por um valor inteiro de 0; um "verdadeiro" lógico é representado por qualquer valor diferente de 0. Os resultados de valor das expressões booleanas são 0 ou 1, e sua tag é definida como `bool`.
 
 | Sinal | Descrição                                                                                                                                     |
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -167,7 +167,7 @@ Um "falso" lógico é representado por um valor inteiro de 0; um "verdadeiro" l�
 |         | resulta no tamanho em "elementos" da variável especificada. Para variáveis simples e para arrays com uma única dimensão, um elemento é uma célula.                                                                                                 |
 |         | Quando usado em um valor padrão para um argumento de função, a expressão é avaliada no ponto da chamada da função, em vez de na definição da função.                                                                                               |
 | state   | state s                                                                                                                                                                                                                                            |
-|         | onde "s" é o nome de um estado que é opcionalmente prefixado com o nome do autômato, este operador resulta no valor 1 se o autômato está no estado indicado e em 0 caso contrário.                                                                 |
+|         | onde `s` é o nome de um estado que é opcionalmente prefixado com o nome do autômato, este operador resulta no valor 1 se o autômato está no estado indicado e em 0 caso contrário.                                                                 |
 |         | A tag desta expressão é bool:.                                                                                                                                                                                                                     |
 | tagof   | tagof s                                                                                                                                                                                                                                            |
 |         | resulta em um número único que representa a tag da variável, a constante, o resultado da função ou a etiqueta de tag.                                                                                                                              |

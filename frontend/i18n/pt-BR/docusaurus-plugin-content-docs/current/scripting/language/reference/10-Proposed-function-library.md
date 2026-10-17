@@ -86,13 +86,13 @@ lista de argumentos variáveis (veja página 80).
 | --------- | -------------------------------------------------------------------------------------------------- | ----------------------------------: |
 | Sintaxe   | `swapchars(c)`                                                                                     |                                     |
 |           | c                                                                                                  | O valor para o qual trocar os bytes |
-| Retorna   | Um valor onde os bytes no parâmetro "c" são trocados (o byte mais baixo se torna o byte mais alto) |                                     |
+| Retorna   | Um valor onde os bytes no parâmetro `c` são trocados (o byte mais baixo se torna o byte mais alto) |                                     |
 
 | tolower     |                                                                                                                                                      |    Converte um caractere para minúscula |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
 | Sintaxe     | `tolower(c)`                                                                                                                                         |                                         |
 |             | c                                                                                                                                                    | O caractere a converter para minúscula. |
-| Retorna     | A variante maiúscula do caractere de entrada, se existir, ou o código de caractere inalterado de "c" se a letra "c" não tiver equivalente minúsculo. |                                         |
+| Retorna     | A variante maiúscula do caractere de entrada, se existir, ou o código de caractere inalterado de `c` se a letra `c` não tiver equivalente minúsculo. |                                         |
 | Notas:      | O suporte para caracteres acentuados é dependente da plataforma                                                                                      |                                         |
 | Veja também | `toupper`                                                                                                                                            |                                         |
 
@@ -100,7 +100,7 @@ lista de argumentos variáveis (veja página 80).
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
 | Sintaxe     | `toupper(c)`                                                                                                                                         |                                         |
 |             | c                                                                                                                                                    | O caractere a converter para maiúscula. |
-| Retorna     | A variante minúscula do caractere de entrada, se existir, ou o código de caractere inalterado de "c" se a letra "c" não tiver equivalente maiúsculo. |                                         |
+| Retorna     | A variante minúscula do caractere de entrada, se existir, ou o código de caractere inalterado de `c` se a letra `c` não tiver equivalente maiúsculo. |                                         |
 | Notas:      | O suporte para caracteres acentuados é dependente da plataforma                                                                                      |                                         |
 | Veja também | `tolower`                                                                                                                                            |                                         |
 
@@ -111,7 +111,7 @@ mantêm uma lista desses pares nome/valor que é compartilhada entre todas as m�
 A lista de propriedades é, portanto, uma forma para máquinas abstratas concorrentes
 trocarem informações.
 
-Todas as funções de "manutenção de propriedades" têm um parâmetro "id" opcional.
+Todas as funções de "manutenção de propriedades" têm um parâmetro `id` opcional.
 Você pode usar este parâmetro para indicar a qual máquina abstrata a propriedade pertence.
 (Um aplicativo host que suporta máquinas abstratas concorrentes normalmente
 fornecerá a cada máquina abstrata um id único.) Ao consultar (ou excluir)
@@ -124,7 +124,7 @@ de um objeto) a um nome de sua escolha. A interface baseada em valor permite
 anexar uma string a um número. A diferença entre as duas é basicamente a
 chave de busca versus o parâmetro de saída.
 
-Todas as funções de manutenção de propriedades têm um parâmetro "nome" e um "valor".
+Todas as funções de manutenção de propriedades têm um parâmetro `nome` e um `valor`.
 Apenas um deste par deve ser preenchido. Quando você fornece o valor, a função `getproperty`
 armazena o resultado no argumento string e a função `setproperty`
 lê a string a armazenar do argumento string.

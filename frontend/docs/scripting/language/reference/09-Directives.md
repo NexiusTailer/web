@@ -84,7 +84,7 @@ the complete instruction may not span more than one line.
     extension of include files is “.inc”.
 
     When the file can be opened successfully, the #include directive de-
-    fines a constant with the name “_inc_” plus the base name of the
+    fines a constant with the name `_inc_` plus the base name of the
     file (the filename without path and extension) and the value 1. If
     the constant already exists, the #include directive skips opening and
     including the file, thus preventing a double inclusion. To force a dou-
@@ -123,7 +123,7 @@ the complete instruction may not span more than one line.
         Putting the #pragma align line in front of a declaration of
         a function will align the stack frame of that function to the
         boundary specified earlier, with the result that the first local,
-        non-“static”, variable is aligned to that boundary. The align-
+        non-`static`, variable is aligned to that boundary. The align-
         ment of subsequent variables depends on the size and align-
         ment of the variables that precede it. In practice, to align a
         local non-static variable, you must align the function’s stack
@@ -246,7 +246,7 @@ the complete instruction may not span more than one line.
         separate multiple statements on the same line.
 
         When semicolons are optional (the default), a postfix operator
-        (one of “++”, “--” and “char”) may not be the first token on
+        (one of “++”, “--” and `char`) may not be the first token on
         a line, as they will be interpreted as prefix operators.
 
     `#pragma tabsize` *value*
@@ -255,7 +255,7 @@ the complete instruction may not span more than one line.
         tions. The default value is 8. You may need to set the tab
         size to avoid warning 217 (loose indentation) if the source code
         is indented alternately with spaces and with tab characters.
-        Alternatively, by setting the “tabsize” #pragma to zero, the
+        Alternatively, by setting the `tabsize` #pragma to zero, the
         parser will no longer issue warning 217.
 
     `#pragma unused` *symbol,...*
@@ -279,7 +279,7 @@ the complete instruction may not span more than one line.
 **#section** _name_
 
     Starts a new section for the generated code. Any variables and func-
-    tions that are declared “static” are only visible to the section to
+    tions that are declared `static` are only visible to the section to
     which they belong. By default, each source file is a separate section
     and there is only one section per file.
 
@@ -299,7 +299,7 @@ the complete instruction may not span more than one line.
 `#undef` _name_
 
     Removes a text substitution macro or a numeric constant declared
-    with const. The “name” parameter must be the macro “prefix” —the
+    with const. The `name` parameter must be the macro “prefix” —the
     alphanumeric part of the macro. See page 93 for details and examples
     on text substitution.
 

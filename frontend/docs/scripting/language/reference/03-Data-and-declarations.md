@@ -46,19 +46,19 @@ A static global variable behaves the same as a normal global variable, except th
 
 ### • Stock declarations
 
-A global variable may be declared as “stock”. A stock declaration is one that the parser may remove or ignore if the variable turns out not to be used in the program.
+A global variable may be declared as `stock`. A stock declaration is one that the parser may remove or ignore if the variable turns out not to be used in the program.
 
-Stock variables are useful in combination with stock functions. A public variable may be declared as “stock” as well —declaring public variables as “public stock” enables you to declare al public variables that a host application provides in an include file, with only those variables that the script actually uses winding up in the P-code file.
+Stock variables are useful in combination with stock functions. A public variable may be declared as `stock` as well —declaring public variables as “public stock” enables you to declare al public variables that a host application provides in an include file, with only those variables that the script actually uses winding up in the P-code file.
 
 ### • Public declarations
 
-Global “simple” variables (no arrays) may be declared “public” in two ways:
+Global “simple” variables (no arrays) may be declared `public` in two ways:
 
 - declare the variable using the keyword public instead of new;
 
 - start the variable name with the “@” symbol.
 
-Public variables behave like global variables, with the addition that the host program can also read and write public variables. A (normal) global variable can only be accessed by the functions in your script —the host program is unaware of them. As such, a host program may require that you declare a variable with a specific name as “public” for special purposes —such as the most recent error number, or the general program state.
+Public variables behave like global variables, with the addition that the host program can also read and write public variables. A (normal) global variable can only be accessed by the functions in your script —the host program is unaware of them. As such, a host program may require that you declare a variable with a specific name as `public` for special purposes —such as the most recent error number, or the general program state.
 
 ---
 
@@ -166,7 +166,7 @@ new d[10] = { 10, 9, ... }              /* sets: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 *
 
 The array size may be set with a constant that represents an enumeration: an example of this is the “priority queue” sample program at page 21. When individual fields of the enumeration have a size, the associated array elements are interpreted as sub-arrays, on occasion. For an example of this behaviour, see the rpn calculator program at page 30.
 
-The sub-array syntax applies as well to the initialization of an “enumerated” array. Referring again to the “priority queue” sample program, to initialize a “message” array with fixed values, the syntax is:
+The sub-array syntax applies as well to the initialization of an “enumerated” array. Referring again to the “priority queue” sample program, to initialize a `message` array with fixed values, the syntax is:
 
 Listing: array initializers
 
@@ -182,7 +182,7 @@ new msg[message] = { !"new message", 1 }
 
 ```
 
-The initialler consists of a string (a literal array) and a value; these go into the fields “text” and “priority” respectively.
+The initialler consists of a string (a literal array) and a value; these go into the fields `text` and `priority` respectively.
 
 ### • Multi-dimensional arrays
 
@@ -208,15 +208,15 @@ new f[][] = { "OK", "Cancel" }
 
 ---
 
-As the last two declarations (variable “e” en “f”) show, the final dimension of an array may have an unspecified length, in which case the length of each sub-array is determined from the related initializer. Every sub-array may have a different size; in this particular example, “e[1][5]” contains the letter ”l” from the word “Cancel”, but “e[0][5]” is invalid because the length of the sub-array “e[0]” is only three cells (containing the letters “O”, “K” and a zero terminator).
+As the last two declarations (variable `e` en `f`) show, the final dimension of an array may have an unspecified length, in which case the length of each sub-array is determined from the related initializer. Every sub-array may have a different size; in this particular example, `e[1][5]` contains the letter ”l” from the word “Cancel”, but `e[0][5]` is invalid because the length of the sub-array `e[0]` is only three cells (containing the letters “O”, “K” and a zero terminator).
 
-The difference between the declarations for arrays “e” and “f” is that in we let the compiler count the number of initializers for the major dimension —“sizeof f” is 2, like “sizeof e” (see the next section on the sizeof operator).
+The difference between the declarations for arrays `e` and `f` is that in we let the compiler count the number of initializers for the major dimension —“sizeof f” is 2, like “sizeof e” (see the next section on the sizeof operator).
 
 ### • Arrays and the sizeof operator
 
 The sizeof operator returns the size of a variable in “elements”. For a simple (non-compound) variable, the result of sizeof is always 1, because an element is a cell for a simple variable.
 
-An array with one dimension holds a number of cells and the sizeof operator returns that number. The snippet below would therefore print “5” at the display, because the array “msg” holds four characters (each in one cell) plus a zero-terminator:
+An array with one dimension holds a number of cells and the sizeof operator returns that number. The snippet below would therefore print “5” at the display, because the array `msg` holds four characters (each in one cell) plus a zero-terminator:
 
 Listing: sizeof operator
 
@@ -310,7 +310,7 @@ for (new i = 0; rectangle:i < rectangle; ++i)
 
 ```
 
-After the declaration of “my_rect” above, you can access the second field of my_rect with “my_rect[top]”, but saying “my_rect[1]” will give a parser diagnostic (a warning or error message). A tag override (or a tag cast) adjusts a function, constant or variable to the desired tag name. The for loop at the last two lines in the preceding example depicts this: the loop variable i is a plain, untagged cell, an it must be cast to the tag rectangle before using it as an index in the array my_rect. Note that the enum construct has created both a constant and a tag with the name “rectangle”.
+After the declaration of `my_rect` above, you can access the second field of my_rect with `my_rect[top]`, but saying `my_rect[1]` will give a parser diagnostic (a warning or error message). A tag override (or a tag cast) adjusts a function, constant or variable to the desired tag name. The for loop at the last two lines in the preceding example depicts this: the loop variable i is a plain, untagged cell, an it must be cast to the tag rectangle before using it as an index in the array my_rect. Note that the enum construct has created both a constant and a tag with the name `rectangle`.
 
 Tag names introduced so far started with a lower case letter; these are “weak” tags. Tag names that start with an upper case letter are “strong” tags. The difference between weak and strong tags is that weak tags may, in a few circumstances, be dropped implicitly by the pawn parser —so that a weakly tagged expression becomes an untagged expression. The tag checking mechanism verifies the following situations:
 
@@ -320,7 +320,7 @@ Tag names introduced so far started with a lower case letter; these are “weak�
 
 - Passing arguments to functions follows the rule for assignments. The compiler issues a diagnostic when the formal parameter (in a function definition) has a tag and the actual parameter (in the function call) either is untagged or has a different tag. However, if the formal parameter is untagged, it also accepts a parameter with any weak tag.
 
-- An array may specify a tag for every dimension, see the “my_rect” example above. Tag checking array indices follows the rule of binary operator tag checking: there is no difference between weak and strong tags.
+- An array may specify a tag for every dimension, see the `my_rect` example above. Tag checking array indices follows the rule of binary operator tag checking: there is no difference between weak and strong tags.
 
 ---
 

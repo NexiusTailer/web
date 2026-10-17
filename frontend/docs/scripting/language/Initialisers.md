@@ -353,7 +353,7 @@ Very simple and very useful.
 
 ## `forward`
 
-forward tells the compiler that a function is coming later. It is required for all public functions however can be used in other places. It's use is "forward" followed by the full name and parameters of the function you want to forward, followed by a semicolon:
+forward tells the compiler that a function is coming later. It is required for all public functions however can be used in other places. It's use is `forward` followed by the full name and parameters of the function you want to forward, followed by a semicolon:
 
 ```c
 forward MyPublicFunction(playerid, const string[]);
@@ -436,7 +436,7 @@ The other interesting thing you can do with native is rename/overload functions:
 native my_print(const string[]) = print;
 ```
 
-Now the function `print` doesn't actually exist. It is still in SA:MP, and the compiler knows it's real name thanks to the "= print" part, but if you try call it in PAWN you will get an error as you have renamed `print` internally to my_print. As `print` now doesn't exist you can define it just like any other function:
+Now the function `print` doesn't actually exist. It is still in SA:MP, and the compiler knows it's real name thanks to the `= print` part, but if you try call it in PAWN you will get an error as you have renamed `print` internally to my_print. As `print` now doesn't exist you can define it just like any other function:
 
 ```c
 print(const string[])
@@ -607,7 +607,7 @@ public MyPublicFunc()
 }
 ```
 
-public functions prefixed by either "public" or "@" and, as mentioned in the forward section, all require forwarding:
+public functions prefixed by either `public` or "@" and, as mentioned in the forward section, all require forwarding:
 
 ```c
 forward MyPublicFunc();
@@ -630,7 +630,7 @@ public MyPublicFunc()
 }
 ```
 
-Obviously that example introduced `SetTimerEx` to call "MyOtherPublicFunc" after 5 seconds and pass it the integer value 7 to print.
+Obviously that example introduced `SetTimerEx` to call `MyOtherPublicFunc` after 5 seconds and pass it the integer value 7 to print.
 
 main, used in most of these examples, is similar to a public function in that it can be called from outside the script, however it is not a public function - it just has a special known address so the server knows where to jump to to run it.
 
@@ -665,7 +665,7 @@ This is obviously much faster than using `CallLocalFunction` or another native.
 
 ## `static`
 
-A static variable is like a global new variable but with a more limited scope. When static is used globally the resulting created variables are limited to only the section in which they were created (see #section). So taking the earlier "new" example:
+A static variable is like a global new variable but with a more limited scope. When static is used globally the resulting created variables are limited to only the section in which they were created (see #section). So taking the earlier `new` example:
 
 **file1.pwn**
 
@@ -737,7 +737,7 @@ MyFunc3()
 
 This means you can have two globals of the same name in different files.
 
-If you use static locally (i.e. in a function) then the variable, like local variables created with new, can only be used within the scope (based on braces - see the section on "new") in which it was declared. However unlike "new" variables "static" variables do not loose their value between calls.
+If you use static locally (i.e. in a function) then the variable, like local variables created with new, can only be used within the scope (based on braces - see the section on `new`) in which it was declared. However unlike `new` variables `static` variables do not loose their value between calls.
 
 ```c
 main()
@@ -771,7 +771,7 @@ Every time the function is called i is reset to 0, so the resulting output will 
 1
 ```
 
-If we replace the "new" with "static" we get:
+If we replace the `new` with `static` we get:
 
 ```c
 main()
@@ -805,7 +805,7 @@ And, as static locals keep their value between calls, the resulting output it:
 4
 ```
 
-The value given in the declaration (if one is given, like new, static variables default to 0) is the value assigned to the variable the first time the function is called. So if "static i = 5;" were used instead the result would be:
+The value given in the declaration (if one is given, like new, static variables default to 0) is the value assigned to the variable the first time the function is called. So if `static i = 5;` were used instead the result would be:
 
 ```c
 5

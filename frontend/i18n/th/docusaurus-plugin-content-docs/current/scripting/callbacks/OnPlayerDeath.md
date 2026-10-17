@@ -58,7 +58,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-You MUST check whether 'killerid' is valid (not `INVALID_PLAYER_ID`) before using it in an array (or really anywhere), as it will cause the `OnPlayerDeath` script to crash (not the entire script). This is because `INVALID_PLAYER_ID` is defined as 65535, and if an array only has 'MAX_PLAYERS' elements, e.g. 500, you're trying to access an index that is above 499, which is out of bounds.
+You MUST check whether `killerid` is valid (not `INVALID_PLAYER_ID`) before using it in an array (or really anywhere), as it will cause the `OnPlayerDeath` script to crash (not the entire script). This is because `INVALID_PLAYER_ID` is defined as 65535, and if an array only has `MAX_PLAYERS` elements, e.g. 500, you're trying to access an index that is above 499, which is out of bounds.
 
 :::
 

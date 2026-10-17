@@ -329,8 +329,8 @@ x = valencia                    /* ok */
 
 ```
 
-The first assignment causes a “tag mismatch” diagnostic as it assigns an “orange”
-tagged variable to a variable with an “apple” tag. The second assignment
+The first assignment causes a “tag mismatch” diagnostic as it assigns an `orange`
+tagged variable to a variable with an `apple` tag. The second assignment
 puts the untagged value of x into a tagged variable, which causes again a diagnostic.
 When the untagged variable is on the left hand of the assignment
 operator, as in the third assignment, there is no warning or error message. As
@@ -390,7 +390,7 @@ else
 
 ```
 
-Through the “#pragma rational”, all rational numbers receive the “float”
+Through the `#pragma rational`, all rational numbers receive the `float`
 tag name and these numbers are encoded in the 4-byte IEEE 754 format. The
 snippet declares two variables, limit and value, both of which are untagged
 (this is the error). Although the literal values -5.0 and -1.0 are implicitly
@@ -474,7 +474,7 @@ had, when the argument accepts plural tags. Checking the tag of the formal
 argument (in the body of the function) is of no avail, because it will always
 have the first tag in the tag list in the declaration of the function argument.
 You can check the tag of the actual argument by adding an extra argument
-to the function, and set its default value to be the “tagof” of the argument
+to the function, and set its default value to be the `tagof` of the argument
 in question. Similar to the sizeof operator, the tagof operator has a special
 meaning when it is applied in a default value of
 a function argument: the expression is evaluated at the point of the function call,

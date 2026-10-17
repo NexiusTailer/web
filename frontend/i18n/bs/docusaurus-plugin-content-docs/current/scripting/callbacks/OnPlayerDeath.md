@@ -58,7 +58,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-MORAŠ provjeriti da li je 'killerid' validan (ako nije: `INVALID_PLAYER_ID`) prije nego ga koristiš u array-u (ili prosto svuda) ili će uzrokovati da `OnPlayerDeath` izazove skriptu da crasha (ne cijelu skriptu). Ovo ja zbog toga što je `INVALID_PLAYER_ID` definiran kao 65535, i ako array ima samo 'MAX_PLAYERS' elemente, npr. 500, ti pokušavaš pristupiti indexu koji je iznad 499, što je izvan granica.
+MORAŠ provjeriti da li je `killerid` validan (ako nije: `INVALID_PLAYER_ID`) prije nego ga koristiš u array-u (ili prosto svuda) ili će uzrokovati da `OnPlayerDeath` izazove skriptu da crasha (ne cijelu skriptu). Ovo ja zbog toga što je `INVALID_PLAYER_ID` definiran kao 65535, i ako array ima samo `MAX_PLAYERS` elemente, npr. 500, ti pokušavaš pristupiti indexu koji je iznad 499, što je izvan granica.
 
 :::
 

@@ -7,7 +7,7 @@ Un scurt tutorial care descrie modul de utilizare a pickup-urilor.
 
 ## Definiți pickup-ul
 
-Primul lucru care trebuie făcut atunci când creezi pickup-uri este crearea unui loc unde să-ți stochezi ID-ul. Acest lucru se va face într-o variabilă globală, astfel încât să poată fi setat atunci când creați preluarea și să citiți când ridicați o preluare, apelând un apel invers cu ID-ul preluării pe care ați preluat-o. Pentru acest exemplu vom folosi numele "gMyPickup".
+Primul lucru care trebuie făcut atunci când creezi pickup-uri este crearea unui loc unde să-ți stochezi ID-ul. Acest lucru se va face într-o variabilă globală, astfel încât să poată fi setat atunci când creați preluarea și să citiți când ridicați o preluare, apelând un apel invers cu ID-ul preluării pe care ați preluat-o. Pentru acest exemplu vom folosi numele `gMyPickup`.
 
 ```c
 new gMyPickup;
@@ -38,7 +38,7 @@ Acum trebuie să decidem cu privire la un model care să apară în lume, exist�
 
 Pickup-urile sunt create cel mai frecvent la pornirea scriptului, în [OnGameModeInit](../scripting/callbacks/OnGameModeInit) sau [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) în funcție de tipul de script, totuși acesta poate merge în orice funcție (de exemplu, puteți crea un script de scădere a armei care ar folosi `OnPlayerDeath` pentru a crea preluări de arme).
 
-Iată deci codul pentru a crea preluarea noastră și pentru a stoca ID-ul în „gMyPickup”:
+Iată deci codul pentru a crea preluarea noastră și pentru a stoca ID-ul în `gMyPickup`:
 
 ```c
 gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);

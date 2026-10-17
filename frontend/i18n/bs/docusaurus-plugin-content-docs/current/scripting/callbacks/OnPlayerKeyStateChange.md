@@ -58,7 +58,7 @@ Idemo zamisliti da želite da detektujete kada igrač pritisne FIRE tipku, očig
 if (newkeys == KEY_FIRE)
 ```
 
-Ovaj kôd može čak raditi u vašem testiranju, ali je pogrešan i vaše testiranje je nedovoljno. Pokušaj čučnuti i pritisnuti "fire" - tvoj kod će odmah prestati raditi. Zašto? Zato što "newkeys" nije više isti kao "KEY_FIRE", isto je kao "KEY_FIRE" KOMIBNIRANO SA "KEY_CROUCH".
+Ovaj kôd može čak raditi u vašem testiranju, ali je pogrešan i vaše testiranje je nedovoljno. Pokušaj čučnuti i pritisnuti "fire" - tvoj kod će odmah prestati raditi. Zašto? Zato što `newkeys` nije više isti kao `KEY_FIRE`, isto je kao `KEY_FIRE` KOMIBNIRANO SA `KEY_CROUCH`.
 
 ### Kako provjeravati tipku
 
@@ -74,7 +74,7 @@ Ako testirate ovaj kod on će raditi i ako čučite i ako stojite kada pritisnet
 
 ### Kako provjeriti tipku koja je pritisnuta
 
-Ovo je slučaj gdje "oldkeys" dolazi na snagu. Da biste provjerili je li tipka upravo pritisnuta, prvo trebate provjeriti je li postavljena u "newkeys" - što znači da je pritisnuta, a zatim provjerite da NIJE u "oldkeys" - što znači da je tek pritisnuta. Sljedeći kod radi to:
+Ovo je slučaj gdje `oldkeys` dolazi na snagu. Da biste provjerili je li tipka upravo pritisnuta, prvo trebate provjeriti je li postavljena u `newkeys` - što znači da je pritisnuta, a zatim provjerite da NIJE u `oldkeys` - što znači da je tek pritisnuta. Sljedeći kod radi to:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
@@ -104,13 +104,13 @@ kako god, ako želite da detektujete kada PRVO pritisnu "fire" i "crouch" ovaj k
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Zašto ne radi? Zato što je `OnPlayerKeyStateChange` pozvan svaki put kada se jedna tipka promijeni. Tako oni pritisnu "KEY_FIRE" - `OnPlayerKeyStateChange` je pozvan sa "KEY_FIRE" u "newkeys" i ne u "oldkeys", onda pritisnu "KEY_CROUCH" - `OnPlayerKeyStateChange` je pozvan sa "KEY_CROUCH" i "KEY_FIRE" u "newkeys", ali i "KEY_FIRE" je sada u "oldkeys" s obzirom da je već bio pritisnut, tako da "!(`oldkeys` & `KEY_FIRE`)" neće uspjeti. Srećom, rješenje je vrlo jednostavno (zapravo jednostavnije od originalnog koda):
+Zašto ne radi? Zato što je `OnPlayerKeyStateChange` pozvan svaki put kada se jedna tipka promijeni. Tako oni pritisnu `KEY_FIRE` - `OnPlayerKeyStateChange` je pozvan sa `KEY_FIRE` u `newkeys` i ne u `oldkeys`, onda pritisnu `KEY_CROUCH` - `OnPlayerKeyStateChange` je pozvan sa `KEY_CROUCH` i `KEY_FIRE` u `newkeys`, ali i `KEY_FIRE` je sada u `oldkeys` s obzirom da je već bio pritisnut, tako da "!(`oldkeys` & `KEY_FIRE`)" neće uspjeti. Srećom, rješenje je vrlo jednostavno (zapravo jednostavnije od originalnog koda):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-Ovo će možda izgledati komplikovano, ali ono provjerava da li su obe tipke postavljene u "newkeys" i da li obe tipke nisu postavljene u "oldkeys", ako je jedna od njih u "oldkeys" to nije važno jer nisu bili obojica. Sve ove stvari mogu biti jako pojednostavljene sa definisanjem (defines).
+Ovo će možda izgledati komplikovano, ali ono provjerava da li su obe tipke postavljene u `newkeys` i da li obe tipke nisu postavljene u `oldkeys`, ako je jedna od njih u `oldkeys` to nije važno jer nisu bili obojica. Sve ove stvari mogu biti jako pojednostavljene sa definisanjem (defines).
 
 ## Pojednostavljenje
 

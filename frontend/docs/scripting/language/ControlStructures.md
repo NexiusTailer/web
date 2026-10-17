@@ -19,9 +19,9 @@ if (a == 5)
 }
 ```
 
-The code within the brackets after the "if" is called the condition, there are a number of different things you can test for (see operators).
+The code within the brackets after the `if` is called the condition, there are a number of different things you can test for (see operators).
 
-In the example above both "a" and 5 are symbols, functions can also be symbols:
+In the example above both `a` and 5 are symbols, functions can also be symbols:
 
 ```c
 if (SomeFunction() == 5)
@@ -322,7 +322,7 @@ But they're equivalent (in this example anyway).
 
 ### While
 
-"while" loops do something while the condition specified is true. A condition is exactly the same format as the condition in an if statement, it is just checked repeatedly and the code done if it is true every time it is checked:
+`while` loops do something while the condition specified is true. A condition is exactly the same format as the condition in an if statement, it is just checked repeatedly and the code done if it is true every time it is checked:
 
 ```c
 new
@@ -335,11 +335,11 @@ while (a < 10)
 // Code after the loop
 ```
 
-That code will check if 'a' is less than 10. If it is, the code inside the braces (a++;) will be executed, thus incrementing 'a'. When the closing brace is reached, code execution jumps back to the check and does it again, this time the check will fail as 'a' is 10 and execution will jump to after the loop. If 'a' started out as 8, the code would be run twice etc.
+That code will check if `a` is less than 10. If it is, the code inside the braces (a++;) will be executed, thus incrementing `a`. When the closing brace is reached, code execution jumps back to the check and does it again, this time the check will fail as `a` is 10 and execution will jump to after the loop. If `a` started out as 8, the code would be run twice etc.
 
 ### for()
 
-A "for" loop is essentially a compressed "while" loop. A "for" statement has three sections; initialization, condition and finalization. As a "for" loop, the "while" example above would be written:
+A `for` loop is essentially a compressed `while` loop. A `for` statement has three sections; initialization, condition and finalization. As a `for` loop, the `while` example above would be written:
 
 ```c
 for (new a = 9; a < 10; a++)
@@ -374,7 +374,7 @@ for ( ; a < 10; )
 // Code after the loop
 ```
 
-This example makes it a little easier to show how a "for" loop matches up to a "while" loop. There are two very slight differences between the two "for" loops given. The first is that the second example declares 'a' outside the "for" loop, this means it can be used outside the "for" loop, in the first example 'a's scope (the section of code for which a variable exists) is only inside the loop. The second difference is that the a++ in the second example is actually done slightly before the a++ in the first example, 99% of the time this doesn't make any difference, the only time it matters is when you're using 'continue' (see below), 'continue' will call the a++ in the first example, but will skip it in the second example.
+This example makes it a little easier to show how a `for` loop matches up to a `while` loop. There are two very slight differences between the two `for` loops given. The first is that the second example declares `a` outside the `for` loop, this means it can be used outside the `for` loop, in the first example 'a's scope (the section of code for which a variable exists) is only inside the loop. The second difference is that the a++ in the second example is actually done slightly before the a++ in the first example, 99% of the time this doesn't make any difference, the only time it matters is when you're using `continue` (see below), `continue` will call the a++ in the first example, but will skip it in the second example.
 
 ### do-while
 

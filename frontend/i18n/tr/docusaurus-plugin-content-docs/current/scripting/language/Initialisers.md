@@ -355,7 +355,7 @@ if (gPlayerTeam[playerid] & TEAM_COP)
 
 ## `forward`
 
-`forward`, derleyiciye bir işlevin daha sonra geleceğini bildirir. Tüm genel işlevler için zorunlu olup diğer yerlerde de kullanılabilir. Kullanımı şu şekildedir: "forward" ifadesinden sonra işlevin tam adı ve parametreleri, ardından noktalı virgül:
+`forward`, derleyiciye bir işlevin daha sonra geleceğini bildirir. Tüm genel işlevler için zorunlu olup diğer yerlerde de kullanılabilir. Kullanımı şu şekildedir: `forward` ifadesinden sonra işlevin tam adı ve parametreleri, ardından noktalı virgül:
 
 ```c
 forward MyPublicFunction(playerid, const string[]);
@@ -609,7 +609,7 @@ public MyPublicFunc()
 }
 ```
 
-`public` fonksiyonlar ya "public" ya da "@" ile öneklenmiştir ve forward bölümünde belirtildiği gibi tümü yönlendirme gerektirir:
+`public` fonksiyonlar ya `public` ya da "@" ile öneklenmiştir ve forward bölümünde belirtildiği gibi tümü yönlendirme gerektirir:
 
 ```c
 forward MyPublicFunc();
@@ -632,7 +632,7 @@ public MyPublicFunc()
 }
 ```
 
-Bu örnek açıkça SetTimerEx'i kullanarak "MyOtherPublicFunc" fonksiyonunu 5 saniye sonra çağırma ve ona 7 tamsayı değerini ileterek tanıtır.
+Bu örnek açıkça SetTimerEx'i kullanarak `MyOtherPublicFunc` fonksiyonunu 5 saniye sonra çağırma ve ona 7 tamsayı değerini ileterek tanıtır.
 
 Çoğu örnekte kullanılan `main` fonksiyonu, dış betikten çağrılabilen bir public fonksiyona benzer bir şekilde davranır, ancak bu bir public fonksiyon değildir - sadece özel bir bilinen adı vardır, böylece sunucu çalıştırmak için nereye atlaması gerektiğini bilir.
 
@@ -667,7 +667,7 @@ Bu, `CallLocalFunction` veya başka bir native kullanmaktan çok daha hızlıdı
 
 ## `static`
 
-`static` kelimesi, genelde `new` değişkeni gibi genel bir değişkenin daha sınırlı bir kapsama sahip olması anlamına gelir. Global olarak kullanıldığında, oluşturulan değişkenler yalnızca oluşturuldukları bölgeye (bkz. #section) sınırlıdır. Bu nedenle, önceki "new" örneğini ele alalım:
+`static` kelimesi, genelde `new` değişkeni gibi genel bir değişkenin daha sınırlı bir kapsama sahip olması anlamına gelir. Global olarak kullanıldığında, oluşturulan değişkenler yalnızca oluşturuldukları bölgeye (bkz. #section) sınırlıdır. Bu nedenle, önceki `new` örneğini ele alalım:
 
 **file1.pwn**
 
@@ -775,7 +775,7 @@ Her seferinde fonksiyon çağrıldığında i sıfırlanır, bu nedenle sonuçta
 1
 ```
 
-Eğer "new" ifadesini "static" ile değiştirirsek:
+Eğer `new` ifadesini `static` ile değiştirirsek:
 
 ```c
 main()
@@ -809,7 +809,7 @@ Ve çünkü `static` yerel değişkenler çağrılar arasında değerlerini koru
 4
 ```
 
-Bildiride verilen değer (bir değer verilmişse, `new` değişkenleri gibi, `static` değişkenleri varsayılan olarak 0'dır) değişkenin ilk kez çağrıldığı zaman değişkene atanır. Bu nedenle, "static i = 5;" ifadesini kullanırsak, sonuç şu olacaktır:
+Bildiride verilen değer (bir değer verilmişse, `new` değişkenleri gibi, `static` değişkenleri varsayılan olarak 0'dır) değişkenin ilk kez çağrıldığı zaman değişkene atanır. Bu nedenle, `static i = 5;` ifadesini kullanırsak, sonuç şu olacaktır:
 
 ```c
 5

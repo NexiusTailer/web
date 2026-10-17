@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Returns the maximum number of players that can join the server, as set by the server variable 'max_players' in config.json.
+Returns the maximum number of players that can join the server, as set by the server variable `max_players` in config.json.
 
 ## Examples
 
@@ -22,7 +22,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);
 :::warning
 
 - This function can not be used in place of `MAX_PLAYERS`. It can not be used at compile time (e.g. for array sizes).
-- `MAX_PLAYERS` should always be re-defined to what the 'max_players' var will be, or higher.
+- `MAX_PLAYERS` should always be re-defined to what the `max_players` var will be, or higher.
 
 :::
 

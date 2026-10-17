@@ -179,7 +179,7 @@ new msg[message] = { !"new message", 1 }
 ```
 
 The initialler consists of a string (a literal array) and a value; these go
-into the fields “text” and “priority” respectively.
+into the fields `text` and `priority` respectively.
 
 ### • Arrays multidimensionais
 
@@ -323,7 +323,7 @@ expression becomes an untagged expression. The tag checking mechanism verifies t
 
 - Passing arguments to functions follows the rule for assignments. The compiler issues a diagnostic when the formal parameter (in a function definition) has a tag and the actual parameter (in the function call) either is untagged or has a different tag. However, if the formal parameter is untagged, it also accepts a parameter with any weak tag.
 
-- An array may specify a tag for every dimension, see the “my_rect” example above. Tag checking array indices follows the rule of binary operator tag checking: there is no difference between weak and strong tags.
+- An array may specify a tag for every dimension, see the `my_rect` example above. Tag checking array indices follows the rule of binary operator tag checking: there is no difference between weak and strong tags.
 
 ---
 

@@ -353,7 +353,7 @@ Foarte simplu și foarte util.
 
 ## `forward`
 
-forward îi spune compilatorului că o funcție vine mai târziu. Este necesar pentru toate funcțiile publice, totuși poate fi utilizat în alte locuri. Utilizarea sa este „forward” urmată de numele complet și parametrii funcției pe care doriți să o redirecționați, urmată de un punct și virgulă:
+forward îi spune compilatorului că o funcție vine mai târziu. Este necesar pentru toate funcțiile publice, totuși poate fi utilizat în alte locuri. Utilizarea sa este `forward` urmată de numele complet și parametrii funcției pe care doriți să o redirecționați, urmată de un punct și virgulă:
 
 ```c
 forward MyPublicFunction(playerid, const string[]);
@@ -436,7 +436,7 @@ Celălalt lucru interesant pe care îl poți face cu nativ este funcțiile de re
 native my_print(const string[]) = print;
 ```
 
-Acum funcția de tipărire nu există de fapt. Se află încă în SA: MP, iar compilatorul știe că este numele real datorită părții "= print", dar dacă încercați să o apelați în PAWN, veți primi o eroare, deoarece ați redenumit printul intern la my_print. Deoarece imprimarea nu există acum, o puteți defini la fel ca orice altă funcție:
+Acum funcția de tipărire nu există de fapt. Se află încă în SA: MP, iar compilatorul știe că este numele real datorită părții `= print`, dar dacă încercați să o apelați în PAWN, veți primi o eroare, deoarece ați redenumit printul intern la my_print. Deoarece imprimarea nu există acum, o puteți defini la fel ca orice altă funcție:
 
 ```c
 print(const string[])
@@ -607,7 +607,7 @@ public MyPublicFunc()
 }
 ```
 
-Funcțiile public prefixate fie cu „public”, fie cu „@” și, așa cum se menționează în secțiunea forward, toate necesită redirecționare:
+Funcțiile public prefixate fie cu `public`, fie cu „@” și, așa cum se menționează în secțiunea forward, toate necesită redirecționare:
 
 ```c
 forward MyPublicFunc();
@@ -630,7 +630,7 @@ public MyPublicFunc()
 }
 ```
 
-Evident, acest exemplu a introdus `SetTimerEx` pentru a apela „MyOtherPublicFunc” după 5 secunde și a-i da valoarea întreagă 7 pentru a imprima.
+Evident, acest exemplu a introdus `SetTimerEx` pentru a apela `MyOtherPublicFunc` după 5 secunde și a-i da valoarea întreagă 7 pentru a imprima.
 
 main, utilizat în majoritatea acestor exemple, este similar cu o funcție publică prin aceea că poate fi apelată din afara scriptului, totuși nu este o funcție publică - are doar o adresă cunoscută specială, astfel încât serverul să știe unde să treacă la rulați-l.
 
@@ -771,7 +771,7 @@ De fiecare dată când funcția este numită i este resetată la 0, astfel înc�
 1
 ```
 
-Dacă înlocuim „noul” cu „static” obținem:
+Dacă înlocuim „noul” cu `static` obținem:
 
 ```c
 main()
@@ -805,7 +805,7 @@ MyFunc()
 4
 ```
 
-Valoarea dată în declarație (dacă este dată una, ca și variabilele statice noi, implicite la 0) este valoarea atribuită variabilei la prima apelare a funcției. Deci, dacă „static i = 5;” au fost folosite în schimb, rezultatul ar fi:
+Valoarea dată în declarație (dacă este dată una, ca și variabilele statice noi, implicite la 0) este valoarea atribuită variabilei la prima apelare a funcției. Deci, dacă `static i = 5;` au fost folosite în schimb, rezultatul ar fi:
 
 ```c
 5

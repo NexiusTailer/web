@@ -54,7 +54,7 @@ Să presupunem că doriți să detectați când un jucător apasă butonul FIRE,
 if (newkeys == KEY_FIRE)
 ```
 
-Acest cod poate funcționa chiar și în testarea dvs., dar este greșit și testarea dvs. este insuficientă. Încercați să vă ghemuiți și să apăsați focul - codul dvs. nu va mai funcționa instantaneu. De ce? Deoarece „newkeys” nu mai este același lucru cu „KEY_FIRE”, este același cu „KEY_FIRE” COMBINAT CU „KEY_CROUCH”.
+Acest cod poate funcționa chiar și în testarea dvs., dar este greșit și testarea dvs. este insuficientă. Încercați să vă ghemuiți și să apăsați focul - codul dvs. nu va mai funcționa instantaneu. De ce? Deoarece `newkeys` nu mai este același lucru cu `KEY_FIRE`, este același cu `KEY_FIRE` COMBINAT CU `KEY_CROUCH`.
 
 ### Cum se verifică o cheie
 
@@ -70,7 +70,7 @@ Acum, dacă testați acest cod, va funcționa indiferent dacă sunteți ghemuit 
 
 ### Cum să verificați dacă o tastă a fost apăsată
 
-Aici intervine "oldkeys". Pentru a verifica dacă o tastă tocmai a fost apăsată, trebuie să verificați mai întâi dacă este setată în „tastele noi” - adică este ținută apăsată, apoi verificați că NU este în „tastele vechi” - adică este tocmai a fost ținut apăsat. Următorul cod face acest lucru:
+Aici intervine `oldkeys`. Pentru a verifica dacă o tastă tocmai a fost apăsată, trebuie să verificați mai întâi dacă este setată în „tastele noi” - adică este ținută apăsată, apoi verificați că NU este în „tastele vechi” - adică este tocmai a fost ținut apăsat. Următorul cod face acest lucru:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
@@ -100,13 +100,13 @@ Cu toate acestea, dacă doriți să detectați când aceștia apăsați ÎNTÂI 
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-De ce nu? Deoarece `OnPlayerKeyStateChange` este apelat de fiecare dată când se schimbă o singură cheie. Așa că ei apasă „KEY_FIRE” - `OnPlayerKeyStateChange` este apelat cu „KEY_FIRE” în „newkeys” și nu în „oldkeys”, apoi apăsă „KEY_CROUCH” - `OnPlayerKeyStateChange` este apelat cu „KEY_CROUCH” și „KEY_FIRE” în „newkeys”, dar „ `KEY_FIRE`" este acum și în „oldkeys”, deoarece a fost deja apăsat, așa că „!(oldkeys & `KEY_FIRE`)” va eșua. Din fericire, soluția este foarte simplă (de fapt, mai simplă decât codul original):
+De ce nu? Deoarece `OnPlayerKeyStateChange` este apelat de fiecare dată când se schimbă o singură cheie. Așa că ei apasă `KEY_FIRE` - `OnPlayerKeyStateChange` este apelat cu `KEY_FIRE` în `newkeys` și nu în `oldkeys`, apoi apăsă `KEY_CROUCH` - `OnPlayerKeyStateChange` este apelat cu `KEY_CROUCH` și `KEY_FIRE` în `newkeys`, dar „ `KEY_FIRE`" este acum și în `oldkeys`, deoarece a fost deja apăsat, așa că „!(oldkeys & `KEY_FIRE`)” va eșua. Din fericire, soluția este foarte simplă (de fapt, mai simplă decât codul original):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-Acest lucru poate părea complicat, dar verifică dacă ambele chei sunt setate în „newkeys” și că ambele chei nu au fost setate în „oldkeys”, dacă una dintre ele a fost setată în „oldkeys”, asta nu contează, deoarece nu ambele. au fost. Toate aceste lucruri pot fi simplificate foarte mult cu definiții.
+Acest lucru poate părea complicat, dar verifică dacă ambele chei sunt setate în `newkeys` și că ambele chei nu au fost setate în `oldkeys`, dacă una dintre ele a fost setată în `oldkeys`, asta nu contează, deoarece nu ambele. au fost. Toate aceste lucruri pot fi simplificate foarte mult cu definiții.
 
 ## Simplificare
 

@@ -126,7 +126,7 @@ for (new i = 0; i < 10; i++)
 9
 ```
 
-Print'ten sonra bir continue, temelde hiçbir şey yapmayacaktır. For döngüsünde continue, for ifadesinin üçüncü ifadesine atlar (bu örnekte "i++;" bölümü), bu, bir while döngüsünde nasıl davrandığından farklıdır:
+Print'ten sonra bir continue, temelde hiçbir şey yapmayacaktır. For döngüsünde continue, for ifadesinin üçüncü ifadesine atlar (bu örnekte `i++;` bölümü), bu, bir while döngüsünde nasıl davrandığından farklıdır:
 
 ```c
 new
@@ -142,7 +142,7 @@ while (i < 10)
 }
 ```
 
-Bu, sonsuz bir döngü üretecek, çünkü continue, "i++;" hiç çağrılmamış olduğu için AFTER'a atlar ve "while (i < 10)" kısmına geri döner. Bu sırada "i" hala 5 olacak ve continue tekrar çağrılacak ve "i" sürekli olarak 5'te kalacaktır.
+Bu, sonsuz bir döngü üretecek, çünkü continue, `i++;` hiç çağrılmamış olduğu için AFTER'a atlar ve `while (i < 10)` kısmına geri döner. Bu sırada `i` hala 5 olacak ve continue tekrar çağrılacak ve `i` sürekli olarak 5'te kalacaktır.
 
 ## `default`
 
@@ -163,7 +163,7 @@ do
 while (i < 10);
 ```
 
-"i" açıkça 10'dan küçük değil, ancak bu döngü yine de şunu üretecek:
+`i` açıkça 10'dan küçük değil, ancak bu döngü yine de şunu üretecek:
 
 ```c
 10
@@ -293,7 +293,7 @@ Bu döngüde başlatma şudur:
 new i = 0;
 ```
 
-Noktalı virgül başlangıcın sonunu işaretler. Bu, yalnızca bu döngüyle kullanılabilen i adında yeni bir değişkeni bildirir. Ardından karşılaştırma yapılır. Bu, i'yi `MAX_PLAYERS` (varsayılan 500 - #define'ye bakınız) ile karşılaştırır ve küçükse devam eder. Ardından döngünün içeriği çalıştırılır. Başlangıçta bunun "0" ı yazdırması gerekecektir. Son olarak güncelleme yapılır, "i++" bunun i değerini artırır. Şimdi tam bir iterasyon yapılır, döngü döner ve karşılaştırma aşamasına geri döner (başlatma sadece bir çağrı için bir kez yapılır).
+Noktalı virgül başlangıcın sonunu işaretler. Bu, yalnızca bu döngüyle kullanılabilen i adında yeni bir değişkeni bildirir. Ardından karşılaştırma yapılır. Bu, i'yi `MAX_PLAYERS` (varsayılan 500 - #define'ye bakınız) ile karşılaştırır ve küçükse devam eder. Ardından döngünün içeriği çalıştırılır. Başlangıçta bunun "0" ı yazdırması gerekecektir. Son olarak güncelleme yapılır, `i++` bunun i değerini artırır. Şimdi tam bir iterasyon yapılır, döngü döner ve karşılaştırma aşamasına geri döner (başlatma sadece bir çağrı için bir kez yapılır).
 
 Bu döngünün sonucu, 0'dan 499'a kadar olan tüm sayıların yazdırılmasıdır. Eşdeğer while döngüsü (continue etkilerini göz ardı ederek) şu olacaktır:
 
@@ -328,7 +328,7 @@ for (new i = 0; i < MAX_PLAYERS; i++)
 printf("%d", i);
 ```
 
-Bu, hata verecektir çünkü "i" artık döngü bittikten sonra mevcut değil. Ancak:
+Bu, hata verecektir çünkü `i` artık döngü bittikten sonra mevcut değil. Ancak:
 
 ```c
 new
@@ -340,7 +340,7 @@ for ( ; i < MAX_PLAYERS; i++)
 printf("%d", i);
 ```
 
-Bu durumda "i" döngü içinde bildirilmediği için iyidir. Ayrıca "i" yi döngü içinde başlatıp orada bildirmeyi de seçebilirsiniz:
+Bu durumda `i` döngü içinde bildirilmediği için iyidir. Ayrıca `i` yi döngü içinde başlatıp orada bildirmeyi de seçebilirsiniz:
 
 ```c
 new

@@ -58,7 +58,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-Bạn PHẢI kiểm tra xem 'killerid' có hợp lệ (không phải `INVALID_PLAYER_ID`) trước khi sử dụng nó trong một mảng (hoặc bất kỳ đâu), vì điều này sẽ gây ra sự cố với script `OnPlayerDeath` (không phải toàn bộ script). `INVALID_PLAYER_ID` được định nghĩa là 65535, và nếu một mảng chỉ có 'MAX_PLAYERS' phần tử, ví dụ 500, bạn đang cố gắng truy cập một chỉ số vượt quá 499, điều này sẽ ra ngoài phạm vi.
+Bạn PHẢI kiểm tra xem `killerid` có hợp lệ (không phải `INVALID_PLAYER_ID`) trước khi sử dụng nó trong một mảng (hoặc bất kỳ đâu), vì điều này sẽ gây ra sự cố với script `OnPlayerDeath` (không phải toàn bộ script). `INVALID_PLAYER_ID` được định nghĩa là 65535, và nếu một mảng chỉ có `MAX_PLAYERS` phần tử, ví dụ 500, bạn đang cố gắng truy cập một chỉ số vượt quá 499, điều này sẽ ra ngoài phạm vi.
 
 :::
 

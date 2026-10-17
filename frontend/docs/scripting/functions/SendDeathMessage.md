@@ -21,11 +21,11 @@ The 5 most recent kills are shown on the right side of players' screens. Pressin
 
 This function always returns **true**, even if the function fails to execute.
 
-The function fails to execute (no death message shown) if 'playerid' is invalid.
+The function fails to execute (no death message shown) if `playerid` is invalid.
 
 If 'reason' is invalid, a generic skull-and-crossbones icon is shown.
 
-'killerid' being invalid (`INVALID_PLAYER_ID`) is valid.
+`killerid` being invalid (`INVALID_PLAYER_ID`) is valid.
 
 ## Examples
 
@@ -41,7 +41,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-Death messages can be cleared by using a valid player ID for 'playerid' that **is not connected**. To show a death message for just a single player, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer). You can use NPCs to create your own custom death reasons.
+Death messages can be cleared by using a valid player ID for `playerid` that **is not connected**. To show a death message for just a single player, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer). You can use NPCs to create your own custom death reasons.
 
 :::
 

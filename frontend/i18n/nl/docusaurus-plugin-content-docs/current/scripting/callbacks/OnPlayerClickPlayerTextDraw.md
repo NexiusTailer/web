@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Wanneer een speler ESC drukt om de selectie te annuleren, wordt [OnPlayerClickTextDraw](OnPlayerClickTextDraw) aangeroepen met ID 'INVALID_TEXT_DRAW'. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) wordt dan niet aangeroepen.
+Wanneer een speler ESC drukt om de selectie te annuleren, wordt [OnPlayerClickTextDraw](OnPlayerClickTextDraw) aangeroepen met ID `INVALID_TEXT_DRAW`. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) wordt dan niet aangeroepen.
 
 :::
 

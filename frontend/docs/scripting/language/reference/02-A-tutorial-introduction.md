@@ -20,7 +20,7 @@ main()
 This manual assumes that you know how to run a pawn program; if not, please
 consult the application manual (more hints are at page 168).
 
-A pawn program starts execution in an “entry” function\* —in nearly all examples of this manual, this entry function is called “main”. Here, the function
+A pawn program starts execution in an “entry” function\* —in nearly all examples of this manual, this entry function is called `main`. Here, the function
 main contains only a single instruction, which is at the line below the function
 head itself. Line breaks and indenting are insignificant; the invocation of the
 function `print` could equally well be on the same line as the head of function main.
@@ -49,7 +49,7 @@ the string, because a string may not wrap over multiple lines.
 pawn is a “case sensitive” language: upper and lower case letters are considered
 to be different letters. It would be an error to spell the function `printf` in the
 above example as “PrintF”. Keywords and predefined symbols, like the name
-of function “main”, must be typed in lower case.
+of function `main`, must be typed in lower case.
 
 If you know the C language, you may feel that the above example does not
 look much like the equivalent “Hello world” program in C/C++. pawn can
@@ -99,7 +99,7 @@ functions, like `print` and `printf`.
 
 In some environments, the display or terminal must be enabled before any text
 can be output onto it. If this is the case, you must add a call to the function
-“console” before the first call to function `print` or `printf`. The console
+`console` before the first call to function `print` or `printf`. The console
 function also allows you to specify device characteristics, such as the number
 of lines and columns of the display. The example programs in this
 manual do not use the console functions, because many platforms do not require or provide it.
@@ -131,7 +131,7 @@ main()
 }
 ```
 
-Function main now contains more than just a single “print” statement. When
+Function main now contains more than just a single `print` statement. When
 the body of a function contains more than one statement, these statements
 must be embodied in braces —the “\{” and “\}” characters. This groups the instructions to a single compound statement. The notion of grouping statements
 in a compound statement applies as well to the bodies of if–else and loop instructions.
@@ -160,7 +160,7 @@ or use it in a expression in another way, the parentheses are optional. For
 example, the result of the `print` and `printf` statements are not used. You
 may still use parentheses around the arguments, but it is not required.
 
-Loop instructions, like “while”, repeat a single instruction as long as the loop
+Loop instructions, like `while`, repeat a single instruction as long as the loop
 condition (the expression between parentheses) is “true”. One can
 execute multiple instructions in a loop by grouping them in a compound statement.
 The if–else instruction has one instruction for the “true” clause and one for the “false”.
@@ -169,7 +169,7 @@ Observe that some statements, like while and if–else, contain (or
 “fold around”) another instruction —in the case of if–else even two other instructions.
 The complete bundle is, again, a single instruction. That is:
 
-- the assignment statements “a = a - b” below the if and “b = b - a” below the else are statements;
+- the assignment statements `a = a - b` below the if and `b = b - a` below the else are statements;
 - the if–else statement folds around these two assignment statements and forms a single statement of itself;
 - the while statement folds around the if–else statement and forms, again, a single statement.
 
@@ -179,9 +179,9 @@ Divisor” example, the left margin indent increases by four space characters
 after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both `printf` invocations and the
 while loop, have the same indentation.
 
-The loop condition for the while loop is “(a != b)”; the symbol != is the
+The loop condition for the while loop is `(a != b)`; the symbol != is the
 “not equal to” operator. That is, the if–else instruction is repeated
-until “a” equals “b”. It is good practice to indent the instructions that run under
+until `a` equals `b`. It is good practice to indent the instructions that run under
 control of another statement, as is done in the preceding example.
 
 ---
@@ -192,7 +192,7 @@ which means that the function can format and print numeric values and other
 data (in a user-specified format), as well as literal text. The %d symbol in the
 string is a token that indicates the position and the format that the subsequent
 argument to function `printf` should be printed. At run time, the token %d is
-replaced by the value of variable “a” (the second argument of `printf`).
+replaced by the value of variable `a` (the second argument of `printf`).
 
 Function `print` can only print text; it is quicker than `printf`. If you want to
 print a literal “%” at the display, you have to use `print`, or you have to double
@@ -255,7 +255,7 @@ primes below 500, there is now only one line to change.
 Like simple variables, arrays may be initialized upon creation. pawn offers a
 convenient shorthand to initialize all elements to a fixed value:
 all hundred
-elements of the “series” array are set to true —without requiring that the
+elements of the `series` array are set to true —without requiring that the
 programmer types in the word “true” a hundred times. The symbols true
 and false are predefined constants.
 
@@ -339,7 +339,7 @@ receives an input value through a parameter and it returns a value (it has a
 “result”).
 
 Function parameters are declared in the function header; the single parameter
-in this example is “n”. Inside the function, a parameter behaves as a
+in this example is `n`. Inside the function, a parameter behaves as a
 local variable, but one whose value is passed from the outside at
 the call to the function.
 
@@ -612,7 +612,7 @@ the position; %d is only for integers (“whole numbers”).
 I used the include file “rational” rather than “float” or “fixed” in an
 attempt to make the example program portable. If you know that the host
 application supports floating point arithmetic, it may be more convenient to
-“#include” the definitions from the file float and use the tag Float: instead
+`#include` the definitions from the file float and use the tag Float: instead
 of Rational —when doing so, you should also replace %r by %f in the call to
 `printf`. For details on fixed point and floating point support, please see the
 application notes “Fixed Point Support Library” and “Floating Point Support
@@ -659,7 +659,7 @@ rot13(string[])
 }
 ```
 
-In the function header of rot13, the parameter “string” is declared as an
+In the function header of rot13, the parameter `string` is declared as an
 array, but without specifying the size of the array —there is no value between
 the square brackets. When you specify a size for an array in a function header,
 it must match the size of the actual parameter in the function call. Omitting
@@ -668,14 +668,14 @@ allows the function to be called with arrays of any size. You must then have
 some other means of determining the (maximum) size of the array. In the case
 of a string parameter, one can simply search for the zero terminator.
 
-The for loop that walks over the string is typical for string processing functions. Note that the loop condition is “string[index]”. The rule for true/
+The for loop that walks over the string is typical for string processing functions. Note that the loop condition is `string[index]`. The rule for true/
 false conditions in pawn is that any value is “true”, except zero. That is,
 when the array cell at string[index] is zero, it is “false” and the loop aborts.
 
 The ROT13 algorithm rotates only letters; digits, punctuation and special
 characters are left unaltered. Additionally, upper and lower case letters must
 be handled separately. Inside the for loop, two if statements filter out the
-characters of interest. The way that the second if is chained to the “else”
+characters of interest. The way that the second if is chained to the `else`
 clause of the first if is noteworthy, as it is a typical method of
 testing for multiple non-overlapping conditions.
 
@@ -690,7 +690,7 @@ them by value requires a copy of this data structure to be made, taking both mem
 `A function that takes an array as an argument and that does not change it, may mark the argument as “const”; see page 72`
 
 Due to this rule, function rot13 can modify its function
-parameter (called “string” in the example) without needing to declare as a
+parameter (called `string` in the example) without needing to declare as a
 reference argument.
 
 Another point of interest are the conditions in the two if statements. The first
@@ -762,12 +762,12 @@ strtok(const string[], &index)
 `Escape sequence: 99`
 
 Function main first displays a message and retrieves a string that
-the user must type. Then it enters a loop: writing “for (;;)” creates a loop
+the user must type. Then it enters a loop: writing `for (;;)` creates a loop
 without initialisation, without increment and without test —it is an infinite loop,
 
-equivalent to “while (true)”. However, where the pawn parser will give you
-a warning if you type “while (true)” (something along the line “redundant
-test expression; always true”), “for (;;)” passes the parser without warning.
+equivalent to `while (true)`. However, where the pawn parser will give you
+a warning if you type `while (true)` (something along the line “redundant
+test expression; always true”), `for (;;)` passes the parser without warning.
 
 A typical use for an infinite loop is a case where you need a loop
 with the test in the middle —a hybrid between a while and a do. . . while loop, so to
@@ -948,7 +948,7 @@ insert and extract can.
 Function extract returns the messages with the highest priority via its function argument item. That is, it changes its function argument by copying the
 first element of the queue array into item. Function insert copies in the other
 direction and it does not change its function argument item. In such a case,
-it is advised to mark the function argument as “const”. This helps the pawn
+it is advised to mark the function argument as `const`. This helps the pawn
 parser to both check for errors and to generate better (more compact, quicker) code.
 
 A final remark on this latest sample is the call to `getstring` in function main:
@@ -1329,7 +1329,7 @@ than just create an array with 22 cells:
 
 /\* The tag name of the enumeration overrules the tag name of the array variable, if any. The field variable is untagged, but field[t_value] has the tag Rational:, because the enumeration element t_value is declared as such. This, hence, allows you to create an array whose elements have different tag names.
 
-/\* When the enumeration element has a size, the array element indicated with that element is sometimes treated as a sub-array. In rpncalc, expression “field[t_type]” is a single cell, “field[t_value]” is a single cell, but “field[t_word]” is a one-dimensional array of 20 cells. We see that specifically in the line:
+/\* When the enumeration element has a size, the array element indicated with that element is sometimes treated as a sub-array. In rpncalc, expression `field[t_type]` is a single cell, `field[t_value]` is a single cell, but `field[t_word]` is a one-dimensional array of 20 cells. We see that specifically in the line:
 
     printf "Unknown operator '%s'\n", field[t_word]
 
@@ -1356,7 +1356,7 @@ field[t_word] = word
 
 where word is an array of 20 cells and field is an array of 22 cells.
 However, as the t_word enumeration field is declared as having a size of 20 cells,
-“field[t_word]” is considered a sub-array of 20 cells, precisely matching the
+`field[t_word]` is considered a sub-array of 20 cells, precisely matching the
 array size of word.
 
 Listing: strtok.inc
@@ -1454,7 +1454,7 @@ it is better to make any file include the definitions of the libraries that it
 depends on.
 
 Notice how the two global variables stack and stackidx are declared
-as “static” variables; using the keyword static instead of new. Doing this makes
+as `static` variables; using the keyword static instead of new. Doing this makes
 the global variables “visible” in that file only. For all other files in a
 larger project, the symbols stack and stackidx are invisible and they cannot (accidentally) modify the variables. It also allows the other modules to declare
 their own private variables with these names, so it avoids name clashing.
@@ -2218,7 +2218,7 @@ the implementation. As a result, you can implement preconditions, postconditions
 invariants with a single construct: the “assertion”. For preconditions, write
 assertions at the very start of the routine; for invariants, write an assertion
 where the invariant should hold; for post conditions, write an assertion before
-each “return” statement or at the end of the function.
+each `return` statement or at the end of the function.
 
 In pawn, the instruction is called assert; it is a simple statement that
 contains a test. If the test outcome is ”true”, nothing happens. If the outcome is
@@ -2463,7 +2463,7 @@ function/variable/constant. The parser also generates few tags of its own:
 
 | name       | info                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| attribute  | Attributes for a function, such as “native” or “stock”.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| attribute  | Attributes for a function, such as `native` or `stock`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | automaton  | The automaton that the function belongs to (if any).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | dependency | The names of the symbols (other functions, global variables and/global constants) that the function requires. If desired, a call tree can be constructed from the dependencies.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | param      | Function parameters. When you add a parameter description in a documentation comment, this description is combined with the auto-generated content for the parameter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

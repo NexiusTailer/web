@@ -137,7 +137,7 @@ IMPORTANT NOTE: Ainda é necessário um array para a variável, pois o ID dos te
 
 :::
 
-Os nomes das funções diferem apenas ligeiramente, com 'TextDraw' tornando-se 'PlayerTextDraw', com uma exceção: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) ('TextDrawSetString' torna-se 'PlayerTextDrawSetString').
+Os nomes das funções diferem apenas ligeiramente, com 'TextDraw' tornando-se 'PlayerTextDraw', com uma exceção: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) (`TextDrawSetString` torna-se `PlayerTextDrawSetString`).
 
 ---
 

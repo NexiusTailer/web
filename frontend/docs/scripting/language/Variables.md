@@ -40,7 +40,7 @@ Each of the above defined variable has a value by default, which is zero. There 
 new letters = 25;
 ```
 
-In the above example, a variable named ‘letters’ is being declared, with a value of 25. You will notice an equal sign which is a simple Assignment Operator that can be used for assigning values to variables. It evaluates the expression on its right and assigns the resultant value to the variable referenced on its left side. Other than assigning values directly at the declaration, you can also do it in later parts of the code :
+In the above example, a variable named `letters` is being declared, with a value of 25. You will notice an equal sign which is a simple Assignment Operator that can be used for assigning values to variables. It evaluates the expression on its right and assigns the resultant value to the variable referenced on its left side. Other than assigning values directly at the declaration, you can also do it in later parts of the code :
 
 ```c
 new letters;
@@ -106,7 +106,7 @@ public OnPlayerConnect(playerid)
 
 If you try to compile the code above, the compiler will show an error which is reasonable as a local variable is being references in a completely different block of code. Note: If it is a nested code block then the variable can be accessed from there.
 
-One important thing to note is that you cannot declare variables with the same names if their scopes intercede. For example if you already have a variable named ‘score’ on a global scope, you cannot create another variable named ‘score’ on the global scope as well as a local one, and this is true for other way around as well (if you already have a local variable, avoid declaring a global variable with the same name).
+One important thing to note is that you cannot declare variables with the same names if their scopes intercede. For example if you already have a variable named `score` on a global scope, you cannot create another variable named `score` on the global scope as well as a local one, and this is true for other way around as well (if you already have a local variable, avoid declaring a global variable with the same name).
 
 ```c
 #include <open.mp>

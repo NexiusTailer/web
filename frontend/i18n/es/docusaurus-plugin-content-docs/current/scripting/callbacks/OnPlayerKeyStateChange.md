@@ -57,7 +57,7 @@ Vamos a suponer que querés detectar cuando un jugador presiona el botón DISPAR
 if (newkeys == KEY_FIRE)
 ```
 
-Este código puede funcionar en su testeo, pero es incorrecto y su testeo es insuficiente. Probá agachandote y presionando disparo - tu código ya no va a funcionar como antes. ¿Por qué? Esto es porque 'newkeys' ya no es lo mismo que 'KEY_FIRE', en este caso el valor será 'KEY_FIRE' COMBINADO CON 'KEY_CROUCH'.
+Este código puede funcionar en su testeo, pero es incorrecto y su testeo es insuficiente. Probá agachandote y presionando disparo - tu código ya no va a funcionar como antes. ¿Por qué? Esto es porque `newkeys` ya no es lo mismo que `KEY_FIRE`, en este caso el valor será `KEY_FIRE` COMBINADO CON `KEY_CROUCH`.
 
 ### Cómo comprobar una tecla correctamente
 
@@ -73,7 +73,7 @@ Ahora si probás este código va a funcionar mientras estés agachando o parado 
 
 ### Cómo comprobar si una tecla ha sido presionada
 
-Acá es cuando entra "oldkeys". Para comprobar si una tecla fue presionada necesitas primero verificar si esta está como valor en "newkeys" - lo que significa que fue presionada, y entonces comprobar si esta tecla NO está en "oldkeys" - lo que quiere decir que esta sólo se ha presionado. El siguiente código hace lo anterior mencionado:
+Acá es cuando entra `oldkeys`. Para comprobar si una tecla fue presionada necesitas primero verificar si esta está como valor en `newkeys` - lo que significa que fue presionada, y entonces comprobar si esta tecla NO está en `oldkeys` - lo que quiere decir que esta sólo se ha presionado. El siguiente código hace lo anterior mencionado:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
@@ -103,13 +103,13 @@ Sin embargo si querés detectar cuando el jugador presiona por primera vez dispa
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-¿Por qué no? Esto es porque `OnPlayerKeyStateChange` se llama cada vez que una simple tecla cambia su estado. Entonces si el jugador presiona "KEY_FIRE" - `OnPlayerKeyStateChange` es llamado con "KEY_FIRE" en "newkeys" y no en "oldskeys", entonces presiona "KEY_CROUCH" - `OnPlayerKeyStateChange` es llamado con "KEY_CROUCH" y "KEY_FIRE" en "newkeys" pero "KEY_FIRE" es ahora también en "oldkeys" como si ya fue presionado, entonces "!(oldkeys & `KEY_FIRE`)" fallará. Afortunadamente la solución es muy simple (de hecho más simple que el código original):
+¿Por qué no? Esto es porque `OnPlayerKeyStateChange` se llama cada vez que una simple tecla cambia su estado. Entonces si el jugador presiona `KEY_FIRE` - `OnPlayerKeyStateChange` es llamado con `KEY_FIRE` en `newkeys` y no en "oldskeys", entonces presiona `KEY_CROUCH` - `OnPlayerKeyStateChange` es llamado con `KEY_CROUCH` y `KEY_FIRE` en `newkeys` pero `KEY_FIRE` es ahora también en `oldkeys` como si ya fue presionado, entonces "!(oldkeys & `KEY_FIRE`)" fallará. Afortunadamente la solución es muy simple (de hecho más simple que el código original):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-Esto puede parecer complicado, pero comprueba que ambas teclas estén en "newkeys" y que no estén en "oldkeys", si una de ellas está en "oldkeys" no importa ya que ambas no estaban. Todas estas cosas pueden ser muy simplificadas con macros (defines).
+Esto puede parecer complicado, pero comprueba que ambas teclas estén en `newkeys` y que no estén en `oldkeys`, si una de ellas está en `oldkeys` no importa ya que ambas no estaban. Todas estas cosas pueden ser muy simplificadas con macros (defines).
 
 ## Simplificación
 
@@ -320,4 +320,4 @@ ANDed   = 0b00101000
 
 "wanted" y AND son lo mismo, por lo que compararlos devolverá verdadero, lo cual nuevamente es correcto.
 
-Por lo tanto, al usar este método, podemos verificar con precisión si se presionaron ciertas teclas e ignorar todas las demás teclas. Las "oldkeys" lo usan en su verificación! - En lugar de == para asegurarse de que las teclas no fueron presionadas previamente, así sabemos que una de ellas fue presionada.
+Por lo tanto, al usar este método, podemos verificar con precisión si se presionaron ciertas teclas e ignorar todas las demás teclas. Las `oldkeys` lo usan en su verificación! - En lugar de == para asegurarse de que las teclas no fueron presionadas previamente, así sabemos que una de ellas fue presionada.

@@ -83,7 +83,7 @@ a instrução completa não pode se estender por mais de uma linha.
     de arquivos de inclusão é ".inc".
 
     Quando o arquivo pode ser aberto com sucesso, a diretiva #include define
-    uma constante com o nome "_inc_" mais o nome base do
+    uma constante com o nome `_inc_` mais o nome base do
     arquivo (o nome do arquivo sem caminho e extensão) e o valor 1. Se
     a constante já existir, a diretiva #include pula a abertura e
     inclusão do arquivo, prevenindo assim uma inclusão dupla. Para forçar uma
@@ -122,7 +122,7 @@ a instrução completa não pode se estender por mais de uma linha.
         Colocar a linha #pragma align na frente de uma declaração de
         uma função alinhará o frame de pilha dessa função ao
         limite especificado anteriormente, com o resultado de que a primeira
-        variável local, não-"static", é alinhada a esse limite. O alinhamento
+        variável local, não-`static`, é alinhada a esse limite. O alinhamento
         das variáveis subsequentes depende do tamanho e alinhamento
         das variáveis que as precedem. Na prática, para alinhar uma
         variável local não estática, você deve alinhar o frame de pilha da função
@@ -242,7 +242,7 @@ a instrução completa não pode se estender por mais de uma linha.
         separar múltiplas instruções na mesma linha.
 
         Quando pontos e vírgulas são opcionais (o padrão), um operador pós-fixado
-        (um de "++", "--" e "char") não pode ser o primeiro token em
+        (um de "++", "--" e `char`) não pode ser o primeiro token em
         uma linha, pois será interpretado como operadores prefixados.
 
     `#pragma tabsize` *valor*
@@ -251,7 +251,7 @@ a instrução completa não pode se estender por mais de uma linha.
         O valor padrão é 8. Você pode precisar definir o tamanho da tabulação
         para evitar o aviso 217 (indentação solta) se o código fonte
         for indentado alternadamente com espaços e caracteres de tabulação.
-        Alternativamente, definindo o #pragma "tabsize" como zero, o
+        Alternativamente, definindo o #pragma `tabsize` como zero, o
         parser não emitirá mais o aviso 217.
 
     `#pragma unused` *símbolo,...*
@@ -274,7 +274,7 @@ a instrução completa não pode se estender por mais de uma linha.
 **#section** _nome_
 
     Inicia uma nova seção para o código gerado. Quaisquer variáveis e funções
-    que são declaradas como "static" são visíveis apenas para a seção à
+    que são declaradas como `static` são visíveis apenas para a seção à
     qual pertencem. Por padrão, cada arquivo fonte é uma seção separada
     e há apenas uma seção por arquivo.
 

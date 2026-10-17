@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Când un jucător apasă ESC pentru a anula selectarea unui textdraw, `OnPlayerClickTextDraw` este apelat cu un ID textdraw „INVALID_TEXT_DRAW”. De asemenea, `OnPlayerClickPlayerTextDraw` nu va fi numit.
+Când un jucător apasă ESC pentru a anula selectarea unui textdraw, `OnPlayerClickTextDraw` este apelat cu un ID textdraw `INVALID_TEXT_DRAW`. De asemenea, `OnPlayerClickPlayerTextDraw` nu va fi numit.
 
 :::
 

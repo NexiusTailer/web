@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Kada igrač pritisne ESC da prekine selektovanje textdraw-a, `OnPlayerClickTextDraw` biva pozvan sa textdraw IDem od 'INVALID_TEXT_DRAW'. `OnPlayerClickPlayerTextDraw` neće biti pozvan.
+Kada igrač pritisne ESC da prekine selektovanje textdraw-a, `OnPlayerClickTextDraw` biva pozvan sa textdraw IDem od `INVALID_TEXT_DRAW`. `OnPlayerClickPlayerTextDraw` neće biti pozvan.
 
 :::
 

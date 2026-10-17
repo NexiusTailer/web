@@ -58,7 +58,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-Anda HARUS cek apakah 'killerid' valid (bukan `INVALID_PLAYER_ID`) sebelum menggunakannya didalam array (atau dimana saja), yang bisa menyebabkan skrip `OnPlayerDeath` menjadi crash (tidak semua skrip). Ini karena `INVALID_PLAYER_ID` bernilai 65535, dan ketika sebuah array hanya mempunyai elemen 'MAX_PLAYERS', misalkan 500, Anda akan mencoba mengakses index diatas 499, yang dimana itu luar batas.
+Anda HARUS cek apakah `killerid` valid (bukan `INVALID_PLAYER_ID`) sebelum menggunakannya didalam array (atau dimana saja), yang bisa menyebabkan skrip `OnPlayerDeath` menjadi crash (tidak semua skrip). Ini karena `INVALID_PLAYER_ID` bernilai 65535, dan ketika sebuah array hanya mempunyai elemen `MAX_PLAYERS`, misalkan 500, Anda akan mencoba mengakses index diatas 499, yang dimana itu luar batas.
 
 :::
 

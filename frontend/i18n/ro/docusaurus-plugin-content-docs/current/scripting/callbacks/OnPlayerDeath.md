@@ -58,7 +58,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-TREBUIE să verificați dacă „killerid” este valid (nu `INVALID_PLAYER_ID`) înainte de a-l folosi într-o matrice (sau chiar oriunde), deoarece va cauza blocarea scriptului `OnPlayerDeath` (nu a întregului script). Acest lucru se datorează faptului că `INVALID_PLAYER_ID` este definit ca 65535, iar dacă o matrice are doar elemente „MAX_PLAYERS”, de ex. 500, încercați să accesați un index care este peste 499, care este în afara limitelor.
+TREBUIE să verificați dacă `killerid` este valid (nu `INVALID_PLAYER_ID`) înainte de a-l folosi într-o matrice (sau chiar oriunde), deoarece va cauza blocarea scriptului `OnPlayerDeath` (nu a întregului script). Acest lucru se datorează faptului că `INVALID_PLAYER_ID` este definit ca 65535, iar dacă o matrice are doar elemente `MAX_PLAYERS`, de ex. 500, încercați să accesați un index care este peste 499, care este în afara limitelor.
 
 :::
 

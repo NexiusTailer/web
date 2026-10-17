@@ -24,7 +24,7 @@ Listagem: string não empacotada
 new msg[] = "Hello world!"
 ```
 
-A diferença entre as duas declarações são o caractere "!" que precede a string, e o tamanho do array "msg" — que é invisível na declaração, pois a dimensão é implicitamente definida pelo comprimento da constante string inicializadora. Na primeira declaração, o string está empacotado e o array msg tem 4 células; na segunda declaração, o array tem 13 células, um por cada caractere mais um terminador.
+A diferença entre as duas declarações são o caractere "!" que precede a string, e o tamanho do array `msg` — que é invisível na declaração, pois a dimensão é implicitamente definida pelo comprimento da constante string inicializadora. Na primeira declaração, o string está empacotado e o array msg tem 4 células; na segunda declaração, o array tem 13 células, um por cada caractere mais um terminador.
 
 Em praticamente todos os aspectos, a sintaxe e semântica de strings empacotadas foram comparadas a strings não empacotadas ignorando-se a diferença no requisito de memória.
 
@@ -89,7 +89,7 @@ Listagem: strcpy — fragmento
 strcpy(a, "foo")
 ```
 
-onde "a" é a string que você deseja atribuir e "foo" é a nova string. Você pode também assumir que para converter um array "não empacotado" a "empacotado" tudo que você precisa fazer é adicionar um ponto de exclamação. O código abaixo, no entanto, é errado:
+onde `a` é a string que você deseja atribuir e "foo" é a nova string. Você pode também assumir que para converter um array "não empacotado" a "empacotado" tudo que você precisa fazer é adicionar um ponto de exclamação. O código abaixo, no entanto, é errado:
 
 Listagem: strcpy — fragmento com erro
 
@@ -146,7 +146,7 @@ main()
 }
 ```
 
-Nas listagens anteriores, o snippet de código requer uma função de string "strlen" que retorna o comprimento da string em caracteres. Embora uma implementação possa fornecer uma função `strlen`, não é uma função do núcleo.
+Nas listagens anteriores, o snippet de código requer uma função de string `strlen` que retorna o comprimento da string em caracteres. Embora uma implementação possa fornecer uma função `strlen`, não é uma função do núcleo.
 
 Observe como, em um caso, aplicamos char no tamanho do array é após o tamanho, enquanto na
 outra aplicação de char para obter um comprimento que expressa o número de células
@@ -250,7 +250,7 @@ para cada constante.
 ## Acesso a células nas strings empacotadas
 
 Para indexar o n-ésimo caractere em uma string não empacotada armazenada na variável
-msg, você usa a expressão "msg[n]". Para strings empacotadas, você usa
+msg, você usa a expressão `msg[n]`. Para strings empacotadas, você usa
 `msg{n}`. Portanto, operações em strings empacotadas diferem de operações em
 strings não empacotadas apenas no uso de chaves, em vez de colchetes; veja a página 110
 para informações adicionais.
@@ -356,7 +356,7 @@ stock Boolean:IsPositive(value)
 ```
 
 Se você usasse IsPositive na instrução condicional como abaixo
-(onde variável "n" é um inteiro normal)
+(onde variável `n` é um inteiro normal)
 
 Listagem: usando uma função com tag forte como condição (com bug)
 
@@ -570,7 +570,7 @@ Listagem: armadilha potencial — ponto e vírgula após uma substitução de ma
 #define LIMIT 10;
 ```
 
-levaria o fragmento de código abaixo a ser analisado com um erro de sintaxe, porque após a expansão da macro resultaria na expressão "i < 10;":
+levaria o fragmento de código abaixo a ser analisado com um erro de sintaxe, porque após a expansão da macro resultaria na expressão `i < 10;`:
 
 ```c
 for (new i = 0; i < LIMIT; ++i)

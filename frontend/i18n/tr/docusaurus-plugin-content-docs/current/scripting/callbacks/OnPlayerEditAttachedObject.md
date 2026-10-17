@@ -85,7 +85,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Eğer 'response' parametresi 0 (iptal) gelirse objeyi eski haline döndürmek gerekir. Bunun için `EditAttachedObject` kullanmadan önce verileri bir arraye kayıt edin.
+Eğer `response` parametresi 0 (iptal) gelirse objeyi eski haline döndürmek gerekir. Bunun için `EditAttachedObject` kullanmadan önce verileri bir arraye kayıt edin.
 
 :::
 

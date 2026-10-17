@@ -66,7 +66,7 @@ Os {}s (colchetes (colchetes), não parênteses (colchetes)) incluem um grupo de
 ```c
 main() print("Hello World!"); return 1;
 ```
-Você receberia um erro porque agora o "return 1;" a instrução não está agrupada, portanto não faz parte do principal. Os colchetes agrupam um conjunto de instruções em uma única instrução (chamada de instrução composta) e as funções possuem uma única instrução com elas. Sem os colchetes `print` e return são instruções totalmente separadas, então há duas ou elas, como uma função só pode ter uma única instrução, a segunda não está em uma função, o que o código não pode ser.
+Você receberia um erro porque agora o `return 1;` a instrução não está agrupada, portanto não faz parte do principal. Os colchetes agrupam um conjunto de instruções em uma única instrução (chamada de instrução composta) e as funções possuem uma única instrução com elas. Sem os colchetes `print` e return são instruções totalmente separadas, então há duas ou elas, como uma função só pode ter uma única instrução, a segunda não está em uma função, o que o código não pode ser.
 
 Mas geralmente, você pode expandir instruções compostas com o uso do operador vírgula (,), mas isso não é sugerido porque não é a melhor prática de codificação. Segue um exemplo:
 
@@ -84,7 +84,7 @@ Uma função é basicamente um pedaço de código que faz algo e pode ser instru
 ```c
 print("Hello World!");
 ```
-Conforme descrito no primeiro exemplo, isso chama a função chamada "print" (definida em a_samp.inc, e é por isso que você precisa incluí-la) e diz para exibir algo no console do servidor (a palavra hello).
+Conforme descrito no primeiro exemplo, isso chama a função chamada `print` (definida em a_samp.inc, e é por isso que você precisa incluí-la) e diz para exibir algo no console do servidor (a palavra hello).
 
 Uma função consiste no nome da função (por exemplo, `print`), que informa ao sistema qual parte do código você deseja chamar, e uma lista de parâmetros, entre ()s após o nome da função, que passa dados adicionais para a função para ajudá-la a ser executada. Se você não tivesse parâmetros, precisaria de milhões de funções:
 
@@ -122,7 +122,7 @@ MyFunction()
     return 1;
 }
 ```
-Isso faz exatamente o mesmo que o código original, mas é organizado de maneira diferente. Quando main() é chamado quando o modo é iniciado (é chamado automaticamente), ele chama a nova função personalizada chamada MyFunction(). Esta função imprime a mensagem no console do servidor e retorna o número 1 para main(). main() pega o valor retornado (1) e então o retorna para o próprio servidor (ou seja, o local que chamou main em primeiro lugar). Como "return MyFunction();" é uma única declaração que você poderia fazer:
+Isso faz exatamente o mesmo que o código original, mas é organizado de maneira diferente. Quando main() é chamado quando o modo é iniciado (é chamado automaticamente), ele chama a nova função personalizada chamada MyFunction(). Esta função imprime a mensagem no console do servidor e retorna o número 1 para main(). main() pega o valor retornado (1) e então o retorna para o próprio servidor (ou seja, o local que chamou main em primeiro lugar). Como `return MyFunction();` é uma única declaração que você poderia fazer:
 
 ```c
 #include <a_samp>
@@ -522,7 +522,7 @@ new
 
 ### locais
 
-Uma variável local é aquela declarada “new” dentro de uma função ou parte de uma função:
+Uma variável local é aquela declarada `new` dentro de uma função ou parte de uma função:
 
 ```c
 MyFunc()

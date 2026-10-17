@@ -7,7 +7,7 @@ A short tutorial that describes how to use pickups.
 
 ## Define the pickupid
 
-The first thing to be done when creating pickups is creating a place to store their ID. This will be done in a global variable so it can be set when you create the pickup and read when you pick up a pickup, calling a callback with the ID of the pickup you picked up. For this example we will use the name "gMyPickup".
+The first thing to be done when creating pickups is creating a place to store their ID. This will be done in a global variable so it can be set when you create the pickup and read when you pick up a pickup, calling a callback with the ID of the pickup you picked up. For this example we will use the name `gMyPickup`.
 
 ```pawn
 new gMyPickup;
@@ -38,7 +38,7 @@ Finally we need a [Type](../scripting/resources/pickuptypes) for the pickup, on 
 
 Pickups are most commonly created when the script starts, in [OnGameModeInit](../scripting/callbacks/OnGameModeInit) or [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use `OnPlayerDeath` to create weapon pickups).
 
-So here is the code to create our pickup, and store the ID in 'gMyPickup':
+So here is the code to create our pickup, and store the ID in `gMyPickup`:
 
 ```pawn
 gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);

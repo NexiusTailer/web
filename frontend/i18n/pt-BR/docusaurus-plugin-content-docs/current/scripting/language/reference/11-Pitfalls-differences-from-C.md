@@ -12,11 +12,11 @@
 
 - Sequências de escape ("\n", "\t", etc.) são as mesmas, exceto por "\ddd" onde "ddd" representa três dígitos decimais, em vez dos dígitos octais que C/C++ usa. A barra invertida ("\") pode ser substituída por outro símbolo; veja #pragma ctrlchar na página 120 — notavelmente, versões anteriores de PAWN usavam o circunflexo ("^") como o caractere de escape.
 
-- Cases em uma instrução switch não são "fall through". Apenas uma única instrução pode (e deve) seguir cada rótulo de case. Para executar múltiplas instruções, você deve usar uma instrução composta. A cláusula default de uma instrução switch deve ser a última cláusula da instrução switch. Mais na página 115. Em C/C++, switch é um "goto condicional", semelhante aos rótulos calculados do Fortran. Em PAWN, switch é um "if" estruturado.
+- Cases em uma instrução switch não são "fall through". Apenas uma única instrução pode (e deve) seguir cada rótulo de case. Para executar múltiplas instruções, você deve usar uma instrução composta. A cláusula default de uma instrução switch deve ser a última cláusula da instrução switch. Mais na página 115. Em C/C++, switch é um "goto condicional", semelhante aos rótulos calculados do Fortran. Em PAWN, switch é um `if` estruturado.
 
 - Uma instrução break sai apenas de loops. Em C/C++, a instrução break também termina um case em uma instrução switch. Instruções switch são implementadas de forma diferente em PAWN (veja página 115).
 
-- PAWN suporta "atribuição de array", com a restrição de que ambos os arrays devem ter o mesmo tamanho. Por exemplo, se "a" e "b" são ambos arrays com 6 células, a expressão "a = b" é válida. Além de strings literais, PAWN também suporta arrays literais, permitindo a expressão "a = {0,1,2,3,4,5}" (onde "a" é uma variável de array com 6 elementos).
+- PAWN suporta "atribuição de array", com a restrição de que ambos os arrays devem ter o mesmo tamanho. Por exemplo, se `a` e `b` são ambos arrays com 6 células, a expressão `a = b` é válida. Além de strings literais, PAWN também suporta arrays literais, permitindo a expressão "a = {0,1,2,3,4,5}" (onde `a` é uma variável de array com 6 elementos).
 
 - `char` é um operador, não um tipo. Veja página 110 e as dicas na página 137.
 
@@ -36,7 +36,7 @@
 
 - Três dos operadores bit a bit têm precedência diferente do C. Os níveis de precedência dos operadores "&", "^" e | são mais altos que os operadores relacionais (Dennis Ritchie explicou que esses operadores obtiveram seus níveis de precedência baixos em C porque os compiladores C antigos ainda não tinham os operadores lógicos "&&" e ||, então os operadores bit a bit "&" e | eram usados em seu lugar).
 
-- A palavra-chave "extern" não existe em PAWN; a implementação atual do compilador não tem "fase de linkagem". Para criar um programa de vários arquivos fonte, adicione todos os arquivos fonte à linha de comando do compilador, ou crie um arquivo de script de projeto principal que "#include's" todos os outros arquivos fonte. O compilador PAWN pode otimizar funções e variáveis globais que você não usa. Veja páginas 63 e 84 para detalhes.
+- A palavra-chave `extern` não existe em PAWN; a implementação atual do compilador não tem "fase de linkagem". Para criar um programa de vários arquivos fonte, adicione todos os arquivos fonte à linha de comando do compilador, ou crie um arquivo de script de projeto principal que "#include's" todos os outros arquivos fonte. O compilador PAWN pode otimizar funções e variáveis globais que você não usa. Veja páginas 63 e 84 para detalhes.
 
 - Na maioria das situações, declarações forward de funções (ou seja, protótipos) não são necessárias. PAWN é um compilador de duas passagens, ele verá todas as funções na primeira passagem e as usará na segunda passagem. Operadores definidos pelo usuário devem ser declarados antes do uso, no entanto.
 

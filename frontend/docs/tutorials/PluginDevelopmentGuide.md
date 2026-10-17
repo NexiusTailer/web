@@ -58,7 +58,7 @@ stackoverflow.com
 
 **Question:** What is a module definition file (.def)?
 
-- **Answer:** A module definition file is a special file in the Visual Studio IDE that provides the linker with information about the program that's being linked. When it comes to writing plugins for SA-MP we only really use the "EXPORTS" statement which provides information about our exported functions. We'll be looking at this statement later in the article.
+- **Answer:** A module definition file is a special file in the Visual Studio IDE that provides the linker with information about the program that's being linked. When it comes to writing plugins for SA-MP we only really use the `EXPORTS` statement which provides information about our exported functions. We'll be looking at this statement later in the article.
 
 **Question:** When i release a plugin, does it have to have the source with it?
 
@@ -192,15 +192,15 @@ Now comes the fun part, we get to take a look at the code! You'll probably notic
 
 | Defines/Structures          | Description                                                                                                                                                                                                                                                                                                                                                                                                             |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **cell**                    | A "cell" is a typedef that is simply there for portability. PAWN offers support for 16bit, 32bit, and 64bit integers. The typedef "cell" will always be the correct size while "int" might not be. Generally with SA-MP plugins, this typedef will always be a 32bit integer. **Note:** There is also a "ucell" typedef for unsigned integers, but this is hardly used.                                                 |
+| **cell**                    | A `cell` is a typedef that is simply there for portability. PAWN offers support for 16bit, 32bit, and 64bit integers. The typedef `cell` will always be the correct size while `int` might not be. Generally with SA-MP plugins, this typedef will always be a 32bit integer. **Note:** There is also a `ucell` typedef for unsigned integers, but this is hardly used.                                                 |
 | **AMX_NATIVE_CALL**         | This defines the calling convention that our native functions will use. At the moment its defined to nothing, so the default will be used.                                                                                                                                                                                                                                                                              |
 | **AMX**                     | The name of this structure should be pretty clear, its an AMX instance. This structure has tons of information relating to the data segments along with tons of other amx related information. This structure must be present in all native function declarations along with a cell pointer to the passed parameters; Without this info we dont know what script is calling our native, nor do we know what was passed. |
-| **PLUGIN_EXPORT**           | This is defined as "PLUGIN_EXTERN_C".                                                                                                                                                                                                                                                                                                                                                                                   |
+| **PLUGIN_EXPORT**           | This is defined as `PLUGIN_EXTERN_C`.                                                                                                                                                                                                                                                                                                                                                                                   |
 | **PLUGIN_EXTERN_C**         | If using a C++ compiler this is defined as "extern "C"". This is for compatibility with C. C++ offers things like function overloading so additional information like the number/size of arguments is stored with the function's name, this is refered to as "name mangling". When this define is used, it tells C++ to use C-style linkage and thus avoids C++ name mangling.                                          |
 | **PLUGIN_CALL**             | This define tells C/++ what calling convention to use for our exported functions. If you use a compiler targeting windows, this is defined as \_\_stdcall. Otherwise its defined as nothing and the default convention is used.                                                                                                                                                                                         |
-| **SUPPORTS_VERSION**        | This define is to be used in a bit mask that is returned by our "Supports()" function. This flag is used to check for compatibility with the server.                                                                                                                                                                                                                                                                    |
-| **SUPPORTS_AMX_NATIVES**    | This is yet another define that is to be used by our "Supports()" function. Any plugin that uses AMX functions must use this flag! Without this flag you'll get a run time 19 error due to your natives not registering with the server (amx_Register).                                                                                                                                                                 |
-| **SUPPORTS_PROCESS_TICK**   | Our last flag for our "Supports()" function. If you're going to be using the "ProcessTick()" function, you have to add this to our "Supports()" function's returned bit mask.                                                                                                                                                                                                                                           |
+| **SUPPORTS_VERSION**        | This define is to be used in a bit mask that is returned by our `Supports()` function. This flag is used to check for compatibility with the server.                                                                                                                                                                                                                                                                    |
+| **SUPPORTS_AMX_NATIVES**    | This is yet another define that is to be used by our `Supports()` function. Any plugin that uses AMX functions must use this flag! Without this flag you'll get a run time 19 error due to your natives not registering with the server (amx_Register).                                                                                                                                                                 |
+| **SUPPORTS_PROCESS_TICK**   | Our last flag for our `Supports()` function. If you're going to be using the `ProcessTick()` function, you have to add this to our `Supports()` function's returned bit mask.                                                                                                                                                                                                                                           |
 | **PLUGIN_DATA_AMX_EXPORTS** | This is used as an index to the multidimensional array that gets passed on Load. This particular index holds the AMX function table. All plugins must use this index to assign the address of the function table to pAMXFunctions.                                                                                                                                                                                      |
 | **PLUGIN_DATA_LOGPRINTF**   | Yet another index that is to be used with the multidimensional array that gets passed on Load. This index holds the address of the logprintf function which prints information and saves said information to the server's log file. If your plugin uses this function you must use this index to assign the address to the logprintf function pointer.                                                                  |
 | **AMX_NATIVE_INFO**         | This struct is used in conjunction with amx_Register. It contains a string that holds your new native's name, and a pointer to it's address.                                                                                                                                                                                                                                                                            |
@@ -273,7 +273,7 @@ amx_Allot allocates memory cells inside the abstract machine and it returns two 
 
 ## amx_ctof
 
-\- Cast “cell” to “float”
+\- Cast `cell` to `float`
 
 ### Syntax
 
@@ -283,11 +283,11 @@ amx_Allot allocates memory cells inside the abstract machine and it returns two 
 
 | Parameter | Description                                    |
 | --------- | ---------------------------------------------- |
-| **c**     | The value to cast from “cell” type to “float”. |
+| **c**     | The value to cast from `cell` type to `float`. |
 
 **Returns:** The same bit pattern, but now as a floating point type.
 
-**Notes:** This macro casts a “cell” type into a “float” type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in IEEE 754 format comes closest to the original integer value. The pawn parser and abstract machine store floating point values in a cell — when retrieving a floating point value from a cell, the bit pattern must not be changed.
+**Notes:** This macro casts a `cell` type into a `float` type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in IEEE 754 format comes closest to the original integer value. The pawn parser and abstract machine store floating point values in a cell — when retrieving a floating point value from a cell, the bit pattern must not be changed.
 
 **See also:** [amx_ftoc](#amx_ftoc)
 
@@ -331,7 +331,7 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 ## amx_ftoc
 
-\- Cast “float” to “cell”
+\- Cast `float` to `cell`
 
 ### Syntax
 
@@ -341,11 +341,11 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 | Parameter | Description                                    |
 | --------- | ---------------------------------------------- |
-| **f**     | The value to cast from “float” type to “cell”. |
+| **f**     | The value to cast from `float` type to `cell`. |
 
-**Returns:** The same bit pattern, but now as a “cell” type.
+**Returns:** The same bit pattern, but now as a `cell` type.
 
-**Notes:** This macro casts a “float” type into a “cell” type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in integer format is the integral (truncated) value of the original rational value. The pawn parser and abstract machine store floating point values in a cell —when storing a floating point value in a cell, the bit pattern must not be changed.
+**Notes:** This macro casts a `float` type into a `cell` type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in integer format is the integral (truncated) value of the original rational value. The pawn parser and abstract machine store floating point values in a cell —when storing a floating point value in a cell, the bit pattern must not be changed.
 
 **See also:** [amx_ctof](#amx_ctof)
 
@@ -820,7 +820,7 @@ Before we can start calling SA-MP natives, we have to setup Invoke. The first th
 - Allocate memory for the invoke instance under Load.
 - Push back the amx_list member variable every time a new AMX instance is loaded under AmxLoad.
 - Every time a script gets unloaded, iterate through Invoke's amx_list, find the unloaded AMX instance, and erase it under AmxUnload.
-- Create a native that calls Invoke's "getAddresses" member function for PAWN to use when a filterscript or gamemode is loaded that uses our plugin.
+- Create a native that calls Invoke's `getAddresses` member function for PAWN to use when a filterscript or gamemode is loaded that uses our plugin.
 
 Thats about it for getting invoke setup for your plugin. The only thing left to do is to add the public PAWN function found in the invoke package (the txt file we spoke of earlier) to your plugin's include, and use the native from the last setup step when a script is loaded. Anyone who will be creating plugins for public release, i encourage you to look into THIS post. It allows for a clean seamless "hook" of the OnGameModeInit/OnFilterScriptInit callbacks so you can register SA-MP's native addresses while not forcing the end user to add a function into those callbacks themselves.
 
@@ -830,7 +830,7 @@ Thats about it for getting invoke setup for your plugin. The only thing left to 
 
 Sadly invoke isnt magic, and does require maintenance to add new natives or remove deprecated ones. The version from the previous section has all the natives from the 0.2.2 version of SA-MP, so its missing all the newer functions. For these two reasons i decided to add this section! If someone is nice enough to add all the missing natives i will update the invoke package and include them in the credits- if not, i suggest adding natives on an as needed basis.
 
-Inside of the invoke header you should see a big array of function names (the array is appropriately called "name") and a lot of static "Native" structure declarations. To add a native you simply have to add its name to the array of names, and declare a Native structure with the appropriate information- name, and parameter specifiers. There are a lot of available parameter specifiers available to use:
+Inside of the invoke header you should see a big array of function names (the array is appropriately called `name`) and a lot of static "Native" structure declarations. To add a native you simply have to add its name to the array of names, and declare a Native structure with the appropriate information- name, and parameter specifiers. There are a lot of available parameter specifiers available to use:
 
 ```cpp
 i = integer
@@ -844,7 +844,7 @@ p = string var (GetPlayerName etc.)
 
 #### Calling natives
 
-Invoke uses the variadic member function appropriately named "callNative" to call natives. The parameters for this function are a pointer to a Native structure (see previous section) containing info on the native function, and an ellipsis for all the parameters for said native function. The function returns the return value of the native that is being called. Here is an example function that calls multiple natives, with differing parameter types (int, reference, and string var).
+Invoke uses the variadic member function appropriately named `callNative` to call natives. The parameters for this function are a pointer to a Native structure (see previous section) containing info on the native function, and an ellipsis for all the parameters for said native function. The function returns the return value of the native that is being called. Here is an example function that calls multiple natives, with differing parameter types (int, reference, and string var).
 
 ```cpp
 //This function demonstrates: how to use invoke to call SA-MP natives.

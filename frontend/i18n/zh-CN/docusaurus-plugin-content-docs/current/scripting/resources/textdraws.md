@@ -134,7 +134,7 @@ new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 
 :::
 
-函数命名规则：全局函数中的'TextDraw'改为'PlayerTextDraw'（例如 [创建玩家文本绘图](../functions/CreatePlayerTextDraw)），但字符串设置函数例外（'TextDrawSetString' 变为 'PlayerTextDrawSetString'）。
+函数命名规则：全局函数中的'TextDraw'改为'PlayerTextDraw'（例如 [创建玩家文本绘图](../functions/CreatePlayerTextDraw)），但字符串设置函数例外（`TextDrawSetString` 变为 `PlayerTextDrawSetString`）。
 
 ---
 

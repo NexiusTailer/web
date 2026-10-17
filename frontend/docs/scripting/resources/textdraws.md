@@ -138,7 +138,7 @@ IMPORTANT NOTE: An array is still needed for the variable, as the ID of the text
 
 :::
 
-The function names only differ slightly, with 'TextDraw' becoming 'PlayerTextDraw', with one exception: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) ('TextDrawSetString' becomes 'PlayerTextDrawSetString').
+The function names only differ slightly, with 'TextDraw' becoming 'PlayerTextDraw', with one exception: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) (`TextDrawSetString` becomes `PlayerTextDrawSetString`).
 
 ---
 

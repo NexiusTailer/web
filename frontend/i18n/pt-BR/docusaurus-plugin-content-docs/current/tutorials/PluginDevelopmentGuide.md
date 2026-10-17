@@ -65,7 +65,7 @@ stackoverflow.com
 
 **Pergunta:** O que é um arquivo de definição de módulo (.def)?
 
-- **Resposta:** Um arquivo de definição de módulo é um arquivo especial no IDE Visual Studio que fornece ao _linker_ informações sobre o programa que está sendo vinculado. Quando se trata de escrever plugins para SA-MP, geralmente usamos apenas a declaração "EXPORTS", que fornece informações sobre as funções exportadas. Vamos abordar essa declaração mais adiante no artigo.
+- **Resposta:** Um arquivo de definição de módulo é um arquivo especial no IDE Visual Studio que fornece ao _linker_ informações sobre o programa que está sendo vinculado. Quando se trata de escrever plugins para SA-MP, geralmente usamos apenas a declaração `EXPORTS`, que fornece informações sobre as funções exportadas. Vamos abordar essa declaração mais adiante no artigo.
 
 **Pergunta:** Quando eu lançar um plugin, ele precisa ter o código-fonte junto?
 
@@ -201,15 +201,15 @@ Agora vem a parte divertida, onde analisamos o código! Você provavelmente nota
 
 | Definições/Estruturas       | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **cell**                    | Um "cell" é um typedef utilizado para portabilidade. O PAWN oferece suporte para inteiros de 16, 32 e 64 bits. O typedef "cell" sempre terá o tamanho correto, enquanto "int" pode não ter. Geralmente, com plugins SA-MP, este typedef será sempre um inteiro de 32 bits. **Nota:** Existe também um typedef "ucell" para inteiros sem sinal, mas ele é pouco usado.                                                                                    |
+| **cell**                    | Um `cell` é um typedef utilizado para portabilidade. O PAWN oferece suporte para inteiros de 16, 32 e 64 bits. O typedef `cell` sempre terá o tamanho correto, enquanto `int` pode não ter. Geralmente, com plugins SA-MP, este typedef será sempre um inteiro de 32 bits. **Nota:** Existe também um typedef `ucell` para inteiros sem sinal, mas ele é pouco usado.                                                                                    |
 | **AMX_NATIVE_CALL**         | Define a convenção de chamada que nossas funções nativas irão usar. Atualmente, está definida como nada, então o padrão será utilizado.                                                                                                                                                                                                                                                                                                                  |
 | **AMX**                     | O nome desta estrutura é autoexplicativo, é uma instância AMX. Esta estrutura contém diversas informações relacionadas aos segmentos de dados, juntamente com outras informações relevantes do amx. Esta estrutura deve estar presente em todas as declarações de funções nativas, juntamente com um ponteiro cell para os parâmetros passados; sem essas informações, não sabemos qual script está chamando nossa função nativa, nem o que foi passado. |
-| **PLUGIN_EXPORT**           | Este é definido como "PLUGIN_EXTERN_C".                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **PLUGIN_EXPORT**           | Este é definido como `PLUGIN_EXTERN_C`.                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **PLUGIN_EXTERN_C**         | Se estiver usando um compilador C++, isto é definido como "extern "C"". Isso garante compatibilidade com C. O C++ oferece recursos como sobrecarga de funções, então informações adicionais como o número/tamanho dos argumentos são armazenadas no nome da função, o que é chamado de "name mangling". Este define informa ao C++ para usar a ligação no estilo C, evitando o name mangling do C++.                                                     |
 | **PLUGIN_CALL**             | Esta definição informa ao C/C++ qual convenção de chamada usar para nossas funções exportadas. Se você usa um compilador para Windows, isto é definido como \_\_stdcall. Caso contrário, é definido como nada, e a convenção padrão é usada.                                                                                                                                                                                                             |
-| **SUPPORTS_VERSION**        | Esta definição deve ser usada em uma máscara de bits que é retornada pela função "Supports()". Este flag é usado para verificar a compatibilidade com o servidor.                                                                                                                                                                                                                                                                                        |
-| **SUPPORTS_AMX_NATIVES**    | Esta é outra definição que deve ser usada pela função "Supports()". Qualquer plugin que use funções AMX deve usar este flag! Sem ele, você terá um erro de execução 19 devido às suas nativas não se registrarem com o servidor (amx_Register).                                                                                                                                                                                                          |
-| **SUPPORTS_PROCESS_TICK**   | Nosso último flag para a função "Supports()". Se você for usar a função "ProcessTick()", é preciso adicioná-lo à máscara de bits retornada pela função "Supports()".                                                                                                                                                                                                                                                                                     |
+| **SUPPORTS_VERSION**        | Esta definição deve ser usada em uma máscara de bits que é retornada pela função `Supports()`. Este flag é usado para verificar a compatibilidade com o servidor.                                                                                                                                                                                                                                                                                        |
+| **SUPPORTS_AMX_NATIVES**    | Esta é outra definição que deve ser usada pela função `Supports()`. Qualquer plugin que use funções AMX deve usar este flag! Sem ele, você terá um erro de execução 19 devido às suas nativas não se registrarem com o servidor (amx_Register).                                                                                                                                                                                                          |
+| **SUPPORTS_PROCESS_TICK**   | Nosso último flag para a função `Supports()`. Se você for usar a função `ProcessTick()`, é preciso adicioná-lo à máscara de bits retornada pela função `Supports()`.                                                                                                                                                                                                                                                                                     |
 | **PLUGIN_DATA_AMX_EXPORTS** | Este é usado como um índice para o array multidimensional que é passado no Load. Este índice específico contém a tabela de funções AMX. Todos os plugins devem usar este índice para atribuir o endereço da tabela de funções a pAMXFunctions.                                                                                                                                                                                                           |
 | **PLUGIN_DATA_LOGPRINTF**   | Outro índice a ser usado com o array multidimensional passado no Load. Este índice contém o endereço da função logprintf, que imprime informações e as salva no arquivo de log do servidor. Se o seu plugin usar essa função, você deve usar esse índice para atribuir o endereço ao ponteiro de função logprintf.                                                                                                                                       |
 | **AMX_NATIVE_INFO**         | Esta struct é usada junto com amx_Register. Contém uma string com o nome da nova função nativa e um ponteiro para seu endereço.                                                                                                                                                                                                                                                                                                                          |
@@ -246,7 +246,7 @@ int amx_Allot(AMX *amx, int cells, cell *amx_addr, cell **phys_addr);
 
 ## amx_ctof
 
-\- Converte “cell” para “float”
+\- Converte `cell` para `float`
 
 ### Sintaxe
 
@@ -256,11 +256,11 @@ int amx_Allot(AMX *amx, int cells, cell *amx_addr, cell **phys_addr);
 
 | Parâmetro | Descrição                                           |
 | --------- | --------------------------------------------------- |
-| **c**     | Valor a ser convertido do tipo “cell” para “float”. |
+| **c**     | Valor a ser convertido do tipo `cell` para `float`. |
 
 **Retorna:** O mesmo padrão de bits, agora como um tipo de ponto flutuante.
 
-**Notas:** Esta macro converte um tipo “cell” para um tipo “float” sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato IEEE 754 seja o mais próximo possível do valor inteiro original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao recuperar um valor de ponto flutuante de uma célula, o padrão de bits não deve ser alterado.
+**Notas:** Esta macro converte um tipo `cell` para um tipo `float` sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato IEEE 754 seja o mais próximo possível do valor inteiro original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao recuperar um valor de ponto flutuante de uma célula, o padrão de bits não deve ser alterado.
 
 **Veja também:** [amx_ftoc](#amx_ftoc)
 
@@ -304,7 +304,7 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 ## amx_ftoc
 
-\- Converte “float” para “cell”
+\- Converte `float` para `cell`
 
 ### Sintaxe
 
@@ -314,11 +314,11 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 | Parâmetro | Descrição                                             |
 | --------- | ----------------------------------------------------- |
-| **f**     | O valor a ser convertido do tipo “float” para “cell”. |
+| **f**     | O valor a ser convertido do tipo `float` para `cell`. |
 
-**Retorna:** O mesmo padrão de bits, agora como um tipo “cell”.
+**Retorna:** O mesmo padrão de bits, agora como um tipo `cell`.
 
-**Notas:** Esta macro converte um tipo “float” para um tipo “cell” sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato inteiro seja o valor truncado do valor racional original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao armazenar um valor de ponto flutuante em uma célula, o padrão de bits não deve ser alterado.
+**Notas:** Esta macro converte um tipo `float` para um tipo `cell` sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato inteiro seja o valor truncado do valor racional original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao armazenar um valor de ponto flutuante em uma célula, o padrão de bits não deve ser alterado.
 
 **Veja também:** [amx_ctof](#amx_ctof)
 
