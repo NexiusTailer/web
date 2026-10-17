@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Descripción
 
-Este callback se llama cuando el estado de alguna tecla [soportada](../resources/keys) cambia (presionada/soltada).<br/>Las teclas direccionales no desencadenan OnPlayerKeyStateChange (arriba, abajo, izquierda, derecha).
+Este callback se llama cuando el estado de alguna tecla [soportada](../resources/keys) cambia (presionada/soltada).<br/>Las teclas direccionales no desencadenan `OnPlayerKeyStateChange` (arriba, abajo, izquierda, derecha).
 
 | Nombre   | Descripción                                                                                                 |
 | -------- | ----------------------------------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ Este callback también puede ser llamado por NPC.
 
 :::tip
 
-Las teclas direccionales no desencadenan OnPlayerKeyStateChange (arriba, abajo, izquierda, derecha).<br/>Estas sólo pueden ser detectadas con [GetPlayerKeys](../functions/GetPlayerKeys) (en [OnPlayerUpdate](OnPlayerUpdate) o en un timer).
+Las teclas direccionales no desencadenan `OnPlayerKeyStateChange` (arriba, abajo, izquierda, derecha).<br/>Estas sólo pueden ser detectadas con [GetPlayerKeys](../functions/GetPlayerKeys) (en [OnPlayerUpdate](OnPlayerUpdate) o en un timer).
 
 :::
 
@@ -69,7 +69,7 @@ if (newkeys & KEY_FIRE)
 
 Notese que el uso de un solo <strong>&</strong> es correcto - este es un bitwise AND (operador de manipulación de bits), no un AND lógico, que es como se llama el operador de los dos signos <strong>&&</strong>.
 
-Ahora si probás este código va a funcionar mientras estés agachando o parado cuando apretes la tecla/botón de disparo. Sin embargo acá sigue un ligero problema - el personaje disparará hasta que dejes de presionar la tecla. OnPlayerKeyStateChange se llama cada vez que hay un cambio en las teclas y este código funciona mientras que la tecla de disparo es presionada. Si presionas disparar el código será desencadenado, y si esta tecla es retenida y presionas agacharse - este código se desencadenará de nuevo porque una tecla (agacharse) cambió su estado y disparo aún sigue presionado. ¿Cómo detectamos cuando una tecla es presionada por primera vez, pero sin desencadenar el callback de nuevo cuando sigue presionada y otra tecla diferente cambia?
+Ahora si probás este código va a funcionar mientras estés agachando o parado cuando apretes la tecla/botón de disparo. Sin embargo acá sigue un ligero problema - el personaje disparará hasta que dejes de presionar la tecla. `OnPlayerKeyStateChange` se llama cada vez que hay un cambio en las teclas y este código funciona mientras que la tecla de disparo es presionada. Si presionas disparar el código será desencadenado, y si esta tecla es retenida y presionas agacharse - este código se desencadenará de nuevo porque una tecla (agacharse) cambió su estado y disparo aún sigue presionado. ¿Cómo detectamos cuando una tecla es presionada por primera vez, pero sin desencadenar el callback de nuevo cuando sigue presionada y otra tecla diferente cambia?
 
 ### Cómo comprobar si una tecla ha sido presionada
 
@@ -103,7 +103,7 @@ Sin embargo si querés detectar cuando el jugador presiona por primera vez dispa
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-¿Por qué no? Esto es porque OnPlayerKeyStateChange se llama cada vez que una simple tecla cambia su estado. Entonces si el jugador presiona "KEY_FIRE" - OnPlayerKeyStateChange es llamado con "KEY_FIRE" en "newkeys" y no en "oldskeys", entonces presiona "KEY_CROUCH" - OnPlayerKeyStateChange es llamado con "KEY_CROUCH" y "KEY_FIRE" en "newkeys" pero "KEY_FIRE" es ahora también en "oldkeys" como si ya fue presionado, entonces "!(oldkeys & KEY_FIRE)" fallará. Afortunadamente la solución es muy simple (de hecho más simple que el código original):
+¿Por qué no? Esto es porque `OnPlayerKeyStateChange` se llama cada vez que una simple tecla cambia su estado. Entonces si el jugador presiona "KEY_FIRE" - `OnPlayerKeyStateChange` es llamado con "KEY_FIRE" en "newkeys" y no en "oldskeys", entonces presiona "KEY_CROUCH" - `OnPlayerKeyStateChange` es llamado con "KEY_CROUCH" y "KEY_FIRE" en "newkeys" pero "KEY_FIRE" es ahora también en "oldkeys" como si ya fue presionado, entonces "!(oldkeys & `KEY_FIRE`)" fallará. Afortunadamente la solución es muy simple (de hecho más simple que el código original):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
@@ -270,19 +270,19 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 
 No necesitas preocuparte de CÓMO se hace, sólo que así es. HOLDING detecta si está presionando una tecla (o teclas), independientemente de si la estaban presionando antes, PRESSED detecta si solo se presionó la tecla y RELEASED detecta si acaba de soltar una tecla. Sin embargo si querés saber más - sigue leyendo.
 
-La razón por la que necesitas hacerlo de esta manera, no solo usando & o ==, es detectar exactamente las teclas que desea mientras ignora otras que pueden o no estar presionadas. En binario KEY_SPRINT es:
+La razón por la que necesitas hacerlo de esta manera, no solo usando & o ==, es detectar exactamente las teclas que desea mientras ignora otras que pueden o no estar presionadas. En binario `KEY_SPRINT` es:
 
 ```
 0b00001000
 ```
 
-y KEY_JUMP es:
+y `KEY_JUMP` es:
 
 ```
 0b00100000
 ```
 
-Si solo estuviéramos usando & y OnPlayerKeyStateChange es llamado por un jugador presionando "salto" podríamos obtener el siguiente código:
+Si solo estuviéramos usando & y `OnPlayerKeyStateChange` es llamado por un jugador presionando "salto" podríamos obtener el siguiente código:
 
 ```
 newkeys = 0b00100000

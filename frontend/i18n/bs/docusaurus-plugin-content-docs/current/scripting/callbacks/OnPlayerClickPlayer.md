@@ -39,7 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Trenutno je dostupan samo jedan 'source' (0 - CLICK_SOURCE_SCOREBOARD). Postojanost ovog argumenta predlaže da će možda više izvora biti podržano u budućnosti.
+Trenutno je dostupan samo jedan 'source' (0 - `CLICK_SOURCE_SCOREBOARD`). Postojanost ovog argumenta predlaže da će možda više izvora biti podržano u budućnosti.
 
 :::
 

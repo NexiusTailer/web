@@ -215,14 +215,14 @@ e enum. A palavra-chave const declara uma única constante e enum define
 uma lista de constantes — geralmente — sequenciais compartilhando o
 mesmo nome de tag.
 
-**const** _identificador = expressão constante_
+`const` _identificador = expressão constante_
 
 Cria uma constante simbólica com o valor da expressão constante
 à direita do operador de atribuição. A constante pode ser usada
 em qualquer lugar onde um número literal é válido (por exemplo:
 em expressões, em declarações de array e em diretivas como "#if" e "#assert").
 
-**enum** _nome (incremento) \{ lista de constantes \}_
+`enum` _nome (incremento) \{ lista de constantes \}_
 
 A instrução enum cria uma série de constantes com valores
 incrementais. A lista de constantes é uma série de identificadores

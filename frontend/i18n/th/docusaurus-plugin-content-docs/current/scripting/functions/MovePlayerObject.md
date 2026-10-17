@@ -21,7 +21,7 @@ Move a player object with a set speed. Also supports rotation. Players/vehicles 
 | Float:RotY  | The final Y rotation (optional).                  |
 | Float:RotZ  | The final Z rotation (optional).                  |
 | playerid    | The player you associated this object to.         |
-| objectid    | The objectid you want to move.                    |
+| objectid    | The `objectid` you want to move.                  |
 | Float:X     | The new X coordinate.                             |
 | Float:Y     | The new Y coordinate.                             |
 | Float:Z     | The new Z coordinate.                             |

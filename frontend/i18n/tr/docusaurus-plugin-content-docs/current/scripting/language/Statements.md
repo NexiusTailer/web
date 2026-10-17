@@ -293,7 +293,7 @@ Bu döngüde başlatma şudur:
 new i = 0;
 ```
 
-Noktalı virgül başlangıcın sonunu işaretler. Bu, yalnızca bu döngüyle kullanılabilen i adında yeni bir değişkeni bildirir. Ardından karşılaştırma yapılır. Bu, i'yi MAX_PLAYERS (varsayılan 500 - #define'ye bakınız) ile karşılaştırır ve küçükse devam eder. Ardından döngünün içeriği çalıştırılır. Başlangıçta bunun "0" ı yazdırması gerekecektir. Son olarak güncelleme yapılır, "i++" bunun i değerini artırır. Şimdi tam bir iterasyon yapılır, döngü döner ve karşılaştırma aşamasına geri döner (başlatma sadece bir çağrı için bir kez yapılır).
+Noktalı virgül başlangıcın sonunu işaretler. Bu, yalnızca bu döngüyle kullanılabilen i adında yeni bir değişkeni bildirir. Ardından karşılaştırma yapılır. Bu, i'yi `MAX_PLAYERS` (varsayılan 500 - #define'ye bakınız) ile karşılaştırır ve küçükse devam eder. Ardından döngünün içeriği çalıştırılır. Başlangıçta bunun "0" ı yazdırması gerekecektir. Son olarak güncelleme yapılır, "i++" bunun i değerini artırır. Şimdi tam bir iterasyon yapılır, döngü döner ve karşılaştırma aşamasına geri döner (başlatma sadece bir çağrı için bir kez yapılır).
 
 Bu döngünün sonucu, 0'dan 499'a kadar olan tüm sayıların yazdırılmasıdır. Eşdeğer while döngüsü (continue etkilerini göz ardı ederek) şu olacaktır:
 
@@ -616,7 +616,7 @@ Varsayılan dönüş hiçbir şey olduğu için de izin verilmez.
 
 ## `sleep`
 
-sleep, belirtilen milisaniye süresi boyunca yürütümü durduran bir taklit işlecidir:
+`sleep`, belirtilen milisaniye süresi boyunca yürütümü durduran bir taklit işlecidir:
 
 ```c
 printf("Zaman 0s");
@@ -703,4 +703,4 @@ while (i < 10)
 }
 ```
 
-Daha fazla bilgi için **do** ve **for**'a bakabilirsiniz.
+Daha fazla bilgi için `do` ve `for`'a bakabilirsiniz.

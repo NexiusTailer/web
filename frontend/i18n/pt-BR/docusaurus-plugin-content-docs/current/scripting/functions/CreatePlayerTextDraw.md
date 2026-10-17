@@ -62,7 +62,7 @@ Códigos de mapeamento de teclas do teclado (como `~k~~VEHICLE_ENTER_EXIT~`) nã
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Define o alinhamento de um textdraw de jogador.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Define a fonte de um textdraw de jogador.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Define o tamanho da letra do texto em um textdraw de jogador.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Define o tamanho de uma caixa de textdraw de jogador (ou área clicável para PlayerTextDrawSetSelectable).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Define o tamanho de uma caixa de textdraw de jogador (ou área clicável para `PlayerTextDrawSetSelectable`).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Alterna o contorno em um textdraw de jogador.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Define a sombra em um textdraw de jogador.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Escala o espaçamento do texto em um textdraw de jogador para uma proporção proporcional.
@@ -73,7 +73,7 @@ Códigos de mapeamento de teclas do teclado (como `~k~~VEHICLE_ENTER_EXIT~`) nã
 - [IsPlayerTextDrawVisible](IsPlayerTextDrawVisible): Verifica se um textdraw de jogador está sendo mostrado para o jogador.
 - [IsValidPlayerTextDraw](IsValidPlayerTextDraw): Verifica se um textdraw de jogador é válido.
 - [PlayerTextDrawBackgroundColour](PlayerTextDrawBackgroundColour): Ajusta a cor de fundo de um textdraw de jogador.
-- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): Define a cor da caixa de um textdraw (PlayerTextDrawUseBox).
+- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): Define a cor da caixa de um textdraw (`PlayerTextDrawUseBox`).
 - [PlayerTextDrawColour](PlayerTextDrawColour): Define a cor do texto de um textdraw de jogador.
 - [PlayerTextDrawGetAlignment](PlayerTextDrawGetAlignment): Obtém o alinhamento do texto de um textdraw de jogador.
 - [PlayerTextDrawGetBackgroundColour](PlayerTextDrawGetBackgroundColour): Obtém a cor de fundo de um textdraw de jogador.

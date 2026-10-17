@@ -13,7 +13,7 @@ Ova funkcija je dodana u SA-MP 0.3z-R2-2 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Deblokirajte IP adresu koja je prethodno bila blokirana pomoću BlockIpAddress.
+Deblokirajte IP adresu koja je prethodno bila blokirana pomoću `BlockIpAddress`.
 
 | Ime        | Deskripcija                |
 | ---------- | -------------------------- |

@@ -39,7 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Şuanlık sadece bir 'source' var (0 - CLICK_SOURCE_SCOREBOARD). İlerde daha fazla kaynak eklenebilir.
+Şuanlık sadece bir 'source' var (0 - `CLICK_SOURCE_SCOREBOARD`). İlerde daha fazla kaynak eklenebilir.
 
 :::
 

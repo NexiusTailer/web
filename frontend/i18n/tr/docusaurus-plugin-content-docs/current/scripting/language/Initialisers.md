@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
 }
 ```
 
-Bu, her oyuncu için iki yuvaya sahip bir dizi oluşturacaktır. E_MY_ARRAY_MONEY tarafından referans alınan yuvaya bir oyuncu bağlandığında 0'ı ve E_MY_ARRAY_GUN tarafından referans alınan yuvaya 5'i koyacaktır. Enum olmadan bu şöyle görünürdü:
+Bu, her oyuncu için iki yuvaya sahip bir dizi oluşturacaktır. `E_MY_ARRAY_MONEY` tarafından referans alınan yuvaya bir oyuncu bağlandığında 0'ı ve `E_MY_ARRAY_GUN` tarafından referans alınan yuvaya 5'i koyacaktır. Enum olmadan bu şöyle görünürdü:
 
 ```c
 new
@@ -94,7 +94,7 @@ enum E_EXAMPLE
 }
 ```
 
-İlk değer (E_EXAMPLE_0) 0'dır (varsayılan olarak başka bir değer belirtilmezse), bu nedenle ikinci değer (E_EXAMPLE_1) 1'dir (0 + 1) ve üçüncü değer (E_EXAMPLE_2) 2'dir (1 + 1). Bu, E_EXAMPLE'ın değerinin 3 olduğu anlamına gelir (2 + 1), enum'un adı aynı zamanda enum'daki son değerdir. Eğer değiştiriciyi değiştirirseniz farklı değerler elde edersiniz:
+İlk değer (`E_EXAMPLE_0`) 0'dır (varsayılan olarak başka bir değer belirtilmezse), bu nedenle ikinci değer (`E_EXAMPLE_1`) 1'dir (0 + 1) ve üçüncü değer (`E_EXAMPLE_2`) 2'dir (1 + 1). Bu, E_EXAMPLE'ın değerinin 3 olduğu anlamına gelir (2 + 1), enum'un adı aynı zamanda enum'daki son değerdir. Eğer değiştiriciyi değiştirirseniz farklı değerler elde edersiniz:
 
 ```c
 enum E_EXAMPLE (+= 5)
@@ -105,7 +105,7 @@ enum E_EXAMPLE (+= 5)
 }
 ```
 
-Bu örnekte her değer, önceki değer + 5 olduğu için, tekrar 0'dan başlayarak şu şekildedir: E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 5, E_EXAMPLE_2 = 10, E_EXAMPLE = 15. Eğer bir dizi şu şekilde bildirilirse:
+Bu örnekte her değer, önceki değer + 5 olduğu için, tekrar 0'dan başlayarak şu şekildedir: `E_EXAMPLE_0` = 0, `E_EXAMPLE_1` = 5, `E_EXAMPLE_2` = 10, `E_EXAMPLE` = 15. Eğer bir dizi şu şekilde bildirilirse:
 
 ```c
 new
@@ -183,7 +183,7 @@ enum E_EXAMPLE
 }
 ```
 
-Bu, E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 10, E_EXAMPLE_2 = 11 ve E_EXAMPLE = 12'yi yapacaktır, popüler inanışın aksine 0, 1, 2 ve 3 değerlerini alamaz.
+Bu, `E_EXAMPLE_0` = 0, `E_EXAMPLE_1` = 10, `E_EXAMPLE_2` = 11 ve `E_EXAMPLE` = 12'yi yapacaktır, popüler inanışın aksine 0, 1, 2 ve 3 değerlerini alamaz.
 
 Enum öğeleri etiketlere sahip olabilir, bu yüzden orijinal örneğimiz için:
 
@@ -316,7 +316,7 @@ enum (<<= 1)
 }
 ```
 
-Şimdi TEAM_COP 1, TEAM_ROBBER 2, TEAM_CIV 4, vb. Bu, ikili olarak 0b00000001, 0b00000010 ve 0b00000100'te olduğu için bir oyuncunun takımının 3 olması durumunda, hem polis takımında hem de soyguncu takımında oldukları anlamına gelir. Bu belki anlamsız gibi görünebilir ancak bazı olasılıkları açar:
+Şimdi `TEAM_COP` 1, `TEAM_ROBBER` 2, `TEAM_CIV` 4, vb. Bu, ikili olarak 0b00000001, 0b00000010 ve 0b00000100'te olduğu için bir oyuncunun takımının 3 olması durumunda, hem polis takımında hem de soyguncu takımında oldukları anlamına gelir. Bu belki anlamsız gibi görünebilir ancak bazı olasılıkları açar:
 
 ```c
 enum (<<= 1)
@@ -438,7 +438,7 @@ PAWNO bu tür yorumları tanımaz, bu nedenle bu işlevi listede ekler, ancak de
 native my_print(const string[]) = print;
 ```
 
-Şimdi, print işlevi aslında mevcut değildir. SA:MP'de hala bulunur ve derleyici, gerçek adını "= print" kısmından bildiği için bu işlevi orada tanır, ancak PAWN'da çağrırsanız bir hata alırsınız çünkü print'i my_print adına içsel olarak yeniden adlandırdınız. Artık print işlevi mevcut olmadığı için onu normal bir işlev gibi tanımlayabilirsiniz:
+Şimdi, `print` işlevi aslında mevcut değildir. SA:MP'de hala bulunur ve derleyici, gerçek adını "= `print`" kısmından bildiği için bu işlevi orada tanır, ancak PAWN'da çağrırsanız bir hata alırsınız çünkü print'i my_print adına içsel olarak yeniden adlandırdınız. Artık `print` işlevi mevcut olmadığı için onu normal bir işlev gibi tanımlayabilirsiniz:
 
 ```c
 print(const string[])
@@ -591,7 +591,7 @@ Yalnızca 42 elde edersiniz, toplamadan hiçbir şey değil.
 
 `public` kelimesi, bir fonksiyonun San Andreas: Multiplayer (SA:MP) sunucu tarafından doğrudan çağrılmasını sağlamak için kullanılır. Yani, fonksiyonun sadece PAWN betiğinin içinden değil, aynı zamanda San Andreas: Multiplayer sunucusu tarafından çağrılmasına izin verir. Aynı prensiple, değişkenleri de sunucudan okuma ve yazma yeteneği için genel hale getirebilirsiniz; ancak bu, genellikle SA:MP'de kullanılmaz (bir eklentiden bunu kullanabilirsiniz, ancak ben denemedim) (const ile birleştirerek bir değişkeni yalnızca sunucudan değiştirilemez hale getirebilirsiniz).
 
-Bir `public` fonksiyonun amx dosyasında metinsel adının saklandığı unutulmamalıdır. Bu, normal fonksiyonların yalnızca atlama için adreslerinin saklandığı şekilden farklıdır ve dekompilasyonun başka bir dezavantajıdır. Bu, fonksiyonu adıyla dış betikten çağırmanıza izin verir; aynı zamanda adını bırakarak ve tekrar girerek betiğin içinden fonksiyonları adlarıyla çağırmanıza da izin verir. Bir native fonksiyon çağrısı, neredeyse bir public fonksiyon çağrısının tersidir; dış betikten iç betikteki bir fonksiyonu değil, iç betikten dış betikteki bir fonksiyonu çağırır. İkisini birleştirirseniz, SetTimer, SetTimerEx, CallRemoteFunction ve CallLocalFunction gibi fonksiyonlar elde edersiniz; bunlar adlarıyla değil, adresleriyle fonksiyonları çağırır.
+Bir `public` fonksiyonun amx dosyasında metinsel adının saklandığı unutulmamalıdır. Bu, normal fonksiyonların yalnızca atlama için adreslerinin saklandığı şekilden farklıdır ve dekompilasyonun başka bir dezavantajıdır. Bu, fonksiyonu adıyla dış betikten çağırmanıza izin verir; aynı zamanda adını bırakarak ve tekrar girerek betiğin içinden fonksiyonları adlarıyla çağırmanıza da izin verir. Bir native fonksiyon çağrısı, neredeyse bir public fonksiyon çağrısının tersidir; dış betikten iç betikteki bir fonksiyonu değil, iç betikten dış betikteki bir fonksiyonu çağırır. İkisini birleştirirseniz, `SetTimer`, `SetTimerEx`, `CallRemoteFunction` ve `CallLocalFunction` gibi fonksiyonlar elde edersiniz; bunlar adlarıyla değil, adresleriyle fonksiyonları çağırır.
 
 Adıyla bir fonksiyon çağırma örneği:
 
@@ -663,7 +663,7 @@ public MyPublicFunc()
 }
 ```
 
-Bu, CallLocalFunction veya başka bir native kullanmaktan çok daha hızlıdır.
+Bu, `CallLocalFunction` veya başka bir native kullanmaktan çok daha hızlıdır.
 
 ## `static`
 

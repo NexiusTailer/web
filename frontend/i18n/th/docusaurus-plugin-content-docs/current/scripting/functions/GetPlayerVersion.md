@@ -47,12 +47,12 @@ A client's version can be up to 24 characters long, otherwise the connection wil
 
 :::warning
 
-The string the version gets stored in will be empty if playerid is an NPC.
+The string the version gets stored in will be empty if `playerid` is an NPC.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerName: Get a player's name.
-- GetPlayerPing: Get the ping of a player.
-- GetPlayerIp: Get a player's IP.
+- `GetPlayerName`: Get a player's name.
+- `GetPlayerPing`: Get the ping of a player.
+- `GetPlayerIp`: Get a player's IP.

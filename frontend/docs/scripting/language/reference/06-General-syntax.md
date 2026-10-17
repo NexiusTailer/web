@@ -214,7 +214,7 @@ A source file declares symbolic constants with the const and the enum
 instructions. The const keyword declares a single constant and the
 enum defines a list of —usually— sequential constants sharing the same tag name.
 
-**const** _identifier = constant expression_
+`const` _identifier = constant expression_
 
 Creates a symbolic constant with the value of the constant
 expression on the right hand of the assignment operator. The
@@ -222,7 +222,7 @@ constant can be used at any place where a literal number is
 valid (for example: in expressions, in array declarations and in
 directives like “#if” and “#assert”).
 
-**enum** _name (increment) \{ constant list \}_
+`enum` _name (increment) \{ constant list \}_
 
 The enum instruction creates a series of constants with incre-
 menting values. The constant list is a series of identifiers sep-
@@ -234,11 +234,11 @@ Both the value of a constant and the increment value can be
 set by appending the value to the constant’s identifier. To set
 a value, use
 
-name = value
+`name` = value
 
 in the constant list. To set the increment, use:
 
-name [ increment ]
+`name` [ increment ]
 
 The increment value is reset to 1 after every constant symbol
 declaration in the constant list.
@@ -250,15 +250,15 @@ notation.
 The symbols in the constant list may have an explicit tag,
 which should precede the symbol name.
 
-The name token that follows the enum keyword is optional. If it
+The `name` token that follows the enum keyword is optional. If it
 is included, and if the symbol names does not have an explicit
 tag, this name is used as the tag name for every symbol in the
 constant list. In addition, the enum command creates an extra
-constant with name for the constant name and the tag name.
+constant with `name` for the constant name and the tag name.
 The value of the last constant is the value of the last symbol in
 the constant list plus the increment value of that last constant.
 
-The increment token that follows the optional name token is
+The increment token that follows the optional `name` token is
 also optional. If included, it specifies a different post-increment
 rule. By default, an enum increments the value of every succe-
 sive constant with 1, but you may specify a different rule with

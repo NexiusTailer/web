@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Ang OnPlayerClickMap ay itinatawag kapag ang player ay naglagay ng isang target o waypoint sa kanyang pause menu map. (Sa pag right-click)
+Ang `OnPlayerClickMap` ay itinatawag kapag ang player ay naglagay ng isang target o waypoint sa kanyang pause menu map. (Sa pag right-click)
 
 | Name     | Description                                                                         |
 | -------- | ----------------------------------------------------------------------------------- |

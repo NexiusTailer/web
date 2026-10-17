@@ -23,7 +23,7 @@ new PlayerColors[] = {
 
 Прво ставите то на врх ваше скрипте.
 
-Затим ставите ово испод повратног позива OnPlayerConnect:
+Затим ставите ово испод повратног позива `OnPlayerConnect`:
 
 ```c
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);

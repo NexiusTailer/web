@@ -37,12 +37,12 @@ The param 'weaponslot' is a typo in the sa-mp include. You must use the weapon I
 
 :::tip
 
-Set the ammo to 0 to remove a weapon from a player's inventory. Note that the weapon will still show up in GetPlayerWeaponData, albeit with 0 ammo.
+Set the ammo to 0 to remove a weapon from a player's inventory. Note that the weapon will still show up in `GetPlayerWeaponData`, albeit with 0 ammo.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerAmmo: Check how much ammo a player has in the specified slot.
-- GivePlayerWeapon: Give a player a weapon.
-- SetPlayerArmedWeapon: Set a player's armed weapon.
+- `GetPlayerAmmo`: Check how much ammo a player has in the specified slot.
+- `GivePlayerWeapon`: Give a player a weapon.
+- `SetPlayerArmedWeapon`: Set a player's armed weapon.

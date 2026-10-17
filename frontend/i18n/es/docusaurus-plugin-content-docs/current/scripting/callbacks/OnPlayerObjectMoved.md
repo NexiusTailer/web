@@ -6,12 +6,12 @@ tags: ["player"]
 
 ## Descripción
 
-Este callback se llama cuando un objeto de jugador es movido después de MovePlayerObject (cuando este termina de moverse).
+Este callback se llama cuando un objeto de jugador es movido después de `MovePlayerObject` (cuando este termina de moverse).
 
-| Nombre   | Descripción                                 |
-| -------- | ------------------------------------------- |
-| playerid | El playerid al que está asignado el objeto. |
-| objectid | El ID del objeto de jugador que fue movido. |
+| Nombre   | Descripción                                   |
+| -------- | --------------------------------------------- |
+| playerid | El `playerid` al que está asignado el objeto. |
+| objectid | El ID del objeto de jugador que fue movido.   |
 
 ## Devoluciones
 

@@ -23,7 +23,7 @@ tags: ["玩家", "物体", "玩家物体"]
 
 ## 返回值
 
-返回创建物体的 ID，若达到物体数量上限（MAX_OBJECTS）则返回 INVALID_OBJECT_ID。
+返回创建物体的 ID，若达到物体数量上限（`MAX_OBJECTS`）则返回 `INVALID_OBJECT_ID`。
 
 ## 示例
 

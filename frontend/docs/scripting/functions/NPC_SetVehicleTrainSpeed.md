@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Only works with train vehicles (models 537, 538)
-- Use NPC_GetVehicleTrainSpeed to check current speed
+- Use `NPC_GetVehicleTrainSpeed` to check current speed
 - Setting speed to 0 stops the train
 
 ## Related Functions

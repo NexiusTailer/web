@@ -61,7 +61,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - NPC 会立即出现在车辆中，没有进入动画
-- 使用 NPC_GetVehicleID 检查 NPC 在哪辆车辆中
+- 使用 `NPC_GetVehicleID` 检查 NPC 在哪辆车辆中
 - 座位 0 始终是驾驶座
 - 最大座位 ID 取决于车辆型号
 

@@ -22,5 +22,5 @@ public OnRecordingPlaybackEnd()
 
 Les fonctions suivantes peuvent être utiles, car elles sont liées à ce rappel d'une manière ou d'une autre.
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): Lance la reproduction d'un fichier .rec déjà enregistré.
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): Arrête la reproduction d'un fichier .rec.
+- [StartRecordingPlayback](../functions/StartRecordingPlayback): Lance la reproduction d'un fichier _.rec_ déjà enregistré.
+- [StopRecordingPlayback](../functions/StopRecordingPlayback): Arrête la reproduction d'un fichier _.rec_.

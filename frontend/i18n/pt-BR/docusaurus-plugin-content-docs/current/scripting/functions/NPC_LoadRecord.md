@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notas
 
-- Carregue as gravações antes de usá-las com NPC_StartPlayback
+- Carregue as gravações antes de usá-las com `NPC_StartPlayback`
 
 :::warning
 

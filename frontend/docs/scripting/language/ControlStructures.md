@@ -656,7 +656,7 @@ That code will give an output of:
 
 1 3
 
-Because the print("2"); line will never be reached.
+Because the `print("2")`; line will never be reached.
 
 You can also use return to return a value:
 

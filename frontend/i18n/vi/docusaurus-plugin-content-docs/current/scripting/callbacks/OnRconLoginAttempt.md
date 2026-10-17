@@ -54,7 +54,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-- Callback này chỉ được gọi khi sử dụng lệnh /rcon login trong trò chơi. Callback này chỉ được gọi khi người chơi chưa đăng nhập. Khi người chơi đã đăng nhập, [OnRconCommand](OnRconCommand) sẽ được gọi thay vào đó.
+- Callback này chỉ được gọi khi sử dụng lệnh _/rcon login_ trong trò chơi. Callback này chỉ được gọi khi người chơi chưa đăng nhập. Khi người chơi đã đăng nhập, [OnRconCommand](OnRconCommand) sẽ được gọi thay vào đó.
 
 :::
 

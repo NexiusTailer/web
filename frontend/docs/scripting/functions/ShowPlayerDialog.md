@@ -9,16 +9,16 @@ tags: ["player", "dialog"]
 
 Shows the player a synchronous (only one at a time) dialog box.
 
-| Name               | Description                                                                                                                             |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid           | The ID of the player to show the dialog to.                                                                                             |
-| dialogid           | An ID to assign this dialog to, so responses can be processed. Max dialogid is 32767. Using negative values will close any open dialog. |
-| DIALOG_STYLE:style | The [style](../resources/dialogstyles) of the dialog.                                                                                   |
-| const title[]      | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.       |
-| const body[]       | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                  |
-| const button1[]    | The text on the left button.                                                                                                            |
-| const button2[]    | The text on the right button. Leave it blank ( "" ) to hide it.                                                                         |
-| OPEN_MP_TAGS:...   | Indefinite number of arguments of any tag.                                                                                              |
+| Name               | Description                                                                                                                               |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid           | The ID of the player to show the dialog to.                                                                                               |
+| dialogid           | An ID to assign this dialog to, so responses can be processed. Max `dialogid` is 32767. Using negative values will close any open dialog. |
+| DIALOG_STYLE:style | The [style](../resources/dialogstyles) of the dialog.                                                                                     |
+| const title[]      | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.         |
+| const body[]       | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                    |
+| const button1[]    | The text on the left button.                                                                                                              |
+| const button2[]    | The text on the right button. Leave it blank ( "" ) to hide it.                                                                           |
+| OPEN_MP_TAGS:...   | Indefinite number of arguments of any tag.                                                                                                |
 
 ## Returns
 

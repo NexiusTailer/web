@@ -10,7 +10,7 @@ Gebruikt door [GetVehicleLandingGearState](../functions/GetVehicleLandingGearSta
 
 :::
 
-| Definitie               | ID  |
-| ----------------------- | --- |
-| LANDING_GEAR_STATE_DOWN | 0   |
-| LANDING_GEAR_STATE_UP   | 1   |
+| Definitie                 | ID  |
+| ------------------------- | --- |
+| `LANDING_GEAR_STATE_DOWN` | 0   |
+| `LANDING_GEAR_STATE_UP`   | 1   |

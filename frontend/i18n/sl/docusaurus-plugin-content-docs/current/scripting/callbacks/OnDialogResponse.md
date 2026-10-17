@@ -23,7 +23,7 @@ Vedno je bila povabljena prva v "filterscript" torej vrnite 1 tam blokira ostale
 
 ## Primeri
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Določimo ID pogovornega okna, da lahko upravljamo odzive
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 // definiramo drug dialog, mu damo eno večjo vrednost kot prejšnjemu
@@ -89,7 +89,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 // definiramo tretje pogovorno okno, spet je vrednost večja od vrednosti prejšnjega pogovornega okna
@@ -119,7 +119,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 // to je še en način prikaza in upravljanja za tretje pogovorno okno

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head. For use of a similar function like this on a global level, ShowNameTags function.
+This functions allows you to toggle the drawing of player nametags, healthbars and armor bars which display above their head. For use of a similar function like this on a global level, `ShowNameTags` function.
 
 | Name         | Description                                      |
 | ------------ | ------------------------------------------------ |
@@ -19,7 +19,7 @@ This functions allows you to toggle the drawing of player nametags, healthbars a
 
 ImportantNote
 
-ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
+`ShowNameTags` must be set to 1 to be able to show name tags with `ShowPlayerNameTagForPlayer`, that means that in order to be effective you need to `ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)` ahead of time(OnPlayerStreamIn is a good spot).
 
 ## ตัวอย่าง
 
@@ -37,12 +37,12 @@ if (strcmp("/nameoff", cmdtext, true) == 0)
 
 :::warning
 
-ShowNameTags must be set to 1 to be able to show name tags with ShowPlayerNameTagForPlayer, that means that in order to be effective you need to ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) ahead of time(OnPlayerStreamIn is a good spot).
+`ShowNameTags` must be set to 1 to be able to show name tags with `ShowPlayerNameTagForPlayer`, that means that in order to be effective you need to `ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)` ahead of time(OnPlayerStreamIn is a good spot).
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- ShowNameTags: Set nametags on or off.
-- DisableNameTagLOS: Disable nametag Line-Of-Sight checking.
-- SetPlayerMarkerForPlayer: Set a player's marker.
+- `ShowNameTags`: Set nametags on or off.
+- `DisableNameTagLOS`: Disable nametag Line-Of-Sight checking.
+- `SetPlayerMarkerForPlayer`: Set a player's marker.

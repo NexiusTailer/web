@@ -658,7 +658,7 @@ Bu kod, şu çıktıyı verecektir:
 
 1 3
 
-Çünkü print("2"); satırı asla ulaşılmayacaktır.
+Çünkü `print("2")`; satırı asla ulaşılmayacaktır.
 
 return'u bir değer döndürmek için de kullanabilirsiniz:
 

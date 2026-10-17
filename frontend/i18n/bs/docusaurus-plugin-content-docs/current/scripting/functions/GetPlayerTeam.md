@@ -17,7 +17,7 @@ Dobij ID tima u kojem je igrač.
 
 **0-254**: Tim igrača. (0 je važeći tim)
 
-**255**: Definisano kao NO_TEAM. Igrač nije u timu.
+**255**: Definisano kao `NO_TEAM`. Igrač nije u timu.
 
 **-1**: Funkcija neuspješno izvršena. Igrač nije konektovan.
 

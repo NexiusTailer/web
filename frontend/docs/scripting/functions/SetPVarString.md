@@ -45,7 +45,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in OnPlayerDisconnect.
+Variables aren't reset until after [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) is called, so the values are still accessible in `OnPlayerDisconnect`.
 
 :::
 

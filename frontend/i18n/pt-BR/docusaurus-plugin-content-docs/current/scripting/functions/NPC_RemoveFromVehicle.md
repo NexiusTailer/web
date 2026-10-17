@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - NPC aparecerá instantaneamente fora do veículo sem animação de saída
-- Use NPC_ExitVehicle para saída animada
+- Use `NPC_ExitVehicle` para saída animada
 - Retorna false se NPC não estiver em um veículo
 - A posição NPC será definida perto do veículo
 

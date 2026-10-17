@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 只有当 NPC 特别针对给定玩家时才返回 true
 - 使用此函数检查玩家是否被 NPC 瞄准
-- NPC 必须使用 NPC_AimAtPlayer 此函数才返回 true
+- NPC 必须使用 `NPC_AimAtPlayer` 此函数才返回 true
 
 ## 相关函数
 

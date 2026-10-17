@@ -9,9 +9,9 @@ tags: []
 
 Closes a file. Files should always be closed when the script no longer needs them (after reading/writing).
 
-| Name        | Description                                  |
-| ----------- | -------------------------------------------- |
-| File:handle | The file handle to close. Returned by fopen. |
+| Name        | Description                                    |
+| ----------- | ---------------------------------------------- |
+| File:handle | The file handle to close. Returned by `fopen`. |
 
 ## ส่งคืน
 
@@ -47,7 +47,7 @@ else
 
 :::warning
 
-Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using `fopen` or `ftemp`.
 
 :::
 

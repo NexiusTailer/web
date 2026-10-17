@@ -660,7 +660,7 @@ MyFunction(num)
 
 1 3
 
-因为 print("2"); 语句永远不会执行。
+因为 `print("2")`; 语句永远不会执行。
 
 return 也可用于返回值：
 

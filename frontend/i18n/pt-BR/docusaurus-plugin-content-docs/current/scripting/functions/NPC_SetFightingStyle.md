@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Os estilos de luta afetam as animações e os danos dos ataques corpo a corpo
-- Use NPC_GetFightingStyle para verificar o estilo atual
+- Use `NPC_GetFightingStyle` para verificar o estilo atual
 - O estilo afeta as animações de ataque e a eficácia do combate
 
 ## Funções Relacionadas

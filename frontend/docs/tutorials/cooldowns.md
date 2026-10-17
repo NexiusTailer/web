@@ -224,15 +224,15 @@ OnPlayerFinishRace(playerid)
 
 Here is where the calculation of the interval happens, well, I say calculation, it's just subtracting two values!
 
-GetTickCount() returns the current tick count, so it will be bigger than the initial tick count which means you subtract the initial tick count from the current tick count to get your interval between the two measures.
+`GetTickCount()` returns the current tick count, so it will be bigger than the initial tick count which means you subtract the initial tick count from the current tick count to get your interval between the two measures.
 
-So, as we said the player finishes the race 1 minute and 40 seconds later (100 seconds, or 100,000 milliseconds), GetTickCount will return 160,000. Subtract the initial value (Which is 60,000) from the new value (Which is 160,000) and you get 100,000 milliseconds, which is 1 minute 40 seconds, which is the time it took the player to do the race!
+So, as we said the player finishes the race 1 minute and 40 seconds later (100 seconds, or 100,000 milliseconds), `GetTickCount` will return 160,000. Subtract the initial value (Which is 60,000) from the new value (Which is 160,000) and you get 100,000 milliseconds, which is 1 minute 40 seconds, which is the time it took the player to do the race!
 
 ## Recap and Notes
 
 So! We learned that:
 
-- GetTickCount returns the amount of time in milliseconds since the computer system that the server is running on started.
+- `GetTickCount` returns the amount of time in milliseconds since the computer system that the server is running on started.
 - And we can use that by calling it at two intervals, saving the first to a variable and comparing the two values can give you an accurate interval in milliseconds between those two events.
 
 Last of all, you don't want to be telling your players time values in milliseconds! What if they take an hour to complete a race?

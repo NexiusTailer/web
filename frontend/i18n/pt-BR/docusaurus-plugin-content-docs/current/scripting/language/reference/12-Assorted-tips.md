@@ -146,7 +146,7 @@ main()
 }
 ```
 
-Nas listagens anteriores, o snippet de código requer uma função de string "strlen" que retorna o comprimento da string em caracteres. Embora uma implementação possa fornecer uma função strlen, não é uma função do núcleo.
+Nas listagens anteriores, o snippet de código requer uma função de string "strlen" que retorna o comprimento da string em caracteres. Embora uma implementação possa fornecer uma função `strlen`, não é uma função do núcleo.
 
 Observe como, em um caso, aplicamos char no tamanho do array é após o tamanho, enquanto na
 outra aplicação de char para obter um comprimento que expressa o número de células
@@ -273,7 +273,7 @@ packedstring(string{})
 
 ## Formatadores genéricos de saída
 
-Os formatadores de saída printf e strformat foram baseados na função printf da linguagem de programação C.
+Os formatadores de saída `printf` e `strformat` foram baseados na função `printf` da linguagem de programação C.
 PAWN suporta os seguintes formatadores:
 
 | Formatador | Significado                                                   |
@@ -432,7 +432,7 @@ Observe que funções callback são geralmente nativas, e seus nomes dependem do
 
 ## Entrada de arquivo em PAWN
 
-A linguagem PAWN não tem nenhuma funcionalidade E/S embutida. Isso significa que só é possível ler arquivos por meios específicos que a implementação fornece (se houver). A aplicação iniesta pode, por exemplo, suportar funções como fopen() e fread().
+A linguagem PAWN não tem nenhuma funcionalidade E/S embutida. Isso significa que só é possível ler arquivos por meios específicos que a implementação fornece (se houver). A aplicação iniesta pode, por exemplo, suportar funções como `fopen()` e `fread()`.
 
 Em outros sistemas embarcados, os dados necessários para a execução do script podem ser armazenados como dados na RAM ou ROM em vez de armazenados no disco como um arquivo
 
@@ -524,11 +524,11 @@ main()
 
 ## Alternativas para printf
 
-A função printf é uma função de propósito geral com uma lista de parâmetros aberta. Devido a sua inerente flexibilidade, também é relativamente grande e frequentemente não pode ser otimizada. Devido à lista de parâmetros de tamanho variável, ela também força um modelo de passagem de argumentos que seja independente de qualquer conhecimento da função.
+A função `printf` é uma função de propósito geral com uma lista de parâmetros aberta. Devido a sua inerente flexibilidade, também é relativamente grande e frequentemente não pode ser otimizada. Devido à lista de parâmetros de tamanho variável, ela também força um modelo de passagem de argumentos que seja independente de qualquer conhecimento da função.
 
-Se a implementação precisar economizar memória — em outras palavras, se você precisar de um executável menor na ROM — você pode definir sua própria funções nativas para casos especiais. Por exemplo, em vez de usar printf para exibir uma mensagem de depuração como a linha acima, você pode usar:
+Se a implementação precisar economizar memória — em outras palavras, se você precisar de um executável menor na ROM — você pode definir sua própria funções nativas para casos especiais. Por exemplo, em vez de usar `printf` para exibir uma mensagem de depuração como a linha acima, você pode usar:
 
-Listagem: funções alternativas para printf
+Listagem: funções alternativas para `printf`
 
 ```c
 #define dbgstring(%1) printf("%s", %1)

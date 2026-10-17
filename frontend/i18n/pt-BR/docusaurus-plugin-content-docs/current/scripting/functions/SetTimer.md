@@ -56,9 +56,9 @@ Você pode usar [KillTimer](KillTimer) em um timer ID e não importa se ele est�
 
 ## Definições
 
-| Definition | Valor |
-| ------------- | ----- |
-| INVALID_TIMER | 0 |
+| Definition      | Valor |
+| --------------- | ----- |
+| `INVALID_TIMER` | 0     |
 
 ## Funções Relacionadas
 

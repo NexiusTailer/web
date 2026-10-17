@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Use SPECIAL_ACTION_NONE to clear the current action
+- Use `SPECIAL_ACTION_NONE` to clear the current action
 - Some actions may conflict with movement or other activities
 
 ## Related Functions

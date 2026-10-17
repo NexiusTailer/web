@@ -176,7 +176,7 @@ addvector(vect, {5, 5, 5}, 3)
 
 ```
 
-The invocation of function printf with the string "Hello world\n" in the first
+The invocation of function `printf` with the string "Hello world\n" in the first
 ubiquitous program is another example of passing a literal array to a function.
 
 ---
@@ -247,14 +247,14 @@ cedure call” syntax. You can use it only if:
 - the first parameter is on the same line as the function name, unless you use named parameters (see the next section).
 
 As you may observe, the procedure call syntax applies to cases where a function
-call behaves rather as a statement, like in the calls to print and printf in the
+call behaves rather as a statement, like in the calls to `print` and `printf` in the
 preceding example. The syntax is aimed at making such statements appear less
 cryptic and friendlier to read, but not that the use of the syntax is optional.
 
 As a side note, all parentheses in the example program presented in this section
-are required: the return values of the calls to getvalue are stored  
+are required: the return values of the calls to `getvalue` are stored  
 in two variables, and therefore an empty pair of parentheses must follow the function
-name. Function getvalue has optional parameters, but none are passed in this example program.
+name. Function `getvalue` has optional parameters, but none are passed in this example program.
 
 ---
 
@@ -613,7 +613,7 @@ intersection(dest[rectangle], const src1[rectangle], const src2[rectangle])
 A function that takes a variable number of arguments, uses the “ellipsis” oper-
 ator (“...”) in the function header to denote the position of the first variable
 argument. The function can access the arguments with the predefined func-
-tions numargs, getarg and setarg (see page 124).
+tions `numargs`, `getarg` and `setarg` (see page 124).
 
 Function sum returns the summation of all of its parameters.
 It uses a variable length parameter list.
@@ -645,8 +645,8 @@ new v = sum(1, 2, 3, 4, 5)
 A tag may precede the ellipsis to enforce that all subsequent parameters have the same tag, but otherwise there is no error
 checking with a variable argument list and this feature should therefore be used with caution.
 
-The functions getarg and setarg assume that the argument is passed “by
-reference”. When using getarg on normal function parameters (instead of
+The functions `getarg` and `setarg` assume that the argument is passed “by
+reference”. When using `getarg` on normal function parameters (instead of
 variable arguments) one should be cautious of this, as neither the compiler nor
 the abstract machine can check this. Actual parameters that are passed
 as part of a “variable argument list” are always passed by reference.

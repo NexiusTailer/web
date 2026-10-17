@@ -10,7 +10,7 @@ tags: ["player"]
 
 ## Descrição
 
-Obtém o playerid mais alto atualmente em uso no servidor. Observe que em SA:MP esta função está quebrada e retornará `0` mesmo quando não houver jogadores. open.mp corrige isso para retornar `-1`, mas também descontinua a função em favor de `MAX_PLAYERS` ou `foreach`.
+Obtém o `playerid` mais alto atualmente em uso no servidor. Observe que em SA:MP esta função está quebrada e retornará `0` mesmo quando não houver jogadores. open.mp corrige isso para retornar `-1`, mas também descontinua a função em favor de `MAX_PLAYERS` ou `foreach`.
 
 ## Exemplos
 

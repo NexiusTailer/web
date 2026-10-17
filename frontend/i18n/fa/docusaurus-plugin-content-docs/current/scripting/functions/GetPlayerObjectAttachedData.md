@@ -11,13 +11,13 @@ tags: ["player", "object", "playerobject"]
 
 دریافت داده‌های اتصال یک player-object.
 
-| نام            | توضیحات                                                                |
-| -------------- | ---------------------------------------------------------------------- |
-| playerid       | ID بازیکن                                                              |
-| objectid       | ID player-object برای دریافت داده‌های اتصالش                           |
-| &parentVehicle | متغیری برای ذخیره ID parentVehicle، به صورت reference پاس داده می‌شود. |
-| &parentObject  | متغیری برای ذخیره ID parentObject، به صورت reference پاس داده می‌شود.  |
-| &parentPlayer  | متغیری برای ذخیره ID parentPlayer، به صورت reference پاس داده می‌شود.  |
+| نام            | توضیحات                                                                  |
+| -------------- | ------------------------------------------------------------------------ |
+| playerid       | ID بازیکن                                                                |
+| objectid       | ID player-object برای دریافت داده‌های اتصالش                             |
+| &parentVehicle | متغیری برای ذخیره ID `parentVehicle`، به صورت reference پاس داده می‌شود. |
+| &parentObject  | متغیری برای ذخیره ID `parentObject`، به صورت reference پاس داده می‌شود.  |
+| &parentPlayer  | متغیری برای ذخیره ID `parentPlayer`، به صورت reference پاس داده می‌شود.  |
 
 ## مقادیر برگشتی
 

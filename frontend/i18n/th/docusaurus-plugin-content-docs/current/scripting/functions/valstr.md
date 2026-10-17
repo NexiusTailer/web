@@ -31,7 +31,7 @@ valstr(string,iValue); // string is now "250"
 
 :::warning
 
-Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before valstr is used anywhere). open.mp includes this fix.
+Passing a high value to this function can cause the server to freeze/crash. Fixes are available. Below is a fix that can be put straight in to your script (before `valstr` is used anywhere). open.mp includes this fix.
 
 ```c
 // valstr fix by Slice
@@ -52,5 +52,5 @@ stock FIX_valstr(dest[], value, bool:pack = false)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- strval: Convert a string into an integer.
-- strcmp: Compare two strings to check if they are the same.
+- `strval`: Convert a string into an integer.
+- `strcmp`: Compare two strings to check if they are the same.

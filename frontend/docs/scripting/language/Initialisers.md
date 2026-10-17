@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
 }
 ```
 
-That will create an array with two slots for every player. Into the one referenced by E_MY_ARRAY_MONEY it'll put 0 when a player connects and 5 into E_MY_ARRAY_GUN. Without an enum this would look like:
+That will create an array with two slots for every player. Into the one referenced by `E_MY_ARRAY_MONEY` it'll put 0 when a player connects and 5 into `E_MY_ARRAY_GUN`. Without an enum this would look like:
 
 ```c
 new
@@ -94,7 +94,7 @@ enum E_EXAMPLE
 }
 ```
 
-The first value (E_EXAMPLE_0) is 0 (by default if no other value is specified), so the second value (E_EXAMPLE_1) is 1 (0 + 1) and the third value (E_EXAMPLE_2) is 2 (1 + 1). This makes the value of E_EXAMPLE 3 (2 + 1), the name of the enum is also the last value in the enum. If we change the modifier we get different values:
+The first value (`E_EXAMPLE_0`) is 0 (by default if no other value is specified), so the second value (`E_EXAMPLE_1`) is 1 (0 + 1) and the third value (`E_EXAMPLE_2`) is 2 (1 + 1). This makes the value of `E_EXAMPLE` 3 (2 + 1), the name of the enum is also the last value in the enum. If we change the modifier we get different values:
 
 ```c
 enum E_EXAMPLE (+= 5)
@@ -105,7 +105,7 @@ enum E_EXAMPLE (+= 5)
 }
 ```
 
-In that example every value is the last value + 5 so, starting from 0 again, we get: E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 5, E_EXAMPLE_2 = 10, E_EXAMPLE = 15. If you were to declare an array of:
+In that example every value is the last value + 5 so, starting from 0 again, we get: `E_EXAMPLE_0` = 0, `E_EXAMPLE_1` = 5, `E_EXAMPLE_2` = 10, `E_EXAMPLE` = 15. If you were to declare an array of:
 
 ```c
 new
@@ -181,7 +181,7 @@ enum E_EXAMPLE
 }
 ```
 
-That would make E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 10, E_EXAMPLE_2 = 11 and E_EXAMPLE = 12, contrary to the popular belief of 0, 1, 2 and 3.
+That would make `E_EXAMPLE_0` = 0, `E_EXAMPLE_1` = 10, `E_EXAMPLE_2` = 11 and `E_EXAMPLE` = 12, contrary to the popular belief of 0, 1, 2 and 3.
 
 enums items can also have tags, so for out original example:
 
@@ -314,7 +314,7 @@ enum (<<= 1)
 }
 ```
 
-Now TEAM_COP is 1, TEAM_ROBBER is 2, TEAM_CIV is 4 etc, which in binary is 0b00000001, 0b00000010 and 0b00000100. This means that if a player's team is 3 then they are in both the cop team and the robber team. That may sound pointless but it does open up possibilities:
+Now `TEAM_COP` is 1, `TEAM_ROBBER` is 2, `TEAM_CIV` is 4 etc, which in binary is 0b00000001, 0b00000010 and 0b00000100. This means that if a player's team is 3 then they are in both the cop team and the robber team. That may sound pointless but it does open up possibilities:
 
 ```c
 enum (<<= 1)
@@ -436,7 +436,7 @@ The other interesting thing you can do with native is rename/overload functions:
 native my_print(const string[]) = print;
 ```
 
-Now the function print doesn't actually exist. It is still in SA:MP, and the compiler knows it's real name thanks to the "= print" part, but if you try call it in PAWN you will get an error as you have renamed print internally to my_print. As print now doesn't exist you can define it just like any other function:
+Now the function `print` doesn't actually exist. It is still in SA:MP, and the compiler knows it's real name thanks to the "= print" part, but if you try call it in PAWN you will get an error as you have renamed `print` internally to my_print. As `print` now doesn't exist you can define it just like any other function:
 
 ```c
 print(const string[])
@@ -446,7 +446,7 @@ print(const string[])
 }
 ```
 
-Now whenever print() is used in a script your function will be called instead of the original and you can do what you like. In this case another message is printed first then the original message.
+Now whenever `print()` is used in a script your function will be called instead of the original and you can do what you like. In this case another message is printed first then the original message.
 
 ## `new`
 
@@ -589,7 +589,7 @@ Will simply give 42, nothing to do with addition.
 
 public is used to make a function visible to the Virtual Machine, i.e. it allows the SA:MP server to call the function directly, instead of only allowing the function to be called from inside the PAWN script. You can also make variables public to read and write their values from the server, however this is never used in SA:MP (although you may be able to utilise it from a plugin, I've never tried) (you can also combine this with const to make a variable which can ONLY be modified from the server).
 
-A public function has it's textual name stored in the amx file, unlike normal functions which only have their address stored for jumps, which is another drawback to decompilation. This is so that you can call the function by name from outside the script, it also allows you to call functions by name from inside the script by leaving and re-entering it. A native function call is almost the opposite of a public function call, it calls a function outside the script from inside the script as opposed to calling a function inside the script from outside the script. If you combine the two you get functions like SetTimer, SetTimerEx, CallRemoteFunction and CallLocalFunction which call functions by name, not address.
+A public function has it's textual name stored in the amx file, unlike normal functions which only have their address stored for jumps, which is another drawback to decompilation. This is so that you can call the function by name from outside the script, it also allows you to call functions by name from inside the script by leaving and re-entering it. A native function call is almost the opposite of a public function call, it calls a function outside the script from inside the script as opposed to calling a function inside the script from outside the script. If you combine the two you get functions like `SetTimer`, `SetTimerEx`, `CallRemoteFunction` and `CallLocalFunction` which call functions by name, not address.
 
 Calling a function by name:
 
@@ -630,7 +630,7 @@ public MyPublicFunc()
 }
 ```
 
-Obviously that example introduced SetTimerEx to call "MyOtherPublicFunc" after 5 seconds and pass it the integer value 7 to print.
+Obviously that example introduced `SetTimerEx` to call "MyOtherPublicFunc" after 5 seconds and pass it the integer value 7 to print.
 
 main, used in most of these examples, is similar to a public function in that it can be called from outside the script, however it is not a public function - it just has a special known address so the server knows where to jump to to run it.
 
@@ -661,7 +661,7 @@ public MyPublicFunc()
 }
 ```
 
-This is obviously much faster than using CallLocalFunction or another native.
+This is obviously much faster than using `CallLocalFunction` or another native.
 
 ## `static`
 

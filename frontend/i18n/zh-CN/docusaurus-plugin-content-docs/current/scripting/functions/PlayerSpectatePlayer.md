@@ -36,7 +36,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-- 调用顺序至关重要！必须先使用 TogglePlayerSpectating 启用观战模式
+- 调用顺序至关重要！必须先使用 `TogglePlayerSpectating` 启用观战模式
 - 观战者与被观战者必须处于相同虚拟世界和室内环境
 
 :::

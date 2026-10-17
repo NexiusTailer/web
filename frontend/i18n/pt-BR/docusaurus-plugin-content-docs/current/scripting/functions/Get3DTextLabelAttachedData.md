@@ -12,15 +12,15 @@ tags: ["3dtextlabel"]
 
 Obtém os dados anexados do rótulo de texto 3D.
 
-| Nome | Descrição |
-| ---------------- | ------------------------------------------------------------------------ |
-| Text3D:textid | O ID do rótulo de texto 3D do qual obter os dados anexados.                 |
-| &parentPlayerid | Uma variável na qual armazenar o parentPlayerid, passado por referência.  |
-| &parentVehicleid | Uma variável na qual armazenar o parentVehicleid, passado por referência. |
+| Nome             | Descrição                                                                   |
+| ---------------- | --------------------------------------------------------------------------- |
+| Text3D:textid    | O ID do rótulo de texto 3D do qual obter os dados anexados.                 |
+| &parentPlayerid  | Uma variável na qual armazenar o `parentPlayerid`, passado por referência.  |
+| &parentVehicleid | Uma variável na qual armazenar o `parentVehicleid`, passado por referência. |
 
 ## Exemplos
 
-Um exemplo para **parentPlayerid**:
+Um exemplo para `parentPlayerid`:
 
 ```c
 new Text3D:gMyLabel;
@@ -32,7 +32,7 @@ Attach3DTextLabelToPlayer(gMyLabel, playerid, 0.0, 0.0, 0.7);
 
 Get3DTextLabelAttachedData(gMyLabel, parentPlayerid, parentVehicleid);
 ```
-Um exemplo para **parentVehicleid**:
+Um exemplo para `parentVehicleid`:
 
 ```c
 new Text3D:gVehicle3dText[MAX_VEHICLES];

@@ -112,10 +112,10 @@ Vehicles must be respawned for the 'objective' to be removed.
 
 :::warning
 
-Since 0.3a you will have to reapply this function when OnVehicleStreamIn is called.
+Since 0.3a you will have to reapply this function when `OnVehicleStreamIn` is called.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetVehicleParamsEx: Sets a vehicle's params for all players.
+- `SetVehicleParamsEx`: Sets a vehicle's params for all players.

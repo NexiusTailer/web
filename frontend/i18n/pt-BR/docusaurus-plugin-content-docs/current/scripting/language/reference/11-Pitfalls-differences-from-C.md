@@ -6,7 +6,7 @@
 
 - A sintaxe aceita para números racionais é mais estrita do que a de valores de ponto flutuante em C. Valores como ".5" e "6." são aceitáveis em C, mas em PAWN deve-se escrever "0.5" e "6.0" respectivamente. Em C, o ponto decimal é opcional se um expoente for incluído, então pode-se escrever "2E8"; PAWN não aceita o "E" maiúsculo (use um "e" minúsculo) e requer o ponto decimal: por exemplo, "2.0e8". Veja página 98 para mais informações.
 
-- PAWN não fornece "ponteiros". Para o propósito de passar argumentos de função por referência, PAWN fornece um argumento "referência" (página 71). O argumento "placeholder" substitui alguns usos do ponteiro NULL (página 75).
+- PAWN não fornece "ponteiros". Para o propósito de passar argumentos de função por referência, PAWN fornece um argumento "referência" (página 71). O argumento "placeholder" substitui alguns usos do ponteiro `NULL` (página 75).
 
 - Números podem ter base hexadecimal, decimal ou binária. Base octal não é suportada. Veja "Constants" na página 98. Números hexadecimais devem começar com "0x" (um "x" minúsculo), o prefixo "0X" é inválido.
 
@@ -18,11 +18,11 @@
 
 - PAWN suporta "atribuição de array", com a restrição de que ambos os arrays devem ter o mesmo tamanho. Por exemplo, se "a" e "b" são ambos arrays com 6 células, a expressão "a = b" é válida. Além de strings literais, PAWN também suporta arrays literais, permitindo a expressão "a = {0,1,2,3,4,5}" (onde "a" é uma variável de array com 6 elementos).
 
-- _char_ é um operador, não um tipo. Veja página 110 e as dicas na página 137.
+- `char` é um operador, não um tipo. Veja página 110 e as dicas na página 137.
 
-- _defined_ é um operador, não uma diretiva de pré-processador. O operador defined em PAWN opera em constantes (com const e enum), variáveis globais, variáveis locais e funções.
+- `defined` é um operador, não uma diretiva de pré-processador. O operador defined em PAWN opera em constantes (com const e enum), variáveis globais, variáveis locais e funções.
 
-- O operador _sizeof_ retorna o tamanho de uma variável em "elementos", não em "bytes". Um elemento pode ser uma célula ou um sub-array. Veja página 109 para detalhes.
+- O operador `sizeof` retorna o tamanho de uma variável em "elementos", não em "bytes". Um elemento pode ser uma célula ou um sub-array. Veja página 109 para detalhes.
 
 - A instrução vazia é um bloco composto vazio, não um ponto e vírgula (página 112). Esta modificação evita um erro frequente.
 

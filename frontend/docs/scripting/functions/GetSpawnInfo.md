@@ -20,12 +20,12 @@ Return the current spawn data for a player, where they will spawn next.
 | &Float:spawnY   | A Float variable into which to store the Y-coordinate, passed by reference. |
 | &Float:spawnZ   | A Float variable into which to store the Z-coordinate, passed by reference. |
 | &Float:angle    | A Float variable into which to store the Facing angle, passed by reference. |
-| &WEAPON:weapon1 | A variable into which to store the weapon1, passed by reference.            |
-| &ammo1          | A variable into which to store the ammo1, passed by reference.              |
-| &WEAPON:weapon2 | A variable into which to store the weapon2, passed by reference.            |
-| &ammo2          | A variable into which to store the ammo2, passed by reference.              |
-| &WEAPON:weapon3 | A variable into which to store the weapon3, passed by reference.            |
-| &ammo3          | A variable into which to store the ammo3, passed by reference.              |
+| &WEAPON:weapon1 | A variable into which to store the `weapon1`, passed by reference.          |
+| &ammo1          | A variable into which to store the `ammo1`, passed by reference.            |
+| &WEAPON:weapon2 | A variable into which to store the `weapon2`, passed by reference.          |
+| &ammo2          | A variable into which to store the `ammo2`, passed by reference.            |
+| &WEAPON:weapon3 | A variable into which to store the `weapon3`, passed by reference.          |
+| &ammo3          | A variable into which to store the `ammo3`, passed by reference.            |
 
 ## Returns
 

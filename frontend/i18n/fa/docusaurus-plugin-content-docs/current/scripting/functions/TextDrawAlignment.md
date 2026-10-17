@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-- برای تراز TEXT_DRAW_ALIGN_CENTER (وسط) مقادیر x و y از TextSize باید جابجا شوند، نکات در [TextDrawTextSize](TextDrawTextSize) را ببینید، همچنین مختصات موقعیت به موقعیت مرکز textdraw تبدیل می‌شود و نه لبه‌های چپ/بالا.
+- برای تراز `TEXT_DRAW_ALIGN_CENTER` (وسط) مقادیر x و y از TextSize باید جابجا شوند، نکات در [TextDrawTextSize](TextDrawTextSize) را ببینید، همچنین مختصات موقعیت به موقعیت مرکز textdraw تبدیل می‌شود و نه لبه‌های چپ/بالا.
 - اگر textdraw قبلاً نمایش داده شده است، باید دوباره نمایش داده شود ([TextDrawShowForAll](TextDrawShowForAll)/[TextDrawShowForPlayer](TextDrawShowForPlayer)) تا تغییرات این تابع نمایش داده شوند.
 
 :::

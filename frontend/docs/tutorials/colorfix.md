@@ -23,7 +23,7 @@ new PlayerColors[] = {
 
 First place that at the top of your script.
 
-Next place this under the OnPlayerConnect callback:
+Next place this under the `OnPlayerConnect` callback:
 
 ```pawn
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);

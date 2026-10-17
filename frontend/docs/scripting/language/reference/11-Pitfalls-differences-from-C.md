@@ -6,7 +6,7 @@
 
 - The accepted syntax for rational numbers is stricter than that of floating point values in C. Values like “.5” and “6.” are acceptable in C, but in PAWN one must write “0.5” and “6.0” respectively. In C, the decimal period is optional if an exponent is included, so one can write “2E8”; PAWN does not accept the upper case “E” (use a lower case “e”) and it requires the decimal point: e.g. “2.0e8”. See page 98 for more information.
 
-- PAWN does not provide “pointers”. For the purpose of passing function arguments by reference, PAWN provides a “reference” argument, (page 71). The “placeholder” argument replaces some uses of the NULL pointer (page 75).
+- PAWN does not provide “pointers”. For the purpose of passing function arguments by reference, PAWN provides a “reference” argument, (page 71). The “placeholder” argument replaces some uses of the `NULL` pointer (page 75).
 
 - Numbers can have hexadecimal, decimal or binary radix. Octal radix is not supported. See “Constants” on page 98. Hexadecimal numbers must start with “0x” (a lower case “x”), the prefix “0X” is invalid.
 
@@ -18,11 +18,11 @@
 
 - PAWN supports “array assignment”, with the restriction that both arrays must have the same size. For example, if “a” and “b” are both arrays with 6 cells, the expression “a = b” is valid. Next to literal strings, PAWN also supports literal arrays, allowing the expression “a = {0,1,2,3,4,5}” (where “a” is an array variable with 6 elements).
 
-- _char_ is an operator, not a type. See page 110 and the tips on page 137.
+- `char` is an operator, not a type. See page 110 and the tips on page 137.
 
-- _defined_ is an operator, not a preprocessor directive. The defined operator in PAWN operates on constants (with const and enum), global variables, local variables and functions.
+- `defined` is an operator, not a preprocessor directive. The defined operator in PAWN operates on constants (with const and enum), global variables, local variables and functions.
 
-- The _sizeof_ operator returns the size of a variable in “elements”, not in “bytes”. An element may be a cell or a sub-array. See page 109 for details.
+- The `sizeof` operator returns the size of a variable in “elements”, not in “bytes”. An element may be a cell or a sub-array. See page 109 for details.
 
 - The empty instruction is an empty compound block, not a semicolon (page 112). This modification avoids a frequent error.
 

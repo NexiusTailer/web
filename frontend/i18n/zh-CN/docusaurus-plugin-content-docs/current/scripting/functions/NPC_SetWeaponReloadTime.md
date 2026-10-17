@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 重新装填时间以毫秒为单位
-- 使用 NPC_GetWeaponReloadTime 检查当前重新装填时间
+- 使用 `NPC_GetWeaponReloadTime` 检查当前重新装填时间
 
 ## 相关函数
 

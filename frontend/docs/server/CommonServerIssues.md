@@ -61,7 +61,7 @@ The error commonly shown as:
 Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit: x (messageholelimit)
 ```
 
-Happens when 'out of order messages' reuses messageholelimit setting.
+Happens when 'out of order messages' reuses `messageholelimit` setting.
 
 For more information about this, refer to [this](ControllingServer#rcon-commands)
 

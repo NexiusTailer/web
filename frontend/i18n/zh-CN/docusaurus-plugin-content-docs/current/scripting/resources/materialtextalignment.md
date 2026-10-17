@@ -10,8 +10,8 @@ description: 纹理文本对齐方式列表。
 
 :::
 
-| 数值 | 常量定义                                    |
-| ---- | ------------------------------------------- |
-| 0    | OBJECT_MATERIAL_TEXT_ALIGN_LEFT(左对齐)     |
-| 1    | OBJECT_MATERIAL_TEXT_ALIGN_CENTER(居中对齐) |
-| 2    | OBJECT_MATERIAL_TEXT_ALIGN_RIGHT(右对齐)    |
+| 数值 | 常量定义                                      |
+| ---- | --------------------------------------------- |
+| 0    | `OBJECT_MATERIAL_TEXT_ALIGN_LEFT`(左对齐)     |
+| 1    | `OBJECT_MATERIAL_TEXT_ALIGN_CENTER`(居中对齐) |
+| 2    | `OBJECT_MATERIAL_TEXT_ALIGN_RIGHT`(右对齐)    |

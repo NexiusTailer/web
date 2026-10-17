@@ -9,15 +9,15 @@ tags: ["player", "object", "playerobject"]
 
 Replace the texture of a player-object with the texture from another model in the game.
 
-| Name                   | Description                                                                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| playerid               | The ID of the player the object is associated to.                                                                                                |
-| objectid               | The ID of the object to replace the texture of                                                                                                   |
-| materialIndex          | The material index on the object to change (0 to 15)                                                                                             |
-| modelid                | The modelid on which replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the existing texture. |
-| const textureLibrary[] | The name of the txd file which contains the replacement texture (use "none" if not required)                                                     |
-| const textureName[]    | The name of the texture to use as the replacement (use "none" if not required)                                                                   |
-| materialColour         | The object color to set, as an integer or hex in **ARGB format**. Using **0** keeps the existing material color.                                 |
+| Name                   | Description                                                                                                                                        |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid               | The ID of the player the object is associated to.                                                                                                  |
+| objectid               | The ID of the object to replace the texture of                                                                                                     |
+| materialIndex          | The material index on the object to change (0 to 15)                                                                                               |
+| modelid                | The `modelid` on which replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the existing texture. |
+| const textureLibrary[] | The name of the txd file which contains the replacement texture (use "none" if not required)                                                       |
+| const textureName[]    | The name of the texture to use as the replacement (use "none" if not required)                                                                     |
+| materialColour         | The object color to set, as an integer or hex in **ARGB format**. Using **0** keeps the existing material color.                                   |
 
 ## Returns
 

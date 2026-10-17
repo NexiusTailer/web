@@ -46,8 +46,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Retorna true quando o NPC está mirando ativamente em um alvo
 - Use isto para verificar se um NPC está em modo de combate
-- A mira pode ser iniciada com NPC_AimAt ou NPC_AimAtPlayer
-- NPCs continue mirando até parar com NPC_StopAim
+- A mira pode ser iniciada com `NPC_AimAt` ou `NPC_AimAtPlayer`
+- NPCs continue mirando até parar com `NPC_StopAim`
 
 ## Funções Relacionadas
 

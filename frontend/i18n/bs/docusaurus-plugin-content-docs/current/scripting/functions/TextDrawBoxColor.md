@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Deskripcija
 
-Prilagođava boju okvira za tekst (koristi se samo ako je parametar 'use' TextDrawUseBox 'true').
+Prilagođava boju okvira za tekst (koristi se samo ako je parametar 'use' `TextDrawUseBox` 'true').
 
 | Ime   | Deskripcija                                                                                                                                      |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

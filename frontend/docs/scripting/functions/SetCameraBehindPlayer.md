@@ -7,7 +7,7 @@ tags: ["player", "camera"]
 
 ## Description
 
-Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.
+Restore the camera to a place behind the player, after using a function like `SetPlayerCameraPos`.
 
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |

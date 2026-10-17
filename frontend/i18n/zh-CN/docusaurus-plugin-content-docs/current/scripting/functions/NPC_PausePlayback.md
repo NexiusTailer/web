@@ -47,8 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 仅在 NPC 正在回放录制时有效
-- 暂停的回放可以通过调用 pause = false 来恢复
-- 使用 NPC_IsPlaybackPaused 检查当前暂停状态
+- 暂停的回放可以通过调用 `pause` = false 来恢复
+- 使用 `NPC_IsPlaybackPaused` 检查当前暂停状态
 
 ## 相关函数
 

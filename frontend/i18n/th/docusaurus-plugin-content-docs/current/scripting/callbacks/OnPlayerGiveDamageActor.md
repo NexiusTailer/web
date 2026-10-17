@@ -15,13 +15,13 @@ Callback นี้ถูกเพิ่มใน SA-MP 0.3.7 และจะไ�
 
 This callback is called when a player gives damage to an actor.
 
-| Name            | Description                                           |
-| --------------- | ----------------------------------------------------- |
-| playerid        | The ID of the player that gave damage.                |
-| damaged_actorid | The ID of the actor that received damage.             |
-| Float:amount    | The amount of health/armour damaged_actorid has lost. |
-| WEAPON:weaponid | The reason that caused the damage.                    |
-| bodypart        | The body part that was hit                            |
+| Name            | Description                                             |
+| --------------- | ------------------------------------------------------- |
+| playerid        | The ID of the player that gave damage.                  |
+| damaged_actorid | The ID of the actor that received damage.               |
+| Float:amount    | The amount of health/armour `damaged_actorid` has lost. |
+| WEAPON:weaponid | The reason that caused the damage.                      |
+| bodypart        | The body part that was hit                              |
 
 ## ส่งคืน
 

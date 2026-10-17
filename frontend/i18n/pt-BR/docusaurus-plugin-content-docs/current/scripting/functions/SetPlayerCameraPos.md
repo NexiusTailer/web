@@ -32,8 +32,8 @@ SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 
 :::tip
 
-- Talvez você também precise usar SetPlayerCameraLookAt com esta função para funcionar corretamente.
-- Use SetCameraBehindPlayer para redefinir a câmera para trás do jogador.
+- Talvez você também precise usar `SetPlayerCameraLookAt` com esta função para funcionar corretamente.
+- Use `SetCameraBehindPlayer` para redefinir a câmera para trás do jogador.
 
 :::
 

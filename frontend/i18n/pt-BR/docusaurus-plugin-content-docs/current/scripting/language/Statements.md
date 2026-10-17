@@ -126,7 +126,7 @@ Produzirá:
 9
 ```
 
-Um continue após o print basicamente não fará nada. Em um loop for, continue pula para a terceira declaração na instrução for (neste exemplo, a parte "i++;"), isso é diferente de como se comporta em um loop while:
+Um continue após o `print` basicamente não fará nada. Em um loop for, continue pula para a terceira declaração na instrução for (neste exemplo, a parte "i++;"), isso é diferente de como se comporta em um loop while:
 
 ```c
 new
@@ -293,7 +293,7 @@ A inicialização neste loop é:
 new i = 0;
 ```
 
-O ponto e vírgula marca o fim da inicialização. Isso declara uma nova variável, chamada i, que só pode ser usada dentro deste loop. Em seguida, a comparação é feita. Ela compara i com MAX_PLAYERS (padrão 500 - veja #define) e se for menor, continua. Então, o conteúdo do loop é executado. Inicialmente, isso imprimirá "0". Finalmente, a atualização é feita "i++", isso aumenta o valor de i. Agora, uma iteração completa está concluída, o loop volta, como o nome indica, e retorna ao estágio de comparação (a inicialização é feita apenas uma vez por chamada).
+O ponto e vírgula marca o fim da inicialização. Isso declara uma nova variável, chamada i, que só pode ser usada dentro deste loop. Em seguida, a comparação é feita. Ela compara i com `MAX_PLAYERS` (padrão 500 - veja #define) e se for menor, continua. Então, o conteúdo do loop é executado. Inicialmente, isso imprimirá "0". Finalmente, a atualização é feita "i++", isso aumenta o valor de i. Agora, uma iteração completa está concluída, o loop volta, como o nome indica, e retorna ao estágio de comparação (a inicialização é feita apenas uma vez por chamada).
 
 O resultado deste loop é todos os números de 0 a 499 inclusive sendo impressos. O loop while equivalente (ignorando os efeitos do continue) seria:
 
@@ -614,7 +614,7 @@ Também não é permitido, pois o retorno padrão é nada.
 
 ## `sleep`
 
-sleep é uma pseudo-função que faz a execução pausar por um determinado número de milissegundos:
+`sleep` é uma pseudo-função que faz a execução pausar por um determinado número de milissegundos:
 
 ```c
 printf("Tempo 0s");
@@ -701,4 +701,4 @@ while (i < 10)
 }
 ```
 
-Veja **do** e **for** para mais informações.
+Veja `do` e `for` para mais informações.

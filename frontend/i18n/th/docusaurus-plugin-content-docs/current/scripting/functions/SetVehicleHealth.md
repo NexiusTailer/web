@@ -42,10 +42,10 @@ Full vehicle health is **1000**. Higher values are possible. For more informatio
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetVehicleHealth: Check the health of a vehicle.
-- RepairVehicle: Fully repair a vehicle.
-- SetPlayerHealth: Set a player's health.
-- OnVehicleDeath: Called when a vehicle is destroyed.
+- `GetVehicleHealth`: Check the health of a vehicle.
+- `RepairVehicle`: Fully repair a vehicle.
+- `SetPlayerHealth`: Set a player's health.
+- `OnVehicleDeath`: Called when a vehicle is destroyed.
 
 ## Related Resources
 

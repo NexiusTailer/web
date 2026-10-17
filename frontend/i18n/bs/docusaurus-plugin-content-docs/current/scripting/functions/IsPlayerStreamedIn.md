@@ -16,9 +16,9 @@ Provjerava ako je igrač učitan u klijent drugog igrača.
 
 ## Returns
 
-**1**: Igrač je učitan.
+**1**: Igrač _je_ učitan.
 
-**0**: Igrač nije učitan.
+**0**: Igrač _nije_ učitan.
 
 ## Primjeri
 
@@ -33,9 +33,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**SA-MP server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi server.cfg - stream_distance)
+**SA-MP server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi server.cfg - `stream_distance`)
 
-**open.mp server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi config.json - network.stream_radius)
+**open.mp server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi config.json - `network.stream_radius`)
 
 :::
 

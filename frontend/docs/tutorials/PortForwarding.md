@@ -77,7 +77,7 @@ Then your done! Click ok and close it. Launch the server, and see if its working
 
 ## The finish
 
-Once there, get the ip that is on your screen. Go again to your SA-MP Client, add that ip to your favorites and add YOUR_PORT (standard: 7777) at the end. If its working,
+Once there, get the ip that is on your screen. Go again to your SA-MP Client, add that ip to your favorites and add `YOUR_PORT` (standard: 7777) at the end. If its working,
 
 **CONGRATULATIONS**! _You have port-forwarded_!
 

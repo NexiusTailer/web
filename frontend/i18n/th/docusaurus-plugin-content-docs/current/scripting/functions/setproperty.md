@@ -48,6 +48,6 @@ setproperty(.value = 123984334, .string = ":)");
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- getproperty: Get the value of a property.
-- deleteproperty: Delete a property.
-- existproperty: Check if a property exists.
+- `getproperty`: Get the value of a property.
+- `deleteproperty`: Delete a property.
+- `existproperty`: Check if a property exists.

@@ -24,13 +24,13 @@ This function does not return any specific values.
 
 :::warning
 
-The textdraw MUST use the font TEXT_DRAW_FONT_MODEL_PREVIEW and be showing a vehicle in order for this function to have effect.
+The textdraw MUST use the font `TEXT_DRAW_FONT_MODEL_PREVIEW` and be showing a vehicle in order for this function to have effect.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- PlayerTextDrawSetPreviewModel: Set model ID of a 3D player textdraw preview.
-- PlayerTextDrawSetPreviewRot: Set rotation of a 3D player textdraw preview.
-- PlayerTextDrawFont: Set the font of a player-textdraw.
-- OnPlayerClickPlayerTextDraw: Called when a player clicks on a player-textdraw.
+- `PlayerTextDrawSetPreviewModel`: Set model ID of a 3D player textdraw preview.
+- `PlayerTextDrawSetPreviewRot`: Set rotation of a 3D player textdraw preview.
+- `PlayerTextDrawFont`: Set the font of a player-textdraw.
+- `OnPlayerClickPlayerTextDraw`: Called when a player clicks on a player-textdraw.

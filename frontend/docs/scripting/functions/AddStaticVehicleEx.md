@@ -9,7 +9,7 @@ tags: ["vehicle"]
 
 Adds a 'static' vehicle (models are pre-loaded for players) to the gamemode.
 
-Differs from AddStaticVehicle in only one way: allows a respawn time to be set for when the vehicle is left unoccupied by the driver.
+Differs from `AddStaticVehicle` in only one way: allows a respawn time to be set for when the vehicle is left unoccupied by the driver.
 
 | Name                                   | Description                                                                                         |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -25,9 +25,9 @@ Differs from AddStaticVehicle in only one way: allows a respawn time to be set f
 
 ## Returns
 
-The vehicle ID of the vehicle created (1 - MAX_VEHICLES).
+The vehicle ID of the vehicle created (1 - `MAX_VEHICLES`).
 
-INVALID_VEHICLE_ID (65535) if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
+`INVALID_VEHICLE_ID` (65535) if vehicle was not created (vehicle limit reached or invalid vehicle model ID passed).
 
 ## Examples
 

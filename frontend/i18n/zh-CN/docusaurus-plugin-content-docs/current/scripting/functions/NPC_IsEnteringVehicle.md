@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 仅在进入动画/过程中返回 true
 - 一旦 NPC 完全进入车辆，此函数返回 false
-- NPC 必须已通过 NPC_EnterVehicle 被指示进入车辆
+- NPC 必须已通过 `NPC_EnterVehicle` 被指示进入车辆
 
 ## 相关函数
 

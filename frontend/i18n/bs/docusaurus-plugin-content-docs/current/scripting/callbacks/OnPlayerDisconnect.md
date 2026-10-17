@@ -51,7 +51,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-Neke funkcije možda neće raditi kako treba kada se koriste u ovom callbacku zato što se igrač već diskonektovao kada je callback pozvan. Ovo znači da ne možeš dobiti nedvosmislenu informaciju iz funkcije kao npr GetPlayerIp i GetPlayerPos.
+Neke funkcije možda neće raditi kako treba kada se koriste u ovom callbacku zato što se igrač već diskonektovao kada je callback pozvan. Ovo znači da ne možeš dobiti nedvosmislenu informaciju iz funkcije kao npr `GetPlayerIp` i `GetPlayerPos`.
 
 :::
 

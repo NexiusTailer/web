@@ -35,13 +35,13 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);
 
 :::note
 
-Os ângulos retornados quando dentro de um veículo raramente são corretos. Para obter o ângulo de visão correto dentro de um veículo, use GetVehicleZAngle.
+Os ângulos retornados quando dentro de um veículo raramente são corretos. Para obter o ângulo de visão correto dentro de um veículo, use `GetVehicleZAngle`.
 
 :::
 
 :::warning
 
-Os ângulos são invertidos em GTA: SA; 90 graus seria o leste no mundo real, mas em GTA: SA 90 graus seria na verdade o oeste. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer **360 - ângulo**.
+Os ângulos são invertidos em GTA: SA; 90 graus seria o _leste_ no mundo real, mas em GTA: SA 90 graus seria na verdade o _oeste_. Norte e Sul ainda são 0/360 e 180. Para converter isso, basta fazer **360 - ângulo**.
 
 :::
 

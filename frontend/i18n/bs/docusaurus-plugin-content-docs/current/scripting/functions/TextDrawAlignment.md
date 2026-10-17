@@ -18,7 +18,7 @@ Postavite poravnanje teksta u textdrawu.
 
 Note
 
-Za poravnanje 2 (centrirano) x i y vrijednosti TextSize-a treba zamijeniti, pogledaj zabilješke na TextDrawTextSize, zakođer pozicija kordinata postaje pozicija centra textdrawa a ne lijevi/gornji rubovi.
+Za poravnanje 2 (centrirano) x i y vrijednosti TextSize-a treba zamijeniti, pogledaj zabilješke na `TextDrawTextSize`, zakođer pozicija kordinata postaje pozicija centra textdrawa a ne lijevi/gornji rubovi.
 
 ## Primjeri
 

@@ -21,7 +21,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, str);
 
 :::warning
 
-Ova funkcija se ne može koristiti umjesto MAX_PLAYERS. Ne može se koristiti u vrijeme kompajlovanja (npr. za array sizes). MAX_PLAYERS uvijek treba redefinirati na ono što će biti var 'max_players' ili više. Pogledajte funkciju MAX_PLAYERS za više informacija.
+Ova funkcija se ne može koristiti umjesto `MAX_PLAYERS`. Ne može se koristiti u vrijeme kompajlovanja (npr. za array sizes). `MAX_PLAYERS` uvijek treba redefinirati na ono što će biti var 'max_players' ili više. Pogledajte funkciju `MAX_PLAYERS` za više informacija.
 
 :::
 

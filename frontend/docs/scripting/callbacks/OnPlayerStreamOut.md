@@ -36,7 +36,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 :::warning
 
-OnPlayerStreamOut is not called for both players when a player disconnects
+`OnPlayerStreamOut` is not called for both players when a player disconnects
 
 :::
 

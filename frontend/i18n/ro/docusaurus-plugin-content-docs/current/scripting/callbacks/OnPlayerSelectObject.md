@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descriere
 
-Acest callback este apelat atunci când un jucător selectează un obiect după ce SelectObject a fost folosit.
+Acest callback este apelat atunci când un jucător selectează un obiect după ce `SelectObject` a fost folosit.
 
 | Nume     | Descriere                                           |
 | -------- | --------------------------------------------------- |

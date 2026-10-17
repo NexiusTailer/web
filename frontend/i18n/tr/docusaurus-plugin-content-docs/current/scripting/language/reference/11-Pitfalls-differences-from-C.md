@@ -6,7 +6,7 @@
 
 - Rasyonel sayılar için kabul edilen sözdizimi, C'deki kayan nokta değerlerinden daha katıdır. C'de ".5" ve "6." gibi değerler kabul edilebilirken, PAWN'da sırasıyla "0.5" ve "6.0" yazmak gerekir. C'de ondalık noktası isteğe bağlıdır, bu nedenle "2E8" yazabilirsiniz; ancak PAWN büyük harf "E"yi kabul etmez (küçük harf "e" kullanın) ve ondalık noktayı gerektirir: örneğin "2.0e8". Daha fazla bilgi için sayfa 98'e bakın.
 
-- PAWN, "işaretçileri" sağlamaz. Fonksiyon argümanlarını referansla iletmek için PAWN, bir "referans" argümanı sağlar (sayfa 71). "Placeholder" argümanı, NULL işaretçisinin bazı kullanımlarını (sayfa 75) yerine getirir.
+- PAWN, "işaretçileri" sağlamaz. Fonksiyon argümanlarını referansla iletmek için PAWN, bir "referans" argümanı sağlar (sayfa 71). "Placeholder" argümanı, `NULL` işaretçisinin bazı kullanımlarını (sayfa 75) yerine getirir.
 
 - Sayılar onaltılık, ondalık veya ikili sayı tabanına sahip olabilir. Sekizli taban desteklenmez. "Sabitler" bölümüne bakın. Onaltılık sayılar "0x" (küçük harf "x") ile başlamalıdır, "0X" öneki geçersizdir.
 

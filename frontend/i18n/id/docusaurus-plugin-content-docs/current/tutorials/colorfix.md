@@ -23,7 +23,7 @@ new PlayerColors[] = {
 
 Tempat pertama paling atas di script kalian.
 
-Tempat selanjutnya di bawah callback OnPlayerConnect:
+Tempat selanjutnya di bawah callback `OnPlayerConnect`:
 
 ```c
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);

@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function, as of 0.3.7-R2, is deprecated. Please see GetConsoleVarAsString
+This function, as of 0.3.7-R2, is deprecated. Please see `GetConsoleVarAsString`
 
 :::
 
@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-Kad su filterskripte ili plugini navedeni kao ime var, ova funkcija vraća samo ime prve navedene filterskripte ili plugina. Ovo je bug.
+Kad su _filterskripte_ ili _plugini_ navedeni kao ime var, ova funkcija vraća samo ime prve navedene filterskripte ili plugina. Ovo je bug.
 
 :::
 

@@ -60,7 +60,7 @@ L'erreur généralement affichée comme:
 Avertissement : Trop de messages dans le désordre du joueur <ip> :<port> (<count>) Limite : x (messageholelimit)
 ```
 
-Se produit lorsque les "messages hors service" réutilisent le paramètre messageholelimit.
+Se produit lorsque les "messages hors service" réutilisent le paramètre `messageholelimit`.
 
 Pour plus d'informations à ce sujet, consultez [ceci](ControllingServer#commandes-rcon)
 

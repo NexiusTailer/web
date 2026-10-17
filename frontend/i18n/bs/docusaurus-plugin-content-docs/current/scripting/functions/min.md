@@ -9,14 +9,14 @@ tags: []
 
 Function used to compare the values.
 
-| Ime | Deskripcija                |
-| --- | -------------------------- |
-| a   | Vrijednost a za uporediti. |
-| b   | Vrijednost b za uporediti. |
+| Ime | Deskripcija                  |
+| --- | ---------------------------- |
+| a   | Vrijednost `a` za uporediti. |
+| b   | Vrijednost `b` za uporediti. |
 
 ## Returns
 
-Returna/vraća najmanji od a i b. Ako su oba ekvivalentna, vraća se a.
+Returna/vraća najmanji od `a` i `b`. Ako su oba ekvivalentna, vraća se `a`.
 
 ## Primjeri
 

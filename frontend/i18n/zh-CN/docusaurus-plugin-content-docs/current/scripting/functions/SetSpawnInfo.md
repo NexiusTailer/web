@@ -44,7 +44,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 :::warning
 
-- 若不需要队伍归属，请将 team 参数设为`NO_TEAM`(255)
+- 若不需要队伍归属，请将 `team` 参数设为`NO_TEAM`(255)
 - open.mp 中 0 号队伍为有效队伍（与 SA-MP 存在差异）
 
 :::

@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function, as of 0.3.7-R2, is deprecated. Please see GetConsoleVarAsString
+This function, as of 0.3.7-R2, is deprecated. Please see `GetConsoleVarAsString`
 
 :::
 
@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-When _filterscripts_ or _plugins_ is specified as the varname, this function only returns the name of the first specified filterscript or plugin. This is a bug.
+When _filterscripts_ or _plugins_ is specified as the `varname`, this function only returns the name of the first specified filterscript or plugin. This is a bug.
 
 :::
 
@@ -58,5 +58,5 @@ Using this function on anything other than a **string** (int, bool or float) or 
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetServerVarAsInt: Retreive a server variable as an integer.
-- GetServerVarAsBool: Retreive a server variable as a boolean.
+- `GetServerVarAsInt`: Retreive a server variable as an integer.
+- `GetServerVarAsBool`: Retreive a server variable as a boolean.

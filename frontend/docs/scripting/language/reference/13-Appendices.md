@@ -284,7 +284,7 @@ Errors are separated into three classes:
 | 201    | **redefinition of constant/macro** (**symbol** _name_)                                                                                                                                                                                                                                                                                                                                                         |
 |        | The symbol was previously defined to a different value, or the text substitution macro that starts with the prefix name was redefined with a different substitution text.                                                                                                                                                                                                                                      |
 | 202    | **number of arguments does not match definition**                                                                                                                                                                                                                                                                                                                                                              |
-|        | At a function call, the number of arguments passed to the function (actual arguments) differs from the number of formal arguments declared in the function heading. To declare functions with variable argument lists, use an ellipsis (...) behind the last known argument in the function heading; for example: print(formatstring,...); (see page 80).                                                      |
+|        | At a function call, the number of arguments passed to the function (actual arguments) differs from the number of formal arguments declared in the function heading. To declare functions with variable argument lists, use an ellipsis (...) behind the last known argument in the function heading; for example: `print(formatstring,...)`; (see page 80).                                                    |
 | 203    | **symbol is never used:** _identifier_                                                                                                                                                                                                                                                                                                                                                                         |
 |        | A symbol is defined but never used. Public functions are excluded from the symbol usage check (since these may be called from the outside).                                                                                                                                                                                                                                                                    |
 | 204    | **symbol is assigned a value that is never used:** _identifier_                                                                                                                                                                                                                                                                                                                                                |
@@ -693,7 +693,7 @@ poke functions (from BASIC) in the abstract machine, a PAWN program can
 access any byte in memory, insofar the operating system permits this. Likewise,
 an application can provide native functions that insert, delete or search
 symbols in a table and allows several operations on them. The proposed core functions
-getproperty and setproperty are an example of native functions that build
+`getproperty` and `setproperty` are an example of native functions that build
 a linked list in the background.
 
 **Promote error checking:** As you may have noticed, one of the foremost
@@ -765,10 +765,10 @@ C language functions can pass “output values” via pointer arguments. The
 standard function scanf, for example, stores the values or strings that it reads
 from the console into its arguments. You can design a function in C so that
 it optionally returns a value through a pointer argument; if the caller of the
-function does not care for the return value, it passes NULL as the pointer
+function does not care for the return value, it passes `NULL` as the pointer
 value. The standard function strtol is an example of a function that does this. This
 technique frequently saves you from declaring and passing dummy variables.
-PAWN replaces pointers with references, but references cannot be NULL. Thus,
+PAWN replaces pointers with references, but references cannot be `NULL`. Thus,
 PAWN needed a different technique to “drop” the values that a function returns
 via references. Its solution is the use of an “argument placeholder”
 that is written as an underscore character (“ ”); Prolog programmers will recognize

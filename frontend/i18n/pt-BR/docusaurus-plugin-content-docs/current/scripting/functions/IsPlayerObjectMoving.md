@@ -8,7 +8,7 @@ tags: ["player", "object", "playerobject"]
 
 ## Descrição
 
-Verifica se o objectid do jogador fornecido está se movendo.
+Verifica se o `objectid` do jogador fornecido está se movendo.
 
 | Nome | Descrição |
 | -------- | ---------------------------------------------------- |

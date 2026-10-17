@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Essa callback é executada quando a requisição enviada pela função SendClientCheck é completa.
+Essa callback é executada quando a requisição enviada pela função `SendClientCheck` é completa.
 
 | Nome     | Descrição               |
 | -------- | ----------------------- |

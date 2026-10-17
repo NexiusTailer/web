@@ -28,18 +28,18 @@ SetWorldTime(12);
 
 :::note
 
-This function is only relevant for players that do not use a passing clock - see TogglePlayerClock.
+This function is only relevant for players that do not use a passing clock - see `TogglePlayerClock`.
 
 :::
 
 :::tip
 
-To set the minutes and/or to set the time for individual players, see SetPlayerTime.
+To set the minutes and/or to set the time for individual players, see `SetPlayerTime`.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerTime: Set a player's time.
-- SetWeather: Set the global weather.
-- SetGravity: Set the global gravity.
+- `SetPlayerTime`: Set a player's time.
+- `SetWeather`: Set the global weather.
+- `SetGravity`: Set the global gravity.

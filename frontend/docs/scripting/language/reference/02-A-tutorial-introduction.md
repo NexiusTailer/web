@@ -23,16 +23,16 @@ consult the application manual (more hints are at page 168).
 A pawn program starts execution in an “entry” function\* —in nearly all examples of this manual, this entry function is called “main”. Here, the function
 main contains only a single instruction, which is at the line below the function
 head itself. Line breaks and indenting are insignificant; the invocation of the
-function print could equally well be on the same line as the head of function main.
+function `print` could equally well be on the same line as the head of function main.
 
 The definition of a function requires that a pair of parentheses follow the function name. If a function takes parameters, their declarations appear between
 the parentheses. The function main does not take any parentheses. The rules
 are different for a function invocation (or a function call); parentheses are
-optional in the call to the print function.
+optional in the call to the `print` function.
 
-The single argument of the print function is a string, which must be enclosed
+The single argument of the `print` function is a string, which must be enclosed
 in double quotes. The characters \n near the end of the string form an escape
-sequence, in this case they indicate a “newline” symbol. When print encounters the newline escape sequence, it advances the cursor to the first column of
+sequence, in this case they indicate a “newline” symbol. When `print` encounters the newline escape sequence, it advances the cursor to the first column of
 the next line. One has to use the \n escape sequence to insert a “newline” into
 the string, because a string may not wrap over multiple lines.
 
@@ -47,7 +47,7 @@ the string, because a string may not wrap over multiple lines.
 ---
 
 pawn is a “case sensitive” language: upper and lower case letters are considered
-to be different letters. It would be an error to spell the function printf in the
+to be different letters. It would be an error to spell the function `printf` in the
 above example as “PrintF”. Keywords and predefined symbols, like the name
 of function “main”, must be typed in lower case.
 
@@ -83,7 +83,7 @@ format language and other indenting styles are just as good.
 Because pawn is designed to be an extension language for applications,
 the function set/library that a pawn program has at its disposal depends on the
 host application. As a result, the pawn language has no intrinsic knowledge
-of any function. The print function, used in this first example, must be made
+of any function. The `print` function, used in this first example, must be made
 available by the host application and be “declared” to the pawn parser.
 
 ---
@@ -95,11 +95,11 @@ available by the host application and be “declared” to the pawn parser.
 ---
 
 It is assumed, however, that all host applications provide a minimal set of common
-functions, like print and printf.
+functions, like `print` and `printf`.
 
 In some environments, the display or terminal must be enabled before any text
 can be output onto it. If this is the case, you must add a call to the function
-“console” before the first call to function print or printf. The console
+“console” before the first call to function `print` or `printf`. The console
 function also allows you to specify device characteristics, such as the number
 of lines and columns of the display. The example programs in this
 manual do not use the console functions, because many platforms do not require or provide it.
@@ -147,17 +147,17 @@ to assign a value to the variable already at the moment of its creation.
 ---
 
 Variables must be declared before they are used in an expression.
-The getvalue function (also common predefined function)
+The `getvalue` function (also common predefined function)
 reads in a value from the keyboard and returns the result. Note that pawn
 is a typeless language, all variables are numeric
 cells that can hold a signed integral value.
 
-The getvalue function name is followed by a pair of parentheses. These are
-required because the value that getvalue returns is stored in a variable. Normally, the function’s arguments (or parameters) would appear between
-the parentheses, but getvalue (as used in this program) does not take any
+The `getvalue` function name is followed by a pair of parentheses. These are
+required because the value that `getvalue` returns is stored in a variable. Normally, the function’s arguments (or parameters) would appear between
+the parentheses, but `getvalue` (as used in this program) does not take any
 explicit arguments. If you do not assign the result of a function to a variable
 or use it in a expression in another way, the parentheses are optional. For
-example, the result of the print and printf statements are not used. You
+example, the result of the `print` and `printf` statements are not used. You
 may still use parentheses around the arguments, but it is not required.
 
 Loop instructions, like “while”, repeat a single instruction as long as the loop
@@ -176,7 +176,7 @@ The complete bundle is, again, a single instruction. That is:
 It is common to make the nesting of the statements explicit by indenting any
 sub-statements below a statement in the source text. In the “Greatest Common
 Divisor” example, the left margin indent increases by four space characters
-after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both printf invocations and the
+after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both `printf` invocations and the
 while loop, have the same indentation.
 
 The loop condition for the while loop is “(a != b)”; the symbol != is the
@@ -186,17 +186,17 @@ control of another statement, as is done in the preceding example.
 
 ---
 
-The call to printf, near the bottom of the example, differs from the print call
-right below the opening brace (“\{”). The “f” in printf stands for “formatted”,
+The call to `printf`, near the bottom of the example, differs from the `print` call
+right below the opening brace (“\{”). The “f” in `printf` stands for “formatted”,
 which means that the function can format and print numeric values and other
 data (in a user-specified format), as well as literal text. The %d symbol in the
 string is a token that indicates the position and the format that the subsequent
-argument to function printf should be printed. At run time, the token %d is
-replaced by the value of variable “a” (the second argument of printf).
+argument to function `printf` should be printed. At run time, the token %d is
+replaced by the value of variable “a” (the second argument of `printf`).
 
-Function print can only print text; it is quicker than printf. If you want to
-print a literal “%” at the display, you have to use print, or you have to double
-it in the string that you give to printf. That is:
+Function `print` can only print text; it is quicker than `printf`. If you want to
+print a literal “%” at the display, you have to use `print`, or you have to double
+it in the string that you give to `printf`. That is:
 
 `print "20% of the personnel accounts for 80% of the costs\n"`
 
@@ -353,7 +353,7 @@ It need not appear at the very end of the function; early exits are permitted.
 ---
 
 The main function of the Fibonacci example calls predefined “native” functions,
-like getvalue and printf, as well as the user-defined function fibonacci.
+like `getvalue` and `printf`, as well as the user-defined function fibonacci.
 From the perspective of calling a function (as in function main), there is no
 difference between user-defined and native functions.
 
@@ -478,7 +478,7 @@ JulianToDate(jdn, &day, &month, &year)
 
 Function main starts with creating variables to hold the day, month and year,
 and the calculated Julian Day number. Then it reads in a date —three calls to
-getvalue— and calls function DateToJulian to calculate the day number. After calculating the result, main prints the date that you entered and the Julian
+`getvalue`— and calls function DateToJulian to calculate the day number. After calculating the result, main prints the date that you entered and the Julian
 Day number for that date. Now, let us focus on function DateToJulian. . .
 
 Near the top of function DateToJulian, it increments the year value if it is
@@ -605,7 +605,7 @@ support is enabled, pawn supports values with a fractional part behind
 the decimal point.
 
 The only other non-trivial change from earlier programs is that the format
-string for the printf function now has variable placeholders denoted with
+string for the `printf` function now has variable placeholders denoted with
 “%r” instead of “%d”. The placeholder %r prints a rational number at
 the position; %d is only for integers (“whole numbers”).
 
@@ -614,7 +614,7 @@ attempt to make the example program portable. If you know that the host
 application supports floating point arithmetic, it may be more convenient to
 “#include” the definitions from the file float and use the tag Float: instead
 of Rational —when doing so, you should also replace %r by %f in the call to
-printf. For details on fixed point and floating point support, please see the
+`printf`. For details on fixed point and floating point support, please see the
 application notes “Fixed Point Support Library” and “Floating Point Support
 Library” that are available separately.
 
@@ -699,7 +699,7 @@ means that the expression is true if (and only if) both `'a' <= string[index]`
 and `string[index] <= 'z'` are true. In the combined expression, the relational operators are said to be “chained”, as they chain multiple comparisons
 in one condition.
 
-Finally, note how the last printf in function main uses the escape sequence
+Finally, note how the last `printf` in function main uses the escape sequence
 \" to print a double quote. Normally a double quote ends the literal string;
 the escape sequence “\"” inserts a double quote into the string.
 
@@ -784,7 +784,7 @@ declaration of variable word), pawn supports array assignment and functions
 returning arrays. The pawn parser verifies that the array that strtok returns
 has the same size and dimensions as the variable that it is assigned into.
 
-Function strlen is a native function (predefined), but strtok is not: it must be
+Function `strlen` is a native function (predefined), but strtok is not: it must be
 implemented by ourselves. The function strtok was inspired by the function of
 the same name from C/C++, but it does not modify the source string. Instead
 
@@ -915,9 +915,9 @@ from the console and inserts them in a queue. The while loop below
 that extracts element by element from the queue and prints the information on the
 screen. The point to note, is that the for loop stores both the string and the
 priority number (an integer) in the same variable msg; indeed, function main
-declares only a single variable. Function getstring stores the message text
+declares only a single variable. Function `getstring` stores the message text
 that you type starting at array msg[text] while the priority value is stored
-(by an assignment a few lines lower) in msg[priority]. The printf function
+(by an assignment a few lines lower) in msg[priority]. The `printf` function
 in the while loop reads the string and the value from those positions as well.
 
 At the same time, the msg array is an entity on itself: it is passed in its
@@ -951,9 +951,9 @@ direction and it does not change its function argument item. In such a case,
 it is advised to mark the function argument as “const”. This helps the pawn
 parser to both check for errors and to generate better (more compact, quicker) code.
 
-A final remark on this latest sample is the call to getstring in function main:
+A final remark on this latest sample is the call to `getstring` in function main:
 note how the parameters are attributed with a description. The first parameter is labeled “.string”, the second “.maxlength” and the third “.pack”.
-Function getstring receives “named parameters” rather than positional parameters. The order in which named parameters are listed is not important.
+Function `getstring` receives “named parameters” rather than positional parameters. The order in which named parameters are listed is not important.
 Named parameters are convenient in specifying —and deciphering— long parameter lists.
 
 ---
@@ -1232,7 +1232,7 @@ that, together, build the rpn calculator. When programs or scripts get larger,
 it is usually advised to spread the implementation over several files, in
 order to make maintenance easier.
 
-Function main first puts up a prompt and calls the native function getstring
+Function main first puts up a prompt and calls the native function `getstring`
 to read an expression that the user types. Then it calls the custom function
 rpncalc to do the real work. Function rpncalc is implemented in the
 file rpnparse.inc, reproduced below:
@@ -1316,7 +1316,7 @@ gettoken(const string[], &index)
 The rpn calculator uses rational number support and rpnparse.inc includes
 the “rational” file for that purpose. Almost all of the operations on rational
 numbers is hidden in the arithmetic. The only direct references to
-rational numbers are the “%r” format code in the printf statement near the bottom
+rational numbers are the “%r” format code in the `printf` statement near the bottom
 of function rpncalc and the call to rationalstr halfway function gettoken.
 
 The first remarkable element in the file rpnparse.inc is the enum
@@ -1510,7 +1510,7 @@ your program is being called from the outside and it is required to
 respond appropriately and promptly.
 
 pawn does not specify a standard library, and so there is no guarantee that in
-a particular implementation, functions like printf and getvalue. Although
+a particular implementation, functions like `printf` and `getvalue`. Although
 it is suggested that every implementation provides a minimal console/terminal
 interface with a these functions, their availability is ultimately
 implementation-dependent. The same holds for the public functions —the entry points for a
@@ -1659,7 +1659,7 @@ echo(key)
 
 The bulk of the above script handles gathering received key-presses
 into a string and sending that string after seeing the enter key. The “Escape” key
-ends the program. The function echo serves to give visual feedback of what
+ends the program. The function `echo` serves to give visual feedback of what
 the user types: it builds a zero-terminated string from the key and prints it.
 
 Despite its simplicity, this script has the interesting property that there is
@@ -1813,10 +1813,10 @@ As is apparent in the script, state changes may be conditional. The condition
 is optional, and you can also use the common if–else construct to change states.
 
 Being state-dependent is not reserved for the event functions. Other functions
-may have state declarations as well, as the echo function demonstrates. When
+may have state declarations as well, as the `echo` function demonstrates. When
 a function would have the same implementation for several states, you
 just need to write a single implementation and mention all applicable states. For
-function echo there are two implementations to handle the four states.†
+function `echo` there are two implementations to handle the four states.†
 
 That said, an automaton must be prepared to handle all events in any state.
 Typically, the automaton has neither control over which events arrive nor over

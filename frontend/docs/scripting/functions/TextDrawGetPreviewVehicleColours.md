@@ -11,11 +11,11 @@ tags: ["textdraw"]
 
 Gets the preview vehicle colours of a 3D preview textdraw.
 
-| Name        | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| Text:textid | The ID of the textdraw to get the vehicle colours of.            |
-| &colour1    | A variable into which to store the colour1, passed by reference. |
-| &colour2    | A variable into which to store the colour2, passed by reference. |
+| Name        | Description                                                        |
+| ----------- | ------------------------------------------------------------------ |
+| Text:textid | The ID of the textdraw to get the vehicle colours of.              |
+| &colour1    | A variable into which to store the `colour1`, passed by reference. |
+| &colour2    | A variable into which to store the `colour2`, passed by reference. |
 
 ## Examples
 

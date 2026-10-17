@@ -342,7 +342,7 @@ Aceasta este probabil cea mai utilizată funcție legată de șiruri din comunit
 format(output[], len, const format[], {Float, _}:...)
 ```
 
-Funcția de format ia ca parametri matricea de ieșire, dimensiunea sa (_numărul de celule_), șirul de formatare (_aceasta poate fi pre-stocată pe o altă matrice sau poate fi atribuită direct din interiorul funcției_) și, în final, câțiva parametri opționali, aceștia pot să fie variabile din diferite tipuri. Să folosim această funcție pentru a atribui o valoare unui șir gol.
+Funcția de `format` ia ca parametri matricea de ieșire, dimensiunea sa (_numărul de celule_), șirul de formatare (_aceasta poate fi pre-stocată pe o altă matrice sau poate fi atribuită direct din interiorul funcției_) și, în final, câțiva parametri opționali, aceștia pot să fie variabile din diferite tipuri. Să folosim această funcție pentru a atribui o valoare unui șir gol.
 
 ```cpp
 new formatMsg[6];
@@ -515,7 +515,7 @@ I'm excited for 2019
 What about you?
 ```
 
-Observați cum am folosit simbolul numeric aici la fel cum am făcut-o cu funcția format, dacă valoarea este un număr întreg, îl prefixați cu `#`, deci este tratat ca un șir.
+Observați cum am folosit simbolul numeric aici la fel cum am făcut-o cu funcția `format`, dacă valoarea este un număr întreg, îl prefixați cu `#`, deci este tratat ca un șir.
 
 Rețineți, de asemenea, că funcția `print` acceptă șiruri împachetate, totuși acceptă doar variabile de tip șir (_matrice de caractere_), trecând tot ceea ce nu este o matrice, un șir (_fie între ghilimele duble sau prefixat cu simbolul numărului_) dați erori de compilare, astfel încât să faceți oricare dintre următoarele nu va funcționa;
 

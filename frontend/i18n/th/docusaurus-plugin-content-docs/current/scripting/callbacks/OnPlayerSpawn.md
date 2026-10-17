@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This callback is called when a player spawns.(i.e. after caling SpawnPlayer function)
+This callback is called when a player spawns.(i.e. after caling `SpawnPlayer` function)
 
 | Name     | Description                        |
 | -------- | ---------------------------------- |

@@ -12,19 +12,19 @@ description: 用于SetPlayerSkillLevel的武器技能数值。
 
 ## 技能类型
 
-| 值  | 定义                                             |
-| --- | ------------------------------------------------ |
-| 0   | WEAPONSKILL_PISTOL（手枪技能）                   |
-| 1   | WEAPONSKILL_PISTOL_SILENCED（消音手枪技能）      |
-| 2   | WEAPONSKILL_DESERT_EAGLE（沙漠之鹰技能）         |
-| 3   | WEAPONSKILL_SHOTGUN（霰弹枪技能）                |
-| 4   | WEAPONSKILL_SAWNOFF_SHOTGUN（短管霰弹枪技能）    |
-| 5   | WEAPONSKILL_SPAS12_SHOTGUN（SPAS-12 霰弹枪技能） |
-| 6   | WEAPONSKILL_MICRO_UZI（微型乌兹冲锋枪技能）      |
-| 7   | WEAPONSKILL_MP5（MP5 冲锋枪技能）                |
-| 8   | WEAPONSKILL_AK47（AK47 突击步枪技能）            |
-| 9   | WEAPONSKILL_M4（M4 卡宾枪技能）                  |
-| 10  | WEAPONSKILL_SNIPERRIFLE（狙击步枪技能）          |
+| 值  | 定义                                               |
+| --- | -------------------------------------------------- |
+| 0   | `WEAPONSKILL_PISTOL`（手枪技能）                   |
+| 1   | `WEAPONSKILL_PISTOL_SILENCED`（消音手枪技能）      |
+| 2   | `WEAPONSKILL_DESERT_EAGLE`（沙漠之鹰技能）         |
+| 3   | `WEAPONSKILL_SHOTGUN`（霰弹枪技能）                |
+| 4   | `WEAPONSKILL_SAWNOFF_SHOTGUN`（短管霰弹枪技能）    |
+| 5   | `WEAPONSKILL_SPAS12_SHOTGUN`（SPAS-12 霰弹枪技能） |
+| 6   | `WEAPONSKILL_MICRO_UZI`（微型乌兹冲锋枪技能）      |
+| 7   | `WEAPONSKILL_MP5`（MP5 冲锋枪技能）                |
+| 8   | `WEAPONSKILL_AK47`（AK47 突击步枪技能）            |
+| 9   | `WEAPONSKILL_M4`（M4 卡宾枪技能）                  |
+| 10  | `WEAPONSKILL_SNIPERRIFLE`（狙击步枪技能）          |
 
 ---
 

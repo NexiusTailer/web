@@ -9,14 +9,14 @@ tags: []
 
 Replace the texture of an object with the texture from another model in the game.
 
-| Name          | Description                                                                                                                                 |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| objectid      | The ID of the object to change the texture of                                                                                               |
-| materialindex | The material index on the object to change (0 to 15)                                                                                        |
-| modelid       | The modelid on which the replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the texture. |
-| txdname       | The name of the txd file which contains the replacement texture (use "none" if not required)                                                |
-| texturename   | The name of the texture to use as the replacement (use "none" if not required)                                                              |
-| materialcolor | The object color to set, as an integer or hex in **ARGB** color format. Using **0** keeps the existing material color.                      |
+| Name          | Description                                                                                                                                   |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| objectid      | The ID of the object to change the texture of                                                                                                 |
+| materialindex | The material index on the object to change (0 to 15)                                                                                          |
+| modelid       | The `modelid` on which the replacement texture is located. Use 0 for alpha. Use -1 to change the material color without altering the texture. |
+| txdname       | The name of the txd file which contains the replacement texture (use "none" if not required)                                                  |
+| texturename   | The name of the texture to use as the replacement (use "none" if not required)                                                                |
+| materialcolor | The object color to set, as an integer or hex in **ARGB** color format. Using **0** keeps the existing material color.                        |
 
 ## ส่งคืน
 
@@ -59,7 +59,7 @@ You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerObjectMaterial: Replace the texture of a player object with the texture from another model in the game.
-- SetObjectMaterialText: Replace the texture of an object with text.
+- `SetPlayerObjectMaterial`: Replace the texture of a player object with the texture from another model in the game.
+- `SetObjectMaterialText`: Replace the texture of an object with text.
 - Ultimate Creator by Nexius
 - Fusez's Map Editor by RedFusion

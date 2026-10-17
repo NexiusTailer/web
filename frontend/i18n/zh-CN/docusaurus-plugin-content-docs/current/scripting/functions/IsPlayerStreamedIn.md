@@ -16,9 +16,9 @@ tags: ["玩家"]
 
 ## 返回值
 
-**true** - 玩家已完成流加载
+**true** - 玩家*已*完成流加载
 
-**false** - 玩家未完成流加载
+**false** - 玩家*未*完成流加载
 
 ## 示例代码
 
@@ -33,9 +33,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**SA-MP 服务器:** 玩家距离超过 200 米时自动流卸载（参见[server.cfg](../../server/server.cfg) - **stream_distance**）
+**SA-MP 服务器:** 玩家距离超过 200 米时自动流卸载（参见[server.cfg](../../server/server.cfg) - `stream_distance`）
 
-**open.mp 服务器:** 玩家距离超过 200 米时自动流卸载（参见[config.json](../../server/config.json) - **network.stream_radius**）
+**open.mp 服务器:** 玩家距离超过 200 米时自动流卸载（参见[config.json](../../server/config.json) - `network.stream_radius`）
 
 :::
 

@@ -13,7 +13,7 @@ tags: []
 
 ## คำอธิบาย
 
-Gets the highest actorid created on the server.
+Gets the highest `actorid` created on the server.
 
 | Name | Description |
 | ---- | ----------- |

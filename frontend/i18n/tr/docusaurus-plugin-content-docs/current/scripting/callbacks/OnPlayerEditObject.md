@@ -86,7 +86,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-EDIT_RESPONSE_UPDATE kullanırken, devam etmekte olan bir düzenlemeyi bırakırken bu geri çağırmanın çağırılmayacağının ve EDIT_RESPONSE_UPDATE'in son güncellemesinin nesnelerin mevcut konumunun senkronizasyonundan çıkmasına neden olacağını unutmayın.
+`EDIT_RESPONSE_UPDATE` kullanırken, devam etmekte olan bir düzenlemeyi bırakırken bu geri çağırmanın çağırılmayacağının ve EDIT_RESPONSE_UPDATE'in son güncellemesinin nesnelerin mevcut konumunun senkronizasyonundan çıkmasına neden olacağını unutmayın.
 
 :::
 

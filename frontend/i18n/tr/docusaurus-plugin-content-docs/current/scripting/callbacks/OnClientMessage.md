@@ -7,7 +7,7 @@ tags: []
 
 ## Açıklama
 
-Bu geri çağırma, NPC bir ClientMessage algılandığında tetiklenir. Bu, örneğin bir SendClientMessageToAll fonksiyonu gönderdiğinizde oyuncuya SendClientMessage fonksiyonu yansıdığı anda tetiklenecektir. Birisi chat'e mesaj gönderdiği zaman tetiklenmeyecek fakat bunu yapmak isterseniz bkz. NPC:OnPlayerText
+Bu geri çağırma, NPC bir ClientMessage algılandığında tetiklenir. Bu, örneğin bir `SendClientMessageToAll` fonksiyonu gönderdiğinizde oyuncuya `SendClientMessage` fonksiyonu yansıdığı anda tetiklenecektir. Birisi chat'e mesaj gönderdiği zaman tetiklenmeyecek fakat bunu yapmak isterseniz bkz. NPC:OnPlayerText
 
 | Parametre | Açıklama                  |
 | --------- | ------------------------- |

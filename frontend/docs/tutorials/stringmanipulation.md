@@ -343,7 +343,7 @@ This is probably the most used string-related function in the community, very si
 format(output[], len, const format[], \{Float, _\}:...)
 ```
 
-The format function takes as parameters the output array, its size (_number of its cells_), the formatting string (_this can be pre-stored on another array, or directly assigned from inside the function_), and finally some optional parameters, those can be variables from different types. Let’s use this function to assign a value to an empty string.
+The `format` function takes as parameters the output array, its size (_number of its cells_), the formatting string (_this can be pre-stored on another array, or directly assigned from inside the function_), and finally some optional parameters, those can be variables from different types. Let’s use this function to assign a value to an empty string.
 
 ```pawn
 new formatMsg[6];
@@ -352,7 +352,7 @@ format(formatMsg, 6, "Hello");
 
 The output of `formatMsg` is **Hello**, keep in mind that this is a bad way of assigning values to strings, mostly because of its speed, there are better methods for doing this, we already discussed some of them on early stages of this tutorial.
 
-Remember to always put the correct array size, otherwise, it will still work, but it delivers some unwanted behavior, the format function will over-flow your array size, and trust me on that, you don’t want that to happen, if you don’t want to bother putting the correct string size every time you want to work with this function, you can simply use the `sizeof` function (_it’s not a function per se, but rather a compiler directive_), we’ve seen earlier a function called `strlen` that returns the number of characters a string has (_excluding and stopping at the null-character_), but this one, returns the array’s size, in other words, the number of cells this array has, be them filled with valid character or not, in this case, 6.
+Remember to always put the correct array size, otherwise, it will still work, but it delivers some unwanted behavior, the `format` function will over-flow your array size, and trust me on that, you don’t want that to happen, if you don’t want to bother putting the correct string size every time you want to work with this function, you can simply use the `sizeof` function (_it’s not a function per se, but rather a compiler directive_), we’ve seen earlier a function called `strlen` that returns the number of characters a string has (_excluding and stopping at the null-character_), but this one, returns the array’s size, in other words, the number of cells this array has, be them filled with valid character or not, in this case, 6.
 
 ```pawn
 new formatMsg[6];
@@ -494,7 +494,7 @@ print("Hello world");
 Hello world
 ```
 
-You can also pass predeclared strings or predefined constants as well as merging multiple of them together, or use the number sign `#` too, much like we used to do with the format function, but keep in mind, that doesn’t include multiple parameters, we can only pass one and only parameter.
+You can also pass predeclared strings or predefined constants as well as merging multiple of them together, or use the number sign `#` too, much like we used to do with the `format` function, but keep in mind, that doesn’t include multiple parameters, we can only pass one and only parameter.
 
 ```pawn
 #define HAPPY_STRING "I'm happy today" // String constant.
@@ -516,7 +516,7 @@ I'm excited for 2019
 What about you?
 ```
 
-Notice how we used the number symbol here the same way we did with the format function, if the value is an integer, you prefix it with `#` so it’s treated as a string.
+Notice how we used the number symbol here the same way we did with the `format` function, if the value is an integer, you prefix it with `#` so it’s treated as a string.
 
 Also keep in mind that the `print` function does support packed strings, however only accepts string type variables (_array of characters_), passing anything that’s not an array, a string (_be it between double quotations or prefixed by the number symbol_) will give compilation errors, so doing any of the following will not work;
 
@@ -1155,7 +1155,7 @@ Placeholders or specifiers are characters escaped by a percent sign (`%`), the i
 
 The attributes between brackets are all optional and are up to you-the-user to either keep them or not, what really defines a specifier the wide known format of **%type**, the type part is replaced by a character to represent a certain output type; (_integer, float... etc_).
 
-Placeholders are only used on functions that accept parameters, thus functions like print will have no effect, an alternative to it is the more advanced `printf`.
+Placeholders are only used on functions that accept parameters, thus functions like `print` will have no effect, an alternative to it is the more advanced `printf`.
 
 Let us look at the different output types that can be used:
 
@@ -1571,7 +1571,7 @@ Lua
 
 Putting all what we’ve seen so far to action, we can format our strings pretty match in anyway, so far we’ve worked in mainly in the console, utilizing the `print` and `printf` functions to output our data, well, mainly `printf` that is, thanks to its native support for formatting strings on the go, hence the f on the function’s name.
 
-But in the real world, most people don’t like looking at terminals, they are just too scary, and complicated to the average user, and as you all know, _client messages_ show up on the game’s screen, and not the console, however, those cannot be formatted on the go, they are more like a print function one might say, to bypass this limitation, we utilize and other very effective function, called `format`, we won’t go deeper on its definition, as we have already gone through explaining it on earlier parts, (refer to [this](../scripting/functions/format)), but, here is a reminder of its syntax;
+But in the real world, most people don’t like looking at terminals, they are just too scary, and complicated to the average user, and as you all know, _client messages_ show up on the game’s screen, and not the console, however, those cannot be formatted on the go, they are more like a `print` function one might say, to bypass this limitation, we utilize and other very effective function, called `format`, we won’t go deeper on its definition, as we have already gone through explaining it on earlier parts, (refer to [this](../scripting/functions/format)), but, here is a reminder of its syntax;
 
 ```pawn
 format(output[], len, const format[], \{Float, _\}: ...}

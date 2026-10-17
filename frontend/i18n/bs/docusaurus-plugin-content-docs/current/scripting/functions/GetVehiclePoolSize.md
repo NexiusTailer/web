@@ -30,4 +30,4 @@ RepairAllVehicles()
 
 ## Srodne Funkcije
 
-- [GetPlayerPoolSize](GetPlayerPoolSize): Dobija najviši playerid povezan na server.
+- [GetPlayerPoolSize](GetPlayerPoolSize): Dobija najviši `playerid` povezan na server.

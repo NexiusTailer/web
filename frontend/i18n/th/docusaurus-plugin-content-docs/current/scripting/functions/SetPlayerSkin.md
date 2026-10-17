@@ -77,11 +77,11 @@ stock SetPlayerSkinFix(playerid, skinid)
 
 :::warning
 
-Known Bug(s): If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using TogglePlayerControllable. Players can be detected as being crouched through GetPlayerSpecialAction (SPECIAL_ACTION_DUCK). Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle. Setting a player's skin when he is dead may crash players around him. Breaks sitting on bikes.
+Known Bug(s): If a player's skin is set when they are crouching, in a vehicle, or performing certain animations, they will become frozen or otherwise glitched. This can be fixed by using `TogglePlayerControllable`. Players can be detected as being crouched through `GetPlayerSpecialAction` (`SPECIAL_ACTION_DUCK`). Other players around the player may crash if he is in a vehicle or if he is entering/leaving a vehicle. Setting a player's skin when he is dead may crash players around him. Breaks sitting on bikes.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerSkin: Get a player's current skin.
-- SetSpawnInfo: Set the spawn setting for a player.
+- `GetPlayerSkin`: Get a player's current skin.
+- `SetSpawnInfo`: Set the spawn setting for a player.

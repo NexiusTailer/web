@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- A gravação deve ser carregada com NPC_LoadRecord antes de se tornar válida
+- A gravação deve ser carregada com `NPC_LoadRecord` antes de se tornar válida
 - Gravações inválidas não podem ser usadas para reprodução
 
 ## Funções Relacionadas

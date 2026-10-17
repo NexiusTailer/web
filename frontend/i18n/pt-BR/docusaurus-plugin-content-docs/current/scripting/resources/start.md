@@ -66,7 +66,7 @@ Os {}s (colchetes (colchetes), não parênteses (colchetes)) incluem um grupo de
 ```c
 main() print("Hello World!"); return 1;
 ```
-Você receberia um erro porque agora o "return 1;" a instrução não está agrupada, portanto não faz parte do principal. Os colchetes agrupam um conjunto de instruções em uma única instrução (chamada de instrução composta) e as funções possuem uma única instrução com elas. Sem os colchetes print e return são instruções totalmente separadas, então há duas ou elas, como uma função só pode ter uma única instrução, a segunda não está em uma função, o que o código não pode ser.
+Você receberia um erro porque agora o "return 1;" a instrução não está agrupada, portanto não faz parte do principal. Os colchetes agrupam um conjunto de instruções em uma única instrução (chamada de instrução composta) e as funções possuem uma única instrução com elas. Sem os colchetes `print` e return são instruções totalmente separadas, então há duas ou elas, como uma função só pode ter uma única instrução, a segunda não está em uma função, o que o código não pode ser.
 
 Mas geralmente, você pode expandir instruções compostas com o uso do operador vírgula (,), mas isso não é sugerido porque não é a melhor prática de codificação. Segue um exemplo:
 
@@ -86,7 +86,7 @@ print("Hello World!");
 ```
 Conforme descrito no primeiro exemplo, isso chama a função chamada "print" (definida em a_samp.inc, e é por isso que você precisa incluí-la) e diz para exibir algo no console do servidor (a palavra hello).
 
-Uma função consiste no nome da função (por exemplo, print), que informa ao sistema qual parte do código você deseja chamar, e uma lista de parâmetros, entre ()s após o nome da função, que passa dados adicionais para a função para ajudá-la a ser executada. Se você não tivesse parâmetros, precisaria de milhões de funções:
+Uma função consiste no nome da função (por exemplo, `print`), que informa ao sistema qual parte do código você deseja chamar, e uma lista de parâmetros, entre ()s após o nome da função, que passa dados adicionais para a função para ajudá-la a ser executada. Se você não tivesse parâmetros, precisaria de milhões de funções:
 
 ```c
 printa();
@@ -172,7 +172,7 @@ MyFunction(string[])
     return 1;
 }
 ```
-Este código ainda faz a mesma coisa, mas agora estamos dizendo a MyFunction() o que exibir. A chamada passa a string "Hello World!" para a função onde está armazenado em uma variável chamada string (o \[\] significa que é um [array](start#matrizes) conforme explicado posteriormente). A função print é chamada, passando o conteúdo da variável string, sabemos que é uma variável porque não possui mais o "".
+Este código ainda faz a mesma coisa, mas agora estamos dizendo a MyFunction() o que exibir. A chamada passa a string "Hello World!" para a função onde está armazenado em uma variável chamada string (o \[\] significa que é um [array](start#matrizes) conforme explicado posteriormente). A função `print` é chamada, passando o conteúdo da variável string, sabemos que é uma variável porque não possui mais o "".
 
 # Variáveis
 
@@ -198,7 +198,7 @@ Isto diz ao sistema para criar uma nova variável chamada myVariable, o valor in
 new
     myVariable = 7;
 ```
-Isso declara uma nova variável e define seu valor inicial como 7, então imprimir a variável agora resultará em 7. Para exibir uma variável que não seja uma string, precisamos voltar à função printf() mencionada anteriormente e fazer:
+Isso declara uma nova variável e define seu valor inicial como 7, então imprimir a variável agora resultará em 7. Para exibir uma variável que não seja uma string, precisamos voltar à função `printf()` mencionada anteriormente e fazer:
 
 ```c
 new
@@ -249,7 +249,7 @@ Isso dividirá o valor por 4.
 
 ---
 
-Um array é uma variável na qual você pode armazenar vários dados de uma vez e acessá-los dinamicamente. Um array é declarado com um tamanho definido em tempo de compilação, então você precisa saber quantos dados você precisa armazenar com antecedência, um bom exemplo disso é o array MAX_PLAYERS muito comum, que terá um slot para cada jogador possivelmente conectado, então você sabe que os dados de um jogador não interferirão nos dados de outro jogador (mais sobre definições mais tarde).
+Um array é uma variável na qual você pode armazenar vários dados de uma vez e acessá-los dinamicamente. Um array é declarado com um tamanho definido em tempo de compilação, então você precisa saber quantos dados você precisa armazenar com antecedência, um bom exemplo disso é o array `MAX_PLAYERS` muito comum, que terá um slot para cada jogador possivelmente conectado, então você sabe que os dados de um jogador não interferirão nos dados de outro jogador (mais sobre definições mais tarde).
 
 ```c
 new
@@ -322,7 +322,7 @@ myArray[2]++;
 
 ### Exemplo
 
-Conforme mencionado acima, um tipo comum de array é o array MAX_PLAYERS. MAX_PLAYERS não é uma variável, é uma definição que será explicada mais tarde, mas por enquanto aceite que é um número constante igual ao número máximo de jogadores que um servidor pode conter (por padrão é 500, mesmo se você alterar o número em seu arquivo config.json). O código a seguir usa variáveis ​​normais para armazenar dados de 4 jogadores e fazer algo com esses jogadores em uma função (para simplificar, suponha que MAX_PLAYERS seja 4 por enquanto):
+Conforme mencionado acima, um tipo comum de array é o array `MAX_PLAYERS`. `MAX_PLAYERS` não é uma variável, é uma definição que será explicada mais tarde, mas por enquanto aceite que é um número constante igual ao número máximo de jogadores que um servidor pode conter (por padrão é 500, mesmo se você alterar o número em seu arquivo config.json). O código a seguir usa variáveis ​​normais para armazenar dados de 4 jogadores e fazer algo com esses jogadores em uma função (para simplificar, suponha que `MAX_PLAYERS` seja 4 por enquanto):
 
 ```c
 new
@@ -476,7 +476,7 @@ A parte "Float" é a tag, ela define esta variável como um float (número não 
 ```c
 native SetGravity(Float:gravity);
 ```
-Isso significa que a função SetGravity usa um único parâmetro que deve ser flutuante, por exemplo:
+Isso significa que a função `SetGravity` usa um único parâmetro que deve ser flutuante, por exemplo:
 
 ```c
 SetGravity(6.0);

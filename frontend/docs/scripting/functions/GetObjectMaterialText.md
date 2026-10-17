@@ -11,20 +11,20 @@ tags: ["object"]
 
 Get the material text data from an index of the object.
 
-| Name                                      | Description                                                             |
-| ----------------------------------------- | ----------------------------------------------------------------------- |
-| objectid                                  | The ID of the object.                                                   |
-| materialIndex                             | The material index on the object. (0 to 15)                             |
-| text[]                                    | An array into which to store the text, passed by reference.             |
-| textSize                                  | The size of the text.                                                   |
-| &OBJECT_MATERIAL_SIZE:materialSize        | A variable in which to store the materialSize, passed by reference.     |
-| fontFace[]                                | An array into which to store the fontFace, passed by reference.         |
-| fontFaceSize                              | The size of the fontFace.                                               |
-| &fontSize                                 | A variable in which to store the fontSize, passed by reference.         |
-| &bool:bold                                | A boolean variable in which to store the bold, passed by reference.     |
-| &fontColour                               | A variable in which to store the fontColour, passed by reference.       |
-| &backgroundColour                         | A variable in which to store the backgroundColour, passed by reference. |
-| &OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | A variable in which to store the textAlignment, passed by reference.    |
+| Name                                      | Description                                                               |
+| ----------------------------------------- | ------------------------------------------------------------------------- |
+| objectid                                  | The ID of the object.                                                     |
+| materialIndex                             | The material index on the object. (0 to 15)                               |
+| text[]                                    | An array into which to store the text, passed by reference.               |
+| textSize                                  | The size of the text.                                                     |
+| &OBJECT_MATERIAL_SIZE:materialSize        | A variable in which to store the `materialSize`, passed by reference.     |
+| fontFace[]                                | An array into which to store the `fontFace`, passed by reference.         |
+| fontFaceSize                              | The size of the `fontFace`.                                               |
+| &fontSize                                 | A variable in which to store the `fontSize`, passed by reference.         |
+| &bool:bold                                | A boolean variable in which to store the bold, passed by reference.       |
+| &fontColour                               | A variable in which to store the `fontColour`, passed by reference.       |
+| &backgroundColour                         | A variable in which to store the `backgroundColour`, passed by reference. |
+| &OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | A variable in which to store the `textAlignment`, passed by reference.    |
 
 ## Returns
 

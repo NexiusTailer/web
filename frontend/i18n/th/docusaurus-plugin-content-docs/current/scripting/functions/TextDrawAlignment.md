@@ -18,7 +18,7 @@ Set the alignment of text in a text draw.
 
 Note
 
-For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at TextDrawTextSize, also position coordinate become position of center of textdraw and not left/top edges.
+For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at `TextDrawTextSize`, also position coordinate become position of center of textdraw and not left/top edges.
 
 ## ตัวอย่าง
 

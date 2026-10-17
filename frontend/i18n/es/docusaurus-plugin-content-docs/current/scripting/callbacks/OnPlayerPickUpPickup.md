@@ -6,12 +6,12 @@ tags: ["player"]
 
 ## Descripción
 
-Se llama cuando un jugador recoge un pickup creado con CreatePickup.
+Se llama cuando un jugador recoge un pickup creado con `CreatePickup`.
 
-| Nombre   | Descripción                                  |
-| -------- | -------------------------------------------- |
-| playerid | El ID del jugador que recogió el pickup.     |
-| pickupid | El ID del pickup, devuelto por CreatePickup. |
+| Nombre   | Descripción                                    |
+| -------- | ---------------------------------------------- |
+| playerid | El ID del jugador que recogió el pickup.       |
+| pickupid | El ID del pickup, devuelto por `CreatePickup`. |
 
 ## Devoluciones
 

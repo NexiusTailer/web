@@ -49,7 +49,7 @@ public OnPlayerConnect(playerid)
 必须同时满足以下条件才能生效：
 
 1. 使用`TEXT_DRAW_FONT_MODEL_PREVIEW`字体类型
-2. 已通过 PlayerTextDrawSetPreviewModel 设置有效模型
+2. 已通过 `PlayerTextDrawSetPreviewModel` 设置有效模型
 
 :::
 

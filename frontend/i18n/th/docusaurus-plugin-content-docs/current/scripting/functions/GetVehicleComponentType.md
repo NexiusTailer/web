@@ -42,8 +42,8 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- AddVehicleComponent: Add a component to a vehicle.
-- RemoveVehicleComponent: Remove a component from a vehicle.
-- GetVehicleComponentInSlot: Check what components a vehicle has.
-- OnVehicleMod: Called when a vehicle is modded.
-- OnEnterExitModShop: Called when a vehicle enters or exits a mod shop.
+- `AddVehicleComponent`: Add a component to a vehicle.
+- `RemoveVehicleComponent`: Remove a component from a vehicle.
+- `GetVehicleComponentInSlot`: Check what components a vehicle has.
+- `OnVehicleMod`: Called when a vehicle is modded.
+- `OnEnterExitModShop`: Called when a vehicle enters or exits a mod shop.

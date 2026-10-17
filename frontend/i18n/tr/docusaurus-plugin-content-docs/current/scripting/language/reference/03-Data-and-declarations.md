@@ -102,9 +102,9 @@ Bir sabit değişkenin kullanılabileceği üç tipik durum şunlardır:
 
 ### • Diziler (tek boyutlu)
 
-name[constant] sözdizimi, name'in "constant" eleman içeren bir dizi olduğunu belirtir, her bir eleman tek bir hücredir. Name, kendi seçtiğiniz bir tanımlayıcı adının yerine geçen bir yer tutucudur ve constant pozitif, sıfırdan farklı bir değerdir; constant bulunmayabilir. Köşeli parantezler arasında bir değer yoksa, öğelerin sayısı, başlatıcılardaki sayının eşit olduğu sayıya ayarlanır —aşağıdaki örneğe bakın.
+`name`[constant] sözdizimi, name'in "constant" eleman içeren bir dizi olduğunu belirtir, her bir eleman tek bir hücredir. Name, kendi seçtiğiniz bir tanımlayıcı adının yerine geçen bir yer tutucudur ve constant pozitif, sıfırdan farklı bir değerdir; constant bulunmayabilir. Köşeli parantezler arasında bir değer yoksa, öğelerin sayısı, başlatıcılardaki sayının eşit olduğu sayıya ayarlanır —aşağıdaki örneğe bakın.
 
-Dizi indeks aralığı "sıfır tabanlıdır", yani ilk öğe name[0]'da ve son öğe name[constant-1]'de bulunur.
+Dizi indeks aralığı "sıfır tabanlıdır", yani ilk öğe `name`[0]'da ve son öğe `name`[constant-1]'de bulunur.
 
 ### • Başlatma
 

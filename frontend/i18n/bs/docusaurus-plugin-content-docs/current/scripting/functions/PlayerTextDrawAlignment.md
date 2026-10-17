@@ -19,7 +19,7 @@ Postavlja poravnanje teksta player-textdrawa.
 
 Note
 
-Za poravnanje 2 (u sredini) vrijednosti x i y TextSize moraju se zamijeniti, pogledajte bilješke na PlayerTextDrawTextSize.
+Za poravnanje 2 (u sredini) vrijednosti x i y TextSize moraju se zamijeniti, pogledajte bilješke na `PlayerTextDrawTextSize`.
 
 ## Primjeri
 
@@ -38,7 +38,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-Za poravnanje 2 (u sredini) vrijednosti x i y TextSize moraju se zamijeniti, pogledajte bilješke na PlayerTextDrawTextSize.
+Za poravnanje 2 (u sredini) vrijednosti x i y TextSize moraju se zamijeniti, pogledajte bilješke na `PlayerTextDrawTextSize`.
 
 :::
 
@@ -51,7 +51,7 @@ Za poravnanje 2 (u sredini) vrijednosti x i y TextSize moraju se zamijeniti, pog
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Postavi boju pozadine player-textdrawa.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Postavi veličinu slova u tekstu player-textdrawa.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za PlayerTextDrawSetSelectable).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za `PlayerTextDrawSetSelectable`).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Omogući/onemogući korišćenje outline-a za player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Postavi sjenu na player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Razmjeri razmak teksta u player-textdrawu na proporcionalni omjer.

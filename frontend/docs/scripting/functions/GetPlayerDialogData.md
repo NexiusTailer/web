@@ -11,18 +11,18 @@ tags: ["player", "dialog"]
 
 Get the data of the dialog currently show to the player.
 
-| Name                | Description                                                             |
-| ------------------- | ----------------------------------------------------------------------- |
-| playerid            | The ID of the player to get the data.                                   |
-| &DIALOG_STYLE:style | A variable into which to store the style, passed by reference.          |
-| title[]             | An array variable into which to store the title, passed by reference.   |
-| titleSize           | The size of the title array.                                            |
-| body[]              | An array variable into which to store the body, passed by reference.    |
-| bodySize            | The size of the body array.                                             |
-| button1[]           | An array variable into which to store the button1, passed by reference. |
-| button1Size         | The size of the button1 array.                                          |
-| button2[]           | An array variable into which to store the button2, passed by reference. |
-| button2Size         | The size of the button2 array.                                          |
+| Name                | Description                                                               |
+| ------------------- | ------------------------------------------------------------------------- |
+| playerid            | The ID of the player to get the data.                                     |
+| &DIALOG_STYLE:style | A variable into which to store the style, passed by reference.            |
+| title[]             | An array variable into which to store the title, passed by reference.     |
+| titleSize           | The size of the title array.                                              |
+| body[]              | An array variable into which to store the body, passed by reference.      |
+| bodySize            | The size of the body array.                                               |
+| button1[]           | An array variable into which to store the `button1`, passed by reference. |
+| button1Size         | The size of the `button1` array.                                          |
+| button2[]           | An array variable into which to store the `button2`, passed by reference. |
+| button2Size         | The size of the `button2` array.                                          |
 
 ## Returns
 

@@ -6,15 +6,15 @@ tags: []
 
 ## Descripción
 
-Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando ShowPlayerDialog ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo DIALOG_STYLE_LIST).
+Este callback se llama cuando un jugador responde a un cuadro de diálogo mostrado usando `ShowPlayerDialog` ya sea clickeando un botón, presionando ENTER/ESC o haciendo doble click en un elemento de lista (si el diálogo utiliza el estilo `DIALOG_STYLE_LIST`).
 
-| Nombre      | Descripción                                                                                                            |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------- |
-| playerid    | El ID del jugador que respondió el diálogo.                                                                            |
-| dialogid    | El ID del diálogo al que respondió el jugador, asignado en ShowPlayerDialog.                                           |
-| response    | **1** para botón izquierdo y **0** para botón derecho (si sólo hay un botón, siempre 1).                               |
-| listitem    | El ID del elemento de lista que seleccionó el jugador (empieza de 0) (si no se está usando DIALOG_STYLE_LIST, será -1) |
-| inputtext[] | El texto ingresado en la caja de entrada por el jugador o el texto del elemento de lista seleccionado.                 |
+| Nombre      | Descripción                                                                                                              |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------ |
+| playerid    | El ID del jugador que respondió el diálogo.                                                                              |
+| dialogid    | El ID del diálogo al que respondió el jugador, asignado en `ShowPlayerDialog`.                                           |
+| response    | **1** para botón izquierdo y **0** para botón derecho (si sólo hay un botón, siempre 1).                                 |
+| listitem    | El ID del elemento de lista que seleccionó el jugador (empieza de 0) (si no se está usando `DIALOG_STYLE_LIST`, será -1) |
+| inputtext[] | El texto ingresado en la caja de entrada por el jugador o el texto del elemento de lista seleccionado.                   |
 
 ## Devoluciones
 
@@ -26,7 +26,7 @@ Siempre se llama primero en filterscripts.
 
 ## Ejemplos
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Definimos el ID del diálogo para poder controlar las respuestas
@@ -54,7 +54,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -91,7 +91,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -120,7 +120,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -176,7 +176,7 @@ El diálogo de un jugador no se oculta cuando el gamemode se reinicia, causando 
 
 ## Funciones Relacionadas
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnDialogResponse:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnDialogResponse`:
 
 - [ShowPlayerDialog](../functions/ShowPlayerDialog): Muestra un diálogo a un jugador.
 - [GetPlayerDialogID](../functions/GetPlayerDialogID): Obtiene la id del diálogo el cual se le está mostrando al jugador en ese momento.

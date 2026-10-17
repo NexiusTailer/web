@@ -9,7 +9,7 @@ tags: ["custom model", "custom skin", "simple model"]
 
 ## Description
 
-Find an existing custom skin or simple object texture file. The model files are located in `models` server folder by default (artpath setting).
+Find an existing custom skin or simple object texture file. The model files are located in `models` server folder by default (`artpath` setting).
 
 | Name                   | Description                                                               |
 | ---------------------- | ------------------------------------------------------------------------- |

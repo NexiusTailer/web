@@ -21,7 +21,7 @@ This function always returns **1**, even if the function failed to execute (play
 
 :::warning
 
-Any action taken directly before Kick() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the kick.
+Any action taken directly before `Kick()` (such as sending a message with `SendClientMessage`) will not reach the player. A timer must be used to delay the kick.
 
 :::
 

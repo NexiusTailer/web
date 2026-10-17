@@ -50,7 +50,7 @@ pacote de servidores.
 ### **Mais sinais de trânsito**
 
 A placa de limite de velocidade abaixo possui uma sobreposição de material transparente (índice 3) para que você
-pode usá-lo com SetObjectMaterialText() ou SetPlayerObjectMaterialText()
+pode usá-lo com `SetObjectMaterialText()` ou `SetPlayerObjectMaterialText()`
 funções.
 
 ```
@@ -249,7 +249,7 @@ estrada.
 ### **Laptop (estilo antigo)**
 
 O mesmo laptop nas posições aberta e fechada. Você pode alterar a tela usando o
-Função SetObjectMaterial() no índice 1. Existem três variações de tela em
+Função `SetObjectMaterial()` no índice 1. Existem três variações de tela em
 o arquivo TXD (veja a imagem abaixo):
 
 - LaptopScreen1 = tela do mapa GTASA (padrão)
@@ -423,7 +423,7 @@ Uma coleção de vários sinais de trânsito.
 19979	SAMPRoadSign32
 ```
 Os dois sinais abaixo possuem uma sobreposição de material transparente (índice 3) para que você possa usar
-com as funções SetObjectMaterialText() ou SetPlayerObjectMaterialText().
+com as funções `SetObjectMaterialText()` ou `SetPlayerObjectMaterialText()`.
 
 ```
 19980	SAMPRoadSign33
@@ -534,7 +534,7 @@ Pacote de servidor 0.3.7.
 ```
 ### **Porta do cofre do cassino de Calígula editada**
 
-Editado para corrigir o pivô para que possa ser usado com MoveObject() e também corrigiu o
+Editado para corrigir o pivô para que possa ser usado com `MoveObject()` e também corrigiu o
 cores do vértice noturno. O objeto original ID é 2634.
 
 ```
@@ -559,7 +559,7 @@ SAMP.IPL arquivo.
 ### **Porta Estática**
 
 Esta porta é igual ao objeto ID 1502, exceto que é estática. Você pode animá-lo
-abrindo e fechando com a função MoveObject().
+abrindo e fechando com a função `MoveObject()`.
 
 ```
 19802	GenDoorINT04Static
@@ -580,7 +580,7 @@ criado por Vicente. Observe que eles só serão visíveis à noite.
 ### **Itens extraídos**
 
 O objeto do quadro branco abaixo possui uma sobreposição de material transparente (índice 1) para que você
-pode usá-lo com SetObjectMaterialText() ou SetPlayerObjectMaterialText()
+pode usá-lo com `SetObjectMaterialText()` ou `SetPlayerObjectMaterialText()`
 funções.
 
 ```
@@ -653,7 +653,7 @@ rio.
 ### **Plataforma CargoBob**
 
 Esta plataforma foi projetada para ser fixada na lateral do helicóptero CargoBob usando
-a função AttachObjectToVehicle para que você possa transportar pessoas.
+a função `AttachObjectToVehicle` para que você possa transportar pessoas.
 
 ```
 19848	CargoBobPlatform1

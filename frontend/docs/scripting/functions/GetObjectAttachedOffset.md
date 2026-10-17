@@ -11,15 +11,15 @@ tags: ["object"]
 
 Get the attachment offset and rotation of an object.
 
-| Name             | Description                                                                       |
-| ---------------- | --------------------------------------------------------------------------------- |
-| objectid         | The ID of the object to get the offset and rotation of.                           |
-| &Float:offsetX   | A float variable in which to store the offsetX coordinate, passed by reference.   |
-| &Float:offsetY   | A float variable in which to store the offsetY coordinate, passed by reference.   |
-| &Float:offsetZ   | A float variable in which to store the offsetZ coordinate, passed by reference.   |
-| &Float:rotationX | A float variable in which to store the rotationX coordinate, passed by reference. |
-| &Float:rotationY | A float variable in which to store the rotationY coordinate, passed by reference. |
-| &Float:rotationZ | A float variable in which to store the rotationZ coordinate, passed by reference. |
+| Name             | Description                                                                         |
+| ---------------- | ----------------------------------------------------------------------------------- |
+| objectid         | The ID of the object to get the offset and rotation of.                             |
+| &Float:offsetX   | A float variable in which to store the `offsetX` coordinate, passed by reference.   |
+| &Float:offsetY   | A float variable in which to store the `offsetY` coordinate, passed by reference.   |
+| &Float:offsetZ   | A float variable in which to store the `offsetZ` coordinate, passed by reference.   |
+| &Float:rotationX | A float variable in which to store the `rotationX` coordinate, passed by reference. |
+| &Float:rotationY | A float variable in which to store the `rotationY` coordinate, passed by reference. |
+| &Float:rotationZ | A float variable in which to store the `rotationZ` coordinate, passed by reference. |
 
 ## Returns
 

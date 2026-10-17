@@ -56,9 +56,9 @@ You can use [KillTimer](KillTimer) on a timer ID and it won't matter if it's run
 
 ## Definitions
 
-| Definition    | Value |
-| ------------- | ----- |
-| INVALID_TIMER | 0     |
+| Definition      | Value |
+| --------------- | ----- |
+| `INVALID_TIMER` | 0     |
 
 ## Related Functions
 

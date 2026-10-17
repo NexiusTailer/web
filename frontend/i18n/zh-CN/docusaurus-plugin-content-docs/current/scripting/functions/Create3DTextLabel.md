@@ -23,7 +23,7 @@ tags: ["3D文本标签"]
 
 ## 返回值
 
-成功返回新建 3D 文本标签的 ID，当达到全局 3D 文本标签数量上限（MAX_3DTEXT_GLOBAL）时返回 INVALID_3DTEXT_ID。
+成功返回新建 3D 文本标签的 ID，当达到全局 3D 文本标签数量上限（`MAX_3DTEXT_GLOBAL`）时返回 `INVALID_3DTEXT_ID`。
 
 ## 应用示例
 

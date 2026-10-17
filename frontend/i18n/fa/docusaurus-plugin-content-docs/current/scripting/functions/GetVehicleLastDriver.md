@@ -49,4 +49,4 @@ public OnGameModeExit()
 
 ## توابع مرتبط
 
-- [GetVehicleDriver](GetVehicleDriver): دریافت playerid شخصی که داره وسیله نقلیه رو رانندگی می‌کنه.
+- [GetVehicleDriver](GetVehicleDriver): دریافت `playerid` شخصی که داره وسیله نقلیه رو رانندگی می‌کنه.

@@ -384,7 +384,7 @@ Já incluída na pasta `/qawno/upgrader`.
 [Warning] Insufficient specifiers given to `format`: "?" < 1
 ```
 
-Os especificadores são menores que os argumentos que você passa no format. Por exemplo:
+Os especificadores são menores que os argumentos que você passa no `format`. Por exemplo:
 
 ```pawn
 new string[32];

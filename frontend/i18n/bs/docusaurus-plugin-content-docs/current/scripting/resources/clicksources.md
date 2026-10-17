@@ -11,6 +11,6 @@ Ispod je lista izvora klikova koje koristi [OnPlayerClickPlayer](../callbacks/On
 
 :::
 
-| Vrijednost | Konstantni simbol       |
-| ---------- | ----------------------- |
-| 0          | CLICK_SOURCE_SCOREBOARD |
+| Vrijednost | Konstantni simbol         |
+| ---------- | ------------------------- |
+| 0          | `CLICK_SOURCE_SCOREBOARD` |

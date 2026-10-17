@@ -15,7 +15,7 @@ new gMiPickup;
 
 ## Creando la pickup
 
-Hay dos formas de crear pickup [CreatePickup](../scripting/functions/CreatePickup) y [AddStaticPickup](../scripting/functions/AddStaticPickup). AddStaticPickup no hay un id cuando esta creado, no se puede destruir y no mas puede usar en OnGameModeInit, para este guía vamos a usar [CreatePickup](../scripting/functions/CreatePickup).
+Hay dos formas de crear pickup [CreatePickup](../scripting/functions/CreatePickup) y [AddStaticPickup](../scripting/functions/AddStaticPickup). `AddStaticPickup` no hay un id cuando esta creado, no se puede destruir y no mas puede usar en `OnGameModeInit`, para este guía vamos a usar [CreatePickup](../scripting/functions/CreatePickup).
 
 **La forma de [CreatePickup](../scripting/functions/CreatePickup) es:**
 
@@ -36,7 +36,7 @@ Ahora debemos decidir qué modelo aparecerá en el mundo, hay muchos modelos par
 
 Finalmente, necesitamos un [Tipo](../scripting/resources/pickuptypes) para la pickup, en la misma página con los modelos de pickup hay una lista de tipos de pickup que describen lo que hacen los typos. Queremos que esta recolección desaparezca cuando la levante, para que no pueda levantarla repetidamente, pero que vuelva a aparecer después de unos minutos para que pueda levantarla nuevamente, el typo 2 hace exactamente esto.
 
-Las pickups se crean más comúnmente cuando se inicia el script, en [OnGameModeInit](../scripting/callbacks/OnGameModeInit) o en [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) dependiendo del tipo de la script, también se puede ir en cualquier función (por ejemplo, podría crear un script de deja los armas del jugardor, eso se usaría OnPlayerDeath para crear pickup de armas).
+Las pickups se crean más comúnmente cuando se inicia el script, en [OnGameModeInit](../scripting/callbacks/OnGameModeInit) o en [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) dependiendo del tipo de la script, también se puede ir en cualquier función (por ejemplo, podría crear un script de deja los armas del jugardor, eso se usaría `OnPlayerDeath` para crear pickup de armas).
 
 Aquí hacemos la pickup en la variable 'gMiPickup':
 
@@ -44,9 +44,9 @@ Aquí hacemos la pickup en la variable 'gMiPickup':
 gMiPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 ```
 
-Cuando recoges una pickup, se llama la función [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup), pasando playerid (el jugador que recogió la pickup) y pickupid (la ID de la pickup que se recogió).
+Cuando recoges una pickup, se llama la función [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup), pasando `playerid` (el jugador que recogió la pickup) y `pickupid` (la ID de la pickup que se recogió).
 
-Algunos typos de pickup están diseñados para funcionar automáticamente, por lo que no es necesario hacer nada en OnPlayerPickUpPickup. Consulte la página [Typos de pickup](../scripting/resources/pickuptypes) para obtener más información.
+Algunos typos de pickup están diseñados para funcionar automáticamente, por lo que no es necesario hacer nada en `OnPlayerPickUpPickup`. Consulte la página [Typos de pickup](../scripting/resources/pickuptypes) para obtener más información.
 
 Cuando un jugador recoge nuestra nueva pickup, queremos darle $100, para hacer esto primero debemos verificar que haya recogido nuestra pickup de dólares y no una diferente. Cuando hayamos hecho eso, podemos darles los $100:
 

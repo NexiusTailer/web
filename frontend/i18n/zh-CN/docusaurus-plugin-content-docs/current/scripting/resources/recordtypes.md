@@ -11,8 +11,8 @@ tags: ["玩家"]
 
 :::
 
-| 数值 | 宏定义                       | 说明                 |
-| ---- | ---------------------------- | -------------------- |
-| 0    | PLAYER_RECORDING_TYPE_NONE   | 无记录类型           |
-| 1    | PLAYER_RECORDING_TYPE_DRIVER | 驾驶记录（车辆录制） |
-| 2    | PLAYER_RECORDING_TYPE_ONFOOT | 步行记录（步行录制） |
+| 数值 | 宏定义                         | 说明                 |
+| ---- | ------------------------------ | -------------------- |
+| 0    | `PLAYER_RECORDING_TYPE_NONE`   | 无记录类型           |
+| 1    | `PLAYER_RECORDING_TYPE_DRIVER` | 驾驶记录（车辆录制） |
+| 2    | `PLAYER_RECORDING_TYPE_ONFOOT` | 步行记录（步行录制） |

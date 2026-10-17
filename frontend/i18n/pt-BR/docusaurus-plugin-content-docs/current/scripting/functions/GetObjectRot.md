@@ -10,12 +10,12 @@ tags: ["object"]
 
 Use esta função para obter a rotação atual dos objetos. A rotação é salva por referência em três variáveis ​​de rotaçãoX/rotaçãoY/rotaçãoZ.
 
-| Nome | Descrição |
-| ---------------- | ------------------------------------------------------------- |
-| objectid | O objectid do objeto do qual você deseja obter a rotação. |
-| &Float:rotationX | A variável para armazenar a rotação X, passada por referência.    |
-| &Float:rotationY | A variável para armazenar a rotação Y, passada por referência.    |
-| &Float:rotationZ | A variável para armazenar a rotação Z, passada por referência.    |
+| Nome             | Descrição                                                      |
+| ---------------- | -------------------------------------------------------------- |
+| objectid         | O `objectid` do objeto do qual você deseja obter a rotação.    |
+| &Float:rotationX | A variável para armazenar a rotação X, passada por referência. |
+| &Float:rotationY | A variável para armazenar a rotação Y, passada por referência. |
+| &Float:rotationZ | A variável para armazenar a rotação Z, passada por referência. |
 
 ## Retornos
 

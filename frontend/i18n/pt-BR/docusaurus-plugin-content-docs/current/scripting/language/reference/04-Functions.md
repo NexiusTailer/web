@@ -153,7 +153,7 @@ addvector(vect, {5, 5, 5}, 3)
 
 ```
 
-The invocation of function printf with the string "Hello world\n" in the first
+The invocation of function `printf` with the string "Hello world\n" in the first
 ubiquitous program is another example of passing a literal array to a function.
 
 ---

@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 停止所有当前动画并让 NPC 返回空闲状态
-- 等同于调用 NPC_ClearAnimations
+- 等同于调用 `NPC_ClearAnimations`
 
 ## 相关函数
 

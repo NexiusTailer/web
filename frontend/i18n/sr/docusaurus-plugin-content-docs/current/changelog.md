@@ -59,7 +59,7 @@ description: open.mp развојни напредак и дневник про�
 
 **Промене:**
 
-- Уклоњене су непотребне функције OnPlayerConnect и OnPlayerDisconnect када се споредна скрипта (филтерскрипта) учитава или искључује.
+- Уклоњене су непотребне функције `OnPlayerConnect` и `OnPlayerDisconnect` када се споредна скрипта (филтерскрипта) учитава или искључује.
   Уместо њих уведени су callback-ови [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) и [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer).
 - Уклоњена су бројна упозорења за застареле Pawn native функције у времену извршавања.
 - Провера исправности CDN URL-ова.
@@ -71,7 +71,7 @@ description: open.mp развојни напредак и дневник про�
 **Поправке:**
 
 - Поправљен је чувени RakNet пад који смо имали од почетка, а који је утицао на неке сервере.
-- Поправљен је проблем са приказивањем стрингова у ретким случајевима коришћења функције format.
+- Поправљен је проблем са приказивањем стрингова у ретким случајевима коришћења функције `format`.
 - Поправљен је проблем са crashdetect-ом који није могао да пронађе име фајла и број линије када је било учитано више од једне скрипте.
 - Поправљено је много RakNet падова и побољшано је безбедније управљање унутрашњом меморијом.
 - Поправљено је неколико проблема са конекцијом и исправно чишћење интерног пула играча.
@@ -161,58 +161,58 @@ Release Candidate 2 (RC2) open.mp сервера.
 
 **Застареле функције:**
 
-- GetPlayer3DTextLabelVirtualW
-- SetPlayer3DTextLabelDrawDist
-- GetPlayer3DTextLabelDrawDist
-- SendClientMessagef
-- GameTextForPlayerf
-- SendPlayerMessageToPlayerf
-- SendClientMessageToAllf
-- GameTextForAllf
-- SendPlayerMessageToAllf
-- SendRconCommandf
-- AllowAdminTeleport
-- GetPlayerPoolSize
-- GetVehiclePoolSize
-- GetActorPoolSize
-- GetServerVarAsString
-- GetServerVarAsFloat
-- TextDrawColor
-- TextDrawBoxColor
-- TextDrawBackgroundColor
-- TextDrawSetPreviewVehCol
-- PlayerTextDrawColor
-- PlayerTextDrawBoxColor
-- PlayerTextDrawBackgroundColor
-- PlayerTextDrawSetPreviewVehCol
-- TextDrawGetColor
-- TextDrawGetBoxColor
-- TextDrawGetBackgroundColor
-- TextDrawGetPreviewVehCol
-- PlayerTextDrawGetColor
-- PlayerTextDrawGetBoxColor
-- PlayerTextDrawGetBackgroundCol
-- PlayerTextDrawGetPreviewVehCol
-- db_num_rows
-- db_get_mem_handle
-- db_get_result_mem_handle
-- SelectObject
-- EditObject
-- EditPlayerObject
-- CancelEdit
-- SetObjectsDefaultCameraCol
-- SetObjectNoCameraCol
-- IsObjectNoCameraCol
-- SetPlayerObjectNoCameraCol
-- IsPlayerObjectNoCameraCol
-- GetPlayerCameraTargetPlayerObj
-- GetObjectTarget
-- GetPlayerObjectTarget
-- GetPlayerDialog
-- fmkdir
-- dcreate
-- GetVehicleTower
-- ChangeVehicleColor
+- `GetPlayer3DTextLabelVirtualW`
+- `SetPlayer3DTextLabelDrawDist`
+- `GetPlayer3DTextLabelDrawDist`
+- `SendClientMessagef`
+- `GameTextForPlayerf`
+- `SendPlayerMessageToPlayerf`
+- `SendClientMessageToAllf`
+- `GameTextForAllf`
+- `SendPlayerMessageToAllf`
+- `SendRconCommandf`
+- `AllowAdminTeleport`
+- `GetPlayerPoolSize`
+- `GetVehiclePoolSize`
+- `GetActorPoolSize`
+- `GetServerVarAsString`
+- `GetServerVarAsFloat`
+- `TextDrawColor`
+- `TextDrawBoxColor`
+- `TextDrawBackgroundColor`
+- `TextDrawSetPreviewVehCol`
+- `PlayerTextDrawColor`
+- `PlayerTextDrawBoxColor`
+- `PlayerTextDrawBackgroundColor`
+- `PlayerTextDrawSetPreviewVehCol`
+- `TextDrawGetColor`
+- `TextDrawGetBoxColor`
+- `TextDrawGetBackgroundColor`
+- `TextDrawGetPreviewVehCol`
+- `PlayerTextDrawGetColor`
+- `PlayerTextDrawGetBoxColor`
+- `PlayerTextDrawGetBackgroundCol`
+- `PlayerTextDrawGetPreviewVehCol`
+- `db_num_rows`
+- `db_get_mem_handle`
+- `db_get_result_mem_handle`
+- `SelectObject`
+- `EditObject`
+- `EditPlayerObject`
+- `CancelEdit`
+- `SetObjectsDefaultCameraCol`
+- `SetObjectNoCameraCol`
+- `IsObjectNoCameraCol`
+- `SetPlayerObjectNoCameraCol`
+- `IsPlayerObjectNoCameraCol`
+- `GetPlayerCameraTargetPlayerObj`
+- `GetObjectTarget`
+- `GetPlayerObjectTarget`
+- `GetPlayerDialog`
+- `fmkdir`
+- `dcreate`
+- `GetVehicleTower`
+- `ChangeVehicleColor`
 
 **Поправке:**
 

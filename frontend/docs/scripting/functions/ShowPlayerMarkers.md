@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-Toggles player markers (blips on the radar). Must be used when the server starts (OnGameModeInit). For other times, see [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer).
+Toggles player markers (blips on the radar). Must be used when the server starts (`OnGameModeInit`). For other times, see [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer).
 
 | Name                     | Description                                                                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,11 +29,11 @@ public OnGameModeInit()
 
 ## Marker Modes
 
-| ID  | MODE                         |
-| --- | ---------------------------- |
-| 0   | PLAYER_MARKERS_MODE_OFF      |
-| 1   | PLAYER_MARKERS_MODE_GLOBAL   |
-| 2   | PLAYER_MARKERS_MODE_STREAMED |
+| ID  | MODE                           |
+| --- | ------------------------------ |
+| 0   | `PLAYER_MARKERS_MODE_OFF`      |
+| 1   | `PLAYER_MARKERS_MODE_GLOBAL`   |
+| 2   | `PLAYER_MARKERS_MODE_STREAMED` |
 
 ## Notes
 

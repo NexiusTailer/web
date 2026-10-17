@@ -143,11 +143,11 @@ syntax برای یک plain string کاراکتر escape و بعدش string در 
 
 یک source file ثابت‌های نمادین رو با دستورات const و enum اعلان می‌کنه. کلیدواژه const یک ثابت منفرد اعلان می‌کنه و enum لیستی از ثابت‌های —معمولاً— متوالی که همون نام tag رو به اشتراک می‌ذارن تعریف می‌کنه.
 
-**const** _identifier = constant expression_
+`const` _identifier = constant expression_
 
 یک ثابت نمادین با مقدار constant expression سمت راست عملگر assignment ایجاد می‌کنه. ثابت می‌تونه در هر جایی که یک عدد literal معتبر هست استفاده بشه (مثلاً: در expression ها، در اعلان‌های آرایه و در directive هایی مثل "#if" و "#assert").
 
-**enum** _name (increment) \{ constant list \}_
+`enum` _name (increment) \{ constant list \}_
 
 دستور enum سری‌ای از ثابت‌ها با مقادیر افزایشی ایجاد می‌کنه. لیست ثابت سری‌ای از شناسه‌های جدا شده با کاما هست. مگر اینکه نقض بشه، اولین ثابت یک لیست enum مقدار 0 داره و هر ثابت بعدی مقدار predecessor اش به علاوه 1 داره.
 

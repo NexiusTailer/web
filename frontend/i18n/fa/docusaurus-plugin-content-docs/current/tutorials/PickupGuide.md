@@ -15,7 +15,7 @@ new gMyPickup;
 
 ## ایجاد pickup
 
-دو راه برای ایجاد pickup ها وجود دارد. [CreatePickup](../scripting/functions/CreatePickup) و [AddStaticPickup](../scripting/functions/AddStaticPickup). AddStaticPickup هنگام ایجاد ID برنمی‌گرداند، نمی‌تواند نابود شود و فقط زیر OnGameModeInit می‌تواند استفاده شود، پس برای این مثال از [CreatePickup](../scripting/functions/CreatePickup) استفاده خواهیم کرد.
+دو راه برای ایجاد pickup ها وجود دارد. [CreatePickup](../scripting/functions/CreatePickup) و [AddStaticPickup](../scripting/functions/AddStaticPickup). `AddStaticPickup` هنگام ایجاد ID برنمی‌گرداند، نمی‌تواند نابود شود و فقط زیر `OnGameModeInit` می‌تواند استفاده شود، پس برای این مثال از [CreatePickup](../scripting/functions/CreatePickup) استفاده خواهیم کرد.
 
 **سینتکس برای [CreatePickup](../scripting/functions/CreatePickup):**
 
@@ -36,7 +36,7 @@ new gMyPickup;
 
 در نهایت نیاز به [Type](../scripting/resources/pickuptypes) برای pickup داریم، در همان صفحه با مدل‌های pickup لیستی از انواع pickup که توضیح می‌دهد انواع مختلف چه کار می‌کنند وجود دارد. ما می‌خواهیم این pickup وقتی آن را برمی‌دارید ناپدید شود، تا نتوانید مکرراً آن را بردارید، اما بعد از چند دقیقه دوباره ظاهر شود تا دوباره بتوانید آن را بردارید، نوع 2 دقیقاً همین کار را می‌کند.
 
-Pickup ها معمولاً هنگام شروع اسکریپت، در [OnGameModeInit](../scripting/callbacks/OnGameModeInit) یا [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) بسته به نوع اسکریپت ایجاد می‌شوند، هرچند می‌تواند در هر تابعی باشد (مثلاً می‌توانید یک اسکریپت weapon drop بسازید که از OnPlayerDeath برای ایجاد weapon pickup استفاده می‌کند).
+Pickup ها معمولاً هنگام شروع اسکریپت، در [OnGameModeInit](../scripting/callbacks/OnGameModeInit) یا [OnFilterScriptInit](../scripting/callbacks/OnFilterScriptInit) بسته به نوع اسکریپت ایجاد می‌شوند، هرچند می‌تواند در هر تابعی باشد (مثلاً می‌توانید یک اسکریپت weapon drop بسازید که از `OnPlayerDeath` برای ایجاد weapon pickup استفاده می‌کند).
 
 پس در اینجا کدی برای ایجاد pickup ما و ذخیره ID در 'gMyPickup' آورده شده:
 
@@ -46,9 +46,9 @@ gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 
 ### انتخاب اینکه چه کاری انجام دهد
 
-وقتی pickup ای را برمی‌دارید، [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup) صدا زده می‌شود، که playerid (بازیکنی که pickup را برداشته) و pickupid (ID pickup که برداشته شده) را پاس می‌دهد.
+وقتی pickup ای را برمی‌دارید، [OnPlayerPickUpPickup](../scripting/callbacks/OnPlayerPickUpPickup) صدا زده می‌شود، که `playerid` (بازیکنی که pickup را برداشته) و `pickupid` (ID pickup که برداشته شده) را پاس می‌دهد.
 
-برخی انواع pickup برای کار خودکار طراحی شده‌اند، پس نیازی به انجام کاری زیر OnPlayerPickUpPickup نیست. برای اطلاعات بیشتر صفحه [Pickup Types](../scripting/resources/pickuptypes) را بررسی کنید.
+برخی انواع pickup برای کار خودکار طراحی شده‌اند، پس نیازی به انجام کاری زیر `OnPlayerPickUpPickup` نیست. برای اطلاعات بیشتر صفحه [Pickup Types](../scripting/resources/pickuptypes) را بررسی کنید.
 
 وقتی بازیکن pickup جدید ما را برمی‌دارد، می‌خواهیم $100 به او بدهیم، برای انجام این کار ابتدا باید بررسی کنیم که pickup دلار ما را برداشته و نه یکی دیگر. وقتی این کار را کردیم، می‌توانیم $100 به او بدهیم:
 

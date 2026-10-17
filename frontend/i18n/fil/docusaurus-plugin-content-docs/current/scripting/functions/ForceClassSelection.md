@@ -33,7 +33,7 @@ if (!strcmp(cmdtext, "/class", true))
 
 :::warning
 
-Ang function na ito ay hindi nagsasagawa ng pagbabago ng estado sa PLAYER_STATE_WASTED kapag pinagsama sa TogglePlayerSpectating (tingnan ang halimbawa sa ibaba), tulad ng nakalista dito.
+Ang function na ito ay hindi nagsasagawa ng pagbabago ng estado sa `PLAYER_STATE_WASTED` kapag pinagsama sa `TogglePlayerSpectating` (tingnan ang halimbawa sa ibaba), tulad ng nakalista dito.
 
 :::
 

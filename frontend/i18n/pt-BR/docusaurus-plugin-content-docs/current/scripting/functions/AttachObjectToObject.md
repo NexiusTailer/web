@@ -9,22 +9,22 @@ tags: ["object"]
 
 Você pode usar esta função para anexar objetos a outros objetos. Os objetos seguirão o objeto principal.
 
-| Nome              | Descrição                                                                    |
-| ----------------- | ---------------------------------------------------------------------------- |
-| objectid          | O objeto a ser anexado a outro objeto.                                       |
-| parentid          | O objeto ao qual anexar o objeto.                                            |
-| Float:offsetX     | A distância entre o objeto principal e o objeto na direção X.                |
-| Float:offsetY     | A distância entre o objeto principal e o objeto na direção Y.                |
-| Float:offsetZ     | A distância entre o objeto principal e o objeto na direção Z.                |
-| Float:rotationX   | A rotação X entre o objeto e o objeto principal.                             |
-| Float:rotationY   | A rotação Y entre o objeto e o objeto principal.                             |
-| Float:rotationZ   | A rotação Z entre o objeto e o objeto principal.                             |
-| bool:syncRotation | Se definido como `false`, a rotação do objectid não mudará com o attachtoid. |
+| Nome              | Descrição                                                                      |
+| ----------------- | ------------------------------------------------------------------------------ |
+| objectid          | O objeto a ser anexado a outro objeto.                                         |
+| parentid          | O objeto ao qual anexar o objeto.                                              |
+| Float:offsetX     | A distância entre o objeto principal e o objeto na direção X.                  |
+| Float:offsetY     | A distância entre o objeto principal e o objeto na direção Y.                  |
+| Float:offsetZ     | A distância entre o objeto principal e o objeto na direção Z.                  |
+| Float:rotationX   | A rotação X entre o objeto e o objeto principal.                               |
+| Float:rotationY   | A rotação Y entre o objeto e o objeto principal.                               |
+| Float:rotationZ   | A rotação Z entre o objeto e o objeto principal.                               |
+| bool:syncRotation | Se definido como `false`, a rotação do `objectid` não mudará com o attachtoid. |
 
 ## Retorno
 
 **true** - A função foi executada com sucesso.
-**false** - A função falhou ao executar. Isso significa que o primeiro objeto (objectid) não existe. Não há verificações internas para verificar se o segundo objeto (attachtoid) existe.
+**false** - A função falhou ao executar. Isso significa que o primeiro objeto (`objectid`) não existe. Não há verificações internas para verificar se o segundo objeto (attachtoid) existe.
 
 ## Exemplos
 

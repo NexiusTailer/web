@@ -17,7 +17,7 @@ tags: ["玩家", "车辆", "视角"]
 
 ## 返回值
 
-玩家正在注视的车辆 ID（若无则返回 INVALID_VEHICLE_ID）
+玩家正在注视的车辆 ID（若无则返回 `INVALID_VEHICLE_ID`）
 
 ## 示例代码
 

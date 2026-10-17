@@ -6,14 +6,14 @@ Todas as diretivas devem aparecer primeiro em uma linha (podem ser precedidas po
 mas não por quaisquer outros caracteres). Todas as diretivas começam com o caractere # e
 a instrução completa não pode se estender por mais de uma linha.
 
-**#assert** _expressão constante_
+`#assert` _expressão constante_
 
     Emite um erro em tempo de compilação se a expressão constante fornecida
     for avaliada como zero. A diretiva #assert é mais útil para proteger contra
     construções definidas pela implementação das quais um programa pode depender,
     como o tamanho da célula em bits, ou o número de caracteres empacotados por célula.
 
-**#define** _padrão substituição_
+`#define` _padrão substituição_
 
     Define uma macro de substituição de texto. O padrão é comparado com todas as linhas
     lidas dos arquivos fonte; as seções que correspondem são substituídas pelos
@@ -21,7 +21,7 @@ a instrução completa não pode se estender por mais de uma linha.
     conter parâmetros, denotados por "%0" a "%9". Veja página 93 para detalhes
     e exemplos sobre substituição de texto.
 
-**#emit** _opcode, parâmetros_
+`#emit` _opcode, parâmetros_
 
     A diretiva #emit serve como um assembler inline. Atualmente é usada
     apenas para testar a máquina abstrata.
@@ -32,7 +32,7 @@ a instrução completa não pode se estender por mais de uma linha.
     todo o texto abaixo da diretiva #endinput.
     A diretiva #endscript é um sinônimo para #endinput.
 
-**#error**
+**`#error`**
 
     message: Sinaliza um "erro do usuário" com a mensagem especificada. Erros do
     usuário são erros fatais e servem a um propósito similar à diretiva #assert.
@@ -43,7 +43,7 @@ a instrução completa não pode se estender por mais de uma linha.
     pelo pré-processador de texto; normalmente não há necessidade de definir um nome de arquivo
     explicitamente.
 
-**#if** _expressão constante_, #elseif, #else, #endif
+`#if` _expressão constante_, #elseif, #else, #endif
 
     Partes de um programa podem ser analisadas ou ignoradas dependendo de certas
     condições. O parser pawn (compilador ou interpretador) gera
@@ -67,7 +67,7 @@ a instrução completa não pode se estender por mais de uma linha.
     Diretivas condicionais podem ser aninhadas e cada diretiva #if
     deve ser terminada por uma diretiva #endif.
 
-**#include** _nome do arquivo_ ou _< nome do arquivo >_
+`#include` _nome do arquivo_ ou _< nome do arquivo >_
 
     Insere o conteúdo do arquivo especificado na posição atual dentro
     do arquivo atual. Um nome de arquivo entre colchetes angulares ("\<" e ">")
@@ -96,12 +96,12 @@ a instrução completa não pode se estender por mais de uma linha.
     implicitamente pelo pré-processador de texto; normalmente não há necessidade de definir o
     número da linha explicitamente.
 
-**#pragma** _informações extras_
+`#pragma` _informações extras_
 
     Um "pragma" é um gancho para um parser especificar configurações adicionais, como
     níveis de aviso ou capacidades extras. #pragmas comuns são:
 
-    **#pragma** align
+    `#pragma` align
 
         Alinha a próxima declaração ao offset definido com a opção de alinhamento
         do compilador. Algumas funções (nativas) podem ter melhor desempenho
@@ -128,7 +128,7 @@ a instrução completa não pode se estender por mais de uma linha.
         variável local não estática, você deve alinhar o frame de pilha da função
         e declarar essa variável antes de quaisquer outras variáveis.
 
-    **#pragma** amxlimit *valor*
+    `#pragma` amxlimit *valor*
 
         Define o tamanho máximo, em bytes, que o script compilado pode
         crescer. Este pragma é útil para ambientes (embarcados)
@@ -141,7 +141,7 @@ a instrução completa não pode se estender por mais de uma linha.
         apenas indica a quantidade de memória necessária para o código e os
         dados estáticos.
 
-    **#pragma** amxram *valor*
+    `#pragma` amxram *valor*
 
         Define os requisitos máximos de memória, em bytes, para dados
         e pilha que um script compilado pode ter. Este valor é
@@ -151,7 +151,7 @@ a instrução completa não pode se estender por mais de uma linha.
         caso em que o script pawn é executado a partir da ROM, os tamanhos para
         as seções de código e dados precisam ambos ser definidos.
 
-    **#pragma** codepage *nome/valor*
+    `#pragma` codepage *nome/valor*
 
         O parser pawn pode traduzir caracteres em strings desempacotadas
         e constantes de caractere para caracteres "largos" Unicode/UCS-4.
@@ -161,7 +161,7 @@ a instrução completa não pode se estender por mais de uma linha.
         139 para detalhes e recursos extras necessários para a tradução
         de codepage.
 
-    **#pragma** compress *valor*
+    `#pragma` compress *valor*
 
         O parser pawn pode escrever o P-code gerado em codificação
         compacta ou simples ("não compacta"). O padrão depende da
@@ -175,7 +175,7 @@ a instrução completa não pode se estender por mais de uma linha.
         o parser pawn pode ser incapaz de compilar um script particular
         no modo de "codificação compacta".
 
-    **#pragma** ctrlchar *caractere*
+    `#pragma` ctrlchar *caractere*
 
         Define o caractere a usar para indicar o início de uma "sequência de escape".
         Por padrão, o caractere de controle é "\".
@@ -189,7 +189,7 @@ a instrução completa não pode se estender por mais de uma linha.
         Quando você omite o valor do novo caractere de controle, o parser
         reverte para o caractere de controle padrão.
 
-    **#pragma dynamic** *valor*
+    `#pragma dynamic` *valor*
 
         Define o tamanho, em células, do bloco de memória para dados
         dinâmicos (a pilha e o heap) para o valor especificado pela expressão.
@@ -197,7 +197,7 @@ a instrução completa não pode se estender por mais de uma linha.
         implementação. Uma implementação também pode escolher crescer
         o bloco conforme necessário (veja a documentação do programa host).
 
-    **#pragma library** *nome*
+    `#pragma library` *nome*
 
         Define o nome do módulo de extensão (vinculado dinamicamente)
         que contém as funções nativas necessárias. Este #pragma deve
@@ -214,7 +214,7 @@ a instrução completa não pode se estender por mais de uma linha.
         que declara funções nativas para um módulo de extensão, e o escopo
         do "vínculo" da biblioteca termina no final desse arquivo de inclusão.
 
-    **#pragma pack** *valor*
+    `#pragma pack` *valor*
 
         Se o valor for zero, strings literais empacotadas começam com "!"" (ponto de
         exclamação + aspas duplas) e strings literais desempacotadas com
@@ -224,7 +224,7 @@ a instrução completa não pode se estender por mais de uma linha.
         duplas são empacotadas e strings literais que começam com "!""
         são desempacotadas.
 
-    **#pragma rational** *tagname(valor)*
+    `#pragma rational` *tagname(valor)*
 
         Habilita o suporte para números racionais. O tagname é o
         nome da tag que os números racionais terão; tipicamente escolhe-se
@@ -235,7 +235,7 @@ a instrução completa não pode se estender por mais de uma linha.
         é um número de precisão fixa ("inteiro escalado") com o
         número especificado de decimais.
 
-    **#pragma semicolon** *valor*
+    `#pragma semicolon` *valor*
 
         Se o valor for zero, nenhum ponto e vírgula é necessário para terminar uma instrução se
         essa instrução for a última em uma linha. Pontos e vírgulas ainda são necessários para
@@ -245,7 +245,7 @@ a instrução completa não pode se estender por mais de uma linha.
         (um de "++", "--" e "char") não pode ser o primeiro token em
         uma linha, pois será interpretado como operadores prefixados.
 
-    **#pragma tabsize** *valor*
+    `#pragma tabsize` *valor*
 
         O número de caracteres entre duas posições de tabulação consecutivas.
         O valor padrão é 8. Você pode precisar definir o tamanho da tabulação
@@ -254,7 +254,7 @@ a instrução completa não pode se estender por mais de uma linha.
         Alternativamente, definindo o #pragma "tabsize" como zero, o
         parser não emitirá mais o aviso 217.
 
-    **#pragma unused** *símbolo,...*
+    `#pragma unused` *símbolo,...*
 
         Marca o símbolo nomeado como "usado". Normalmente, o parser pawn
         avisa sobre variáveis não usadas e constantes locais não usadas.
@@ -285,13 +285,13 @@ a instrução completa não pode se estender por mais de uma linha.
 
     Qualquer seção declarada termina automaticamente no final do arquivo.
 
-**#tryinclude** _nome do arquivo_ ou _< nome do arquivo >_
+`#tryinclude` _nome do arquivo_ ou _< nome do arquivo >_
 
     Esta diretiva se comporta de forma similar à diretiva #include, mas não
     dá um erro quando o arquivo a incluir não existe — ou seja, tenta
     incluir mas falha silenciosamente em caso de erro.
 
-**#undef** _nome_
+`#undef` _nome_
 
     Remove uma macro de substituição de texto ou uma constante numérica declarada
     com const. O parâmetro "nome" deve ser o "prefixo" da macro — a

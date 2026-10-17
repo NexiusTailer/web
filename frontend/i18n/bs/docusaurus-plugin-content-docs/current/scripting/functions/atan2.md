@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-Obratite pažnju da je vrijednost y prvi parametar, a vrijednost x drugi parametar.
+Obratite pažnju da je vrijednost `y` prvi parametar, a vrijednost `x` drugi parametar.
 
 :::
 

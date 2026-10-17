@@ -51,7 +51,7 @@ CallLocalFunction("publicFunc", "ifs", 420, 68.999999999, "Hello world");
 
 :::warning
 
-CallLocalFunction trava o servidor se estiver passando uma string vazia. (Corrigido no open.mp)
+`CallLocalFunction` trava o servidor se estiver passando uma string vazia. (Corrigido no open.mp)
 
 :::
 

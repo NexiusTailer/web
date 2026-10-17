@@ -73,4 +73,4 @@ tags: []
 3. É possível mostrar todos os Textdraws ao mesmo tempo para um jogador, porém isso não é recomendado.
 4. Para contornar esses limites, é possível utilizar um [streamer](https://github.com/samp-incognito/samp-streamer-plugin). Os streamers funcionam apenas criando entidades, etc., que estão próximas dos jogadores.
 5. Devido a limitações do cliente, apenas até 51 atores podem ser exibidos por vez.
-6. O veículo IDs começa em ID 1 e, portanto, varia de 1 a 1999, mesmo que MAX_VEHICLES seja 2000. Objetos e objetos de jogador também começam em ID 1.
+6. O veículo IDs começa em ID 1 e, portanto, varia de 1 a 1999, mesmo que `MAX_VEHICLES` seja 2000. Objetos e objetos de jogador também começam em ID 1.

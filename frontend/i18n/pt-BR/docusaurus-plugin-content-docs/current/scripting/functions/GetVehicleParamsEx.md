@@ -41,7 +41,7 @@ GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, object
 
 :::note
 
-Se um parâmetro não estiver definido (SetVehicleParamsEx não usado anteriormente), o valor será -1 ('desdefinido').
+Se um parâmetro não estiver definido (`SetVehicleParamsEx` não usado anteriormente), o valor será -1 ('desdefinido').
 
 :::
 

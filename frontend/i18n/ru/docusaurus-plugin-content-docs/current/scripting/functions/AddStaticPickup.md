@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-Эта функция не возвращает ID пикапа который можно использовать, к примеру в OnPlayerPickUpPickup. Используйте CreatePickup если хотите получить ID.
+Эта функция не возвращает ID пикапа который можно использовать, к примеру в `OnPlayerPickUpPickup`. Используйте `CreatePickup` если хотите получить ID.
 
 :::
 

@@ -31,7 +31,7 @@ O único argumento passado a `printf` é uma string, delimitada por aspas duplas
 
 ---
 
-pawn is a “case sensitive” language: upper and lower case letters are considered to be different letters. It would be an error to spell the function printf in the above as “PrintF”. Palavras-chave e símbolos pré-definidos, como o nome da função `main`, devem ser escritos em minúsculas.
+pawn is a “case sensitive” language: upper and lower case letters are considered to be different letters. It would be an error to spell the function `printf` in the above as “PrintF”. Palavras-chave e símbolos pré-definidos, como o nome da função `main`, devem ser escritos em minúsculas.
 
 Se você conhece C, talvez ache que o exemplo anterior não se parece muito com o tradicional “Hello world” de C/C++. No entanto, pawn também pode lembrar bastante C. O próximo exemplo é sintaxe válida em pawn (e tem a mesma lógica do anterior):
 
@@ -114,13 +114,13 @@ Observe that some statements, like while and if–else, contain (or “fold arou
 - the if–else statement folds around these two assignment statements and forms a single statement of itself;
 - the while statement folds around the if–else statement and forms, again, a single statement.
 
-It is common to make the nesting of the statements explicit by indenting any sub-statements below a statement in the source text. In the “Greatest Common Divisor” example, the left margin indent increases by four space characters after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both printf invocations and the while loop, have the same indentation.
+It is common to make the nesting of the statements explicit by indenting any sub-statements below a statement in the source text. In the “Greatest Common Divisor” example, the left margin indent increases by four space characters after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both `printf` invocations and the while loop, have the same indentation.
 
 The loop condition for the while loop is “(a != b)”; the symbol != is the “not equal to” operator. That is, the if–else instruction is repeated until “a” equals “b”. It is good practice to indent the instructions that run under control of another statement, as is done in the preceding example.
 
 ---
 
-The call to printf, near the bottom of the example, differs from the print call right below the opening brace (“\{”). The “f” in printf stands for “formatted”, which means that the function can format and print numeric values and other data (in a user-specified format), as well as literal text. The %d symbol in the string is a token that indicates the position and the format that the subsequent argument to function printf should be printed. At run time, the token %d is replaced by the value of variable “a” (the second argument of printf).
+The call to `printf`, near the bottom of the example, differs from the `print` call right below the opening brace (“\{”). The “f” in `printf` stands for “formatted”, which means that the function can format and print numeric values and other data (in a user-specified format), as well as literal text. The %d symbol in the string is a token that indicates the position and the format that the subsequent argument to function `printf` should be printed. At run time, the token %d is replaced by the value of variable “a” (the second argument of `printf`).
 
 A função `print` imprime apenas texto e é mais rápida do que `printf`. Se quiser exibir um caractere “%” literal, use `print` ou duplique o símbolo ao usar `printf`. Ou seja:
 
@@ -234,7 +234,7 @@ A instrução `return` encerra a função e estabelece o valor retornado. Ela n�
 
 ---
 
-The main function of the Fibonacci example calls predefined “native” functions, like getvalue and printf, as well as the user-defined function fibonacci. From the perspective of calling a function (as in function main), there is no difference between user-defined and native functions.
+The main function of the Fibonacci example calls predefined “native” functions, like `getvalue` and `printf`, as well as the user-defined function fibonacci. From the perspective of calling a function (as in function main), there is no difference between user-defined and native functions.
 
 The Fibonacci numbers sequence describes a surprising variety of natural phenomena. For example, the two or three sets of spirals in pineapples, pine cones and sunflowers usually have consecutive Fibonacci numbers between 5 and 89 as their number of spirals. The numbers that occur naturally in branching patterns (e.g. that of plants) are indeed Fibonacci numbers. Finally, although the Fibonacci sequence is not a geometric sequence, the further the sequence is extended, the more closely the ratio between successive terms approaches the Golden Ratio, of 1.618. . . ∗ that appears so often in art and architecture.
 
@@ -400,9 +400,9 @@ The equation for obtaining degrees Fahrenheit from degrees Celsius is
 
 The program uses the value 1.8 for the quotient 9/₅. When rational number support is enabled, pawn supports values with a fractional part behind the decimal point.
 
-The only other non-trivial change from earlier programs is that the format string for the printf function now has variable placeholders denoted with “%r” instead of “%d”. The placeholder %r prints a rational number at the position; %d is only for integers (“whole numbers”).
+The only other non-trivial change from earlier programs is that the format string for the `printf` function now has variable placeholders denoted with “%r” instead of “%d”. The placeholder %r prints a rational number at the position; %d is only for integers (“whole numbers”).
 
-I used the include file “rational” rather than “float” or “fixed” in an attempt to make the example program portable. If you know that the host application supports floating point arithmetic, it may be more convenient to “#include” the definitions from the file float and use the tag Float: instead of Rational —when doing so, you should also replace %r by %f in the call to printf. For details on fixed point and floating point support, please see the application notes “Fixed Point Support Library” and “Floating Point Support Library” that are available separately.
+I used the include file “rational” rather than “float” or “fixed” in an attempt to make the example program portable. If you know that the host application supports floating point arithmetic, it may be more convenient to “#include” the definitions from the file float and use the tag Float: instead of Rational —when doing so, you should also replace %r by %f in the call to `printf`. For details on fixed point and floating point support, please see the application notes “Fixed Point Support Library” and “Floating Point Support Library” that are available separately.
 
 ### • Strings
 
@@ -624,7 +624,7 @@ Near the top of the program listing is the declaration of the enumeration messag
 
 Immediately at the top of function main, a new array variable is declared with the size of message. The symbol message is the name of the enumeration. It is also a constant with the value of the last constant in the enumeration list plus the optional extra increment for that last element. So in this example, message is 12. That is to say, array msg is declared to hold 12 cells.
 
-Further in main are two loops. The for loop reads strings and priority values from the console and inserts them in a queue. The while loop below that extracts element by element from the queue and prints the information on the screen. The point to note, is that the for loop stores both the string and the priority number (an integer) in the same variable msg; indeed, function main declares only a single variable. Function getstring stores the message text that you type starting at array msg[text] while the priority value is stored (by an assignment a few lines lower) in msg[priority]. The printf function in the while loop reads the string and the value from those positions as well.
+Further in main are two loops. The for loop reads strings and priority values from the console and inserts them in a queue. The while loop below that extracts element by element from the queue and prints the information on the screen. The point to note, is that the for loop stores both the string and the priority number (an integer) in the same variable msg; indeed, function main declares only a single variable. Function `getstring` stores the message text that you type starting at array msg[text] while the priority value is stored (by an assignment a few lines lower) in msg[priority]. The `printf` function in the while loop reads the string and the value from those positions as well.
 
 At the same time, the msg array is an entity on itself: it is passed in its entirety to function insert. That function, near the end, says “queue[queueitems] = item”, where item is an array with size message and queue is a two-dimensional array that holds queuesize elements of size message. The declaration of queue and queuesize are just above function insert.
 
@@ -636,7 +636,7 @@ Note that both functions insert and extract work on two shared variables, queue 
 
 Function extract returns the messages with the highest priority via its function argument item. That is, it changes its function argument by copying the first element of the queue array into item. Function insert copies in the other direction and it does not change its function argument item. In such a case, it is advised to mark the function argument as “const”. This helps the pawn parser to both check for errors and to generate better (more compact, quicker) code.
 
-A final remark on this latest sample is the call to getstring in function main: note how the parameters are attributed with a description. The first parameter is labeled “.string”, the second “.maxlength” and the third “.pack”. Function getstring receives “named parameters” rather than positional parameters. The order in which named parameters are listed is not important. Named parameters are convenient in specifying —and deciphering— long parameter lists.
+A final remark on this latest sample is the call to `getstring` in function main: note how the parameters are attributed with a description. The first parameter is labeled “.string”, the second “.maxlength” and the third “.pack”. Function `getstring` receives “named parameters” rather than positional parameters. The order in which named parameters are listed is not important. Named parameters are convenient in specifying —and deciphering— long parameter lists.
 
 ---
 

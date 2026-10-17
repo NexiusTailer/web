@@ -38,7 +38,7 @@ SetPlayerFacingAngle( playerid, 0 ); // Igrač gleda sjeverno
 
 :::warning
 
-Uglovi su obrnuti u GTA:SA; 90 stepeni bi bilo istočno u stvarnom svijetu, ali u GTA:SA 90 stepeni je zapravo zapad. Sjever i Jug su i dalje 0/360 i 180. Da biste to pretvorili, jednostavno napravite kut od 360.
+Uglovi su obrnuti u GTA:SA; 90 stepeni bi bilo _istočno_ u stvarnom svijetu, ali u GTA:SA 90 stepeni je zapravo _zapad_. Sjever i Jug su i dalje 0/360 i 180. Da biste to pretvorili, jednostavno napravite kut od 360.
 
 :::
 

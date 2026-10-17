@@ -47,7 +47,7 @@ This includes all the other files in that directory so by adding that one line y
 
 ## Calls
 
-The next part has two sides of a function call. main() is a function which you write the code for and is called from elsewhere, print(string\[\]) is a function with the code elsewhere which you call. Currently all this will do is load, print a string (i.e. print "Hello World!" (without the ""s) (a tradition in all scripting languages)) to the server console and end. The:
+The next part has two sides of a function call. main() is a function which you write the code for and is called from elsewhere, `print`(string\[\]) is a function with the code elsewhere which you call. Currently all this will do is load, print a string (i.e. print "Hello World!" (without the ""s) (a tradition in all scripting languages)) to the server console and end. The:
 
 ```c
 return 1;
@@ -59,7 +59,7 @@ Passes a value (1) back to the place which called main to tell it what happened 
 
 ## Statements
 
-The print and return lines have ';' (a semi colon) on them, this just denotes the end of a statement (a statement is a group of one or more functions and operators which together do something, similar to a sentence in common language). Most people put separate statements on separate lines but this is not required, it just makes things clearer, the following is equally valid:
+The `print` and return lines have ';' (a semi colon) on them, this just denotes the end of a statement (a statement is a group of one or more functions and operators which together do something, similar to a sentence in common language). Most people put separate statements on separate lines but this is not required, it just makes things clearer, the following is equally valid:
 
 ```c
 main() { print("Hello World!"); return 1; }
@@ -71,7 +71,7 @@ The {}s (braces (curly brackets), not parenthesis (brackets)) enclose a group of
 main() print("Hello World!"); return 1;
 ```
 
-You would get an error because now the "return 1;" statement is not grouped so is not part of main. Braces group a set of statements into a single statement (called a compound statement) and functions have a single statement with them. Without the braces print and return are entirely separate statements, so there's two of them so, as a function can only have a single statement, the second is not in a function, which code can't be.
+You would get an error because now the "return 1;" statement is not grouped so is not part of main. Braces group a set of statements into a single statement (called a compound statement) and functions have a single statement with them. Without the braces `print` and return are entirely separate statements, so there's two of them so, as a function can only have a single statement, the second is not in a function, which code can't be.
 
 But generally, you can expand compound statements with the use of the comma (,) operator but this is not suggested as it is not the best coding practice. An example follows:
 
@@ -93,7 +93,7 @@ print("Hello World!");
 
 As described in the first example, this calls the function called "print" (defined in a_samp.inc, which is why you need to include it) and tells it to display something in the server console (the word hello).
 
-A function consists of the function name (e.g. print), which tells the system which chunk of code you want to call, and a parameter list, enclosed in ()s after the function name, which pass additional data to the function to help it run. If you didn't have parameters you would need millions of functions:
+A function consists of the function name (e.g. `print`), which tells the system which chunk of code you want to call, and a parameter list, enclosed in ()s after the function name, which pass additional data to the function to help it run. If you didn't have parameters you would need millions of functions:
 
 ```c
 printa();
@@ -185,7 +185,7 @@ MyFunction(string[])
 }
 ```
 
-This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](start#arrays) as explained later). The print function is then called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
+This code still does the same thing but we're now telling MyFunction() what to display. The call passes the string "Hello World!" to the function where it is stored in a variable called string (the \[\] means it's an [array](start#arrays) as explained later). The `print` function is then called, passing the contents of the string variable, we know it's a variable because it doesn't have the "" any more.
 
 # Variables
 
@@ -213,7 +213,7 @@ new
     myVariable = 7;
 ```
 
-This declares a new variable and sets it's initial value to 7, so printing the variable now will give 7. To display a variable which isn't a string we need to go back to the printf() function mentioned earlier and do:
+This declares a new variable and sets it's initial value to 7, so printing the variable now will give 7. To display a variable which isn't a string we need to go back to the `printf()` function mentioned earlier and do:
 
 ```c
 new
@@ -271,7 +271,7 @@ That will divide the value by 4.
 
 ---
 
-An array is a variable in which you can store multiple pieces of data at once and access them dynamically. An array is declared to a set size at compile time so you need to know how many pieces of data you need to store in advance, a good example of this is the very common MAX_PLAYERS array, this will have one slot for every possibly connected player, so you know data for one player will not interfere with data for another player (more on defines later).
+An array is a variable in which you can store multiple pieces of data at once and access them dynamically. An array is declared to a set size at compile time so you need to know how many pieces of data you need to store in advance, a good example of this is the very common `MAX_PLAYERS` array, this will have one slot for every possibly connected player, so you know data for one player will not interfere with data for another player (more on defines later).
 
 ```c
 new
@@ -354,7 +354,7 @@ myArray[2]++;
 
 ### Example
 
-As mentioned above a common type of array is the MAX_PLAYERS array. MAX_PLAYERS is not a variable, it's a define which is explained later, but for now accept that it is a constant number equal to the max number of players a server can hold (this by default is 500, even if you change the number in your config.json file). The following code uses normal variables to hold data for 4 players and do something with those players in a function (for simplicity's sake assume MAX_PLAYERS is 4 for now):
+As mentioned above a common type of array is the `MAX_PLAYERS` array. `MAX_PLAYERS` is not a variable, it's a define which is explained later, but for now accept that it is a constant number equal to the max number of players a server can hold (this by default is 500, even if you change the number in your config.json file). The following code uses normal variables to hold data for 4 players and do something with those players in a function (for simplicity's sake assume `MAX_PLAYERS` is 4 for now):
 
 ```c
 new
@@ -524,7 +524,7 @@ The "Float" part is the tag, this defines this variable as a float (non-whole/re
 native SetGravity(Float:gravity);
 ```
 
-This means the SetGravity function takes a single parameter which has to be a float, for example:
+This means the `SetGravity` function takes a single parameter which has to be a float, for example:
 
 ```c
 SetGravity(6.0);

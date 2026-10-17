@@ -19,7 +19,7 @@ Get the ID of the dialog currently show to the player.
 
 Returns the dialog ID.
 
-Or **INVALID_DIALOG_ID** if the player is not connected or has no dialog open.
+Or `INVALID_DIALOG_ID` if the player is not connected or has no dialog open.
 
 ## Examples
 

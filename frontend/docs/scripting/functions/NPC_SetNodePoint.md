@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Node must be opened before setting points
 - Point indices typically start from 0
-- Use NPC_GetNodePointPosition to retrieve point coordinates
+- Use `NPC_GetNodePointPosition` to retrieve point coordinates
 
 ## Related Functions
 

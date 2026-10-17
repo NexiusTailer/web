@@ -15,10 +15,10 @@ tags: []
 
 Set the virtual world of an actor. Only players in the same world will see the actor.
 
-| Name    | Description                                                                |
-| ------- | -------------------------------------------------------------------------- |
-| actorid | The ID of the actor (returned by CreateActor) to set the virtual world of. |
-| vworld  | The virtual world to put the actor ID.                                     |
+| Name    | Description                                                                  |
+| ------- | ---------------------------------------------------------------------------- |
+| actorid | The ID of the actor (returned by `CreateActor`) to set the virtual world of. |
+| vworld  | The virtual world to put the actor ID.                                       |
 
 ## ส่งคืน
 
@@ -44,5 +44,5 @@ public OnGameModeInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetActorVirtualWorld: Get the virtual world of an actor.
-- CreateActor: Create an actor (static NPC).
+- `GetActorVirtualWorld`: Get the virtual world of an actor.
+- `CreateActor`: Create an actor (static NPC).

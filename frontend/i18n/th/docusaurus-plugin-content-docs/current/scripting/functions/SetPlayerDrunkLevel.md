@@ -41,4 +41,4 @@ Players' drunk level will automatically decrease over time, based on their FPS (
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerDrunkLevel: Returns the current drunk level of a player.
+- `GetPlayerDrunkLevel`: Returns the current drunk level of a player.

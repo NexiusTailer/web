@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Açıklama
 
-Oyuncu interior değiştirdiğinde çalışır. SetPlayerInterior tarafından ya da oyuncu bir interiora girip/çıktığı zaman tetiklenebilir.
+Oyuncu interior değiştirdiğinde çalışır. `SetPlayerInterior` tarafından ya da oyuncu bir interiora girip/çıktığı zaman tetiklenebilir.
 
 | Parametre     | Açıklama                                |
 | ------------- | --------------------------------------- |

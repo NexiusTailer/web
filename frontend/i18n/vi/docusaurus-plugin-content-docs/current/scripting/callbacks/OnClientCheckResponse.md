@@ -7,7 +7,7 @@ tags: []
 
 ## Mô Tả
 
-Callback này được gọi khi một yêu cầu SendClientCheck hoàn tất.
+Callback này được gọi khi một yêu cầu `SendClientCheck` hoàn tất.
 
 | Tên      | Mô Tả                            |
 | -------- | -------------------------------- |

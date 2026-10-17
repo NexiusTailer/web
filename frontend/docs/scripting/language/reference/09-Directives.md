@@ -6,14 +6,14 @@ All directives must appear first on a line (they may be preceded by white space,
 but not by any other characters). All directives start with the character # and
 the complete instruction may not span more than one line.
 
-**#assert** _constant expression_
+`#assert` _constant expression_
 
     Issues a compile time error if the supplied constant expression evalu-
     ates to zero. The #assert directive is most useful to guard against
     implementation defined constructs on which a program may depend,
     such as the cell size in bits, or the number of packed characters per cell.
 
-**#define** _pattern replacement_
+`#define` _pattern replacement_
 
     Defines a text substitution macro. The pattern is matched to all lines
     read from the source files; the sections that match are replaced by
@@ -21,7 +21,7 @@ the complete instruction may not span more than one line.
     contain parameters, denoted by “%0” to “%9”. See page 93 for details
     and examples on text substitution.
 
-**#emit** _opcode, parameters_
+`#emit` _opcode, parameters_
 
     The #emit directive serves as an inline assembler. It is currently used
     only for testing the abstract machine.
@@ -32,7 +32,7 @@ the complete instruction may not span more than one line.
     all the text below the #endinput directive.
     The directive #endscript is a synonym for #endinput.
 
-**#error**
+**`#error`**
 
     message: Signals a “user error” with the specified message. User er-
     rors are fatal errors and they serve a similar purpose as the #assert
@@ -44,7 +44,7 @@ the complete instruction may not span more than one line.
     by the text preprocessor; there is usually no need to set a filename
     explicitly.
 
-**#if** _constant expression_, #elseif, #else, #endif
+`#if` _constant expression_, #elseif, #else, #endif
 
     Portions of a program may be parsed or be ignored depending on cer-
     tain conditions. The pawn parser (compiler or interpreter) generates
@@ -68,7 +68,7 @@ the complete instruction may not span more than one line.
     ditionally. Conditional directives can be nested and each #if directive
     must be ended by an #endif directive.
 
-**#include** _filename_ or _< filename >_
+`#include` _filename_ or _< filename >_
 
     Inserts the contents of the specified file at the current position within
     the current file. A filename between angle brackets (“\<” and “>”)
@@ -97,12 +97,12 @@ the complete instruction may not span more than one line.
     implicitly by the text preprocessor; there is usually no need to set the
     line number explicitly.
 
-**#pragma** _extra information_
+`#pragma` _extra information_
 
     A “pragma” is a hook for a parser to specify additional settings, such
     as warning levels or extra capabilities. Common #pragmas are:
 
-    **#pragma** align
+    `#pragma` align
 
         Aligns the next declaration to the offset set with the alignment
         compiler option. Some (native) functions may perform better
@@ -129,7 +129,7 @@ the complete instruction may not span more than one line.
         local non-static variable, you must align the function’s stack
         frame and declare that variable before any other variables.
 
-    **#pragma** amxlimit *value*
+    `#pragma` amxlimit *value*
 
         Sets the maximum size, in bytes, that the compiled script may
         grow to. This pragma is useful for (embedded) environments
@@ -143,7 +143,7 @@ the complete instruction may not span more than one line.
         only goves the amount of memory needed for the code and the
         static data.
 
-    **#pragma** amxram *value*
+    `#pragma` amxram *value*
 
         Sets the maximum memory requirements, in bytes, for data
         and stack that a compiled script may have. This value is is
@@ -153,7 +153,7 @@ the complete instruction may not span more than one line.
         the case where the pawn script runs from ROM, the sizes for
         the code and data sections need both to be set.
 
-    **#pragma** codepage *name/value*
+    `#pragma` codepage *name/value*
 
         The pawn parser can translate characters in unpacked strings
         and character constants to Unicode/UCS-4 “wide” characters.
@@ -163,7 +163,7 @@ the complete instruction may not span more than one line.
         139 for details and required extra resources for the codepage
         translation.
 
-    **#pragma** compress *value*
+    `#pragma` compress *value*
 
         The pawn parser may write the generated P-code in compact
         or plain (“non-compact”) encoding. The default depends on
@@ -177,7 +177,7 @@ the complete instruction may not span more than one line.
         the pawn parser may be unable to compile a particular script
         in “compact encoding” mode.
 
-    **#pragma** ctrlchar *character*
+    `#pragma` ctrlchar *character*
 
         Defines the character to use to indicate the start of a “escape sequence”.
         By default, the control character is “\”.
@@ -191,7 +191,7 @@ the complete instruction may not span more than one line.
         adecimal value. When you omit the value of the new control
         character, the parser reverts to the default control character.
 
-    **#pragma dynamic** *value*
+    `#pragma dynamic` *value*
 
         Sets the size, in cells, of the memory block for dynamic data
         (the stack and the heap) to the value specified by the expres-
@@ -200,7 +200,7 @@ the complete instruction may not span more than one line.
         the block on an as-needed basis (see the host program’s docu-
         mentation, or the “Implementor’s Guide” for details).
 
-    **#pragma library** *name*
+    `#pragma library` *name*
 
         Sets the name of the (dynamically linked) extension module
         that contains required native functions. This #pragma should
@@ -218,7 +218,7 @@ the complete instruction may not span more than one line.
         ule, and the scope of the library “link” ends at the end of that
         include file.
 
-    **#pragma pack** *value*
+    `#pragma pack` *value*
 
         If value is zero, packed literal strings start with “!"” (exclama-
         tion point + double quote) and unpacked literal strings with
@@ -228,7 +228,7 @@ the complete instruction may not span more than one line.
         ble quote are packed and literal strings that start with “!"”
         are unpacked.
 
-    **#pragma rational** *tagname(value)*
+    `#pragma rational` *tagname(value)*
 
         Enables support for rational numbers. The tagname is the
         name of the tag that rational numbers will have; typically one
@@ -239,7 +239,7 @@ the complete instruction may not span more than one line.
         number is a fixed precision number (“scaled integer”) with the
         specified number of decimals.
 
-    **#pragma semicolon** *value*
+    `#pragma semicolon` *value*
 
         If value is zero, no semicolon is required to end a statement if
         that statement is last on a line. Semicolons are still needed to
@@ -249,7 +249,7 @@ the complete instruction may not span more than one line.
         (one of “++”, “--” and “char”) may not be the first token on
         a line, as they will be interpreted as prefix operators.
 
-    **#pragma tabsize** *value*
+    `#pragma tabsize` *value*
 
         The number of characters between two consecutive tab posi-
         tions. The default value is 8. You may need to set the tab
@@ -258,7 +258,7 @@ the complete instruction may not span more than one line.
         Alternatively, by setting the “tabsize” #pragma to zero, the
         parser will no longer issue warning 217.
 
-    **#pragma unused** *symbol,...*
+    `#pragma unused` *symbol,...*
 
         Marks the named symbol as “used”. Normally, the pawn
         parser warns about unused variables and unused local con-
@@ -290,13 +290,13 @@ the complete instruction may not span more than one line.
 
     Any declared section ends automatically at the end of the file.
 
-**#tryinclude** _filename_ or _< filename >_
+`#tryinclude` _filename_ or _< filename >_
 
     This directive behaves similarly as the #include directive, but it does
     not give an error when the file to include does not exist —i.e., try to
     include but fail silently on error.
 
-**#undef** _name_
+`#undef` _name_
 
     Removes a text substitution macro or a numeric constant declared
     with const. The “name” parameter must be the macro “prefix” —the

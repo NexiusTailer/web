@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## توضیحات
 
-محتوای یک فیلد رو از db_query دریافت می‌کنه.
+محتوای یک فیلد رو از `db_query` دریافت می‌کنه.
 
 | نام               | توضیحات                                |
 | ----------------- | -------------------------------------- |
@@ -158,7 +158,7 @@ public OnGameModeExit()
 - [db_open](db_open): اتصال به پایگاه داده SQLite باز کنید
 - [db_close](db_close): اتصال به پایگاه داده SQLite بسته کنید
 - [db_query](db_query): پایگاه داده SQLite رو کوئری کنید
-- [db_free_result](db_free_result): حافظه نتیجه رو از db_query آزاد کنید
+- [db_free_result](db_free_result): حافظه نتیجه رو از `db_query` آزاد کنید
 - [db_num_rows](db_num_rows): تعداد سطرهای یک نتیجه رو دریافت کنید
 - [db_next_row](db_next_row): به سطر بعدی بروید
 - [db_num_fields](db_num_fields): تعداد فیلدهای یک نتیجه رو دریافت کنید
@@ -168,7 +168,7 @@ public OnGameModeExit()
 - [db_get_field_assoc_int](db_get_field_assoc_int): محتوای فیلد به عنوان عدد صحیح با نام مشخص از سطر نتیجه فعلی رو دریافت کنید
 - [db_get_field_float](db_get_field_float): محتوای فیلد به عنوان عدد اعشاری با ID مشخص از سطر نتیجه فعلی رو دریافت کنید
 - [db_get_field_assoc_float](db_get_field_assoc_float): محتوای فیلد به عنوان عدد اعشاری با نام مشخص از سطر نتیجه فعلی رو دریافت کنید
-- [db_get_mem_handle](db_get_mem_handle): handle حافظه برای پایگاه داده SQLite که با db_open باز شده رو دریافت کنید
-- [db_get_result_mem_handle](db_get_result_mem_handle): handle حافظه برای کوئری SQLite که با db_query اجرا شده رو دریافت کنید
+- [db_get_mem_handle](db_get_mem_handle): handle حافظه برای پایگاه داده SQLite که با `db_open` باز شده رو دریافت کنید
+- [db_get_result_mem_handle](db_get_result_mem_handle): handle حافظه برای کوئری SQLite که با `db_query` اجرا شده رو دریافت کنید
 - [db_debug_openfiles](db_debug_openfiles): تعداد اتصالات باز پایگاه داده رو برای اهداف دیباگ دریافت کنید
 - [db_debug_openresults](db_debug_openresults): تعداد نتایج باز پایگاه داده رو دریافت کنید

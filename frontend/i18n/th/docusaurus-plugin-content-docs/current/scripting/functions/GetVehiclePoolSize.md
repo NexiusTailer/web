@@ -13,7 +13,7 @@ tags: ["vehicle"]
 
 ## คำอธิบาย
 
-Gets the highest vehicleid currently in use on the server.
+Gets the highest `vehicleid` currently in use on the server.
 
 | Name | Description |
 | ---- | ----------- |
@@ -32,4 +32,4 @@ RepairAllVehicles()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerPoolSize: Gets the highest playerid connected to the server.
+- `GetPlayerPoolSize`: Gets the highest `playerid` connected to the server.

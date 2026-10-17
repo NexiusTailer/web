@@ -36,7 +36,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 :::warning
 
-OnPlayerStreamOut هنگام قطع اتصال بازیکن برای هر دو بازیکن فراخوانده نمی‌شود
+`OnPlayerStreamOut` هنگام قطع اتصال بازیکن برای هر دو بازیکن فراخوانده نمی‌شود
 
 :::
 

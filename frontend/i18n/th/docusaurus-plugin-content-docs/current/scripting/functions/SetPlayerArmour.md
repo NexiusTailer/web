@@ -47,6 +47,6 @@ Armour is obtained rounded to integers: set 50.15, but get 50.0
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerArmour: Find out how much armour a player has.
-- SetPlayerHealth: Set a player's health.
-- GetPlayerHealth: Find out how much health a player has.
+- `GetPlayerArmour`: Find out how much armour a player has.
+- `SetPlayerHealth`: Set a player's health.
+- `GetPlayerHealth`: Find out how much health a player has.

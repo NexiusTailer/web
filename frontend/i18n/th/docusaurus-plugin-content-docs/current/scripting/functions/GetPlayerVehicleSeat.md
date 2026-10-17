@@ -35,5 +35,5 @@ if (strcmp(cmdtext, "/myseat", true) == 0)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerVehicleID: Get the ID of the vehicle the player is in.
-- PutPlayerInVehicle: Put a player in a vehicle.
+- `GetPlayerVehicleID`: Get the ID of the vehicle the player is in.
+- `PutPlayerInVehicle`: Put a player in a vehicle.

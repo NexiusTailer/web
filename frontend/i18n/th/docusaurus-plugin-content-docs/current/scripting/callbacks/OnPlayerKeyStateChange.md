@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This callback is called when the state of any supported key is changed (pressed/released). Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
+This callback is called when the state of any supported key is changed (pressed/released). Directional keys do not trigger `OnPlayerKeyStateChange` (up/down/left/right).
 
 | Name     | Description                                                              |
 | -------- | ------------------------------------------------------------------------ |
@@ -154,7 +154,7 @@ NPC สามารถเรียก Callback นี้ได้
 
 :::tip
 
-Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right). They can only be detected with GetPlayerKeys (in OnPlayerUpdate or a timer).
+Directional keys do not trigger `OnPlayerKeyStateChange` (up/down/left/right). They can only be detected with `GetPlayerKeys` (in `OnPlayerUpdate` or a timer).
 
 :::
 

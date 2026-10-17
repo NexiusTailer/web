@@ -27,7 +27,7 @@ Kreiraj statičnog aktora u svijetu. Ovi aktori su kao NPC-ovi, kakogod imaju og
 
 ID kreiranog aktora (počinje sa 0).
 
-INVALID_ACTOR_ID (65535) ako je dostignut limit aktora (1000).
+`INVALID_ACTOR_ID` (65535) ako je dostignut limit aktora (1000).
 
 ## Primjeri
 
@@ -51,14 +51,14 @@ public OnGameModeExit()
 
 :::note
 
-- Aktori su zamišljeni da samo negdje stanu, na primjer blagajnici i barmeni. Oni mogu izvoditi animacije (jednom ili petljom) pomoću ApplyActorAnimation.
+- Aktori su zamišljeni da samo negdje stanu, na primjer blagajnici i barmeni. Oni mogu izvoditi animacije (jednom ili petljom) pomoću `ApplyActorAnimation`.
 - Od 0.3.7-R2 aktori su zadani da budu neranjivi.
 
 :::
 
 :::warning
 
-- Aktori su potpuno odvojeni od NPC-a. NE koriste ID-ove igrača / utora na poslužitelju i NE MOGU se s njima postupati kao s NPC-ima. Aktori su ograničeni na 1000 (MAX_ACTORS).
+- Aktori su potpuno odvojeni od NPC-a. NE koriste ID-ove igrača / utora na poslužitelju i NE MOGU se s njima postupati kao s NPC-ima. Aktori su ograničeni na 1000 (`MAX_ACTORS`).
 - Vozače mogu potiskivati ​​glumce, upotrijebite timer da biste ih vratili na njihova mjesta.
 
 :::
@@ -81,7 +81,7 @@ public OnGameModeExit()
 - [SetActorInvulnerable](SetActorInvulnerable): Postavi aktoru neranjivost.
 - [IsActorInvulnerable](IsActorInvulnerable): Provjeri da li je aktor neranjiv.
 - [IsValidActor](IsValidActor): Provjeri da li je id aktora validan.
-- [GetActorPoolSize](GetActorPoolSize): Dobij največi actorid na serveru.
+- [GetActorPoolSize](GetActorPoolSize): Dobij največi `actorid` na serveru.
 - [GetPlayerTargetActor](GetPlayerTargetActor): Dobij id aktora koji je naciljan od strane nekog igrača.
 - [OnActorStreamIn](../callbacks/OnActorStreamIn): Pozvano kada je aktor učitan za igrača.
 - [OnActorStreamOut](../callbacks/OnActorStreamOut): Pozvano kada je aktor isčitan za igrača.

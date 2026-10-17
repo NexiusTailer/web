@@ -40,10 +40,10 @@ GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, object
 
 :::note
 
-If a parameter is unset (SetVehicleParamsEx not used beforehand) the value will be -1 ('unset').
+If a parameter is unset (`SetVehicleParamsEx` not used beforehand) the value will be -1 ('unset').
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetVehicleParamsEx: Sets a vehicle's params for all players.
+- `SetVehicleParamsEx`: Sets a vehicle's params for all players.

@@ -12,8 +12,8 @@ These definitions are used by natives such as [GetVehicleDamageStatus](../functi
 
 | Definition                                                                | Value |
 | ------------------------------------------------------------------------- | ----- |
-| UNKNOWN_VEHICLE_LIGHT_STATUS                                              | 0     |
-| VEHICLE_LIGHT_STATUS_NONE                                                 | 0     |
+| `UNKNOWN_VEHICLE_LIGHT_STATUS`                                            | 0     |
+| `VEHICLE_LIGHT_STATUS_NONE`                                               | 0     |
 | VEHICLE_LIGHT_STATUS_FRONT_LEFT_BROKEN **/** CARLIGHT_FRONT_LEFT_BROKEN   | 1     |
 | VEHICLE_LIGHT_STATUS_FRONT_RIGHT_BROKEN **/** CARLIGHT_FRONT_RIGHT_BROKEN | 4     |
 | VEHICLE_LIGHT_STATUS_DRIVER_BROKEN **/** CARLIGHT_DRIVER_BROKEN           | 1     |

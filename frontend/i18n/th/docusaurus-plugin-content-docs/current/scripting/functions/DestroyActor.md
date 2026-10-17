@@ -13,11 +13,11 @@ tags: []
 
 ## คำอธิบาย
 
-Destroy an actor which was created with CreateActor.
+Destroy an actor which was created with `CreateActor`.
 
-| Name    | Description                                              |
-| ------- | -------------------------------------------------------- |
-| actorid | The ID of the actor to destroy. Returned by CreateActor. |
+| Name    | Description                                                |
+| ------- | ---------------------------------------------------------- |
+| actorid | The ID of the actor to destroy. Returned by `CreateActor`. |
 
 ## ส่งคืน
 

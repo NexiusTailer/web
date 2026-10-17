@@ -11,13 +11,13 @@ tags: ["player", "object", "playerobject"]
 
 Get the move target position of a player-object.
 
-| Name           | Description                                                                     |
-| -------------- | ------------------------------------------------------------------------------- |
-| playerid       | The ID of the player.                                                           |
-| objectid       | The ID of the player-object to get the move target position of.                 |
-| &Float:targetX | A float variable in which to store the targetX coordinate, passed by reference. |
-| &Float:targetY | A float variable in which to store the targetY coordinate, passed by reference. |
-| &Float:targetZ | A float variable in which to store the targetZ coordinate, passed by reference. |
+| Name           | Description                                                                       |
+| -------------- | --------------------------------------------------------------------------------- |
+| playerid       | The ID of the player.                                                             |
+| objectid       | The ID of the player-object to get the move target position of.                   |
+| &Float:targetX | A float variable in which to store the `targetX` coordinate, passed by reference. |
+| &Float:targetY | A float variable in which to store the `targetY` coordinate, passed by reference. |
+| &Float:targetZ | A float variable in which to store the `targetZ` coordinate, passed by reference. |
 
 ## Returns
 

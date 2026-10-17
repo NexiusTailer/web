@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada je objekt pomjeren nakon MoveObject (kada se prestane kretati).
+Ovaj callback se poziva kada je objekt pomjeren nakon `MoveObject` (kada se prestane kretati).
 
 | Ime      | Deskripcija                 |
 | -------- | --------------------------- |
@@ -15,7 +15,7 @@ Ovaj callback se poziva kada je objekt pomjeren nakon MoveObject (kada se presta
 
 ## Returns
 
-Callback OnObjectMoved uvijek je prvo pozvan u filterskriptama!
+Callback `OnObjectMoved` uvijek je prvo pozvan u filterskriptama!
 
 ## Primjeri
 
@@ -31,7 +31,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-SetObjectPos ne radi kada ga koristite u ovom callback-u. Kako biste popravili to, ponovo kreirajte objekat.
+`SetObjectPos` ne radi kada ga koristite u ovom callback-u. Kako biste popravili to, ponovo kreirajte objekat.
 
 :::
 

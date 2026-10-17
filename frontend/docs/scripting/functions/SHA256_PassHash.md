@@ -56,6 +56,6 @@ The salt is appended to the end of the password, meaning password 'foo' and salt
 
 :::warning
 
-This function is not binary-safe. Using binary values on password and salt might give unexpected result.
+This function is not binary-safe. Using binary values on `password` and `salt` might give unexpected result.
 
 :::

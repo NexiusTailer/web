@@ -9,12 +9,12 @@ tags: []
 
 ## Описание
 
-Этот коллбэк вызывается, когда игрок взаимодействует с диалогом, показанным ему через ShowPlayerDialog.
+Этот коллбэк вызывается, когда игрок взаимодействует с диалогом, показанным ему через `ShowPlayerDialog`.
 
 | Аргумент    | Описание                                                                                                                                 |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID игрока, взаимодействующего с диалогом.                                                                                                |
-| dialogid    | ID диалога, показанного через ShowPlayerDialog, с которым взаимодействует игрок.                                                         |
+| dialogid    | ID диалога, показанного через `ShowPlayerDialog`, с которым взаимодействует игрок.                                                       |
 | response    | **1** - нажатие на левую кнопку диалога (Enter), **0** нажатие на правую кнопку диалога (ESC) (всегда 1, если показана только 1 кнопка). |
 | listitem    | ID элемента списка, выбранного игроком (начинается с 0) (если у диалога выбран стиль списка, иначе всегда будет -1).                     |
 | inputtext[] | Текст, введённый игроком в диалог или текст элемента списка, если у диалога выбран стиль списка.                                         |
@@ -25,7 +25,7 @@ tags: []
 
 ## Пример
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Макрос ID диалога, с которым будет взаимодействие
@@ -53,7 +53,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -90,7 +90,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -119,7 +119,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3

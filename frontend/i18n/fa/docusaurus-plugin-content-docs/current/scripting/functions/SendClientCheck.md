@@ -67,4 +67,4 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## کالبک‌های مرتبط
 
-- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): وقتی درخواست SendClientCheck تموم می‌شه صدا زده می‌شه.
+- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): وقتی درخواست `SendClientCheck` تموم می‌شه صدا زده می‌شه.

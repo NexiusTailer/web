@@ -53,7 +53,7 @@ When setting a player's position to an interior, their interior must be set also
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerPosFindZ: Set a player's position and find the ground.
-- GetPlayerPos: Get a player's position.
-- SetVehiclePos: Set the position of a vehicle.
-- GetVehiclePos: Get the position of a vehicle.
+- `SetPlayerPosFindZ`: Set a player's position and find the ground.
+- `GetPlayerPos`: Get a player's position.
+- `SetVehiclePos`: Set the position of a vehicle.
+- `GetVehiclePos`: Get the position of a vehicle.

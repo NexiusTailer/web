@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 仅在实际换弹动画期间返回 true
 - 弹夹中弹药耗尽时自动换弹
-- 使用 NPC_EnableReloading 控制换弹行为
+- 使用 `NPC_EnableReloading` 控制换弹行为
 
 ## 相关函数
 

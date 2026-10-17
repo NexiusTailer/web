@@ -46,8 +46,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns true when the NPC is actively aiming at a target
 - Use this to check if an NPC is in combat mode
-- Aiming can be started with NPC_AimAt or NPC_AimAtPlayer
-- NPCs continue aiming until stopped with NPC_StopAim
+- Aiming can be started with `NPC_AimAt` or `NPC_AimAtPlayer`
+- NPCs continue aiming until stopped with `NPC_StopAim`
 
 ## Related Functions
 

@@ -21,7 +21,7 @@ Ang function na ito ay palaging nagbabalik ng **1**, kahit na ang function ay na
 
 :::warning
 
-Ang anumang aksyon na direktang ginawa bago ang Kick() (tulad ng pagpapadala ng mensahe gamit ang SendClientMessage) ay hindi makakarating sa player. Dapat gumamit ng timer para maantala ang pag-kick.
+Ang anumang aksyon na direktang ginawa bago ang `Kick()` (tulad ng pagpapadala ng mensahe gamit ang `SendClientMessage`) ay hindi makakarating sa player. Dapat gumamit ng timer para maantala ang pag-kick.
 
 :::
 

@@ -39,6 +39,6 @@ The values returned in each variable are as follows:
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetVehicleParamsCarDoors: Open and close the doors of a vehicle.
-- SetVehicleParamsCarWindows: Open and close the windows of a vehicle.
-- GetVehicleParamsCarWindows: Retrive the current state of a vehicle's windows
+- `SetVehicleParamsCarDoors`: Open and close the doors of a vehicle.
+- `SetVehicleParamsCarWindows`: Open and close the windows of a vehicle.
+- `GetVehicleParamsCarWindows`: Retrive the current state of a vehicle's windows

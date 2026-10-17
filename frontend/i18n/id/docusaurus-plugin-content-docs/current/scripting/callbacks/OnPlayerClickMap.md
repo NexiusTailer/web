@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripsi
 
-OnPlayerClickMap akan terpanggil ketika pemain menaruh target/waypoint saat jeda map menu (dengan cara klik kanan).
+`OnPlayerClickMap` akan terpanggil ketika pemain menaruh target/waypoint saat jeda map menu (dengan cara klik kanan).
 
 | Nama     | Deskripsi                                                                        |
 | -------- | -------------------------------------------------------------------------------- |

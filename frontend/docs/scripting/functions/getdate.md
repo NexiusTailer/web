@@ -7,7 +7,7 @@ tags: ["time", "date"]
 
 ## Description
 
-Get the current server date, which will be stored in the variables &year, &month and &day.
+Get the current server date, which will be stored in the variables `&year`, `&month` and `&day`.
 
 | Name     | Description                                              |
 | -------- | -------------------------------------------------------- |

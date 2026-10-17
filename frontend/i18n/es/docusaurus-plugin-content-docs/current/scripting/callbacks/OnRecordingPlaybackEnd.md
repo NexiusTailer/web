@@ -6,7 +6,7 @@ tags: []
 
 ## Description
 
-Este callback se llama cuando un archivo grabado siendo reproduciendo con StartRecordingPlayback llega a su fin.
+Este callback se llama cuando un archivo grabado siendo reproduciendo con `StartRecordingPlayback` llega a su fin.
 
 ## Ejemplos
 

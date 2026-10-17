@@ -17,7 +17,7 @@ tags: ["玩家", "视角"]
 
 ## 返回值
 
-被注视玩家的 ID（若无可视玩家则返回 INVALID_PLAYER_ID）
+被注视玩家的 ID（若无可视玩家则返回 `INVALID_PLAYER_ID`）
 
 ## 示例代码
 
@@ -34,7 +34,7 @@ if (IsPlayerAdmin(playerTarget))
 
 :::warning
 
-请勿与[GetPlayerTargetPlayer](GetPlayerTargetPlayer)混淆。GetPlayerTargetPlayer 返回玩家正在用武器瞄准的玩家 ID，而此函数返回玩家**视角中心点**所指向的玩家 ID
+请勿与[GetPlayerTargetPlayer](GetPlayerTargetPlayer)混淆。`GetPlayerTargetPlayer` 返回玩家正在用武器*瞄准*的玩家 ID，而此函数返回玩家**视角中心点**所指向的玩家 ID
 
 :::
 

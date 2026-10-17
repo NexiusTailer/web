@@ -100,9 +100,9 @@ Three typical situations where one may use a constant variable are:
 
 ### • Arrays (single dimension)
 
-The syntax name[constant] declares name to be an array of “constant” elements, where each element is a single cell. The name is a placeholder of an identifier name of your choosing and constant is a positive non-zero value; constant may be absent. If there is no value between the brackets, the number of elements is set equal to the number of initiallers —see the example below.
+The syntax `name`[constant] declares `name` to be an array of “constant” elements, where each element is a single cell. The `name` is a placeholder of an identifier name of your choosing and constant is a positive non-zero value; constant may be absent. If there is no value between the brackets, the number of elements is set equal to the number of initiallers —see the example below.
 
-The array index range is “zero based” which means that the first element is at name[0] and the last element is name[constant-1].
+The array index range is “zero based” which means that the first element is at `name`[0] and the last element is `name`[constant-1].
 
 ### • Initialization
 

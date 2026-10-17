@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Amount cannot exceed the weapon's maximum clip size
 - Setting to 0 will require the NPC to reload before shooting
-- Use NPC_GetAmmoInClip to check current clip amount
+- Use `NPC_GetAmmoInClip` to check current clip amount
 - Affects only the current weapon's clip, not total ammo
 
 ## Related Functions

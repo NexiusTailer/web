@@ -57,7 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- All coordinate and stopRange parameters are passed by reference
+- All coordinate and `stopRange` parameters are passed by reference
 - Point indices start from 0
 - Returns false if the path or point index is invalid
 

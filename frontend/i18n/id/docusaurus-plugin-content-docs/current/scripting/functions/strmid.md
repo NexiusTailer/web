@@ -9,17 +9,17 @@ tags: ["string"]
 
 Mengekstrak bagian dari sebuah string ke string lainnya.
 
-| Name                  | Deskripsi                                                   |
-| --------------------- | ----------------------------------------------------------- |
-| dest[]                | Tempat string untuk menyimpan hasil ekstrak karakter.       |
-| const source[]        | String untuk mengekstrak karakter.                          |
-| start                 | Posisi karakter awal.                                       |
-| end                   | Posisi karakter akhir.                                      |
-| maxlength=sizeof dest | Panjang karakter. (Akan menjadi ukuran dest secara default) |
+| Name                  | Deskripsi                                                     |
+| --------------------- | ------------------------------------------------------------- |
+| dest[]                | Tempat string untuk menyimpan hasil ekstrak karakter.         |
+| const source[]        | String untuk mengekstrak karakter.                            |
+| start                 | Posisi karakter awal.                                         |
+| end                   | Posisi karakter akhir.                                        |
+| maxlength=sizeof dest | Panjang karakter. (Akan menjadi ukuran `dest` secara default) |
 
 ## Returns
 
-Jumlah karakter yang diekstrak ke dest[]
+Jumlah karakter yang diekstrak ke `dest[]`
 
 ## Contoh
 

@@ -24,11 +24,11 @@ SendClientMessage(playerid, 0xFFFFFFFF, s);
 
 :::warning
 
-This function can not be used in place of MAX_PLAYERS. It can not be used at compile time (e.g. for array sizes). MAX_PLAYERS should always be re-defined to what the 'max_players' var will be, or higher. See MAX_PLAYERS for more info.
+This function can not be used in place of `MAX_PLAYERS`. It can not be used at compile time (e.g. for array sizes). `MAX_PLAYERS` should always be re-defined to what the 'max_players' var will be, or higher. See `MAX_PLAYERS` for more info.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [GetPlayerPoolSize](GetPlayerPoolSize): Gets the highest playerid connected to the server.
+- [GetPlayerPoolSize](GetPlayerPoolSize): Gets the highest `playerid` connected to the server.
 - [IsPlayerConnected](IsPlayerConnected): Check if a player is connected to the server.

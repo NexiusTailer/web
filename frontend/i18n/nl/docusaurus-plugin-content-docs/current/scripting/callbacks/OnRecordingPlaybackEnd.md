@@ -20,5 +20,5 @@ public OnRecordingPlaybackEnd()
 
 ## Gerelateerde Functies
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): Start het afspelen van een al opgenomen .rec bestand.
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): Stop het afspelen van een .rec bestand.
+- [StartRecordingPlayback](../functions/StartRecordingPlayback): Start het afspelen van een al opgenomen _.rec_ bestand.
+- [StopRecordingPlayback](../functions/StopRecordingPlayback): Stop het afspelen van een _.rec_ bestand.

@@ -15,8 +15,8 @@ Makes an NPC follow a predefined path with various movement options.
 | --------- | -------------------------------------------------- |
 | npcid     | The ID of the NPC                                  |
 | pathid    | The ID of the path to follow                       |
-| moveType  | The movement type (default: NPC_MOVE_TYPE_JOG)     |
-| moveSpeed | Movement speed (default: NPC_MOVE_SPEED_AUTO)      |
+| moveType  | The movement type (default: `NPC_MOVE_TYPE_JOG`)   |
+| moveSpeed | Movement speed (default: `NPC_MOVE_SPEED_AUTO`)    |
 | reversed  | Whether to follow path in reverse (default: false) |
 
 ## Returns

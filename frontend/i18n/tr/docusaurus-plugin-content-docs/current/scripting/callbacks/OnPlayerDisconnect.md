@@ -51,7 +51,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-Bu geri çağırma içerisinde bazı fonksiyonlar doğru bilgiler vermez (GetPlayerIp ve GetPlayerPos gibi)
+Bu geri çağırma içerisinde bazı fonksiyonlar doğru bilgiler vermez (`GetPlayerIp` ve `GetPlayerPos` gibi)
 
 :::
 

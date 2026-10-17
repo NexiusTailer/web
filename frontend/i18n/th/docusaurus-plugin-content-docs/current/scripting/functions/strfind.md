@@ -31,12 +31,12 @@ if (strfind("Are you in here?", "you", true) != -1) //returns 4, because the st
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- strcmp: Compare two strings to check if they are the same.
+- `strcmp`: Compare two strings to check if they are the same.
 - strtok: Get the next 'token' (word/parameter) in a string.
-- strdel: Delete part of a string.
-- strins: Insert text into a string.
-- strlen: Get the length of a string.
-- strmid: Extract part of a string into another string.
-- strpack: Pack a string into a destination string.
-- strval: Convert a string into an integer.
-- strcat: Concatenate two strings into a destination reference.
+- `strdel`: Delete part of a string.
+- `strins`: Insert text into a string.
+- `strlen`: Get the length of a string.
+- `strmid`: Extract part of a string into another string.
+- `strpack`: Pack a string into a destination string.
+- `strval`: Convert a string into an integer.
+- `strcat`: Concatenate two strings into a destination reference.

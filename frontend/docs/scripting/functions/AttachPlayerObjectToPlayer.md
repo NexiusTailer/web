@@ -12,7 +12,7 @@ The same as [AttachObjectToPlayer](AttachObjectToPlayer) but for objects which w
 | Name            | Description                                                        |
 | --------------- | ------------------------------------------------------------------ |
 | playerid        | The id of the player which is linked with the object.              |
-| objectid        | The objectid you want to attach to the player.                     |
+| objectid        | The `objectid` you want to attach to the player.                   |
 | parentid        | The id of the player you want to attach to the object.             |
 | Float:offsetX   | The distance between the player and the object in the X direction. |
 | Float:offsetY   | The distance between the player and the object in the Y direction. |

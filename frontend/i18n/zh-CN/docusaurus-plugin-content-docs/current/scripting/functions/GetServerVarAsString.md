@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-此函数自 0.3.7-R2 版本起已弃用，请使用 GetConsoleVarAsString
+此函数自 0.3.7-R2 版本起已弃用，请使用 `GetConsoleVarAsString`
 
 :::
 
@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-当变量名为 filterscripts 或 plugins 时，此函数仅返回第一个滤镜脚本或插件的名称。这是一个已知缺陷。
+当变量名为 _filterscripts_ 或 _plugins_ 时，此函数仅返回第一个滤镜脚本或插件的名称。这是一个已知缺陷。
 
 :::
 

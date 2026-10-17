@@ -9,9 +9,9 @@ tags: []
 
 Returns the length of a file.
 
-| Name   | Description                                |
-| ------ | ------------------------------------------ |
-| handle | The file handle returned by fopen or ftemp |
+| Name   | Description                                    |
+| ------ | ---------------------------------------------- |
+| handle | The file handle returned by `fopen` or `ftemp` |
 
 ## ส่งคืน
 
@@ -45,7 +45,7 @@ else
 
 :::warning
 
-Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using `fopen` or `ftemp`.
 
 :::
 
