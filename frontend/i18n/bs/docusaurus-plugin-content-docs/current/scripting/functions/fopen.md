@@ -131,7 +131,7 @@ io_append     Dodaje (dodaje) u datoteku, samo za pisanje. Ako datoteka ne posto
 
 :::warning
 
-Ako koristite io_read, a datoteka ne postoji, vratit će NULL referencu. Korištenje **nevažećih referenci** na funkcijama datoteka **srušit** će vaš server!
+Ako koristite io_read, a datoteka ne postoji, vratit će `NULL` referencu. Korištenje **nevažećih referenci** na funkcijama datoteka **srušit** će vaš server!
 
 :::
 

@@ -62,13 +62,13 @@ Elke OPCODE geeft een response terug. De eerste 11 bytes zijn gelijk aan de requ
 
 #### Type `r`
 
-| Byte        | Key       | Breedte  | Omschrijving           |
-| ----------- | --------- | -------- | ---------------------- |
-| 11-12       | RuleCount | 2        | Aantal rules           |
-| 13          | (strlen)  | 1        | Lengte van rule-naam   |
-| 14 + strlen | Rulename  | (strlen) | Rule-naam              |
-| 15          | (strlen)  | 1        | Lengte van rule-waarde |
-| 16 + strlen | RuleValue | (strlen) | Rule-waarde            |
+| Byte        | Key         | Breedte  | Omschrijving           |
+| ----------- | ----------- | -------- | ---------------------- |
+| 11-12       | _RuleCount_ | 2        | Aantal rules           |
+| 13          | (strlen)    | 1        | Lengte van rule-naam   |
+| 14 + strlen | Rulename    | (strlen) | Rule-naam              |
+| 15          | (strlen)    | 1        | Lengte van rule-waarde |
+| 16 + strlen | RuleValue   | (strlen) | Rule-waarde            |
 
 Herhaal vanaf byte 13 voor elke rule.
 
