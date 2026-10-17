@@ -655,7 +655,7 @@ Esse código irá gerar um resultado de:
 
 1 3
 
-Pois a linha de "`print("2")`;" nunca será alcançada.
+Pois a linha de `print("2")`; nunca será alcançada.
 
 Você também pode usar um `return` para retornar um valor:
 

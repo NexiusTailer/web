@@ -100,7 +100,7 @@ Cu toate acestea, dacă doriți să detectați când aceștia apăsați ÎNTÂI 
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-De ce nu? Deoarece `OnPlayerKeyStateChange` este apelat de fiecare dată când se schimbă o singură cheie. Așa că ei apasă `KEY_FIRE` - `OnPlayerKeyStateChange` este apelat cu `KEY_FIRE` în `newkeys` și nu în `oldkeys`, apoi apăsă `KEY_CROUCH` - `OnPlayerKeyStateChange` este apelat cu `KEY_CROUCH` și `KEY_FIRE` în `newkeys`, dar „ `KEY_FIRE`" este acum și în `oldkeys`, deoarece a fost deja apăsat, așa că „!(oldkeys & `KEY_FIRE`)” va eșua. Din fericire, soluția este foarte simplă (de fapt, mai simplă decât codul original):
+De ce nu? Deoarece `OnPlayerKeyStateChange` este apelat de fiecare dată când se schimbă o singură cheie. Așa că ei apasă `KEY_FIRE` - `OnPlayerKeyStateChange` este apelat cu `KEY_FIRE` în `newkeys` și nu în `oldkeys`, apoi apăsă `KEY_CROUCH` - `OnPlayerKeyStateChange` este apelat cu `KEY_CROUCH` și `KEY_FIRE` în `newkeys`, dar `KEY_FIRE` este acum și în `oldkeys`, deoarece a fost deja apăsat, așa că `!(oldkeys & KEY_FIRE)` va eșua. Din fericire, soluția este foarte simplă (de fapt, mai simplă decât codul original):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))

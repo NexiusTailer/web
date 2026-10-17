@@ -104,7 +104,7 @@ if ((newkeys & KEY_FIRE) && (newkeys & KEY_CROUCH))
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-چرا نه؟ زیرا `OnPlayerKeyStateChange` هر بار که کلید واحد تغییر کند فراخوانده می‌شود. پس آن‌ها `KEY_FIRE` را می‌زنند - `OnPlayerKeyStateChange` با `KEY_FIRE` در `newkeys` و نه در `oldkeys` فراخوانده می‌شود، سپس آن‌ها `KEY_CROUCH` را می‌زنند - `OnPlayerKeyStateChange` با `KEY_CROUCH` و `KEY_FIRE` در `newkeys` فراخوانده می‌شود، اما `KEY_FIRE` اکنون در `oldkeys` نیز هست زیرا قبلاً فشرده شده، پس "!(oldkeys & `KEY_FIRE`)" ناموفق خواهد بود. خوشبختانه راه‌حل بسیار ساده است (در واقع ساده‌تر از کد اصلی):
+چرا نه؟ زیرا `OnPlayerKeyStateChange` هر بار که کلید واحد تغییر کند فراخوانده می‌شود. پس آن‌ها `KEY_FIRE` را می‌زنند - `OnPlayerKeyStateChange` با `KEY_FIRE` در `newkeys` و نه در `oldkeys` فراخوانده می‌شود، سپس آن‌ها `KEY_CROUCH` را می‌زنند - `OnPlayerKeyStateChange` با `KEY_CROUCH` و `KEY_FIRE` در `newkeys` فراخوانده می‌شود، اما `KEY_FIRE` اکنون در `oldkeys` نیز هست زیرا قبلاً فشرده شده، پس `!(oldkeys & KEY_FIRE)` ناموفق خواهد بود. خوشبختانه راه‌حل بسیار ساده است (در واقع ساده‌تر از کد اصلی):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))

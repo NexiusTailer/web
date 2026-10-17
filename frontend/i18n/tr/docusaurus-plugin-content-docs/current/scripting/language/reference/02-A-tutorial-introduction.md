@@ -458,7 +458,7 @@ Bu bölümte daha önce, "değerle çağrı" ve "referansla çağrı" kavramlar�
 
 Bu kural nedeniyle, rot13 işlevi, fonksiyon parametresini (örnekte `string` olarak adlandırılanı) referans argümanı olarak bildirmeye gerek duymadan, işlev parametresini değiştirebilir.
 
-İki if ifadesindeki koşullar da ilgi çekici bir noktadır. Örneğin, birinci if'in koşulu " `'a' <= string[index] <= 'z'` " ifadesini taşır, bu da demektir ki, ifade sadece `'a' <= string[index]` ve `string[index] <= 'z'` her ikisi de doğruysa "true" olur. Birleşik ifadede, ilişkisel operatörler "zincirlenmiş" olarak adlandırılır, çünkü birden fazla karşılaştırmayı tek bir koşulda zincirlerler.
+İki if ifadesindeki koşullar da ilgi çekici bir noktadır. Örneğin, birinci if'in koşulu `'a' <= string[index] <= 'z'` ifadesini taşır, bu da demektir ki, ifade sadece `'a' <= string[index]` ve `string[index] <= 'z'` her ikisi de doğruysa "true" olur. Birleşik ifadede, ilişkisel operatörler "zincirlenmiş" olarak adlandırılır, çünkü birden fazla karşılaştırmayı tek bir koşulda zincirlerler.
 
 Son olarak, main fonksiyonundaki son printf'in nasıl çalıştığına dikkat edin. Normalde bir çift tırnak, kelimeyi bitirir; ancak " \" " kaçış dizisi, bir çift tırnağı dizeye ekler.
 

@@ -100,7 +100,7 @@ if ((newkeys & KEY_FIRE) && (newkeys & KEY_CROUCH))
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Зашто? Зато што се `OnPlayerKeyStateChange` позива сваки пут када се промени један тастер. Дакле, ако притисну `KEY_FIRE` - `OnPlayerKeyStateChange` се позива са `KEY_FIRE` у `newkeys` и не у `oldkeys`, затим притисну `KEY_CROUCH` - `OnPlayerKeyStateChange` се позива са `KEY_CROUCH` и `KEY_FIRE` у `newkeys`, али `KEY_FIRE` је сада такође у `oldkeys` јер је већ био притиснут, тако да "!(oldkeys & `KEY_FIRE`)" неће проћи. Срећом, решење је веома једноставно (у ствари једноставније од оригиналног кода):
+Зашто? Зато што се `OnPlayerKeyStateChange` позива сваки пут када се промени један тастер. Дакле, ако притисну `KEY_FIRE` - `OnPlayerKeyStateChange` се позива са `KEY_FIRE` у `newkeys` и не у `oldkeys`, затим притисну `KEY_CROUCH` - `OnPlayerKeyStateChange` се позива са `KEY_CROUCH` и `KEY_FIRE` у `newkeys`, али `KEY_FIRE` је сада такође у `oldkeys` јер је већ био притиснут, тако да `!(oldkeys & KEY_FIRE)` неће проћи. Срећом, решење је веома једноставно (у ствари једноставније од оригиналног кода):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))

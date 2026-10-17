@@ -100,9 +100,9 @@ Não funcionará se quiser detectar quando primeiramente pressionarem "fire" e e
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Why not? Because `OnPlayerKeyStateChange` is called every time a single key changes. So they press `KEY_FIRE` - `OnPlayerKeyStateChange` is called with `KEY_FIRE` in `newkeys` and not in `oldkeys`, then they press `KEY_CROUCH` - `OnPlayerKeyStateChange` is called with `KEY_CROUCH` and `KEY_FIRE` in `newkeys`, but `KEY_FIRE` is now also in `oldkeys` as it's already been pressed, so "!(oldkeys & `KEY_FIRE`)" will fail. Fortunately the solution is very simple (in fact simpler than the original code):
+Why not? Because `OnPlayerKeyStateChange` is called every time a single key changes. So they press `KEY_FIRE` - `OnPlayerKeyStateChange` is called with `KEY_FIRE` in `newkeys` and not in `oldkeys`, then they press `KEY_CROUCH` - `OnPlayerKeyStateChange` is called with `KEY_CROUCH` and `KEY_FIRE` in `newkeys`, but `KEY_FIRE` is now also in `oldkeys` as it's already been pressed, so `!(oldkeys & KEY_FIRE)` will fail. Fortunately the solution is very simple (in fact simpler than the original code):
 
-Por que não? Pois `OnPlayerKeyStateChange` é chamada sempre que uma única tecla muda. Então ao pressionar `KEY_FIRE` `OnPlayerKeyStateChange` será chamado com `KEY_FIRE` no `newkeys` e não no `oldkeys`, então ao pressionar `KEY_CROUCH` `OnPlayerKeyStateChange` será chamado com `KEY_CROUCH` e `KEY_FIRE` no `newkeys`, mas `KEY_FIRE` agora também está no `oldkeys` pois já foi pressionado, então "!(oldkeys & `KEY_FIRE`)" irá falhar. Felizmente, a solução é bem simples:
+Por que não? Pois `OnPlayerKeyStateChange` é chamada sempre que uma única tecla muda. Então ao pressionar `KEY_FIRE` `OnPlayerKeyStateChange` será chamado com `KEY_FIRE` no `newkeys` e não no `oldkeys`, então ao pressionar `KEY_CROUCH` `OnPlayerKeyStateChange` será chamado com `KEY_CROUCH` e `KEY_FIRE` no `newkeys`, mas `KEY_FIRE` agora também está no `oldkeys` pois já foi pressionado, então `!(oldkeys & KEY_FIRE)` irá falhar. Felizmente, a solução é bem simples:
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))

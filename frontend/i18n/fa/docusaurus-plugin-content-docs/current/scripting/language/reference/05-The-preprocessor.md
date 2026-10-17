@@ -134,7 +134,7 @@ pattern matching به قوانین زیر محدود شده:
 
 - pattern باید با یک حرف، یک underscore، یا یک کاراکتر "@" شروع بشه. اولین بخش pattern که از کاراکترهای alphanumeric (به علاوه "\_" و/"@") تشکیل شده "نام" یا "prefix" macro هست. روی defined operator و directive #undef، prefix macro رو مشخص می‌کنی.
 
-- وقتی pattern رو match می‌کنی، preprocessor white space بین نمادهای غیرalphanumeric و white space بین یک نماد alphanumeric و یک غیرalphanumeric رو نادیده می‌گیره، با یک استثنا: بین دو نماد یکسان، white space نادیده گرفته نمی‌شه. بنابراین: `pattern abc(+-) با "abc ( + - )" match می‌کنه pattern abc(--) با "abc ( -- )" match می‌کنه` ولی با `"abc(- -)"` match نمی‌کنه
+- وقتی pattern رو match می‌کنی، preprocessor white space بین نمادهای غیرalphanumeric و white space بین یک نماد alphanumeric و یک غیرalphanumeric رو نادیده می‌گیره، با یک استثنا: بین دو نماد یکسان، white space نادیده گرفته نمی‌شه. بنابراین: pattern `abc(+-)` با `abc ( + - )` match می‌کنه pattern `abc(--)` با `abc ( -- )` match می‌کنه ولی با `abc(- -)` match نمی‌کنه
 
 - تا 10 پارامتر وجود داره، که با یک "%" و یک رقم (1 تا 9 و 0) نشون داده می‌شن. ترتیب پارامترها در یک pattern مهم نیست.
 

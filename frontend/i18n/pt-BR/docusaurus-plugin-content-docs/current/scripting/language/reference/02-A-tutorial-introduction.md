@@ -726,11 +726,11 @@ findtargets(source, steps, nextstep[], numpoints = sizeof nextstep)
 
 ---
 
-The enum statement just below the header of the main function declares the constants for the nodes A to G, but with a twist. Usually, the enum starts counting from zero; here, the value of the first constant, A, is explicitly set to 1. More noteworthy is the expression “(\<\<= 1)” between the enum keyword and the opening brace that starts the constant list: it specifies a “bit shifting” increment. By default, every constant in an enum list gets a value that is 1 above its predecessor, but you can specify every successive constant in an enumeration to have a value that is:
+The enum statement just below the header of the main function declares the constants for the nodes A to G, but with a twist. Usually, the enum starts counting from zero; here, the value of the first constant, A, is explicitly set to 1. More noteworthy is the expression `(<<= 1)` between the enum keyword and the opening brace that starts the constant list: it specifies a “bit shifting” increment. By default, every constant in an enum list gets a value that is 1 above its predecessor, but you can specify every successive constant in an enumeration to have a value that is:
 
 - its predecessor incremented by any value (not just 1) —e.g., “(+= 5)”;
 - its predecessor multiplied by any value —e.g., “(\*= 3)”;
-- its predecessor bit-shifted to the left by any value —e.g., “(\<\<= 1)”;
+- its predecessor bit-shifted to the left by any value —e.g., `(<<= 1)`;
 
 Note that, in binary arithmetic, shifting left by one bit amounts to the same as multiplying by two, meaning that `(*= 2)` and `(<<= 1)` do the same thing.
 

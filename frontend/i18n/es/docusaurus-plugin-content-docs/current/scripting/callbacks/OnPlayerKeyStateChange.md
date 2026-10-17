@@ -103,7 +103,7 @@ Sin embargo si querés detectar cuando el jugador presiona por primera vez dispa
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-¿Por qué no? Esto es porque `OnPlayerKeyStateChange` se llama cada vez que una simple tecla cambia su estado. Entonces si el jugador presiona `KEY_FIRE` - `OnPlayerKeyStateChange` es llamado con `KEY_FIRE` en `newkeys` y no en "oldskeys", entonces presiona `KEY_CROUCH` - `OnPlayerKeyStateChange` es llamado con `KEY_CROUCH` y `KEY_FIRE` en `newkeys` pero `KEY_FIRE` es ahora también en `oldkeys` como si ya fue presionado, entonces "!(oldkeys & `KEY_FIRE`)" fallará. Afortunadamente la solución es muy simple (de hecho más simple que el código original):
+¿Por qué no? Esto es porque `OnPlayerKeyStateChange` se llama cada vez que una simple tecla cambia su estado. Entonces si el jugador presiona `KEY_FIRE` - `OnPlayerKeyStateChange` es llamado con `KEY_FIRE` en `newkeys` y no en "oldskeys", entonces presiona `KEY_CROUCH` - `OnPlayerKeyStateChange` es llamado con `KEY_CROUCH` y `KEY_FIRE` en `newkeys` pero `KEY_FIRE` es ahora también en `oldkeys` como si ya fue presionado, entonces `!(oldkeys & KEY_FIRE)` fallará. Afortunadamente la solución es muy simple (de hecho más simple que el código original):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))

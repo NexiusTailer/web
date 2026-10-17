@@ -170,7 +170,7 @@ The pattern matching is constrained to the following rules:
 
 - The pattern must start with a letter, an underscore, or an “@” character The first part of the pattern that consists of alphanumeric characters (plus the “\_” and/“@”) is the “name” or the “prefix” of the macro. On the defined operator and the #undef directive, you specify the macro prefix.
 
-- When matching a pattern, the preprocessor ignores white space between nonalphanumeric symbols and white space between an alphanumeric symbol and a non-alphanumeric one, with one exception: between two identical symbols, white space is not ignored. Therefore: `the pattern abc(+-) matches “abc ( + - )” the pattern abc(--) matches “abc ( -- )”` but does not match `“abc(- -)”`
+- When matching a pattern, the preprocessor ignores white space between nonalphanumeric symbols and white space between an alphanumeric symbol and a non-alphanumeric one, with one exception: between two identical symbols, white space is not ignored. Therefore: the pattern `abc(+-)` matches `abc ( + - )` the pattern `abc(--)` matches `abc ( -- )` but does not match `abc(- -)`
 
 - There are up to 10 parameters, denoted with a “%” and a single digit (1 to 9 and 0). The order of the parameters in a pattern is not important.
 

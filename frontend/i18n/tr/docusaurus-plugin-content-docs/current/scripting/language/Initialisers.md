@@ -438,7 +438,7 @@ PAWNO bu tür yorumları tanımaz, bu nedenle bu işlevi listede ekler, ancak de
 native my_print(const string[]) = print;
 ```
 
-Şimdi, `print` işlevi aslında mevcut değildir. SA:MP'de hala bulunur ve derleyici, gerçek adını "= `print`" kısmından bildiği için bu işlevi orada tanır, ancak PAWN'da çağrırsanız bir hata alırsınız çünkü print'i my_print adına içsel olarak yeniden adlandırdınız. Artık `print` işlevi mevcut olmadığı için onu normal bir işlev gibi tanımlayabilirsiniz:
+Şimdi, `print` işlevi aslında mevcut değildir. SA:MP'de hala bulunur ve derleyici, gerçek adını `= print` kısmından bildiği için bu işlevi orada tanır, ancak PAWN'da çağrırsanız bir hata alırsınız çünkü print'i my_print adına içsel olarak yeniden adlandırdınız. Artık `print` işlevi mevcut olmadığı için onu normal bir işlev gibi tanımlayabilirsiniz:
 
 ```c
 print(const string[])

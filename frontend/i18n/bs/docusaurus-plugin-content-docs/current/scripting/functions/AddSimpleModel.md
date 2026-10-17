@@ -20,8 +20,8 @@ Dodaje novi prilagođen/custom prost model objekta za preuzimanje. Fajlovi model
 | virtualworld | ID virtualnog svijeta za kojeg će model biti dostupan, koristi -1 za sve svjetove.                                           |
 | baseid       | The base object model ID to use (original object to use when download is failed).                                            |
 | newid        | Novi skin model ID između -1000 i -30000 (29000 slotova) da bi se kasnije koristio sa `CreateObject` i `CreatePlayerObject`. |
-| dffname      | Ime **.dff** collision modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (`artpath` postavka).   |
-| txdname      | Ime **.txd** texture modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (`artpath` postavka).     |
+| dffname      | Ime **.dff** collision modela fajla koji se nalazi u `models` server folderu po zadanim postavkama (`artpath` postavka).     |
+| txdname      | Ime **.txd** texture modela fajla koji se nalazi u `models` server folderu po zadanim postavkama (`artpath` postavka).       |
 
 ## Returns
 

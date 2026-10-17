@@ -694,7 +694,7 @@ parameter (called `string` in the example) without needing to declare as a
 reference argument.
 
 Another point of interest are the conditions in the two if statements. The first
-if, for example, holds the condition `“'a' <= string[index] <= 'z'”`, which
+if, for example, holds the condition `'a' <= string[index] <= 'z'`, which
 means that the expression is true if (and only if) both `'a' <= string[index]`
 and `string[index] <= 'z'` are true. In the combined expression, the relational operators are said to be “chained”, as they chain multiple comparisons
 in one condition.
@@ -1021,7 +1021,7 @@ element, create a set with just one element and take the intersection. If the
 result is 0 (the empty set) the element is not in the set. Bit numbering starts
 typically at zero; the lowest bit is bit 0 and the highest bit in a 32-bit cell
 is bit 31. To make a cell with only bit 7 set, shift the value 1 left by seven
-—or in a pawn expression: `“1 << 7”`.
+—or in a pawn expression: `1 << 7`.
 
 Below is the program that implements the algorithm described earlier to find
 all points that can be reached from a specific departure in a given number of
@@ -1084,7 +1084,7 @@ The enum statement just below the header of the main function declares the
 constants for the nodes A to G, but with a twist. Usually, the enum starts
 counting from zero; here, the value of the first constant, A, is explicitly set to
 
-1. More noteworthy is the expression `“(<<= 1)”` between the enum keyword
+1. More noteworthy is the expression `(<<= 1)` between the enum keyword
    and the opening brace that starts the constant list: it specifies a “bit
    shifting” increment. By default, every constant in an enum list gets a value that is
    1 above its predecessor, but you can specify every successive constant
@@ -1092,7 +1092,7 @@ counting from zero; here, the value of the first constant, A, is explicitly set 
 
 - its predecessor incremented by any value (not just 1) —e.g., “(+= 5)”;
 - its predecessor multiplied by any value —e.g., “(\*= 3)”;
-- its predecessor bit-shifted to the left by any value —e.g., `“(<<= 1)”`;
+- its predecessor bit-shifted to the left by any value —e.g., `(<<= 1)`;
 
 Note that, in binary arithmetic, shifting left by one bit amounts to the same
 as multiplying by two, meaning that `(*= 2)` and `(<<= 1)` do the same thing.

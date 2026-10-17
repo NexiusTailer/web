@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-"`useartwork`" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
+`useartwork` deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
 
 :::
 

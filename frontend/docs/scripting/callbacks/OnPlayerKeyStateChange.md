@@ -100,7 +100,7 @@ However if you want to detect when they FIRST press fire and crouch the followin
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Why not? Because `OnPlayerKeyStateChange` is called every time a single key changes. So they press `KEY_FIRE` - `OnPlayerKeyStateChange` is called with `KEY_FIRE` in `newkeys` and not in `oldkeys`, then they press `KEY_CROUCH` - `OnPlayerKeyStateChange` is called with `KEY_CROUCH` and `KEY_FIRE` in `newkeys`, but `KEY_FIRE` is now also in `oldkeys` as it's already been pressed, so "!(oldkeys & `KEY_FIRE`)" will fail. Fortunately the solution is very simple (in fact simpler than the original code):
+Why not? Because `OnPlayerKeyStateChange` is called every time a single key changes. So they press `KEY_FIRE` - `OnPlayerKeyStateChange` is called with `KEY_FIRE` in `newkeys` and not in `oldkeys`, then they press `KEY_CROUCH` - `OnPlayerKeyStateChange` is called with `KEY_CROUCH` and `KEY_FIRE` in `newkeys`, but `KEY_FIRE` is now also in `oldkeys` as it's already been pressed, so `!(oldkeys & KEY_FIRE)` will fail. Fortunately the solution is very simple (in fact simpler than the original code):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))

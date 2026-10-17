@@ -104,7 +104,7 @@ kako god, ako želite da detektujete kada PRVO pritisnu "fire" i "crouch" ovaj k
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Zašto ne radi? Zato što je `OnPlayerKeyStateChange` pozvan svaki put kada se jedna tipka promijeni. Tako oni pritisnu `KEY_FIRE` - `OnPlayerKeyStateChange` je pozvan sa `KEY_FIRE` u `newkeys` i ne u `oldkeys`, onda pritisnu `KEY_CROUCH` - `OnPlayerKeyStateChange` je pozvan sa `KEY_CROUCH` i `KEY_FIRE` u `newkeys`, ali i `KEY_FIRE` je sada u `oldkeys` s obzirom da je već bio pritisnut, tako da "!(`oldkeys` & `KEY_FIRE`)" neće uspjeti. Srećom, rješenje je vrlo jednostavno (zapravo jednostavnije od originalnog koda):
+Zašto ne radi? Zato što je `OnPlayerKeyStateChange` pozvan svaki put kada se jedna tipka promijeni. Tako oni pritisnu `KEY_FIRE` - `OnPlayerKeyStateChange` je pozvan sa `KEY_FIRE` u `newkeys` i ne u `oldkeys`, onda pritisnu `KEY_CROUCH` - `OnPlayerKeyStateChange` je pozvan sa `KEY_CROUCH` i `KEY_FIRE` u `newkeys`, ali i `KEY_FIRE` je sada u `oldkeys` s obzirom da je već bio pritisnut, tako da `!(oldkeys & KEY_FIRE)` neće uspjeti. Srećom, rješenje je vrlo jednostavno (zapravo jednostavnije od originalnog koda):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
