@@ -6,7 +6,7 @@ description: The rounding modes used with floatround.
 
 :::info
 
-A list of possible floatround modes which can be used by [floatround](../functions/floatround).
+A list of possible `floatround` modes which can be used by [floatround](../functions/floatround).
 
 :::
 

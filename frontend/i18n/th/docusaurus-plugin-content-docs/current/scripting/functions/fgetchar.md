@@ -11,7 +11,7 @@ Reads a single character from a file.
 
 | Name   | Description                                                      |
 | ------ | ---------------------------------------------------------------- |
-| handle | The file handle to use; returned by fopen.                       |
+| handle | The file handle to use; returned by `fopen`.                     |
 | value  | This parameter has no use, just keep it "0".                     |
 | utf8   | If true, read a character as UTF-8, otherwise as extended ASCII. |
 
@@ -52,7 +52,7 @@ else
 
 :::warning
 
-Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using `fopen` or `ftemp`.
 
 :::
 

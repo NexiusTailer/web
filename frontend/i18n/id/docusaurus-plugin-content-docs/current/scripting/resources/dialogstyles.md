@@ -133,7 +133,7 @@ playerid = 0, dialogid = ID_DIALOG_KAMU, response = 0, listitem = 1, inputtext =
 
 :::note
 
-- Serupa dengan **DIALOG_STYLE_INPUT**.
+- Serupa dengan `DIALOG_STYLE_INPUT`.
 
 :::
 
@@ -179,7 +179,7 @@ Gaya ini telah ditambahkan di **SA-MP 0.3.7** dan tidak akan bekerja di versi se
 
 :::note
 
-- Serupa dengan **DIALOG_STYLE_LIST**.
+- Serupa dengan `DIALOG_STYLE_LIST`.
 
 :::
 
@@ -227,7 +227,7 @@ Gaya ini telah ditambahkan di **SA-MP 0.3.7** dan tidak akan bekerja di versi se
 
 :::note
 
-- Serupa dengan **DIALOG_STYLE_LIST**.
+- Serupa dengan `DIALOG_STYLE_LIST`.
 
 :::
 

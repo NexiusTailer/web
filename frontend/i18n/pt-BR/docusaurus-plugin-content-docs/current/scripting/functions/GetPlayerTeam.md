@@ -18,7 +18,7 @@ Obtenha o ID do time em que o jogador está.
 
 **0-254:** A equipe do jogador. (0 é uma equipe válida)
 
-**255:** Definido como NO_TEAM. O jogador não está em nenhum time.
+**255:** Definido como `NO_TEAM`. O jogador não está em nenhum time.
 
 **-1:** A função não foi executada. O jogador não está conectado.
 

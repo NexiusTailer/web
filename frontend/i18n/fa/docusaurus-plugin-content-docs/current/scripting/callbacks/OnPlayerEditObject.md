@@ -87,7 +87,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-هنگام استفاده از 'EDIT_RESPONSE_UPDATE' توجه داشته باشید که این کالبک هنگام رها کردن ویرایش در حال انجام فراخوانده نخواهد شد که منجر به عدم هماهنگی آخرین به‌روزرسانی 'EDIT_RESPONSE_UPDATE' با موقعیت فعلی آبجکت می‌شود.
+هنگام استفاده از `EDIT_RESPONSE_UPDATE` توجه داشته باشید که این کالبک هنگام رها کردن ویرایش در حال انجام فراخوانده نخواهد شد که منجر به عدم هماهنگی آخرین به‌روزرسانی `EDIT_RESPONSE_UPDATE` با موقعیت فعلی آبجکت می‌شود.
 
 :::
 

@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-Ako se PlayerTextDrawSetOutline koristi s veličinom> 0, boja obrisa odgovarat će boji koja se koristi u PlayerTextDrawBackgroundColor. Čini se da promjena vrijednosti boje mijenja boju koja se koristi u PlayerTextDrawColor
+Ako se `PlayerTextDrawSetOutline` koristi s veličinom> 0, boja obrisa odgovarat će boji koja se koristi u `PlayerTextDrawBackgroundColor`. Čini se da promjena vrijednosti boje mijenja boju koja se koristi u `PlayerTextDrawColor`
 
 :::
 
@@ -50,7 +50,7 @@ Ako se PlayerTextDrawSetOutline koristi s veličinom> 0, boja obrisa odgovarat �
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Postavi poravnanje player-textdrawa.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Postavi veličinu slova u tekstu player-textdrawa.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za PlayerTextDrawSetSelectable).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za `PlayerTextDrawSetSelectable`).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Omogući/onemogući korišćenje outline-a za player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Postavi sjenu na player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Razmjeri razmak teksta u player-textdrawu na proporcionalni omjer.

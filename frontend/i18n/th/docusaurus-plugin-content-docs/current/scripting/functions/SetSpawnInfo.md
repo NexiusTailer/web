@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-This function can be used to change the spawn information of a specific player. It allows you to automatically set someone's spawn weapons, their team, skin and spawn position, normally used in case of minigames or automatic-spawn systems. This function is more crash-safe then using SetPlayerSkin in OnPlayerSpawn and/or OnPlayerRequestClass, even though this has been fixed in 0.2.
+This function can be used to change the spawn information of a specific player. It allows you to automatically set someone's spawn weapons, their team, skin and spawn position, normally used in case of minigames or automatic-spawn systems. This function is more crash-safe then using `SetPlayerSkin` in `OnPlayerSpawn` and/or `OnPlayerRequestClass`, even though this has been fixed in 0.2.
 
 | Name           | Description                                                          |
 | -------------- | -------------------------------------------------------------------- |
@@ -43,6 +43,6 @@ public OnPlayerRequestClass(playerid, classid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerSkin: Set a player's skin.
-- SetPlayerTeam: Set a player's team.
-- SpawnPlayer: Force a player to spawn.
+- `SetPlayerSkin`: Set a player's skin.
+- `SetPlayerTeam`: Set a player's team.
+- `SpawnPlayer`: Force a player to spawn.

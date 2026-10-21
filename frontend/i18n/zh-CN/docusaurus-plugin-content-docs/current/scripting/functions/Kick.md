@@ -21,7 +21,7 @@ tags: ["玩家", "管理"]
 
 :::warning
 
-任何在 Kick之前直接执行的操作（如使用[SendClientMessage](SendClientMessage)发送消息）将无法送达玩家。必须使用定时器延迟踢出操作。
+任何在 `Kick`之前直接执行的操作（如使用[SendClientMessage](SendClientMessage)发送消息）将无法送达玩家。必须使用定时器延迟踢出操作。
 
 :::
 

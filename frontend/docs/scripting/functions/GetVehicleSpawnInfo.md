@@ -13,15 +13,15 @@ Gets the vehicle spawn location and colours.
 
 ## Parameters
 
-| Name          | Description                                                                    |
-| ------------- | ------------------------------------------------------------------------------ |
-| vehicleid     | The ID of the vehicle.                                                         |
-| &Float:spawnX | A float variable in which to store the spawnX coordinate, passed by reference. |
-| &Float:spawnY | A float variable in which to store the spawnY coordinate, passed by reference. |
-| &Float:spawnZ | A float variable in which to store the spawnZ coordinate, passed by reference. |
-| &Float:angle  | A float variable in which to store the angle coordinate, passed by reference.  |
-| &colour1      | A variable in which to store the colour1 value, passed by reference.           |
-| &colour2      | A variable in which to store the colour2 value, passed by reference.           |
+| Name          | Description                                                                      |
+| ------------- | -------------------------------------------------------------------------------- |
+| vehicleid     | The ID of the vehicle.                                                           |
+| &Float:spawnX | A float variable in which to store the `spawnX` coordinate, passed by reference. |
+| &Float:spawnY | A float variable in which to store the `spawnY` coordinate, passed by reference. |
+| &Float:spawnZ | A float variable in which to store the `spawnZ` coordinate, passed by reference. |
+| &Float:angle  | A float variable in which to store the angle coordinate, passed by reference.    |
+| &colour1      | A variable in which to store the `colour1` value, passed by reference.           |
+| &colour2      | A variable in which to store the `colour2` value, passed by reference.           |
 
 ## Examples
 

@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Callback ini akan terpanggil ketika pemain mengklik sebuah textraw atau membatalkan 'select' mode dengan tombol ESC.
 
-| Nama      | Deskripsi                                                               |
-| --------- | ----------------------------------------------------------------------- |
-| playerid  | ID dari pemain yang mengklik textdraw.                                  |
-| clickedid | ID dari textraw yang diklik. INVALID_TEXT_DRAW jika seleksi dibatalkan. |
+| Nama      | Deskripsi                                                                 |
+| --------- | ------------------------------------------------------------------------- |
+| playerid  | ID dari pemain yang mengklik textdraw.                                    |
+| clickedid | ID dari textraw yang diklik. `INVALID_TEXT_DRAW` jika seleksi dibatalkan. |
 
 ## Returns
 
@@ -64,7 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Area yang dapat diklik ditentukan oleh TextDrawTextSize. parameter x dan y yang diteruskan ke fungsi tersbut tidak boleh nol atau negatif. Jangan pernah gunakan CancelSelectextDraw tanpa pengecekan dalam callback ini. Kemungkinan pengulangan tak terbatas bisa terjadi.
+Area yang dapat diklik ditentukan oleh `TextDrawTextSize`. parameter x dan y yang diteruskan ke fungsi tersbut tidak boleh nol atau negatif. Jangan pernah gunakan CancelSelectextDraw tanpa pengecekan dalam callback ini. Kemungkinan pengulangan tak terbatas bisa terjadi.
 
 :::
 

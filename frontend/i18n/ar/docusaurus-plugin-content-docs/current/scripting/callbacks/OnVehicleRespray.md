@@ -42,7 +42,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-هذا الكالب باك لا يتم إستدعائه من قبل (ChangeVehicleColor) بشكل مضلل.
+هذا الكالب باك لا يتم إستدعائه من قبل (`ChangeVehicleColor`) بشكل مضلل.
 هذا الكالباك لا يتم إستدعائه من قبل (إدفع و رش¹)
 
 الإصلاح هنا: https://pastebin.com/G81da7N1

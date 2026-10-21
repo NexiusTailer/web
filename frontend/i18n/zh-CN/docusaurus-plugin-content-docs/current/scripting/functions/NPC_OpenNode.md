@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 节点 ID 范围为 0 到 63
 - 节点必须先打开才能供 NPC 用于导航
 - 打开节点会加载其数据并使其可访问
-- 使用 NPC_IsNodeOpen 检查节点是否已打开
+- 使用 `NPC_IsNodeOpen` 检查节点是否已打开
 
 ## 相关函数
 

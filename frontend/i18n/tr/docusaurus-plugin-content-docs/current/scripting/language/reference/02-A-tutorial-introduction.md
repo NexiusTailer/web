@@ -15,9 +15,9 @@ main()
 
 Bu kılavuz, bir pawn programını nasıl çalıştıracağınızı bildiğinizi varsayar; eğer bilmiyorsanız, lütfen uygulama kılavuzuna başvurun (daha fazla ipucu sayfa 168'de bulunmaktadır).
 
-Bir pawn programı, neredeyse bu kılavuzun tüm örneklerinde olduğu gibi, yürütme işlemine "entry" fonksiyonunda∗ başlar. Burada, main fonksiyonu yalnızca başlığın hemen altındaki tek bir komut içerir. Satır sonları ve girinti önemsizdir; print fonksiyonunun çağrısı, main fonksiyonunun başlığı ile aynı satırda da olabilir.
+Bir pawn programı, neredeyse bu kılavuzun tüm örneklerinde olduğu gibi, yürütme işlemine "entry" fonksiyonunda∗ başlar. Burada, main fonksiyonu yalnızca başlığın hemen altındaki tek bir komut içerir. Satır sonları ve girinti önemsizdir; `print` fonksiyonunun çağrısı, main fonksiyonunun başlığı ile aynı satırda da olabilir.
 
-Bir fonksiyonun tanımı, fonksiyon adını takip eden parantez çiftinin gelmesini gerektirir. Bir fonksiyon parametre alıyorsa, deklarasyonları parantezler arasında görünür. main fonksiyonu herhangi bir parantez almadığından dolayı. Fonksiyon çağrısı (veya fonksiyon çağrısı) için kurallar farklıdır; parantezler, print fonksiyonuna yapılan çağrıda isteğe bağlıdır.
+Bir fonksiyonun tanımı, fonksiyon adını takip eden parantez çiftinin gelmesini gerektirir. Bir fonksiyon parametre alıyorsa, deklarasyonları parantezler arasında görünür. main fonksiyonu herhangi bir parantez almadığından dolayı. Fonksiyon çağrısı (veya fonksiyon çağrısı) için kurallar farklıdır; parantezler, `print` fonksiyonuna yapılan çağrıda isteğe bağlıdır.
 
 Print fonksiyonunun tek argümanı, çift tırnak içinde olması gereken bir dizedir. Dizedeki sona yakın \n karakterleri, bu durumda "newline" sembolünü gösteren bir kaçış dizisi oluşturur. Print, newline kaçış dizisine rastladığında, imleci bir sonraki satırın ilk sütununa taşır. Bir dizenin birden fazla satıra yayılmasına izin verilmediğinden, "newline" eklemek için \n kaçış dizisini kullanmak gerekmektedir.
 
@@ -31,7 +31,7 @@ Print fonksiyonunun tek argümanı, çift tırnak içinde olması gereken bir di
 
 ---
 
-pawn, "büyük/küçük harfe duyarlı" bir dilidir: büyük ve küçük harfle yazılmış harfler farklı harfler olarak kabul edilir. Yukarıdaki örnekte printf fonksiyonunu "PrintF" olarak yazmak bir hata olacaktır. Anahtar kelimeler ve önceden tanımlanmış semboller, "main" fonksiyonunun adı gibi, küçük harfle yazılmalıdır.
+pawn, "büyük/küçük harfe duyarlı" bir dilidir: büyük ve küçük harfle yazılmış harfler farklı harfler olarak kabul edilir. Yukarıdaki örnekte `printf` fonksiyonunu "PrintF" olarak yazmak bir hata olacaktır. Anahtar kelimeler ve önceden tanımlanmış semboller, `main` fonksiyonunun adı gibi, küçük harfle yazılmalıdır.
 
 C dilini biliyorsanız, yukarıdaki örneğin C/C++'daki eşdeğeri gibi görünmediğini düşünebilirsiniz. Ancak pawn da C'ye oldukça benzer olabilir. Aşağıdaki örnek programı da geçerli pawn sözdizimine sahiptir (ve daha önceki örnekle aynı anlamı taşır):
 
@@ -62,7 +62,7 @@ Bu ilk örnekler aynı zamanda pawn ile C dili arasındaki birkaç farkı da ort
 
 Bir not olarak, yukarıdaki noktalar opsiyonel sözdizimlere işaret eder. Hangi sözdizimini kullanmak istediğiniz size bağlıdır: Her iki stil de "kullanılmayan" veya "zararlı kabul edilen" bir stil değildir. Bu kılavuzdaki örnekler süslü parantezleri konumlandırır ve "Whitesmith tarzı" olarak bilinen bir girinti kullanır, ancak pawn serbest biçim bir dil olduğu için diğer girinti stilleri de aynı derecede uygundur.
 
-Pawn, uygulamalar için bir uzantı dili olacak şekilde tasarlandığından, bir pawn programının sahip olduğu işlev kümesi/host uygulamasına bağlıdır. Bu nedenle, pawn dilinin herhangi bir işlev hakkında içselleştirilmiş bir bilgisi yoktur. Bu ilk örnekte kullanılan print işlevi, host uygulaması tarafından kullanılabilir hale getirilmeli ve pawn çözümleyicisine "bildirilmelidir".
+Pawn, uygulamalar için bir uzantı dili olacak şekilde tasarlandığından, bir pawn programının sahip olduğu işlev kümesi/host uygulamasına bağlıdır. Bu nedenle, pawn dilinin herhangi bir işlev hakkında içselleştirilmiş bir bilgisi yoktur. Bu ilk örnekte kullanılan `print` işlevi, host uygulaması tarafından kullanılabilir hale getirilmeli ve pawn çözümleyicisine "bildirilmelidir".
 
 ---
 
@@ -72,9 +72,9 @@ Pawn, uygulamalar için bir uzantı dili olacak şekilde tasarlandığından, bi
 
 ---
 
-Bu arada, birçok host uygulamasının print ve printf gibi ortak işlevleri sağladığı varsayılmaktadır.
+Bu arada, birçok host uygulamasının `print` ve `printf` gibi ortak işlevleri sağladığı varsayılmaktadır.
 
-Bazı ortamlarda metin çıktısı almadan önce ekran veya terminalin etkinleştirilmesi gerekebilir. Bu durumda, print veya printf işlevine ilk çağrıdan önce "console" işlevini eklemeniz gerekir. console işlevi ayrıca görüntünün satır ve sütun sayısı gibi cihaz özelliklerini belirtmenize olanak tanır. Bu kılavuzdaki örnek programlar, birçoğu bu işlemi gerektirmediği veya sağlamadığı için console işlevlerini kullanmaz.
+Bazı ortamlarda metin çıktısı almadan önce ekran veya terminalin etkinleştirilmesi gerekebilir. Bu durumda, `print` veya `printf` işlevine ilk çağrıdan önce `console` işlevini eklemeniz gerekir. console işlevi ayrıca görüntünün satır ve sütun sayısı gibi cihaz özelliklerini belirtmenize olanak tanır. Bu kılavuzdaki örnek programlar, birçoğu bu işlemi gerektirmediği veya sağlamadığı için console işlevlerini kullanmaz.
 
 ### • Aritmetik
 
@@ -99,7 +99,7 @@ main()
 }
 ```
 
-Fonksiyon main artık sadece tek bir "print" ifadesi içermiyor. Bir fonksiyonun gövdesi bir ifadeden daha fazla ifade içeriyorsa, bu ifadelerin süslü parantez içine alınması gerekmektedir —"{" ve "}" karakterleri. Bu, talimatları tek bir bileşik ifadeye gruplar. If–else ve döngü talimatlarının gövdelerine de aynı şekilde ifadeleri gruplama kavramı uygulanır.
+Fonksiyon main artık sadece tek bir `print` ifadesi içermiyor. Bir fonksiyonun gövdesi bir ifadeden daha fazla ifade içeriyorsa, bu ifadelerin süslü parantez içine alınması gerekmektedir —"{" ve "}" karakterleri. Bu, talimatları tek bir bileşik ifadeye gruplar. If–else ve döngü talimatlarının gövdelerine de aynı şekilde ifadeleri gruplama kavramı uygulanır.
 
 Yeni anahtar kelimesi bir değişken oluşturur. Yeni'nin ardından değişkenin adı gelir. Veri bildirimleri, değişkenin oluşturulma anında değer atamak yaygın, ancak zorunlu değildir.
 
@@ -111,23 +111,23 @@ Yeni anahtar kelimesi bir değişken oluşturur. Yeni'nin ardından değişkenin
 
 Değişkenler, bir ifadede kullanılmadan önce bildirilmelidir. Getvalue işlevi (ayrıca yaygın bir önceden tanımlı işlev) klavyeden bir değer okur ve sonucu döndürür. Pawn tipi olmayan bir dil olduğundan, tüm değişkenler işaretleme olabilen bir tamsayı değerini içeren sayısal hücrelerdir.
 
-Getvalue fonksiyon adının ardından bir çift parantez gelir. Bu, getvalue'nun döndürdüğü değerin bir değişkende saklandığı için gereklidir. Genellikle, fonksiyonun argümanları (veya parametreleri) parantezler arasında görünmelidir, ancak bu programda kullanılan getvalue (bu programda kullanılan) açık bir argüman almaz. Bir fonksiyonun sonucunu bir değişkene atamaz veya başka bir şekilde bir ifadede kullanmazsanız, parantezler opsiyoneldir. Örneğin, print ve printf ifadelerinin sonuçları kullanılmaz. Parantezleri hala argümanların etrafına koyabilirsiniz, ancak bu zorunlu değildir.
+Getvalue fonksiyon adının ardından bir çift parantez gelir. Bu, getvalue'nun döndürdüğü değerin bir değişkende saklandığı için gereklidir. Genellikle, fonksiyonun argümanları (veya parametreleri) parantezler arasında görünmelidir, ancak bu programda kullanılan `getvalue` (bu programda kullanılan) açık bir argüman almaz. Bir fonksiyonun sonucunu bir değişkene atamaz veya başka bir şekilde bir ifadede kullanmazsanız, parantezler opsiyoneldir. Örneğin, `print` ve `printf` ifadelerinin sonuçları kullanılmaz. Parantezleri hala argümanların etrafına koyabilirsiniz, ancak bu zorunlu değildir.
 
 "While" döngüsü gibi döngü talimatları, parantezler arasındaki ifade "true" olduğu sürece tek bir talimatı tekrarlar. Bir döngüde birden fazla talimatı yürütmek için bunları bir bileşik ifade içinde gruplandırabilirsiniz. If–else talimatının "true" ve "false" için birer talimatı vardır.
 
 Bazı ifadelerin, while ve if–else gibi, başka bir talimatı içerdiğine dikkat edin. If–else için altında iki talimat bile var. Tam paket yine tek bir talimattır. Yani:
 
-- if'in altında olan "a = a - b" ve else'nin altında olan "b = b - a" atama ifadeleri;
+- if'in altında olan `a = a - b` ve else'nin altında olan `b = b - a` atama ifadeleri;
 - if–else ifadesi bu iki atama ifadesinin etrafında katlanır ve kendi başına tek bir ifade oluşturur;
 - while ifadesi if–else ifadesinin etrafında katlanır ve yine tek bir ifade oluşturur.
 
-Aynı seviyeye ait ifadelerin girintisini kaynak metin içinde belirtmek yaygındır. "En Büyük Ortak Bölen" örneğinde, while ifadesinden sonra sol kenar girintisi dört boşluk karakteri artar ve if ve else anahtar kelimelerinden sonra tekrar artar. Aynı seviyede olan ifadeler, printf çağrılarının her ikisi ve while döngüsü gibi, aynı girintiyi paylaşırlar.
+Aynı seviyeye ait ifadelerin girintisini kaynak metin içinde belirtmek yaygındır. "En Büyük Ortak Bölen" örneğinde, while ifadesinden sonra sol kenar girintisi dört boşluk karakteri artar ve if ve else anahtar kelimelerinden sonra tekrar artar. Aynı seviyede olan ifadeler, `printf` çağrılarının her ikisi ve while döngüsü gibi, aynı girintiyi paylaşırlar.
 
-While döngüsü için while döngü şartı "(a != b)"; != sembolü "eşit değil" operatörüdür. Yani, if–else talimatı "a" eşit "b" olduğunda tekrarlanır. Bir ifadenin kontrolü altında çalışan talimatları girintilemenin iyi bir uygulama olduğuna dikkat edin.
+While döngüsü için while döngü şartı `(a != b)`; != sembolü "eşit değil" operatörüdür. Yani, if–else talimatı `a` eşit `b` olduğunda tekrarlanır. Bir ifadenin kontrolü altında çalışan talimatları girintilemenin iyi bir uygulama olduğuna dikkat edin.
 
 ---
 
-Örneğin en altındaki printf çağrısı, açılı parantezin hemen altındaki print çağrısından farklıdır. Printf'deki "f" "formatlı" için durur, bu da fonksiyonun sayısal değerleri ve diğer verileri (kullanıcı tarafından belirtilen bir formatta) biçimlendirebileceği ve yazdırabileceği anlamına gelir, aynı zamanda literal metni de. Dizideki %d sembolü, printf fonksiyonuna ait ikinci argümanın yazdırılması gereken konumu ve formatı belirten bir belirteçtir. Çalışma zamanında, %d belirteci printf fonksiyonuna ait "a" değişkeninin değeri ile değiştirilir.
+Örneğin en altındaki `printf` çağrısı, açılı parantezin hemen altındaki `print` çağrısından farklıdır. Printf'deki "f" "formatlı" için durur, bu da fonksiyonun sayısal değerleri ve diğer verileri (kullanıcı tarafından belirtilen bir formatta) biçimlendirebileceği ve yazdırabileceği anlamına gelir, aynı zamanda literal metni de. Dizideki %d sembolü, `printf` fonksiyonuna ait ikinci argümanın yazdırılması gereken konumu ve formatı belirten bir belirteçtir. Çalışma zamanında, %d belirteci `printf` fonksiyonuna ait `a` değişkeninin değeri ile değiştirilir.
 
 Print fonksiyonu sadece metin yazdırabilir; printf'ten daha hızlıdır. Ekrana literal "%" yazdırmak istiyorsanız, print'i kullanmalısınız veya printf'e verdiğiniz dizide çift kullanmalısınız. Yani:
 
@@ -177,7 +177,7 @@ main()
 
 Bir program veya alt programın içinde bir sabit sınırlı bir değeri varsa, bu değer için sembolik bir sabit oluşturmak iyi bir uygulamadır. Önceki örnekte, max_primes sembolü değeri 100 olan bir sabittir. Program, max_primes sembolünü tanımından sonra üç kez kullanır: değişken serisinin bildiriminde ve iki for döngüsünde. Programı 500'den küçük tüm asal sayıları yazdıracak şekilde uyarlamak istersek, değiştirmemiz gereken sadece bir satır olacaktır.
 
-Basit değişkenler gibi, diziler de oluşturulurken başlangıç değerleri atanabilir. Pawn, tüm elemanları sabit bir değere başlatmak için pratik bir kısaltma sunar: "series" dizisinin tüm yüz elemanı "true" değerine ayarlanır —programcının "true" kelimesini yüz kez yazmasını gerektirmez. true ve false sembolleri önceden tanımlanmış sabitlerdir.
+Basit değişkenler gibi, diziler de oluşturulurken başlangıç değerleri atanabilir. Pawn, tüm elemanları sabit bir değere başlatmak için pratik bir kısaltma sunar: `series` dizisinin tüm yüz elemanı `true` değerine ayarlanır —programcının "true" kelimesini yüz kez yazmasını gerektirmez. true ve false sembolleri önceden tanımlanmış sabitlerdir.
 
 Primes sieve örneğindeki i ve j gibi basit değişkenler, bir for döngüsünün ilk ifadesinde deklare edildiğinde, değişken sadece döngü içinde geçerlidir. Değişken bildirimi kendi kurallarına sahiptir; bir ifade değildir - bunun gibi görünse de. Bu kurallardan biri de for döngüsünün ilk ifadesinin bir değişken bildirimi içerebileceğidir.
 
@@ -232,7 +232,7 @@ Fibonacci fonksiyonundaki assert talimatı açık bir şekilde bahsedilmeyi hak 
 
 Kullanıcı tanımlı bir fonksiyonun uygulanması, main fonksiyonununkinden çok farklı değildir. Ancak fibonacci fonksiyonu, iki yeni konsepti gösterir: bir parametre aracılığıyla bir giriş değeri alır ve bir değer döndürür ("sonuç" vardır).
 
-Fonksiyon parametreleri fonksiyon başlığında bildirilir; bu örnekteki tek parametre "n" dir. Fonksiyon içinde, bir parametre, değeri fonksiyona çağrıda dışarıdan iletilen ancak bir yerel değişken gibi davranan bir değişkendir.
+Fonksiyon parametreleri fonksiyon başlığında bildirilir; bu örnekteki tek parametre `n` dir. Fonksiyon içinde, bir parametre, değeri fonksiyona çağrıda dışarıdan iletilen ancak bir yerel değişken gibi davranan bir değişkendir.
 
 return ifadesi bir fonksiyonu sonlandırır ve fonksiyonun sonucunu ayarlar. Bu, fonksiyonun tamamen sonunda görünmek zorunda değildir; erken çıkışlar müsade edilir.
 
@@ -242,7 +242,7 @@ return ifadesi bir fonksiyonu sonlandırır ve fonksiyonun sonucunu ayarlar. Bu,
 
 ---
 
-Fibonacci örneğinin main fonksiyonu, önceden tanımlanmış "yerel" fonksiyonları çağırır, getvalue ve printf, ayrıca kullanıcı tanımlı fonksiyon fibonacci. Bir fonksiyonu çağırma perspektifinden (fonksiyon main içinde), kullanıcı tanımlı ve yerel fonksiyonlar arasında fark yoktur.
+Fibonacci örneğinin main fonksiyonu, önceden tanımlanmış "yerel" fonksiyonları çağırır, `getvalue` ve `printf`, ayrıca kullanıcı tanımlı fonksiyon fibonacci. Bir fonksiyonu çağırma perspektifinden (fonksiyon main içinde), kullanıcı tanımlı ve yerel fonksiyonlar arasında fark yoktur.
 
 Fibonacci sayıları dizisi, çeşitli doğal olayları şaşırtıcı bir şekilde açıklar. Örneğin, ananastaki, çam kozalarındaki ve ayçiçeğindeki iki veya üç set spiralin çoğu genellikle 5 ile 89 arasındaki ardışık Fibonacci sayılarına sahiptir. Bitki dallanma desenlerinde doğal olarak meydana gelen sayılar gerçekten Fibonacci sayılarıdır. Son olarak, Fibonacci dizisi bir geometrik dizi olmasa da, dizi ne kadar uzatılırsa, ardışık terimler arasındaki oranın Altın Oran'a, 1.618'e ne kadar yaklaştığı o kadar çoktur. . . ∗ ki sanat ve mimaride sıkça görülen.
 
@@ -344,7 +344,7 @@ JulianToDate(jdn, &day, &month, &year)
 
 ---
 
-Main fonksiyonu, gün, ay ve yılı tutacak değişkenleri ve hesaplanmış Julian Gün numarasını oluşturarak başlar. Ardından bir tarih okur - üç kez getvalue çağrısı - ve DateToJulian fonksiyonunu çağırarak gün numarasını hesaplar. Sonucu hesapladıktan sonra main, girdiğiniz tarihi ve bu tarihe karşılık gelen Julian Gün numarasını yazdırır. Şimdi, DateToJulian fonksiyonuna odaklanalım. . .
+Main fonksiyonu, gün, ay ve yılı tutacak değişkenleri ve hesaplanmış Julian Gün numarasını oluşturarak başlar. Ardından bir tarih okur - üç kez `getvalue` çağrısı - ve DateToJulian fonksiyonunu çağırarak gün numarasını hesaplar. Sonucu hesapladıktan sonra main, girdiğiniz tarihi ve bu tarihe karşılık gelen Julian Gün numarasını yazdırır. Şimdi, DateToJulian fonksiyonuna odaklanalım. . .
 
 DateToJulian fonksiyonunun başında, yıl değerini negatifse arttırır; bunu, proleptik Gregoryen takviminde "sıfır" yılının olmaması ile başa çıkmak için yapar. Başka bir deyişle, DateToJulian fonksiyonu, yıl ve daha sonra month'u değiştirmek üzere modifiye eder. Fonksiyon içinde, bir argüman, fonksiyona çağrıda bulunan dışarıdan iletilen ancak bir yerel değişken gibi davranan bir değişkendir. Bu değişiklikler, ancak fonksiyon DateToJulian içinde yerel kalır. DateToJulian fonksiyonu, dışarıdan gelen d, m ve y değerlerini DateToJulian fonksiyonuna çağrıda bulunan değişkenlere eşler. DateToJulian, year ve month'u değiştirir, ancak main fonksiyonundaki y ve m'yi değiştirmez; sadece y ve m'nin yerel kopyalarını değiştirir. Bu kavram, "değerle çağırma" olarak adlandırılır.
 
@@ -406,9 +406,9 @@ Celsius derecesinden Fahrenheit derecesine ulaşmak için şu denklem kullanıl�
 
 Program, 9/₅ kısmı için 1.8 değerini kullanır. Rasyonel sayı desteği etkinleştirildiğinde, pawn ondalık noktanın ardındaki kesirli değerleri destekler.
 
-Önceki programlardan tek farklı değişiklik, printf fonksiyonu için format dizesinin " %d" yerine " %r" kullanılmasıdır. %r yer tutucu, konumda bir rasyonel sayı yazdırırken; %d yalnızca tam sayılar içindir.
+Önceki programlardan tek farklı değişiklik, `printf` fonksiyonu için format dizesinin " %d" yerine " %r" kullanılmasıdır. %r yer tutucu, konumda bir rasyonel sayı yazdırırken; %d yalnızca tam sayılar içindir.
 
-Örnek programı taşınabilir hale getirmek için "float" veya "fixed" yerine "rational" dosyasını kullanmayı tercih ettim. Eğer barındıran uygulamanın kayan nokta aritmetiğini desteklediğini biliyorsanız, "float" dosyasından tanımlamaları içe aktarmak ve Rational yerine Float: etiketini kullanmak daha uygun olabilir. Bu durumda, printf çağrısındaki %r'yi %f ile değiştirmelisiniz. Sabit nokta ve kayan nokta desteği hakkında ayrıntılı bilgiler için lütfen ayrıca bulunan "Sabit Nokta Destek Kütüphanesi" ve "Kayan Nokta Destek Kütüphanesi" uygulama notlarına bakınız.
+Örnek programı taşınabilir hale getirmek için "float" veya "fixed" yerine "rational" dosyasını kullanmayı tercih ettim. Eğer barındıran uygulamanın kayan nokta aritmetiğini desteklediğini biliyorsanız, "float" dosyasından tanımlamaları içe aktarmak ve Rational yerine Float: etiketini kullanmak daha uygun olabilir. Bu durumda, `printf` çağrısındaki %r'yi %f ile değiştirmelisiniz. Sabit nokta ve kayan nokta desteği hakkında ayrıntılı bilgiler için lütfen ayrıca bulunan "Sabit Nokta Destek Kütüphanesi" ve "Kayan Nokta Destek Kütüphanesi" uygulama notlarına bakınız.
 
 ### • Karakter Dizileri (Strings)
 
@@ -444,11 +444,11 @@ rot13(string[])
 }
 ```
 
-rot13'ün fonksiyon başlığında, "string" parametresi bir dizi olarak bildirilir, ancak dizinin boyutu belirtilmez - burada köşeli parantezler arasında bir değer yoktur. Bir dizi için bir boyut belirttiğinizde, fonksiyon çağrısındaki gerçek parametrenin boyutuyla eşleşmelidir. Dizi boyutu belirtmenin fonksiyon başlığında atlanması, bu kısıtlamayı kaldırır ve fonksiyonun herhangi bir boyuttaki dizilerle çağrılmasına izin verir. Ardından dizinin (maksimum) boyutunu belirlemenin başka bir yolunun olması gerekir. Bir dize parametresi için, dizinin sıfır terminatörünü basitçe arayabilirsiniz.
+rot13'ün fonksiyon başlığında, `string` parametresi bir dizi olarak bildirilir, ancak dizinin boyutu belirtilmez - burada köşeli parantezler arasında bir değer yoktur. Bir dizi için bir boyut belirttiğinizde, fonksiyon çağrısındaki gerçek parametrenin boyutuyla eşleşmelidir. Dizi boyutu belirtmenin fonksiyon başlığında atlanması, bu kısıtlamayı kaldırır ve fonksiyonun herhangi bir boyuttaki dizilerle çağrılmasına izin verir. Ardından dizinin (maksimum) boyutunu belirlemenin başka bir yolunun olması gerekir. Bir dize parametresi için, dizinin sıfır terminatörünü basitçe arayabilirsiniz.
 
-Diziyi geçen for döngüsü, dize işleme fonksiyonları için tipiktir. Döngü koşulu "string[index]" olarak belirlenmiştir. Pawn'da doğru/yanlış koşulları için kural, herhangi bir değerin sıfır hariç "true" olduğudur. Yani, string[index] hücresi sıfır olduğunda, bu "false" olur ve döngü sona erer.
+Diziyi geçen for döngüsü, dize işleme fonksiyonları için tipiktir. Döngü koşulu `string[index]` olarak belirlenmiştir. Pawn'da doğru/yanlış koşulları için kural, herhangi bir değerin sıfır hariç "true" olduğudur. Yani, string[index] hücresi sıfır olduğunda, bu "false" olur ve döngü sona erer.
 
-ROT13 algoritması yalnızca harfleri döndürür; rakamlar, noktalama işaretleri ve özel karakterler değiştirilmez. Ayrıca, büyük ve küçük harfler ayrı ayrı ele alınmalıdır. For döngüsü içindeki iki if ifadesi, ilgilenilen karakterleri filtreler. İkinci if'in, birinci if'in "else" şartına zincirlendiği şekilde kullanılması, birden fazla örtüşmeyen koşulu test etmenin tipik bir yöntemidir.
+ROT13 algoritması yalnızca harfleri döndürür; rakamlar, noktalama işaretleri ve özel karakterler değiştirilmez. Ayrıca, büyük ve küçük harfler ayrı ayrı ele alınmalıdır. For döngüsü içindeki iki if ifadesi, ilgilenilen karakterleri filtreler. İkinci if'in, birinci if'in `else` şartına zincirlendiği şekilde kullanılması, birden fazla örtüşmeyen koşulu test etmenin tipik bir yöntemidir.
 
 Bu bölümte daha önce, "değerle çağrı" ve "referansla çağrı" kavramları tartışıldı. Dizilerle çalışırken veya genel olarak dizilerle çalışırken, pawn her zaman dizileri referansla geçer. Bunun nedeni, belleği korumak ve performansı artırmaktır - diziler büyük veri yapıları olabilir ve onları değerle geçmek, bu veri yapısının bir kopyasının yapılmasını gerektirir, bu da hem bellek hem de zaman alır.
 
@@ -456,9 +456,9 @@ Bu bölümte daha önce, "değerle çağrı" ve "referansla çağrı" kavramlar�
 
 `Dizi üzerinde değişiklik yapmayan bir işlev, parametreyi "const" olarak işaretleyebilir; bkz. sayfa 72`
 
-Bu kural nedeniyle, rot13 işlevi, fonksiyon parametresini (örnekte "string" olarak adlandırılanı) referans argümanı olarak bildirmeye gerek duymadan, işlev parametresini değiştirebilir.
+Bu kural nedeniyle, rot13 işlevi, fonksiyon parametresini (örnekte `string` olarak adlandırılanı) referans argümanı olarak bildirmeye gerek duymadan, işlev parametresini değiştirebilir.
 
-İki if ifadesindeki koşullar da ilgi çekici bir noktadır. Örneğin, birinci if'in koşulu " `'a' <= string[index] <= 'z'` " ifadesini taşır, bu da demektir ki, ifade sadece `'a' <= string[index]` ve `string[index] <= 'z'` her ikisi de doğruysa "true" olur. Birleşik ifadede, ilişkisel operatörler "zincirlenmiş" olarak adlandırılır, çünkü birden fazla karşılaştırmayı tek bir koşulda zincirlerler.
+İki if ifadesindeki koşullar da ilgi çekici bir noktadır. Örneğin, birinci if'in koşulu `'a' <= string[index] <= 'z'` ifadesini taşır, bu da demektir ki, ifade sadece `'a' <= string[index]` ve `string[index] <= 'z'` her ikisi de doğruysa "true" olur. Birleşik ifadede, ilişkisel operatörler "zincirlenmiş" olarak adlandırılır, çünkü birden fazla karşılaştırmayı tek bir koşulda zincirlerler.
 
 Son olarak, main fonksiyonundaki son printf'in nasıl çalıştığına dikkat edin. Normalde bir çift tırnak, kelimeyi bitirir; ancak " \" " kaçış dizisi, bir çift tırnağı dizeye ekler.
 
@@ -514,7 +514,7 @@ strtok(const string[], &index)
 
 `Kaçış dizisi: 99`
 
-main fonksiyonu önce bir mesajı görüntüler ve kullanıcının yazması gereken bir dizeyi alır. Daha sonra bir döngüye girer: "for (;;)" yazmak, başlatma, artırma ve test olmadan bir döngü oluşturur - bu, "while (true)" ile eşdeğerdir. Ancak, pawn analizörü "while (true)" yazarsanız bir uyarı verecektir ("gereksiz test ifadesi; her zaman doğru"), "for (;;)" ise uyarı vermeden geçer.
+main fonksiyonu önce bir mesajı görüntüler ve kullanıcının yazması gereken bir dizeyi alır. Daha sonra bir döngüye girer: `for (;;)` yazmak, başlatma, artırma ve test olmadan bir döngü oluşturur - bu, `while (true)` ile eşdeğerdir. Ancak, pawn analizörü `while (true)` yazarsanız bir uyarı verecektir ("gereksiz test ifadesi; her zaman doğru"), `for (;;)` ise uyarı vermeden geçer.
 
 Sonsuz bir döngü için tipik bir kullanım, ortada bir teste ihtiyaç duyulan bir döngüdür - bir nevi while ve do... while döngüsü arasında bir melez. pawn, doğrudan ortada bir testle döngüleri desteklemez, ancak koşullu bir break ile sonsuz bir döngü kodlayarak bir tane taklit edebilirsiniz. Bu örnek programda döngü:
 
@@ -524,7 +524,7 @@ Sonsuz bir döngü için tipik bir kullanım, ortada bir teste ihtiyaç duyulan 
 
 "word = strtok(string, index)" satırından da anlaşılacağı gibi (ve word değişkeninin bildiriminden), pawn dizi atama ve dizileri döndüren fonksiyonları destekler. pawn analizörü, strtok'ın döndürdüğü dizinin, atandığı değişkenle aynı boyuta ve boyutlara sahip olduğunu doğrular.
 
-strlen fonksiyonu önceden tanımlanmış (native) bir fonksiyon olsa da, strtok öyle değildir: kendimiz tarafından uygulanmalıdır. Strtok fonksiyonu, adını aldığı C/C++ dilindeki fonksiyondan esinlenmiştir, ancak kaynak dizesini değiştirmez. Bunun yerine, kaynak dizesinden kelime kelime karakterleri kopyalar ve ardından bunu geri döndürür.
+`strlen` fonksiyonu önceden tanımlanmış (native) bir fonksiyon olsa da, strtok öyle değildir: kendimiz tarafından uygulanmalıdır. Strtok fonksiyonu, adını aldığı C/C++ dilindeki fonksiyondan esinlenmiştir, ancak kaynak dizesini değiştirmez. Bunun yerine, kaynak dizesinden kelime kelime karakterleri kopyalar ve ardından bunu geri döndürür.
 
 ---
 
@@ -626,9 +626,9 @@ Program listesinin en üstünde, mesaj numaralandırmasının bildirimi bulunmak
 
 Main fonksiyonunun hemen üstünde, boyutu message olan yeni bir dizi deklare edilir. message sembolü, numaralandırmanın adıdır. Bu aynı zamanda numaralandırmadaki son sabitin değerine, o son öğe için isteğe bağlı ek artışa sahip olan bir sabittir. Bu örnekte message, 12'dir. Yani, dizi msg'nin 12 hücreyi içerecek şekilde bildirilmiştir.
 
-Main fonksiyonunda daha fazla döngü bulunmaktadır. for döngüsü, konsoldan dizeleri ve öncelik değerlerini okur ve bunları bir sıraya ekler. Altındaki while döngüsü, sıradan eleman eleman çıkartır ve bilgileri ekrana yazdırır. Dikkat edilmesi gereken nokta, for döngüsünün dizeyi ve öncelik numarasını (bir tamsayı) aynı değişken olan msg'de depolamasıdır; aslında, main fonksiyonu sadece tek bir değişken bildirir. Getstring fonksiyonu, msg[text] dizisinde yazdığınız mesaj metnini depolar, öncelik değeri ise (birkaç satır altındaki bir atama ile) msg[priority] içinde depolanır. While döngüsündeki printf fonksiyonu, bu pozisyonlardan dizeyi ve değeri okur.
+Main fonksiyonunda daha fazla döngü bulunmaktadır. for döngüsü, konsoldan dizeleri ve öncelik değerlerini okur ve bunları bir sıraya ekler. Altındaki while döngüsü, sıradan eleman eleman çıkartır ve bilgileri ekrana yazdırır. Dikkat edilmesi gereken nokta, for döngüsünün dizeyi ve öncelik numarasını (bir tamsayı) aynı değişken olan msg'de depolamasıdır; aslında, main fonksiyonu sadece tek bir değişken bildirir. Getstring fonksiyonu, msg[text] dizisinde yazdığınız mesaj metnini depolar, öncelik değeri ise (birkaç satır altındaki bir atama ile) msg[priority] içinde depolanır. While döngüsündeki `printf` fonksiyonu, bu pozisyonlardan dizeyi ve değeri okur.
 
-Aynı zamanda, msg dizisi kendi başına bir varlıktır: tümünü insert fonksiyonuna aynen iletilir. Bu fonksiyon, neredeyse sonunda "queue[queueitems] = item" dediği yerde, item message boyutunda bir dizi ve queue, message boyutunda queuesize eleman içeren iki boyutlu bir dizidir. queue ve queuesize deklarasyonları, insert fonksiyonunun hemen üstündedir.
+Aynı zamanda, msg dizisi kendi başına bir varlıktır: tümünü insert fonksiyonuna aynen iletilir. Bu fonksiyon, neredeyse sonunda `queue[queueitems] = item` dediği yerde, item message boyutunda bir dizi ve queue, message boyutunda queuesize eleman içeren iki boyutlu bir dizidir. queue ve queuesize deklarasyonları, insert fonksiyonunun hemen üstündedir.
 
 Örnek, bir "öncelikli sıra" uygular. Belirli bir maksimum adımdan bir noktaya ulaşılabilen noktaları döndüren bir algoritma tasarlamak istiyoruz. Örneğin, B'den başlayarak iki adımda ulaşılabilecek noktaları döndürmesini istiyorsak, algoritma C, D, E ve F'yi döndürmelidir, çünkü G, B'den üç adım uzaktadır.
 
@@ -896,7 +896,7 @@ gettoken(const string[], &index)
 }
 ```
 
-RPN hesaplayıcısı, rasyonel sayı desteği kullanır ve rpnparse.inc dosyası bu amacı taşıyan "rational" dosyasını içerir. Rasyonel sayılar üzerindeki neredeyse tüm işlemler aritmetikte gizlidir. Rasyonel sayılara doğrudan referanslar, rpncalc fonksiyonunun en altında bulunan printf ifadesindeki "%r" format kodu ve gettoken fonksiyonunun ortasındaki rationalstr fonksiyonu çağrısıdır.
+RPN hesaplayıcısı, rasyonel sayı desteği kullanır ve rpnparse.inc dosyası bu amacı taşıyan "rational" dosyasını içerir. Rasyonel sayılar üzerindeki neredeyse tüm işlemler aritmetikte gizlidir. Rasyonel sayılara doğrudan referanslar, rpncalc fonksiyonunun en altında bulunan `printf` ifadesindeki "%r" format kodu ve gettoken fonksiyonunun ortasındaki rationalstr fonksiyonu çağrısıdır.
 
 Dosya rpnparse.inc'deki ilk dikkat çeken öğe, enum bildirimidir. Bu bildiride bir öğe bir etiket içerir (t_field) ve diğer öğe bir boyut içerir (t_word). Fonksiyon rpncalc, değişken field'ı, boyutunu numaralandırma sembolü olarak kullanarak bir dizi olarak bildirir. Ekranın arkasında, bu bildiri sadece 22 hücreli bir dizi oluşturmaktan daha fazlasını yapar:
 
@@ -904,7 +904,7 @@ Dosya rpnparse.inc'deki ilk dikkat çeken öğe, enum bildirimidir. Bu bildiride
 
 /\*Numaralandırmanın etiket adı, varlık dizisinin etiket adını ezerse, field değişkeni etiketsizdir, ancak field[t_value] etiketi Rational: etiketine sahiptir, çünkü numaralandırma öğesi t_value bu şekilde bildirilmiştir. Bu nedenle, farklı etiket adlarına sahip öğeler içeren bir dizi oluşturmanıza izin verir.
 
-/\*Eğer numaralandırma öğesi bir boyuta sahipse, o öğeyi belirten dizi öğesi bazen bir alt dizi olarak işlenir. Rpncalc'ta "field[t_type]" ifadesi tek bir hücredir, "field[t_value]" tek bir hücredir, ancak "field[t_word]" 20 hücrelik bir tek boyutlu dizi olarak kabul edilir. Bu özellikle şu satırda görülür:
+/\*Eğer numaralandırma öğesi bir boyuta sahipse, o öğeyi belirten dizi öğesi bazen bir alt dizi olarak işlenir. Rpncalc'ta `field[t_type]` ifadesi tek bir hücredir, `field[t_value]` tek bir hücredir, ancak `field[t_word]` 20 hücrelik bir tek boyutlu dizi olarak kabul edilir. Bu özellikle şu satırda görülür:
 
     printf  "Bilinmeyen operatör '%s'\n",  field[t_word]
 
@@ -912,7 +912,7 @@ burada %s format kodu bir dize bekler - yineleme ile sona eren bir dizi.
 
 Rasyonel sayılar, bkz. ayrıca 16. sayfadaki "Celsius to Fahrenheit" örneği
 
-"enum" ifadesi: 101
+`enum` ifadesi: 101
 
 Başka bir indeks etiketi örneği: 68. sayfa
 
@@ -924,7 +924,7 @@ Fonksiyon rpncalc'daki for döngüsünün başında, "field = gettoken(string, i
 
 field[t_word] = word
 
-burada word 20 hücrelik bir dizi ve field 22 hücrelik bir dizidir. Ancak t_word numaralandırma alanı 20 hücre boyutunda bildirildiğinden, "field[t_word]" 20 hücrelik bir alt dizi olarak kabul edilir ve tam olarak word dizisinin boyutuna uyar.
+burada word 20 hücrelik bir dizi ve field 22 hücrelik bir dizidir. Ancak t_word numaralandırma alanı 20 hücre boyutunda bildirildiğinden, `field[t_word]` 20 hücrelik bir alt dizi olarak kabul edilir ve tam olarak word dizisinin boyutuna uyar.
 
 Listeleme: strtok.inc
 
@@ -958,7 +958,7 @@ strtok(const string[], &index)
 
 ---
 
-"switch" ifadesi: sayfa 115
+`switch` ifadesi: sayfa 115
 
 ---
 
@@ -1005,7 +1005,7 @@ clearstack()
 
 stack.inc dosyası tekrar rational dosyasını içerir. Bu teknik olarak gerekli değildir (rpnparse.inc zaten rasyonel sayı desteği tanımlamalarını içeriyordu), ancak zarar vermez ve kodun tekrar kullanımı açısından, bir dosyanın bağımlı olduğu kütüphanelerin tanımlamalarını içermesi daha iyidir.
 
-İki global değişken stack ve stackidx'in "static" değişkenler olarak nasıl tanımlandığına dikkat edin; new yerine static anahtar kelimesini kullanmak. Bunu yapmak, global değişkenleri yalnızca o dosyada "görünür" yapar. Daha büyük bir projedeki diğer dosyalar için, stack ve stackidx sembolleri görünmez ve değişkenleri (kazara) değiştiremez. Ayrıca diğer modüllerin bu isimlerle kendi özel değişkenlerini bildirmelerine izin verir, bu da isim çakışmasını önler.
+İki global değişken stack ve stackidx'in `static` değişkenler olarak nasıl tanımlandığına dikkat edin; new yerine static anahtar kelimesini kullanmak. Bunu yapmak, global değişkenleri yalnızca o dosyada "görünür" yapar. Daha büyük bir projedeki diğer dosyalar için, stack ve stackidx sembolleri görünmez ve değişkenleri (kazara) değiştiremez. Ayrıca diğer modüllerin bu isimlerle kendi özel değişkenlerini bildirmelerine izin verir, bu da isim çakışmasını önler.
 
 Aslında, rpn hesap makinesi hâlâ oldukça küçük bir programdır, ancak daha büyük bir program gibi kurulmuştur. Ayrıca, pawn dilinin bir dizi öğesini göstermek için tasarlanmıştır ve örnek program daha kompakt bir şekilde uygulanabilirdi.
 
@@ -1023,7 +1023,7 @@ Tipik bir olay "giriş"tir. Giriş sadece insan operatörlerden gelmez. Giriş p
 
 Pawn, çoklu giriş noktalarını desteklediği için olay tabanlı modeli doğrudan destekler. Lineer bir programın tek giriş noktası main fonksiyonudur; olay tabanlı bir program, yakaladığı her olay için bir giriş noktasına sahiptir. Lineer modelle karşılaştırıldığında, olay tabanlı programlar genellikle "alttan yukarıya" gibi görünür: ana uygulamaya çağrı yapmak ve bir sonraki adımı belirlemek yerine, programınız dışarıdan çağrılır ve uygun ve hızlı bir şekilde yanıt vermesi gerekir.
 
-Pawn, standart bir kütüphane belirtmez, bu nedenle bir uygulamada printf ve getvalue gibi işlevlerin olup olmadığına dair bir garanti yoktur. Her uygulamanın bu işlevlere sahip bir minimal konsol/terminal arabirimi sağlamasının önerildiği gibi, bunların kullanılabilirliği nihayetinde uygulamaya bağlıdır. Aynısı, bir komut dosyasının genel işlevleri için geçerlidir - bir betik için giriş noktaları. Bir uygulamanın hangi genel işlevleri desteklediği uygulamaya bağlıdır. Bu bölümdeki komut dosyasının bu nedenle platformunuzda çalışmayabileceğini unutmayın (önceki tüm komut dosyaları sorunsuz çalışsa bile). Pawn sisteminin standart dağıtımındaki araçlar, terminal fonksiyonlarını ayarlama gibi standart terminal fonksiyonlarını destekleyen işletim sisteminiz veya ortamınızı destekliyorsa, bu kılavuzda geliştirilen tüm komut dosyalarını destekler.
+Pawn, standart bir kütüphane belirtmez, bu nedenle bir uygulamada `printf` ve `getvalue` gibi işlevlerin olup olmadığına dair bir garanti yoktur. Her uygulamanın bu işlevlere sahip bir minimal konsol/terminal arabirimi sağlamasının önerildiği gibi, bunların kullanılabilirliği nihayetinde uygulamaya bağlıdır. Aynısı, bir komut dosyasının genel işlevleri için geçerlidir - bir betik için giriş noktaları. Bir uygulamanın hangi genel işlevleri desteklediği uygulamaya bağlıdır. Bu bölümdeki komut dosyasının bu nedenle platformunuzda çalışmayabileceğini unutmayın (önceki tüm komut dosyaları sorunsuz çalışsa bile). Pawn sisteminin standart dağıtımındaki araçlar, terminal fonksiyonlarını ayarlama gibi standart terminal fonksiyonlarını destekleyen işletim sisteminiz veya ortamınızı destekliyorsa, bu kılavuzda geliştirilen tüm komut dosyalarını destekler.
 
 Çocuklara programlama kavramlarını öğretmek için yalnızca geliştirilen erken bir programlama dilinin adı "Logo" idi. Bu LISP diyalektiği, küçük bir robot olan "turtle" ile kontrol altında bir program tarafından zemin üzerinde sürülen bir robot tarafından programlamayı görsel hale getirdi. Bu konsept daha sonra bilgisayar ekranındaki bir (genellikle üçgen) imlecin tekrar bir programa kontrol altında hareket etmesiyle kopyalandı. Yeni bir özellik, turtle şimdi arkasında bir iz bırakıyordu, bu da turtle'ı doğru bir şekilde programlayarak çizimler oluşturmanıza olanak tanıdı - bu turtle grafik olarak bilinir hale geldi.
 
@@ -1124,7 +1124,7 @@ echo(key)
 }
 ```
 
-Yukarıdaki betiğin çoğu, alınan tuş vuruşlarını bir dizeye toplamak ve bu dizeyi enter tuşunu gördükten sonra göndermekle ilgilenir. "Escape" tuşu programı sonlandırır. echo fonksiyonu, kullanıcının ne yazdığına dair görsel geri bildirim sağlamak için hizmet eder: Bu fonksiyon, tuştan sıfır ile sona eren bir dize oluşturur ve bunu yazdırır.
+Yukarıdaki betiğin çoğu, alınan tuş vuruşlarını bir dizeye toplamak ve bu dizeyi enter tuşunu gördükten sonra göndermekle ilgilenir. "Escape" tuşu programı sonlandırır. `echo` fonksiyonu, kullanıcının ne yazdığına dair görsel geri bildirim sağlamak için hizmet eder: Bu fonksiyon, tuştan sıfır ile sona eren bir dize oluşturur ve bunu yazdırır.
 
 Basitliğine rağmen, bu betiğin ilginç bir özelliği vardır: İletilerin gönderilme veya alınma sırasında sabit veya önceden belirlenmiş bir düzen yoktur. Her ana bilgisayarın sırasıyla konuşma ve dinleme yaptığı bir sorgu-cevap düzeni yoktur. Kullanıcı kendi iletilerini yazarken yeni bir ileti alınabilir bile.
 
@@ -1222,7 +1222,7 @@ Bizim belirli durumumuzda, bir eğik çizgi geldiğinde, bu bir yorum dizisi (`/
 
 Betikte görülebileceği gibi, durum değişiklikleri koşula bağlı olabilir. Koşul isteğe bağlıdır ve aynı zamanda durum değiştirmek için yaygın if-else yapısını da kullanabilirsiniz.
 
-Duruma bağlı olma durumu, yalnızca olay fonksiyonları için geçerli değildir. Diğer fonksiyonlar da durum bildirimlerine sahip olabilir, örneğin echo fonksiyonu bunu gösterir. Bir fonksiyon birkaç durum için aynı uygulamaya sahipse, yalnızca tüm uygulanabilir durumları belirtmeniz yeterlidir. Echo fonksiyonu için dört durumu ele almak için iki uygulama bulunmaktadır.†
+Duruma bağlı olma durumu, yalnızca olay fonksiyonları için geçerli değildir. Diğer fonksiyonlar da durum bildirimlerine sahip olabilir, örneğin `echo` fonksiyonu bunu gösterir. Bir fonksiyon birkaç durum için aynı uygulamaya sahipse, yalnızca tüm uygulanabilir durumları belirtmeniz yeterlidir. Echo fonksiyonu için dört durumu ele almak için iki uygulama bulunmaktadır.†
 
 Ancak, bir otomatın tüm olaylara her durumda hazır olması gerekir. Otomatın genellikle gelecek olaylar hakkında ne alacağınızı ne zaman alacağınızı kontrol etmediğini, bu nedenle bir olayı bazı durumlarda anlamlı olabilecek durumların dışında işlememek, hatalı kararlar almanıza yol açabilir. Sıkça, bazı olaylar yalnızca belirli durumlarda anlamlıdır ve diğer durumların tümünde bir hata veya "sıfırlama" prosedürünü tetiklemeleri gerekir. Bu "hata" durumunu ele alma işlevi, açıkça belirtilmemiş durum isimleri varsa, birçok durum adını taşıyabilir. Dolayısıyla, örneğin bunları açıkça belirtmediyseniz, iki uygulama için `echo(key) <>` imzasını kullanabilirsiniz (ancak her ikisi için de kullanamazsınız).
 
@@ -1301,7 +1301,7 @@ entry() <red_wait>
 
 ---
 
-Bu örnek programın, ev sahibi uygulama/ortamına ek bir bağımlılığı vardır: "keypressed" olay fonksiyonunun yanı sıra, ev sahibinin ayarlanabilir bir "@timer" olayını da sağlaması gerekir. Zaman fonksiyonları nedeniyle, betik, betiğin üst kısmına "time.inc" adlı sistem dosyasını ekler.
+Bu örnek programın, ev sahibi uygulama/ortamına ek bir bağımlılığı vardır: `keypressed` olay fonksiyonunun yanı sıra, ev sahibinin ayarlanabilir bir "@timer" olayını da sağlaması gerekir. Zaman fonksiyonları nedeniyle, betik, betiğin üst kısmına "time.inc" adlı sistem dosyasını ekler.
 
 Durum değişikliği içeren olay fonksiyonları betiğin üst kısmında yer almaktadır. Fonksiyonlar, bir tablo benzeri bir yapıyı çağrıştırmak için her biri tek satır alacak şekilde düzenlenmiştir. Bu örnekte tüm durum değişiklikleri koşulsuzdur, ancak giriş fonksiyonlarıyla koşullu durum değişiklikleri de kullanılabilir. Alt kısım olay fonksiyonlarıdır.
 
@@ -1446,7 +1446,7 @@ Pawn dilinin amacı, geliştiriciye programın istendiği gibi davranıp davranm
 
 Örneğin, bir sayının karekökünü hesaplayan bir fonksiyon, giriş parametresinin negatif olmamasını belirtebilir. Bu bir precondition'dur. Ayrıca, çıktısının karesi alındığında giriş değeri %0.01 olmalıdır. Bu bir postcondition'dur; rutinin doğru çalıştığını doğrular. Karekökü hesaplamak için "bisection" yöntemi kullanmak uygun bir yol olabilir. Bu algoritma her iterasyonda en az bir ekstra bit (ikili rakam) hassasiyet sağlar. Bu bir invariant'tır (ancak bu kontrolü yapmak zor bir invariant olabilir).
 
-Precondition'lar, postcondition'lar ve invariant'lar, hepsi bir testten oluştuğu ve başarısız bir testin uygulamadaki bir hatayı gösterdiği açıdan benzerdir. Sonuç olarak, precondition'ları, postcondition'ları ve invariant'ları tek bir yapı olan "assertion" ile uygulayabilirsiniz. Precondition'lar için assertion'ları rutinin başlangıcında yazın; invariant'lar için, invariant'ın geçerli olması gereken yerde bir assertion yazın; postcondition'lar için her "return" ifadesinden önce veya fonksiyonun sonunda bir assertion yazın.
+Precondition'lar, postcondition'lar ve invariant'lar, hepsi bir testten oluştuğu ve başarısız bir testin uygulamadaki bir hatayı gösterdiği açıdan benzerdir. Sonuç olarak, precondition'ları, postcondition'ları ve invariant'ları tek bir yapı olan "assertion" ile uygulayabilirsiniz. Precondition'lar için assertion'ları rutinin başlangıcında yazın; invariant'lar için, invariant'ın geçerli olması gereken yerde bir assertion yazın; postcondition'lar için her `return` ifadesinden önce veya fonksiyonun sonunda bir assertion yazın.
 
 Pawn'da, bu talimat assert olarak adlandırılır; bu, bir test içeren basit bir ifadedir. Test sonucu "true" ise, hiçbir şey olmaz. Sonuç "false" ise, assert talimatı programı, başarısız olan assertion'ın ayrıntılarını içeren bir mesajla sonlandırır.
 
@@ -1657,7 +1657,7 @@ daysinmonth(month, year)
 
 | name       | info                                                                                                                                                                                                                        |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| attribute  | Bir işlevin "native" veya "stock" gibi öznitelikleri.                                                                                                                                                                       |
+| attribute  | Bir işlevin `native` veya `stock` gibi öznitelikleri.                                                                                                                                                                       |
 | automaton  | İşlemin ait olduğu otomat.                                                                                                                                                                                                  |
 | dependency | İşlemin gerektirdiği sembollerin (diğer işlevler, genel değişkenler ve/genel sabitler) adları. İstenirse, bağımlılıklardan bir çağ ağacı oluşturulabilir.                                                                   |
 | param      | İşlev parametreleri. Bir belgelendirme açıklamasında bir parametre açıklaması eklediğinizde, bu açıklama parametre için otomatik oluşturulan içerikle birleştirilir.                                                        |

@@ -49,7 +49,7 @@ A client's version can be up to 24 characters long, otherwise the connection wil
 
 :::warning
 
-The string the version gets stored in will be empty if playerid is an NPC.
+The string the version gets stored in will be empty if `playerid` is an NPC.
 
 :::
 

@@ -21,7 +21,7 @@ Get the ID of the vehicle the player is looking at.
 
 ## ส่งคืน
 
-The vehicle ID of the vehicle the player is looking at. INVALID_VEHICLE_ID if none.
+The vehicle ID of the vehicle the player is looking at. `INVALID_VEHICLE_ID` if none.
 
 ## ตัวอย่าง
 
@@ -68,7 +68,7 @@ This function can (obviously) only return one vehicle ID at a time, while the pl
 
 :::warning
 
-This function is disabled by default to save bandwidth. Use EnablePlayerCameraTarget to enable it for each player.
+This function is disabled by default to save bandwidth. Use `EnablePlayerCameraTarget` to enable it for each player.
 
 :::
 

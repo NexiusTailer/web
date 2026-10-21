@@ -50,4 +50,4 @@ This only works outside the map boundaries (past -3000/3000 units on the x and/o
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerObjectNoCameraCol: Disables collisions between camera and player object.
+- `SetPlayerObjectNoCameraCol`: Disables collisions between camera and player object.

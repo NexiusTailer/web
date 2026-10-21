@@ -12,15 +12,15 @@ Do ponto de vista do desenvolvedor de servidor, ter "estados do jogador" e "aç�
 
 ## Estados
 
-| ID | Macro | Descrição |
-| --- | ------------------------------------ | ---------------------------------------------------------------------------------- |
-| 0 | PLAYER_STATE_NONE | O estado padrão do jogador usado durante a inicialização |
-| 1 | PLAYER_STATE_ONFOOT | O jogador está a pé |
-| 2 | PLAYER_STATE_DRIVER | O jogador está dirigindo um veículo |
-| 3 | PLAYER_STATE_PASSENGER | O jogador está em um veículo como passageiro |
-| 4 | PLAYER_STATE_EXIT_VEHICLE | O jogador está saindo de um veículo. É usado principalmente internamente |
-| 5 | PLAYER_STATE_ENTER_VEHICLE_DRIVER | O jogador está entrando em um veículo como motorista. É usado principalmente internamente |
-| 6 | PLAYER_STATE_ENTER_VEHICLE_PASSENGER | O jogador está entrando em um veículo como passageiro. É usado principalmente internamente |
-| 7 | PLAYER_STATE_WASTED | O jogador está morto ou em seleção de classe |
-| 8 | PLAYER_STATE_SPAWNED | O jogador acabou de ser gerado |
-| 9 | PLAYER_STATE_SPECTATING | O jogador está em modo espectador |
+| ID  | Macro                                  | Descrição                                                                                  |
+| --- | -------------------------------------- | ------------------------------------------------------------------------------------------ |
+| 0   | `PLAYER_STATE_NONE`                    | O estado padrão do jogador usado durante a inicialização                                   |
+| 1   | `PLAYER_STATE_ONFOOT`                  | O jogador está a pé                                                                        |
+| 2   | `PLAYER_STATE_DRIVER`                  | O jogador está dirigindo um veículo                                                        |
+| 3   | `PLAYER_STATE_PASSENGER`               | O jogador está em um veículo como passageiro                                               |
+| 4   | `PLAYER_STATE_EXIT_VEHICLE`            | O jogador está saindo de um veículo. É usado principalmente internamente                   |
+| 5   | `PLAYER_STATE_ENTER_VEHICLE_DRIVER`    | O jogador está entrando em um veículo como motorista. É usado principalmente internamente  |
+| 6   | `PLAYER_STATE_ENTER_VEHICLE_PASSENGER` | O jogador está entrando em um veículo como passageiro. É usado principalmente internamente |
+| 7   | `PLAYER_STATE_WASTED`                  | O jogador está morto ou em seleção de classe                                               |
+| 8   | `PLAYER_STATE_SPAWNED`                 | O jogador acabou de ser gerado                                                             |
+| 9   | `PLAYER_STATE_SPECTATING`              | O jogador está em modo espectador                                                          |

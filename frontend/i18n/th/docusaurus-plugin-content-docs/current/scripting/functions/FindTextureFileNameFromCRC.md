@@ -13,7 +13,7 @@ This function was added in SA-MP 0.3.DL R1 and will not work in earlier versions
 
 ## คำอธิบาย
 
-Find an existing custom skin or simple object texture file. The model files are located in `models` server folder by default (artpath setting).
+Find an existing custom skin or simple object texture file. The model files are located in `models` server folder by default (`artpath` setting).
 
 | Name        | Description                                                               |
 | ----------- | ------------------------------------------------------------------------- |

@@ -45,8 +45,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 仅在 NPC 正在播放节点时有效
-- 暂停的节点导航可以通过 NPC_ResumePlayingNode 恢复
-- 使用 NPC_IsPlayingNodePaused 检查暂停状态
+- 暂停的节点导航可以通过 `NPC_ResumePlayingNode` 恢复
+- 使用 `NPC_IsPlayingNodePaused` 检查暂停状态
 
 ## 相关函数
 

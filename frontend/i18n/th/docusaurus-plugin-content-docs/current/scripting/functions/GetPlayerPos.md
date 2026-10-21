@@ -43,13 +43,13 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::warning
 
-This function is known to return unreliable values when used in OnPlayerDisconnect and OnPlayerRequestClass. This is because the player is not spawned.
+This function is known to return unreliable values when used in `OnPlayerDisconnect` and `OnPlayerRequestClass`. This is because the player is not spawned.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerPos: Set a player's position.
-- GetVehiclePos: Get the position of a vehicle.
-- IsPlayerInRangeOfPoint: Check whether a player is in range of a point.
-- GetPlayerDistanceFromPoint: Get the distance between a player and a point.
+- `SetPlayerPos`: Set a player's position.
+- `GetVehiclePos`: Get the position of a vehicle.
+- `IsPlayerInRangeOfPoint`: Check whether a player is in range of a point.
+- `GetPlayerDistanceFromPoint`: Get the distance between a player and a point.

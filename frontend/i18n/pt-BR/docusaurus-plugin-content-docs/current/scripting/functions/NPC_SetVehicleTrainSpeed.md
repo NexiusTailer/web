@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Funciona apenas com veículos ferroviários (modelos 537, 538)
-- Use NPC_GetVehicleTrainSpeed para verificar a velocidade atual
+- Use `NPC_GetVehicleTrainSpeed` para verificar a velocidade atual
 - Definir a velocidade para 0 para o trem
 
 ## Funções Relacionadas

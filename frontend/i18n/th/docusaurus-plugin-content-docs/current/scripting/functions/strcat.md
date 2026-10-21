@@ -30,12 +30,12 @@ strcat(string, " World!");
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- strcmp: Compare two strings to check if they are the same.
-- strfind: Search for a string in another string.
+- `strcmp`: Compare two strings to check if they are the same.
+- `strfind`: Search for a string in another string.
 - strtok: Get the next 'token' (word/parameter) in a string.
-- strdel: Delete part of a string.
-- strins: Insert text into a string.
-- strlen: Get the length of a string.
-- strmid: Extract part of a string into another string.
-- strpack: Pack a string into a destination string.
-- strval: Convert a string into an integer.
+- `strdel`: Delete part of a string.
+- `strins`: Insert text into a string.
+- `strlen`: Get the length of a string.
+- `strmid`: Extract part of a string into another string.
+- `strpack`: Pack a string into a destination string.
+- `strval`: Convert a string into an integer.

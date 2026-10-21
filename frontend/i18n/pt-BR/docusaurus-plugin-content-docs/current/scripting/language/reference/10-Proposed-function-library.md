@@ -13,96 +13,96 @@ O módulo "core" consiste em um conjunto de funções que suportam a
 linguagem em si. Várias das funções são necessárias para extrair argumentos de uma
 lista de argumentos variáveis (veja página 80).
 
-| clamp       |                                                                                                            | Força um valor dentro de um intervalo |
-| ----------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------: |
-| Sintaxe     | clamp(valor, min=cellmin, max=cellmax)                                                                     |                                       |
-|             | valor                                                                                                      |      O valor a forçar em um intervalo |
-|             | min                                                                                                        |       O limite inferior do intervalo. |
-|             | max                                                                                                        |       O limite superior do intervalo. |
-| Retorna     | valor se estiver no intervalo min – max; min se valor for menor que min; e max se valor for maior que max. |                                       |
-| Veja também | max, min                                                                                                   |                                       |
+| clamp       |                                                                                                                        | Força um valor dentro de um intervalo |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------: |
+| Sintaxe     | `clamp(valor, min=cellmin, max=cellmax)`                                                                               |                                       |
+|             | valor                                                                                                                  |      O valor a forçar em um intervalo |
+|             | `min`                                                                                                                  |       O limite inferior do intervalo. |
+|             | `max`                                                                                                                  |       O limite superior do intervalo. |
+| Retorna     | valor se estiver no intervalo `min` – `max`; `min` se valor for menor que `min`; e `max` se valor for maior que `max`. |                                       |
+| Veja também | `max`, `min`                                                                                                           |                                       |
 
 | funcidx |                                                                                                                                                                                                                                                    | Retorna um índice de função pública |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------: |
 | Sintaxe | funcidx(const nome[])                                                                                                                                                                                                                              |                                     |
-| Retorna | O índice da função pública nomeada. Se nenhuma função pública com o nome dado existir, funcidx retorna −1.                                                                                                                                         |                                     |
+| Retorna | O índice da função pública nomeada. Se nenhuma função pública com o nome dado existir, `funcidx` retorna −1.                                                                                                                                       |                                     |
 | Notas:  | Um aplicativo host executa uma função pública do script passando o índice da função pública para amx_Exec. Com esta função, o script pode consultar o índice de uma função pública e assim retornar a "próxima função a chamar" para o aplicativo. |                                     |
 
 | getarg      |                                                                                                                                                                                                     |                                         Obtém um argumento |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------: |
-| Sintaxe     | getarg(arg, index=0)                                                                                                                                                                                |                                                            |
+| Sintaxe     | `getarg(arg, index=0)`                                                                                                                                                                              |                                                            |
 |             | arg                                                                                                                                                                                                 | O número de sequência do argumento, use 0 para o primeiro. |
 |             | index                                                                                                                                                                                               |                   O índice, caso arg se refira a um array. |
 | Retorna     | O valor do argumento                                                                                                                                                                                |                                                            |
 | Notas:      | Esta função recupera um argumento de uma lista de argumentos variáveis. Quando o argumento é um array, o parâmetro index especifica o índice no array. O valor de retorno é o argumento recuperado. |                                                            |
-| Veja também | numargs, setarg                                                                                                                                                                                     |                                                            |
+| Veja também | `numargs`, `setarg`                                                                                                                                                                                 |                                                            |
 
 | heapspace |                                                                                                                                                                               | Retorna espaço livre no heap |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------: |
-| Sintaxe   | heapspace()                                                                                                                                                                   |                              |
+| Sintaxe   | `heapspace()`                                                                                                                                                                 |                              |
 | Retorna   | O espaço livre no heap. A pilha e o heap ocupam uma área de memória compartilhada, então este valor indica o número de bytes restantes tanto para a pilha quanto para o heap. |                              |
 | Notas:    | Na ausência de recursão, o parser pawn também pode dar uma estimativa do espaço de pilha/heap necessário.                                                                     |                              |
 
 | max         |                                  |                  Retorna o maior de dois números |
 | ----------- | -------------------------------- | -----------------------------------------------: |
-| Sintaxe     | max(valor1, valor2)              |                                                  |
+| Sintaxe     | `max(valor1, valor2)`            |                                                  |
 |             | valor1                           |                                                  |
 |             | valor2                           | Os dois valores para os quais encontrar o maior. |
 | Retorna     | O maior valor de valor1 e valor2 |                                                  |
-| Veja também | clamp, min                       |                                                  |
+| Veja também | `clamp`, `min`                   |                                                  |
 
 | min         |                                  |                  Retorna o menor de dois números |
 | ----------- | -------------------------------- | -----------------------------------------------: |
-| Sintaxe     | min(valor1, valor2)              |                                                  |
+| Sintaxe     | `min(valor1, valor2)`            |                                                  |
 |             | valor1                           |                                                  |
 |             | valor2                           | Os dois valores para os quais encontrar o menor. |
 | Retorna     | O menor valor de valor1 e valor2 |                                                  |
-| Veja também | clamp, max                       |                                                  |
+| Veja também | `clamp`, `max`                   |                                                  |
 
-| numargs     |                                                                                                                         | Retorna o número de argumentos |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- | -----------------------------: |
-| Sintaxe     | numargs()                                                                                                               |                                |
-| Retorna     | O número de argumentos passados para uma função; numargs é útil dentro de funções com uma lista de argumentos variáveis |                                |
-| Veja também | getarg, setarg                                                                                                          |                                |
+| numargs     |                                                                                                                           | Retorna o número de argumentos |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------- | -----------------------------: |
+| Sintaxe     | `numargs()`                                                                                                               |                                |
+| Retorna     | O número de argumentos passados para uma função; `numargs` é útil dentro de funções com uma lista de argumentos variáveis |                                |
+| Veja também | `getarg`, `setarg`                                                                                                        |                                |
 
 | random  |                                                                                                                                                                                                                                                                                                                                                                          | Retorna um número pseudo-aleatório |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------: |
-| Sintaxe | random(max)                                                                                                                                                                                                                                                                                                                                                              |                                    |
-|         | max                                                                                                                                                                                                                                                                                                                                                                      |   O limite para o número aleatório |
+| Sintaxe | `random(max)`                                                                                                                                                                                                                                                                                                                                                            |                                    |
+|         | `max`                                                                                                                                                                                                                                                                                                                                                                    |   O limite para o número aleatório |
 | Retorna | Um número pseudo-aleatório no intervalo 0 - max-1                                                                                                                                                                                                                                                                                                                        |                                    |
 | Notas:  | O gerador de números aleatórios padrão do pawn é provavelmente um gerador de números pseudo-aleatórios congruente linear com um intervalo e um período de 2³¹. Geradores de números pseudo-aleatórios congruentes lineares sofrem de correlação serial (especialmente nos bits baixos) e é inadequado para aplicações que requerem números aleatórios de alta qualidade. |                                    |
 
 | setarg      |                                                                                                                                                                 |                                                           |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------: |
-| Sintaxe     | setarg(arg, index=0, valor)                                                                                                                                     |                                                           |
+| Sintaxe     | `setarg(arg, index=0, valor)`                                                                                                                                   |                                                           |
 |             | arg                                                                                                                                                             | O número de sequência do argumento, use 0 para o primeiro |
 |             | index                                                                                                                                                           |                   O índice, caso arg se refira a um array |
 |             | valor                                                                                                                                                           |                          O valor para definir o argumento |
 | Retorna     | true em caso de sucesso e false se o argumento ou o índice forem inválidos                                                                                      |                                                           |
 | Notas:      | Esta função define o valor de um argumento de uma lista de argumentos variáveis. Quando o argumento é um array, o parâmetro index especifica o índice no array. |                                                           |
-| Veja também | getarg, numargs                                                                                                                                                 |                                                           |
+| Veja também | `getarg`, `numargs`                                                                                                                                             |                                                           |
 
 | swapchars |                                                                                                    |           Troca bytes em uma célula |
 | --------- | -------------------------------------------------------------------------------------------------- | ----------------------------------: |
-| Sintaxe   | swapchars(c)                                                                                       |                                     |
+| Sintaxe   | `swapchars(c)`                                                                                     |                                     |
 |           | c                                                                                                  | O valor para o qual trocar os bytes |
-| Retorna   | Um valor onde os bytes no parâmetro "c" são trocados (o byte mais baixo se torna o byte mais alto) |                                     |
+| Retorna   | Um valor onde os bytes no parâmetro `c` são trocados (o byte mais baixo se torna o byte mais alto) |                                     |
 
 | tolower     |                                                                                                                                                      |    Converte um caractere para minúscula |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
-| Sintaxe     | tolower(c)                                                                                                                                           |                                         |
+| Sintaxe     | `tolower(c)`                                                                                                                                         |                                         |
 |             | c                                                                                                                                                    | O caractere a converter para minúscula. |
-| Retorna     | A variante maiúscula do caractere de entrada, se existir, ou o código de caractere inalterado de "c" se a letra "c" não tiver equivalente minúsculo. |                                         |
+| Retorna     | A variante maiúscula do caractere de entrada, se existir, ou o código de caractere inalterado de `c` se a letra `c` não tiver equivalente minúsculo. |                                         |
 | Notas:      | O suporte para caracteres acentuados é dependente da plataforma                                                                                      |                                         |
-| Veja também | toupper                                                                                                                                              |                                         |
+| Veja também | `toupper`                                                                                                                                            |                                         |
 
 | toupper     |                                                                                                                                                      |    Converte um caractere para maiúscula |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
-| Sintaxe     | toupper(c)                                                                                                                                           |                                         |
+| Sintaxe     | `toupper(c)`                                                                                                                                         |                                         |
 |             | c                                                                                                                                                    | O caractere a converter para maiúscula. |
-| Retorna     | A variante minúscula do caractere de entrada, se existir, ou o código de caractere inalterado de "c" se a letra "c" não tiver equivalente maiúsculo. |                                         |
+| Retorna     | A variante minúscula do caractere de entrada, se existir, ou o código de caractere inalterado de `c` se a letra `c` não tiver equivalente maiúsculo. |                                         |
 | Notas:      | O suporte para caracteres acentuados é dependente da plataforma                                                                                      |                                         |
-| Veja também | tolower                                                                                                                                              |                                         |
+| Veja também | `tolower`                                                                                                                                            |                                         |
 
 ---
 
@@ -111,7 +111,7 @@ mantêm uma lista desses pares nome/valor que é compartilhada entre todas as m�
 A lista de propriedades é, portanto, uma forma para máquinas abstratas concorrentes
 trocarem informações.
 
-Todas as funções de "manutenção de propriedades" têm um parâmetro "id" opcional.
+Todas as funções de "manutenção de propriedades" têm um parâmetro `id` opcional.
 Você pode usar este parâmetro para indicar a qual máquina abstrata a propriedade pertence.
 (Um aplicativo host que suporta máquinas abstratas concorrentes normalmente
 fornecerá a cada máquina abstrata um id único.) Ao consultar (ou excluir)
@@ -124,9 +124,9 @@ de um objeto) a um nome de sua escolha. A interface baseada em valor permite
 anexar uma string a um número. A diferença entre as duas é basicamente a
 chave de busca versus o parâmetro de saída.
 
-Todas as funções de manutenção de propriedades têm um parâmetro "nome" e um "valor".
-Apenas um deste par deve ser preenchido. Quando você fornece o valor, a função getproperty
-armazena o resultado no argumento string e a função setproperty
+Todas as funções de manutenção de propriedades têm um parâmetro `nome` e um `valor`.
+Apenas um deste par deve ser preenchido. Quando você fornece o valor, a função `getproperty`
+armazena o resultado no argumento string e a função `setproperty`
 lê a string a armazenar do argumento string.
 
 O número de propriedades que você pode adicionar é limitado apenas pela memória disponível.
@@ -159,14 +159,14 @@ convenientes. Nem todos os tipos de terminal e implementações podem implementa
 funções — especialmente as funções que limpam a tela, definem cores de primeiro plano e
 fundo e controlam a posição do cursor, requerem um controle de terminal estendido.
 
-**getchar(echo=true)**
+**`getchar(echo=true)`**
 
     Lê um caractere do teclado e o retorna. A função pode
     opcionalmente ecoar o caractere na janela do console.
 
 **getstring(string[], size=sizeof string, bool**
 
-    pack=false): Lê uma string do teclado. A função getstring
+    pack=false): Lê uma string do teclado. A função `getstring`
     para de ler quando a tecla enter é digitada ou o comprimento
     máximo é alcançado. O comprimento máximo é em células (não caracteres)
     e inclui um caractere nul de terminação. A função pode ler
@@ -177,7 +177,7 @@ fundo e controlam a posição do cursor, requerem um controle de terminal estend
 
 **getvalue(base=10, end=' r', ...)**
 
-    Lê um valor (um número com sinal) do teclado. A função getvalue
+    Lê um valor (um número com sinal) do teclado. A função `getvalue`
     permite que você leia em uma base numérica de 2 a 36 (o parâmetro
     base) com base decimal por padrão.
 
@@ -191,7 +191,7 @@ fundo e controlam a posição do cursor, requerem um controle de terminal estend
 
     Imprime uma string simples no console. As cores de primeiro plano e fundo
     podem ser opcionalmente definidas (mas note que um terminal ou um aplicativo
-    host pode não suportar cores). Veja setattr abaixo para uma lista de
+    host pode não suportar cores). Veja `setattr` abaixo para uma lista de
     cores.
 
 **printf(const format[], ...)**
@@ -219,24 +219,24 @@ fundo e controlam a posição do cursor, requerem um controle de terminal estend
 
     %x   imprime um número nesta posição em base hexadecimal
 
-    A função printf funciona de forma similar à função printf da linguagem C.
+    A função `printf` funciona de forma similar à função `printf` da linguagem C.
 
-**clrscr()**
+**`clrscr()`**
 
     Limpa o console e define o cursor no canto superior esquerdo.
 
-**clreol()**
+**`clreol()`**
 
     Limpa a linha onde o cursor está, da posição do cursor
     até a margem direita do console. Esta função não move o
     cursor.
 
-**gotoxy(x=1, y=1)**
+**`gotoxy(x=1, y=1)`**
 
     Define a posição do cursor no console.
     O canto superior esquerdo está em (1,1).
 
-**setattr(foreground=-1, background=-1)**
+**`setattr(foreground=-1, background=-1)`**
 
     Define as cores de primeiro plano e fundo para o texto escrito no
     console. Quando um dos dois parâmetros é negativo (ou ausente), a

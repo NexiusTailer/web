@@ -11,7 +11,7 @@ tags: []
 
 | نام    | توضیحات                                                                                                    |
 | ------ | ---------------------------------------------------------------------------------------------------------- |
-| killer | ID قاتل (می‌تونه INVALID_PLAYER_ID باشه).                                                                  |
+| killer | ID قاتل (می‌تونه `INVALID_PLAYER_ID` باشه).                                                                |
 | killee | ID بازیکنی که مرده.                                                                                        |
 | weapon | دلیل (همیشه اسلحه نیست) مرگ قربانی. آیکون‌های خاص هم می‌تونن استفاده بشن (ICON_CONNECT و ICON_DISCONNECT). |
 
@@ -19,11 +19,11 @@ tags: []
 
 این تابع همیشه **true** برمی‌گردونه، حتی اگر تابع اجرا نشه.
 
-تابع اجرا نمی‌شه (هیچ death message نمایش داده نمی‌شه) اگر 'playerid' معتبر نباشه.
+تابع اجرا نمی‌شه (هیچ death message نمایش داده نمی‌شه) اگر `playerid` معتبر نباشه.
 
 اگر 'reason' معتبر نباشه، یه آیکون کلی جمجمه و استخون متقابل نمایش داده می‌شه.
 
-'killerid' که معتبر نباشه (`INVALID_PLAYER_ID`) معتبر هست.
+`killerid` که معتبر نباشه (`INVALID_PLAYER_ID`) معتبر هست.
 
 ## مثال‌ها
 
@@ -39,7 +39,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- Death message ها می‌تونن با استفاده از یه player ID معتبر برای 'playerid' که **متصل نیست** پاک بشن.
+- Death message ها می‌تونن با استفاده از یه player ID معتبر برای `playerid` که **متصل نیست** پاک بشن.
 - برای نمایش death message فقط برای یک بازیکن، از [SendDeathMessageToPlayer](SendDeathMessageToPlayer) استفاده کن.
 - می‌تونی از NPC ها برای ایجاد death reason های سفارشی خودت استفاده کنی.
 

@@ -9,11 +9,11 @@ tags: ["player"]
 
 Cette callback est appelée quand le joueur est mort. Il peut s'agir aussi bien d'une mort par kill qu'une mort par suicide.
 
-| Nom                 | Description                                                        |
-| ------------------- | ------------------------------------------------------------------ |
-| `int` playerid      | ID du joueur mort                                                  |
-| `int` killerid      | ID du joueur qui kill le `playerid`, ou INVALID_PLAYER_ID à défaut |
-| `int` WEAPON:reason | ID de la raison de la mort                                         |
+| Nom                 | Description                                                          |
+| ------------------- | -------------------------------------------------------------------- |
+| `int` playerid      | ID du joueur mort                                                    |
+| `int` killerid      | ID du joueur qui kill le `playerid`, ou `INVALID_PLAYER_ID` à défaut |
+| `int` WEAPON:reason | ID de la raison de la mort                                           |
 
 ## Valeur de retour
 
@@ -47,14 +47,14 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 - Les morts à raison d'une source de feu seront caractérisées par l'ID 37 (lance-flammes) ;
 - La raison pour les explosions avec une arme (RPG, grenade, ...) sera caractérisée par l'ID 51.
-- Vous n'avez pas besoin de vérifier si `killerid` vaut `INVALID_PLAYER_ID` avant d'utiliser SendDeathMessage. `INVALID_PLAYER_ID` est un ID de tueur valide et s'affichera correctement.
+- Vous n'avez pas besoin de vérifier si `killerid` vaut `INVALID_PLAYER_ID` avant d'utiliser `SendDeathMessage`. `INVALID_PLAYER_ID` est un ID de tueur valide et s'affichera correctement.
 - `playerid` est le seul à pouvoir appeler cette callback _(bon à savoir pour un anti fake death par exemple)_.
 
 :::
 
 :::warning
 
-Vous DEVEZ vérifier que `killerid` est valide (pas `INVALID_PLAYER_ID`) avant de l'utiliser dans un array _(n'importe où en réalité)_, sinon le script OnPlayerDeath est susceptible de crash. C'est parce que `INVALID_PLAYER_ID` est défini comme ayant la valeur '65535' que si un array a seulement `MAX_PLAYERS` comme élément le script OnPlayerDeath va crash _(vous tentez d'indexer au-delà de la limite `MAX_PLAYERS`)_.
+Vous DEVEZ vérifier que `killerid` est valide (pas `INVALID_PLAYER_ID`) avant de l'utiliser dans un array _(n'importe où en réalité)_, sinon le script `OnPlayerDeath` est susceptible de crash. C'est parce que `INVALID_PLAYER_ID` est défini comme ayant la valeur '65535' que si un array a seulement `MAX_PLAYERS` comme élément le script `OnPlayerDeath` va crash _(vous tentez d'indexer au-delà de la limite `MAX_PLAYERS`)_.
 
 :::
 

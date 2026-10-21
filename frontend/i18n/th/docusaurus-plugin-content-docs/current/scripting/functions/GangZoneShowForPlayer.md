@@ -7,12 +7,12 @@ tags: ["player", "gangzone"]
 
 ## คำอธิบาย
 
-Show a gangzone for a player. Must be created with GangZoneCreate first.
+Show a gangzone for a player. Must be created with `GangZoneCreate` first.
 
 | Name     | Description                                                                                                   |
 | -------- | ------------------------------------------------------------------------------------------------------------- |
 | playerid | The ID of the player you would like to show the gangzone for..                                                |
-| zone     | The ID of the gang zone to show for the player. Returned by GangZoneCreate                                    |
+| zone     | The ID of the gang zone to show for the player. Returned by `GangZoneCreate`                                  |
 | color    | The color to show the gang zone, as an integer or hex in **RGBA** color format. Alpha transparency supported. |
 
 ## ส่งคืน

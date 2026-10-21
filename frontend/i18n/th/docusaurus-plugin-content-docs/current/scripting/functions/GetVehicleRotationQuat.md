@@ -41,5 +41,5 @@ This function may return incorrect values for unoccupied vehicles. The reason is
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetVehicleZAngle: Check the current angle of a vehicle.
-- GetVehicleRotation: Get the rotation of a vehicle on the XYZ axis.
+- `GetVehicleZAngle`: Check the current angle of a vehicle.
+- `GetVehicleRotation`: Get the rotation of a vehicle on the XYZ axis.

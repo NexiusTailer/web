@@ -47,18 +47,18 @@ if (!strcmp(string1, string2) && !isnull(string1) && !isnull(string2))
 
 :::warning
 
-If you compare strings from a text file, you should take in to account the 'carriage return' and 'new line' special characters (\r \n), as they are included, when using fread.
+If you compare strings from a text file, you should take in to account the 'carriage return' and 'new line' special characters (\r \n), as they are included, when using `fread`.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- strfind: Search for a string in another string.
+- `strfind`: Search for a string in another string.
 - strtok: Get the next 'token' (word/parameter) in a string.
-- strdel: Delete part of a string.
-- strins: Insert text into a string.
-- strlen: Get the length of a string.
-- strmid: Extract part of a string into another string.
-- strpack: Pack a string into a destination string.
-- strval: Convert a string into an integer.
-- strcat: Concatenate two strings into a destination reference.
+- `strdel`: Delete part of a string.
+- `strins`: Insert text into a string.
+- `strlen`: Get the length of a string.
+- `strmid`: Extract part of a string into another string.
+- `strpack`: Pack a string into a destination string.
+- `strval`: Convert a string into an integer.
+- `strcat`: Concatenate two strings into a destination reference.

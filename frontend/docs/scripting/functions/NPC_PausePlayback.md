@@ -47,8 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Only works when NPC is actively playing a recording
-- Paused playback can be resumed by calling with pause = false
-- Use NPC_IsPlaybackPaused to check current pause state
+- Paused playback can be resumed by calling with `pause` = false
+- Use `NPC_IsPlaybackPaused` to check current pause state
 
 ## Related Functions
 

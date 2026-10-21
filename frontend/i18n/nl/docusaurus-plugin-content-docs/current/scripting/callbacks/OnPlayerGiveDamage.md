@@ -9,13 +9,13 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler schade toebrengt aan een andere speler.
 
-| Naam            | Beschrijving                                                      |
-| --------------- | ----------------------------------------------------------------- |
-| playerid        | Het ID van de speler die schade toebracht.                        |
-| damagedid       | Het ID van de speler die schade ontving.                          |
-| Float:amount    | De hoeveelheid health/armor die damagedid verloor (gecombineerd). |
-| WEAPON:weaponid | De reden/het wapen dat de schade veroorzaakte.                    |
-| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat geraakt werd.      |
+| Naam            | Beschrijving                                                        |
+| --------------- | ------------------------------------------------------------------- |
+| playerid        | Het ID van de speler die schade toebracht.                          |
+| damagedid       | Het ID van de speler die schade ontving.                            |
+| Float:amount    | De hoeveelheid health/armor die `damagedid` verloor (gecombineerd). |
+| WEAPON:weaponid | De reden/het wapen dat de schade veroorzaakte.                      |
+| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat geraakt werd.        |
 
 ## Returns
 
@@ -47,10 +47,10 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 :::note
 
 - Houd er rekening mee dat deze functie in sommige gevallen onnauwkeurig kan zijn.
-- weaponid is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
-- weaponid is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).
-- **playerid** is de enige die de callback kan aanroepen.
-- amount is altijd de maximale schade die weaponid kan doen, zelfs als er minder health over is. Bijv. Desert Eagle met 46.2 schade: 3 schoten tonen 46.2, ook al is de laatste effectief lager.
+- `weaponid` is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
+- `weaponid` is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).
+- `playerid` is de enige die de callback kan aanroepen.
+- `amount` is altijd de maximale schade die `weaponid` kan doen, zelfs als er minder health over is. Bijv. Desert Eagle met 46.2 schade: 3 schoten tonen 46.2, ook al is de laatste effectief lager.
 
 :::
 

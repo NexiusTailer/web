@@ -75,7 +75,7 @@ description: Server configuration file.
 | logqueries     | bool   | 0             | No        | No   | Toggles if all queries sent to the server by players should be logged. Set to **1** to enable or **0** to disable. It is considerably useful during a DDoS attack.                                                                                                                                                                                                                                                                              |
 | chatlogging    | int\*  | 1             | No        | No   | Toggles if player chat should be shown in the server console. Useful to stop the log from becoming bloated, or if you have another scripted chat logging solution. Set to 1 to enable or 0 to disable.                                                                                                                                                                                                                                          |
 | db_logging     | int\*  | 0             | No        | No   | Logs sqlite db\_\* function errors in the server console.<br /><br />**NOTE:** This server var was added in 0.3.7 R2 and will have no effect in previous versions.                                                                                                                                                                                                                                                                              |
-| db_log_queries | int\*  | 0             | No        | No   | Logs all sqlite db_query calls, including the query string.<br /><br />**NOTE:** This server var was added in 0.3.7 R2 and will have no effect in previous versions.                                                                                                                                                                                                                                                                            |
+| db_log_queries | int\*  | 0             | No        | No   | Logs all sqlite `db_query` calls, including the query string.<br /><br />**NOTE:** This server var was added in 0.3.7 R2 and will have no effect in previous versions.                                                                                                                                                                                                                                                                          |
 
 > [*] Some settings are a different type than you might think.
 
@@ -89,7 +89,7 @@ description: Server configuration file.
 | stream_distance\* | float | 200.0         | No        | No   | The distance on the X,Y plane players will stream in server entities. The maximum is **400.0** and the minimum is **50.0**. Higher values makes players see server entities at a greater distance, but requires more client processing and potentially more bandwidth.   |
 | stream_rate\*     | int   | 1000          | No        | No   | The time in milliseconds before the streaming in of server entities is retested for each player. The maximum is **5000** and the minimum is **500**. Lower values increases server processing as it has to recheck streaming conditions more frequently for each player. |
 
-> [*] Lower values of onfoot_rate, incar_rate and weapon_rate increases sync performance, but uses more bandwidth.
+> [*] Lower values of `onfoot_rate`, `incar_rate` and `weapon_rate` increases sync performance, but uses more bandwidth.
 
 ## NPCs
 
@@ -102,14 +102,14 @@ description: Server configuration file.
 | Setting     | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                        |
 | ----------- | ------ | ------------- | --------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lagcompmode | int    | 1             | Yes       | No   | 0: Fully disable lag compensation.<br /><br />1: Fully enable lag compensation.<br /><br />2: Enable position-only lag compensation. This means player rotation won't be lag compensated for. |
-| lagcomp     | string | On            | Yes       | Yes  | Probably set automatically to **On** or **Off** depending on the **lagcompmode** setting.                                                                                                     |
+| lagcomp     | string | On            | Yes       | Yes  | Probably set automatically to **On** or **Off** depending on the `lagcompmode` setting.                                                                                                       |
 
 ## Custom models
 
 | Setting    | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                                                                                |
 | ---------- | ------ | ------------- | --------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | useartwork | bool   | 0             | Yes       | No   | Toggles if the server uses custom models from the _models_ folder. Set to **1** to enable or **0** to disable.<br /><br />**NOTE:** This server var was added in 0.3.DL and will have no effect in previous versions. |
-| artwork    | string | No            | Yes       | Yes  | Probably set automatically to **No** or **Yes** depending on the **useartwork** setting.<br /><br />**NOTE:** This server var was added in 0.3.DL and will have no effect in previous versions.                       |
+| artwork    | string | No            | Yes       | Yes  | Probably set automatically to **No** or **Yes** depending on the `useartwork` setting.<br /><br />**NOTE:** This server var was added in 0.3.DL and will have no effect in previous versions.                         |
 | artpath    | string | models        | Yes       | No   | The path where the custom models are located.<br /><br />**NOTE:** This server var was added in 0.3.DL and will have no effect in previous versions.                                                                  |
 
 ## Others
@@ -121,7 +121,7 @@ description: Server configuration file.
 
 ## Notes
 
-- Values marked as "Read-only" (as shown by `/rcon varlist`) can not be changed during runtime. All other values can be (temporarily) changed by passing them to SendRconCommand.
+- Values marked as "Read-only" (as shown by `/rcon varlist`) can not be changed during runtime. All other values can be (temporarily) changed by passing them to `SendRconCommand`.
 - Values marked as "Rule" (as shown by `/rcon varlist`) are displayed in the server browser in the Rules section.
 - Scripts do not have to be in the _gamemodes_ or _filterscripts_ folders. The information in server.cfg is a path, and can therefore use "..".
 

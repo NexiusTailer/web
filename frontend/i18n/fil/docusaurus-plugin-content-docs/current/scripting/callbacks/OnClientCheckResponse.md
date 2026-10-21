@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Tinatawag ang callback na ito kapag nakumpleto ang request sa SendClientCheck
+Tinatawag ang callback na ito kapag nakumpleto ang request sa `SendClientCheck`
 
 | Name     | Description                        |
 | -------- | ---------------------------------- |

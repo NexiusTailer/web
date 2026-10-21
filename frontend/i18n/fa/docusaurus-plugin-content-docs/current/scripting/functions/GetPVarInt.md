@@ -41,7 +41,7 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-متغیرها تا بعد از فراخوانی [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) ریست نمی‌شن، پس تو OnPlayerDisconnect هنوز قابل دسترسین.
+متغیرها تا بعد از فراخوانی [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) ریست نمی‌شن، پس تو `OnPlayerDisconnect` هنوز قابل دسترسین.
 
 :::
 

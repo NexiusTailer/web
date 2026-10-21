@@ -40,5 +40,5 @@ The default virtual world is **0**.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerVirtualWorld: Check what virtual world a player is in.
-- SetVehicleVirtualWorld: Set the virtual world of a vehicle.
+- `GetPlayerVirtualWorld`: Check what virtual world a player is in.
+- `SetVehicleVirtualWorld`: Set the virtual world of a vehicle.

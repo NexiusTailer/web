@@ -11,7 +11,7 @@ Stilove rezanja kamere koriste nativi kao npr [SetPlayerCameraLookAt](../functio
 
 ## Stilovi Rezanja
 
-| ID  | Stil        | Deskripcija                                                             |
-| --- | ----------- | ----------------------------------------------------------------------- |
-| 1   | CAMERA_MOVE | The camera position and/or target will move to its new value over time. |
-| 2   | CAMERA_CUT  | The camera position and/or target will move to its new value instantly. |
+| ID  | Stil          | Deskripcija                                                             |
+| --- | ------------- | ----------------------------------------------------------------------- |
+| 1   | `CAMERA_MOVE` | The camera position and/or target will move to its new value over time. |
+| 2   | `CAMERA_CUT`  | The camera position and/or target will move to its new value instantly. |

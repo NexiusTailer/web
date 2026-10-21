@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ova funkcija se može koristiti za promijeniti spawn informacije određenog igrača. Ona omogućava da automatski postaviš nekome spawn oružje, njihov tim, skin ili spawn poziciju, normalno se koristi u slučaju miniigara ili automatskih spawn sistema. Ova funkcija je sigurnija od crasha u odnosu na SetPlayerSkin u OnPlayerSpawn i/ili OnPlayerRequestClass, iako je ovo ispravljeno u 0.2.
+Ova funkcija se može koristiti za promijeniti spawn informacije određenog igrača. Ona omogućava da automatski postaviš nekome spawn oružje, njihov tim, skin ili spawn poziciju, normalno se koristi u slučaju miniigara ili automatskih spawn sistema. Ova funkcija je sigurnija od crasha u odnosu na `SetPlayerSkin` u `OnPlayerSpawn` i/ili `OnPlayerRequestClass`, iako je ovo ispravljeno u 0.2.
 
 | Ime            | Deskripcija                                               |
 | -------------- | --------------------------------------------------------- |

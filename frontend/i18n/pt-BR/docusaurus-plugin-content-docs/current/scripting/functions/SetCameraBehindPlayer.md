@@ -8,7 +8,7 @@ tags: ["player", "camera"]
 
 ## Descrição
 
-Restaure a câmera para um local atrás do jogador, após usar uma função como SetPlayerCameraPos.
+Restaure a câmera para um local atrás do jogador, após usar uma função como `SetPlayerCameraPos`.
 
 | Nome | Descrição |
 | -------- | ---------------------------------------------- |

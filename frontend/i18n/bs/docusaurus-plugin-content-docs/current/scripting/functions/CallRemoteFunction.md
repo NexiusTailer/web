@@ -37,7 +37,7 @@ CallRemoteFunction("CallMe", "is", 69, "this is a string");
 
 :::warning
 
-CallRemoteFunction ruši server ako prosljeđuje prazan string.
+`CallRemoteFunction` ruši server ako prosljeđuje prazan string.
 
 :::
 

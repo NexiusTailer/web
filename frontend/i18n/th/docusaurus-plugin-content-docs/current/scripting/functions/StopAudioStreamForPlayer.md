@@ -39,5 +39,5 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- PlayAudioStreamForPlayer: Plays a audio stream for a player.
-- PlayerPlaySound: Play a sound for a player.
+- `PlayAudioStreamForPlayer`: Plays a audio stream for a player.
+- `PlayerPlaySound`: Play a sound for a player.

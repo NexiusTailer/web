@@ -17,7 +17,7 @@ This function was deprecated.
 
 ## Description
 
-Displays a formatted message in chat to all players. This is a multi-player equivalent of SendClientMessage.
+Displays a formatted message in chat to all players. This is a multi-player equivalent of `SendClientMessage`.
 
 | Name              | Description                                       |
 | ----------------- | ------------------------------------------------- |

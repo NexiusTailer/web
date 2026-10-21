@@ -47,7 +47,7 @@ Upotrijebite [PlayerTextDrawTextSize](PlayerTextDrawTextSize) da definirate podr
 
 :::warning
 
-PlayerTextDrawSetSelectable MORA SE koristiti PRIJE nego što se textdraw prikaže igraču.
+`PlayerTextDrawSetSelectable` MORA SE koristiti PRIJE nego što se textdraw prikaže igraču.
 
 :::
 

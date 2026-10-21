@@ -67,8 +67,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - The recording file must exist in the `npcmodes\recordings` directory
-- If autoUnload is true, the recording is unloaded when playback ends
-- Use NPC_StartPlaybackEx for better control with pre-loaded recordings
+- If `autoUnload` is true, the recording is unloaded when playback ends
+- Use `NPC_StartPlaybackEx` for better control with pre-loaded recordings
 
 ## Related Functions
 

@@ -8,7 +8,7 @@ tags: ["math", "floating-point"]
 
 ## Descrição
 
-floatcmp pode ser usado para comparar valores flutuantes entre si, para validar a comparação.
+`floatcmp` pode ser usado para comparar valores flutuantes entre si, para validar a comparação.
 
 | Nome | Descrição |
 | ----------- | ---------------------------------- |

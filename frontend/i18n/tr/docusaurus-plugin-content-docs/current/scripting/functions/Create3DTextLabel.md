@@ -22,7 +22,7 @@ tags: ["3dtextlabel"]
 
 ## Çalışınca Vereceği Sonuçlar
 
-Yeni oluşturulan 3D Metin Etiketinin ID'si, veya 3D Metin Etiketinin limitine (MAX_3DTEXT_GLOBAL) ulaşıldığında INVALID_3DTEXT_ID.
+Yeni oluşturulan 3D Metin Etiketinin ID'si, veya 3D Metin Etiketinin limitine (`MAX_3DTEXT_GLOBAL`) ulaşıldığında `INVALID_3DTEXT_ID`.
 
 ## Örnekler
 
@@ -50,7 +50,7 @@ Metinde birden çok renk için renk katıştırmayı kullanın.
 
 :::warning
 
-Eğer metin alanı (text[]) boşsa sunucuyu çökertebilir! Sanal dünya değeri -1 olarak ayarlanmışsa metin görünmeyecektir.
+Eğer metin alanı (`text[]`) boşsa sunucuyu çökertebilir! Sanal dünya değeri -1 olarak ayarlanmışsa metin görünmeyecektir.
 
 :::
 

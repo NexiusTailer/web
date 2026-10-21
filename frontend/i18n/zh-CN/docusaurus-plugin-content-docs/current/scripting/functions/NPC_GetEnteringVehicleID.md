@@ -17,7 +17,7 @@ tags: ["npc", "车辆"]
 
 ## 返回值
 
-返回 NPC 正在进入的车辆 ID，若未进入任何车辆则返回 INVALID_VEHICLE_ID。
+返回 NPC 正在进入的车辆 ID，若未进入任何车辆则返回 `INVALID_VEHICLE_ID`。
 
 ## 示例
 
@@ -84,7 +84,7 @@ public CheckNPCEnteringVehicle(playerid)
 
 ## 注意事项
 
-- 此函数与 NPC_GetEnteringVehicle 类似
+- 此函数与 `NPC_GetEnteringVehicle` 类似
 - 若 NPC 未在进入车辆的过程中，则返回 `INVALID_VEHICLE_ID`
 - 一旦 NPC 成功进入车辆，该值变为 0
 

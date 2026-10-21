@@ -14,10 +14,10 @@ Mostra um dialog (janela) asíncrono (um único por vez).
 | playerid  | ID do jogador que irá ver o dialog                                                                                             |
 | dialogid  | ID do dialog (será usado para processar as respostas). ID máximo 32767. Usar valores negativos fechará qualquer dialog aberto. |
 | style     | The [style](../resources/dialogstyles) of the dialog.                                                                          |
-| caption[] | Título mostrado no topo do dialog. O tamanho do caption não deve ultrapassar 64 caracteres, ou será cortado.                   |
+| caption[] | Título mostrado no topo do dialog. O tamanho do `caption` não deve ultrapassar 64 caracteres, ou será cortado.                 |
 | info[]    | Texto que será mostrado no corpo do dialog. Use \n para iniciar uma nova linha e \t para espaço (TAB).                         |
 | button1[] | Texto do botão esquerdo.                                                                                                       |
-| button2[] | Texto do botão direito. Manter vazio, caso queira ocultar o button2.                                                           |
+| button2[] | Texto do botão direito. Manter vazio, caso queira ocultar o `button2`.                                                         |
 
 ## Retorno
 
@@ -67,7 +67,7 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 :::tip
 
 - É recomendado usar enumerações (enums - veja abaixo) ou constantes (#define) para determinar quais dialogid's estão sendo usados, para evitar confusões no futuro. Você nunca deve usar números direto, porque isso gera confusões.
-- Use cores embutidas para múltiplas cores no texto. Usando **-1** como _dialogid_ fecha todos os dialogs abertos na tela do cliente (jogador).
+- Use cores embutidas para múltiplas cores no texto. Usando **-1** como `dialogid` fecha todos os dialogs abertos na tela do cliente (jogador).
 
 :::
 

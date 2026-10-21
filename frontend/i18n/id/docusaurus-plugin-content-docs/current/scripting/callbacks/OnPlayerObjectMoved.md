@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripsi
 
-Callback ini dipanggil ketika objek pemain dipindahkan setelah MovePlayerObject (ketika berhenti bergerak).
+Callback ini dipanggil ketika objek pemain dipindahkan setelah `MovePlayerObject` (ketika berhenti bergerak).
 
 | Nama     | Deskripsi                        |
 | -------- | -------------------------------- |

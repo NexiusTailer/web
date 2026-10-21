@@ -9,10 +9,10 @@ tags: []
 
 Round a floating point number to an integer value.
 
-| Name   | Description                   |
-| ------ | ----------------------------- |
-| value  | The value to round.           |
-| method | The floatround method to use. |
+| Name   | Description                     |
+| ------ | ------------------------------- |
+| value  | The value to round.             |
+| method | The `floatround` method to use. |
 
 ## ส่งคืน
 

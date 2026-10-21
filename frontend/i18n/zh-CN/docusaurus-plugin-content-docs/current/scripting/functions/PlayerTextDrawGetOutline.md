@@ -48,7 +48,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): 设置玩家文本绘图对齐方式
 - [PlayerTextDrawFont](PlayerTextDrawFont): 设置玩家文本绘图的字体
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): 设置玩家文本绘图字符尺寸
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): 设置玩家文本绘图文本尺寸（或 PlayerTextDrawSetSelectable 的可点击区域）
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): 设置玩家文本绘图文本尺寸（或 `PlayerTextDrawSetSelectable` 的可点击区域）
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): 按比例缩放玩家文本绘图的字符间距
 - [PlayerTextDrawUseBox](PlayerTextDrawUseBox): 切换玩家文本绘图的方框显示
 - [PlayerTextDrawSetString](PlayerTextDrawSetString): 设置玩家文本绘图的文本内容

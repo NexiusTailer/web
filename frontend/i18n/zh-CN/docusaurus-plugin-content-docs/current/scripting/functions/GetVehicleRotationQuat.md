@@ -41,7 +41,7 @@ GetVehicleRotationQuat(vehicleid, w, x, y, z);
 
 :::note
 
-此函数没有对应的设置方法（只能通过 SetVehicleZAngle 设置 Z 轴角度）
+此函数没有对应的设置方法（只能通过 `SetVehicleZAngle` 设置 Z 轴角度）
 
 :::
 

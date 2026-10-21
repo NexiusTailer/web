@@ -10,14 +10,14 @@ These codes compliment ordinary [HTTP](../functions/HTTP) response codes returne
 
 :::
 
-| Code | Error                         | Description                                                                                                                                                                                                                  |
-| ---- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1    | HTTP_ERROR_BAD_HOST           | Indicates that the URL used in an HTTP request is invalid or cannot be resolved by the DNS server.                                                                                                                           |
-| 2    | HTTP_ERROR_NO_SOCKET          | Indicates that there was a failure in establishing a network socket connection when making an HTTP request.                                                                                                                  |
-| 3    | HTTP_ERROR_CANT_CONNECT       | Indicates that the client is unable to establish a connection to the server when making an HTTP request. This error can occur due to various reasons, including network connectivity issues or unavailability of the server. |
-| 4    | HTTP_ERROR_CANT_WRITE         | Indicates that there was a failure in writing data during an HTTP request. This error can occur for various reasons related to the client, server, or network.                                                               |
-| 5    | HTTP_ERROR_CONTENT_TOO_BIG    | Indicates that the size of the content being sent in the HTTP request exceeds the maximum limit allowed by the server or the server's configuration.                                                                         |
-| 6    | HTTP_ERROR_MALFORMED_RESPONSE | Indicates that the HTTP response received from the server is in an unexpected or invalid format. This error suggests that the response does not comply with the HTTP protocol standards.                                     |
+| Code | Error                           | Description                                                                                                                                                                                                                  |
+| ---- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | `HTTP_ERROR_BAD_HOST`           | Indicates that the URL used in an HTTP request is invalid or cannot be resolved by the DNS server.                                                                                                                           |
+| 2    | `HTTP_ERROR_NO_SOCKET`          | Indicates that there was a failure in establishing a network socket connection when making an HTTP request.                                                                                                                  |
+| 3    | `HTTP_ERROR_CANT_CONNECT`       | Indicates that the client is unable to establish a connection to the server when making an HTTP request. This error can occur due to various reasons, including network connectivity issues or unavailability of the server. |
+| 4    | `HTTP_ERROR_CANT_WRITE`         | Indicates that there was a failure in writing data during an HTTP request. This error can occur for various reasons related to the client, server, or network.                                                               |
+| 5    | `HTTP_ERROR_CONTENT_TOO_BIG`    | Indicates that the size of the content being sent in the HTTP request exceeds the maximum limit allowed by the server or the server's configuration.                                                                         |
+| 6    | `HTTP_ERROR_MALFORMED_RESPONSE` | Indicates that the HTTP response received from the server is in an unexpected or invalid format. This error suggests that the response does not comply with the HTTP protocol standards.                                     |
 
 ## Some Common HTTP Error Response Codes
 

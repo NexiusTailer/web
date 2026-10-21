@@ -7,7 +7,7 @@ tags: ["time"]
 
 ## Description
 
-Get the current server time, which will be stored in the variables &hour, &minute and &second.
+Get the current server time, which will be stored in the variables `&hour`, `&minute` and `&second`.
 
 | Name      | Description                                                |
 | --------- | ---------------------------------------------------------- |

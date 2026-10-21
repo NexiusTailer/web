@@ -57,6 +57,6 @@ The returned hash has zero padding (i.e. possible prefix 00ABCD123...).
 
 :::warning
 
-This function is not binary-safe. Using binary values on password and salt might give unexpected result.
+This function is not binary-safe. Using binary values on `password` and `salt` might give unexpected result.
 
 :::

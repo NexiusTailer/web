@@ -42,7 +42,7 @@ public OnGameModeInit()
 
 :::warning
 
-必须在文本绘图显示给玩家前调用 TextDrawSetSelectable 才能生效。
+必须在文本绘图显示给玩家前调用 `TextDrawSetSelectable` 才能生效。
 
 :::
 

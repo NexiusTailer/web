@@ -11,9 +11,9 @@ Veja também: [Sistema de variáveis de servidor](../../tutorials/servervariable
 
 :::
 
-| ID  | Definition            |
-| --- | --------------------- |
-| 0   | SERVER_VARTYPE_NONE   |
-| 1   | SERVER_VARTYPE_INT    |
-| 2   | SERVER_VARTYPE_STRING |
-| 3   | SERVER_VARTYPE_FLOAT  |
+| ID  | Definition              |
+| --- | ----------------------- |
+| 0   | `SERVER_VARTYPE_NONE`   |
+| 1   | `SERVER_VARTYPE_INT`    |
+| 2   | `SERVER_VARTYPE_STRING` |
+| 3   | `SERVER_VARTYPE_FLOAT`  |

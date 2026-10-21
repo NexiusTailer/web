@@ -55,14 +55,14 @@ stock const CopyRightString[] = "(c) Copyright 2004 by me"
 
 These constant declarations have the advantage of better error checking and
 the ability to create tagged constants. The syntax for a string  
-constant is an array variable that is declared both “const” and “stock”. The  
+constant is an array variable that is declared both `const` and `stock`. The  
 const attribute prohibits any change to the string and the stock attribute makes
 the declaration “disappear” if it is never referred to.
 
 Substitution macros can take up to 10 parameters. A typical use for parame-
 terized macros is to simulate tiny functions:
 
-Listing: the “min” macro
+Listing: the `min` macro
 
 ```c
 
@@ -75,7 +75,7 @@ and the whole substitution expression in parentheses.
 
 If you use the above macro in a script in the following way:
 
-Listing: bad usage of the “min” macro
+Listing: bad usage of the `min` macro
 
 ```c
 
@@ -93,7 +93,7 @@ new min = ((++a) < (b) ? (++a) : (b))
 
 ```
 
-which causes “a” to possibly be incremented twice. This is one of the traps
+which causes `a` to possibly be incremented twice. This is one of the traps
 that you can trip into when using substitution macros (this particular problem
 is well known to C/C++ programmers). Therefore, it may be a good idea to
 use a naming convention to distinguish macros from functions. In C/C⁺⁺ it is
@@ -119,11 +119,11 @@ new b = ceil_div(8, a - 2)
 
 ```
 
-the second line expands to “new b = (8 + a - 2 - 1) / a - 2”,
-which, considering the precedence levels of the pawn operators, leads to “b”  
-being set to zero (if “a” is 5). What you would have expected from looking at the
-macro invocation is eight divided by three (“a - 2”), rounded upwards —
-hence, that “b” would be set to the value 3. Changing the macro to enclose
+the second line expands to `new b = (8 + a - 2 - 1) / a - 2`,
+which, considering the precedence levels of the pawn operators, leads to `b`  
+being set to zero (if `a` is 5). What you would have expected from looking at the
+macro invocation is eight divided by three (`a - 2`), rounded upwards —
+hence, that `b` would be set to the value 3. Changing the macro to enclose
 each parameter in parentheses solves the problem. For similar reasons, it is
 also advised to enclose the complete replacement text in parentheses. Below
 is the ceil_div macro modified accordingly:
@@ -157,8 +157,8 @@ new c = a(8)
 
 ```
 
-will evaluate to “new c = (1+(2\*(8)))”, even though the macro “b” was not
-defined at the time of the definition of “a”.
+will evaluate to “new c = (1+(2\*(8)))”, even though the macro `b` was not
+defined at the time of the definition of `a`.
 
 The pattern matching is constrained to the following rules:
 
@@ -170,7 +170,7 @@ The pattern matching is constrained to the following rules:
 
 - The pattern must start with a letter, an underscore, or an “@” character The first part of the pattern that consists of alphanumeric characters (plus the “\_” and/“@”) is the “name” or the “prefix” of the macro. On the defined operator and the #undef directive, you specify the macro prefix.
 
-- When matching a pattern, the preprocessor ignores white space between nonalphanumeric symbols and white space between an alphanumeric symbol and a non-alphanumeric one, with one exception: between two identical symbols, white space is not ignored. Therefore: `the pattern abc(+-) matches “abc ( + - )” the pattern abc(--) matches “abc ( -- )”` but does not match `“abc(- -)”`
+- When matching a pattern, the preprocessor ignores white space between nonalphanumeric symbols and white space between an alphanumeric symbol and a non-alphanumeric one, with one exception: between two identical symbols, white space is not ignored. Therefore: the pattern `abc(+-)` matches `abc ( + - )` the pattern `abc(--)` matches `abc ( -- )` but does not match `abc(- -)`
 
 - There are up to 10 parameters, denoted with a “%” and a single digit (1 to 9 and 0). The order of the parameters in a pattern is not important.
 

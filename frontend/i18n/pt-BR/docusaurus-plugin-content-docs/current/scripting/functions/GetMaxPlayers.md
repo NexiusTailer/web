@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-Retorna o número máximo de jogadores que podem entrar no servidor, conforme definido pela variável 'max_players' no config.json.
+Retorna o número máximo de jogadores que podem entrar no servidor, conforme definido pela variável `max_players` no config.json.
 
 ## Exemplos
 
@@ -21,11 +21,11 @@ SendClientMessage(playerid, 0xFFFFFFFF, str);
 
 :::warning
 
-Esta função não pode ser usada no lugar de MAX_PLAYERS. Não pode ser usado durante a compilação (por exemplo, para tamanhos de arrays). MAX_PLAYERS deve ser sempre redefinido ao valor que a variável 'max_players' será ou superior. Veja MAX_PLAYERS para mais informações.
+Esta função não pode ser usada no lugar de `MAX_PLAYERS`. Não pode ser usado durante a compilação (por exemplo, para tamanhos de arrays). `MAX_PLAYERS` deve ser sempre redefinido ao valor que a variável `max_players` será ou superior. Veja `MAX_PLAYERS` para mais informações.
 
 :::
 
 ## Funções Relacionadas
 
-- [GetPlayerPoolSize](GetPlayerPoolSize): Obtém o playerid mais alto conectado ao servidor.
+- [GetPlayerPoolSize](GetPlayerPoolSize): Obtém o `playerid` mais alto conectado ao servidor.
 - [IsPlayerConnected](IsPlayerConnected): Verifica se um jogador está conectado ao servidor.

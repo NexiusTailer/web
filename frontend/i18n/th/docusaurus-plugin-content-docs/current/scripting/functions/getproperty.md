@@ -18,7 +18,7 @@ Get a specific property from the memory, the string is returned as a packed stri
 
 ## ส่งคืน
 
-The value of a property when the name is passed in; fills in the string argument when the value is passed in. If the property does not exist, this function returns zero.
+The value of a property when the `name` is passed in; fills in the `string` argument when the `value` is passed in. If the property does not exist, this function returns zero.
 
 ## ตัวอย่าง
 
@@ -34,6 +34,6 @@ print(value);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- setproperty: Set a property.
-- deleteproperty: Delete a property.
-- existproperty: Check if a property exists.
+- `setproperty`: Set a property.
+- `deleteproperty`: Delete a property.
+- `existproperty`: Check if a property exists.

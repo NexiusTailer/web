@@ -131,7 +131,7 @@ io_append    Appends (adds) to file, write-only. If the file does not exist, it 
 
 :::warning
 
-If you use io_read and the file doesn't exist, it will return a _NULL_ reference. Using **invalid references** on file functions will **crash** your server!
+If you use io_read and the file doesn't exist, it will return a `NULL` reference. Using **invalid references** on file functions will **crash** your server!
 
 :::
 

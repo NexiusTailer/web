@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descriere
 
-OnPlayerClickMap este apelat atunci când un jucător plasează o țintă/un punct de referință pe harta meniului de pauză (făcând clic dreapta).
+`OnPlayerClickMap` este apelat atunci când un jucător plasează o țintă/un punct de referință pe harta meniului de pauză (făcând clic dreapta).
 
 | Nume     | Descriere                                                                     |
 | -------- | ----------------------------------------------------------------------------- |

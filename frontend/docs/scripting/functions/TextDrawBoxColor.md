@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Description
 
-Adjusts the text box colour (only used if TextDrawUseBox 'use' parameter is 'true').
+Adjusts the text box colour (only used if `TextDrawUseBox` 'use' parameter is 'true').
 
 | Name        | Description                                                                                                                                                                    |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

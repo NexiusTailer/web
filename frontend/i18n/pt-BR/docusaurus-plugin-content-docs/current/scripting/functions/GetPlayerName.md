@@ -9,11 +9,11 @@ tags: ["player"]
 
 Obtém o nome de um jogador.
 
-| Nome     | Descrição                                                                                                                                                              |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador do qual deseja obter o nome.                                                                                                                           |
-| name[]   | A array para armazenar o nome, passado por referência.                                                                                                                 |
-| len      | O comprimento da string que deve ser armazenada. Recomendado que seja MAX_PLAYER_NAME + 1. O + 1 é necessário parar levar em conta o caractere nulo (null terminator). |
+| Nome     | Descrição                                                                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| playerid | O ID do jogador do qual deseja obter o nome.                                                                                                                             |
+| name[]   | A array para armazenar o nome, passado por referência.                                                                                                                   |
+| len      | O comprimento da string que deve ser armazenada. Recomendado que seja `MAX_PLAYER_NAME` + 1. O + 1 é necessário parar levar em conta o caractere nulo (null terminator). |
 
 ## Retorno
 
@@ -41,7 +41,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-O nome do jogador pode ter até 24 caracteres (a partir da 0.3d R2) usando SetPlayerName. Isso é definido na a_samp.inc em MAX_PLAYER_NAME. Porém, no client só pode entrar com um nickname entre 3 e 20 caracteres, caso contrário a conexão será rejeitada e o jogador terá que sair e escolher um nome válido.
+O nome do jogador pode ter até 24 caracteres (a partir da 0.3d R2) usando `SetPlayerName`. Isso é definido na a_samp.inc em `MAX_PLAYER_NAME`. Porém, no client só pode entrar com um nickname entre 3 e 20 caracteres, caso contrário a conexão será rejeitada e o jogador terá que sair e escolher um nome válido.
 
 :::
 

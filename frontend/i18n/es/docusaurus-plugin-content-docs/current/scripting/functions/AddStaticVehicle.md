@@ -21,9 +21,9 @@ Añade un vehículo 'estático' (los modelos están pre-cargados para los jugado
 
 ## Devoluciones
 
-El ID del vehículo creado (entre 1 y MAX_VEHICLES).
+El ID del vehículo creado (entre 1 y `MAX_VEHICLES`).
 
-INVALID_VEHICLE_ID (65535) si el vehículo no fue creado (se alcanzó el límite de vehículos o se pasó un ID de modelo de vehículo no válido).
+`INVALID_VEHICLE_ID` (65535) si el vehículo no fue creado (se alcanzó el límite de vehículos o se pasó un ID de modelo de vehículo no válido).
 
 ## Ejemplos
 

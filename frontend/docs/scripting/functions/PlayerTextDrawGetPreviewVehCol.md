@@ -11,12 +11,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the preview vehicle colors of a 3D preview player-textdraw.
 
-| Name              | Description                                                      |
-| ----------------- | ---------------------------------------------------------------- |
-| playerid          | The ID of the player.                                            |
-| PlayerText:textid | The ID of the player-textdraw to get the vehicle colors of.      |
-| &colour1          | A variable into which to store the colour1, passed by reference. |
-| &colour2          | A variable into which to store the colour2, passed by reference. |
+| Name              | Description                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| playerid          | The ID of the player.                                              |
+| PlayerText:textid | The ID of the player-textdraw to get the vehicle colors of.        |
+| &colour1          | A variable into which to store the `colour1`, passed by reference. |
+| &colour2          | A variable into which to store the `colour2`, passed by reference. |
 
 ## Examples
 

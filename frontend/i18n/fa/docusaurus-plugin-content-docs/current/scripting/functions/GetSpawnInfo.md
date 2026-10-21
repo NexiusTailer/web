@@ -20,12 +20,12 @@ tags: ["player"]
 | &Float:spawnY   | متغیر Float برای ذخیره مختصات Y که به صورت reference پاس داده می‌شه.     |
 | &Float:spawnZ   | متغیر Float برای ذخیره مختصات Z که به صورت reference پاس داده می‌شه.     |
 | &Float:angle    | متغیر Float برای ذخیره زاویه facing که به صورت reference پاس داده می‌شه. |
-| &WEAPON:weapon1 | متغیری برای ذخیره weapon1 که به صورت reference پاس داده می‌شه.           |
-| &ammo1          | متغیری برای ذخیره ammo1 که به صورت reference پاس داده می‌شه.             |
-| &WEAPON:weapon2 | متغیری برای ذخیره weapon2 که به صورت reference پاس داده می‌شه.           |
-| &ammo2          | متغیری برای ذخیره ammo2 که به صورت reference پاس داده می‌شه.             |
-| &WEAPON:weapon3 | متغیری برای ذخیره weapon3 که به صورت reference پاس داده می‌شه.           |
-| &ammo3          | متغیری برای ذخیره ammo3 که به صورت reference پاس داده می‌شه.             |
+| &WEAPON:weapon1 | متغیری برای ذخیره `weapon1` که به صورت reference پاس داده می‌شه.         |
+| &ammo1          | متغیری برای ذخیره `ammo1` که به صورت reference پاس داده می‌شه.           |
+| &WEAPON:weapon2 | متغیری برای ذخیره `weapon2` که به صورت reference پاس داده می‌شه.         |
+| &ammo2          | متغیری برای ذخیره `ammo2` که به صورت reference پاس داده می‌شه.           |
+| &WEAPON:weapon3 | متغیری برای ذخیره `weapon3` که به صورت reference پاس داده می‌شه.         |
+| &ammo3          | متغیری برای ذخیره `ammo3` که به صورت reference پاس داده می‌شه.           |
 
 ## مقادیر برگشتی
 

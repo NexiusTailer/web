@@ -8,7 +8,7 @@ tags: ["textdraw"]
 
 ## Descrição
 
-Parece dimensionar o espaçamento do texto para uma proporção proporcional. Útil ao usar TextDrawLetterSize para garantir que o texto tenha espaçamento uniforme entre caracteres.
+Parece dimensionar o espaçamento do texto para uma proporção proporcional. Útil ao usar `TextDrawLetterSize` para garantir que o texto tenha espaçamento uniforme entre caracteres.
 
 | Nome | Descrição |
 | ----------------- | ----------------------------------------------------- |

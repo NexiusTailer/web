@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Armour value ranges from 0.0 (no armour) to 100.0 (full armour)
 - Armour absorbs damage before health is affected
-- Use NPC_GetArmour to check current armour level
+- Use `NPC_GetArmour` to check current armour level
 
 ## Related Functions
 

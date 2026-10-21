@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Sends a message in the name of a player to another player on the server. The message will appear in the chat box but can only be seen by the user specified with 'playerid'. The line will start with the sender's name in their color, followed by the message in white.
+Sends a message in the name of a player to another player on the server. The message will appear in the chat box but can only be seen by the user specified with `playerid`. The line will start with the sender's name in their color, followed by the message in white.
 
 | Name            | Description                                                |
 | --------------- | ---------------------------------------------------------- |
@@ -46,7 +46,7 @@ Avoid using format specifiers in your messages without formatting the string tha
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SendPlayerMessageToAll: Force a player to send text for all players.
-- SendClientMessage: Send a message to a certain player.
-- SendClientMessageToAll: Send a message to all players.
-- OnPlayerText: Called when a player sends a message via the chat.
+- `SendPlayerMessageToAll`: Force a player to send text for all players.
+- `SendClientMessage`: Send a message to a certain player.
+- `SendClientMessageToAll`: Send a message to all players.
+- `OnPlayerText`: Called when a player sends a message via the chat.

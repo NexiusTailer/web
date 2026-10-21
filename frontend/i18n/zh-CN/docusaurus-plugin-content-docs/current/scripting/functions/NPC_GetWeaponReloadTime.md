@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 返回当前自定义换弹时间设置
-- 使用 NPC_GetWeaponActualReloadTime 获取默认游戏换弹时间
+- 使用 `NPC_GetWeaponActualReloadTime` 获取默认游戏换弹时间
 - 换弹时间影响 NPC 换弹所需的时间
 
 ## 相关函数

@@ -22,7 +22,7 @@ This function does not return any specific values.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPVarType: Get the type of the player variable.
-- GetPVarInt: Get the previously set integer from a player variable.
-- GetPVarFloat: Get the previously set float from a player variable.
-- GetPVarString: Get the previously set string from a player variable.
+- `GetPVarType`: Get the type of the player variable.
+- `GetPVarInt`: Get the previously set integer from a player variable.
+- `GetPVarFloat`: Get the previously set float from a player variable.
+- `GetPVarString`: Get the previously set string from a player variable.

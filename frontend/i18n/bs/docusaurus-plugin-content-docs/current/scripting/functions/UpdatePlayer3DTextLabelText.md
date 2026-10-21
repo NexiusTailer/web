@@ -24,7 +24,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 :::warning
 
-Ako je text[] prazan, server/client-i pored texta će možda crashovati.
+Ako je `text[]` prazan, server/client-i pored texta će možda crashovati.
 
 :::
 

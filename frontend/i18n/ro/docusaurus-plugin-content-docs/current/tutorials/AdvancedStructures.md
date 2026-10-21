@@ -48,7 +48,7 @@ MyFunction()
 }
 ```
 
-Evident, ați înlocui expresia „gMyArray[i]” cu propria dvs. indicație a unui slot în uz.
+Evident, ați înlocui expresia `gMyArray[i]` cu propria dvs. indicație a unui slot în uz.
 
 ### Lista
 

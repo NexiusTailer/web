@@ -6,7 +6,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Este callback se llama **solo** cuando el vehículo **re**aparece! CreateVehicle y AddStaticVehicle(Ex) **no van** a desencadenar este callback.
+Este callback se llama **solo** cuando el vehículo **re**aparece! `CreateVehicle` y `AddStaticVehicle(Ex)` **no van** a desencadenar este callback.
 
 :::
 
@@ -38,14 +38,14 @@ public OnVehicleSpawn(vehicleid)
 
 ## Callbacks Relacionados
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnVehicleSpawn:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnVehicleSpawn`:
 
 - [OnVehicleDeath](OnVehicleDeath): Llamado cuando un vehiculo muere.
 - [OnPlayerSpawn](OnPlayerSpawn): Llamado cuando un jugador aparece.
 
 ## Funciones Relacionadas
 
-Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnVehicleSpawn:
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con `OnVehicleSpawn`:
 
 - [SetVehicleToRespawn](../functions/SetVehicleToRespawn): Reaparecer un vehículo.
 - [CreateVehicle](../functions/CreateVehicle): Crear un vehículo.

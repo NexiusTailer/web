@@ -11,14 +11,14 @@ Esses códigos complementam os códigos de resposta comuns [HTTP](../functions/H
 
 :::
 
-| Code | Erro | Descrição |
-| ---- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1 | HTTP_ERROR_BAD_HOST | Indica que o URL usado em uma solicitação HTTP é inválido ou não pode ser resolvido pelo servidor DNS.                                                                                                                           |
-| 2 | HTTP_ERROR_NO_SOCKET | Indica que houve uma falha no estabelecimento de uma conexão de soquete de rede ao fazer uma solicitação HTTP.                                                                                                                  |
-| 3 | HTTP_ERROR_CANT_CONNECT | Indica que o cliente não consegue estabelecer uma conexão com o servidor ao fazer uma solicitação HTTP. Este erro pode ocorrer por vários motivos, incluindo problemas de conectividade de rede ou indisponibilidade do servidor. |
-| 4 | HTTP_ERROR_CANT_WRITE | Indica que houve falha na gravação de dados durante uma solicitação HTTP. Este erro pode ocorrer por vários motivos relacionados ao cliente, servidor ou rede.                                                               |
-| 5 | HTTP_ERROR_CONTENT_TOO_BIG | Indica que o tamanho do conteúdo enviado na solicitação HTTP excede o limite máximo permitido pelo servidor ou pela configuração do servidor.                                                                         |
-| 6 | HTTP_ERROR_MALFORMED_RESPONSE | Indica que a resposta HTTP recebida do servidor está em um formato inesperado ou inválido. Este erro sugere que a resposta não está em conformidade com os padrões do protocolo HTTP.                                     |
+| Code | Erro                            | Descrição                                                                                                                                                                                                                         |
+| ---- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | `HTTP_ERROR_BAD_HOST`           | Indica que o URL usado em uma solicitação HTTP é inválido ou não pode ser resolvido pelo servidor DNS.                                                                                                                            |
+| 2    | `HTTP_ERROR_NO_SOCKET`          | Indica que houve uma falha no estabelecimento de uma conexão de soquete de rede ao fazer uma solicitação HTTP.                                                                                                                    |
+| 3    | `HTTP_ERROR_CANT_CONNECT`       | Indica que o cliente não consegue estabelecer uma conexão com o servidor ao fazer uma solicitação HTTP. Este erro pode ocorrer por vários motivos, incluindo problemas de conectividade de rede ou indisponibilidade do servidor. |
+| 4    | `HTTP_ERROR_CANT_WRITE`         | Indica que houve falha na gravação de dados durante uma solicitação HTTP. Este erro pode ocorrer por vários motivos relacionados ao cliente, servidor ou rede.                                                                    |
+| 5    | `HTTP_ERROR_CONTENT_TOO_BIG`    | Indica que o tamanho do conteúdo enviado na solicitação HTTP excede o limite máximo permitido pelo servidor ou pela configuração do servidor.                                                                                     |
+| 6    | `HTTP_ERROR_MALFORMED_RESPONSE` | Indica que a resposta HTTP recebida do servidor está em um formato inesperado ou inválido. Este erro sugere que a resposta não está em conformidade com os padrões do protocolo HTTP.                                             |
 
 ## Alguns códigos de resposta de erro comuns HTTP
 

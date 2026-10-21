@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Use SPECIAL_ACTION_NONE para limpar a ação atual
+- Use `SPECIAL_ACTION_NONE` para limpar a ação atual
 - Algumas ações podem entrar em conflito com o movimento ou outras atividades
 
 ## Funções Relacionadas

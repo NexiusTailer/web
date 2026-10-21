@@ -10,9 +10,9 @@ Essas definições são usadas pela callback [OnPlayerRequestDownload](../callba
 
 :::
 
-| ID  | Definição                     |
-| --- | ----------------------------- |
-| -1  | UNKNOWN_DOWNLOAD_REQUEST      |
-| 0   | DOWNLOAD_REQUEST_EMPTY        |
-| 1   | DOWNLOAD_REQUEST_MODEL_FILE   |
-| 2   | DOWNLOAD_REQUEST_TEXTURE_FILE |
+| ID  | Definição                       |
+| --- | ------------------------------- |
+| -1  | `UNKNOWN_DOWNLOAD_REQUEST`      |
+| 0   | `DOWNLOAD_REQUEST_EMPTY`        |
+| 1   | `DOWNLOAD_REQUEST_MODEL_FILE`   |
+| 2   | `DOWNLOAD_REQUEST_TEXTURE_FILE` |

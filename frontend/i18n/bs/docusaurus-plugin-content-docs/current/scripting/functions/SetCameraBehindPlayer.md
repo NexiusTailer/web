@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Vratite kameru na mjesto iza igrača nakon upotrebe funkcije poput SetPlayerCameraPos.
+Vratite kameru na mjesto iza igrača nakon upotrebe funkcije poput `SetPlayerCameraPos`.
 
 | Ime      | Deskripcija                                            |
 | -------- | ------------------------------------------------------ |

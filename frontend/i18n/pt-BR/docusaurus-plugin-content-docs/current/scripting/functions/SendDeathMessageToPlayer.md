@@ -13,7 +13,7 @@ Adiciona uma morte ao 'killfeed' no lado direito da tela para um único jogador.
 | Nome     | Descrição                                                                                                                     |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | playerid | O ID do jogador para o qual enviar a mensagem de morte.                                                                       |
-| killer   | O ID do assassino (pode ser INVALID_PLAYER_ID).                                                                               |
+| killer   | O ID do assassino (pode ser `INVALID_PLAYER_ID`).                                                                             |
 | killee   | O ID do jogador que morreu.                                                                                                   |
 | weapon   | O motivo (nem sempre uma arma) da morte da vítima. Ícones especiais também podem ser usados (ICON_CONNECT e ICON_DISCONNECT). |
 

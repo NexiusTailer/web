@@ -50,8 +50,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetVehicleRotationQuat: Get the quaternion rotation of a vehicle.
-- GetVehicleRotation: Get the rotation of a vehicle on the XYZ axis.
-- SetVehicleZAngle: Set the direction of a vehicle.
-- GetVehiclePos: Get the position of a vehicle.
-- GetPlayerFacingAngle: Check where a player is facing.
+- `GetVehicleRotationQuat`: Get the quaternion rotation of a vehicle.
+- `GetVehicleRotation`: Get the rotation of a vehicle on the XYZ axis.
+- `SetVehicleZAngle`: Set the direction of a vehicle.
+- `GetVehiclePos`: Get the position of a vehicle.
+- `GetPlayerFacingAngle`: Check where a player is facing.

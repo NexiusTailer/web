@@ -40,6 +40,6 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerWeapon: Check what weapon a player is currently holding.
-- AllowInteriorWeapons: Determine if weapons can be used in interiors.
-- GivePlayerWeapon: Give a player a weapon.
+- `GetPlayerWeapon`: Check what weapon a player is currently holding.
+- `AllowInteriorWeapons`: Determine if weapons can be used in interiors.
+- `GivePlayerWeapon`: Give a player a weapon.

@@ -75,7 +75,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Keys affect NPC behavior in vehicles and on foot
-- Use NPC_GetKeys to check current key states
+- Use `NPC_GetKeys` to check current key states
 - Key states persist until changed or NPC state resets
 
 ## Related Functions

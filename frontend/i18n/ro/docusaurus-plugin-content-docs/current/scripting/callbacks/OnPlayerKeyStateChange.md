@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descriere
 
-Acest callback este apelat atunci când starea oricărei taste [acceptate](../resources/keys) este schimbată (apăsată/eliberată).<br/>Tastele direcționale nu declanșează OnPlayerKeyStateChange (sus/jos/stânga/dreapta).
+Acest callback este apelat atunci când starea oricărei taste [acceptate](../resources/keys) este schimbată (apăsată/eliberată).<br/>Tastele direcționale nu declanșează `OnPlayerKeyStateChange` (sus/jos/stânga/dreapta).
 
 | Name     | Descriere                                                                                                   |
 | -------- | ----------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ Acest callback este apelat atunci când starea oricărei taste [acceptate](../re
 
 :::tip
 
-Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](OnPlayerUpdate) or a timer).
+Directional keys do not trigger `OnPlayerKeyStateChange` (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](OnPlayerUpdate) or a timer).
 
 :::
 
@@ -54,7 +54,7 @@ Să presupunem că doriți să detectați când un jucător apasă butonul FIRE,
 if (newkeys == KEY_FIRE)
 ```
 
-Acest cod poate funcționa chiar și în testarea dvs., dar este greșit și testarea dvs. este insuficientă. Încercați să vă ghemuiți și să apăsați focul - codul dvs. nu va mai funcționa instantaneu. De ce? Deoarece „newkeys” nu mai este același lucru cu „KEY_FIRE”, este același cu „KEY_FIRE” COMBINAT CU „KEY_CROUCH”.
+Acest cod poate funcționa chiar și în testarea dvs., dar este greșit și testarea dvs. este insuficientă. Încercați să vă ghemuiți și să apăsați focul - codul dvs. nu va mai funcționa instantaneu. De ce? Deoarece `newkeys` nu mai este același lucru cu `KEY_FIRE`, este același cu `KEY_FIRE` COMBINAT CU `KEY_CROUCH`.
 
 ### Cum se verifică o cheie
 
@@ -66,11 +66,11 @@ if (newkeys & KEY_FIRE)
 
 Rețineți că singurul <strong>&</strong> este corect - acesta este un ȘI pe biți, nu un ȘI logic, așa cum se numesc cele două ampersand.
 
-Acum, dacă testați acest cod, va funcționa indiferent dacă sunteți ghemuit sau în picioare când apăsați tasta de declanșare. Cu toate acestea, există încă o mică problemă - se va declanșa atâta timp cât țineți cheia. OnPlayerKeyStateChange este apelat de fiecare dată când o tastă se schimbă și acel cod este adevărat ori de câte ori tasta de declanșare este apăsată. Dacă apăsați foc, codul se va declanșa, dacă acea tastă este apăsată și apăsați ghemuit - acel cod se va declanșa din nou deoarece o tastă (ghemuit) s-a schimbat și focul este încă ținut apăsat Cum detectăm când o tastă este apăsată pentru prima dată, dar nu se declanșează din nou când este încă apăsată și se schimbă o altă cheie?
+Acum, dacă testați acest cod, va funcționa indiferent dacă sunteți ghemuit sau în picioare când apăsați tasta de declanșare. Cu toate acestea, există încă o mică problemă - se va declanșa atâta timp cât țineți cheia. `OnPlayerKeyStateChange` este apelat de fiecare dată când o tastă se schimbă și acel cod este adevărat ori de câte ori tasta de declanșare este apăsată. Dacă apăsați foc, codul se va declanșa, dacă acea tastă este apăsată și apăsați ghemuit - acel cod se va declanșa din nou deoarece o tastă (ghemuit) s-a schimbat și focul este încă ținut apăsat Cum detectăm când o tastă este apăsată pentru prima dată, dar nu se declanșează din nou când este încă apăsată și se schimbă o altă cheie?
 
 ### Cum să verificați dacă o tastă a fost apăsată
 
-Aici intervine "oldkeys". Pentru a verifica dacă o tastă tocmai a fost apăsată, trebuie să verificați mai întâi dacă este setată în „tastele noi” - adică este ținută apăsată, apoi verificați că NU este în „tastele vechi” - adică este tocmai a fost ținut apăsat. Următorul cod face acest lucru:
+Aici intervine `oldkeys`. Pentru a verifica dacă o tastă tocmai a fost apăsată, trebuie să verificați mai întâi dacă este setată în „tastele noi” - adică este ținută apăsată, apoi verificați că NU este în „tastele vechi” - adică este tocmai a fost ținut apăsat. Următorul cod face acest lucru:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
@@ -100,13 +100,13 @@ Cu toate acestea, dacă doriți să detectați când aceștia apăsați ÎNTÂI 
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-De ce nu? Deoarece OnPlayerKeyStateChange este apelat de fiecare dată când se schimbă o singură cheie. Așa că ei apasă „KEY_FIRE” - OnPlayerKeyStateChange este apelat cu „KEY_FIRE” în „newkeys” și nu în „oldkeys”, apoi apăsă „KEY_CROUCH” - OnPlayerKeyStateChange este apelat cu „KEY_CROUCH” și „KEY_FIRE” în „newkeys”, dar „ KEY_FIRE" este acum și în „oldkeys”, deoarece a fost deja apăsat, așa că „!(oldkeys & KEY_FIRE)” va eșua. Din fericire, soluția este foarte simplă (de fapt, mai simplă decât codul original):
+De ce nu? Deoarece `OnPlayerKeyStateChange` este apelat de fiecare dată când se schimbă o singură cheie. Așa că ei apasă `KEY_FIRE` - `OnPlayerKeyStateChange` este apelat cu `KEY_FIRE` în `newkeys` și nu în `oldkeys`, apoi apăsă `KEY_CROUCH` - `OnPlayerKeyStateChange` este apelat cu `KEY_CROUCH` și `KEY_FIRE` în `newkeys`, dar `KEY_FIRE` este acum și în `oldkeys`, deoarece a fost deja apăsat, așa că `!(oldkeys & KEY_FIRE)` va eșua. Din fericire, soluția este foarte simplă (de fapt, mai simplă decât codul original):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-Acest lucru poate părea complicat, dar verifică dacă ambele chei sunt setate în „newkeys” și că ambele chei nu au fost setate în „oldkeys”, dacă una dintre ele a fost setată în „oldkeys”, asta nu contează, deoarece nu ambele. au fost. Toate aceste lucruri pot fi simplificate foarte mult cu definiții.
+Acest lucru poate părea complicat, dar verifică dacă ambele chei sunt setate în `newkeys` și că ambele chei nu au fost setate în `oldkeys`, dacă una dintre ele a fost setată în `oldkeys`, asta nu contează, deoarece nu ambele. au fost. Toate aceste lucruri pot fi simplificate foarte mult cu definiții.
 
 ## Simplificare
 
@@ -267,13 +267,13 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 
 Nu trebuie să vă faceți griji despre CUM se face, doar că este. HOLDING detectează dacă aceștia apasă o tastă (sau taste), indiferent dacă au apăsat-o înainte, PRESSED detectează dacă doar au apăsat tastele și RELEASED detectează dacă tocmai au eliberat o tastă(e). Cu toate acestea, dacă doriți să aflați mai multe - citiți mai departe.
 
-Motivul pentru care trebuie să faceți acest lucru, nu doar folosind & sau ==, este să detectați exact tastele pe care le doriți, ignorând altele care pot fi sau nu apăsate. În binar KEY_SPRINT este:
+Motivul pentru care trebuie să faceți acest lucru, nu doar folosind & sau ==, este să detectați exact tastele pe care le doriți, ignorând altele care pot fi sau nu apăsate. În binar `KEY_SPRINT` este:
 
 ```
 0b00001000
 ```
 
-și KEY_JUMP este:
+și `KEY_JUMP` este:
 
 ```
 0b00100000
@@ -285,7 +285,7 @@ astfel, OR-ul în cheile dorite (le-am putea adăuga și în acest exemplu, dar 
 0b00101000
 ```
 
-Dacă am folosit doar & și s-a apelat OnPlayerKeyStateChange pentru un jucător care apasă pe salt, am găsit următorul cod:
+Dacă am folosit doar & și s-a apelat `OnPlayerKeyStateChange` pentru un jucător care apasă pe salt, am găsit următorul cod:
 
 ```
 newkeys = 0b00100000

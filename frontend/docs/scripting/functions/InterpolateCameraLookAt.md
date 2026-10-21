@@ -9,17 +9,17 @@ tags: ["player", "interpolate"]
 
 Interpolate a player's camera's 'look at' point between two coordinates with a set speed. Can be be used with [InterpolateCameraPos](InterpolateCameraPos).
 
-| Name         | Description                                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | The ID of the player the camera should be moved for                                                                             |
-| Float:fromX  | The X position the camera should start to move from                                                                             |
-| Float:fromY  | The Y position the camera should start to move from                                                                             |
-| Float:fromZ  | The Z position the camera should start to move from                                                                             |
-| Float:toX    | The X position the camera should move to                                                                                        |
-| Float:toY    | The Y position the camera should move to                                                                                        |
-| Float:toZ    | The Z position the camera should move to                                                                                        |
-| time         | Time in milliseconds to complete interpolation                                                                                  |
-| CAM_MOVE:cut | The ['jumpcut'](../resources/cameracutstyles) to use. Defaults to CAMERA_CUT (pointless). Set to CAMERA_MOVE for interpolation. |
+| Name         | Description                                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| playerid     | The ID of the player the camera should be moved for                                                                                 |
+| Float:fromX  | The X position the camera should start to move from                                                                                 |
+| Float:fromY  | The Y position the camera should start to move from                                                                                 |
+| Float:fromZ  | The Z position the camera should start to move from                                                                                 |
+| Float:toX    | The X position the camera should move to                                                                                            |
+| Float:toY    | The Y position the camera should move to                                                                                            |
+| Float:toZ    | The Z position the camera should move to                                                                                            |
+| time         | Time in milliseconds to complete interpolation                                                                                      |
+| CAM_MOVE:cut | The ['jumpcut'](../resources/cameracutstyles) to use. Defaults to `CAMERA_CUT` (pointless). Set to `CAMERA_MOVE` for interpolation. |
 
 ## Returns
 

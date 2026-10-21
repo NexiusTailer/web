@@ -75,7 +75,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 按键影响 NPC 在车辆内和步行时的行为
-- 使用 NPC_GetKeys 检查当前按键状态
+- 使用 `NPC_GetKeys` 检查当前按键状态
 - 按键状态会持续到被更改或 NPC 状态重置
 
 ## 相关函数

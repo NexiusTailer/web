@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Descripción
 
-Se llama cuando un jugador cambia de interior. Puede ser desencadenada por SetPlayerInterior o cuando un jugador entra o sale de un edificio.
+Se llama cuando un jugador cambia de interior. Puede ser desencadenada por `SetPlayerInterior` o cuando un jugador entra o sale de un edificio.
 
 | Nombre        | Descripción                                    |
 | ------------- | ---------------------------------------------- |

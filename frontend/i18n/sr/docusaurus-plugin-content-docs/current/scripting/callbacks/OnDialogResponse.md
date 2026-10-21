@@ -12,7 +12,7 @@ tags: ["dialog"]
 | Име         | Опис                                                                                                                   |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID играча који одговара на дијалог.                                                                                    |
-| dialogid    | ID дијалога на који је играч одговорио, додељен у ShowPlayerDialog.                                                    |
+| dialogid    | ID дијалога на који је играч одговорио, додељен у `ShowPlayerDialog`.                                                  |
 | response    | **1** за леви дугме и **0** за десно дугме (ако је приказан само један дугме, увек 1).                                 |
 | listitem    | ID ставке листе коју је играч изабрао (почиње од 0) (само ако се користи дијалог стилa листе, у супротном ће бити -1). |
 | inputtext[] | Текст који је играч унео у улазно поље или текст изабране ставке листе.                                                |
@@ -23,7 +23,7 @@ tags: ["dialog"]
 
 ## Примери
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Дефинишите ID дијалога како бисмо могли да обрадимо одговоре.
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -88,7 +88,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -126,7 +126,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3

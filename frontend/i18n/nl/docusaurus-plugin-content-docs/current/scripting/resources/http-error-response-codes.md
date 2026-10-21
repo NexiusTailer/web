@@ -10,14 +10,14 @@ Deze codes vullen normale [HTTP](../functions/HTTP)-responscodes aan (in `respon
 
 :::
 
-| Code | Fout                          | Omschrijving                                                                             |
-| ---- | ----------------------------- | ---------------------------------------------------------------------------------------- |
-| 1    | HTTP_ERROR_BAD_HOST           | Ongeldige/ongeresolveerde host in de URL.                                                |
-| 2    | HTTP_ERROR_NO_SOCKET          | Mislukte socketinitialisatie voor de aanvraag.                                           |
-| 3    | HTTP_ERROR_CANT_CONNECT       | Kan geen verbinding maken met de server (bijv. netwerkproblemen of server onbereikbaar). |
-| 4    | HTTP_ERROR_CANT_WRITE         | Fout bij het schrijven van data tijdens de aanvraag.                                     |
-| 5    | HTTP_ERROR_CONTENT_TOO_BIG    | Verzoekinhoud is groter dan toegestaan door de server/configuratie.                      |
-| 6    | HTTP_ERROR_MALFORMED_RESPONSE | Respons is ongeldig of onverwacht van formaat en voldoet niet aan HTTP-standaarden.      |
+| Code | Fout                            | Omschrijving                                                                             |
+| ---- | ------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1    | `HTTP_ERROR_BAD_HOST`           | Ongeldige/ongeresolveerde host in de URL.                                                |
+| 2    | `HTTP_ERROR_NO_SOCKET`          | Mislukte socketinitialisatie voor de aanvraag.                                           |
+| 3    | `HTTP_ERROR_CANT_CONNECT`       | Kan geen verbinding maken met de server (bijv. netwerkproblemen of server onbereikbaar). |
+| 4    | `HTTP_ERROR_CANT_WRITE`         | Fout bij het schrijven van data tijdens de aanvraag.                                     |
+| 5    | `HTTP_ERROR_CONTENT_TOO_BIG`    | Verzoekinhoud is groter dan toegestaan door de server/configuratie.                      |
+| 6    | `HTTP_ERROR_MALFORMED_RESPONSE` | Respons is ongeldig of onverwacht van formaat en voldoet niet aan HTTP-standaarden.      |
 
 ## Veelvoorkomende HTTP-responscodes
 

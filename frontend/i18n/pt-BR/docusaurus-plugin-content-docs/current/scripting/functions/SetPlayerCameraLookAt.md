@@ -8,15 +8,15 @@ tags: ["player", "camera"]
 
 ## Descrição
 
-Defina a direção para a qual a câmera do jogador olha. Geralmente destinado a ser usado em combinação com SetPlayerCameraPos.
+Defina a direção para a qual a câmera do jogador olha. Geralmente destinado a ser usado em combinação com `SetPlayerCameraPos`.
 
-| Nome | Descrição |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador cuja câmera será configurada.                                                                                                      |
-| Float:x | A coordenada X para a câmera do jogador olhar.                                                                                           |
-| Float:y | A coordenada Y para a câmera do jogador olhar.                                                                                           |
-| Float:z | A coordenada Z para a câmera do jogador olhar.                                                                                           |
-| CAM_MOVE:cut | O [estilo](../resources/cameracutstyles) da alteração. Pode ser usado para interpolar (mudar lentamente) da posição antiga para a nova usando CAMERA_MOVE. |
+| Nome         | Descrição                                                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| playerid     | O ID do jogador cuja câmera será configurada.                                                                                                                |
+| Float:x      | A coordenada X para a câmera do jogador olhar.                                                                                                               |
+| Float:y      | A coordenada Y para a câmera do jogador olhar.                                                                                                               |
+| Float:z      | A coordenada Z para a câmera do jogador olhar.                                                                                                               |
+| CAM_MOVE:cut | O [estilo](../resources/cameracutstyles) da alteração. Pode ser usado para interpolar (mudar lentamente) da posição antiga para a nova usando `CAMERA_MOVE`. |
 
 ## Retornos
 

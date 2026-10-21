@@ -7,7 +7,7 @@ sidebar_label: "Estruturas de Controle"
 
 ### if
 
-O uso de "if" (se) verifica se algo é verdadeiro e caso seja, realiza alguma coisa.
+O uso de `if` (se) verifica se algo é verdadeiro e caso seja, realiza alguma coisa.
 
 ```c
 new
@@ -18,9 +18,9 @@ if (a == 5)
 }
 ```
 
-O código entre os parênteses após o "if" é chamado de condição, há inúmeras formas diferentes que você pode usar e testar este condicional (veja os operadores).
+O código entre os parênteses após o `if` é chamado de condição, há inúmeras formas diferentes que você pode usar e testar este condicional (veja os operadores).
 
-No exemplo acima, ambos "a" e "5" são símbolos, funções também podem ser símbolos:
+No exemplo acima, ambos `a` e "5" são símbolos, funções também podem ser símbolos:
 
 ```c
 if (AlgumaFunção() == 5)
@@ -43,7 +43,7 @@ if (a == 5 && b != 3)
 }
 ```
 
-Esse exemplo verifica se "a" é igual a "5" E se "b" não é igual a "3", porém, "b" é igual a "3", então a verificação falha.
+Esse exemplo verifica se `a` é igual a "5" E se `b` não é igual a "3", porém, `b` é igual a "3", então a verificação falha.
 
 ```c
 new
@@ -55,7 +55,7 @@ if (a == 5 || b != 3)
 }
 ```
 
-Esse exemplo verifica se "a" é igual a "5" OU se "b" não é igual a "3", "b" é igual a "3" então a segunda parte falha, entretanto "a" é "5", então essa parte é verdadeira, nós estamos usando || (OU) então apenas uma das partes precisa ser verdadeira (se ambas as partes são verdadeiras, a condição continua sendo verdadeira, isso é levemente diferente do significado linguístico de "ou", significando apenas um, ou outro), então a condição é verdadeira.
+Esse exemplo verifica se `a` é igual a "5" OU se `b` não é igual a "3", `b` é igual a "3" então a segunda parte falha, entretanto `a` é "5", então essa parte é verdadeira, nós estamos usando || (OU) então apenas uma das partes precisa ser verdadeira (se ambas as partes são verdadeiras, a condição continua sendo verdadeira, isso é levemente diferente do significado linguístico de "ou", significando apenas um, ou outro), então a condição é verdadeira.
 
 Do mesmo modo, também é possível encadear duas comparações sem a necessidade, explicitamente falando, de usar AND de duas comparações diferentes.
 
@@ -91,7 +91,7 @@ Os símbolos a seguir são os que você pode utilizar em comparações, ao lado 
 
 ### Parênteses
 
-Outro aspecto principal sobre condições de "if" é os parênteses, esses controlam a ordem de como tudo é feito em:
+Outro aspecto principal sobre condições de `if` é os parênteses, esses controlam a ordem de como tudo é feito em:
 
 ```c
 new
@@ -116,21 +116,21 @@ E:
 if (a == 5 && (b == 3 || c == 1))
 ```
 
-A primeira versão irá verificar se "a" é igual a "5" e se "b" é igual a "3", se isso for falso (ou seja, um ou ambos não são seus respectivos valores) irá verificar se "c" é igual a "1". (a == 5 && b == 3) é falso como você pôde ver acima, então você "substitui" esse grupo por FALSE:
+A primeira versão irá verificar se `a` é igual a "5" e se `b` é igual a "3", se isso for falso (ou seja, um ou ambos não são seus respectivos valores) irá verificar se `c` é igual a "1". (a == 5 && b == 3) é falso como você pôde ver acima, então você "substitui" esse grupo por FALSE:
 
 ```c
 if (FALSE || c == 1)
 ```
 
-Sabemos que FALSE não pode ser verdadeiro (assim sendo por definição), todavia "c" é igual a "1", então esta parte é verdadeira e como estamos utilizando "OR" toda condição torna-se verdadeira.
+Sabemos que FALSE não pode ser verdadeiro (assim sendo por definição), todavia `c` é igual a "1", então esta parte é verdadeira e como estamos utilizando "OR" toda condição torna-se verdadeira.
 
-A segunda versão verifica se "a" é igual a "5", caso seja o código verificará se "b" é igual a "3" ou se "c" é igual a "1". O jogo irá fazer a parte 'a == 5' primeiro, mas para deixar claro iremos fazer de trás para frente. (b == 3 || c == 1) é verdadeiro pois ambas as metades são verdadeiras, apesar de que apenas uma delas precisa ser, então indo para nossa condição temos:
+A segunda versão verifica se `a` é igual a "5", caso seja o código verificará se `b` é igual a "3" ou se `c` é igual a "1". O jogo irá fazer a parte `a == 5` primeiro, mas para deixar claro iremos fazer de trás para frente. (b == 3 || c == 1) é verdadeiro pois ambas as metades são verdadeiras, apesar de que apenas uma delas precisa ser, então indo para nossa condição temos:
 
 ```c
 if (a == 5 && TRUE)
 ```
 
-(a == 5) é falso, pois "a" é igual a 3, então teremos:
+(a == 5) é falso, pois `a` é igual a 3, então teremos:
 
 ```c
 if (FALSE && TRUE)
@@ -144,7 +144,7 @@ Estes pequenos exemplos mostram como o uso de parênteses pode mudar a forma com
 
 ### else
 
-"else" (senão) basicamente faz alguma coisa, caso um "if" falhe:
+`else` (senão) basicamente faz alguma coisa, caso um `if` falhe:
 
 ```c
 new
@@ -180,7 +180,7 @@ else
 }
 ```
 
-Você pode ter quantos desses quiser (você apenas pode ter um "if" e um "else" em um grupo de verificação):
+Você pode ter quantos desses quiser (você apenas pode ter um `if` e um `else` em um grupo de verificação):
 
 ```c
 new
@@ -223,11 +223,11 @@ else if (a == 4)
 }
 ```
 
-Para contornar isso, você apenas faria um "else" caso um "if".
+Para contornar isso, você apenas faria um `else` caso um `if`.
 
 ### ?:
 
-'?' e ':' juntos são chamados de um operador triádico, eles basicamente agem como um "if" dentro de outra declaração:
+'?' e ':' juntos são chamados de um operador triádico, eles basicamente agem como um `if` dentro de outra declaração:
 
 ```c
 new
@@ -321,7 +321,7 @@ Mas eles são equivalentes (neste exemplo tanto faz)
 
 ### While
 
-"while" (enquanto) loops fazem algo enquanto uma condição específica for verdadeira. A condição é exatamente no mesmo formato do que uma condição em uma declaração de "if", ela é apenas verificada repetidamente e o código é feito todo vez que for verdadeiro quando verificado:
+`while` (enquanto) loops fazem algo enquanto uma condição específica for verdadeira. A condição é exatamente no mesmo formato do que uma condição em uma declaração de `if`, ela é apenas verificada repetidamente e o código é feito todo vez que for verdadeiro quando verificado:
 
 ```c
 new
@@ -334,11 +334,11 @@ while (a < 10)
 // Código após o loop
 ```
 
-O código irá verificar se "a" é menor que "10". Caso seja, o código dentro das chaves (a++;) será executado, portanto incrementando "a". Quando as chaves são alcaçadas o código pula de volta para a verificação e faz a mesmo coisa novamente, dessa vez a verificação irá falhar, pois "a" é igual a "10" e a execução irá pular para depois do loop. Se "a" fosse igual a "8" o código seria executado duas vezes, assim por diante.
+O código irá verificar se `a` é menor que "10". Caso seja, o código dentro das chaves (a++;) será executado, portanto incrementando `a`. Quando as chaves são alcaçadas o código pula de volta para a verificação e faz a mesmo coisa novamente, dessa vez a verificação irá falhar, pois `a` é igual a "10" e a execução irá pular para depois do loop. Se `a` fosse igual a "8" o código seria executado duas vezes, assim por diante.
 
 ### for()
 
-Um "for" (para) loop é essencialmente um "while" comprimido. Um "for" contém três seções: "Inicialização, Condição e Finalização". Para escrever o exemplo de "while" acima como um loop "for":
+Um `for` (para) loop é essencialmente um `while` comprimido. Um `for` contém três seções: "Inicialização, Condição e Finalização". Para escrever o exemplo de `while` acima como um loop `for`:
 
 ```c
 for (new a = 9; a < 10; a++)
@@ -373,7 +373,7 @@ for ( ; a < 10; )
 // Código após o loop
 ```
 
-Esse exemplo torna fácil demonstrar como que um "for" encaixa-se com um "while". Há duas simples diferenças entre os dois "for" loops dados. O primeiro é que o segundo exemplo declara "a" fora do loop "for", isso significa que também pode ser usado fora do loop, no primeiro exemplo o escopo de "a" (seção do código para qual a variável existe) está apenas dentro do loop. A segunda diferença é que o "a++" no segundo exemplo é na verdade feito após o "a++" do primeiro exemplo, 99% dos casos isso não faz diferença alguma, isso importa apenas quando você estiver usando "continue" (veja abaixo), "continue" irá chamar o "a++" no primeiro exemplo, mas irá pular no segundo exemplo.
+Esse exemplo torna fácil demonstrar como que um `for` encaixa-se com um `while`. Há duas simples diferenças entre os dois `for` loops dados. O primeiro é que o segundo exemplo declara `a` fora do loop `for`, isso significa que também pode ser usado fora do loop, no primeiro exemplo o escopo de `a` (seção do código para qual a variável existe) está apenas dentro do loop. A segunda diferença é que o `a++` no segundo exemplo é na verdade feito após o `a++` do primeiro exemplo, 99% dos casos isso não faz diferença alguma, isso importa apenas quando você estiver usando `continue` (veja abaixo), `continue` irá chamar o `a++` no primeiro exemplo, mas irá pular no segundo exemplo.
 
 ### do-while
 
@@ -391,7 +391,7 @@ while (a < 10); // Note o ponto e vírgula
 // Código após o loop
 ```
 
-Se esse fosse um "while" básico "a" não seria incrementado, pois (a < 10) é falso, mas aqui é incrementado antes da verificação. Caso fosse "9" o loop seria executado apenas uma vez, "8" duas vezses, assim em diante.
+Se esse fosse um `while` básico `a` não seria incrementado, pois (a < 10) é falso, mas aqui é incrementado antes da verificação. Caso fosse "9" o loop seria executado apenas uma vez, "8" duas vezses, assim em diante.
 
 ### if-goto
 
@@ -425,7 +425,7 @@ while (a <= sizeof (b))
 }
 ```
 
-Este exemplo simples demonstra um dos mais comuns OBOE's, de primeiro relance as possoes podem pensar que isso irá realizar um loop através de todo conteúdo de "b" e coloca-los como "0", entretanto, este loop irá rodar 11 vezes e tentará acessar "b[10], que não existe (pois seria o 11º slot em "b" começando em 0), entretando pode causar todos os tipos de problemas. Esse é conhecido como um erro "Out Of Bounds" (Fora dos Limites).
+Este exemplo simples demonstra um dos mais comuns OBOE's, de primeiro relance as possoes podem pensar que isso irá realizar um loop através de todo conteúdo de `b` e coloca-los como "0", entretanto, este loop irá rodar 11 vezes e tentará acessar "b[10], que não existe (pois seria o 11º slot em "b" começando em 0), entretando pode causar todos os tipos de problemas. Esse é conhecido como um erro "Out Of Bounds" (Fora dos Limites).
 
 Você deve ser muito cuidadose com OBOEs quando estiver usando um "do-while" loop, pois eles SEMPRE rodam pelo menos uma vez.
 
@@ -433,7 +433,7 @@ Você deve ser muito cuidadose com OBOEs quando estiver usando um "do-while" loo
 
 ### switch
 
-Um "switch" (troca) é basicamente uma forma estruturada de if/else (assim como "for" é uma forma estruturada de "while"). A forma mais fácil de explicar é com um exemplo:
+Um `switch` (troca) é basicamente uma forma estruturada de if/else (assim como `for` é uma forma estruturada de `while`). A forma mais fácil de explicar é com um exemplo:
 
 ```c
 new
@@ -484,7 +484,7 @@ else
 
 Entretanto, é levemente mais claro de ver o que está acontecendo.
 
-Um ponto importante para notar aqui, é as diferentes formas em que um "if" e um "switch" são processados.
+Um ponto importante para notar aqui, é as diferentes formas em que um `if` e um `switch` são processados.
 
 ```c
 switch (AlgumaFunção())
@@ -503,7 +503,7 @@ else if (AlgumaFunção() == 2) {}
 else if (AlgumaFunção() == 3) {}
 ```
 
-Isso irá chamar AlgumaFunção() 3 vezes, que é muito ineficiente, um "switch" é como fazer:
+Isso irá chamar AlgumaFunção() 3 vezes, que é muito ineficiente, um `switch` é como fazer:
 
 ```c
 new
@@ -513,11 +513,11 @@ else if (result == 2) {}
 else if (result == 3) {}
 ```
 
-Para aqueles que conhecem C, o "switch" do PAWN é levemente diferente, as condições individuais NÃO SÃO "fall-through" e são limitadas por chaves, então não há necessidade de colocar um "break".
+Para aqueles que conhecem C, o `switch` do PAWN é levemente diferente, as condições individuais NÃO SÃO "fall-through" e são limitadas por chaves, então não há necessidade de colocar um `break`.
 
 ### case
 
-Um "case" (caso) (as partes individuais do "switch") pode conter outras opções além de um único número. Você pode comparar um valor a uma lista de números (substituindo "fall-through" em C) ou até mesmo um alcance de determinados valores.
+Um `case` (caso) (as partes individuais do `switch`) pode conter outras opções além de um único número. Você pode comparar um valor a uma lista de números (substituindo "fall-through" em C) ou até mesmo um alcance de determinados valores.
 
 ```c
 case 1, 2, 3, 4:
@@ -563,7 +563,7 @@ switch (a)
 
 ### default
 
-Um "default" (padrão) é equivalente a um "else", ele realiza algo caso todos os outros falharem.
+Um `default` (padrão) é equivalente a um `else`, ele realiza algo caso todos os outros falharem.
 
 ## Declarações de linhas únicas
 
@@ -585,7 +585,7 @@ O uso de "gotos" é severamente desaconselhado devido aos seus efeitos no seguim
 
 ### break
 
-Um "break" (quebra) para e coloca o fim em um loop prematuramente (antes de seu fim padrão):
+Um `break` (quebra) para e coloca o fim em um loop prematuramente (antes de seu fim padrão):
 
 ```c
 for (new a = 0; a < 10; a++)
@@ -598,7 +598,7 @@ Esse loop irá executar 6 vezes, até que atinja o break, colocando fim ao loop 
 
 ### continue
 
-Um "continue" (continue) pula parte do loop em uma determinada iteração:
+Um `continue` (continue) pula parte do loop em uma determinada iteração:
 
 ```c
 for (new a = 0; a < 3; a++)
@@ -614,7 +614,7 @@ Isso irá resultar em um 'output' de:
 a = 0 a = 2
 ```
 
-O "continue" basicamente pula uma parte fechada de chaves dentro do loop, como dito acima, você precisa ser cuidadoso ao utilizar "continue" em determinados loops:
+O `continue` basicamente pula uma parte fechada de chaves dentro do loop, como dito acima, você precisa ser cuidadoso ao utilizar `continue` em determinados loops:
 
 ```c
 new
@@ -627,11 +627,11 @@ while (a < 3)
 }
 ```
 
-Esse é muito similar ao outro exemplo, entretanto desta vez o "continue" irá pular a linha do "a++", então o loop ficará preso e repetirá infinitamente, pois sempre será "1".
+Esse é muito similar ao outro exemplo, entretanto desta vez o `continue` irá pular a linha do `a++`, então o loop ficará preso e repetirá infinitamente, pois sempre será "1".
 
 ### return
 
-Um "return" (retorno) irá parar uma função e voltar ao ponto em que a mesma foi chamada:
+Um `return` (retorno) irá parar uma função e voltar ao ponto em que a mesma foi chamada:
 
 ```c
 main()
@@ -655,9 +655,9 @@ Esse código irá gerar um resultado de:
 
 1 3
 
-Pois a linha de "print("2");" nunca será alcançada.
+Pois a linha de `print("2")`; nunca será alcançada.
 
-Você também pode usar um "return" para retornar um valor:
+Você também pode usar um `return` para retornar um valor:
 
 ```c
 main()
@@ -680,11 +680,11 @@ MinhaFunção(num)
 }
 ```
 
-Esse código irá gerar o mesmo resultado que o visto acima, entretanto, note que um "return" adicional foi adicionado ao fim da função. O fim de uma função tem um "return" implícito nela, porém este retorno não tem valor, você não pode retornar um valor e não retornar um valor na mesma função, então precisamos explicitamente retornar um valor.
+Esse código irá gerar o mesmo resultado que o visto acima, entretanto, note que um `return` adicional foi adicionado ao fim da função. O fim de uma função tem um `return` implícito nela, porém este retorno não tem valor, você não pode retornar um valor e não retornar um valor na mesma função, então precisamos explicitamente retornar um valor.
 
 O símbolo que você retorna pode ser um número, uma variável ou até mesmo outra função, no caso de outra função ser chamada, irá retornar um valor (ela PRECISA retornar um valor se você usa-la como um valor de retorno) e esse valor será retornado para a primeira função.
 
-Você também pode guardar o valor de um "return" para usar depois:
+Você também pode guardar o valor de um `return` para usar depois:
 
 ```c
 main()

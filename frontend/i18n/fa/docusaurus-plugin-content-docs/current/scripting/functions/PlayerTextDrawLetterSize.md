@@ -39,7 +39,7 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-- وقتی از این تابع صرفاً برای تأثیر روی جعبه textdraw استفاده می‌کنی، 'Y' رو در 0.135 ضرب کن تا به اندازه‌گیری مشابه TextDrawTextSize تبدیل بشه.
+- وقتی از این تابع صرفاً برای تأثیر روی جعبه textdraw استفاده می‌کنی، 'Y' رو در 0.135 ضرب کن تا به اندازه‌گیری مشابه `TextDrawTextSize` تبدیل بشه.
 - فونت‌ها با نسبت X به Y برابر 1 به 4 بهترین ظاهر رو دارن (مثلاً اگه x برابر 0.5 باشه، y باید 2 باشه).
 
 :::
@@ -54,7 +54,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): تنظیم رنگ پس زمینه یک player-textdraw.
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): تنظیم تراز یک player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): تنظیم فونت یک player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای PlayerTextDrawSetSelectable).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای `PlayerTextDrawSetSelectable`).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): فعال/غیرفعال کردن outline روی یک player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): تنظیم سایه روی یک player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): تنظیم فاصله متن در یک player-textdraw به نسبت متناسب.

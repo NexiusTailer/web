@@ -17,7 +17,7 @@ Gets the vehicle ID of an NPC's current vehicle.
 
 ## Returns
 
-Returns the vehicle ID the NPC is in, or INVALID_VEHICLE_ID if not in any vehicle.
+Returns the vehicle ID the NPC is in, or `INVALID_VEHICLE_ID` if not in any vehicle.
 
 ## Examples
 
@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Returns INVALID_VEHICLE_ID if the NPC is not in any vehicle
+- Returns `INVALID_VEHICLE_ID` if the NPC is not in any vehicle
 
 ## Related Functions
 

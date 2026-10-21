@@ -47,8 +47,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Funciona apenas quando NPC está reproduzindo ativamente uma gravação
-- A reprodução pausada pode ser retomada chamando com pause = false
-- Use NPC_IsPlaybackPaused para verificar o estado de pausa atual
+- A reprodução pausada pode ser retomada chamando com `pause` = false
+- Use `NPC_IsPlaybackPaused` para verificar o estado de pausa atual
 
 ## Funções Relacionadas
 

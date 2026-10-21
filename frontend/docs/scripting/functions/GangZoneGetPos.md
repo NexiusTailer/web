@@ -9,7 +9,7 @@ tags: ["player", "gangzone"]
 
 ## Description
 
-Get the position of a gangzone, represented by minX, minY, maxX, maxY coordinates.
+Get the position of a gangzone, represented by `minX`, `minY`, `maxX`, `maxY` coordinates.
 
 | Name        | Description                                                 |
 | ----------- | ----------------------------------------------------------- |

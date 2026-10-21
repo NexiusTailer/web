@@ -52,7 +52,7 @@ server package.
 ### **More Road Signs**
 
 The speed limit sign below has a transparent material overlay (index 3) so you
-can use it with the SetObjectMaterialText or SetPlayerObjectMaterialText
+can use it with the `SetObjectMaterialText` or `SetPlayerObjectMaterialText`
 functions.
 
 ```
@@ -272,7 +272,7 @@ road.
 ### **Laptop (Old Style)**
 
 Same laptop in open and closed positions. You can change the screen using the
-SetObjectMaterial function on index 1. There are three screen variations in
+`SetObjectMaterial` function on index 1. There are three screen variations in
 the TXD file (see below for picture):
 
 - LaptopScreen1 = GTASA map screen (default)
@@ -460,7 +460,7 @@ A collection of various road signs.
 ```
 
 The two signs below have a transparent material overlay (index 3) so you can use
-it with the SetObjectMaterialText or SetPlayerObjectMaterialText functions.
+it with the `SetObjectMaterialText` or `SetPlayerObjectMaterialText` functions.
 
 ```
 19980	SAMPRoadSign33
@@ -583,7 +583,7 @@ can be used... it can be found in the "filterscripts" folder of the Windows
 
 ### **Caligula's Casino Vault Door Edited**
 
-Edited to fix the pivot so it can be used with MoveObject and also fixed the
+Edited to fix the pivot so it can be used with `MoveObject` and also fixed the
 night vertex colours. Original object ID is 2634.
 
 ```
@@ -611,7 +611,7 @@ SAMP.IPL file.
 ### **Static Door**
 
 This door is the same as object ID 1502 except it is static. You can animate it
-opening and closing with the MoveObject function.
+opening and closing with the `MoveObject` function.
 
 ```
 19802	GenDoorINT04Static
@@ -635,7 +635,7 @@ created by Vince. Note that they will only be visible at night.
 ### **Extracted Items**
 
 The whiteboard object below has a transparent material overlay (index 1) so you
-can use it with the SetObjectMaterialText or SetPlayerObjectMaterialText
+can use it with the `SetObjectMaterialText` or `SetPlayerObjectMaterialText`
 functions.
 
 ```
@@ -713,7 +713,7 @@ river.
 ### **CargoBob Platform**
 
 This platform is designed to attach to the side of the CargoBob helicopter using
-the AttachObjectToVehicle function so you can carry people around.
+the `AttachObjectToVehicle` function so you can carry people around.
 
 ```
 19848	CargoBobPlatform1

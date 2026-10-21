@@ -51,7 +51,7 @@ CallLocalFunction("publicFunc", "ifs", 420, 68.999999999, "Hello world");
 
 :::warning
 
-CallLocalFunction اگر رشته خالی پاس دهد سرور را کرش می‌کند. (در open.mp اصلاح شده است)
+`CallLocalFunction` اگر رشته خالی پاس دهد سرور را کرش می‌کند. (در open.mp اصلاح شده است)
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Opis
 
-Przyczepia kamerę gracza do obiektu stworzonego tylko dla niego. Gracz może poruszać swoją kamerą, gdy jest przyczepiona do obiektu. Można z tego korzystać razem z MovePlayerObject i AttachPlayerObjectToVehicle.
+Przyczepia kamerę gracza do obiektu stworzonego tylko dla niego. Gracz może poruszać swoją kamerą, gdy jest przyczepiona do obiektu. Można z tego korzystać razem z `MovePlayerObject` i `AttachPlayerObjectToVehicle`.
 
 | Nazwa          | Opis                                                                 |
 | -------------- | -------------------------------------------------------------------- |

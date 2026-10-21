@@ -36,7 +36,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 
 Vrijednosti rezerviranih mjesta slijede se potpuno istim redoslijedom kao i parametri u pozivu, tj. "Imam% i godine" - `%i` će biti zamijenjena cjelobrojnom varijablom, što je dob osobe.
 
-Po želji možete staviti broj između `%` i slovo koda rezerviranog mjesta. Ovaj broj označava širinu polja; ako je veličina parametra za ispis na mjestu rezerviranog mjesta manja od širine polja, polje se proširuje razmacima. Da biste smanjili broj decimalnih mjesta koja se prikazuju na plovku, možete dodati '.\<max number\>' između `%` i `f`, tj. `%.2f`.
+Po želji možete staviti broj između `%` i slovo koda rezerviranog mjesta. Ovaj broj označava širinu polja; ako je veličina parametra za ispis na mjestu rezerviranog mjesta manja od širine polja, polje se proširuje razmacima. Da biste smanjili broj decimalnih mjesta koja se prikazuju na plovku, možete dodati `.<max number>` između `%` i `f`, tj. `%.2f`.
 
 ## Primjeri
 

@@ -12,20 +12,20 @@ tags: ["object"]
 
 Obtenha os dados do texto material de um índice do objeto.
 
-| Nome | Descrição |
-| ----------------------------------------- | ----------------------------------------------------------------------- |
-| objectid | O ID do objeto.                                                   |
-| materialIndex | O índice de material no objeto. (0 a 15) |
-| text[] | Uma matriz na qual armazenar o texto, passado por referência.             |
-| textSize | O tamanho do texto.                                                   |
-| &OBJECT_MATERIAL_SIZE:materialSize | Uma variável na qual armazenar o materialSize, passada por referência.     |
-| fontFace[] | Uma matriz na qual armazenar o fontFace, passado por referência.         |
-| fontFaceSize | O tamanho do fontFace.                                               |
-| &fontSize | Uma variável na qual armazenar o fontSize, passada por referência.         |
-| &bool:bold | Uma variável booleana na qual armazenar o negrito, passada por referência.     |
-| &fontColour | Uma variável na qual armazenar fontColour, passada por referência.       |
-| &backgroundColour | Uma variável na qual armazenar backgroundColour, passada por referência. |
-| &OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | Uma variável na qual armazenar o textAlignment, passado por referência.    |
+| Nome                                      | Descrição                                                                  |
+| ----------------------------------------- | -------------------------------------------------------------------------- |
+| objectid                                  | O ID do objeto.                                                            |
+| materialIndex                             | O índice de material no objeto. (0 a 15)                                   |
+| text[]                                    | Uma matriz na qual armazenar o texto, passado por referência.              |
+| textSize                                  | O tamanho do texto.                                                        |
+| &OBJECT_MATERIAL_SIZE:materialSize        | Uma variável na qual armazenar o `materialSize`, passada por referência.   |
+| fontFace[]                                | Uma matriz na qual armazenar o `fontFace`, passado por referência.         |
+| fontFaceSize                              | O tamanho do `fontFace`.                                                   |
+| &fontSize                                 | Uma variável na qual armazenar o `fontSize`, passada por referência.       |
+| &bool:bold                                | Uma variável booleana na qual armazenar o negrito, passada por referência. |
+| &fontColour                               | Uma variável na qual armazenar `fontColour`, passada por referência.       |
+| &backgroundColour                         | Uma variável na qual armazenar `backgroundColour`, passada por referência. |
+| &OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | Uma variável na qual armazenar o `textAlignment`, passado por referência.  |
 
 ## Retornos
 

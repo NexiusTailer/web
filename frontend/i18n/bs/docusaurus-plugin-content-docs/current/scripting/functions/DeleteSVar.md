@@ -33,7 +33,7 @@ DeleteSVar("SomeVarName");
 
 :::note
 
-Jednom kada se varijabla izbriše, pokušavajući vratiti vrijednost vratiti će **0** (za integere i floatove i **NULL** za stringove).
+Jednom kada se varijabla izbriše, pokušavajući vratiti vrijednost vratiti će **0** (za integere i floatove i `NULL` za stringove).
 
 :::
 

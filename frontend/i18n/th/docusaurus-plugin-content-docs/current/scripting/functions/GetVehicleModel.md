@@ -32,7 +32,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerVehicleID: Get the ID of the vehicle the player is in.
-- GetVehiclePos: Get the position of a vehicle.
-- GetVehicleZAngle: Check the current angle of a vehicle.
-- GetPlayerVehicleSeat: Check what seat a player is in.
+- `GetPlayerVehicleID`: Get the ID of the vehicle the player is in.
+- `GetVehiclePos`: Get the position of a vehicle.
+- `GetVehicleZAngle`: Check the current angle of a vehicle.
+- `GetPlayerVehicleSeat`: Check what seat a player is in.

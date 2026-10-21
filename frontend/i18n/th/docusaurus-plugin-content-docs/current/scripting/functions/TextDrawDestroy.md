@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Destroys a previously-created textdraw.
 
-| Name | Description                                                    |
-| ---- | -------------------------------------------------------------- |
-| text | The ID of the textdraw to destroy. Returned by TextDrawCreate. |
+| Name | Description                                                      |
+| ---- | ---------------------------------------------------------------- |
+| text | The ID of the textdraw to destroy. Returned by `TextDrawCreate`. |
 
 ## ส่งคืน
 

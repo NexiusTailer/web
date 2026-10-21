@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 在设置点之前必须打开节点
 - 点索引通常从 0 开始
-- 使用 NPC_GetNodePointPosition 检索点坐标
+- 使用 `NPC_GetNodePointPosition` 检索点坐标
 
 ## 相关函数
 

@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Reload time is measured in milliseconds
-- Use NPC_GetWeaponReloadTime to check current reload time
+- Use `NPC_GetWeaponReloadTime` to check current reload time
 
 ## Related Functions
 

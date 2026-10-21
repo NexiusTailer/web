@@ -75,7 +75,7 @@ description: Arquivo de configuração do servidor.
 | logqueries     | bool   | 0            | Não             | Não   | Define se todas as consultas enviadas ao servidor pelos jogadores devem ser registradas. Defina como 1 para ativar ou 0 para desativar. É consideravelmente útil durante um ataque DDoS.                                                                                                                                                                                                                                                        |
 | chatlogging    | int\*  | 1            | Não             | Não   | Define se o chat dos jogadores deve ser mostrado no console do servidor. Útil para evitar que o log fique sobrecarregado, ou se você tiver outra solução de registro de chat por script. Defina como 1 para ativar ou 0 para desativar.                                                                                                                                                                                                         |
 | db_logging     | int\*  | 0            | Não             | Não   | Registra erros de funções db\_\* do sqlite no console do servidor.<br /><br />**NOTA:** Esta variável do servidor foi adicionada na versão 0.3.7 R2 e não terá efeito em versões anteriores.                                                                                                                                                                                                                                                    |
-| db_log_queries | int\*  | 0            | Não             | Não   | Registra todas as chamadas db_query do sqlite, incluindo a string de consulta.<br /><br />**NOTA:** Esta variável do servidor foi adicionada na versão 0.3.7 R2 e não terá efeito em versões anteriores.                                                                                                                                                                                                                                        |
+| db_log_queries | int\*  | 0            | Não             | Não   | Registra todas as chamadas `db_query` do sqlite, incluindo a string de consulta.<br /><br />**NOTA:** Esta variável do servidor foi adicionada na versão 0.3.7 R2 e não terá efeito em versões anteriores.                                                                                                                                                                                                                                      |
 
 > [*] Algumas configurações são de um tipo diferente do que você pode pensar.
 
@@ -89,7 +89,7 @@ description: Arquivo de configuração do servidor.
 | stream_distance\* | float | 200.0        | Não             | Não   | A distância no plano X,Y em que os jogadores farão streaming das entidades do servidor. O máximo é **400.0** e o mínimo é **50.0**. Valores mais altos fazem os jogadores verem entidades do servidor a uma distância maior, mas requerem mais processamento do cliente e potencialmente mais largura de banda. |
 | stream_rate\*     | int   | 1000         | Não             | Não   | O tempo em milissegundos antes que o streaming das entidades do servidor seja retestado para cada jogador. O máximo é **5000** e o mínimo é **500**. Valores mais baixos aumentam o processamento do servidor, pois ele precisa reverificar as condições de streaming com mais frequência para cada jogador.    |
 
-> [*] Valores mais baixos de onfoot_rate, incar_rate e weapon_rate aumentam o desempenho de sincronização, mas usam mais largura de banda.
+> [*] Valores mais baixos de `onfoot_rate`, `incar_rate` e `weapon_rate` aumentam o desempenho de sincronização, mas usam mais largura de banda.
 
 ## NPCs
 
@@ -102,14 +102,14 @@ description: Arquivo de configuração do servidor.
 | Configuração | Tipo   | Valor padrão | Somente leitura | Regra | Efeito                                                                                                                                                                                                                                   |
 | ------------ | ------ | ------------ | --------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lagcompmode  | int    | 1            | Sim             | Não   | 0: Desativa completamente a compensação de lag.<br /><br />1: Ativa completamente a compensação de lag.<br /><br />2: Ativa apenas a compensação de lag de posição. Isso significa que a rotação do jogador não terá compensação de lag. |
-| lagcomp      | string | On           | Sim             | Sim   | Provavelmente definido automaticamente como **On** ou **Off** dependendo da configuração **lagcompmode**.                                                                                                                                |
+| lagcomp      | string | On           | Sim             | Sim   | Provavelmente definido automaticamente como **On** ou **Off** dependendo da configuração `lagcompmode`.                                                                                                                                  |
 
 ## Modelos personalizados
 
 | Configuração | Tipo   | Valor padrão | Somente leitura | Regra | Efeito                                                                                                                                                                                                                                   |
 | ------------ | ------ | ------------ | --------------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | useartwork   | bool   | 0            | Sim             | Não   | Define se o servidor usa modelos personalizados da pasta _models_. Defina como 1 para ativar ou 0 para desativar.<br /><br />**NOTA:** Esta variável do servidor foi adicionada na versão 0.3.8 e não terá efeito em versões anteriores. |
-| artwork      | string | No           | Sim             | Sim   | Provavelmente definido automaticamente como **No** ou **Yes** dependendo da configuração **useartwork**.<br /><br />**NOTA:** Esta variável do servidor foi adicionada na versão 0.3.8 e não terá efeito em versões anteriores.          |
+| artwork      | string | No           | Sim             | Sim   | Provavelmente definido automaticamente como **No** ou **Yes** dependendo da configuração `useartwork`.<br /><br />**NOTA:** Esta variável do servidor foi adicionada na versão 0.3.8 e não terá efeito em versões anteriores.            |
 | artpath      | string | models       | Sim             | Não   | O caminho onde os modelos personalizados estão localizados.<br /><br />**NOTA:** Esta variável do servidor foi adicionada na versão 0.3.8 e não terá efeito em versões anteriores.                                                       |
 
 ## Outros
@@ -121,7 +121,7 @@ description: Arquivo de configuração do servidor.
 
 ## Notas
 
-- Valores marcados como "Somente leitura" (conforme mostrado por `/rcon varlist`) não podem ser alterados durante a execução. Todos os outros valores podem ser (temporariamente) alterados passando-os para SendRconCommand.
+- Valores marcados como "Somente leitura" (conforme mostrado por `/rcon varlist`) não podem ser alterados durante a execução. Todos os outros valores podem ser (temporariamente) alterados passando-os para `SendRconCommand`.
 - Valores marcados como "Regra" (conforme mostrado por `/rcon varlist`) são exibidos no navegador de servidores na seção Regras.
 - Scripts não precisam estar nas pastas _gamemodes_ ou _filterscripts_. A informação no server.cfg é um caminho e, portanto, pode usar "..".
 

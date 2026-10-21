@@ -11,11 +11,11 @@ tags: ["npc", "死亡", "杀死"]
 
 使用特定武器/原因杀死 NPC。
 
-| 参数     | 说明                                                       |
-| -------- | ---------------------------------------------------------- |
-| npcid    | 要杀死的 NPC 的 ID                                         |
-| killerid | 杀死 NPC 的玩家 ID（可选，无杀手时使用 INVALID_PLAYER_ID） |
-| reason   | 武器 ID 或死亡原因（默认：255 表示自杀）                   |
+| 参数     | 说明                                                         |
+| -------- | ------------------------------------------------------------ |
+| npcid    | 要杀死的 NPC 的 ID                                           |
+| killerid | 杀死 NPC 的玩家 ID（可选，无杀手时使用 `INVALID_PLAYER_ID`） |
+| reason   | 武器 ID 或死亡原因（默认：255 表示自杀）                     |
 
 ## 返回值
 
@@ -46,8 +46,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 若没有杀手，killerid 使用 `INVALID_PLAYER_ID`
-- reason 参数使用武器 ID（WEAPON 枚举）
+- 若没有杀手，`killerid` 使用 `INVALID_PLAYER_ID`
+- `reason` 参数使用武器 ID（WEAPON 枚举）
 - 这会触发 [OnNPCDeath](../callbacks/OnNPCDeath) 回调函数
 
 ## 相关函数

@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## توضیحات
 
-حافظه نتیجه تخصیص یافته از db_query را آزاد می کند.
+حافظه نتیجه تخصیص یافته از `db_query` را آزاد می کند.
 
 | نام               | توضیحات                                                                   |
 | ----------------- | ------------------------------------------------------------------------- |
@@ -102,7 +102,7 @@ public OnGameModeExit()
 - [db_get_field_assoc_int](db_get_field_assoc_int): دریافت محتوای فیلد به صورت عدد صحیح با نام مشخص از سطر نتیجه فعلی
 - [db_get_field_float](db_get_field_float): دریافت محتوای فیلد به صورت عدد اعشاری با شناسه مشخص از سطر نتیجه فعلی
 - [db_get_field_assoc_float](db_get_field_assoc_float): دریافت محتوای فیلد به صورت عدد اعشاری با نام مشخص از سطر نتیجه فعلی
-- [db_get_mem_handle](db_get_mem_handle): دریافت دستگیره حافظه برای پایگاه داده SQLite که با db_open باز شده
-- [db_get_result_mem_handle](db_get_result_mem_handle): دریافت دستگیره حافظه برای درخواست SQLite که با db_query اجرا شده
+- [db_get_mem_handle](db_get_mem_handle): دریافت دستگیره حافظه برای پایگاه داده SQLite که با `db_open` باز شده
+- [db_get_result_mem_handle](db_get_result_mem_handle): دریافت دستگیره حافظه برای درخواست SQLite که با `db_query` اجرا شده
 - [db_debug_openfiles](db_debug_openfiles): این تابع تعداد اتصالات باز پایگاه داده را برای اهداف عیب یابی دریافت می کند
 - [db_debug_openresults](db_debug_openresults): این تابع تعداد نتایج باز پایگاه داده را دریافت می کند

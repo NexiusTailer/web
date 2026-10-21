@@ -11,12 +11,12 @@ Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anter
 
 Define a posição de um ator.
 
-| Nome    | Descrição                                                     |
-| ------- | ------------------------------------------------------------- |
-| actorid | O ID do ator a definir a posição. Retornado pelo CreateActor. |
-| X       | A coordenada X na qual posicionar o ator.                     |
-| Y       | A coordenada Y na qual posicionar o ator.                     |
-| Z       | A coordenada Z na qual posicionar o ator.                     |
+| Nome    | Descrição                                                       |
+| ------- | --------------------------------------------------------------- |
+| actorid | O ID do ator a definir a posição. Retornado pelo `CreateActor`. |
+| X       | A coordenada X na qual posicionar o ator.                       |
+| Y       | A coordenada Y na qual posicionar o ator.                       |
+| Z       | A coordenada Z na qual posicionar o ator.                       |
 
 ## Retorno
 
@@ -43,7 +43,7 @@ SetActorPos(gMyActor, 1.0, 2.0, 3.0);
 
 :::note
 
-Ao criar um ator com CreateActor, você específica a sua posição. Você não precisa usar esta função, a menos que queira alterar a posição depois.
+Ao criar um ator com `CreateActor`, você específica a sua posição. Você não precisa usar esta função, a menos que queira alterar a posição depois.
 
 :::
 

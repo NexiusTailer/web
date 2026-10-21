@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Destroy a player-object created using CreatePlayerObject.
+Destroy a player-object created using `CreatePlayerObject`.
 
-| Name     | Description                                                             |
-| -------- | ----------------------------------------------------------------------- |
-| playerid | The ID of the player whose player-object to destroy.                    |
-| objectid | The ID of the player-object to destroy. Returned by CreatePlayerObject. |
+| Name     | Description                                                               |
+| -------- | ------------------------------------------------------------------------- |
+| playerid | The ID of the player whose player-object to destroy.                      |
+| objectid | The ID of the player-object to destroy. Returned by `CreatePlayerObject`. |
 
 ## ส่งคืน
 

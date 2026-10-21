@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::note
 
-- Za poravnanje 2 (centrirano) x i y vrijednosti TextSize-a treba zamijeniti, pogledaj zabilješke na TextDrawTextSize, zakođer pozicija kordinata postaje pozicija centra textdrawa a ne lijevi/gornji rubovi.
+- Za poravnanje 2 (centrirano) x i y vrijednosti TextSize-a treba zamijeniti, pogledaj zabilješke na `TextDrawTextSize`, zakođer pozicija kordinata postaje pozicija centra textdrawa a ne lijevi/gornji rubovi.
 - Ako je textdraw već prikazan, on mora biti ponovno prikazan (TextDrawShowForAll/TextDrawShowForPlayer) kako bi se prikazale promjene ove funkcije.
 
 :::

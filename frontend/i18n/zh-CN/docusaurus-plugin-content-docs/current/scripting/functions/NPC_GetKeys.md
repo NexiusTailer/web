@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 除 npcid 外的所有参数都通过引用传递且会被修改
+- 除 `npcid` 外的所有参数都通过引用传递且会被修改
 - 按键状态以位标志形式存储
 - 使用位运算来检查单个按键
 - 此函数反映 NPC 当前的输入状态

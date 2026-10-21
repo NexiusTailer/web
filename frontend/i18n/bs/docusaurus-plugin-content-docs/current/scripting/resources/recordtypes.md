@@ -11,8 +11,8 @@ Ovdje možete pronaći sve vrste zapisa koje koristi [StartRecordingPlayerData](
 
 :::
 
-| Vrijednost | Definicija                   |
-| ---------- | ---------------------------- |
-| 0          | PLAYER_RECORDING_TYPE_NONE   |
-| 1          | PLAYER_RECORDING_TYPE_DRIVER |
-| 2          | PLAYER_RECORDING_TYPE_ONFOOT |
+| Vrijednost | Definicija                     |
+| ---------- | ------------------------------ |
+| 0          | `PLAYER_RECORDING_TYPE_NONE`   |
+| 1          | `PLAYER_RECORDING_TYPE_DRIVER` |
+| 2          | `PLAYER_RECORDING_TYPE_ONFOOT` |

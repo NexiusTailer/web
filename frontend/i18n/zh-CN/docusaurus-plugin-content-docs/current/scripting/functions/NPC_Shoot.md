@@ -11,20 +11,20 @@ tags: ["npc", "武器", "射击", "战斗"]
 
 让 NPC 开火射击。
 
-| 参数                | 说明                                       |
-| ------------------- | ------------------------------------------ |
-| npcid               | NPC 的 ID                                  |
-| weapon              | 用于射击的武器 ID                          |
-| hitId               | 被射击目标实体的 ID                        |
-| hitType             | 被击中的实体类型（玩家、NPC、车辆等）      |
-| endPointX           | 子弹终点的 X 坐标                          |
-| endPointY           | 子弹终点的 Y 坐标                          |
-| endPointZ           | 子弹终点的 Z 坐标                          |
-| offsetX             | 距离击中点的 X 偏移                        |
-| offsetY             | 距离击中点的 Y 偏移                        |
-| offsetZ             | 距离击中点的 Z 偏移                        |
-| isHit               | 射击是否实际击中目标                       |
-| checkInBetweenFlags | 实体检查标志（默认：NPC_ENTITY_CHECK_ALL） |
+| 参数                | 说明                                         |
+| ------------------- | -------------------------------------------- |
+| npcid               | NPC 的 ID                                    |
+| weapon              | 用于射击的武器 ID                            |
+| hitId               | 被射击目标实体的 ID                          |
+| hitType             | 被击中的实体类型（玩家、NPC、车辆等）        |
+| endPointX           | 子弹终点的 X 坐标                            |
+| endPointY           | 子弹终点的 Y 坐标                            |
+| endPointZ           | 子弹终点的 Z 坐标                            |
+| offsetX             | 距离击中点的 X 偏移                          |
+| offsetY             | 距离击中点的 Y 偏移                          |
+| offsetZ             | 距离击中点的 Z 偏移                          |
+| isHit               | 射击是否实际击中目标                         |
+| checkInBetweenFlags | 实体检查标志（默认：`NPC_ENTITY_CHECK_ALL`） |
 
 ## 返回值
 

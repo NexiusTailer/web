@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns true only when the NPC is specifically targeting the given player
 - Use this to check if a player is being targeted by an NPC
-- The NPC must be using NPC_AimAtPlayer for this to return true
+- The NPC must be using `NPC_AimAtPlayer` for this to return true
 
 ## Related Functions
 

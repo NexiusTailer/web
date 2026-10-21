@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripsi
 
-Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti AddStaticVehicleEx kapan saja dalam skrip.
+Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti `AddStaticVehicleEx` kapan saja dalam skrip.
 
 | Nama                                  | Deskripsi                                                                                                                                                                  |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,9 +23,9 @@ Membuat kendaraan di dunia. Dapat digunakan sebagai pengganti AddStaticVehicleEx
 
 ## Returns
 
-ID kendaraan dari kendaraan yang dibuat (1 hingga MAX_VEHICLES).
+ID kendaraan dari kendaraan yang dibuat (1 hingga `MAX_VEHICLES`).
 
-INVALID_VEHICLE_ID (65535) jika kendaraan tidak dibuat (batas kendaraan terlewati atau ID model kendaraan tidak valid).
+`INVALID_VEHICLE_ID` (65535) jika kendaraan tidak dibuat (batas kendaraan terlewati atau ID model kendaraan tidak valid).
 
 **0** jika kendaraan tidak dibuat (IDs 538 or 537 berhasil, yaitu kereta api).
 
@@ -44,7 +44,7 @@ public OnGameModeInit()
 
 :::warning
 
-Kereta api hanya bisa ditambahkan dengan AddStaticVehicle dan AddStaticVehicleEx.
+Kereta api hanya bisa ditambahkan dengan `AddStaticVehicle` dan `AddStaticVehicleEx`.
 
 :::
 

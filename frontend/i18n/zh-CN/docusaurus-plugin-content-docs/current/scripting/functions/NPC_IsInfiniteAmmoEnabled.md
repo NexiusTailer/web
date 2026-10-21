@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 无限弹药防止 NPC 耗尽弹药
 - 弹药计数可能仍显示为减少，但武器功能保持正常
-- 可以通过 NPC_EnableInfiniteAmmo 切换
+- 可以通过 `NPC_EnableInfiniteAmmo` 切换
 
 ## 相关函数
 

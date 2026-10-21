@@ -13,11 +13,11 @@ Gets the vehicle colours.
 
 ## Parameters
 
-| Name      | Description                                                          |
-| --------- | -------------------------------------------------------------------- |
-| vehicleid | The ID of the vehicle.                                               |
-| &colour1  | A variable in which to store the colour1 value, passed by reference. |
-| &colour2  | A variable in which to store the colour2 value, passed by reference. |
+| Name      | Description                                                            |
+| --------- | ---------------------------------------------------------------------- |
+| vehicleid | The ID of the vehicle.                                                 |
+| &colour1  | A variable in which to store the `colour1` value, passed by reference. |
+| &colour2  | A variable in which to store the `colour2` value, passed by reference. |
 
 ## Examples
 

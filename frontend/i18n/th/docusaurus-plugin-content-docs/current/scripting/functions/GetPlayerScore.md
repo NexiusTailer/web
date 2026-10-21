@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This function returns a player's score as it was set using SetPlayerScore
+This function returns a player's score as it was set using `SetPlayerScore`
 
 | Name     | Description                     |
 | -------- | ------------------------------- |
@@ -35,5 +35,5 @@ public OnPlayerCommandText(playerid,text[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerScore: Set the score of a player.
-- GetPlayerPing: Get the ping of a player.
+- `SetPlayerScore`: Set the score of a player.
+- `GetPlayerPing`: Get the ping of a player.

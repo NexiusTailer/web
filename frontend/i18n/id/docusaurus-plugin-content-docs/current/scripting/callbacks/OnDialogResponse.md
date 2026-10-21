@@ -7,12 +7,12 @@ tags: []
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika pemain merespon kepada dialog yang muncul menggunakan ShowPlayerDialog entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
+Callback ini akan terpanggil ketika pemain merespon kepada dialog yang muncul menggunakan `ShowPlayerDialog` entah itu dengan cara mengklik tombol, menekan ENTER/ESC atau mengklik dua kali list item (jika menggunakan list style dialog).
 
 | Nama        | Deskripsi                                                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID dari pemain yang merespon dialog.                                                                                                  |
-| dialogid    | ID dari dialog yang pemain respond sebagaimana ditetapkan di ShowPlayerDialog.                                                        |
+| dialogid    | ID dari dialog yang pemain respond sebagaimana ditetapkan di `ShowPlayerDialog`.                                                      |
 | response    | **1** Untuk tombol kiri dan **0** untuk tombol kanan (Jika hanya satu tombol yang ada, maka hanya 1)                                  |
 | listitem    | ID dari list item yang dipilih oleh player (dimulai dari 0) (hanya ketika menggunakan list style dialog, sebaliknya akan menjadi -1). |
 | inputtext[] | Sebuah text yang dimasukkan kedalam input box dari player atau text dari list item yang terpilih.                                     |
@@ -23,7 +23,7 @@ Ini akan selalu terpanggil pertama di filterscripts jadi mengembalikan nilai 1 a
 
 ## Contoh
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Define dialog ID agar nantinya kita bisa mengelola responses
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -88,7 +88,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -117,7 +117,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -159,7 +159,7 @@ Parameters dapat memuat nilai yang berbeda berdasarkan style dialog ([klik disin
 
 :::tip
 
-Menggunakan switch untuk mensortir dialogid sangatlah dianjurkan, jika anda memiliki banyak dialogid.
+Menggunakan switch untuk mensortir `dialogid` sangatlah dianjurkan, jika anda memiliki banyak `dialogid`.
 
 :::
 

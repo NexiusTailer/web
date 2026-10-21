@@ -9,15 +9,15 @@ tags: ["player"]
 
 Afișează jucătorlui un dialog sincron (doar unul o dată).
 
-| Nume      | Descriere                                                                                                                                                                     |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | ID-ul jucătorului căruia i se arată dialogul.                                                                                                                                 |
-| dialogid  | ID-ul dialogului, pentru ca răspunsurile să poată fi prelucrate. Maximul pentru dialogid e 32767. Dacă se folosesc valori negative atunci se va închide orice dialog deschis. |
-| style     | [Stilul](../resources/dialogstyles) dialogului.                                                                                                                               |
-| caption[] | Titlul de sus al dialogului. Lungimea lui nu poate depăși 64 de caractere, altfel începe să se taie.                                                                          |
-| info[]    | Textul afișat în partea principală a dialogului. Folosiți \n pentru a începe o nouă linie și \t pentru tabulatură.                                                            |
-| button1[] | Textul butonului din stânga.                                                                                                                                                  |
-| button2[] | Textul butonului din dreapta. Lăsați-l gol ( "" ) pentru a-l ascunde.                                                                                                         |
+| Nume      | Descriere                                                                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | ID-ul jucătorului căruia i se arată dialogul.                                                                                                                                   |
+| dialogid  | ID-ul dialogului, pentru ca răspunsurile să poată fi prelucrate. Maximul pentru `dialogid` e 32767. Dacă se folosesc valori negative atunci se va închide orice dialog deschis. |
+| style     | [Stilul](../resources/dialogstyles) dialogului.                                                                                                                                 |
+| caption[] | Titlul de sus al dialogului. Lungimea lui nu poate depăși 64 de caractere, altfel începe să se taie.                                                                            |
+| info[]    | Textul afișat în partea principală a dialogului. Folosiți \n pentru a începe o nouă linie și \t pentru tabulatură.                                                              |
+| button1[] | Textul butonului din stânga.                                                                                                                                                    |
+| button2[] | Textul butonului din dreapta. Lăsați-l gol ( "" ) pentru a-l ascunde.                                                                                                           |
 
 ## Returnări
 
@@ -69,7 +69,7 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 :::tip
 
 - Este recomandat să se folosească enumerații (vezi mai sus) sau definiții (#define) pentru a determina care ID-uri sunt ale căror dialoguri, pentru ca pe viitor să se evite confuzia.
-- Folosește color embedding pentru mai multe culori în text. Folosind **-1** ca și _dialogid_ închide toate dialog-urile deschise pe ecranul clientului.
+- Folosește color embedding pentru mai multe culori în text. Folosind **-1** ca și `dialogid` închide toate dialog-urile deschise pe ecranul clientului.
 
 :::
 

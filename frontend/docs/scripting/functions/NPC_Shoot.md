@@ -24,7 +24,7 @@ Makes an NPC fire a weapon shot.
 | offsetY             | Y offset from the hit point                               |
 | offsetZ             | Z offset from the hit point                               |
 | isHit               | Whether the shot actually hits the target                 |
-| checkInBetweenFlags | Entity check flags (default: NPC_ENTITY_CHECK_ALL)        |
+| checkInBetweenFlags | Entity check flags (default: `NPC_ENTITY_CHECK_ALL`)      |
 
 ## Returns
 

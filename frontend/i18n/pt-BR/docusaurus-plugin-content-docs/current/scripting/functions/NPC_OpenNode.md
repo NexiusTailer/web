@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Nó IDs varia de 0 a 63
 - Os nós devem ser abertos antes que NPCs possa usá-los para navegação
 - Abrir um nó carrega seus dados e os torna acessíveis
-- Use NPC_IsNodeOpen para verificar se um nó já está aberto
+- Use `NPC_IsNodeOpen` para verificar se um nó já está aberto
 
 ## Funções Relacionadas
 

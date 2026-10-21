@@ -7,7 +7,7 @@ tags: []
 
 ## Descriere
 
-Acest callback este apelat atunci când un obiect este mutat după MoveObject (când se oprește din mișcare).
+Acest callback este apelat atunci când un obiect este mutat după `MoveObject` (când se oprește din mișcare).
 
 | Nume     | Descriere                          |
 | -------- | ---------------------------------- |
@@ -31,7 +31,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-SetObjectPos nu funcționează atunci când este utilizat în acest callback. Pentru a o repara, recreați obiectul.
+`SetObjectPos` nu funcționează atunci când este utilizat în acest callback. Pentru a o repara, recreați obiectul.
 
 :::
 

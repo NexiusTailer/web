@@ -7,7 +7,7 @@ tags: ["player"]
 
 :::warning
 
-Ta funkcja od wersji 0.3d jest przestarzała. Sprawdź OnPlayerClickMap.
+Ta funkcja od wersji 0.3d jest przestarzała. Sprawdź `OnPlayerClickMap`.
 
 :::
 
@@ -39,7 +39,7 @@ public OnPlayerConnect( playerid )
 
 :::warning
 
-Ta funkcja będzie działać tylko jeżeli AllowAdminTeleport jest włączone, musisz być również administratorem.
+Ta funkcja będzie działać tylko jeżeli `AllowAdminTeleport` jest włączone, musisz być również administratorem.
 
 :::
 

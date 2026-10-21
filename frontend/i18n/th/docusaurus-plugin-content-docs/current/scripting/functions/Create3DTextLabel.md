@@ -22,7 +22,7 @@ Creates a 3D Text Label at a specific location in the world
 
 ## ส่งคืน
 
-The ID of the newly created 3D Text Label, or INVALID_3DTEXT_ID if the 3D Text Label limit (MAX_3DTEXT_GLOBAL) was reached.
+The ID of the newly created 3D Text Label, or `INVALID_3DTEXT_ID` if the 3D Text Label limit (`MAX_3DTEXT_GLOBAL`) was reached.
 
 ## ตัวอย่าง
 
@@ -38,7 +38,7 @@ public OnGameModeInit()
 
 :::note
 
-drawDistance seems to be a lot smaller when spectating.
+`drawDistance` seems to be a lot smaller when spectating.
 
 :::
 
@@ -50,7 +50,7 @@ Use colour embedding for multiple colours in the text.
 
 :::warning
 
-- If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
+- If `text[]` is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 - If the virtualworld is set as -1 the text will not appear.
 
 :::

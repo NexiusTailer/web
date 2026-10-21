@@ -115,7 +115,7 @@ public OnGameModeExit()
 - [DB_Open](DB_Open_Modern): باز کردن اتصال به پایگاه داده SQLite
 - [DB_Close](DB_Close_Modern): بستن اتصال به پایگاه داده SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): کوئری کردن پایگاه داده SQLite
-- [DB_FreeResultSet](DB_FreeResultSet): آزادسازی حافظه نتیجه از DB_ExecuteQuery
+- [DB_FreeResultSet](DB_FreeResultSet): آزادسازی حافظه نتیجه از `DB_ExecuteQuery`
 - [DB_GetRowCount](DB_GetRowCount): دریافت تعداد ردیف‌ها در نتیجه
 - [DB_SelectNextRow](DB_SelectNextRow): حرکت به ردیف بعدی
 - [DB_GetFieldCount](DB_GetFieldCount): دریافت تعداد فیلدها در نتیجه
@@ -126,7 +126,7 @@ public OnGameModeExit()
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): دریافت محتوای فیلد به عنوان عدد صحیح با نام مشخص از ردیف نتیجه فعلی
 - [DB_GetFieldFloat](DB_GetFieldFloat): دریافت محتوای فیلد به عنوان عدد اعشاری با ID مشخص از ردیف نتیجه فعلی
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): دریافت محتوای فیلد به عنوان عدد اعشاری با نام مشخص از ردیف نتیجه فعلی
-- [DB_GetMemHandle](DB_GetMemHandle): دریافت هندل حافظه برای پایگاه داده SQLite که با DB_Open باز شده
-- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): دریافت هندل حافظه برای کوئری SQLite که با DB_ExecuteQuery اجرا شده
+- [DB_GetMemHandle](DB_GetMemHandle): دریافت هندل حافظه برای پایگاه داده SQLite که با `DB_Open` باز شده
+- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): دریافت هندل حافظه برای کوئری SQLite که با `DB_ExecuteQuery` اجرا شده
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): دریافت تعداد اتصالات باز پایگاه داده برای اهداف دیباگ
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): دریافت تعداد نتایج باز پایگاه داده

@@ -11,14 +11,14 @@ Read a single line from a file.
 
 | Name   | Description                                                    |
 | ------ | -------------------------------------------------------------- |
-| handle | The handle of the file to read from (returned by fopen).       |
+| handle | The handle of the file to read from (returned by `fopen`).     |
 | string | A string array to store the read text in, passed by reference. |
 | size   | The number of bytes to read.                                   |
 | pack   | Should the string be packed? True/false.                       |
 
 ## ส่งคืน
 
-The length of **string** (the read text) as an integer.
+The length of `string` (the read text) as an integer.
 
 ## ตัวอย่าง
 
@@ -82,7 +82,7 @@ else
 
 :::warning
 
-Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using `fopen` or `ftemp`.
 
 :::
 

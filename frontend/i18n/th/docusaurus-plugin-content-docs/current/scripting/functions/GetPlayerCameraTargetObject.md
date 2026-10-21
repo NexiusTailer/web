@@ -21,7 +21,7 @@ Allows you to retrieve the ID of the object the player is looking at.
 
 ## ส่งคืน
 
-The ID of the object playerid is looking at. If INVALID_OBJECT_ID (65535) is returned, playerid isn't looking at any object.
+The ID of the object `playerid` is looking at. If `INVALID_OBJECT_ID` (65535) is returned, `playerid` isn't looking at any object.
 
 ## ตัวอย่าง
 
@@ -56,7 +56,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-This function is disabled by default to save bandwidth. Use EnablePlayerCameraTarget to enable it for each player.
+This function is disabled by default to save bandwidth. Use `EnablePlayerCameraTarget` to enable it for each player.
 
 :::
 

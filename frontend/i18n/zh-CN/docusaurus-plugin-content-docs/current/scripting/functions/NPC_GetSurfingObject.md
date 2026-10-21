@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 若 NPC 未在任何物体上冲浪则返回 INVALID_OBJECT_ID
+- 若 NPC 未在任何物体上冲浪则返回 `INVALID_OBJECT_ID`
 
 ## 相关函数
 

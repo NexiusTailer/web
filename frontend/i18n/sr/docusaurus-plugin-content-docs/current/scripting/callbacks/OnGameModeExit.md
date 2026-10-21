@@ -35,7 +35,7 @@ public OnGameModeExit()
 
 :::warning
 
-- Када користите OnGameModeExit у комбинацији са 'rcon gmx' командом у конзоли, имајте на уму да може доћи до потенцијалних грешака на клијенту. Пример овога је прекомерно коришћење [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) током [OnGameModeInit](OnGameModeInit), што може довести до пада клијента.
+- Када користите `OnGameModeExit` у комбинацији са 'rcon gmx' командом у конзоли, имајте на уму да може доћи до потенцијалних грешака на клијенту. Пример овога је прекомерно коришћење [RemoveBuildingForPlayer](../functions/RemoveBuildingForPlayer) током [OnGameModeInit](OnGameModeInit), што може довести до пада клијента.
 - Ова повратна функција НЕЋЕ бити позвана ако сервер падне или процес буде убијен на друге начине, као што је коришћење Linux kill команде.
 
 :::

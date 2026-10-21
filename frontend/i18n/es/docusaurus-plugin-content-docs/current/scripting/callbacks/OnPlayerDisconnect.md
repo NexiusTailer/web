@@ -58,12 +58,12 @@ public OnPlayerDisconnect(playerid, reason)
 
 :::note
 
-Algunas funciones pueden no funcionar correctamente cuando son usadas en este callback debido a que el jugador ya está desconectado cuando el callback es llamado. Esto quiere decir que no podés obtener información inequívoca de funciones como GetPlayerIp o GetPlayerPos.
+Algunas funciones pueden no funcionar correctamente cuando son usadas en este callback debido a que el jugador ya está desconectado cuando el callback es llamado. Esto quiere decir que no podés obtener información inequívoca de funciones como `GetPlayerIp` o `GetPlayerPos`.
 
 :::
 
 ## Funciones Relacionadas
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerDisconnect:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnPlayerDisconnect`:
 
 - [OnPlayerConnect](OnPlayerConnect): Llamado cuando se conecta un jugador.

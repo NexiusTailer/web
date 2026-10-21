@@ -32,7 +32,7 @@ public OnGameModeInit()
 
 :::note
 
-NPC нема nametag. Ово може да се направи преко Attach3DTextLabelToPlayer.
+NPC нема nametag. Ово може да се направи преко `Attach3DTextLabelToPlayer`.
 
 :::
 

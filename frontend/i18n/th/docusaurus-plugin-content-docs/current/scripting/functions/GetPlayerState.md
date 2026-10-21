@@ -35,6 +35,6 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerSpecialAction: Get a player's current special action.
-- SetPlayerSpecialAction: Set a player's special action.
-- OnPlayerStateChange: Called when a player changes state.
+- `GetPlayerSpecialAction`: Get a player's current special action.
+- `SetPlayerSpecialAction`: Set a player's special action.
+- `OnPlayerStateChange`: Called when a player changes state.

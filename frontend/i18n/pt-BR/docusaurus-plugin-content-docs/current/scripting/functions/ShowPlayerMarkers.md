@@ -8,7 +8,7 @@ tags: ["player"]
 
 ## Descrição
 
-Alterna marcadores de jogador (pontos no radar). Deve ser usado quando o servidor for iniciado (OnGameModeInit). Para outras ocasiões, consulte [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer).
+Alterna marcadores de jogador (pontos no radar). Deve ser usado quando o servidor for iniciado (`OnGameModeInit`). Para outras ocasiões, consulte [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer).
 
 | Nome | Descrição |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,11 +29,11 @@ public OnGameModeInit()
 ```
 ## Modos de marcador
 
-| ID | MODE |
-| --- | ---------------------------- |
-| 0 | PLAYER_MARKERS_MODE_OFF |
-| 1 | PLAYER_MARKERS_MODE_GLOBAL |
-| 2 | PLAYER_MARKERS_MODE_STREAMED |
+| ID  | MODE                           |
+| --- | ------------------------------ |
+| 0   | `PLAYER_MARKERS_MODE_OFF`      |
+| 1   | `PLAYER_MARKERS_MODE_GLOBAL`   |
+| 2   | `PLAYER_MARKERS_MODE_STREAMED` |
 
 ## Notas
 

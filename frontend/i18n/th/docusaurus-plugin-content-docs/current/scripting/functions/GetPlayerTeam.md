@@ -17,7 +17,7 @@ Get the ID of the team the player is on.
 
 **0-254**: The player's team. (0 is a valid team)
 
-**255**: Defined as NO_TEAM. The player is not on any team.
+**255**: Defined as `NO_TEAM`. The player is not on any team.
 
 **-1**: The function failed to execute. Player is not connected.
 
@@ -38,5 +38,5 @@ public OnPlayerSpawn(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerTeam: Set a player's team.
-- SetTeamCount: Set the number of teams available.
+- `SetPlayerTeam`: Set a player's team.
+- `SetTeamCount`: Set the number of teams available.

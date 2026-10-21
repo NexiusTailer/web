@@ -48,7 +48,7 @@ MyFunction()
 }
 ```
 
-Obviamente, você substituiria a expressão "gMyArray[i]" pela sua própria indicação de um slot em uso.
+Obviamente, você substituiria a expressão `gMyArray[i]` pela sua própria indicação de um slot em uso.
 
 ### Lista
 

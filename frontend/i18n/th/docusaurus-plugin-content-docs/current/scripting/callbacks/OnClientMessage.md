@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Callback นี้ถูกเรียกเมื่อ NPC เห็น ClientMessage และจะเกิดขึ้นทุกครั้งที่มีการใช้ฟังก์ชั่น SendClientMessageToAll และทุกครั้งที่ฟังก์ชั่น SendClientMessage ถูกส่งไปยัง NPC และ Callback นี้จะไม่ถูกเรียกเมื่อใครบางคนพูดอะไรบางอย่าง เวอร์ชั่นสำหรับผู้เล่นดูได้ที่ NPC:OnPlayerText
+Callback นี้ถูกเรียกเมื่อ NPC เห็น ClientMessage และจะเกิดขึ้นทุกครั้งที่มีการใช้ฟังก์ชั่น `SendClientMessageToAll` และทุกครั้งที่ฟังก์ชั่น `SendClientMessage` ถูกส่งไปยัง NPC และ Callback นี้จะไม่ถูกเรียกเมื่อใครบางคนพูดอะไรบางอย่าง เวอร์ชั่นสำหรับผู้เล่นดูได้ที่ NPC:OnPlayerText
 
 | ชื่อ   | คำอธิบาย            |
 | ------ | ------------------- |

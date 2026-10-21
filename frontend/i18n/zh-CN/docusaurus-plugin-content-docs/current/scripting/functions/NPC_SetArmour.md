@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 护甲值范围从 0.0（无护甲）到 100.0（满护甲）
 - 护甲在生命值受影响前吸收伤害
-- 使用 NPC_GetArmour 检查当前护甲等级
+- 使用 `NPC_GetArmour` 检查当前护甲等级
 
 ## 相关函数
 

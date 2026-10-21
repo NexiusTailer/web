@@ -10,13 +10,13 @@ tags: ["player"]
 
 Este callback se llama cuando un jugador le hace daño a un actor.
 
-| Nombre          | Descripción                                             |
-| --------------- | ------------------------------------------------------- |
-| playerid        | El ID del jugador que hizo daño.                        |
-| damaged_actorid | El ID del actor que recibió daño.                       |
-| Float:amount    | La cantidad de vida/chaleco que damaged_actorid perdió. |
-| WEAPON:weaponid | La razón que causó el daño.                             |
-| bodypart        | La parte del cuerpo que fue golpeada.                   |
+| Nombre          | Descripción                                               |
+| --------------- | --------------------------------------------------------- |
+| playerid        | El ID del jugador que hizo daño.                          |
+| damaged_actorid | El ID del actor que recibió daño.                         |
+| Float:amount    | La cantidad de vida/chaleco que `damaged_actorid` perdió. |
+| WEAPON:weaponid | La razón que causó el daño.                               |
+| bodypart        | La parte del cuerpo que fue golpeada.                     |
 
 ## Devoluciones
 

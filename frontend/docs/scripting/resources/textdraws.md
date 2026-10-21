@@ -85,7 +85,7 @@ Player-textdraws are only created for one specific player. Up to 256 textdraws c
 - [IsPlayerTextDrawVisible](../functions/IsPlayerTextDrawVisible): Checks if a player-textdraw is shown for the player.
 - [IsValidPlayerTextDraw](../functions/IsValidPlayerTextDraw): Checks if a player-textdraw is valid.
 - [PlayerTextDrawBackgroundColour](../functions/PlayerTextDrawBackgroundColour): Adjust the background colour of a player-textdraw.
-- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Sets the colour of a textdraw's box (PlayerTextDrawUseBox).
+- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Sets the colour of a textdraw's box (`PlayerTextDrawUseBox`).
 - [PlayerTextDrawColour](../functions/PlayerTextDrawColour): Sets the text colour of a player-textdraw.
 - [PlayerTextDrawGetAlignment](../functions/PlayerTextDrawGetAlignment): Gets the text alignment of a player-textdraw.
 - [PlayerTextDrawGetBackgroundColour](../functions/PlayerTextDrawGetBackgroundColour): Gets the background colour of a player-textdraw.
@@ -141,7 +141,7 @@ IMPORTANT NOTE: An array is still needed for the variable, as the ID of the text
 
 :::
 
-The function names only differ slightly, with 'TextDraw' becoming 'PlayerTextDraw', with one exception: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) ('TextDrawSetString' becomes 'PlayerTextDrawSetString').
+The function names only differ slightly, with 'TextDraw' becoming 'PlayerTextDraw', with one exception: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) (`TextDrawSetString` becomes `PlayerTextDrawSetString`).
 
 ---
 
@@ -155,7 +155,7 @@ Note that this function merely creates the textdraw, other functions are used to
 
 **Parameters:**
 
-TextDrawCreate(Float:x, Float:y, text[])
+`TextDrawCreate(Float:x, Float:y, text[])`
 
 | Name   | Description                                  |
 | ------ | -------------------------------------------- |
@@ -200,13 +200,13 @@ As of SA-MP 0.3d, a new font (id 4) can be set. This is used in combination with
 
 ## Showing the textdraw
 
-For this example, the textdraw has been created globally under OnGameModeInit and will be shown to player when they join the server.
+For this example, the textdraw has been created globally under `OnGameModeInit` and will be shown to player when they join the server.
 
 To show a textdraw for a single player, the function [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer) is used.
 
 **Parameters:**
 
-TextDrawShowForPlayer(playerid, Text:text)
+`TextDrawShowForPlayer(playerid, Text:text)`
 
 | Name     | Description                                   |
 | -------- | --------------------------------------------- |
@@ -217,7 +217,7 @@ TextDrawShowForPlayer(playerid, Text:text)
 
 This function does not return any specific values.
 
-The playerid is passed through OnPlayerConnect, and the text-draw ID is stored in the 'gMyText' variable.
+The `playerid` is passed through `OnPlayerConnect`, and the text-draw ID is stored in the `gMyText` variable.
 
 ```c
 public OnGameModeInit()

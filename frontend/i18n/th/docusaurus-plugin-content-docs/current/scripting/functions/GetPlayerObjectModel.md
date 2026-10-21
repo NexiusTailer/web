@@ -33,4 +33,4 @@ new modelid = GetPlayerObjectModel(playerid, objectid);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetObjectModel: Get the model ID of an object.
+- `GetObjectModel`: Get the model ID of an object.

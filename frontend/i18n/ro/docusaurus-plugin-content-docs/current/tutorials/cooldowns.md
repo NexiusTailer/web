@@ -201,15 +201,15 @@ OnPlayerFinishRace(playerid)
 
 Aici se întâmplă calculul intervalului, ei bine, spun calculul, este doar scăderea a două valori!
 
-GetTickCount returnează numărul curent de căpușe, deci va fi mai mare decât numărul de căpușe inițial, ceea ce înseamnă că scădeți numărul de căpușe inițial din numărul curent de căpușe pentru a obține intervalul dintre cele două măsuri.
+`GetTickCount` returnează numărul curent de căpușe, deci va fi mai mare decât numărul de căpușe inițial, ceea ce înseamnă că scădeți numărul de căpușe inițial din numărul curent de căpușe pentru a obține intervalul dintre cele două măsuri.
 
-Deci, așa cum am spus, jucătorul termină cursa 1 minut și 40 de secunde mai târziu (100 de secunde sau 100.000 de milisecunde), GetTickCount va reveni la 160.000. Scadeți valoarea inițială (care este 60.000) din noua valoare (care este 160.000) și obțineți 100.000 milisecunde, adică 1 minut 40 secunde, care este timpul necesar jucătorului pentru a face cursa!
+Deci, așa cum am spus, jucătorul termină cursa 1 minut și 40 de secunde mai târziu (100 de secunde sau 100.000 de milisecunde), `GetTickCount` va reveni la 160.000. Scadeți valoarea inițială (care este 60.000) din noua valoare (care este 160.000) și obțineți 100.000 milisecunde, adică 1 minut 40 secunde, care este timpul necesar jucătorului pentru a face cursa!
 
 ## Recapitulare și note
 
 Asa de! Am aflat că:
 
-- GetTickCount returnează cantitatea de timp în milisecunde de la pornirea sistemului computer pe care rulează serverul.
+- `GetTickCount` returnează cantitatea de timp în milisecunde de la pornirea sistemului computer pe care rulează serverul.
 - Și o putem folosi apelând-o la două intervale, salvând prima la o variabilă și comparând cele două valori vă poate oferi un interval precis în milisecunde între cele două evenimente.
 
 Nu în ultimul rând, nu doriți să le spuneți jucătorilor valorile timpului în milisecunde! Ce se întâmplă dacă durează o oră pentru a finaliza o cursă?

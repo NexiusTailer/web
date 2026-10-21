@@ -23,7 +23,7 @@ printf("Treutna gravitacija servera: %f", GetGravity());
 
 :::warning
 
-Ova funkcija nije definisana po zadanim postavkama. Dodajte 'native Float:GetGravity();' ispod includea a_samp.inc kako bi je mogli koristiti.
+Ova funkcija nije definisana po zadanim postavkama. Dodajte `native Float:GetGravity();` ispod includea a_samp.inc kako bi je mogli koristiti.
 
 :::
 

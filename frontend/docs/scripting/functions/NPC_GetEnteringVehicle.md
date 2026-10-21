@@ -17,7 +17,7 @@ Gets the vehicle an NPC is currently entering.
 
 ## Returns
 
-Returns the vehicle ID the NPC is entering, or INVALID_VEHICLE_ID if not entering any vehicle.
+Returns the vehicle ID the NPC is entering, or `INVALID_VEHICLE_ID` if not entering any vehicle.
 
 ## Examples
 
@@ -84,7 +84,7 @@ public CheckNPCEnteringVehicle(playerid)
 
 ## Notes
 
-- Returns INVALID_VEHICLE_ID if the NPC is not currently entering a vehicle
+- Returns `INVALID_VEHICLE_ID` if the NPC is not currently entering a vehicle
 - This is different from the vehicle the NPC is already in
 - The NPC must be in the process of entering for this to return a valid ID
 

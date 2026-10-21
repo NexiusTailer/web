@@ -69,12 +69,12 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Kapag ang player ay pinindot ang ESC para i cancel ang textdraw, OnPlayerClickTextDraw ay matatawag kasama ang ID na `INVALID_TEXT_DRAW`. OnPlayerClickPlayerTextDraw ay hindi rin matatawag.
+Kapag ang player ay pinindot ang ESC para i cancel ang textdraw, `OnPlayerClickTextDraw` ay matatawag kasama ang ID na `INVALID_TEXT_DRAW`. `OnPlayerClickPlayerTextDraw` ay hindi rin matatawag.
 
 :::
 
 ## Mga Kaugnay na Functions
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): I set depende kung ang player-textdraw ay napipindot tungo sa SelectTextDraw.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): I set depende kung ang player-textdraw ay napipindot tungo sa `SelectTextDraw`.
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Natatawag kapag ang player ay pumindot sa isang textdraw.
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): Natatawag kapag ang player ay pinindot ang ibang player.

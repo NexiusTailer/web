@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Shows a textdraw for all players.
 
-| Name | Description                                                 |
-| ---- | ----------------------------------------------------------- |
-| text | The ID of the textdraw to show. Returned by TextDrawCreate. |
+| Name | Description                                                   |
+| ---- | ------------------------------------------------------------- |
+| text | The ID of the textdraw to show. Returned by `TextDrawCreate`. |
 
 ## ส่งคืน
 

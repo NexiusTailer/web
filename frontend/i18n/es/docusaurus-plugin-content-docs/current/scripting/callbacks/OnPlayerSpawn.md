@@ -6,7 +6,7 @@ tags: ["player"]
 
 ## Descripción
 
-Este callback se llama cuando un jugador spawnea. (ej. después de llamar la función SpawnPlayer)
+Este callback se llama cuando un jugador spawnea. (ej. después de llamar la función `SpawnPlayer`)
 
 | Nombre   | Descripción                    |
 | -------- | ------------------------------ |

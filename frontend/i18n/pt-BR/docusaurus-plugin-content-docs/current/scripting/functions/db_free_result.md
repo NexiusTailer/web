@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Descrição
 
-Libera a memória do resultado alocada de db_query.
+Libera a memória do resultado alocada de `db_query`.
 
 | Nome              | Descrição                                                              |
 | ----------------- | ---------------------------------------------------------------------- |
@@ -102,7 +102,7 @@ public OnGameModeExit()
 - [db_get_field_assoc_int](db_get_field_assoc_int): Obtém o conteúdo do campo como um inteiro com nome especificado da linha de resultado atual
 - [db_get_field_float](db_get_field_float): Obtém o conteúdo do campo como um float com ID especificado da linha de resultado atual
 - [db_get_field_assoc_float](db_get_field_assoc_float): Obtém o conteúdo do campo como um float com nome especificado da linha de resultado atual
-- [db_get_mem_handle](db_get_mem_handle): Obtém o handle de memória para um banco de dados SQLite que foi aberto com db_open.
-- [db_get_result_mem_handle](db_get_result_mem_handle): Obtém o handle de memória para uma consulta SQLite que foi executada com db_query.
+- [db_get_mem_handle](db_get_mem_handle): Obtém o handle de memória para um banco de dados SQLite que foi aberto com `db_open`.
+- [db_get_result_mem_handle](db_get_result_mem_handle): Obtém o handle de memória para uma consulta SQLite que foi executada com `db_query`.
 - [db_debug_openfiles](db_debug_openfiles): A função obtém o número de conexões de banco de dados abertas para fins de depuração.
 - [db_debug_openresults](db_debug_openresults): A função obtém o número de resultados de banco de dados abertos.

@@ -19,7 +19,7 @@ Obtenha o tipo de um objeto. (global ou jogador)
 
 ## Retornos
 
-`0` - Falha na execução da função. O objectid ou playerid especificado não existe.
+`0` - Falha na execução da função. O `objectid` ou `playerid` especificado não existe.
 
 `1` - Objeto global.
 

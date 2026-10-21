@@ -378,7 +378,7 @@ https://github.com/openmultiplayer/upgrade
 [Warning] Insufficient specifiers given to `format`: "?" < 1
 ```
 
-تعداد specifier ها کمتر از آرگومان‌هایی است که در format ارسال می‌کنید. مثال:
+تعداد specifier ها کمتر از آرگومان‌هایی است که در `format` ارسال می‌کنید. مثال:
 
 ```pawn
 new string[32];
