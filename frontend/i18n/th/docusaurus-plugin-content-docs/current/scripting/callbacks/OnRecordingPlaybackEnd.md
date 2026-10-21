@@ -23,5 +23,5 @@ public OnRecordingPlaybackEnd()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- StartRecordingPlayback: Starts reproducing an already recorded .rec file.
-- StopRecordingPlayback: Stops reproducing a .rec file.
+- StartRecordingPlayback: Starts reproducing an already recorded _.rec_ file.
+- StopRecordingPlayback: Stops reproducing a _.rec_ file.

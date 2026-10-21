@@ -48,7 +48,7 @@ public OnPlayerConnect(playerid)
 
 ## 相关函数
 
-- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家的 IP 和端口
+- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家的 IP **和端口**
 - [GetPlayerRawIp](GetPlayerRawIp): 获取玩家原始 IP 地址
 - [GetPlayerName](GetPlayerName): 获取玩家昵称
 - [GetPlayerPing](GetPlayerPing): 获取玩家网络延迟

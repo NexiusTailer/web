@@ -9,7 +9,7 @@ tags: []
 
 Adds a death to the 'killfeed' on the right-hand side of the screen for all players.
 
-The 5 most recent kills are shown on the right side of players' screens. Pressing F9 will hide/show the list.
+The 5 most recent kills are shown on the right side of players' screens. Pressing **F9** will hide/show the list.
 
 | Name   | Description                                                                                                                 |
 | ------ | --------------------------------------------------------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- Death messages can be cleared by using a valid player ID for 'playerid' that is not connected.
+- Death messages can be cleared by using a valid player ID for 'playerid' that **is not connected**.
 - To show a death message for just a single player, use [SendDeathMessageToPlayer](SendDeathMessageToPlayer).
 - You can use NPCs to create your own custom death reasons.
 

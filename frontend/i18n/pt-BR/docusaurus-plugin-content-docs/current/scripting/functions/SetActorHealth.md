@@ -18,9 +18,9 @@ Define a vida de um ator.
 
 ## Retorno
 
-1 - Sucesso
+**1** - Sucesso
 
-0 - Falha (por exemplo, o ator não está criado).
+**0** - Falha (por exemplo, o ator não está criado).
 
 ## Exemplos
 

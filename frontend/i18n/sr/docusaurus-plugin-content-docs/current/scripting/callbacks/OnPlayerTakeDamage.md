@@ -78,7 +78,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) и [GetPlayerArmour](../functions/GetPlayerArmour) ће враћати старе количине здравља и оклопа играча пре овог повратног позива.
-- Увек проверите да ли је issuerid важећи пре него што га користите као индекс у низу.
+- **Увек** проверите да ли је issuerid важећи пре него што га користите као индекс у низу.
 
 :::
 

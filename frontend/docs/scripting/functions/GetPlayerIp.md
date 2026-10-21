@@ -51,7 +51,7 @@ public OnPlayerConnect(playerid)
 
 ## Related Functions
 
-- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP **and port**.
 - [GetPlayerRawIp](GetPlayerRawIp): Get a player's Raw IP.
 - [GetPlayerName](GetPlayerName): Get a player's name.
 - [GetPlayerPing](GetPlayerPing): Get the ping of a player.

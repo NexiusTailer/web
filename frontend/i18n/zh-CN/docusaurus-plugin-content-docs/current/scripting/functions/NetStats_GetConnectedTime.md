@@ -17,7 +17,7 @@ tags: ["网络监控"]
 
 玩家保持连接的毫秒数
 
-若玩家未连接则返回 0
+若玩家未连接则返回 **0**
 
 ## 示例
 
@@ -53,4 +53,4 @@ public OnPlayerCommandText(playerid,cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): 获取每秒接收的消息数量
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): 获取玩家丢包率百分比
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): 获取玩家连接状态
-- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家 IP 地址与端口号
+- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家 IP 地址**与端口号**

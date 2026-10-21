@@ -15,7 +15,7 @@ Dobija broj poruka koje je server primio od klijenta za reprodukciju.
 
 ## Returns
 
-Ova funkcija vraća broj poruka koje je server primio od klijenta za reprodukciju. 0 se vraća ako igrač nije konektovan.
+Ova funkcija vraća broj poruka koje je server primio od klijenta za reprodukciju. **0** se vraća ako igrač nije konektovan.
 
 ## Primjeri
 
@@ -43,4 +43,4 @@ public OnPlayerCommandText(playerid,cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Dohvatite broj mrežnih poruka koje je poslužitelj primio od igrača u posljednjoj sekundi.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Dobijte packet loss procenat igrača.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Dohvatite status veze igrača.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu i port igrača.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu **i port** igrača.

@@ -51,7 +51,7 @@ public OnPlayerConnect(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP and port.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Get a player's IP **and port**.
 - [GetPlayerName](GetPlayerName): Get a player's name.
 - [GetPlayerPing](GetPlayerPing): Get the ping of a player.
 - [GetPlayerVersion](GetPlayerVersion): Get a player's client-version.

@@ -15,7 +15,7 @@ Tendang player dari server. Player harus keluar dari game dan re-connect jika me
 
 ## Returns
 
-Fungsi ini selalu me-return 1, walaupun fungsi gagal di eksekusi (tidak ada player tersebut didalam server).
+Fungsi ini selalu me-return **1**, walaupun fungsi gagal di eksekusi (tidak ada player tersebut didalam server).
 
 ## Catatan
 

@@ -15,7 +15,7 @@ Dobija količinu vremena (u milisekundama) za koje je igrač povezan na server.
 
 ## Returns
 
-Ova funkcija vraća količinu vremena (u milisekundama) za koje je igrač povezan sa serverom. 0 je vraćeno ako igrač nije konektovan.
+Ova funkcija vraća količinu vremena (u milisekundama) za koje je igrač povezan sa serverom. **0** je vraćeno ako igrač nije konektovan.
 
 ## Primjeri
 
@@ -51,4 +51,4 @@ The return value is not reset to zero after changing the game mode (using the RC
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Dohvatite broj mrežnih poruka koje je poslužitelj primio od igrača u posljednjoj sekundi.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Dobijte packet loss procenat igrača.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Dohvatite status veze igrača.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu i port igrača.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu **i port** igrača.

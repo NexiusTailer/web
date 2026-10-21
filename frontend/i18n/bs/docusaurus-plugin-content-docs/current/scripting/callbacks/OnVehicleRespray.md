@@ -44,7 +44,7 @@ Rješenje ovdje: https://pastebin.com/G81da7N1
 
 :::warning
 
-Poznati bug(ovi): pregled komponente unutar mod shopa može pozvati ovaj callback.
+**Poznati bug(ovi):** pregled komponente unutar mod shopa može pozvati ovaj callback.
 
 :::
 

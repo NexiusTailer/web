@@ -16,9 +16,9 @@ Provjerava da li je igrač u određenom vozilu.
 
 ## Returns
 
-1 - Igrač JE u vozilu.
+**1** - Igrač JE u vozilu.
 
-0 - Igrač NIJE u vozilu.
+**0** - Igrač NIJE u vozilu.
 
 ## Primjeri
 

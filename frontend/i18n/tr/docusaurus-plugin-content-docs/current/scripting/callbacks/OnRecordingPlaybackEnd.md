@@ -22,5 +22,5 @@ public OnRecordingPlaybackEnd()
 
 Aşağıdaki fonksiyonlar bu geri çağırma ile bir şekilde ilişkilidir ve faydalı olabilirler.
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): Kayıtlı bir .rec dosyasını oynatmaya başlar.
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): Bir .rec dosyasının oynatılmasını durdurur.
+- [StartRecordingPlayback](../functions/StartRecordingPlayback): Kayıtlı bir _.rec_ dosyasını oynatmaya başlar.
+- [StopRecordingPlayback](../functions/StopRecordingPlayback): Bir _.rec_ dosyasının oynatılmasını durdurur.

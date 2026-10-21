@@ -49,7 +49,7 @@ public OnPlayerConnect(playerid)
 
 ## توابع مرتبط
 
-- [NetStats_GetIpPort](NetStats_GetIpPort): دریافت IP و پورت بازیکن.
+- [NetStats_GetIpPort](NetStats_GetIpPort): دریافت IP **و پورت** بازیکن.
 - [GetPlayerRawIp](GetPlayerRawIp): دریافت Raw IP بازیکن.
 - [GetPlayerName](GetPlayerName): دریافت نام بازیکن.
 - [GetPlayerPing](GetPlayerPing): دریافت پینگ بازیکن.

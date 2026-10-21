@@ -44,7 +44,7 @@ Buradan düzeltilebilir: https://pastebin.com/G81da7N1
 
 :::warning
 
-Bilinen Bug(lar): Mod mağazasında bir parçayı önizlemek bu geri çağırmayı çalıştırabilir.
+**Bilinen Bug(lar):** Mod mağazasında bir parçayı önizlemek bu geri çağırmayı çalıştırabilir.
 
 :::
 

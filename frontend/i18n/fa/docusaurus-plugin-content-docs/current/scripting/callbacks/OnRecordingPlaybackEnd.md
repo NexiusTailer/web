@@ -22,5 +22,5 @@ public OnRecordingPlaybackEnd()
 
 توابع زیر ممکن است مفید باشند، زیرا به نوعی با این کالبک مرتبط هستند.
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): شروع بازپخش فایل .rec از قبل ضبط شده.
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): توقف بازپخش فایل .rec.
+- [StartRecordingPlayback](../functions/StartRecordingPlayback): شروع بازپخش فایل _.rec_ از قبل ضبط شده.
+- [StopRecordingPlayback](../functions/StopRecordingPlayback): توقف بازپخش فایل _.rec_.

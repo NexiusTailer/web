@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_BytesSent](NetStats_BytesSent): مقدار اطلاعات (به بایت) که سرور به بازیکن ارسال کرده را بگیر.
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): تعداد پیام‌های شبکه‌ای که سرور در ثانیه گذشته از بازیکن دریافت کرده را بگیر.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): درصد packet loss بازیکن را بگیر.
-- [NetStats_GetIpPort](NetStats_GetIpPort): IP و port بازیکن را بگیر.
+- [NetStats_GetIpPort](NetStats_GetIpPort): IP **و port** بازیکن را بگیر.
 - [IsPlayerConnected](IsPlayerConnected): بررسی کن که آیا بازیکن به سرور متصل است.
 
 ## کالبک‌های مرتبط
