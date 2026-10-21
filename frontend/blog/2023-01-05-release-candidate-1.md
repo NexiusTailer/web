@@ -56,7 +56,7 @@ A full list of what's available:
 - More warnings for previously undetected issues. The more problems the compiler can find, the fewer you need to.
 - An *upgrader* tool to add tags and `const` to user-code and fix several new warnings.
 - More consistent naming. Every native has been closely examined and compared to ensure the maximum level of similarity and intuitiveness in naming.
-- Added `{Float, _}:...` everywhere. What does this mean? It means no more `format()`[^2] - think y_va but natively.
+- Added `{Float, _}:...` everywhere. What does this mean? It means no more `format`[^2] - think y_va but natively.
 - `-O2`, the highest pawn optimisation level, works when using the new compiler and VM. Some includes may need to be updated, but some already have. To help with that...
 - The `__optimisation` macro was added so code can configure itself when compiled with -O2.
 
@@ -75,7 +75,7 @@ https://github.com/openmultiplayer/upgrade
 
 [^1]: Almost all of them.
 
-[^2]: Almost no more `format()`.
+[^2]: Almost no more `format`.
 
 ## SDK
 

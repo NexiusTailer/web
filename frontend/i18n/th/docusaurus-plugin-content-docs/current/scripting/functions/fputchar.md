@@ -11,7 +11,7 @@ Write one character to a file.
 
 | Name   | Description                                              |
 | ------ | -------------------------------------------------------- |
-| handle | The File handle to use, earlier opened by fopen().       |
+| handle | The File handle to use, earlier opened by fopen.         |
 | value  | The character to write into the file.                    |
 | utf8   | If true, write in UTF8 mode, otherwise in extended ASCII |
 
