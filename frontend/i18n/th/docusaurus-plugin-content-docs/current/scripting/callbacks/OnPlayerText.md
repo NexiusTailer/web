@@ -24,7 +24,7 @@ It is always called first in filterscripts so returning 0 there blocks other scr
 public OnPlayerText(playerid, text[])
 {
     new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
+    format(pText, sizeof(pText), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, pText);
     return 0; // ignore the default text and send the custom one
 }

@@ -25,7 +25,7 @@ new Text: gMyTextdraw;
 
 public OnGameModeInit()
 {
-    gMyTextdraw = TextDrawCreate( ... );
+    gMyTextdraw = TextDrawCreate(...);
     return 1;
 }
 

@@ -14,7 +14,7 @@ Obtenha o nome de uma arma.
 | --------------------- | ----------------------------------------------------------------------- |
 | WEAPON:weaponid | O ID da arma cujo nome deseja obter.                                |
 | weapon[] | Um array para armazenar o nome da arma, passado por referência.            |
-| len = sizeof (weapon) | O comprimento máximo do nome da arma a ser armazenado. Deve ser sizeof(nome). |
+| len = sizeof(weapon)  | O comprimento máximo do nome da arma a ser armazenado. Deve ser sizeof(nome). |
 
 ## Retornos
 

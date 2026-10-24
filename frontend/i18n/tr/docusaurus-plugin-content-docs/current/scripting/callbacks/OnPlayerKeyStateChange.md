@@ -127,13 +127,13 @@ Tanım:
 Bir tuşa basılu tutmak:
 
 ```c
-if (HOLDING( KEY_FIRE ))
+if (HOLDING(KEY_FIRE))
 ```
 
 Birden fazla tuşa basılması:
 
 ```c
-if (HOLDING( KEY_FIRE | KEY_CROUCH ))
+if (HOLDING(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Tuşu ilk basılıyorken algılama
@@ -149,13 +149,13 @@ Tanım:
 Tuşa basıldığında:
 
 ```c
-if (PRESSED( KEY_FIRE ))
+if (PRESSED(KEY_FIRE))
 ```
 
 Birden fazla tuşa basıldığında:
 
 ```c
-if (PRESSED( KEY_FIRE | KEY_CROUCH ))
+if (PRESSED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Bir oyuncunun şu anda bir tuşa basıp basmadığını algılama
@@ -164,20 +164,20 @@ Tanım:
 
 ```c
 // PRESSING(keyVariable, keys)
-#define PRESSING(%0,%1) \
+#define PRESSING(%0, %1) \
 	(%0 & (%1))
 ```
 
 Bir tuşa basma:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE ))
+if (PRESSING(newkeys, KEY_FIRE))
 ```
 
 Birden fazla tuşa basma:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
+if (PRESSING(newkeys, KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Tutması bırakılmış tuşu algılama
@@ -193,13 +193,13 @@ Tanım:
 Tuş bırakıldığında:
 
 ```c
-if (RELEASED( KEY_FIRE ))
+if (RELEASED(KEY_FIRE))
 ```
 
 Birden fazla tuş bırakıldığında:
 
 ```c
-if (RELEASED( KEY_FIRE | KEY_CROUCH ))
+if (RELEASED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ## Örnek

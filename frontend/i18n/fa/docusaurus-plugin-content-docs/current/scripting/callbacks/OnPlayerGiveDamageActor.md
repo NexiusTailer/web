@@ -36,8 +36,8 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
     new attackerName[MAX_PLAYER_NAME];
     new weaponName[24];
 
-    GetPlayerName(playerid, attackerName, sizeof (attackerName));
-    GetWeaponName(weaponid, weaponName, sizeof (weaponName));
+    GetPlayerName(playerid, attackerName, sizeof(attackerName));
+    GetWeaponName(weaponid, weaponName, sizeof(weaponName));
 
     format(string, sizeof(string), "%s has made %.0f damage to actor id %d, weapon: %s", attackerName, amount, damaged_actorid, weaponName);
     SendClientMessageToAll(0xFFFFFFFF, string);

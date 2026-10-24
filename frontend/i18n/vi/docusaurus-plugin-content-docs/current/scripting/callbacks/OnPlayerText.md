@@ -24,7 +24,7 @@ Nó luôn được gọi đầu tiên trong filterscripts nên trả về 0 sẽ
 public OnPlayerText(playerid, text[])
 {
     new string[144];
-    format(string, sizeof (string), "(%d) %s", playerid, text);
+    format(string, sizeof(string), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, string);
     return 0; // bỏ qua văn bản mặc định và gửi văn bản tùy chỉnh
 }

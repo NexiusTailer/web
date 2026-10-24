@@ -15,7 +15,7 @@ tags: ["字符串"]
 | const source[]            | 源字符串                                     |
 | start                     | 起始位置（基于 0 的索引）                    |
 | end                       | 结束位置（基于 0 的索引）                    |
-| maxlength = sizeof (dest) | 目标字符串的最大容量（默认为 dest 数组长度） |
+| maxlength = sizeof(dest)  | 目标字符串的最大容量（默认为 dest 数组长度） |
 
 ## 返回值
 

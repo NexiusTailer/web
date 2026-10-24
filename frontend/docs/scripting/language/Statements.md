@@ -273,7 +273,7 @@ main()
 A for loop is a type of loop involving three stages, initialisation, comparison and update. These are each separated by a semicolon (Wink and can each be excluded by just setting a blank space. The most basic for loop is:
 
 ```c
-for ( ; ; ) {}
+for (;;) {}
 ```
 
 This has no initialisation, no comparison and no update and as a result will go forever (the comparison, being absent, defaults to true).
@@ -333,7 +333,7 @@ That will produce an error as "i" doesn't exist after the loop ends. However:
 ```c
 new
     i = 0;
-for ( ; i < MAX_PLAYERS; i++)
+for (; i < MAX_PLAYERS; i++)
 {
     printf("%d", i);
 }

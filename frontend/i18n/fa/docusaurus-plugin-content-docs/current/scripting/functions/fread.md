@@ -13,7 +13,7 @@ tags: ["file management"]
 | ---------------------- | ----------------------------------------------------------------- |
 | File:handle            | هندل فایل که ازش خونده می‌شه (توسط fopen برگردونده شده).          |
 | string[]               | آرایه string برای ذخیره متن خونده شده، که با reference پاس می‌شه. |
-| size = sizeof (string) | تعداد بایت‌هایی که باید خونده بشن.                                |
+| size = sizeof(string)  | تعداد بایت‌هایی که باید خونده بشن.                                |
 | bool:pack              | آیا string باید pack شده باشه؟ (پیش‌فرض: false).                  |
 
 ## مقدار بازگشتی
@@ -35,7 +35,7 @@ if (handle)
     // موفق
 
     // خواندن کل فایل
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -65,7 +65,7 @@ if (handle)
     // موفق
 
     // خواندن کل فایل
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

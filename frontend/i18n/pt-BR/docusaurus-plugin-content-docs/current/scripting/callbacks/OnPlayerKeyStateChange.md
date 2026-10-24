@@ -125,13 +125,13 @@ A definição:
 Pressionando uma tecla:
 
 ```c
-if (HOLDING( KEY_FIRE ))
+if (HOLDING(KEY_FIRE))
 ```
 
 Pressionando múltiplas teclas:
 
 ```c
-if (HOLDING( KEY_FIRE | KEY_CROUCH ))
+if (HOLDING(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detectando a primeira tecla que foi pressionada
@@ -147,13 +147,13 @@ A definição:
 Uma tecla que foi pressionada:
 
 ```c
-if (PRESSED( KEY_FIRE ))
+if (PRESSED(KEY_FIRE))
 ```
 
 Múltiplas teclas que foram pressionadas:
 
 ```c
-if (PRESSED( KEY_FIRE | KEY_CROUCH ))
+if (PRESSED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detectando se o jogador, atualmente, está pressionando uma tecla
@@ -162,20 +162,20 @@ A definição:
 
 ```c
 // PRESSING(keyVariable, keys)
-#define PRESSING(%0,%1) \
+#define PRESSING(%0, %1) \
 	(%0 & (%1))
 ```
 
 Pressionando uma tecla:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE ))
+if (PRESSING(newkeys, KEY_FIRE))
 ```
 
 Pressionando múltiplas teclas:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
+if (PRESSING(newkeys, KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detectando uma tecla que foi solta
@@ -191,13 +191,13 @@ A definição:
 Uma tecla solta:
 
 ```c
-if (RELEASED( KEY_FIRE ))
+if (RELEASED(KEY_FIRE))
 ```
 
 Múltiplas teclas soltas:
 
 ```c
-if (RELEASED( KEY_FIRE | KEY_CROUCH ))
+if (RELEASED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ## Exemplos

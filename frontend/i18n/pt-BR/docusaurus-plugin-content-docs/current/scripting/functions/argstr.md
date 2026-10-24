@@ -14,7 +14,7 @@ Obter o valor string de um argumento por nome.
 | skip = 0              | O número de argumentos (com potencialmente o mesmo nome) para pular. |
 | const argument[] = "" | O nome do argumento, incluindo `-`s e `/`s.                          |
 | value[] = ""          | O destino da string de saída.                                        |
-| size = sizeof (value) | O tamanho do destino.                                                |
+| size = sizeof(value)  | O tamanho do destino.                                                |
 | bool:pack = false     | O valor de retorno deve ser empacotado?                              |
 
 ## Retorno

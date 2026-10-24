@@ -17,11 +17,11 @@ stock FindEmptySlot()
 {
     new
         i = 0;
-    while (i < sizeof (gMyArray) && gMyArray[i])
+    while (i < sizeof(gMyArray) && gMyArray[i])
     {
         i++;
     }
-    if (i == sizeof (gMyArray)) return -1;
+    if (i == sizeof(gMyArray)) return -1;
     return i;
 }
 ```
@@ -33,11 +33,11 @@ MyFunction()
 {
     new
         i = 0;
-    while (i < sizeof (gMyArray) && gMyArray[i])
+    while (i < sizeof(gMyArray) && gMyArray[i])
     {
         i++;
     }
-    if (i == sizeof (gMyArray))
+    if (i == sizeof(gMyArray))
     {
         printf("No free slot found");
         return 0;

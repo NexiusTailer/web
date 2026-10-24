@@ -123,13 +123,13 @@ The define:
 Holding one key:
 
 ```c
-if (HOLDING( KEY_FIRE ))
+if (HOLDING(KEY_FIRE))
 ```
 
 Holding multiple keys:
 
 ```c
-if (HOLDING( KEY_FIRE | KEY_CROUCH ))
+if (HOLDING(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detecting first pressing a key
@@ -145,13 +145,13 @@ The define:
 Pressed one key:
 
 ```c
-if (PRESSED( KEY_FIRE ))
+if (PRESSED(KEY_FIRE))
 ```
 
 Pressed multiple keys:
 
 ```c
-if (PRESSED( KEY_FIRE | KEY_CROUCH ))
+if (PRESSED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detecting if a player is pressing a key currently
@@ -160,20 +160,20 @@ The define:
 
 ```c
 // PRESSING(keyVariable, keys)
-#define PRESSING(%0,%1) \
+#define PRESSING(%0, %1) \
 	(%0 & (%1))
 ```
 
 Pressing one key:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE ))
+if (PRESSING(newkeys, KEY_FIRE))
 ```
 
 Pressing multiple keys:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
+if (PRESSING(newkeys, KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detecting releasing a key
@@ -189,13 +189,13 @@ The define:
 Released one key:
 
 ```c
-if (RELEASED( KEY_FIRE ))
+if (RELEASED(KEY_FIRE))
 ```
 
 Released multiple keys:
 
 ```c
-if (RELEASED( KEY_FIRE | KEY_CROUCH ))
+if (RELEASED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ## Examples

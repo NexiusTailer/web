@@ -29,9 +29,9 @@ public OnPlayerUpdate(playerid)
             animationName[32],
             string[128];
 
-        GetAnimationName(GetPlayerAnimationIndex(playerid), animationLibrary, sizeof (animationLibrary), animationName, sizeof (animationName));
+        GetAnimationName(GetPlayerAnimationIndex(playerid), animationLibrary, sizeof(animationLibrary), animationName, sizeof(animationName));
 
-        format(string, sizeof (string), "Running anim: %s %s", animationLibrary, animationName);
+        format(string, sizeof(string), "Running anim: %s %s", animationLibrary, animationName);
         SendClientMessage(playerid, 0xFFFFFFFF, string);
     }
     return 1;

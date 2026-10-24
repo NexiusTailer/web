@@ -13,7 +13,7 @@ This function allows you to read data from a file, without encoding and line ter
 | ---------------------- | ------------------------------------- |
 | File:handle            | File handle to use, opened by fopen() |
 | buffer                 | The buffer to save the read data in.  |
-| size = sizeof (buffer) | The number of cells to read.          |
+| size = sizeof(buffer)  | The number of cells to read.          |
 
 ## Returns
 
@@ -50,7 +50,7 @@ if (handle)
     file_len = flength(handle);
 
     // If file is equally larger than the array
-    if (file_len == (some_enum*4))
+    if (file_len == (some_enum * 4))
     {
         // Success
 

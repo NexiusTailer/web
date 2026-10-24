@@ -14,7 +14,7 @@ Grave dados em um arquivo em formato binário, ignorando freios de linha e codif
 | ---------------------- | ------------------------------------------ |
 | File:handle | O identificador de arquivo a ser usado, aberto por fopen(). |
 | const buffer[] | Os dados a serem gravados no arquivo.             |
-| size = sizeof (buffer) | O número de células a serem gravadas.              |
+| size = sizeof(buffer)  | O número de células a serem gravadas.              |
 
 ## Retornos
 

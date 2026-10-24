@@ -15,7 +15,7 @@ tags: ["字符串"]
 | const source[]            | 源数组                                       |
 | index = 0                 | 目标数组中开始复制的字节索引（以字节为单位） |
 | numbytes                  | 要复制的字节数（非单元格数）                 |
-| maxlength = sizeof (dest) | 目标缓冲区的最大单元格容量                   |
+| maxlength = sizeof(dest)  | 目标缓冲区的最大单元格容量                   |
 
 ## 返回值
 

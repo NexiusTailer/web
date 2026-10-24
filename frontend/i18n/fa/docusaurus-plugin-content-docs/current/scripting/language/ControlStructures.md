@@ -352,7 +352,7 @@ for (new a = 9; a < 10; a++)
 این یک کد ساده برای حلقه زدن روی همه بازیکن‌ها است:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
         if (IsPlayerConnected(i))
         {
@@ -366,7 +366,7 @@ for(new i,a = GetMaxPlayers(); i < a; i++)
 ```c
 new
     a = 9;
-for ( ; a < 10; )
+for (; a < 10;)
 {
     // Code in the loop
     a++;
@@ -420,7 +420,7 @@ OBOE مخفف Off By One Error است. این یک اشتباه بسیار را�
 new
     a = 0,
     b[10];
-while (a <= sizeof (b))
+while (a <= sizeof(b))
 {
     b[a] = 0;
 }

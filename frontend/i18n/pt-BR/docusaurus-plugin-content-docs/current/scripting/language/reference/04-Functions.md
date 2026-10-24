@@ -236,7 +236,7 @@ weekday(month, day, year)
         month += 12, --year
     new j = year % 100
     new e = year / 100
-    return (day + (month+1)*26/10 + j + j/4 + e/4 - 2*e) % 7
+    return (day + (month + 1) * 26 / 10 + j + j / 4 + e / 4 - 2 * e) % 7
 }
 
 ```
@@ -247,11 +247,11 @@ Listing: weekday usage —positional parameters
 
 ```c
 
-new wkday1 = weekday( .month = 12, .day = 31, .year = 1999)
+new wkday1 = weekday(.month = 12, .day = 31, .year = 1999)
 
-new wkday2 = weekday( .day = 31, .month = 12, .year = 1999)
+new wkday2 = weekday(.day = 31, .month = 12, .year = 1999)
 
-new wkday3 = weekday( .year = 1999, .month = 12, .day = 31)
+new wkday3 = weekday(.year = 1999, .month = 12, .day = 31)
 
 ```
 
@@ -269,7 +269,7 @@ Listing: increment function —default values
 
 ```c
 
-increment(&value, incr=1) value += incr
+increment(&value, incr = 1) value += incr
 
 ```
 
@@ -291,7 +291,7 @@ Listing: divmod function —default values for reference parameters
 
 ```c
 
-divmod(a, b, &quotient=0, &remainder=0)
+divmod(a, b, &quotient = 0, &remainder = 0)
 {
     quotient = a / b
     remainder = a % b
@@ -571,10 +571,10 @@ main()
 move(from, to, spare, numdisks)
 {
     if (numdisks > 1)
-        move from, spare, to, numdisks-1
+        move from, spare, to, numdisks - 1
     printf "Move disk from pillar %d to pillar %d\n", from, to
     if (numdisks > 1)
-        move spare, to, from, numdisks-1
+        move spare, to, from, numdisks - 1
 }
 
 ```
@@ -631,7 +631,7 @@ Listing: onkey function
 
 public onkey(keycode)
 {
-    if (key=='~')
+    if (key == '~')
         return 160 /* replace ~ by hard space (code 160 in Latin-1) */
     else
         return key /* leave other keys unaltered */
@@ -653,7 +653,7 @@ Listing: @onkey function
 ```c
 
 @onkey(keycode)
-    return key=='~' ? 160 : key
+    return key == '~' ? 160 : key
 
 ```
 
@@ -802,7 +802,7 @@ main()
     do
     {
         print ">> "
-        value = ones: getvalue(.base=16)
+        value = ones: getvalue(.base = 16)
         chksum = chksum + value
         printf "Checksum = %x\n", chksum
     }
@@ -942,7 +942,7 @@ Listing: operator= function
 
 ones: operator=(a)
 
-return ones: ( (a >= 0) ? a : ~(-a) )
+return ones: ((a >= 0) ? a : ~(-a))
 
 ```
 

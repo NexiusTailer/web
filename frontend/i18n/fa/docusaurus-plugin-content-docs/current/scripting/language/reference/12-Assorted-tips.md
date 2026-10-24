@@ -96,7 +96,7 @@ strupper(string[])
 {
     assert ispacked(string)
 
-    for (new i=0; string{i} != EOS; ++i)
+    for (new i = 0; string{i} != EOS; ++i)
         string{i} = toupper(string{i})
 }
 

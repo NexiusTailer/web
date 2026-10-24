@@ -12,7 +12,7 @@ tags: []
 | 参数                   | 说明                                         |
 | ---------------------- | -------------------------------------------- |
 | output[]               | 用于存储网络统计数据的字符串，通过引用传递。 |
-| size = sizeof (output) | 待存储字符串的长度                           |
+| size = sizeof(output)  | 待存储字符串的长度                           |
 
 ## 返回值
 
@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/netstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetNetworkStats(stats, sizeof(stats)); // 获取服务器网络统计数据
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "服务器网络状态", stats, "关闭", "");
     }

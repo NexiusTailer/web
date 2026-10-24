@@ -351,9 +351,9 @@ for (new a = 9; a < 10; a++)
 Este é um simples código para realizar um loop através de todos os players:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
-        if(IsPlayerConnected(i))
+        if (IsPlayerConnected(i))
         {
                  //Faça algo
         }
@@ -365,7 +365,7 @@ Ambas as condições podem ser omitidas simplesmente não colocando código nela
 ```c
 new
     a = 9;
-for ( ; a < 10; )
+for (; a < 10;)
 {
     // Código no loop
     a++;
@@ -419,7 +419,7 @@ OBOE significa "Off By One Error" (Desligado por um erro). Esse é um erro muito
 new
     a = 0,
     b[10];
-while (a <= sizeof (b))
+while (a <= sizeof(b))
 {
     b[a] = 0;
 }

@@ -229,7 +229,7 @@ weekday(month, day, year)
         month += 12, --year
     new j = year % 100
     new e = year / 100
-    return (day + (month+1)*26/10 + j + j/4 + e/4 - 2*e) % 7
+    return (day + (month + 1) * 26 / 10 + j + j / 4 + e / 4 - 2 * e) % 7
 }
 
 ```
@@ -240,11 +240,11 @@ weekday(month, day, year)
 
 ```c
 
-new wkday1 = weekday( .month = 12, .day = 31, .year = 1999)
+new wkday1 = weekday(.month = 12, .day = 31, .year = 1999)
 
-new wkday2 = weekday( .day = 31, .month = 12, .year = 1999)
+new wkday2 = weekday(.day = 31, .month = 12, .year = 1999)
 
-new wkday3 = weekday( .year = 1999, .month = 12, .day = 31)
+new wkday3 = weekday(.year = 1999, .month = 12, .day = 31)
 
 ```
 
@@ -264,7 +264,7 @@ new wkday3 = weekday( .year = 1999, .month = 12, .day = 31)
 
 ```c
 
-increment(&value, incr=1) value += incr
+increment(&value, incr = 1) value += incr
 
 ```
 
@@ -286,7 +286,7 @@ increment(a, 1)
 
 ```c
 
-divmod(a, b, &quotient=0, &remainder=0)
+divmod(a, b, &quotient = 0, &remainder = 0)
 {
     quotient = a / b
     remainder = a % b
@@ -570,10 +570,10 @@ main()
 move(from, to, spare, numdisks)
 {
     if (numdisks > 1)
-        move from, spare, to, numdisks-1
+        move from, spare, to, numdisks - 1
     printf "Move disk from pillar %d to pillar %d\n", from, to
     if (numdisks > 1)
-        move spare, to, from, numdisks-1
+        move spare, to, from, numdisks - 1
 }
 
 ```
@@ -630,7 +630,7 @@ State classifier ها در forward declaration ها نادیده گرفته می
 
 public onkey(keycode)
 {
-    if (key=='~')
+    if (key == '~')
         return 160 /* replace ~ by hard space (code 160 in Latin-1) */
     else
         return key /* leave other keys unaltered */
@@ -651,7 +651,7 @@ public onkey(keycode)
 ```c
 
 @onkey(keycode)
-    return key=='~' ? 160 : key
+    return key == '~' ? 160 : key
 
 ```
 
@@ -757,7 +757,7 @@ main()
     do
     {
         print ">> "
-        value = ones: getvalue(.base=16)
+        value = ones: getvalue(.base = 16)
         chksum = chksum + value
         printf "Checksum = %x\n", chksum
     }
@@ -870,7 +870,7 @@ native Float: operator+(Float: val, Float: val) = float_add
 
 ones: operator=(a)
 
-return ones: ( (a >= 0) ? a : ~(-a) )
+return ones: ((a >= 0) ? a : ~(-a))
 
 ```
 

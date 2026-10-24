@@ -24,7 +24,7 @@ tags: ["player"]
 public OnPlayerText(playerid, text[])
 {
     new string[144];
-    format(string, sizeof (string), "(%d) %s", playerid, text);
+    format(string, sizeof(string), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, string);
     return 0; // занемарите подразумевани текст и пошаљите прилагођени.
 }

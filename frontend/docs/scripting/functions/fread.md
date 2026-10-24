@@ -13,7 +13,7 @@ Read a single line from a file.
 | ---------------------- | -------------------------------------------------------------- |
 | File:handle            | The handle of the file to read from (returned by fopen).       |
 | string[]               | A string array to store the read text in, passed by reference. |
-| size = sizeof (string) | The number of bytes to read.                                   |
+| size = sizeof(string)  | The number of bytes to read.                                   |
 | bool:pack              | Should the string be packed? (default: false).                 |
 
 ## Returns
@@ -35,7 +35,7 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -65,7 +65,7 @@ if (handle)
     // Success
 
     // Read the whole file
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

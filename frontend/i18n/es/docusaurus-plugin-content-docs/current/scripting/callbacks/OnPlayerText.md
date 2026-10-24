@@ -29,7 +29,7 @@ Siempre se llama primero en filterscripts.
 public OnPlayerText(playerid, text[])
 {
     new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
+    format(pText, sizeof(pText), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, pText);
     return 0; // ignora el texto predeterminado y envía el personalizado
 }

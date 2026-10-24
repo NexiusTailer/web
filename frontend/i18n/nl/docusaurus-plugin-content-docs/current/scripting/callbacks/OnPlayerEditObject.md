@@ -36,12 +36,12 @@ Wordt altijd als eerste aangeroepen in filterscripts.
 public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)
 {
     new
-        Float: oldX,
-        Float: oldY,
-        Float: oldZ,
-        Float: oldRotX,
-        Float: oldRotY,
-        Float: oldRotZ;
+        Float:oldX,
+        Float:oldY,
+        Float:oldZ,
+        Float:oldRotX,
+        Float:oldRotY,
+        Float:oldRotZ;
 
     GetObjectPos(objectid, oldX, oldY, oldZ);
     GetObjectRot(objectid, oldRotX, oldRotY, oldRotZ);

@@ -14,7 +14,7 @@ tags: ["文件管理"]
 | const filename[]         | 存储匹配结果的字符串（返回压缩字符串格式） |
 | const pattern[]          | 匹配模式（支持通配符）                     |
 | index                    | 当存在多个匹配项时的文件索引号（默认：0）  |
-| size = sizeof (filename) | 目标字符串的最大容量                       |
+| size = sizeof(filename)  | 目标字符串的最大容量                       |
 
 ## 返回值
 

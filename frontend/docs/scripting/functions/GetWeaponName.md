@@ -13,7 +13,7 @@ Get the name of a weapon.
 | --------------------- | ----------------------------------------------------------------------- |
 | WEAPON:weaponid       | The ID of the weapon to get the name of.                                |
 | weapon[]              | An array to store the weapon's name in, passed by reference.            |
-| len = sizeof (weapon) | The maximum length of the weapon name to store. Should be sizeof(name). |
+| len = sizeof(weapon)  | The maximum length of the weapon name to store. Should be sizeof(name). |
 
 ## Returns
 

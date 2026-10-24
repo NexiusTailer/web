@@ -14,7 +14,7 @@ Get the content of a field from DB_ExecuteQuery
 | DBResult:result        | The result to get the data from. |
 | field                  | The field to get the data from.  |
 | output[]               | The result.                      |
-| size = sizeof (output) | The max length of the field.     |
+| size = sizeof(output)  | The max length of the field.     |
 
 ## Returns
 

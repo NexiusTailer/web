@@ -14,7 +14,7 @@ Get the contents of field with specified name.
 | DBResult:result        | The result to get the data from    |
 | const field[]          | The fieldname to get the data from |
 | output[]               | The result                         |
-| size = sizeof (output) | The max length of the field        |
+| size = sizeof(output)  | The max length of the field        |
 
 ## Returns
 

@@ -16,7 +16,7 @@ Returns all the information on the given game text style.
 | playerid               | The ID of the player to get the rotation of.                          |
 | style                  | The [style](../resources/gametextstyles) of text to get the data for. |
 | message[]              | Return array for the text string.                                     |
-| len = sizeof (message) | Size of the output.                                                   |
+| len = sizeof(message)  | Size of the output.                                                   |
 | time                   | The time the gametext was originally shown for.                       |
 | remaining              | How much of that time is still remaining.                             |
 

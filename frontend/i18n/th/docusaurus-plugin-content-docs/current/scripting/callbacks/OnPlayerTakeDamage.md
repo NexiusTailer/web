@@ -44,10 +44,10 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
             victimName[MAX_PLAYER_NAME],
             attackerName[MAX_PLAYER_NAME];
 
-        GetPlayerName(playerid, victimName, sizeof (victimName));
-        GetPlayerName(issuerid, attackerName, sizeof (attackerName));
+        GetPlayerName(playerid, victimName, sizeof(victimName));
+        GetPlayerName(issuerid, attackerName, sizeof(attackerName));
 
-        GetWeaponName(weaponid, weaponName, sizeof (weaponName));
+        GetWeaponName(weaponid, weaponName, sizeof(weaponName));
 
         format(infoString, sizeof(infoString), "%s has made %.0f damage to %s, weapon: %s, bodypart: %d", attackerName, amount, victimName, weaponName, bodypart);
         SendClientMessageToAll(-1, infoString);

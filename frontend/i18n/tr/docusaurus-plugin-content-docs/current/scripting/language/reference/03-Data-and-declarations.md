@@ -120,8 +120,8 @@ new i = 1
 new j                                   /* j 0'dır */
 new k = 'a'                             /* k, 'a' harfinin karakter kodunu içerir */
 
-new a[] = {1,4,9,16,25}                 /* a 5 elemana sahiptir */
-new s1[20] = {'a','b'}                  /* diğer 18 öğe 0'dır */
+new a[] = {1, 4, 9, 16, 25}                 /* a 5 elemana sahiptir */
+new s1[20] = {'a', 'b'}                  /* diğer 18 öğe 0'dır */
 new s2[] = "Hello world..."             /* açılmış bir dize */
 
 ```
@@ -255,7 +255,7 @@ Bir atama işleminde, “=” işareti sağ tarafta etiketlenebilir. Etiketli de
 new bool:flag = true            /* "flag" sadece "true" veya "false" değerini alabilir */
 
 const error:success = 0
-const error:fatal= 1
+const error:fatal = 1
 const error:nonfatal = 2
 
 error:errno = fatal

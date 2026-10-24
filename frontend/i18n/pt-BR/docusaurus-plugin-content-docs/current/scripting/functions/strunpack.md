@@ -14,7 +14,7 @@ Esta função pode ser usada para descompactar uma string.
 | ------------------------- | --------------------------------------------------------------------------- |
 | dest[] | A string de destino na qual salvar a string descompactada, passada por referência. |
 | const source[] | A origem, string compactada original.                                         |
-| maxlength = sizeof (dest) | O tamanho máximo a ser inserido.                                                 |
+| maxlength = sizeof(dest)  | O tamanho máximo a ser inserido.                                                 |
 
 ## Retornos
 

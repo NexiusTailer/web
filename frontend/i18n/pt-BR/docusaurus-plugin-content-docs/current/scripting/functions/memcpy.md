@@ -16,7 +16,7 @@ Copie bytes de um local para outro.
 | const source[] | A matriz de origem.                                                                     |
 | index = 0 | O índice inicial em bytes na matriz de destino para onde os dados devem ser copiados. |
 | numbytes | O número de bytes (não células) a serem copiados.                                              |
-| maxlength = sizeof (dest) | O número máximo de células que cabem no buffer de destino.                       |
+| maxlength = sizeof(dest)  | O número máximo de células que cabem no buffer de destino.                       |
 
 ## Retornos
 

@@ -14,7 +14,7 @@ Obtém as estatísticas de rede de um jogador e as salva em uma string.
 | ---------------------- | ------------------------------------------------------------- |
 | playerid | O ID do jogador do qual você deseja obter as estatísticas da rede.     |
 | output[] | A string para armazenar as estatísticas da rede, passada por referência. |
-| size = sizeof (output) | O comprimento da string que deve ser armazenada.               |
+| size = sizeof(output)  | O comprimento da string que deve ser armazenada.               |
 
 ## Retornos
 
@@ -27,7 +27,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/mynetstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetPlayerNetworkStats(playerid, stats, sizeof(stats));
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "My Network Stats", stats, "Okay", "");
     }

@@ -296,8 +296,8 @@ DateToJulian(day, month, year)
 
     if (month <= 2)
     year--, month += 12
-    new jdn = 365*year + year/4 - year/100 + year/400
-    + (153*month - 457) / 5
+    new jdn = 365 * year + year / 4 - year / 100 + year / 400
+    + (153 * month - 457) / 5
     + day + 1721119
 
     return jdn
@@ -310,17 +310,17 @@ JulianToDate(jdn, &day, &month, &year)
     /* approximate year, then adjust in a loop */
 
     year = (400 * jdn) / 146097
-    while (365*year + year/4 - year/100 + year/400 < jdn)
+    while (365 * year + year / 4 - year / 100 + year / 400 < jdn)
         year++
     year--
     /* determine month */
 
-    jdn -= 365*year + year/4 - year/100 + year/400
-    month = (5*jdn + 457) / 153
+    jdn -= 365 * year + year / 4 - year / 100 + year / 400
+    month = (5 * jdn + 457) / 153
 
     /* determine day */
 
-    day = jdn - (153*month - 457) / 5
+    day = jdn - (153 * month - 457) / 5
 
     /* move January and February to start of the year */
 
@@ -473,7 +473,7 @@ main()
 
     new word[20]
     new index
-    for ( ;; )
+    for (;;)
     {
         word = strtok(string, index)
         if (strlen(word) == 0)
@@ -549,7 +549,7 @@ main()
 
     printf "Please insert a few messages and their priorities; \
         end with an empty string\n"
-    for ( ;; )
+    for (;;)
     {
         printf "Message:    "
         getstring .string = msg[text], .maxlength = 40, .pack = true
@@ -580,12 +580,12 @@ insert(const item[message])
 
     /* find the position to insert it to */
     new pos = queueitems                 /* start at the bottom */
-    while (pos > 0 && item[priority] > queue[pos-1][priority])
+    while (pos > 0 && item[priority] > queue[pos - 1][priority])
         --pos                                        /* higher priority: move one position up */
 
     /* make place for the item at the insertion spot */
     for (new i = queueitems; i > pos; --i)
-        queue[i] = queue[i-1]
+        queue[i] = queue[i - 1]
 
     /* add the message to the correct slot */
         queue[pos] = item
@@ -606,7 +606,7 @@ extract(item[message])
 
     /* move the queue one position up */
     for (new i = 0; i < queueitems; ++i)
-        queue[i] = queue[i+1]
+        queue[i] = queue[i + 1]
 
     return true
 }
@@ -693,7 +693,7 @@ main()
     #pragma unused A, B
 
     print "The departure point: "
-    new source = clamp( .value = toupper(getchar()) - 'A',
+    new source = clamp(.value = toupper(getchar()) - 'A',
                 .min = 0,
                 .max = sizeof nextstep - 1
                  )
@@ -702,7 +702,7 @@ main()
 
     /* make the set */
     new result = findtargets(source, steps, nextstep)
-    printf "The points reachable from %c in %d steps: ", source+'A',
+    printf "The points reachable from %c in %d steps: ", source + 'A',
     steps
     for (new i = 0; i < sizeof nextstep; i++)
         if (result & 1 << i)
@@ -837,7 +837,7 @@ rpncalc(const string[])
 {
     new index
     new field[token]
-    for ( ;; )
+    for (;;)
     {
         field = gettoken(string, index)
         switch (field[t_type])
@@ -1451,7 +1451,7 @@ weekday(day, month, year)
         month += 12, --year
     new j = year % 100
     new e = year / 100
-    return (day + (month+1)*26/10 + j + j/4 + e/4 - 2*e) % 7
+    return (day + (month + 1) * 26 / 10 + j + j / 4 + e / 4 - 2 * e) % 7
 }
 
 /**
@@ -1479,10 +1479,10 @@ weekday(day, month, year)
 bool: readdate(&day, &month, &year)
 {
     print "Give a date (dd-mm-yyyy): "
-    day = getvalue(_,'-','/')
-    month = getvalue(_,'-','/')
+    day = getvalue(_, '-', '/')
+    month = getvalue(_, '-', '/')
     year = getvalue()
-    return 1 <= month <= 12 && 1 <= day <= daysinmonth(month,year)
+    return 1 <= month <= 12 && 1 <= day <= daysinmonth(month, year)
 }
 
 /**
@@ -1524,7 +1524,7 @@ daysinmonth(month, year)
 {
     static daylist[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }
     assert 1 <= month <= 12
-    return daylist[month-1] + _:(month == 2 && isleapyear(year))
+    return daylist[month - 1] + _:(month == 2 && isleapyear(year))
 }
 ```
 

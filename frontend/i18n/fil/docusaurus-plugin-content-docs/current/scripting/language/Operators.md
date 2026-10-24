@@ -79,7 +79,7 @@ Ibinabalik ang laki sa ELEMENTS ng isang array:
 ```c
 new
     someVar[10];
-printf("%d", sizeof (someVar));
+printf("%d", sizeof(someVar));
 ```
 
 Output:
@@ -93,7 +93,7 @@ At:
 ```c
 new
     someVar[2][10];
-printf("%d %d", sizeof (someVar), sizeof (someVar[]));
+printf("%d %d", sizeof(someVar), sizeof(someVar[]));
 ```
 
 Gives:
@@ -114,7 +114,7 @@ Nagbabalik ito ng isang numero na kumakatawan sa tag ng isang variable:
 new
     someVar,
     Float:someFloat;
-printf("%d %d", tagof (someVar), tagof (someFloat));
+printf("%d %d", tagof(someVar), tagof(someFloat));
 ```
 
 Gives:
@@ -132,11 +132,11 @@ Alin ang isang bahagyang bug ngunit karaniwang nangangahulugang:
 Upang suriin, halimbawa, kung ang isang variable ay isang float (na may tag na 'Float:'):
 
 ```c
-new Float: fValue = 6.9;
+new Float:fValue = 6.9;
 
-new tag = tagof (fValue);
+new tag = tagof(fValue);
 
-if (tag == tagof (Float:))
+if (tag == tagof(Float:))
 {
     print("float");
 }

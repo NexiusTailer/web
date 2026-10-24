@@ -14,7 +14,7 @@ tags: ["player variable", "pvar"]
 | playerid               | ID بازیکنی که می‌خوای اسم متغیرش رو دریافت کنی.                    |
 | index                  | index متغیر بازیکن.                                                |
 | output[]               | یه string برای ذخیره اسم pVar که به صورت reference پاس داده می‌شه. |
-| size = sizeof (output) | حداکثر طول string برگردونده شده.                                   |
+| size = sizeof(output)  | حداکثر طول string برگردونده شده.                                   |
 
 ## مقادیر برگشتی
 

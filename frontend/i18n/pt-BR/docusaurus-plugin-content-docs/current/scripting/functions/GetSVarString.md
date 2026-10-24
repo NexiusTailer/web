@@ -16,7 +16,7 @@ Obtém o valor de uma variável de servidor de string.
 | --------------------- | ---------------------------------------------------------------------------------------------------- |
 | const svar[] | O nome da variável do servidor (sem distinção entre maiúsculas e minúsculas).<br />Definida em [SetSVarString](SetSVarString). |
 | output[] | A matriz na qual armazenar o valor da string, passada por referência.                                |
-| len = sizeof (output) | O comprimento máximo da string retornada.                                                           |
+| len = sizeof(output)  | O comprimento máximo da string retornada.                                                           |
 
 ## Retornos
 

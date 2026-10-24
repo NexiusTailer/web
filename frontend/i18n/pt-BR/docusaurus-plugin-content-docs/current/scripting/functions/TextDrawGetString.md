@@ -16,7 +16,7 @@ Obtém o texto de um textdraw.
 | ---------------------------- | ----------------------------------------------------------- |
 | Text:textid | O ID do textdraw do qual obter o texto.                  |
 | string[] | Uma matriz na qual armazenar o texto, passado por referência. |
-| stringSize = sizeof (string) | O tamanho da string.                                     |
+| stringSize = sizeof(string)  | O tamanho da string.                                     |
 
 ## Retornos
 

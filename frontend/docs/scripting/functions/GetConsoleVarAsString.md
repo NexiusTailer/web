@@ -13,7 +13,7 @@ Get the string value of a console variable.
 | --------------------- | ------------------------------------------------------------ |
 | const cvar[]          | The name of the string variable to get the value of.         |
 | buffer[]              | An array into which to store the value, passed by reference. |
-| len = sizeof (buffer) | The length of the string that should be stored.              |
+| len = sizeof(buffer)  | The length of the string that should be stored.              |
 
 ## Returns
 

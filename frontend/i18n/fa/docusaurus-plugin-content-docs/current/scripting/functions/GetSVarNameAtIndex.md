@@ -13,7 +13,7 @@ tags: ["server variable", "svar"]
 | ---------------------- | ------------------------------------------------------------------ |
 | index                  | index sVar.                                                        |
 | output[]               | یه string برای ذخیره اسم sVar که به صورت reference پاس داده می‌شه. |
-| size = sizeof (output) | حداکثر طول string برگردونده شده.                                   |
+| size = sizeof(output)  | حداکثر طول string برگردونده شده.                                   |
 
 ## مقادیر برگشتی
 

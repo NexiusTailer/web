@@ -110,7 +110,7 @@ public const status           /* initialized to zero */
 
 سینتکس `name[constant]` نام را به‌عنوان یک آرایه با `constant` عنصر از نوع `cell` اعلام می‌کند، که هر عنصر یک `cell` است. `name` یک شناسه (identifier) است که شما انتخاب می‌کنید و `constant` باید یک مقدار مثبت و غیرصفر باشد؛ `constant` می‌تواند غایب باشد. اگر بین کروشه‌ها هیچ مقداری نباشد، تعداد عناصر برابر با تعداد مقداردهی‌های اولیه (initializers) گذاشته می‌شود — نمونه را در پایین ببینید.
 
-برد گسترهٔ اندیس آرایه از صفر آغاز می‌شود، به این معنی که اولین عنصر در `name[0]` قرار دارد و آخرین عنصر در `name[constant-1]` است.
+برد گسترهٔ اندیس آرایه از صفر آغاز می‌شود، به این معنی که اولین عنصر در `name[0]` قرار دارد و آخرین عنصر در `name[constant - 1]` است.
 
 ### • مقداردهی اولیه (Initialization)
 
@@ -126,8 +126,8 @@ new i = 1
 new j                                   /* j is zero */
 new k = 'a'                             /* k has character code for letter ’a’ */
 
-new a[] = {1,4,9,16,25}                 /* a has 5 elements */
-new s1[20] = {'a','b'}                  /* the other 18 elements are 0 */
+new a[] = {1, 4, 9, 16, 25}                 /* a has 5 elements */
+new s1[20] = {'a', 'b'}                  /* the other 18 elements are 0 */
 
 new s2[] = "Hello world..."             /* a unpacked string */
 ```
@@ -257,7 +257,7 @@ Listing: tag names
 new bool:flag = true            /* "flag" can only hold "true" or "false" */
 
 const error:success = 0
-const error:fatal= 1
+const error:fatal = 1
 const error:nonfatal = 2
 
 error:errno = fatal

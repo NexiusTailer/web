@@ -13,7 +13,7 @@ tags: ["玩家", "网络监控"]
 | ---------------------- | ---------------------------------------- |
 | playerid               | 需要获取网络统计数据的玩家 ID            |
 | output[]               | 存储网络统计数据的字符串（通过引用传递） |
-| size = sizeof (output) | 存储字符串的缓冲区长度                   |
+| size = sizeof(output)  | 存储字符串的缓冲区长度                   |
 
 ## 返回值
 
@@ -26,7 +26,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/mynetstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetPlayerNetworkStats(playerid, stats, sizeof(stats));
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "我的网络统计", stats, "确定", "");
     }

@@ -201,7 +201,7 @@ state gps:handshake
 
 ```c
 
-switch (weekday(12,31,1999))
+switch (weekday(12, 31, 1999))
 {
     case 0, 1:              /* 0 == Saturday, 1 == Sunday */
         print("weekend")

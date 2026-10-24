@@ -99,7 +99,7 @@ Situações típicas de uso:
 
 A sintaxe `nome[constante]` declara `nome` como array com o número indicado de elementos, cada qual ocupando uma célula. `constante` deve ser positiva; se omitida, o tamanho é deduzido a partir dos inicializadores.
 
-Arrays são indexados a partir de zero: o primeiro elemento é `nome[0]` e o último é `nome[constante-1]`.
+Arrays são indexados a partir de zero: o primeiro elemento é `nome[0]` e o último é `nome[constante - 1]`.
 
 ### • Inicialização
 
@@ -115,8 +115,8 @@ new i = 1
 new j                                   /* j is zero */
 new k = 'a'                             /* k has character code for letter ’a’ */
 
-new a[] = {1,4,9,16,25}                 /* a has 5 elements */
-new s1[20] = {'a','b'}                  /* the other 18 elements are 0 */
+new a[] = {1, 4, 9, 16, 25}                 /* a has 5 elements */
+new s1[20] = {'a', 'b'}                  /* the other 18 elements are 0 */
 
 new s2[] = "Hello world..."             /* a unpacked string */
 
@@ -259,7 +259,7 @@ Listing: tag names
 new bool:flag = true            /* "flag" can only hold "true" or "false" */
 
 const error:success = 0
-const error:fatal= 1
+const error:fatal = 1
 const error:nonfatal = 2
 
 error:errno = fatal

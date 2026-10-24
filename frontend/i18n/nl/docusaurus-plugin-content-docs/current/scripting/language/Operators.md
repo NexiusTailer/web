@@ -55,7 +55,7 @@ Retourneert de grootte in ELEMENTEN van een array:
 ```c
 new
     someVar[10];
-printf("%d", sizeof (someVar)); // 10
+printf("%d", sizeof(someVar)); // 10
 ```
 
 Bij meer-dimensionale arrays:
@@ -63,7 +63,7 @@ Bij meer-dimensionale arrays:
 ```c
 new
     someVar[2][10];
-printf("%d %d", sizeof (someVar), sizeof (someVar[])); // 2 10
+printf("%d %d", sizeof(someVar), sizeof(someVar[])); // 2 10
 ```
 
 ## `state`
@@ -78,17 +78,17 @@ Geeft een getal terug dat de tag van een variabele voorstelt:
 new
     someVar,
     Float:someFloat;
-printf("%d %d", tagof (someVar), tagof (someFloat));
+printf("%d %d", tagof(someVar), tagof(someFloat));
 ```
 
 Je kunt hiermee bijvoorbeeld controleren of een variabele een float is:
 
 ```c
-new Float: fValue = 6.9;
+new Float:fValue = 6.9;
 
-new tag = tagof (fValue);
+new tag = tagof(fValue);
 
-if (tag == tagof (Float:))
+if (tag == tagof(Float:))
 {
     print("float");
 }

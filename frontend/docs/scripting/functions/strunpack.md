@@ -13,7 +13,7 @@ This function can be used to unpack a string.
 | ------------------------- | --------------------------------------------------------------------------- |
 | dest[]                    | The destination string to save the unpacked string in, passed by reference. |
 | const source[]            | The source, original packed string.                                         |
-| maxlength = sizeof (dest) | The maximum size to insert.                                                 |
+| maxlength = sizeof(dest)  | The maximum size to insert.                                                 |
 
 ## Returns
 

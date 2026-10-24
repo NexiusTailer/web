@@ -32,10 +32,10 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
 {
     new string[128], victim[MAX_PLAYER_NAME], attacker[MAX_PLAYER_NAME];
     new weaponname[24];
-    GetPlayerName(playerid, attacker, sizeof (attacker));
-    GetPlayerName(damagedid, victim, sizeof (victim));
+    GetPlayerName(playerid, attacker, sizeof(attacker));
+    GetPlayerName(damagedid, victim, sizeof(victim));
 
-    GetWeaponName(weaponid, weaponname, sizeof (weaponname));
+    GetWeaponName(weaponid, weaponname, sizeof(weaponname));
     format(string, sizeof(string), "%s a provocat %.0f daune lui %s, armă: %s, partea corpului: %d", attacker, amount, victim, weaponname, bodypart);
     SendClientMessageToAll(0xFFFFFFFF, string);
     return 1;

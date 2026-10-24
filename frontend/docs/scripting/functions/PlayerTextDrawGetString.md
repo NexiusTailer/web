@@ -16,7 +16,7 @@ Gets the text of a player-textdraw.
 | playerid                     | The ID of the player.                                       |
 | PlayerText:textid            | The ID of the player-textdraw to get the text of.           |
 | string[]                     | An array into which to store the text, passed by reference. |
-| stringSize = sizeof (string) | The size of the string.                                     |
+| stringSize = sizeof(string)  | The size of the string.                                     |
 
 ## Returns
 

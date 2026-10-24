@@ -17,7 +17,7 @@ Get the number plate of a vehicle.
 | -------------------- | ----------------------------------------------------------- |
 | vehicleid            | The ID of the vehicle.                                      |
 | plate[]              | An array into which to store the name, passed by reference. |
-| len = sizeof (plate) | The length of the plate that should be stored.              |
+| len = sizeof(plate)  | The length of the plate that should be stored.              |
 
 ## Examples
 

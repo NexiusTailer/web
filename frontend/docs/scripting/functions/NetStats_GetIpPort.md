@@ -13,7 +13,7 @@ Get a player's IP and port.
 | ---------------------- | ---------------------------------------------------------------- |
 | playerid               | The ID of the player to get the IP and port of.                  |
 | output[]               | A string array to store the IP and port in, passed by reference. |
-| size = sizeof (output) | The maximum length of the IP/port. 22 is recommended.            |
+| size = sizeof(output)  | The maximum length of the IP/port. 22 is recommended.            |
 
 ## Returns
 

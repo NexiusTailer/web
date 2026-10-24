@@ -127,13 +127,13 @@ Definicija:
 Drži tipku:
 
 ```c
-if (HOLDING( KEY_FIRE ))
+if (HOLDING(KEY_FIRE))
 ```
 
 Drži više tipki:
 
 ```c
-if (HOLDING( KEY_FIRE | KEY_CROUCH ))
+if (HOLDING(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detektovanje prvog pritiska tipke
@@ -149,13 +149,13 @@ Definicija:
 Pritisnuli jednu tipku:
 
 ```c
-if (PRESSED( KEY_FIRE ))
+if (PRESSED(KEY_FIRE))
 ```
 
 Pritisnuo više tipki:
 
 ```c
-if (PRESSED( KEY_FIRE | KEY_CROUCH ))
+if (PRESSED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detektovanje pritišče li igrač trenutno tipku
@@ -164,20 +164,20 @@ Definicija:
 
 ```c
 // PRESSING(keyVariable, keys)
-#define PRESSING(%0,%1) \
+#define PRESSING(%0, %1) \
 	(%0 & (%1))
 ```
 
 Pritiskom na jednu tipku:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE ))
+if (PRESSING(newkeys, KEY_FIRE))
 ```
 
 Pritiskom na više tipki:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
+if (PRESSING(newkeys, KEY_FIRE | KEY_CROUCH))
 ```
 
 ### Detektovanje puštanja tipke
@@ -193,13 +193,13 @@ Definicija:
 Pustio jednu tipku:
 
 ```c
-if (RELEASED( KEY_FIRE ))
+if (RELEASED(KEY_FIRE))
 ```
 
 Pustio više tipki:
 
 ```c
-if (RELEASED( KEY_FIRE | KEY_CROUCH ))
+if (RELEASED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ## Primjeri

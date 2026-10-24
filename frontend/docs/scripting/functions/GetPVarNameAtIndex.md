@@ -14,7 +14,7 @@ Retrieve the name of a player's pVar via the index.
 | playerid               | The ID of the player whose player variable to get the name of. |
 | index                  | The index of the player's pVar.                                |
 | output[]               | A string to store the pVar's name in, passed by reference.     |
-| size = sizeof (output) | The max length of the returned string.                         |
+| size = sizeof(output)  | The max length of the returned string.                         |
 
 ## Returns
 

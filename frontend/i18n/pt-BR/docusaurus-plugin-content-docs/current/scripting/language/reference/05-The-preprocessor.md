@@ -25,7 +25,7 @@ No script, eles podem ser usados como constantes. Exemplo:
 #define CopyRightString     "(c) Copyright 2004 by me"
 main()
 {
-    print( Copyright )
+    print(Copyright)
     new sprites[maxsprites]
 }
 
@@ -49,7 +49,7 @@ Listing: the “min” macro
 
 ```c
 
-#define min(%1,%2) ((%1) < (%2) ? (%1) : (%2))
+#define min(%1, %2) ((%1) < (%2) ? (%1) : (%2))
 
 ```
 
@@ -62,7 +62,7 @@ Listing: bad usage of the “min” macro
 ```c
 
 new a = 1, b = 4
-new min = min(++a,b)
+new min = min(++a, b)
 
 ```
 
@@ -81,7 +81,7 @@ Para entender a importância dos parênteses, veja:
 
 ```c
 
-#define ceil_div(%1,%2) (%1 + %2 - 1) / %2
+#define ceil_div(%1, %2) (%1 + %2 - 1) / %2
 
 ```
 
@@ -98,7 +98,7 @@ o pré-processador gera `new b = (8 + a - 2 - 1) / a - 2`. Devido à precedênci
 
 ```c
 
-#define ceil_div(%1,%2) ( ((%1) + (%2) - 1) / (%2) )
+#define ceil_div(%1, %2) (((%1) + (%2) - 1) / (%2))
 
 ```
 
@@ -116,8 +116,8 @@ Se a expansão de uma macro contém trechos que coincidem com outras macros, ess
 
 ```c
 
-#define a(%1)       (1+b(%1))
-#define b(%1)       (2*(%1))
+#define a(%1)       (1 + b(%1))
+#define b(%1)       (2 * (%1))
 new c = a(8)
 
 ```

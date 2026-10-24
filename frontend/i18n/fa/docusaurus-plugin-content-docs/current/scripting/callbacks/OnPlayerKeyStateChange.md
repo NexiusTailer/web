@@ -127,13 +127,13 @@ define:
 نگه داشتن یک کلید:
 
 ```c
-if (HOLDING( KEY_FIRE ))
+if (HOLDING(KEY_FIRE))
 ```
 
 نگه داشتن چندین کلید:
 
 ```c
-if (HOLDING( KEY_FIRE | KEY_CROUCH ))
+if (HOLDING(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### تشخیص اولین بار فشردن کلید
@@ -149,13 +149,13 @@ define:
 فشردن یک کلید:
 
 ```c
-if (PRESSED( KEY_FIRE ))
+if (PRESSED(KEY_FIRE))
 ```
 
 فشردن چندین کلید:
 
 ```c
-if (PRESSED( KEY_FIRE | KEY_CROUCH ))
+if (PRESSED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ### تشخیص اینکه بازیکن در حال حاضر کلید را فشرده
@@ -164,20 +164,20 @@ define:
 
 ```c
 // PRESSING(keyVariable, keys)
-#define PRESSING(%0,%1) \
+#define PRESSING(%0, %1) \
 	(%0 & (%1))
 ```
 
 فشردن یک کلید:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE ))
+if (PRESSING(newkeys, KEY_FIRE))
 ```
 
 فشردن چندین کلید:
 
 ```c
-if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
+if (PRESSING(newkeys, KEY_FIRE | KEY_CROUCH))
 ```
 
 ### تشخیص رها کردن کلید
@@ -193,13 +193,13 @@ define:
 رها کردن یک کلید:
 
 ```c
-if (RELEASED( KEY_FIRE ))
+if (RELEASED(KEY_FIRE))
 ```
 
 رها کردن چندین کلید:
 
 ```c
-if (RELEASED( KEY_FIRE | KEY_CROUCH ))
+if (RELEASED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ## مثال‌ها

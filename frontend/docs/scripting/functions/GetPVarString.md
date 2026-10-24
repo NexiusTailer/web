@@ -14,7 +14,7 @@ Gets a player variable as a string.
 | playerid              | The ID of the player whose player variable to get.                      |
 | const pvar[]          | The name of the player variable, set by [SetPVarString](SetPVarString). |
 | output[]              | The array in which to store the string value in, passed by reference.   |
-| len = sizeof (output) | The maximum length of the returned string.                              |
+| len = sizeof(output)  | The maximum length of the returned string.                              |
 
 ## Returns
 
@@ -23,7 +23,7 @@ The length of the string.
 ## Examples
 
 ```c
-public OnPlayerConnect(playerid,reason)
+public OnPlayerConnect(playerid, reason)
 {
     new playerName[MAX_PLAYER_NAME];
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);

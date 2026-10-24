@@ -273,7 +273,7 @@ main()
 For döngüsü, üç aşamayı içeren bir döngü türüdür: başlatma, karşılaştırma ve güncelleme. Bunlar her biri bir noktalı virgülle ayrılır (gülücük ve her biri sadece bir boşluk ayarlayarak hariç tutulabilir). En temel for döngüsü şudur:
 
 ```c
-for ( ; ; ) {}
+for (;;) {}
 ```
 
 Bu başlatma, karşılaştırma ve güncelleme içermez ve sonuç olarak sonsuza kadar gider (karşılaştırma, yok olduğu için varsayılan olarak true olur).
@@ -333,7 +333,7 @@ Bu, hata verecektir çünkü "i" artık döngü bittikten sonra mevcut değil. A
 ```c
 new
     i = 0;
-for ( ; i < MAX_PLAYERS; i++)
+for (; i < MAX_PLAYERS; i++)
 {
     printf("%d", i);
 }

@@ -14,7 +14,7 @@ tags: ["string", "encryption"]
 | dest[]                    | رشته مقصد برای stream encode شده.                               |
 | const source[]            | رشته منبع که encode نشده.                                       |
 | numbytes                  | تعداد بایت‌هایی که باید encode بشن، این نباید از 45 بیشتر باشه. |
-| maxlength = sizeof (dest) | حداکثر طول آرایه dest[].                                        |
+| maxlength = sizeof(dest)  | حداکثر طول آرایه dest[].                                        |
 
 ## مقدار برگشتی
 

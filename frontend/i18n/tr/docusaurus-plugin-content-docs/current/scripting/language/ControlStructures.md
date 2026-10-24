@@ -354,7 +354,7 @@ for (new a = 9; a < 10; a++)
 İşte tüm oyuncuları döngülemek için basit bir kod:
 
 ```c
-for(new i, a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
         if (IsPlayerConnected(i))
         {
@@ -368,7 +368,7 @@ Herhangi bir koşul, basitçe içine kod yazılmadan atlanabilir:
 ```c
 new
     a = 9;
-for ( ; a < 10; )
+for (; a < 10;)
 {
     // Döngü içindeki kod
     a++;
@@ -422,7 +422,7 @@ OBOE, Off By One Error'ın kısaltmasıdır. Bu, bir döngünün bir fazla veya 
 new
     a = 0,
     b[10];
-while (a <= sizeof (b))
+while (a <= sizeof(b))
 {
     b[a] = 0;
 }

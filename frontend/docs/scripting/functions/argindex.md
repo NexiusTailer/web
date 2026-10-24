@@ -13,7 +13,7 @@ Get the name of the argument at the given index after **--**.
 | --------------------- | ----------------------------------------------- |
 | index                 | The naught-based offset to the script argument. |
 | value[]               | The output string destination.                  |
-| size = sizeof (value) | The size of the destination.                    |
+| size = sizeof(value)  | The size of the destination.                    |
 | bool:pack = false     | Should the return value be packed?              |
 
 ## Returns

@@ -288,7 +288,7 @@ for (new a = 9; a < 10; a++)
 Door alle spelers itereren:
 
 ```c
-for(new i,a = GetMaxPlayers(); i < a; i++)
+for (new i, a = GetMaxPlayers(); i < a; i++)
 {
         if (IsPlayerConnected(i))
         {
@@ -302,7 +302,7 @@ Elk onderdeel mag je weglaten door het leeg te laten:
 ```c
 new
     a = 9;
-for ( ; a < 10; )
+for (; a < 10;)
 {
     // Code in de lus
     a++;
@@ -352,7 +352,7 @@ OBOE staat voor Off By One Error: een veelgemaakte fout waarbij een lus één ke
 new
     a = 0,
     b[10];
-while (a <= sizeof (b))
+while (a <= sizeof(b))
 {
     b[a] = 0;
 }

@@ -14,7 +14,7 @@ tags: ["字符串"]
 | string[]                    | 目标字符串（将被插入新内容的字符串） |
 | const substr[]              | 待插入的子字符串                     |
 | pos                         | 插入起始位置（基于 0 的索引）        |
-| maxlength = sizeof (string) | 目标字符串的最大容量                 |
+| maxlength = sizeof(string)  | 目标字符串的最大容量                 |
 
 ## 返回值
 

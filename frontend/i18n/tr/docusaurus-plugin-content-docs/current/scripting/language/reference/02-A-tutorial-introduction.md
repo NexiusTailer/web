@@ -378,7 +378,7 @@ main()
     new  Rational:  Celsius
     new  Rational:  Fahrenheit
     print  "Celsius\t  Fahrenheit\n"
-    for  (Celsius  =  5;  Celsius  <=  25;  Celsius++)
+    for (Celsius  =  5;  Celsius  <=  25;  Celsius++)
     {
         Fahrenheit  =  (Celsius  *  1.8)  +  32
         printf  "%r  \t  %r\n",  Celsius,  Fahrenheit
@@ -582,12 +582,12 @@ insert(const item[message])
 
     /* Eklemek için konumu bul */
     new pos = queueitems /* en altta başla */
-    while (pos > 0 && item[priority] > queue[pos-1][priority])
+    while (pos > 0 && item[priority] > queue[pos - 1][priority])
         --pos /* daha yüksek öncelik: bir pozisyon yukarı taşı */
 
     /* Ekleme noktasında öğe için yer yapın */
     for (new i = queueitems; i > pos; --i)
-        queue[i] = queue[i-1]
+        queue[i] = queue[i - 1]
 
     /* Mesajı doğru yere ekleyin */
     queue[pos] = item
@@ -608,7 +608,7 @@ extract(item[message])
 
     /* Sırayı bir pozisyon yukarı taşı */
     for (new i = 0; i < queueitems; ++i)
-        queue[i] = queue[i+1]
+        queue[i] = queue[i + 1]
 
     return true
 }
@@ -690,7 +690,7 @@ main()
 
     /* Kümeyi oluştur */
     new result = findtargets(source, steps, nextstep)
-    printf "%c noktasından %d adımda ulaşılabilen noktalar: ", source+'A',
+    printf "%c noktasından %d adımda ulaşılabilen noktalar: ", source + 'A',
     steps
     for (new i = 0; i < sizeof nextstep; i++)
         if (result & 1 << i)

@@ -350,7 +350,7 @@ for (new a = 9; a < 10; a++) // 初始化a=9，条件a<10，每次循环a递增
 典型应用场景——遍历玩家列表：
 
 ```c
-for(new i, maxPlayers = GetMaxPlayers(); i < maxPlayers; i++) // 初始化最大玩家数
+for (new i, maxPlayers = GetMaxPlayers(); i < maxPlayers; i++) // 初始化最大玩家数
 {
     if (IsPlayerConnected(i)) // 检查玩家是否在线
     {
@@ -364,7 +364,7 @@ for(new i, maxPlayers = GetMaxPlayers(); i < maxPlayers; i++) // 初始化最大
 ```c
 new
     a = 9;
-for ( ; a < 10; ) // 省略初始化和迭代操作
+for (; a < 10;) // 省略初始化和迭代操作
 {
     // 循环体内代码
     a++; // 手动递增
@@ -424,7 +424,7 @@ OBOE 是 Off By One Error（差一错误）的缩写，指循环执行次数多�
 new
     a = 0,
     b[10];
-while (a <= sizeof (b))
+while (a <= sizeof(b))
 {
     b[a] = 0;
 }

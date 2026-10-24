@@ -13,7 +13,7 @@ Haal het IP‑adres van de opgegeven speler op en sla het op in een string.
 | ----------------- | ----------------------------------------------- |
 | playerid          | ID van de speler.                               |
 | ip[]              | Buffer om het IP in op te slaan (by reference). |
-| len = sizeof (ip) | Maximale lengte (aanbevolen 16).                |
+| len = sizeof(ip)  | Maximale lengte (aanbevolen 16).                |
 
 ## Retourneert
 

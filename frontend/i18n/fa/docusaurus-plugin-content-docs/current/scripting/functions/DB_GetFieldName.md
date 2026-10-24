@@ -14,7 +14,7 @@ tags: ["sqlite"]
 | DBResult:result        | نتیجه‌ای که داده‌ها از اون گرفته میشه؛ توسط [DB_ExecuteQuery](DB_ExecuteQuery) برگردونده میشه. |
 | field                  | ایندکس فیلدی که اسمش رو می‌خواید.                                                              |
 | output[]               | نتیجه.                                                                                         |
-| size = sizeof (output) | حداکثر طول فیلد.                                                                               |
+| size = sizeof(output)  | حداکثر طول فیلد.                                                                               |
 
 ## مقدار بازگشتی
 

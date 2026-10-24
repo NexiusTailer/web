@@ -26,7 +26,7 @@ Sempre executada primeiro nos filterscripts, ao retornar 0 bloqueia outros scrip
 public OnPlayerText(playerid, text[])
 {
     new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
+    format(pText, sizeof(pText), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, pText);
     return 0; // Ignora o texto padrão e envia um personalizado.
 }

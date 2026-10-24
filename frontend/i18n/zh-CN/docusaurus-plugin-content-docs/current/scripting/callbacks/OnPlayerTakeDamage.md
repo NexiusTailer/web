@@ -38,10 +38,10 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
             victimName[MAX_PLAYER_NAME],
             attackerName[MAX_PLAYER_NAME];
 
-        GetPlayerName(playerid, victimName, sizeof (victimName));
-        GetPlayerName(issuerid, attackerName, sizeof (attackerName));
+        GetPlayerName(playerid, victimName, sizeof(victimName));
+        GetPlayerName(issuerid, attackerName, sizeof(attackerName));
 
-        GetWeaponName(weaponid, weaponName, sizeof (weaponName));
+        GetWeaponName(weaponid, weaponName, sizeof(weaponName));
 
         format(infoString, sizeof(infoString), "%s 对 %s 造成了 %.0f 点伤害，武器：%s，部位：%d", attackerName, amount, victimName, weaponName, bodypart);
         SendClientMessageToAll(-1, infoString);

@@ -14,7 +14,7 @@ tags: ["player variable", "pvar"]
 | playerid              | ID بازیکنی که می‌خوای متغیرش رو دریافت کنی.                           |
 | const pvar[]          | اسم متغیر بازیکن که توسط [SetPVarString](SetPVarString) تنظیم شده.    |
 | output[]              | آرایه‌ای برای ذخیره مقدار string که به صورت reference پاس داده می‌شه. |
-| len = sizeof (output) | حداکثر طول string برگردونده شده.                                      |
+| len = sizeof(output)  | حداکثر طول string برگردونده شده.                                      |
 
 ## مقادیر برگشتی
 
@@ -23,7 +23,7 @@ tags: ["player variable", "pvar"]
 ## مثال‌ها
 
 ```c
-public OnPlayerConnect(playerid,reason)
+public OnPlayerConnect(playerid, reason)
 {
     new playerName[MAX_PLAYER_NAME];
     GetPlayerName(playerid, playerName, MAX_PLAYER_NAME);

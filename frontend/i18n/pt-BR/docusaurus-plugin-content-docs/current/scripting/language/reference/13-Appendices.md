@@ -257,7 +257,7 @@ Listagem: declaração de função pública alternativa
 }
 ```
 
-Esta sintaxe é particularmente comum para callbacks de eventos, onde pode ser usada com parâmetros opcionais e valores padrão como em `@nomedoevento(arg1, args2=0)`.
+Esta sintaxe é particularmente comum para callbacks de eventos, onde pode ser usada com parâmetros opcionais e valores padrão como em `@nomedoevento(arg1, args2 = 0)`.
 
 ### Definindo constantes na linha de comando
 

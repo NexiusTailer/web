@@ -13,7 +13,7 @@ Haal de clientversie op zoals gemeld door de speler.
 | ---------------------- | -------------------------------------------------- |
 | playerid               | ID van de speler.                                  |
 | version[]              | Buffer om de versie in op te slaan (by reference). |
-| len = sizeof (version) | Maximale lengte van de versie.                     |
+| len = sizeof(version)  | Maximale lengte van de versie.                     |
 
 ## Retourneert
 

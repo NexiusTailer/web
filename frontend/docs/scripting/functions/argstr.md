@@ -14,7 +14,7 @@ Get the string value of an argument by name.
 | skip = 0              | The number of arguments (with potentially the same name) to skip. |
 | const argument[] = "" | The name of the argument, including `-`s and `/`s.                |
 | value[] = ""          | The output string destination.                                    |
-| size = sizeof (value) | The size of the destination.                                      |
+| size = sizeof(value)  | The size of the destination.                                      |
 | bool:pack = false     | Should the return value be packed?                                |
 
 ## Returns

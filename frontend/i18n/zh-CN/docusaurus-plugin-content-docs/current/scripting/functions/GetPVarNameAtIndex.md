@@ -14,7 +14,7 @@ tags: ["玩家变量"]
 | playerid               | 需要获取变量名称的玩家 ID          |
 | index                  | 玩家变量的索引编号（从 0 开始）    |
 | output[]               | 存储变量名称的字符数组（引用传递） |
-| size = sizeof (output) | 输出字符串的最大缓冲长度           |
+| size = sizeof(output)  | 输出字符串的最大缓冲长度           |
 
 ## 返回值
 

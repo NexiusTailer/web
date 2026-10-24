@@ -14,7 +14,7 @@ Esta função permite ler dados de um arquivo, sem codificação e terminadores 
 | ---------------------- | ------------------------------------- |
 | File:handle | Identificador de arquivo a ser usado, aberto por fopen() |
 | buffer | O buffer para salvar os dados lidos.
-| size = sizeof (buffer) | O número de células a serem lidas.          |
+| size = sizeof(buffer)  | O número de células a serem lidas.          |
 
 ## Retornos
 
@@ -51,7 +51,7 @@ if (handle)
     file_len = flength(handle);
 
     // Se o arquivo for igual ou maior que o array
-    if (file_len == (some_enum*4))
+    if (file_len == (some_enum * 4))
     {
         // Sucesso
 

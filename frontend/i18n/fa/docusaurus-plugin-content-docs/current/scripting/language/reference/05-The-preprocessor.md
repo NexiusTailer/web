@@ -25,7 +25,7 @@ directive #define macro های preprocessor رو تعریف می‌کنه. macro
 #define CopyRightString     "(c) Copyright 2004 by me"
 main()
 {
-    print( Copyright )
+    print(Copyright)
     new sprites[maxsprites]
 }
 
@@ -49,7 +49,7 @@ macro های جایگزینی می‌تونن تا 10 پارامتر بگیرن.
 
 ```c
 
-#define min(%1,%2) ((%1) < (%2) ? (%1) : (%2))
+#define min(%1, %2) ((%1) < (%2) ? (%1) : (%2))
 
 ```
 
@@ -62,7 +62,7 @@ macro های جایگزینی می‌تونن تا 10 پارامتر بگیرن.
 ```c
 
 new a = 1, b = 4
-new min = min(++a,b)
+new min = min(++a, b)
 
 ```
 
@@ -81,7 +81,7 @@ new min = ((++a) < (b) ? (++a) : (b))
 
 ```c
 
-#define ceil_div(%1,%2) (%1 + %2 - 1) / %2
+#define ceil_div(%1, %2) (%1 + %2 - 1) / %2
 
 ```
 
@@ -98,7 +98,7 @@ new b = ceil_div(8, a - 2)
 
 ```c
 
-#define ceil_div(%1,%2) ( ((%1) + (%2) - 1) / (%2) )
+#define ceil_div(%1, %2) (((%1) + (%2) - 1) / (%2))
 
 ```
 
@@ -116,8 +116,8 @@ pattern matching ظریف‌تر از تطبیق string هایی که شبیه �
 
 ```c
 
-#define a(%1)       (1+b(%1))
-#define b(%1)       (2*(%1))
+#define a(%1)       (1 + b(%1))
+#define b(%1)       (2 * (%1))
 new c = a(8)
 
 ```

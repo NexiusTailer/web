@@ -37,7 +37,7 @@ example:
 #define CopyRightString     "(c) Copyright 2004 by me"
 main()
 {
-    print( Copyright )
+    print(Copyright)
     new sprites[maxsprites]
 }
 
@@ -66,7 +66,7 @@ Listing: the “min” macro
 
 ```c
 
-#define min(%1,%2) ((%1) < (%2) ? (%1) : (%2))
+#define min(%1, %2) ((%1) < (%2) ? (%1) : (%2))
 
 ```
 
@@ -80,7 +80,7 @@ Listing: bad usage of the “min” macro
 ```c
 
 new a = 1, b = 4
-new min = min(++a,b)
+new min = min(++a, b)
 
 ```
 
@@ -104,7 +104,7 @@ the macro:
 
 ```c
 
-#define ceil_div(%1,%2) (%1 + %2 - 1) / %2
+#define ceil_div(%1, %2) (%1 + %2 - 1) / %2
 
 ```
 
@@ -130,7 +130,7 @@ is the ceil_div macro modified accordingly:
 
 ```c
 
-#define ceil_div(%1,%2) ( ((%1) + (%2) - 1) / (%2) )
+#define ceil_div(%1, %2) (((%1) + (%2) - 1) / (%2))
 
 ```
 
@@ -151,8 +151,8 @@ expansion is performed at invocation time, not at definition time. Thus the code
 
 ```c
 
-#define a(%1)       (1+b(%1))
-#define b(%1)       (2*(%1))
+#define a(%1)       (1 + b(%1))
+#define b(%1)       (2 * (%1))
 new c = a(8)
 
 ```

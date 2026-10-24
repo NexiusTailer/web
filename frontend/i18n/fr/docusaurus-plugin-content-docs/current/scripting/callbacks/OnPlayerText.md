@@ -27,9 +27,9 @@ public OnPlayerText(playerid, text[])
         textv2[145],
         name[MAX_PLAYER_NAME];
 
-    GetPlayerName(playerid, name, sizeof (name));
+    GetPlayerName(playerid, name, sizeof(name));
 
-    format(textv2, sizeof (textv2), "%d >> %s: %s", playerid, name, text);
+    format(textv2, sizeof(textv2), "%d >> %s: %s", playerid, name, text);
 
     SendPlayerMessageToAll(playerid, textv2);
     return 0;

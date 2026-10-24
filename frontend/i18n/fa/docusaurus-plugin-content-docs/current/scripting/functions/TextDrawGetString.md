@@ -15,7 +15,7 @@ tags: ["textdraw"]
 | ---------------------------- | ------------------------------------------------------------------ |
 | Text:textid                  | ID textdraw ای که می‌خوای متنش رو بگیری.                           |
 | string[]                     | آرایه‌ای که متن توش ذخیره می‌شه، به صورت reference پاس داده می‌شه. |
-| stringSize = sizeof (string) | اندازه string.                                                     |
+| stringSize = sizeof(string)  | اندازه string.                                                     |
 
 ## مقدار برگشتی
 

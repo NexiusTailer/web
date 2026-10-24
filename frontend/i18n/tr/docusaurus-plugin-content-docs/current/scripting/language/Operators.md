@@ -79,7 +79,7 @@ Bir dizinin ELEMANLAR cinsinden boyutunu döndürür:
 ```c
 new
     someVar[10];
-printf("%d", sizeof (someVar));
+printf("%d", sizeof(someVar));
 ```
 
 Çıkış:
@@ -93,7 +93,7 @@ Ve:
 ```c
 new
     someVar[2][10];
-printf("%d %d", sizeof (someVar), sizeof (someVar[]));
+printf("%d %d", sizeof(someVar), sizeof(someVar[]));
 ```
 
 Şunu verir:
@@ -114,7 +114,7 @@ Bu, bir değişkenin etiketini temsil eden bir sayı döndürür:
 new
     someVar,
     Float:someFloat;
-printf("%d %d", tagof (someVar), tagof (someFloat));
+printf("%d %d", tagof(someVar), tagof(someFloat));
 ```
 
 Şunu verir:
@@ -132,11 +132,11 @@ Bu hafif bir hata olsa da temelde şunu ifade eder:
 Örneğin, bir değişkenin bir float (etiket 'Float:') olup olmadığını kontrol etmek için:
 
 ```c
-new Float: fValue = 6.9;
+new Float:fValue = 6.9;
 
-new tag = tagof (fValue);
+new tag = tagof(fValue);
 
-if (tag == tagof (Float:))
+if (tag == tagof(Float:))
 {
     print("float");
 }

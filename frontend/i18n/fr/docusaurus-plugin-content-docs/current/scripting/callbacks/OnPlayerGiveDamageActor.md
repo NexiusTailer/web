@@ -35,8 +35,8 @@ public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, WEAPON:w
       attacker[MAX_PLAYER_NAME],
       weaponname[24];
 
-    GetPlayerName(playerid, attacker, sizeof (attacker));
-    GetWeaponName(weaponid, weaponname, sizeof (weaponname));
+    GetPlayerName(playerid, attacker, sizeof(attacker));
+    GetWeaponName(weaponid, weaponname, sizeof(weaponname));
 
     format(string, sizeof(string), "%s a infligé %.0f à l'actor id %d, arme: %s", attacker, amount, damaged_actorid, weaponname);
 

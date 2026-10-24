@@ -16,7 +16,7 @@ tags: ["player"]
 | playerid               | آیدی بازیکنی که می‌خوای چرخشش رو دریافت کنی.                               |
 | style                  | [استایل](../resources/gametextstyles) متنی که می‌خوای دیتاش رو دریافت کنی. |
 | message[]              | آرایه برگشتی برای رشته متن.                                                |
-| len = sizeof (message) | اندازه خروجی.                                                              |
+| len = sizeof(message)  | اندازه خروجی.                                                              |
 | time                   | زمانی که gametext در اصل برای نمایش داده شده بود.                          |
 | remaining              | مقدار باقی‌مانده از اون زمان.                                              |
 

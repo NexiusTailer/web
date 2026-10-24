@@ -16,7 +16,7 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 | playerid                     | 玩家的 ID                        |
 | PlayerText:textid            | 要获取文本的玩家文本绘图的 ID    |
 | string[]                     | 用于存储文本的数组，通过引用传递 |
-| stringSize = sizeof (string) | 字符串缓冲区的大小               |
+| stringSize = sizeof(string)  | 字符串缓冲区的大小               |
 
 ## 返回值
 

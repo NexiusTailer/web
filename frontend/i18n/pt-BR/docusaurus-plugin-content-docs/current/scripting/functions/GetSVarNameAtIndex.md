@@ -13,7 +13,7 @@ Recupera o nome de uma sVar pelo índice.
 | ---------------------- | ----------------------------------------------------------------- |
 | index                  | O índice da sVar.                                                 |
 | output[]               | Uma string para armazenar o nome da sVar, passada por referência. |
-| size = sizeof (output) | O tamanho máximo da string retornada.                             |
+| size = sizeof(output)  | O tamanho máximo da string retornada.                             |
 
 ## Retorno
 

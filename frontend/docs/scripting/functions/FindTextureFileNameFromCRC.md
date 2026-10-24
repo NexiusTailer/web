@@ -15,7 +15,7 @@ Find an existing custom skin or simple object texture file. The model files are 
 | ---------------------- | --------------------------------------------------------------------- |
 | crc                    | The CRC checksum of custom model file.                                |
 | output[]               | An array into which to store the .txd file name, passed by reference. |
-| size = sizeof (output) | The length of the string that should be stored.                       |
+| size = sizeof(output)  | The length of the string that should be stored.                       |
 
 ## Returns
 

@@ -13,7 +13,7 @@ tags: ["文件管理"]
 | ---------------------- | -------------------------------------- |
 | File:handle            | 要读取的文件句柄（由 fopen 返回）。    |
 | string[]               | 存储读取内容的字符串数组（引用传递）。 |
-| size = sizeof (string) | 要读取的字节数。                       |
+| size = sizeof(string)  | 要读取的字节数。                       |
 | bool:pack              | 是否启用压缩格式？（默认：false）。    |
 
 ## 返回值
@@ -35,7 +35,7 @@ if (handle)
     // 操作成功
 
     // 读取整个文件内容
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -65,7 +65,7 @@ if (handle)
     // 操作成功
 
     // 读取整个文件内容
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

@@ -14,7 +14,7 @@ tags: ["参数", "命令行参数"]
 | skip = 0              | 需要跳过的同名参数数量（默认 0） |
 | const argument[] = "" | 参数称（包含`-`或`/`前缀）       |
 | value[] = ""          | 存储参数值的字符串缓冲区         |
-| size = sizeof (value) | 目标缓冲区容量                   |
+| size = sizeof(value)  | 目标缓冲区容量                   |
 | bool:pack = false     | 是否对返回值进行打包             |
 
 ## 返回值

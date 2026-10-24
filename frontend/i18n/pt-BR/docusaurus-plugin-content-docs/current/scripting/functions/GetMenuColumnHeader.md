@@ -17,7 +17,7 @@ Obtenha o texto no cabeçalho da coluna especificada.
 | Menu:menuid | O ID do menu.                                         |
 | column | A coluna.                                                 |
 | header[] | Uma matriz na qual armazenar o texto, passado por referência. |
-| len = sizeof (header) | O comprimento do texto que deve ser armazenado.               |
+| len = sizeof(header)  | O comprimento do texto que deve ser armazenado.               |
 
 ## Retornos
 

@@ -17,7 +17,7 @@ Obtém o texto de um player-textdraw.
 | playerid | O ID do jogador.                                       |
 | PlayerText:textid | O ID do player-textdraw do qual obter o texto.           |
 | string[] | Uma matriz na qual armazenar o texto, passado por referência. |
-| stringSize = sizeof (string) | O tamanho da string.                                     |
+| stringSize = sizeof(string)  | O tamanho da string.                                     |
 
 ## Retornos
 

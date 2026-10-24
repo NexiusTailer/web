@@ -14,7 +14,7 @@ tags: ["sqlite"]
 | DBResult:result        | 查询结果句柄（由[DB_ExecuteQuery](DB_ExecuteQuery)返回） |
 | field                  | 要获取的字段索引（从 0 开始）                            |
 | output[]               | 存储字段名称的字符数组                                   |
-| size = sizeof (output) | 字符数组的最大存储长度                                   |
+| size = sizeof(output)  | 字符数组的最大存储长度                                   |
 
 ## 返回值
 

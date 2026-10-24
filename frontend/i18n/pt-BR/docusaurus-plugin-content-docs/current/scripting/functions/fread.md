@@ -14,7 +14,7 @@ Leia uma única linha de um arquivo.
 | ---------------------- | -------------------------------------------------------------- |
 | File:handle | O identificador do arquivo a ser lido (retornado por fopen).       |
 | string[] | Uma matriz de strings para armazenar o texto lido, passado por referência. |
-| size = sizeof (string) | O número de bytes a serem lidos.                                   |
+| size = sizeof(string)  | O número de bytes a serem lidos.                                   |
 | bool:pack | A string deve ser embalada? (padrão: false).                 |
 
 ## Retornos
@@ -36,7 +36,7 @@ if (handle)
     // Sucesso
 
     // Leia o arquivo inteiro
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }
@@ -65,7 +65,7 @@ if (handle)
     // Sucesso
 
     // Leia o arquivo inteiro
-    while(fread(handle, buf))
+    while (fread(handle, buf))
     {
         print(buf);
     }

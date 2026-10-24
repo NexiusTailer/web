@@ -79,7 +79,7 @@ public OnGameModeInit()
 ```c
 new
     someVar[10];
-printf("%d", sizeof (someVar));
+printf("%d", sizeof(someVar));
 ```
 
 输出：
@@ -93,7 +93,7 @@ printf("%d", sizeof (someVar));
 ```c
 new
     someVar[2][10];
-printf("%d %d", sizeof (someVar), sizeof (someVar[]));
+printf("%d %d", sizeof(someVar), sizeof(someVar[]));
 ```
 
 输出：
@@ -114,7 +114,7 @@ printf("%d %d", sizeof (someVar), sizeof (someVar[]));
 new
     someVar,
     Float:someFloat;
-printf("%d %d", tagof (someVar), tagof (someFloat));
+printf("%d %d", tagof(someVar), tagof(someFloat));
 ```
 
 输出可能显示为乱码：
@@ -132,11 +132,11 @@ printf("%d %d", tagof (someVar), tagof (someFloat));
 检查变量是否为浮点类型（带 `Float:` 标签）：
 
 ```c
-new Float: fValue = 6.9;
+new Float:fValue = 6.9;
 
-new tag = tagof (fValue);
+new tag = tagof(fValue);
 
-if (tag == tagof (Float:))
+if (tag == tagof(Float:))
 {
     print("浮点类型");
 }

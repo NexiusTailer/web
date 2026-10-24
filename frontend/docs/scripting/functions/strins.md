@@ -14,7 +14,7 @@ Insert a string into another string.
 | string[]                    | The string you want to insert substr in.   |
 | const substr[]              | The string you want to insert into string. |
 | pos                         | The position to start inserting.           |
-| maxlength = sizeof (string) | The maximum size to insert.                |
+| maxlength = sizeof(string)  | The maximum size to insert.                |
 
 ## Returns
 

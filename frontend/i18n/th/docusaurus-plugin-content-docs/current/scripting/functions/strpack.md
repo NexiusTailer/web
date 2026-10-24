@@ -13,7 +13,7 @@ Pack a string. Packed strings use 75% less memory.
 | ------------------------- | ------------------------------------------------------------------------- |
 | dest[]                    | The destination string to save the packed string in, passed by reference. |
 | const source[]            | The source, original string.                                              |
-| maxlength = sizeof (dest) | The maximum size to insert.                                               |
+| maxlength = sizeof(dest)  | The maximum size to insert.                                               |
 
 ## ส่งคืน
 

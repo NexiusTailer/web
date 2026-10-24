@@ -22,7 +22,7 @@ tags: ["encryption"]
 | const password[]       | پسوردی که باید هش بشه.                        |
 | const salt[]           | salt ای که در هش استفاده می‌شه.               |
 | output[]               | هش برگشتی در hexadecimal digest با حروف بزرگ. |
-| size = sizeof (output) | حداکثر طول هش برگشتی.                         |
+| size = sizeof(output)  | حداکثر طول هش برگشتی.                         |
 
 ## مقدار برگشتی
 

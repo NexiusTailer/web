@@ -15,7 +15,7 @@ Encontra um arquivo de modelo existente de skin customizada ou objeto simples. O
 | ---------------------- | ----------------------------------------------------------------------- |
 | crc                    | O checksum CRC do arquivo de modelo customizado.                        |
 | output[]               | Um array para armazenar o nome do arquivo .dff, passado por referência. |
-| size = sizeof (output) | O tamanho da string que deve ser armazenada.                            |
+| size = sizeof(output)  | O tamanho da string que deve ser armazenada.                            |
 
 ## Retorno
 

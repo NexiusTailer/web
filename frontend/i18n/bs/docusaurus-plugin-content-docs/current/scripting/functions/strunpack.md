@@ -13,7 +13,7 @@ Ovom se funkcijom može raspakirati string.
 | ------------------------- | --------------------------------------------------------------------------- |
 | dest[]                    | Odredišni string za spremanje nepakiranog stringa, proslijeđeno referencom. |
 | const source[]            | Izvor, originalno upakovani string.                                         |
-| maxlength = sizeof (dest) | Maksimalna veličina za unijeti.                                             |
+| maxlength = sizeof(dest)  | Maksimalna veličina za unijeti.                                             |
 
 ## Returns
 

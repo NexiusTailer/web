@@ -79,7 +79,7 @@ Returnează dimensiunea în ELEMENTE a unui tablou:
 ```c
 new
     someVar[10];
-printf("%d", sizeof (someVar));
+printf("%d", sizeof(someVar));
 ```
 
 Ieșire:
@@ -93,7 +93,7 @@ Ieșire:
 ```c
 new
     someVar[2][10];
-printf("%d %d", sizeof (someVar), sizeof (someVar[]));
+printf("%d %d", sizeof(someVar), sizeof(someVar[]));
 ```
 
 Dă:
@@ -114,7 +114,7 @@ Aceasta returnează un număr care reprezintă eticheta unei variabile:
 new
     someVar,
     Float:someFloat;
-printf("%d %d", tagof (someVar), tagof (someFloat));
+printf("%d %d", tagof(someVar), tagof(someFloat));
 ```
 
 Dă:
@@ -132,11 +132,11 @@ Ceea ce este o mică eroare, dar practic înseamnă:
 Pentru a verifica, de exemplu, dacă o variabilă este float (cu eticheta „Float:”):
 
 ```c
-new Float: fValue = 6.9;
+new Float:fValue = 6.9;
 
-new tag = tagof (fValue);
+new tag = tagof(fValue);
 
-if (tag == tagof (Float:))
+if (tag == tagof(Float:))
 {
     print("float");
 }

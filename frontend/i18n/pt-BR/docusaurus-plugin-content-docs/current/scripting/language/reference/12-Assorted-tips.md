@@ -44,7 +44,7 @@ Omitir o segundo campo (a especificação de condição de loop) de uma declara�
 Listagem: "Forever" loop
 
 ```c
-for ( ;; )
+for (;;)
 {
     // ...código para loop indefinidamente
 }
@@ -57,7 +57,7 @@ Uma forma mais interessante de "loop infinito" é aquela que tem uma condição 
 Listagem: loop infinito com condição de saída no meio do corpo
 
 ```c
-for ( ;; )
+for (;;)
 {
     // ...instruções para executar antes da condição de saída
     if (condição)

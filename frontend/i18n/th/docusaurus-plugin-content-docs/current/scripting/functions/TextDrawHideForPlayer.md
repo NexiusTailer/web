@@ -25,7 +25,7 @@ new Text:Textdraw[MAX_PLAYERS];
 
 public OnPlayerConnect(playerid)
 {
-    Textdraw[playerid] = TextDrawCreate( ... );
+    Textdraw[playerid] = TextDrawCreate(...);
     return 1;
 }
 

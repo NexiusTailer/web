@@ -13,7 +13,7 @@ Upakuj string. Upakovani stringovi koriste 75% manje memorije.
 | ------------------------- | ----------------------------------------------------------------------- |
 | dest[]                    | Odredišni string za sačuvati upakovani string, proslijeđeno referencom. |
 | const source[]            | Izvor, originalni string.                                               |
-| maxlength = sizeof (dest) | Maksimalna veličina za unijeti.                                         |
+| maxlength = sizeof(dest)  | Maksimalna veličina za unijeti.                                         |
 
 ## Returns
 

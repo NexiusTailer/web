@@ -15,7 +15,7 @@ tags: ["server variable", "svar"]
 | --------------------- | -------------------------------------------------------------------------------------- |
 | const svar[]          | اسم متغیر سرور (case-insensitive).<br />تو [SetSVarString](SetSVarString) تعیین می‌شه. |
 | output[]              | آرایه‌ای برای ذخیره مقدار string که به صورت reference پاس داده می‌شه.                  |
-| len = sizeof (output) | حداکثر طول string برگردونده شده.                                                       |
+| len = sizeof(output)  | حداکثر طول string برگردونده شده.                                                       |
 
 ## مقادیر برگشتی
 

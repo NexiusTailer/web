@@ -13,7 +13,7 @@ String yang telah dibungkus menggunakan 75% memory lebih sedikit
 | ------------------------- | -------------------------------------------------------- |
 | dest[]                    | Tempat untuk menyimpan hasil string yang sudah dibungkus |
 | const source[]            | Sumber dari string yang akan diambil                     |
-| maxlength = sizeof (dest) | Jumlah maksimal yang bisa dimasukan                      |
+| maxlength = sizeof(dest)  | Jumlah maksimal yang bisa dimasukan                      |
 
 ## Returns
 

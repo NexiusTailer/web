@@ -13,7 +13,7 @@ Decode an UU-encoded string.
 | ------------------------- | --------------------------------------------- |
 | dest[]                    | The destination for the decoded string array. |
 | const source[]            | The UU-encoded source string.                 |
-| maxlength = sizeof (dest) | The maximum length of dest that can be used.  |
+| maxlength = sizeof(dest)  | The maximum length of dest that can be used.  |
 
 ## Returns
 

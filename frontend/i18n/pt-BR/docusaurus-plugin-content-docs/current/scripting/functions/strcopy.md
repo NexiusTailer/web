@@ -16,7 +16,7 @@ Copia uma string na string de destino.
 | ------------------------- | --------------------------------------------- |
 | dest[]                    | A string na qual copiar a string de origem.   |
 | const source[]            | A sequência de origem.                        |
-| maxlength = sizeof (dest) | O comprimento máximo do destino. _(opcional)_ |
+| maxlength = sizeof(dest)  | O comprimento máximo do destino. _(opcional)_ |
 
 ## Retornos
 

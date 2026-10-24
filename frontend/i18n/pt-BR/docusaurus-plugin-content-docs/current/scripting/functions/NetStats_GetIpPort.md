@@ -14,7 +14,7 @@ Obtenha o IP e a porta de um jogador.
 | ---------------------- | ---------------------------------------------------------------- |
 | playerid | O ID do jogador para obter o IP e a porta de.                  |
 | output[] | Uma matriz de strings para armazenar IP e porta, passada por referência. |
-| size = sizeof (output) | O comprimento máximo do IP/porta. 22 é recomendado.            |
+| size = sizeof(output)  | O comprimento máximo do IP/porta. 22 é recomendado.            |
 
 ## Retornos
 

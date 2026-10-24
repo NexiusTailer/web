@@ -13,7 +13,7 @@ Gets a player's network stats and saves them into a string.
 | ---------------------- | ------------------------------------------------------------- |
 | playerid               | The ID of the player you want to get the networkstats of.     |
 | output[]               | The string to store the networkstats in, passed by reference. |
-| size = sizeof (output) | The length of the string that should be stored.               |
+| size = sizeof(output)  | The length of the string that should be stored.               |
 
 ## Returns
 
@@ -26,7 +26,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/mynetstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetPlayerNetworkStats(playerid, stats, sizeof(stats));
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "My Network Stats", stats, "Okay", "");
     }

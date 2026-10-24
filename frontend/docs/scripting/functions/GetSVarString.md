@@ -15,7 +15,7 @@ Gets a string server variable's value.
 | --------------------- | ---------------------------------------------------------------------------------------------------- |
 | const svar[]          | The name of the server variable (case-insensitive).<br />Assigned in [SetSVarString](SetSVarString). |
 | output[]              | The array in which to store the string value in, passed by reference.                                |
-| len = sizeof (output) | The maximum length of the returned string.                                                           |
+| len = sizeof(output)  | The maximum length of the returned string.                                                           |
 
 ## Returns
 

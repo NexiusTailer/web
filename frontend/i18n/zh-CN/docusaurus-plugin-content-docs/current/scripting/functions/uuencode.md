@@ -14,7 +14,7 @@ tags: ["字符串处理", "加密"]
 | dest[]                    | 用于存储编码后字符串的目标数组       |
 | const source[]            | 需要编码的原始字符串                 |
 | numbytes                  | 要编码的字节数（建议不超过 45 字节） |
-| maxlength = sizeof (dest) | 目标数组的最大存储容量               |
+| maxlength = sizeof(dest)  | 目标数组的最大存储容量               |
 
 ## 返回值
 

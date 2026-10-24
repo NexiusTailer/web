@@ -24,7 +24,7 @@ Wordt altijd als eerste aangeroepen in filterscripts, dus return 0 blokkeert and
 public OnPlayerText(playerid, text[])
 {
     new string[144];
-    format(string, sizeof (string), "(%d) %s", playerid, text);
+    format(string, sizeof(string), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, string);
 
     // Return 0 negeert het standaard berichtformaat en verstuurt de custom versie.

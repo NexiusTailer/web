@@ -14,7 +14,7 @@ tags: []
 | اسم                    | توضیح                                                          |
 | ---------------------- | -------------------------------------------------------------- |
 | output[]               | رشته‌ای برای ذخیره آمار شبکه، به صورت reference پاس داده میشه. |
-| size = sizeof (output) | طول رشته‌ای که باید ذخیره بشه.                                 |
+| size = sizeof(output)  | طول رشته‌ای که باید ذخیره بشه.                                 |
 
 ## مقادیر برگشتی
 
@@ -29,7 +29,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/netstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetNetworkStats(stats, sizeof(stats)); // آمار شبکه سرور رو بگیر
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Server Network Stats", stats, "Close", "");
     }

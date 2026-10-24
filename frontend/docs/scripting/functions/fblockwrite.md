@@ -13,7 +13,7 @@ Write data to a file in binary format, while ignoring line brakes and encoding.
 | ---------------------- | ------------------------------------------ |
 | File:handle            | The File handle to use, opened by fopen(). |
 | const buffer[]         | The data to write to the file.             |
-| size = sizeof (buffer) | The number of cells to write.              |
+| size = sizeof(buffer)  | The number of cells to write.              |
 
 ## Returns
 

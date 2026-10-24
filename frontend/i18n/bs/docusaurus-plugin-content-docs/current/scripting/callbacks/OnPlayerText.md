@@ -24,7 +24,7 @@ Uvijek je pozvan prvo u filterskriptama tako da će return-ovanje 0 blokirati os
 public OnPlayerText(playerid, text[])
 {
     new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
+    format(pText, sizeof(pText), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, pText);
     return 0; // ignore the default text and send the custom one
 }

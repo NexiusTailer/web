@@ -13,7 +13,7 @@ Returns the SA-MP client version, as reported by the player.
 | ---------------------- | ----------------------------------------------------------------- |
 | playerid               | The ID of the player to get the client version of.                |
 | version[]              | The string to store the player's version in, passed by reference. |
-| len = sizeof (version) | The maximum length of the version.                                |
+| len = sizeof(version)  | The maximum length of the version.                                |
 
 ## Returns
 

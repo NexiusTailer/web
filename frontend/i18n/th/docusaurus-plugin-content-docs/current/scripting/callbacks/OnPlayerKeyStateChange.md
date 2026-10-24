@@ -35,32 +35,32 @@ if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys &
 // HOLDING(keys)
 #define HOLDING(%0) \
     ((newkeys & (%0)) == (%0))
-if (HOLDING( KEY_FIRE ))
-if (HOLDING( KEY_FIRE | KEY_CROUCH ))
+if (HOLDING(KEY_FIRE))
+if (HOLDING(KEY_FIRE | KEY_CROUCH))
 ```
 
 ```c
 // PRESSED(keys)
 #define PRESSED(%0) \
     (((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
-if (PRESSED( KEY_FIRE ))
-if (PRESSED( KEY_FIRE | KEY_CROUCH ))
+if (PRESSED(KEY_FIRE))
+if (PRESSED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ```c
 // PRESSING(keyVariable, keys)
-#define PRESSING(%0,%1) \
+#define PRESSING(%0, %1) \
     (%0 & (%1))
-if (PRESSING( newkeys, KEY_FIRE ))
-if (PRESSING( newkeys, KEY_FIRE | KEY_CROUCH ))
+if (PRESSING(newkeys, KEY_FIRE))
+if (PRESSING(newkeys, KEY_FIRE | KEY_CROUCH))
 ```
 
 ```c
 // RELEASED(keys)
 #define RELEASED(%0) \
     (((newkeys & (%0)) != (%0)) && ((oldkeys & (%0)) == (%0)))
-if (RELEASED( KEY_FIRE ))
-if (RELEASED( KEY_FIRE | KEY_CROUCH ))
+if (RELEASED(KEY_FIRE))
+if (RELEASED(KEY_FIRE | KEY_CROUCH))
 ```
 
 ```c

@@ -21,7 +21,7 @@ A player's CI is NOT UNIQUE, some players may have similar or the same CI, don't
 | --------------------- | --------------------------------------- |
 | playerid              | The ID of the player to fetch their CI. |
 | serial[]              | String to store the fetched CI in.      |
-| len = sizeof (serial) | Assigned size of the string.            |
+| len = sizeof(serial)  | Assigned size of the string.            |
 
 ## Return Values
 

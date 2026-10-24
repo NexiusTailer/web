@@ -13,7 +13,7 @@ tags: ["string", "encryption"]
 | ------------------------- | -------------------------------------- |
 | dest[]                    | مقصد برای آرایه رشته decode شده.       |
 | const source[]            | رشته منبع UU-encoded.                  |
-| maxlength = sizeof (dest) | حداکثر طول dest که میتونه استفاده بشه. |
+| maxlength = sizeof(dest)  | حداکثر طول dest که میتونه استفاده بشه. |
 
 ## مقدار برگشتی
 

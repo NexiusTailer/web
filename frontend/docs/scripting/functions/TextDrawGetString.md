@@ -15,7 +15,7 @@ Gets the text of a textdraw.
 | ---------------------------- | ----------------------------------------------------------- |
 | Text:textid                  | The ID of the textdraw to get the text of.                  |
 | string[]                     | An array into which to store the text, passed by reference. |
-| stringSize = sizeof (string) | The size of the string.                                     |
+| stringSize = sizeof(string)  | The size of the string.                                     |
 
 ## Returns
 

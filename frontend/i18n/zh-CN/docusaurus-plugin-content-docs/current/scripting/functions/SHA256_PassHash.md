@@ -22,7 +22,7 @@ tags: ["加密"]
 | const password[]       | 待哈希的原始密码字符串       |
 | const salt[]           | 用于哈希计算的盐值           |
 | output[]               | 输出的大写十六进制哈希字符串 |
-| size = sizeof (output) | 输出缓冲区的最大容量         |
+| size = sizeof(output)  | 输出缓冲区的最大容量         |
 
 ## 返回值
 

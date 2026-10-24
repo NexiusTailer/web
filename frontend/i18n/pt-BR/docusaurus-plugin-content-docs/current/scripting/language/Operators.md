@@ -65,7 +65,7 @@ Retorna o tamanho de um array em **elementos**:
 ```c
 new
     someVar[10];
-printf("%d", sizeof (someVar)); // 10
+printf("%d", sizeof(someVar)); // 10
 ```
 
 Para arrays multidimensionais:
@@ -73,7 +73,7 @@ Para arrays multidimensionais:
 ```c
 new
     someVar[2][10];
-printf("%d %d", sizeof (someVar), sizeof (someVar[])); // 2 10
+printf("%d %d", sizeof(someVar), sizeof(someVar[])); // 2 10
 ```
 
 ## `state`
@@ -88,7 +88,7 @@ Retorna o identificador numérico da tag de uma variável:
 new
     someVar,
     Float:someFloat;
-printf("%d %d", tagof (someVar), tagof (someFloat));
+printf("%d %d", tagof(someVar), tagof(someFloat));
 ```
 
 Os valores exibidos correspondem aos códigos internos das tags. Para verificar se uma variável possui determinada tag:
@@ -96,7 +96,7 @@ Os valores exibidos correspondem aos códigos internos das tags. Para verificar 
 ```c
 new Float:fValue = 6.9;
 
-if (tagof (fValue) == tagof (Float:))
+if (tagof(fValue) == tagof(Float:))
 {
     print("float");
 }

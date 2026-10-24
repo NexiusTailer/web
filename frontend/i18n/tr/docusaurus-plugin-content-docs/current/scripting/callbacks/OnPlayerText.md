@@ -24,7 +24,7 @@ Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 0 dönd
 public OnPlayerText(playerid, text[])
 {
     new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
+    format(pText, sizeof(pText), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, pText);
     return 0; // varsayılan metni yoksay ve özel olanı gönder
 }

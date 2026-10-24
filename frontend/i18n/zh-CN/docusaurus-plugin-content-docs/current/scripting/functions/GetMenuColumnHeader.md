@@ -16,7 +16,7 @@ tags: ["菜单"]
 | Menu:menuid           | 要查询的菜单 ID                    |
 | column                | 列索引（从 0 开始计数）            |
 | header[]              | 存储标题文本的数组变量（引用传递） |
-| len = sizeof (header) | 存储文本的数组容量长度             |
+| len = sizeof(header)  | 存储文本的数组容量长度             |
 
 ## 返回值
 

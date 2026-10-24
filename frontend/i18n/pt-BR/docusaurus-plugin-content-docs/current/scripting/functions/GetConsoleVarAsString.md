@@ -14,7 +14,7 @@ Obtenha o valor da string de uma variável de console.
 | --------------------- | ------------------------------------------------------------ |
 | const cvar[] | O nome da variável de string da qual obter o valor.         |
 | buffer[] | Uma matriz na qual armazenar o valor, passado por referência. |
-| len = sizeof (buffer) | O comprimento da string que deve ser armazenada.              |
+| len = sizeof(buffer)  | O comprimento da string que deve ser armazenada.              |
 
 ## Retornos
 

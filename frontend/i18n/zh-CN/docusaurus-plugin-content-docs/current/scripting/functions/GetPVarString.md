@@ -14,7 +14,7 @@ tags: ["玩家变量"]
 | playerid              | 需要获取变量的玩家 ID                                        |
 | const pvar[]          | 目标变量名称（需通过[SetPVarString](SetPVarString)预先设置） |
 | output[]              | 存储字符串的字符数组（引用传递）                             |
-| len = sizeof (output) | 字符串最大缓冲长度                                           |
+| len = sizeof(output)  | 字符串最大缓冲长度                                           |
 
 ## 返回值
 

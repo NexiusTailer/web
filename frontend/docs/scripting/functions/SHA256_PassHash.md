@@ -22,7 +22,7 @@ Hashes a password using the SHA-256 hashing algorithm. Includes a salt. The outp
 | const password[]       | The password to hash.                              |
 | const salt[]           | The salt to use in the hash.                       |
 | output[]               | The returned hash in uppercase hexadecimal digest. |
-| size = sizeof (output) | The returned hash maximum length.                  |
+| size = sizeof(output)  | The returned hash maximum length.                  |
 
 ## Returns
 

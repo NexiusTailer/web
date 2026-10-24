@@ -14,7 +14,7 @@ Retorna a versão do cliente SA-MP, conforme relatado pelo jogador.
 | ---------------------- | ----------------------------------------------------------------- |
 | playerid | O ID do jogador do qual obter a versão cliente.                |
 | version[] | A string para armazenar a versão do jogador, passada por referência. |
-| len = sizeof (version) | O comprimento máximo da versão.                                |
+| len = sizeof(version)  | O comprimento máximo da versão.                                |
 
 ## Retornos
 

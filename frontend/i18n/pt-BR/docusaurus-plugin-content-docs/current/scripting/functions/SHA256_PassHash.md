@@ -23,7 +23,7 @@ Faz hash de uma senha usando o algoritmo de hash SHA-256. Inclui um sal. A saíd
 | const password[]       | A senha para hash.                                |
 | const salt[]           | O sal para usar no hash.                          |
 | output[]               | O hash retornado em resumo hexadecimal maiúsculo. |
-| size = sizeof (output) | O comprimento máximo do hash retornado.           |
+| size = sizeof(output)  | O comprimento máximo do hash retornado.           |
 
 ## Retornos
 

@@ -13,7 +13,7 @@ Lees één regel uit een bestand.
 | ---------------------- | --------------------------------------------------- |
 | File:handle            | Handle van het bestand (van fopen).                 |
 | string[]               | Buffer om de gelezen tekst in op te slaan (by ref). |
-| size = sizeof (string) | Aantal bytes om te lezen.                           |
+| size = sizeof(string)  | Aantal bytes om te lezen.                           |
 | bool:pack              | Of de string packed moet zijn (standaard: false).   |
 
 ## Retourneert

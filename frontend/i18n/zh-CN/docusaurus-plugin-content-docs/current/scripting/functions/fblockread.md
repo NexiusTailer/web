@@ -13,7 +13,7 @@ tags: ["文件管理"]
 | ---------------------- | -------------------------------------- |
 | File:handle            | 通过 fopen()打开的文件句柄             |
 | buffer                 | 存储读取数据的缓冲区                   |
-| size = sizeof (buffer) | 要读取的数据单元数量（默认缓冲区大小） |
+| size = sizeof(buffer)  | 要读取的数据单元数量（默认缓冲区大小） |
 
 ## 返回值
 
@@ -48,7 +48,7 @@ if (handle)
     file_len = flength(handle);
 
     // 校验文件尺寸与数据结构匹配
-    if (file_len == (some_enum*4))
+    if (file_len == (some_enum * 4))
     {
         // 执行块读取操作
         fblockread(handle, some_data);

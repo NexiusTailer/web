@@ -24,7 +24,7 @@ tags: ["玩家"]
 public OnPlayerText(playerid, text[])
 {
     new string[144];
-    format(string, sizeof (string), "(%d) %s", playerid, text);
+    format(string, sizeof(string), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, string);
 
     // 返回0将忽略默认消息格式，发送自定义消息

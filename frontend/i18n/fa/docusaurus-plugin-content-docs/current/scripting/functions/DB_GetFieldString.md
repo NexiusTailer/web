@@ -14,7 +14,7 @@ tags: ["sqlite"]
 | DBResult:result        | نتیجه‌ای که داده‌ها از اون گرفته میشه. |
 | field                  | فیلدی که داده‌ها از اون گرفته میشه.    |
 | output[]               | نتیجه.                                 |
-| size = sizeof (output) | حداکثر طول فیلد.                       |
+| size = sizeof(output)  | حداکثر طول فیلد.                       |
 
 ## مقدار بازگشتی
 

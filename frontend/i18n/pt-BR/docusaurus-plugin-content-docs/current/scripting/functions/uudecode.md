@@ -14,7 +14,7 @@ Decodifique uma string codificada em UU.
 | ------------------------- | --------------------------------------------- |
 | dest[] | O destino da matriz de cadeias de caracteres decodificada. |
 | const source[] | A string de origem codificada em UU.                 |
-| maxlength = sizeof (dest) | O comprimento máximo de destino que pode ser usado.  |
+| maxlength = sizeof(dest)  | O comprimento máximo de destino que pode ser usado.  |
 
 ## Retornos
 

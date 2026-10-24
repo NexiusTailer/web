@@ -15,9 +15,9 @@ tags: []
 | -------------------------------- | ------------------------------------------------------------- |
 | index                            | index انیمیشن، که با GetPlayerAnimationIndex برگشت داده میشه. |
 | animationLibrary[]               | متغیر string که کتابخونه انیمیشن رو ذخیره می‌کنه.             |
-| len1 = sizeof (animationLibrary) | اندازه string که کتابخونه انیمیشن رو ذخیره می‌کنه.            |
+| len1 = sizeof(animationLibrary)  | اندازه string که کتابخونه انیمیشن رو ذخیره می‌کنه.            |
 | animationName[]                  | متغیر string که اسم انیمیشن رو ذخیره می‌کنه.                  |
-| len2 = sizeof (animationName)    | اندازه string که اسم انیمیشن رو ذخیره می‌کنه.                 |
+| len2 = sizeof(animationName)     | اندازه string که اسم انیمیشن رو ذخیره می‌کنه.                 |
 
 ## مقادیر برگشتی
 

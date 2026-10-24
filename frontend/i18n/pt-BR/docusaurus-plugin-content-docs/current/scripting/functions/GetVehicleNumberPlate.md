@@ -18,7 +18,7 @@ Obtenha a placa de um veículo.
 | -------------------- | ----------------------------------------------------------- |
 | vehicleid | O ID do veículo.                                      |
 | plate[] | Uma matriz na qual armazenar o nome, passado por referência. |
-| len = sizeof (plate) | O comprimento da placa que deve ser armazenada.              |
+| len = sizeof(plate)  | O comprimento da placa que deve ser armazenada.              |
 
 ## Exemplos
 

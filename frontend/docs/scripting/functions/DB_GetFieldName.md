@@ -14,7 +14,7 @@ Returns the name of a field at a particular index.
 | DBResult:result        | The result to get the data from; returned by [DB_ExecuteQuery](DB_ExecuteQuery). |
 | field                  | The index of the field to get the name of.                                       |
 | output[]               | The result.                                                                      |
-| size = sizeof (output) | The max length of the field.                                                     |
+| size = sizeof(output)  | The max length of the field.                                                     |
 
 ## Returns
 

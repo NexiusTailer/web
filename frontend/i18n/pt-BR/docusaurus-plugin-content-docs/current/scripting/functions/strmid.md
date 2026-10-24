@@ -16,7 +16,7 @@ Extraia um intervalo de caracteres de uma string.
 | const source[]            | A string da qual extrair caracteres.                              |
 | start                     | A posição do primeiro personagem.                                 |
 | end                       | A posição do último caractere.                                    |
-| maxlength = sizeof (dest) | O comprimento do destino. (Será o tamanho de destino por padrão)  |
+| maxlength = sizeof(dest)  | O comprimento do destino. (Será o tamanho de destino por padrão)  |
 
 ## Retornos
 

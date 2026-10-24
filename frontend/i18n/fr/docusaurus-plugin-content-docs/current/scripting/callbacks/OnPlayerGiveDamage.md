@@ -34,9 +34,9 @@ public OnPlayerGiveDamage(playerid, damagedid, Float:amount, WEAPON:weaponid, bo
       attacker[MAX_PLAYER_NAME],
       weaponname[24];
 
-    GetPlayerName(playerid, attacker, sizeof (attacker));
-    GetPlayerName(damagedid, victim, sizeof (victim));
-    GetWeaponName(weaponid, weaponname, sizeof (weaponname));
+    GetPlayerName(playerid, attacker, sizeof(attacker));
+    GetPlayerName(damagedid, victim, sizeof(victim));
+    GetWeaponName(weaponid, weaponname, sizeof(weaponname));
 
     format(string, sizeof(string), "%s a infligé %.0f de dégâts à %s, arme: %s, bodypart: %d", attacker, amount, victim, weaponname, bodypart);
 

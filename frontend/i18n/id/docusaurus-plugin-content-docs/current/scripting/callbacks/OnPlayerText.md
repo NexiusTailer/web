@@ -24,7 +24,7 @@ Ini akan selalu terpanggil pertama di filterscripts jadi mengembalikan nilai 1 a
 public OnPlayerText(playerid, text[])
 {
     new pText[144];
-    format(pText, sizeof (pText), "(%d) %s", playerid, text);
+    format(pText, sizeof(pText), "(%d) %s", playerid, text);
     SendPlayerMessageToAll(playerid, pText);
     return 0; // Mengabaikan teks default dan mengirimkan teks kustom
 }

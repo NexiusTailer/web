@@ -273,7 +273,7 @@ main()
 Um loop for é um tipo de loop que envolve três estágios: inicialização, comparação e atualização. Cada um é separado por ponto e vírgula e cada um pode ser excluído simplesmente deixando um espaço em branco. O loop for mais básico é:
 
 ```c
-for ( ; ; ) {}
+for (;;) {}
 ```
 
 Este não tem inicialização, nem comparação e nem atualização e, como resultado, continuará para sempre (a comparação, sendo ausente, assume o valor verdadeiro por padrão).
@@ -333,7 +333,7 @@ Isso produzirá um erro, pois "i" não existe após o loop terminar. No entanto:
 ```c
 new
     i = 0;
-for ( ; i < MAX_PLAYERS; i++)
+for (; i < MAX_PLAYERS; i++)
 {
     printf("%d", i);
 }

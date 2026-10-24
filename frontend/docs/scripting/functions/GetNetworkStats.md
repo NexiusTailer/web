@@ -12,7 +12,7 @@ Gets the server's network stats and stores them in a string.
 | Name                   | Description                                                    |
 | ---------------------- | -------------------------------------------------------------- |
 | output[]               | The string to store the network stats in, passed by reference. |
-| size = sizeof (output) | The length of the string to be stored.                         |
+| size = sizeof(output)  | The length of the string to be stored.                         |
 
 ## Returns
 
@@ -25,7 +25,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
     if (!strcmp(cmdtext, "/netstats"))
     {
-        new stats[400+1];
+        new stats[400 + 1];
         GetNetworkStats(stats, sizeof(stats)); // Get the servers networkstats
         ShowPlayerDialog(playerid, 0, DIALOG_STYLE_MSGBOX, "Server Network Stats", stats, "Close", "");
     }

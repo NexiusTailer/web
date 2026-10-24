@@ -14,7 +14,7 @@ Embale uma string. Strings compactadas usam 75% menos memória.
 | ------------------------- | ------------------------------------------------------------------------- |
 | dest[] | A string de destino na qual salvar a string compactada, passada por referência. |
 | const source[] | A origem, string original.                                              |
-| maxlength = sizeof (dest) | O tamanho máximo a ser inserido.                                               |
+| maxlength = sizeof(dest)  | O tamanho máximo a ser inserido.                                               |
 
 ## Retornos
 

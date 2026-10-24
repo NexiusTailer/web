@@ -13,7 +13,7 @@ Get the specified player's IP address and store it in a string.
 | ----------------- | -------------------------------------------------------------------- |
 | playerid          | The ID of the player to get the IP address of.                       |
 | ip[]              | The string to store the player's IP address in, passed by reference. |
-| len = sizeof (ip) | The maximum length of the IP address (recommended 16).               |
+| len = sizeof(ip)  | The maximum length of the IP address (recommended 16).               |
 
 ## Returns
 

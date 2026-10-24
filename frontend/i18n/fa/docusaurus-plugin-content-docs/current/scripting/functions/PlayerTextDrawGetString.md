@@ -16,7 +16,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 | playerid                     | شناسه بازیکن.                                                |
 | PlayerText:textid            | شناسه player-textdraw که می‌خوای متن رو ازش بگیری.           |
 | string[]                     | آرایه‌ای برای ذخیره متن، که به صورت reference پاس داده میشه. |
-| stringSize = sizeof (string) | اندازه رشته.                                                 |
+| stringSize = sizeof(string)  | اندازه رشته.                                                 |
 
 ## مقدار برگشتی
 

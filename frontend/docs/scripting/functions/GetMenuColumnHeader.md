@@ -16,7 +16,7 @@ Get the text in the header of the specified column.
 | Menu:menuid           | The ID of the menu.                                         |
 | column                | The column.                                                 |
 | header[]              | An array into which to store the text, passed by reference. |
-| len = sizeof (header) | The length of the text that should be stored.               |
+| len = sizeof(header)  | The length of the text that should be stored.               |
 
 ## Returns
 
