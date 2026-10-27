@@ -16,7 +16,7 @@ tags: ["math", "floating-point"]
 
 ## برگشتی
 
-نتیجه `value` به توان `exponent`.
+نتیجه 'value' به توان 'exponent'.
 
 ## مثال‌ها
 

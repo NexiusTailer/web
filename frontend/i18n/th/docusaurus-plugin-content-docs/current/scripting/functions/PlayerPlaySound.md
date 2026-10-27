@@ -42,6 +42,6 @@ Only use the coordinates if you want the sound to be played at a certain positio
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `PlayCrimeReportForPlayer`: Play a crime report for a player.
-- `PlayAudioStreamForPlayer`: Plays a audio stream for a player.
-- `StopAudioStreamForPlayer`: Stops the current audio stream for a player.
+- PlayCrimeReportForPlayer: Play a crime report for a player.
+- PlayAudioStreamForPlayer: Plays a audio stream for a player.
+- StopAudioStreamForPlayer: Stops the current audio stream for a player.

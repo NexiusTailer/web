@@ -9,17 +9,17 @@ tags: []
 
 Interpolirajte/pomjerajte tačku "pogleda u" kamere kamere između dve kordinatame zadanom brzinom.
 
-| Ime         | Deskripcija                                                                                                                                        |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid    | ID igrača čije će se kamera pomjerati.                                                                                                             |
-| Float:FromX | X pozicija kamere gdje bi se trebala početi pomicati.                                                                                              |
-| Float:FromY | Y pozicija kamere gdje bi se trebala početi pomicati.                                                                                              |
-| Float:FromZ | Z pozicija kamere gdje bi se trebala početi pomicati.                                                                                              |
-| Float:ToX   | X pozicija kamere gdje bi se trebala pomaketi.                                                                                                     |
-| Float:ToY   | Y pozicija kamere gdje bi se trebala pomaketi.                                                                                                     |
-| Float:ToZ   | Z pozicija kamere gdje bi se trebala pomaketi.                                                                                                     |
-| time        | Vrijeme u milisekundama za dovršiti interpoliranje/pomjeranje.interpolation                                                                        |
-| cut         | ['Jumpcut'](../resources/cameracutstyles) za koristiti. Zadano na `CAMERA_CUT` (besmisleno). Postavi na `CAMERA_MOVE` za interpolaciju/pomjeranje. |
+| Ime         | Deskripcija                                                                                                                                    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | ID igrača čije će se kamera pomjerati.                                                                                                         |
+| Float:FromX | X pozicija kamere gdje bi se trebala početi pomicati.                                                                                          |
+| Float:FromY | Y pozicija kamere gdje bi se trebala početi pomicati.                                                                                          |
+| Float:FromZ | Z pozicija kamere gdje bi se trebala početi pomicati.                                                                                          |
+| Float:ToX   | X pozicija kamere gdje bi se trebala pomaketi.                                                                                                 |
+| Float:ToY   | Y pozicija kamere gdje bi se trebala pomaketi.                                                                                                 |
+| Float:ToZ   | Z pozicija kamere gdje bi se trebala pomaketi.                                                                                                 |
+| time        | Vrijeme u milisekundama za dovršiti interpoliranje/pomjeranje.interpolation                                                                    |
+| cut         | ['Jumpcut'](../resources/cameracutstyles) za koristiti. Zadano na CAMERA_CUT (besmisleno). Postavi na CAMERA_MOVE za interpolaciju/pomjeranje. |
 
 ## Returns
 
@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-Upotrijebite `TogglePlayerSpectating` da se objekti prikažu igraču/klijentu tokom reprodukcije kamere. Pomoću `SetCameraBehindPlayer` možete resetovati kameru iza igrača/klijenta.
+Upotrijebite TogglePlayerSpectating da se objekti prikažu igraču/klijentu tokom reprodukcije kamere. Pomoću SetCameraBehindPlayer možete resetovati kameru iza igrača/klijenta.
 
 :::
 

@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Acest callback este apelat atunci când un jucător face clic pe un textdraw sau anulează modul de selectare cu tasta ESC.
 
-| Nume      | Descriere                                                                                 |
-| --------- | ----------------------------------------------------------------------------------------- |
-| playerid  | ID-ul jucătorului care a făcut clic pe textdraw.                                          |
-| clickedid | ID-ul textdraw-ului care a fost apasat. `INVALID_TEXT_DRAW` dacă selecția a fost anulată. |
+| Nume      | Descriere                                                                               |
+| --------- | --------------------------------------------------------------------------------------- |
+| playerid  | ID-ul jucătorului care a făcut clic pe textdraw.                                        |
+| clickedid | ID-ul textdraw-ului care a fost apasat. INVALID_TEXT_DRAW dacă selecția a fost anulată. |
 
 ## Returnări
 
@@ -64,7 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Zona pe care se poate face clic este definită de `TextDrawTextSize`. Parametrii x și y trecuți acelei funcție nu trebuie să fie zero sau negativi. Nu utilizați `CancelSelectTextDraw` necondiționat în acest callback. Aceasta are ca rezultat o buclă infinită.
+Zona pe care se poate face clic este definită de TextDrawTextSize. Parametrii x și y trecuți acelei funcție nu trebuie să fie zero sau negativi. Nu utilizați CancelSelectTextDraw necondiționat în acest callback. Aceasta are ca rezultat o buclă infinită.
 
 :::
 

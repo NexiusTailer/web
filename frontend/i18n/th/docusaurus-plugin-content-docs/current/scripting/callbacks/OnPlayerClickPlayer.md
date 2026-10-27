@@ -39,7 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-ตอนนี้ `source` มีเพียงแค่ค่าเดียว (0 - `CLICK_SOURCE_SCOREBOARD`) ส่วนขยายนี้แสดงให้เห็นว่าอาจมีการรองรับข้อมูลเพิ่มเติมในอนาคต
+ตอนนี้ 'source' มีเพียงแค่ค่าเดียว (0 - CLICK_SOURCE_SCOREBOARD) ส่วนขยายนี้แสดงให้เห็นว่าอาจมีการรองรับข้อมูลเพิ่มเติมในอนาคต
 
 :::
 

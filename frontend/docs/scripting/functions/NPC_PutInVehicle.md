@@ -61,7 +61,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - NPC will instantly appear in the vehicle without enter animation
-- Use `NPC_GetVehicleID` to check which vehicle an NPC is in
+- Use NPC_GetVehicleID to check which vehicle an NPC is in
 - Seat 0 is always the driver seat
 - Maximum seat ID depends on the vehicle model
 

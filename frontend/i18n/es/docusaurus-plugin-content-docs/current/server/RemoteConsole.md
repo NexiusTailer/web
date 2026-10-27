@@ -8,9 +8,9 @@ La **consola remota** es una línea de comandos en la que puedes usar comandos R
 
 1. Abre un editor de texto (puede ser VSCode, Sublime Text, o simplemente Notepad.exe).
 2. Escribe allí la línea: `rcon.exe IP PUERTO CONTRASEÑA RCON` (reemplaza IP/PUERTO/CONTRASEÑA con la que corresponde en tu servidor)
-3. Guarda el archivo como `rcon.bat`
+3. Guarda el archivo como **rcon.bat**
 4. Coloca el archivo en el directorio de tu GTA, donde `rcon.exe` esta localizado.
-5. Ejecuta el archivo `rcon.bat`
+5. Ejecuta el archivo **rcon.bat**
 6. Coloca el comando que tu quieras.
 
 ![Consola RCON](https://assets.open.mp/assets/images/server/rcon.jpg)

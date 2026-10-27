@@ -16,7 +16,7 @@ Este callback se llama cuando un vehículo es tuneado.
 
 ## Devoluciones
 
-0 - Prevendrá a filterscripts de recibir este callback.
+**0** - Prevendrá a filterscripts de recibir este callback.
 
 Siempre se llama primero en el gamemode.
 
@@ -40,7 +40,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Este callback NO se llama por `AddVehicleComponent`.
+Este callback NO se llama por AddVehicleComponent.
 
 :::
 

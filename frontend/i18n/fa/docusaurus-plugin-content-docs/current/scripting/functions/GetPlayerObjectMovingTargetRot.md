@@ -11,13 +11,13 @@ tags: ["player", "object", "playerobject"]
 
 دریافت چرخش هدف حرکت یک player-object.
 
-| نام              | توضیحات                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| playerid         | ID بازیکن.                                                                    |
-| objectid         | ID player-object برای دریافت چرخش هدف حرکتش.                                  |
-| &Float:rotationX | متغیر float برای ذخیره مختصات `rotationX`، به صورت reference پاس داده می‌شود. |
-| &Float:rotationY | متغیر float برای ذخیره مختصات `rotationY`، به صورت reference پاس داده می‌شود. |
-| &Float:rotationZ | متغیر float برای ذخیره مختصات `rotationZ`، به صورت reference پاس داده می‌شود. |
+| نام              | توضیحات                                                                     |
+| ---------------- | --------------------------------------------------------------------------- |
+| playerid         | ID بازیکن.                                                                  |
+| objectid         | ID player-object برای دریافت چرخش هدف حرکتش.                                |
+| &Float:rotationX | متغیر float برای ذخیره مختصات rotationX، به صورت reference پاس داده می‌شود. |
+| &Float:rotationY | متغیر float برای ذخیره مختصات rotationY، به صورت reference پاس داده می‌شود. |
+| &Float:rotationZ | متغیر float برای ذخیره مختصات rotationZ، به صورت reference پاس داده می‌شود. |
 
 ## مقادیر برگشتی
 

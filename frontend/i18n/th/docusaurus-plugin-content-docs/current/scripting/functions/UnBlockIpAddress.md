@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Unblock an IP address that was previously blocked using `BlockIpAddress`.
+Unblock an IP address that was previously blocked using BlockIpAddress.
 
 | Name       | Description                |
 | ---------- | -------------------------- |

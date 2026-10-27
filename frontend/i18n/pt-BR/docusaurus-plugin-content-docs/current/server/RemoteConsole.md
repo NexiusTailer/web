@@ -7,9 +7,9 @@ O **Console Remoto** é um prompt de comando onde você pode usar comandos RCON 
 
 1. Abra um editor de texto.
 2. Escreva a seguinte linha: rcon.exe IP PORT RCON-PASS (Substitua IP/PORT/PASS pelas informações do seu servidor)
-3. Salve o arquivo como `rcon.bat`
+3. Salve o arquivo como **rcon.bat**
 4. Coloque o arquivo no diretório do seu GTA, onde o rcon.exe está localizado.
-5. Execute `rcon.bat`
+5. Execute **rcon.bat**
 6. Digite o comando que você deseja.
 
 ![Screenshot](https://assets.open.mp/assets/images/server/rcon.jpg)

@@ -13,96 +13,96 @@ The “core” module consists of a set of functions that support the
 language itself. Several of the functions are needed to pull arguments out of a variable
 argument list (see page 80).
 
-| clamp    |                                                                                                                         |  Force a value inside a range |
-| -------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------: |
-| Syntax   | `clamp(value, min=cellmin, max=cellmax)`                                                                                |                               |
-|          | value                                                                                                                   | The value to force in a range |
-|          | `min`                                                                                                                   |   The low bound of the range. |
-|          | `max`                                                                                                                   |  The high bound of the range. |
-| Returns  | value if it is in the range `min` – `max`; `min` if value is lower than `min`; and `max` if value is higher than `max`. |                               |
-| See also | `max`, `min`                                                                                                            |                               |
+| clamp    |                                                                                                             |  Force a value inside a range |
+| -------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------: |
+| Syntax   | clamp(value, min=cellmin, max=cellmax)                                                                      |                               |
+|          | value                                                                                                       | The value to force in a range |
+|          | min                                                                                                         |   The low bound of the range. |
+|          | max                                                                                                         |  The high bound of the range. |
+| Returns  | value if it is in the range min – max; min if value is lower than min; and max if value is higher than max. |                               |
+| See also | max, min                                                                                                    |                               |
 
 | funcidx |                                                                                                                                                                                                                                                           | Return a public function index |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------: |
 | Syntax  | funcidx(const name[])                                                                                                                                                                                                                                     |                               |
-| Returns | The index of the named public function. If no public function with the given name exists, `funcidx` returns −1.                                                                                                                                           |                               |
+| Returns | The index of the named public function. If no public function with the given name exists, funcidx returns −1.                                                                                                                                             |                               |
 | Notes:  | A host application runs a public function from the script by passing the public function’s index to amx_Exec. With this function, the script can query the index of a public function, and thereby return the “next function to call” to the application. |                               |
 
 | getarg   |                                                                                                                                                                                                       |                                         Get an argument |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------: |
-| Syntax   | `getarg(arg, index=0)`                                                                                                                                                                                |                                                         |
+| Syntax   | getarg(arg, index=0)                                                                                                                                                                                  |                                                         |
 |          | arg                                                                                                                                                                                                   | The argument sequence number, use 0 for first argument. |
 |          | index                                                                                                                                                                                                 |              The index, in case arg refers to an array. |
 | Returns  | The value of the argument                                                                                                                                                                             |                                                         |
 | Notes:   | This function retrieves an argument from a variable argument list. When the argument is an array, the index parameter specifies the index into the array. The return value is the retrieved argument. |                                                         |
-| See also | `numargs`, `setarg`                                                                                                                                                                                   |                                                         |
+| See also | numargs, setarg                                                                                                                                                                                       |                                                         |
 
 | heapspace |                                                                                                                                                                            | Return free heap space |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------: |
-| Syntax    | `heapspace()`                                                                                                                                                              |                        |
+| Syntax    | heapspace()                                                                                                                                                                |                        |
 | Returns   | The free space on the heap. The stack and the heap occupy a shared memory area, so this value indicates the number of bytes that is left for either the stack or the heap. |                        |
 | Notes:    | In absence of recursion, the pawn parser can also give an estimate of the required stack/heap space.                                                                       |                        |
 
 | max      |                                       |                    Return the highest of two numbers |
 | -------- | ------------------------------------- | ---------------------------------------------------: |
-| Syntax   | `max(value1, value2)`                 |                                                      |
+| Syntax   | max(value1, value2)                   |                                                      |
 |          | value1                                |                                                      |
 |          | value2                                | The two values for which to find the highest number. |
 | Returns  | The higher value of value1 and value2 |                                                      |
-| See also | `clamp`, `min`                        |                                                      |
+| See also | clamp, min                            |                                                      |
 
 | min      |                                       |                    Return the lowest of two numbers |
 | -------- | ------------------------------------- | --------------------------------------------------: |
-| Syntax   | `min(value1, value2)`                 |                                                     |
+| Syntax   | min(value1, value2)                   |                                                     |
 |          | value1                                |                                                     |
 |          | value2                                | The two values for which to find the lowest number. |
 | Returns  | The lowest value of value1 and value2 |                                                     |
-| See also | `clamp`, `max`                        |                                                     |
+| See also | clamp, max                            |                                                     |
 
-| numargs  |                                                                                                                  | Return the number of arguments |
-| -------- | ---------------------------------------------------------------------------------------------------------------- | -----------------------------: |
-| Syntax   | `numargs()`                                                                                                      |                                |
-| Returns  | The number of arguments passed to a function; `numargs` is useful inside functions with a variable argument list |                                |
-| See also | `getarg`, `setarg`                                                                                               |                                |
+| numargs  |                                                                                                                | Return the number of arguments |
+| -------- | -------------------------------------------------------------------------------------------------------------- | -----------------------------: |
+| Syntax   | numargs()                                                                                                      |                                |
+| Returns  | The number of arguments passed to a function; numargs is useful inside functions with a variable argument list |                                |
+| See also | getarg, setarg                                                                                                 |                                |
 
 | random  |                                                                                                                                                                                                                                                                                                                                               |   Return a pseudo-random number |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------: |
-| Syntax  | `random(max)`                                                                                                                                                                                                                                                                                                                                 |                                 |
-|         | `max`                                                                                                                                                                                                                                                                                                                                         | The limit for the random number |
+| Syntax  | random(max)                                                                                                                                                                                                                                                                                                                                   |                                 |
+|         | max                                                                                                                                                                                                                                                                                                                                           | The limit for the random number |
 | Returns | A pseudo-random number in the range 0 - max-1                                                                                                                                                                                                                                                                                                 |                                 |
 | Notes:  | The standard random number generator of pawn is likely a linear congruential pseudo-random number generator with a range and a period of 2³¹. Linear congruential pseudo-random number generators suffer from serial correlation (especially in the low bits) and it is unsuitable for applications that require high-quality random numbers. |                                 |
 
 | setarg   |                                                                                                                                                                   |                                                        |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------: |
-| Syntax   | `setarg(arg, index=0, value)`                                                                                                                                     |                                                        |
+| Syntax   | setarg(arg, index=0, value)                                                                                                                                       |                                                        |
 |          | arg                                                                                                                                                               | The argument sequence number, use 0 for first argument |
 |          | index                                                                                                                                                             |              The index, in case arg refers to an array |
 |          | value                                                                                                                                                             |                       The value to set the argument to |
 | Returns  | true on success and false if the argument or the index are invalid                                                                                                |                                                        |
 | Notes:   | This function sets the value of an argument from a variable argument list. When the argument is an array, the index parameter specifies the index into the array. |                                                        |
-| See also | `getarg`, `numargs`                                                                                                                                               |                                                        |
+| See also | getarg, numargs                                                                                                                                                   |                                                        |
 
 | swapchars |                                                                                                 |                  Swap bytes in a cell |
 | --------- | ----------------------------------------------------------------------------------------------- | ------------------------------------: |
-| Syntax    | `swapchars(c)`                                                                                  |                                       |
+| Syntax    | swapchars(c)                                                                                    |                                       |
 |           | c                                                                                               | The value for which to swap the bytes |
-| Returns   | A value where the bytes in parameter `c` are swapped (the lowest byte becomes the highest byte) |                                       |
+| Returns   | A value where the bytes in parameter "c" are swapped (the lowest byte becomes the highest byte) |                                       |
 
 | tolower  |                                                                                                                                                      |       Convert a character to lower case |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
-| Syntax   | `tolower(c)`                                                                                                                                         |                                         |
+| Syntax   | tolower(c)                                                                                                                                           |                                         |
 |          | c                                                                                                                                                    | The character to convert to lower case. |
-| Returns  | The upper case variant of the input character, if one exists, or the unchanged character code of `c` if the letter `c` has no lower case equivalent. |                                         |
+| Returns  | The upper case variant of the input character, if one exists, or the unchanged character code of “c” if the letter “c” has no lower case equivalent. |                                         |
 | Notes:   | Support for accented characters is platform-dependent                                                                                                |                                         |
-| See also | `toupper`                                                                                                                                            |                                         |
+| See also | toupper                                                                                                                                              |                                         |
 
 | toupper  |                                                                                                                                                      |       Convert a character to upper case |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------: |
-| Syntax   | `toupper(c)`                                                                                                                                         |                                         |
+| Syntax   | toupper(c)                                                                                                                                           |                                         |
 |          | c                                                                                                                                                    | The character to convert to upper case. |
-| Returns  | The lower case variant of the input character, if one exists, or the unchanged character code of `c` if the letter `c` has no upper case equivalent. |                                         |
+| Returns  | The lower case variant of the input character, if one exists, or the unchanged character code of “c” if the letter “c” has no upper case equivalent. |                                         |
 | Notes:   | Support for accented characters is platform-dependent                                                                                                |                                         |
-| See also | `tolower`                                                                                                                                            |                                         |
+| See also | tolower                                                                                                                                              |                                         |
 
 ---
 
@@ -111,7 +111,7 @@ routines maintain a list of these name/value pairs that is shared among all abst
 machines. The property list is therefore a way for concurrent abstract machines
 to exchange information.
 
-All “property maintenance” functions have an optional `id` parameter. You
+All “property maintenance” functions have an optional “id” parameter. You
 can use this parameter to indicate which abstract machine the property belongs
 to. (A host application that supports concurrent abstract machines will usually
 provide each abstract machine with a unique id.) When querying (or deleting)
@@ -124,9 +124,9 @@ of an object) to a name of your choosing. The value-based interface allows you
 to attach a string to a number. The difference between the two is basically the
 search key versus the output parameter.
 
-All property maintenance functions have a `name` and a `value` parameter.
+All property maintenance functions have a “name” and a “value” parameter.
 Only one of this pair must be filled in. When you give the value, the getprop-
-erty function stores the result in the string argument and the `setproperty`
+erty function stores the result in the string argument and the setproperty
 function reads the string to store from the string argument.
 
 The number of properties that you can add is limited only by available memory.
@@ -159,14 +159,14 @@ convenient. Not all terminal types and implementations may implement all
 functions —especially the functions that clear the screen, set foreground and
 background colours and control the cursor position, require an extended terminal control.
 
-**`getchar(echo=true)`**
+**getchar(echo=true)**
 
     Read one character from the keyboard and return it. The function can
     optionally echo the character on the console window.
 
 **getstring(string[], size=sizeof string, bool**
 
-    pack=false): Read a string from the keyboard. Function `getstring`
+    pack=false): Read a string from the keyboard. Function getstring
     stops reading when either the enter key is typed, or the maximum
     length is reached. The maximum length is in cells (not characters)
     and it includes a terminating nul character. The function can read
@@ -177,7 +177,7 @@ background colours and control the cursor position, require an extended terminal
 
 **getvalue(base=10, end=‘ r’, ...)**
 
-    Read a value (a signed number) from the keyboard. The `getvalue`
+    Read a value (a signed number) from the keyboard. The getvalue
     function allows you to read in a numeric radix from 2 to 36 (the base
     parameter) with decimal radix by default.
 
@@ -191,7 +191,7 @@ background colours and control the cursor position, require an extended terminal
 
     Prints a simple string on the console. The foreground and background
     colours may be optionally set (but note that a terminal or a host
-    application may not support colours). See `setattr` below for a list of
+    application may not support colours). See setattr below for a list of
     colours.
 
 **printf(const format[], ...)**
@@ -219,24 +219,24 @@ background colours and control the cursor position, require an extended terminal
 
     %x   print a number at this position in hexadecimal radix
 
-    The `printf` function works similarly to the `printf` function of the C language.
+    The printf function works similarly to the printf function of the C language.
 
-**`clrscr()`**
+**clrscr()**
 
     Clears the console and sets the cursor in the upper left corner.
 
-**`clreol()`**
+**clreol()**
 
     Clears the line at which the cursor is, from the position of the cursor
     to the right margin of the console. This function does not move the
     cursor.
 
-**`gotoxy(x=1, y=1)`**
+**gotoxy(x=1, y=1)**
 
     Sets the cursor position on the console.
     The upper left corner is at (1,1).
 
-**`setattr(foreground=-1, background=-1)`**
+**setattr(foreground=-1, background=-1)**
 
     Sets foreground and background colours for the text written onto the
     console. When either of the two parameters is negative (or absent), the

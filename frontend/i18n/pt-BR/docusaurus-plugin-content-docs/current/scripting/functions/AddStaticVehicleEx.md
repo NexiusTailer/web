@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode. Diferente do `AddStaticVehicle` numa única maneira: permite re-spawnar após um tempo, quando o veículo estiver sem condutor.
+Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao gamemode. Diferente do AddStaticVehicle numa única maneira: permite re-spawnar após um tempo, quando o veículo estiver sem condutor.
 
 | Nome                                  | Descrição                                                                                                                                                         |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,9 +23,9 @@ Adiciona um veículo 'fixo' (modelos são pré-carregados para os jogadores) ao 
 
 ## Retorno
 
-O ID do veículo criado (1 - `MAX_VEHICLES`).
+O ID do veículo criado (1 - MAX_VEHICLES).
 
-`INVALID_VEHICLE_ID` (65535) caso o veículo não tenha sido criado (limite de veículos alcançado ou modelo inválido).
+INVALID_VEHICLE_ID (65535) caso o veículo não tenha sido criado (limite de veículos alcançado ou modelo inválido).
 
 ## Exemplos
 

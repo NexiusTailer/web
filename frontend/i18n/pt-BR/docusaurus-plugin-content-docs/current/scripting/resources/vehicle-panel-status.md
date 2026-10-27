@@ -10,7 +10,7 @@ Essas definições são usadas por nativas como [GetVehicleDamageStatus](../func
 
 :::
 
-| Definition                     | Value |
-| ------------------------------ | ----- |
-| `UNKNOWN_VEHICLE_PANEL_STATUS` | -1    |
-| `VEHICLE_PANEL_STATUS_NONE`    | 0     |
+| Definition                   | Value |
+| ---------------------------- | ----- |
+| UNKNOWN_VEHICLE_PANEL_STATUS | -1    |
+| VEHICLE_PANEL_STATUS_NONE    | 0     |

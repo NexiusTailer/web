@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Retorna `INVALID_OBJECT_ID` se NPC não estiver navegando em nenhum objeto
+- Retorna INVALID_OBJECT_ID se NPC não estiver navegando em nenhum objeto
 
 ## Funções Relacionadas
 

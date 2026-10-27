@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 节点必须先通过 `NPC_OpenNode` 打开才能使用
+- 节点必须先通过 NPC_OpenNode 打开才能使用
 - 只有打开的节点才能被 NPC 播放
 - 在分配给 NPC 之前使用此函数检查节点可用性
 

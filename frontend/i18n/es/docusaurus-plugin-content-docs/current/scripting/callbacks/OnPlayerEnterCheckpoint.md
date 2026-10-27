@@ -41,7 +41,7 @@ public OnPlayerEnterCheckpoint(playerid)
 
 ## Callbacks Relacionados
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnPlayerEnterCheckpoint`:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerEnterCheckpoint:
 
 - [OnPlayerLeaveCheckpoint](OnPlayerLeaveCheckpoint): Llamado cuando un jugador sale de un checkpoint.
 - [OnPlayerEnterRaceCheckpoint](OnPlayerEnterRaceCheckpoint): Llamado cuando un jugador ingresa a un checkpoint de carreras.
@@ -49,7 +49,7 @@ Los siguientes callbacks pueden ser útiles, ya que están relacionados de algun
 
 ## Funciones Relacionadas
 
-Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con `OnPlayerEnterCheckpoint`:
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnPlayerEnterCheckpoint:
 
 - [SetPlayerCheckpoint](../functions/SetPlayerCheckpoint): Crea un checkpoint a un jugador.
 - [DisablePlayerCheckpoint](../functions/DisablePlayerCheckpoint): Desactiva el checkpoint actual de un jugador.

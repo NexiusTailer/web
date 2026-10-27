@@ -12,13 +12,13 @@ tags: ["player", "object", "playerobject"]
 
 Obtenha a posição alvo do movimento de um objeto do jogador.
 
-| Nome           | Descrição                                                                                |
-| -------------- | ---------------------------------------------------------------------------------------- |
-| playerid       | O ID do jogador.                                                                         |
-| objectid       | O ID do objeto do jogador do qual obter a posição do alvo do movimento.                  |
-| &Float:targetX | Uma variável flutuante na qual armazenar a coordenada `targetX`, passada por referência. |
-| &Float:targetY | Uma variável flutuante na qual armazenar a coordenada `targetY`, passada por referência. |
-| &Float:targetZ | Uma variável flutuante na qual armazenar a coordenada `targetZ`, passada por referência. |
+| Nome | Descrição |
+| -------------- | ------------------------------------------------------------------------------- |
+| playerid | O ID do jogador.                                                           |
+| objectid | O ID do objeto do jogador do qual obter a posição do alvo do movimento.                 |
+| &Float:targetX | Uma variável flutuante na qual armazenar a coordenada targetX, passada por referência. |
+| &Float:targetY | Uma variável flutuante na qual armazenar a coordenada targetY, passada por referência. |
+| &Float:targetZ | Uma variável flutuante na qual armazenar a coordenada targetZ, passada por referência. |
 
 ## Retornos
 

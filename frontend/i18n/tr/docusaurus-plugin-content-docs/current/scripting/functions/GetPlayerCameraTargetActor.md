@@ -63,15 +63,15 @@ public OnPlayerUpdate(playerid)
 
 :::tip
 
-Bu fonksiyon oyuncunun aktöre bakıp bakmadığı kontrol eder.
-Eğer tam anlamıyla oyuncunun **nişan alıp almadığını** kontrol etmek için `GetPlayerTargetActor` fonksiyonunu kullanmanız gerekir.
+Bu fonksiyon oyuncunun aktöre **bakıp** bakmadığı kontrol eder.
+Eğer tam anlamıyla oyuncunun **nişan alıp almadığını** kontrol etmek için GetPlayerTargetActor fonksiyonunu kullanmanız gerekir.
 
 :::
 
 :::warning
 
 Bu fonksiyon, bant genişliğinden tasarruf etmek için varsayılan olarak devre dışı bırakılmıştır.
-Kullanılmadan önce `OnPlayerConnect` üzerinden `EnablePlayerCameraTarget` fonksiyonunu (her) oyuncu için aktif hale getirilmesi gerekiyor.
+Kullanılmadan önce OnPlayerConnect üzerinden EnablePlayerCameraTarget fonksiyonunu (her) oyuncu için aktif hale getirilmesi gerekiyor.
 
 :::
 

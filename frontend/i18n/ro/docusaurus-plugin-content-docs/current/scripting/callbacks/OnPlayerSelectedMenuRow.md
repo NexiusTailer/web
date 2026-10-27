@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## Descriere
 
-Acest callback este apelat atunci când un jucător selectează un articol dintr-un meniu (`ShowMenuForPlayer`).
+Acest callback este apelat atunci când un jucător selectează un articol dintr-un meniu (ShowMenuForPlayer).
 
 | Nume     | Descriere                                                   |
 | -------- | ----------------------------------------------------------- |
@@ -49,7 +49,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 :::note
 
-ID-ul meniului nu este transmis acestui callback. `GetPlayerMenu` trebuie utilizat pentru a determina în ce meniu jucătorul a selectat un element.
+ID-ul meniului nu este transmis acestui callback. GetPlayerMenu trebuie utilizat pentru a determina în ce meniu jucătorul a selectat un element.
 
 :::
 

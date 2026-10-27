@@ -34,7 +34,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-To remove individual weapons from a player, set their ammo to 0 using `SetPlayerAmmo`.
+To remove individual weapons from a player, set their ammo to 0 using SetPlayerAmmo.
 
 :::
 

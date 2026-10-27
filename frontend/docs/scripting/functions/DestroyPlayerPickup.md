@@ -11,10 +11,10 @@ tags: ["player", "pickup", "playerpickup"]
 
 Destroys a player-pickup created with [CreatePlayerPickup](CreatePlayerPickup).
 
-| Name     | Description                                                                |
-| -------- | -------------------------------------------------------------------------- |
-| playerid | The ID of the player.                                                      |
-| pickupid | The ID of the player-pickup to destroy (returned by `CreatePlayerPickup`). |
+| Name     | Description                                                              |
+| -------- | ------------------------------------------------------------------------ |
+| playerid | The ID of the player.                                                    |
+| pickupid | The ID of the player-pickup to destroy (returned by CreatePlayerPickup). |
 
 ## Returns
 

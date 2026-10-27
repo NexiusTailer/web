@@ -43,7 +43,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassanger)
 
 :::tip
 
-You can use `GetPlayerVehicleSeat` in a loop to check if a seat is occupied by any players.
+You can use GetPlayerVehicleSeat in a loop to check if a seat is occupied by any players.
 
 :::
 
@@ -55,7 +55,7 @@ If the seat is invalid or is taken, will cause a crash when they EXIT the vehicl
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `RemovePlayerFromVehicle`: Throw a player out of their vehicle.
-- `GetPlayerVehicleID`: Get the ID of the vehicle the player is in.
-- `GetPlayerVehicleSeat`: Check what seat a player is in.
-- `OnPlayerEnterVehicle`: Called when a player starts to enter a vehicle.
+- RemovePlayerFromVehicle: Throw a player out of their vehicle.
+- GetPlayerVehicleID: Get the ID of the vehicle the player is in.
+- GetPlayerVehicleSeat: Check what seat a player is in.
+- OnPlayerEnterVehicle: Called when a player starts to enter a vehicle.

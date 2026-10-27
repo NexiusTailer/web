@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-`skill` 参数是武器技能类型，不是武器 ID。点击[此处](../resources/weaponskills)查看技能类型列表
+skill 参数是武器技能类型，不是武器 ID。点击[此处](../resources/weaponskills)查看技能类型列表
 
 :::
 

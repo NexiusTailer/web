@@ -9,7 +9,7 @@ tags: ["object"]
 
 ## Descrição
 
-Exibe o cursor e permite ao jogador selecionar um objeto. `OnPlayerSelectObject` é chamado quando o jogador seleciona um objeto.
+Exibe o cursor e permite ao jogador selecionar um objeto. OnPlayerSelectObject é chamado quando o jogador seleciona um objeto.
 
 | Nome     | Descrição                                                 |
 | -------- | --------------------------------------------------------- |

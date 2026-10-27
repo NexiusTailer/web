@@ -75,7 +75,7 @@ This function only tells you which actor (if any) the player is **looking** at. 
 
 :::warning
 
-This function is disabled by default to save bandwidth. Use `EnablePlayerCameraTarget` to enable it for each player.
+This function is disabled by default to save bandwidth. Use EnablePlayerCameraTarget to enable it for each player.
 
 :::
 

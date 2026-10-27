@@ -7,7 +7,7 @@ tags: ["gangzone"]
 
 ## คำอธิบาย
 
-`GangZoneFlashForAll` flashes a gangzone for all players.
+GangZoneFlashForAll flashes a gangzone for all players.
 
 | Name       | Description                                                                                                    |
 | ---------- | -------------------------------------------------------------------------------------------------------------- |

@@ -34,11 +34,11 @@ public OnPlayerSpawn(playerid)
 
 :::warning
 
-The `skill` parameter is NOT the weapon ID, it is the skill type. Click here for a list of skill types.
+The **skill** parameter is NOT the weapon ID, it is the skill type. Click here for a list of skill types.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerArmedWeapon`: Set a player's armed weapon.
-- `GivePlayerWeapon`: Give a player a weapon.
+- SetPlayerArmedWeapon: Set a player's armed weapon.
+- GivePlayerWeapon: Give a player a weapon.

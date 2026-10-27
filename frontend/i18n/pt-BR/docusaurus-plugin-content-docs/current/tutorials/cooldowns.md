@@ -224,15 +224,15 @@ OnPlayerFinishRace(playerid)
 
 Aqui é onde o cálculo do intervalo acontece, bom, eu digo cálculo, mas é apenas subtrair dois valores!
 
-`GetTickCount` retorna a contagem de ticks atual, então será maior que a contagem de ticks inicial, o que significa que você subtrai a contagem de ticks inicial da contagem de ticks atual para obter seu intervalo entre as duas medidas.
+GetTickCount retorna a contagem de ticks atual, então será maior que a contagem de ticks inicial, o que significa que você subtrai a contagem de ticks inicial da contagem de ticks atual para obter seu intervalo entre as duas medidas.
 
-Então, como dissemos, o jogador termina a corrida 1 minuto e 40 segundos depois (100 segundos, ou 100.000 milissegundos), `GetTickCount` retornará 160.000. Subtraia o valor inicial (que é 60.000) do novo valor (que é 160.000) e você obtém 100.000 milissegundos, que é 1 minuto e 40 segundos, que é o tempo que o jogador levou para fazer a corrida!
+Então, como dissemos, o jogador termina a corrida 1 minuto e 40 segundos depois (100 segundos, ou 100.000 milissegundos), GetTickCount retornará 160.000. Subtraia o valor inicial (que é 60.000) do novo valor (que é 160.000) e você obtém 100.000 milissegundos, que é 1 minuto e 40 segundos, que é o tempo que o jogador levou para fazer a corrida!
 
 ## Recapitulação e Notas
 
 Então! Aprendemos que:
 
-- `GetTickCount` retorna a quantidade de tempo em milissegundos desde que o sistema de computador em que o servidor está rodando foi iniciado.
+- GetTickCount retorna a quantidade de tempo em milissegundos desde que o sistema de computador em que o servidor está rodando foi iniciado.
 - E podemos usar isso chamando-o em dois intervalos, salvando o primeiro em uma variável e comparando os dois valores, podemos obter um intervalo preciso em milissegundos entre esses dois eventos.
 
 Por último, você não quer ficar dizendo aos seus jogadores valores de tempo em milissegundos! E se eles levarem uma hora para completar uma corrida?

@@ -11,9 +11,9 @@ tags: ["file management"]
 
 Get the current position in the file.
 
-| Name        | Description                                    |
-| ----------- | ---------------------------------------------- |
-| File:handle | The handle of the file. (returned by `fopen`). |
+| Name        | Description                                  |
+| ----------- | -------------------------------------------- |
+| File:handle | The handle of the file. (returned by fopen). |
 
 ## Returns
 

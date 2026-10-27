@@ -9,7 +9,7 @@ Here you can find all of the select object types used by [OnPlayerSelectObject](
 
 :::
 
-| Value | Definition                    |
-| ----- | ----------------------------- |
-| 1     | `SELECT_OBJECT_GLOBAL_OBJECT` |
-| 2     | `SELECT_OBJECT_PLAYER_OBJECT` |
+| Value | Definition                  |
+| ----- | --------------------------- |
+| 1     | SELECT_OBJECT_GLOBAL_OBJECT |
+| 2     | SELECT_OBJECT_PLAYER_OBJECT |

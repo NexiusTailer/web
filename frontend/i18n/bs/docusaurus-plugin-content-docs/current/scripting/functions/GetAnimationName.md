@@ -9,13 +9,13 @@ tags: []
 
 Dobij library/ime animacije za indeks.
 
-| Ime        | Deskripcija                                                      |
-| ---------- | ---------------------------------------------------------------- |
-| index      | Indeks animacije, koji vraća funkcija `GetPlayerAnimationIndex`. |
-| animlib[]  | String varijabla koja pohranjuje library animacije.              |
-| len1       | Veličina stringa koji pohranjuje library animacija.              |
-| animname[] | String varijabla koja pohranjuje naziv animacije.                |
-| len2       | Veličina stringa koji pohranjuje naziv animacije.                |
+| Ime        | Deskripcija                                                    |
+| ---------- | -------------------------------------------------------------- |
+| index      | Indeks animacije, koji vraća funkcija GetPlayerAnimationIndex. |
+| animlib[]  | String varijabla koja pohranjuje library animacije.            |
+| len1       | Veličina stringa koji pohranjuje library animacija.            |
+| animname[] | String varijabla koja pohranjuje naziv animacije.              |
+| len2       | Veličina stringa koji pohranjuje naziv animacije.              |
 
 ## Returns
 

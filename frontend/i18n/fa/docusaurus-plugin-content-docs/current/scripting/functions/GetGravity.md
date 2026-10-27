@@ -49,7 +49,7 @@ public OnGameModeInit()
 
 :::warning
 
-تو سرور SA-MP این تابع پیش‌فرض تعریف نشده. برای استفاده باید `native Float:GetGravity();` رو بعد از include کردن a_samp.inc اضافه کنی.
+تو سرور SA-MP این تابع پیش‌فرض تعریف نشده. برای استفاده باید 'native Float:GetGravity();' رو بعد از include کردن a_samp.inc اضافه کنی.
 
 :::
 

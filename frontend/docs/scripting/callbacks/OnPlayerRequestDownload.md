@@ -74,7 +74,7 @@ The following functions might be useful, as they're related to this callback in 
 
 - [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Find an existing custom skin or simple object model file.
 - [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Find an existing custom skin or simple object texture file.
-- [RedirectDownload](../functions/RedirectDownload): Redirect a player's custom `AddCharModel` or `AddSimpleModel` download to a specific HTTP webpage.
+- [RedirectDownload](../functions/RedirectDownload): Redirect a player's custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.
 
 ## Related Resources
 

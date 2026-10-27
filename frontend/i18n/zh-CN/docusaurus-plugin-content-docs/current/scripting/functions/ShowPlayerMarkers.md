@@ -7,7 +7,7 @@ tags: ["玩家"]
 
 ## 描述
 
-切换玩家雷达标记（小地图上的光点显示状态）。必须在服务器启动时调用（`OnGameModeInit` 回调中）。如需运行时控制，请使用[SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer)。
+切换玩家雷达标记（小地图上的光点显示状态）。必须在服务器启动时调用（OnGameModeInit 回调中）。如需运行时控制，请使用[SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer)。
 
 | 参数名称                 | 说明                                                                           |
 | ------------------------ | ------------------------------------------------------------------------------ |
@@ -29,11 +29,11 @@ public OnGameModeInit()
 
 ## 标记模式对照表
 
-| ID  | 模式标识符                               |
-| --- | ---------------------------------------- |
-| 0   | `PLAYER_MARKERS_MODE_OFF`（禁用标记）    |
-| 1   | `PLAYER_MARKERS_MODE_GLOBAL`（全局显示） |
-| 2   | `PLAYER_MARKERS_MODE_STREAMED`（流加载） |
+| ID  | 模式标识符                             |
+| --- | -------------------------------------- |
+| 0   | PLAYER_MARKERS_MODE_OFF（禁用标记）    |
+| 1   | PLAYER_MARKERS_MODE_GLOBAL（全局显示） |
+| 2   | PLAYER_MARKERS_MODE_STREAMED（流加载） |
 
 ## 注意事项
 

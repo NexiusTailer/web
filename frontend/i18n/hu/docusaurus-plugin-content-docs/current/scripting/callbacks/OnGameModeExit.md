@@ -29,7 +29,7 @@ Ezt a funckiót filterszkriptben arra is lehet használni, hogy érzékelje a `c
 
 :::warning
 
-- Ha az `OnGameModeExit` parancsot az 'rcon gmx' konzolparanccsal együtt van használva, ne feledd, hogy előfordulhatnak hibák. Példa erre a túlzott `RemoveBuildingForPlayer` hívása az `OnGameModeInit` alatt, ami az kliens összeomlásához vezethet.
+- Ha az OnGameModeExit parancsot az 'rcon gmx' konzolparanccsal együtt van használva, ne feledd, hogy előfordulhatnak hibák. Példa erre a túlzott RemoveBuildingForPlayer hívása az OnGameModeInit alatt, ami az kliens összeomlásához vezethet.
 - Ezt a visszahívást NEM hívja meg, ha a kliens összeomlik, vagy a folyamatot más módon leállítják, például a Linux kill parancsával.
 
 :::

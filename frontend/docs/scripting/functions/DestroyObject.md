@@ -7,11 +7,11 @@ tags: ["object"]
 
 ## Description
 
-Destroys (removes) an object that was created using `CreateObject`.
+Destroys (removes) an object that was created using CreateObject.
 
-| Name     | Description                                                  |
-| -------- | ------------------------------------------------------------ |
-| objectid | The ID of the object to destroy. Returned by `CreateObject`. |
+| Name     | Description                                                |
+| -------- | ---------------------------------------------------------- |
+| objectid | The ID of the object to destroy. Returned by CreateObject. |
 
 ## Returns
 

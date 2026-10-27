@@ -41,5 +41,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerWantedLevel`: Set a player's wanted level.
-- `PlayCrimeReportForPlayer`: Play a crime report for a player.
+- SetPlayerWantedLevel: Set a player's wanted level.
+- PlayCrimeReportForPlayer: Play a crime report for a player.

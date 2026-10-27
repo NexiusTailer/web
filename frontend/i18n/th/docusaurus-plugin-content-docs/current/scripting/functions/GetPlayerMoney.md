@@ -30,5 +30,5 @@ public OnPlayerSpawn(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GivePlayerMoney`: Give a player money.
-- `ResetPlayerMoney`: Set the money of a player to \$0.
+- GivePlayerMoney: Give a player money.
+- ResetPlayerMoney: Set the money of a player to \$0.

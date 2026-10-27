@@ -8,7 +8,7 @@ description: Pawn dilinde kontrol yapılarının genel bir bakışı
 
 ### if
 
-Bir `if` ifadesi, bir şeyin doğru olup olmadığını kontrol eder ve doğruysa belirli bir işlem yapar.
+Bir "if" ifadesi, bir şeyin doğru olup olmadığını kontrol eder ve doğruysa belirli bir işlem yapar.
 
 ```c
 new
@@ -19,9 +19,9 @@ if (a == 5)
 }
 ```
 
-`if` ifadesinden sonraki parantez içindeki kod koşul olarak adlandırılır ve test edilebilecek birçok farklı şey vardır (operatörlere bakınız).
+"if" ifadesinden sonraki parantez içindeki kod koşul olarak adlandırılır ve test edilebilecek birçok farklı şey vardır (operatörlere bakınız).
 
-Yukarıdaki örnekte, hem `a` hem de 5 sembolleridir, fonksiyonlar da sembol olabilir:
+Yukarıdaki örnekte, hem "a" hem de 5 sembolleridir, fonksiyonlar da sembol olabilir:
 
 ```c
 if (SomeFunction() == 5)
@@ -324,7 +324,7 @@ Ancak bunlar eşdeğerdir (en azından bu örnekte).
 
 ### While
 
-`while` döngüleri, belirtilen koşul doğru olduğu sürece bir şeyleri gerçekleştirir. Koşul, tam olarak bir if ifadesindeki koşul formatı gibidir, sadece sürekli kontrol edilir ve her kontrolde doğruysa her kontrolde yapılan kodu gerçekleştirir:
+"while" döngüleri, belirtilen koşul doğru olduğu sürece bir şeyleri gerçekleştirir. Koşul, tam olarak bir if ifadesindeki koşul formatı gibidir, sadece sürekli kontrol edilir ve her kontrolde doğruysa her kontrolde yapılan kodu gerçekleştirir:
 
 ```c
 new
@@ -337,11 +337,11 @@ while (a < 10)
 // Döngüden sonraki kod
 ```
 
-Bu kod, `a` 10'dan küçükse kontrol eder. Eğer öyleyse, süslü parantez içindeki kod (a++;) yürütülür, böylece `a` arttırılır. Kapanan süslü paranteze ulaşıldığında, kod yürütme kontrolün tekrar kontrol etmeye atlar ve bu kez kontrol 10 olduğu için başarısız olur ve döngüden sonraki kodun üzerine atlar. `a` 8 olarak başladıysa, kod iki kez çalıştırılacaktır, vb.
+Bu kod, 'a' 10'dan küçükse kontrol eder. Eğer öyleyse, süslü parantez içindeki kod (a++;) yürütülür, böylece 'a' arttırılır. Kapanan süslü paranteze ulaşıldığında, kod yürütme kontrolün tekrar kontrol etmeye atlar ve bu kez kontrol 10 olduğu için başarısız olur ve döngüden sonraki kodun üzerine atlar. 'a' 8 olarak başladıysa, kod iki kez çalıştırılacaktır, vb.
 
 ### for()
 
-Bir `for` döngüsü, temelde sıkıştırılmış bir `while` döngüsüdür. `for` ifadesi üç bölümden oluşur: başlatma, koşul ve bitirme. Bir `for` döngüsü olarak, yukarıdaki `while` örneği şu şekilde yazılabilir:
+Bir "for" döngüsü, temelde sıkıştırılmış bir "while" döngüsüdür. "for" ifadesi üç bölümden oluşur: başlatma, koşul ve bitirme. Bir "for" döngüsü olarak, yukarıdaki "while" örneği şu şekilde yazılabilir:
 
 ```c
 for (new a = 9; a < 10; a++)
@@ -376,7 +376,7 @@ for ( ; a < 10; )
 // Döngüden sonraki kod
 ```
 
-Bu örnek, bir `for` döngüsünün bir `while` döngüsüyle nasıl eşleştiğini göstermeyi biraz daha kolaylaştırır. İki `for` döngüsü arasında iki çok küçük fark vardır. İlk fark, ikinci örnekte 'a'yı `for` döngüsünün dışında tanımlar, bu da 'a'yı `for` döngüsünün dışında kullanılabilir hale getirir, ilk örnekte 'a'nın kapsamı (bir değişkenin var olduğu kod bölümü) sadece döngü içindedir. İkinci fark, ikinci örnekteki a++, aslında birinci örnekteki a++'dan biraz önce yapılır, çoğu zaman bu hiçbir fark yaratmaz, tek fark ettiği zaman `continue` kullanıyorsanız (aşağıya bakınız), `continue`, birinci örnekteki a++'ı çağıracak, ancak ikinci örnektekini atlayacaktır.
+Bu örnek, bir "for" döngüsünün bir "while" döngüsüyle nasıl eşleştiğini göstermeyi biraz daha kolaylaştırır. İki "for" döngüsü arasında iki çok küçük fark vardır. İlk fark, ikinci örnekte 'a'yı "for" döngüsünün dışında tanımlar, bu da 'a'yı "for" döngüsünün dışında kullanılabilir hale getirir, ilk örnekte 'a'nın kapsamı (bir değişkenin var olduğu kod bölümü) sadece döngü içindedir. İkinci fark, ikinci örnekteki a++, aslında birinci örnekteki a++'dan biraz önce yapılır, çoğu zaman bu hiçbir fark yaratmaz, tek fark ettiği zaman 'continue' kullanıyorsanız (aşağıya bakınız), 'continue', birinci örnekteki a++'ı çağıracak, ancak ikinci örnektekini atlayacaktır.
 
 ### do-while
 
@@ -658,7 +658,7 @@ Bu kod, şu çıktıyı verecektir:
 
 1 3
 
-Çünkü `print("2")`; satırı asla ulaşılmayacaktır.
+Çünkü print("2"); satırı asla ulaşılmayacaktır.
 
 return'u bir değer döndürmek için de kullanabilirsiniz:
 

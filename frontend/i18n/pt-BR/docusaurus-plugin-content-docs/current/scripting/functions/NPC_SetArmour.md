@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - O valor da armadura varia de 0.0 (sem armadura) a 100.0 (armadura completa)
 - A armadura absorve o dano antes que a saúde seja afetada
-- Use `NPC_GetArmour` para verificar o nível de armadura atual
+- Use NPC_GetArmour para verificar o nível de armadura atual
 
 ## Funções Relacionadas
 

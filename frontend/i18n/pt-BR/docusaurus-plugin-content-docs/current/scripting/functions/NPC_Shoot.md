@@ -12,20 +12,20 @@ tags: ["npc", "weapon", "shoot", "combat"]
 
 Faz um NPC disparar um tiro de arma.
 
-| Nome                | Descrição                                                                 |
-| ------------------- | ------------------------------------------------------------------------- |
-| npcid               | O ID do NPC                                                               |
-| weapon              | A arma ID para usar para atirar                                           |
-| hitId               | O ID da entidade alvo sendo baleada                                       |
-| hitType             | O tipo de entidade atingida (jogador, NPC, veículo, etc.)                 |
-| endPointX           | Coordenada X do ponto final do marcador                                   |
-| endPointY           | Coordenada Y do ponto final do marcador                                   |
-| endPointZ           | Coordenada Z do ponto final do marcador                                   |
-| offsetX             | Deslocamento X do ponto de acerto                                         |
-| offsetY             | Deslocamento Y do ponto de acerto                                         |
-| offsetZ             | Deslocamento Z do ponto de acerto                                         |
-| isHit               | Se o tiro realmente atinge o alvo                                         |
-| checkInBetweenFlags | Sinalizadores de verificação de entidade (padrão: `NPC_ENTITY_CHECK_ALL`) |
+| Nome | Descrição |
+| ------------------- | --------------------------------------------------------- |
+| npcid | O ID do NPC |
+| weapon | A arma ID para usar para atirar |
+| hitId | O ID da entidade alvo sendo baleada |
+| hitType | O tipo de entidade atingida (jogador, NPC, veículo, etc.) |
+| endPointX | Coordenada X do ponto final do marcador |
+| endPointY | Coordenada Y do ponto final do marcador |
+| endPointZ | Coordenada Z do ponto final do marcador |
+| offsetX | Deslocamento X do ponto de acerto |
+| offsetY | Deslocamento Y do ponto de acerto |
+| offsetZ | Deslocamento Z do ponto de acerto |
+| isHit | Se o tiro realmente atinge o alvo |
+| checkInBetweenFlags | Sinalizadores de verificação de entidade (padrão: NPC_ENTITY_CHECK_ALL) |
 
 ## Retornos
 

@@ -18,7 +18,7 @@ Deze callback wordt aangeroepen wanneer een speler een modshop verlaat, zelfs al
 
 ## Returns
 
-Wordt altijd als eerste aangeroepen in gamemode; return 0 blokkeert ook andere filterscripts.
+Wordt altijd als eerste aangeroepen in gamemode; return **0** blokkeert ook andere filterscripts.
 
 ## Voorbeelden
 
@@ -36,7 +36,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Deze callback wordt niet aangeroepen door `ChangeVehicleColor`. Misleidend genoeg wordt deze callback niet aangeroepen voor pay 'n' spray (alleen modshops).
+Deze callback wordt niet aangeroepen door ChangeVehicleColor. Misleidend genoeg wordt deze callback niet aangeroepen voor pay 'n' spray (alleen modshops).
 
 Fix hier: http://pastebin.com/G81da7N1
 

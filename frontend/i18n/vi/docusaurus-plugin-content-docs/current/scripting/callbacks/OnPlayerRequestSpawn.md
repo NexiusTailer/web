@@ -15,7 +15,7 @@ Callback này được gọi khi người chơi cố gắng xuất hiện qua vi
 
 ## Giá trị trả về
 
-Nó luôn được gọi đầu tiên trong filterscripts nên trả về 0 ở đó cũng chặn các script khác nhìn thấy nó.
+Nó luôn được gọi đầu tiên trong filterscripts nên trả về **0** ở đó cũng chặn các script khác nhìn thấy nó.
 
 ## Ví dụ
 
@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Để ngăn người chơi xuất hiện với các lớp nhất định, lớp cuối cùng đã xem phải được lưu trong một biến trong `OnPlayerRequestClass`.
+Để ngăn người chơi xuất hiện với các lớp nhất định, lớp cuối cùng đã xem phải được lưu trong một biến trong OnPlayerRequestClass.
 
 :::
 

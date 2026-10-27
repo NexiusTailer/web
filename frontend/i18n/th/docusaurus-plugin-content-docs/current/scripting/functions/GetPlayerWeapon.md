@@ -40,7 +40,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-When the player state is `PLAYER_STATE_DRIVER` or `PLAYER_STATE_PASSENGER` this function returns the weapon held by the player before they entered the vehicle. If a cheat is used to spawn a weapon inside a vehicle, this function will not report it.
+When the player state is PLAYER_STATE_DRIVER or PLAYER_STATE_PASSENGER this function returns the weapon held by the player before they entered the vehicle. If a cheat is used to spawn a weapon inside a vehicle, this function will not report it.
 
 :::
 
@@ -52,6 +52,6 @@ Sometimes the result can be -1 which is an invalid weapon ID. Circumstances of t
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetPlayerWeaponData`: Find out information about weapons a player has.
-- `GivePlayerWeapon`: Give a player a weapon.
-- `ResetPlayerWeapons`: Remove all weapons from a player.
+- GetPlayerWeaponData: Find out information about weapons a player has.
+- GivePlayerWeapon: Give a player a weapon.
+- ResetPlayerWeapons: Remove all weapons from a player.

@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## توضیحات
 
-رنگ جعبه یک textdraw (`PlayerTextDrawUseBox`) رو تنظیم می‌کنه.
+رنگ جعبه یک textdraw (PlayerTextDrawUseBox) رو تنظیم می‌کنه.
 
 | نام               | توضیحات                                                   |
 | ----------------- | --------------------------------------------------------- |
@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): تنظیم تراز یک player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): تنظیم فونت یک player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): تنظیم اندازه حروف متن در یک player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): فعال/غیرفعال کردن outline روی یک player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): تنظیم سایه روی یک player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): تنظیم فاصله متن در یک player-textdraw به نسبت متناسب.

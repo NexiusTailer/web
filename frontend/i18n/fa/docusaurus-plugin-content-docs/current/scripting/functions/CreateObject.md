@@ -22,7 +22,7 @@ tags: ["object"]
 
 ## مقادیر برگشتی
 
-ID شیئی که ایجاد شد، یا `INVALID_OBJECT_ID` اگر به حداکثر اشیاء (`MAX_OBJECTS`) رسیده باشد.
+ID شیئی که ایجاد شد، یا INVALID_OBJECT_ID اگر به حداکثر اشیاء (MAX_OBJECTS) رسیده باشد.
 
 ## مثال‌ها
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-حداکثر 1000 شیء (`MAX_OBJECTS`) وجود دارد. برای دور زدن این محدودیت، می‌توانید از پلاگین [streamer](https://github.com/samp-incognito/samp-streamer-plugin) استفاده کنید.
+حداکثر 1000 شیء (MAX_OBJECTS) وجود دارد. برای دور زدن این محدودیت، می‌توانید از پلاگین [streamer](https://github.com/samp-incognito/samp-streamer-plugin) استفاده کنید.
 
 :::
 

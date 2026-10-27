@@ -131,4 +131,4 @@ switch (someVar)
 
 ## `while`
 
-Lustype vergelijkbaar met `for` en `do..while`. Voert code uit zolang de conditie waar is.
+Lustype vergelijkbaar met **for** en `do..while`. Voert code uit zolang de conditie waar is.

@@ -9,10 +9,10 @@ tags: ["player"]
 
 Remove an attached object from a player.
 
-| Name     | Description                                                             |
-| -------- | ----------------------------------------------------------------------- |
-| playerid | The ID of the player to remove the object from.                         |
-| index    | The index of the object to remove (set with `SetPlayerAttachedObject`). |
+| Name     | Description                                                           |
+| -------- | --------------------------------------------------------------------- |
+| playerid | The ID of the player to remove the object from.                       |
+| index    | The index of the object to remove (set with SetPlayerAttachedObject). |
 
 ## ส่งคืน
 

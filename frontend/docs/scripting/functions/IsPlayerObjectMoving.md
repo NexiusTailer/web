@@ -7,12 +7,12 @@ tags: ["player", "object", "playerobject"]
 
 ## Description
 
-Checks if the given player `objectid` is moving.
+Checks if the given player objectid is moving.
 
-| Name     | Description                                           |
-| -------- | ----------------------------------------------------- |
-| playerid | The ID of the player whose player-object is checked.  |
-| objectid | The player `objectid` you want to check if is moving. |
+| Name     | Description                                          |
+| -------- | ---------------------------------------------------- |
+| playerid | The ID of the player whose player-object is checked. |
+| objectid | The player objectid you want to check if is moving.  |
 
 ## Returns
 

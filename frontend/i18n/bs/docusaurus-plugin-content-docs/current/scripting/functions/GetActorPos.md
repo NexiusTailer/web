@@ -13,7 +13,7 @@ Dobij poziciju actora.
 
 | Ime     | Deskripcija                                                                        |
 | ------- | ---------------------------------------------------------------------------------- |
-| actorid | ID actora koji će dobiti poziciju. Returnan od funkcije `CreateActor`.             |
+| actorid | ID actora koji će dobiti poziciju. Returnan od funkcije CreateActor.               |
 | X       | Float varijabla proslijeđena referencom u kojoj se pohranjuje X koordinata actora. |
 | Y       | Float varijabla proslijeđena referencom u kojoj se pohranjuje Y koordinata actora. |
 | Z       | Float varijabla proslijeđena referencom u kojoj se pohranjuje Z koordinata actora. |

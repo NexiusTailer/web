@@ -53,13 +53,13 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-In SA-MP 0.3.7 you can use -1 for the `modelid` to remove all objects within the specified radius.
+In SA-MP 0.3.7 you can use -1 for the modelid to remove all objects within the specified radius.
 
 :::
 
 :::warning
 
-There appears to be a limit of around 1000 lines/objects. There is no workaround. When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on `OnPlayerConnect`.
+There appears to be a limit of around 1000 lines/objects. There is no workaround. When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 

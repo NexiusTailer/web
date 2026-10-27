@@ -46,7 +46,7 @@ Koristi [TextDrawTextSize](TextDrawTextSize) da definirate klikljivo područje.
 
 :::warning
 
-`TextDrawSetSelectable` se mora koristiti PRIJE nego je textdraw prikazan igračima kako bi bio klikljiv (selektabilan).
+TextDrawSetSelectable se mora koristiti PRIJE nego je textdraw prikazan igračima kako bi bio klikljiv (selektabilan).
 
 :::
 

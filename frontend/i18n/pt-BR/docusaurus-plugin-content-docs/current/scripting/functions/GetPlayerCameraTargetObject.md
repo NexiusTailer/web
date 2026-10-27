@@ -18,7 +18,7 @@ Permite recuperar o ID do objeto que o jogador está olhando.
 
 ## Retornos
 
-O ID do objeto que o `playerid` está olhando. Se `INVALID_OBJECT_ID` (65535) for retornado, `playerid` não está olhando para nenhum objeto.
+O ID do objeto que o playerid está olhando. Se INVALID_OBJECT_ID (65535) for retornado, playerid não está olhando para nenhum objeto.
 
 ## Exemplos
 

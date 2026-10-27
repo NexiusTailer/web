@@ -14,7 +14,7 @@ Encode a string to an UU-decoded string.
 | dest[]                    | The destination string for the encoded stream.            |
 | const source[]            | The source, non-encoded string.                           |
 | numbytes                  | The number of bytes to encode, this should not exceed 45. |
-| maxlength = sizeof (dest) | The maximum length of the `dest[]` array.                 |
+| maxlength = sizeof (dest) | The maximum length of the dest[] array.                   |
 
 ## Returns
 

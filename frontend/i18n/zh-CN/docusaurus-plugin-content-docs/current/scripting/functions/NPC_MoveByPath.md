@@ -11,13 +11,13 @@ tags: ["npc", "移动", "路径"]
 
 使 NPC 沿预定义路径移动，支持多种移动选项。
 
-| 参数      | 说明                                    |
-| --------- | --------------------------------------- |
-| npcid     | NPC 的 ID                               |
-| pathid    | 要跟随的路径 ID                         |
-| moveType  | 移动类型（默认：`NPC_MOVE_TYPE_JOG`）   |
-| moveSpeed | 移动速度（默认：`NPC_MOVE_SPEED_AUTO`） |
-| reversed  | 是否反向跟随路径（默认：false）         |
+| 参数      | 说明                                  |
+| --------- | ------------------------------------- |
+| npcid     | NPC 的 ID                             |
+| pathid    | 要跟随的路径 ID                       |
+| moveType  | 移动类型（默认：NPC_MOVE_TYPE_JOG）   |
+| moveSpeed | 移动速度（默认：NPC_MOVE_SPEED_AUTO） |
+| reversed  | 是否反向跟随路径（默认：false）       |
 
 ## 返回值
 

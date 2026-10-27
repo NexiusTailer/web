@@ -9,10 +9,10 @@ tags: ["vehicle"]
 
 Dodaje 'komponentu' (često nazvana'mod' (modifikacija)) na vozilo. Validne komponente možete pronaći ovdje.
 
-| Ime                                        | Deskripcija                                                          |
-| ------------------------------------------ | -------------------------------------------------------------------- |
-| vehicleid                                  | ID vozila na koji dodajete komponentu. Ne miješajte ga sa `modelid`. |
-| [componentid](../resources/carcomponentid) | ID komponente koju dodajete na vozilo.                               |
+| Ime                                        | Deskripcija                                                        |
+| ------------------------------------------ | ------------------------------------------------------------------ |
+| vehicleid                                  | ID vozila na koji dodajete komponentu. Ne miješajte ga sa modelid. |
+| [componentid](../resources/carcomponentid) | ID komponente koju dodajete na vozilo.                             |
 
 ## Returns
 

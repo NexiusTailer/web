@@ -23,7 +23,7 @@ Ovaj callback je pozvan kada igračev klijent ažurira/sinhronizuje poziciju voz
 
 ## Returns
 
-Uvijek je pozvan prvo u filterskriptama tako da će return-ovanje 0 ovdje blokirati ostale skripte da ga vide.
+Uvijek je pozvan prvo u filterskriptama tako da će return-ovanje **0** ovdje blokirati ostale skripte da ga vide.
 
 ## Primjeri
 
@@ -45,7 +45,7 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-Ovaj callback poziva se vrlo često u sekundi po nezauzetom vozilu. Trebali biste se suzdržati od provođenja intenzivnih proračuna ili intenzivnih operacija pisanja / čitanja datoteka u ovom callbacku. `GetVehiclePos` return-ovati će stare koordinate vozila prije ovog ažuriranja.
+Ovaj callback poziva se vrlo često u sekundi po nezauzetom vozilu. Trebali biste se suzdržati od provođenja intenzivnih proračuna ili intenzivnih operacija pisanja / čitanja datoteka u ovom callbacku. GetVehiclePos return-ovati će stare koordinate vozila prije ovog ažuriranja.
 
 :::
 

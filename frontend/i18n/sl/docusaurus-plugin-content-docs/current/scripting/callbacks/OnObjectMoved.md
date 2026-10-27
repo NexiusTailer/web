@@ -7,7 +7,7 @@ tags: []
 
 ## Opis
 
-Ta "callback" se pokliče, ko se objekt premakne po `MoveObject` (ko se neha premikati).
+Ta "callback" se pokliče, ko se objekt premakne po MoveObject (ko se neha premikati).
 
 | Ime      | Opis                             |
 | -------- | -------------------------------- |
@@ -31,7 +31,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-`SetObjectPos` ne deluje, ko ga uporabljate v tem "callback". Če želite to popraviti, znova ustvarite predmet.
+SetObjectPos ne deluje, ko ga uporabljate v tem "callback". Če želite to popraviti, znova ustvarite predmet.
 
 :::
 

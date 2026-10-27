@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## Deskripcija
 
-Provjerava ako se dati player `objectid` pomjera.
+Provjerava ako se dati player objectid pomjera.
 
-| Ime      | Deskripcija                                                  |
-| -------- | ------------------------------------------------------------ |
-| playerid | ID igrača čiji je player-objekat provjeren.                  |
-| objectid | ID player `objectid` kojeg želite provjeriti da li se kreće. |
+| Ime      | Deskripcija                                                |
+| -------- | ---------------------------------------------------------- |
+| playerid | ID igrača čiji je player-objekat provjeren.                |
+| objectid | ID player objectid kojeg želite provjeriti da li se kreće. |
 
 ## Returns
 

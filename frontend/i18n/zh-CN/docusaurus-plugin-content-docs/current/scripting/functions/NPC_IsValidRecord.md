@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 录制必须先通过 `NPC_LoadRecord` 加载才能变为有效
+- 录制必须先通过 NPC_LoadRecord 加载才能变为有效
 - 无效录制不能用于回放
 
 ## 相关函数

@@ -89,6 +89,6 @@ public OnGameModeExit()
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): 通过名称获取整型数据
 - [DB_GetFieldFloat](DB_GetFieldFloat): 通过索引获取浮点数据
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): 通过名称获取浮点数据
-- [DB_GetMemHandle](DB_GetMemHandle): 获取通过 `DB_Open` 打开的 SQLite 数据库的内存句柄
+- [DB_GetMemHandle](DB_GetMemHandle): 获取通过 DB_Open 打开的 SQLite 数据库的内存句柄
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): 调试用-获取数据库连接数
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): 调试用-获取结果集数量

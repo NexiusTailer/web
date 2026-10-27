@@ -18,12 +18,12 @@ tags: ["玩家变量"]
 
 返回变量类型值，具体类型参见下表：
 
-| 返回值常量              | 数值 | 说明              |
-| ----------------------- | ---- | ----------------- |
-| `PLAYER_VARTYPE_NONE`   | 0    | 变量不存在/未设置 |
-| `PLAYER_VARTYPE_INT`    | 1    | 整型变量          |
-| `PLAYER_VARTYPE_STRING` | 2    | 字符串型变量      |
-| `PLAYER_VARTYPE_FLOAT`  | 3    | 浮点型变量        |
+| 返回值常量            | 数值 | 说明              |
+| --------------------- | ---- | ----------------- |
+| PLAYER_VARTYPE_NONE   | 0    | 变量不存在/未设置 |
+| PLAYER_VARTYPE_INT    | 1    | 整型变量          |
+| PLAYER_VARTYPE_STRING | 2    | 字符串型变量      |
+| PLAYER_VARTYPE_FLOAT  | 3    | 浮点型变量        |
 
 ## 示例代码
 

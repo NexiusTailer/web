@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - 仅适用于 Hydra 飞机（车辆 ID 520）
 - 方向 0 = 向前推进器（喷气模式）
 - 方向 1 = 向下推进器（垂直起降 模式）
-- 使用 `NPC_GetVehicleHydraThrusters` 检查当前方向
+- 使用 NPC_GetVehicleHydraThrusters 检查当前方向
 
 ## 相关函数
 

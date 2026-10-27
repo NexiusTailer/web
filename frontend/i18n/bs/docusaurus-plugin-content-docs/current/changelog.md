@@ -23,7 +23,7 @@ Our launcher also now received a new update which you can get by simply opening 
 
 **Changes:**
 
-- Remove unnecessary `OnPlayerConnect` and `OnPlayerDisconnect` when a side script (filterscript) is (un)loaded. Instead introduced [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) and [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) callbacks.
+- Remove unnecessary OnPlayerConnect and OnPlayerDisconnect when a side script (filterscript) is (un)loaded. Instead introduced [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) and [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) callbacks.
 - Remove bunch of pawn native deprecation from runtime warnings.
 - Check CDN URL validity.
 - Stop spectator sync being broadcasted.
@@ -34,7 +34,7 @@ Our launcher also now received a new update which you can get by simply opening 
 **Fixes:**
 
 - Fix the infamous RakNet crash we've been dealing with since the beginning, affecting a few servers.
-- Fix string not shown in rare cases of using `format`.
+- Fix string not shown in rare cases of using format.
 - Fix the problem with crashdetect not being able to find file name and line number when more than one script was loaded.
 - Fix a lot of RakNet crashes and safer internal memory management.
 - Fix several connection issues and proper internal player pool cleanups.
@@ -66,7 +66,7 @@ Podstičemo svaki open.mp server da se ažurira na ovu verziju. Došlo je ne sam
 
 - Nekoliko sigurnosnih popravki.
 - Announcer sistem sada koristi IPv4 po default-u, umjesto da koristi IPv6 kada je dostupan.
-- Popravljen `Get(Player)ObjectMaterial(Text)` koji vraća boje u pogrešnom formatu i `modelid`.
+- Popravljen `Get(Player)ObjectMaterial(Text)` koji vraća boje u pogrešnom formatu i modelid.
 - Popravljen `Get(Player)Gravity` koji vraća cijeli broj umjesto float.
 - Validiranje razloga oštećenja (oružja) na raznim mjestima.
 - Sinhroniziranje banova tako da više igrača bude banovano odjednom ako je potrebno.
@@ -124,58 +124,58 @@ Release Candidate 2 (RC2) open.mp servera.
 
 **Zastarjele funkcije:**
 
-- `GetPlayer3DTextLabelVirtualW`
-- `SetPlayer3DTextLabelDrawDist`
-- `GetPlayer3DTextLabelDrawDist`
-- `SendClientMessagef`
-- `GameTextForPlayerf`
-- `SendPlayerMessageToPlayerf`
-- `SendClientMessageToAllf`
-- `GameTextForAllf`
-- `SendPlayerMessageToAllf`
-- `SendRconCommandf`
-- `AllowAdminTeleport`
-- `GetPlayerPoolSize`
-- `GetVehiclePoolSize`
-- `GetActorPoolSize`
-- `GetServerVarAsString`
-- `GetServerVarAsFloat`
-- `TextDrawColor`
-- `TextDrawBoxColor`
-- `TextDrawBackgroundColor`
-- `TextDrawSetPreviewVehCol`
-- `PlayerTextDrawColor`
-- `PlayerTextDrawBoxColor`
-- `PlayerTextDrawBackgroundColor`
-- `PlayerTextDrawSetPreviewVehCol`
-- `TextDrawGetColor`
-- `TextDrawGetBoxColor`
-- `TextDrawGetBackgroundColor`
-- `TextDrawGetPreviewVehCol`
-- `PlayerTextDrawGetColor`
-- `PlayerTextDrawGetBoxColor`
-- `PlayerTextDrawGetBackgroundCol`
-- `PlayerTextDrawGetPreviewVehCol`
-- `db_num_rows`
-- `db_get_mem_handle`
-- `db_get_result_mem_handle`
-- `SelectObject`
-- `EditObject`
-- `EditPlayerObject`
-- `CancelEdit`
-- `SetObjectsDefaultCameraCol`
-- `SetObjectNoCameraCol`
-- `IsObjectNoCameraCol`
-- `SetPlayerObjectNoCameraCol`
-- `IsPlayerObjectNoCameraCol`
-- `GetPlayerCameraTargetPlayerObj`
-- `GetObjectTarget`
-- `GetPlayerObjectTarget`
-- `GetPlayerDialog`
-- `fmkdir`
-- `dcreate`
-- `GetVehicleTower`
-- `ChangeVehicleColor`
+- GetPlayer3DTextLabelVirtualW
+- SetPlayer3DTextLabelDrawDist
+- GetPlayer3DTextLabelDrawDist
+- SendClientMessagef
+- GameTextForPlayerf
+- SendPlayerMessageToPlayerf
+- SendClientMessageToAllf
+- GameTextForAllf
+- SendPlayerMessageToAllf
+- SendRconCommandf
+- AllowAdminTeleport
+- GetPlayerPoolSize
+- GetVehiclePoolSize
+- GetActorPoolSize
+- GetServerVarAsString
+- GetServerVarAsFloat
+- TextDrawColor
+- TextDrawBoxColor
+- TextDrawBackgroundColor
+- TextDrawSetPreviewVehCol
+- PlayerTextDrawColor
+- PlayerTextDrawBoxColor
+- PlayerTextDrawBackgroundColor
+- PlayerTextDrawSetPreviewVehCol
+- TextDrawGetColor
+- TextDrawGetBoxColor
+- TextDrawGetBackgroundColor
+- TextDrawGetPreviewVehCol
+- PlayerTextDrawGetColor
+- PlayerTextDrawGetBoxColor
+- PlayerTextDrawGetBackgroundCol
+- PlayerTextDrawGetPreviewVehCol
+- db_num_rows
+- db_get_mem_handle
+- db_get_result_mem_handle
+- SelectObject
+- EditObject
+- EditPlayerObject
+- CancelEdit
+- SetObjectsDefaultCameraCol
+- SetObjectNoCameraCol
+- IsObjectNoCameraCol
+- SetPlayerObjectNoCameraCol
+- IsPlayerObjectNoCameraCol
+- GetPlayerCameraTargetPlayerObj
+- GetObjectTarget
+- GetPlayerObjectTarget
+- GetPlayerDialog
+- fmkdir
+- dcreate
+- GetVehicleTower
+- ChangeVehicleColor
 
 **Popravke:**
 

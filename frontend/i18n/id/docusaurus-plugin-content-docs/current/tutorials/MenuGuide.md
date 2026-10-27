@@ -72,7 +72,7 @@ Oke, sekarang kita sudah membuat menu lengkap dengan terdapat item, apa yang har
 new Menu:CurrentMenu = GetPlayerMenu(playerid);
 ```
 
-Sekarang, ketika seseorang memilih sesuatu di dalam menu, `menuid` mereka akan disimpan pada `CurrentMenu`.
+Sekarang, ketika seseorang memilih sesuatu di dalam menu, menuid mereka akan disimpan pada `CurrentMenu`.
 
 Sekarang kita harus memeriksa apakah menu yang mereka pilih adalah menu yang kita inginkan:
 

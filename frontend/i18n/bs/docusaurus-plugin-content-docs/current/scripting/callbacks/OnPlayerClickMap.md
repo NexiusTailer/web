@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-`OnPlayerClickMap` je pozvan kada igrač postavi metu(target/waypoint) na pause menu mapi (desnim klikom).
+OnPlayerClickMap je pozvan kada igrač postavi metu(target/waypoint) na pause menu mapi (desnim klikom).
 
 | Ime      | Deskripcija                                                                            |
 | -------- | -------------------------------------------------------------------------------------- |

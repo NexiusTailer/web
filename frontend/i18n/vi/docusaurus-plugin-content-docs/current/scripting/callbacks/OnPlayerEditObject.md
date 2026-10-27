@@ -87,7 +87,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-Khi sử dụng `EDIT_RESPONSE_UPDATE`, hãy lưu ý rằng callback này sẽ không được gọi khi giải phóng một chỉnh sửa đang tiến hành, dẫn đến bản cập nhật cuối cùng của `EDIT_RESPONSE_UPDATE` bị mất đồng bộ với vị trí hiện tại của đối tượng.
+Khi sử dụng 'EDIT_RESPONSE_UPDATE', hãy lưu ý rằng callback này sẽ không được gọi khi giải phóng một chỉnh sửa đang tiến hành, dẫn đến bản cập nhật cuối cùng của 'EDIT_RESPONSE_UPDATE' bị mất đồng bộ với vị trí hiện tại của đối tượng.
 
 :::
 

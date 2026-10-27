@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Omogućava/onemogućava markere/oznake igrača (bljeskalice na radaru). Mora se koristiti kada server počne (`OnGameModeInit`). Za ostala vremena, pogledaj `SetPlayerMarkerForPlayer`.
+Omogućava/onemogućava markere/oznake igrača (bljeskalice na radaru). Mora se koristiti kada server počne (OnGameModeInit). Za ostala vremena, pogledaj SetPlayerMarkerForPlayer.
 
 | Ime  | Deskripcija                                                                                                                                         |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,11 +29,11 @@ public OnGameModeInit()
 
 ## Marker Modes
 
-| ID  | MODE                           |
-| --- | ------------------------------ |
-| 0   | `PLAYER_MARKERS_MODE_OFF`      |
-| 1   | `PLAYER_MARKERS_MODE_GLOBAL`   |
-| 2   | `PLAYER_MARKERS_MODE_STREAMED` |
+| ID  | MODE                         |
+| --- | ---------------------------- |
+| 0   | PLAYER_MARKERS_MODE_OFF      |
+| 1   | PLAYER_MARKERS_MODE_GLOBAL   |
+| 2   | PLAYER_MARKERS_MODE_STREAMED |
 
 ## Zabilješke
 

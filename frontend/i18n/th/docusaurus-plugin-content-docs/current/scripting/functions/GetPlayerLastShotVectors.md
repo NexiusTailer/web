@@ -57,7 +57,7 @@ This function will only work when lag compensation is **enabled**. If the player
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetPlayerWeaponData`: Find out information about weapons a player has.
-- `GetPlayerWeapon`: Check what weapon a player is currently holding.
-- `VectorSize`: Get the length (norm) of a vector.
-- `OnPlayerWeaponShot`: Called when a player fires a weapon.
+- GetPlayerWeaponData: Find out information about weapons a player has.
+- GetPlayerWeapon: Check what weapon a player is currently holding.
+- VectorSize: Get the length (norm) of a vector.
+- OnPlayerWeaponShot: Called when a player fires a weapon.

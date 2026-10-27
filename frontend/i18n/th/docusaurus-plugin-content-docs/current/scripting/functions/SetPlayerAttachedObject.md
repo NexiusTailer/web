@@ -52,7 +52,7 @@ public OnPlayerSpawn(playerid)
 
 :::note
 
-This function is separate from the `CreateObject` / `CreatePlayerObject` pools.
+This function is separate from the CreateObject / CreatePlayerObject pools.
 
 :::
 
@@ -64,6 +64,6 @@ In version 0.3d and onwards, 10 objects can be attached to a single player (inde
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `RemovePlayerAttachedObject`: Remove an attached object from a player
-- `IsPlayerAttachedObjectSlotUsed`: Check whether an object is attached to a player in a specified index
-- `EditAttachedObject`: Edit an attached object.
+- RemovePlayerAttachedObject: Remove an attached object from a player
+- IsPlayerAttachedObjectSlotUsed: Check whether an object is attached to a player in a specified index
+- EditAttachedObject: Edit an attached object.

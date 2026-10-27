@@ -8,10 +8,10 @@ tags: ["player"]
 
 Se llama cuando un jugador cambia de clase en la selección de clase (y cuando la selección de clase aparece por primera vez).
 
-| Nombre   | Descripción                                                                     |
-| -------- | ------------------------------------------------------------------------------- |
-| playerid | El ID del jugador que cambió de clase.                                          |
-| classid  | El ID de la clase actual que está siendo vista (devuelto por `AddPlayerClass`). |
+| Nombre   | Descripción                                                                   |
+| -------- | ----------------------------------------------------------------------------- |
+| playerid | El ID del jugador que cambió de clase.                                        |
+| classid  | El ID de la clase actual que está siendo vista (devuelto por AddPlayerClass). |
 
 ## Devoluciones
 

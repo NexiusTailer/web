@@ -31,7 +31,7 @@ AttachTrailerToVehicle(trailerid, vehicleid);
 
 :::warning
 
-This will only work if both vehicles are streamed in for a player (check `IsVehicleStreamedIn`).
+This will only work if both vehicles are streamed in for a player (check IsVehicleStreamedIn).
 
 :::
 

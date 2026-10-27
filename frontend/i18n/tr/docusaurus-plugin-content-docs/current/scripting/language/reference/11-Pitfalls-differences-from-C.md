@@ -6,7 +6,7 @@
 
 - Rasyonel sayılar için kabul edilen sözdizimi, C'deki kayan nokta değerlerinden daha katıdır. C'de ".5" ve "6." gibi değerler kabul edilebilirken, PAWN'da sırasıyla "0.5" ve "6.0" yazmak gerekir. C'de ondalık noktası isteğe bağlıdır, bu nedenle "2E8" yazabilirsiniz; ancak PAWN büyük harf "E"yi kabul etmez (küçük harf "e" kullanın) ve ondalık noktayı gerektirir: örneğin "2.0e8". Daha fazla bilgi için sayfa 98'e bakın.
 
-- PAWN, "işaretçileri" sağlamaz. Fonksiyon argümanlarını referansla iletmek için PAWN, bir "referans" argümanı sağlar (sayfa 71). "Placeholder" argümanı, `NULL` işaretçisinin bazı kullanımlarını (sayfa 75) yerine getirir.
+- PAWN, "işaretçileri" sağlamaz. Fonksiyon argümanlarını referansla iletmek için PAWN, bir "referans" argümanı sağlar (sayfa 71). "Placeholder" argümanı, NULL işaretçisinin bazı kullanımlarını (sayfa 75) yerine getirir.
 
 - Sayılar onaltılık, ondalık veya ikili sayı tabanına sahip olabilir. Sekizli taban desteklenmez. "Sabitler" bölümüne bakın. Onaltılık sayılar "0x" (küçük harf "x") ile başlamalıdır, "0X" öneki geçersizdir.
 
@@ -16,7 +16,7 @@
 
 - Bir break ifadesi sadece döngülerden çıkar. C/C++'da break ifadesi aynı zamanda switch ifadesinde bir durumu sona erdirir. PAWN'da switch ifadeleri farklı bir şekilde uygulanmıştır (sayfa 115'e bakın).
 
-- PAWN, "dizi atamasını" destekler, ancak her iki dizinin de aynı boyutta olması şartıyla. Örneğin, `a` ve `b` her ikisi de 6 hücreli dizilerse, `a = b` ifadesi geçerlidir. PAWN, harf dizelerinin yanı sıra harf dizilerini de destekler, bu da `a = {0,1,2,3,4,5}` ifadesine izin verir (burada `a` 6 elemanlı bir dizi değişkenidir).
+- PAWN, "dizi atamasını" destekler, ancak her iki dizinin de aynı boyutta olması şartıyla. Örneğin, "a" ve "b" her ikisi de 6 hücreli dizilerse, "a = b" ifadesi geçerlidir. PAWN, harf dizelerinin yanı sıra harf dizilerini de destekler, bu da "a = {0,1,2,3,4,5}" ifadesine izin verir (burada "a" 6 elemanlı bir dizi değişkenidir).
 
 - `char` bir tür değil, bir operatördür. Detaylar için 110. sayfaya ve 137. sayfadaki ipuçlarına bakınız.
 
@@ -36,7 +36,7 @@
 
 - Üç bit düzeyindeki operatörün önceliği C'den farklıdır. "&", "^" ve | operatörlerinin öncelik düzeyi, ilişkisel operatörlerden daha yüksektir (Dennis Ritchie, bu operatörlerin C'de düşük öncelik düzeyine sahip olmasının nedenini, erken C derleyicilerinin henüz mantıksal "&&" ve || operatörlerine sahip olmamasından dolayı, bitwise "&" ve | operatörlerinin bunların yerine kullanıldığından açıklamıştır).
 
-- `extern` anahtar kelimesi PAWN'da mevcut değildir; mevcut derleyici uygulamasında bir "bağlantı aşaması" yoktur. Bir programı birkaç kaynak dosyasından oluşturmak için tüm kaynak dosyalarını derleyici komut satırına ekleyin veya diğer tüm kaynak dosyalarını "include" eden bir ana proje betiği dosyası oluşturun. PAWN derleyicisi kullanılmayan fonksiyonları ve global değişkenleri optimize edebilir. Ayrıntılar için 63. ve 84. sayfalara bakınız.
+- "extern" anahtar kelimesi PAWN'da mevcut değildir; mevcut derleyici uygulamasında bir "bağlantı aşaması" yoktur. Bir programı birkaç kaynak dosyasından oluşturmak için tüm kaynak dosyalarını derleyici komut satırına ekleyin veya diğer tüm kaynak dosyalarını "include" eden bir ana proje betiği dosyası oluşturun. PAWN derleyicisi kullanılmayan fonksiyonları ve global değişkenleri optimize edebilir. Ayrıntılar için 63. ve 84. sayfalara bakınız.
 
 - Çoğu durumda, fonksiyonların (yani prototiplerin) ileriye dönük bildirimleri gerekli değildir. PAWN, iki geçişli bir derleyicidir, ilk geçişte tüm fonksiyonları görecek ve ikinci geçişte bunları kullanacaktır. Ancak, kullanıcı tanımlı operatörler kullanılmadan önce bildirilmelidir.
 

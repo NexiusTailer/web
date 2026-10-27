@@ -23,7 +23,7 @@ new PlayerColors[] = {
 
 Primero coloque eso en la parte superior de su guión.
 
-A continuación, coloque esto debajo en el callback llamado `OnPlayerConnect`:
+A continuación, coloque esto debajo en el callback llamado OnPlayerConnect:
 
 ```c
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);

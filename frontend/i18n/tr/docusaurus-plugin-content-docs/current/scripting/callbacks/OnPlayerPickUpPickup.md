@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## Açıklama
 
-Fonksiyon, oyuncu `CreatePickup` ile oluşturulan bir işaretin (pickup) üstüne geldiğinde çağrılır.
+Fonksiyon, oyuncu CreatePickup ile oluşturulan bir işaretin (pickup) üstüne geldiğinde çağrılır.
 
-| Parametre | Açıklama                                             |
-| --------- | ---------------------------------------------------- |
-| playerid  | İşaretin üstüne gelen oyuncunun ID'si.               |
-| pickupid  | `CreatePickup` tarafından döndürülen işaretin ID'si. |
+| Parametre | Açıklama                                           |
+| --------- | -------------------------------------------------- |
+| playerid  | İşaretin üstüne gelen oyuncunun ID'si.             |
+| pickupid  | CreatePickup tarafından döndürülen işaretin ID'si. |
 
 ## Çalışınca Vereceği Sonuçlar
 

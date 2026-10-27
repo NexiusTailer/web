@@ -9,22 +9,22 @@ tags: ["player", "3dtextlabel"]
 
 Creates a 3D Text Label only for a specific player
 
-| Name            | Description                                                                       |
-| --------------- | --------------------------------------------------------------------------------- |
-| playerid        | The player which should see the newly created 3DText Label.                       |
-| text[]          | The text to display.                                                              |
-| color           | The text color                                                                    |
-| x               | X Coordinate (or offset if attached)                                              |
-| y               | Y Coordinate (or offset if attached)                                              |
-| z               | Z Coordinate (or offset if attached)                                              |
-| drawDistance    | The distance where you are able to see the 3D Text Label                          |
-| attachedplayer  | The player you want to attach the 3D Text Label to. (None: `INVALID_PLAYER_ID`)   |
-| attachedvehicle | The vehicle you want to attach the 3D Text Label to. (None: `INVALID_VEHICLE_ID`) |
-| testLOS         | 0/1 Test the line-of-sight so this text can't be seen through walls               |
+| Name            | Description                                                                     |
+| --------------- | ------------------------------------------------------------------------------- |
+| playerid        | The player which should see the newly created 3DText Label.                     |
+| text[]          | The text to display.                                                            |
+| color           | The text color                                                                  |
+| x               | X Coordinate (or offset if attached)                                            |
+| y               | Y Coordinate (or offset if attached)                                            |
+| z               | Z Coordinate (or offset if attached)                                            |
+| drawDistance    | The distance where you are able to see the 3D Text Label                        |
+| attachedplayer  | The player you want to attach the 3D Text Label to. (None: INVALID_PLAYER_ID)   |
+| attachedvehicle | The vehicle you want to attach the 3D Text Label to. (None: INVALID_VEHICLE_ID) |
+| testLOS         | 0/1 Test the line-of-sight so this text can't be seen through walls             |
 
 ## ส่งคืน
 
-The ID of the newly created **Player** 3D Text Label, or `INVALID_3DTEXT_ID` if the **Player** 3D Text Label limit (`MAX_3DTEXT_PLAYER`) was reached.
+The ID of the newly created **Player** 3D Text Label, or INVALID_3DTEXT_ID if the **Player** 3D Text Label limit (MAX_3DTEXT_PLAYER) was reached.
 
 ## ตัวอย่าง
 
@@ -43,13 +43,13 @@ if (strcmp(cmd, "/playerlabel", true) == 0)
 
 :::note
 
-`drawDistance` seems to be a lot smaller when spectating.
+drawDistance seems to be a lot smaller when spectating.
 
 :::
 
 :::warning
 
-If `text[]` is empty, the server/clients next to the text might crash! (Fixed in open.mp)
+If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 
 :::
 

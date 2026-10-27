@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - A quantidade não pode exceder o tamanho máximo do clipe da arma
 - Definir como 0 exigirá que o NPC seja recarregado antes de disparar
-- Use `NPC_GetAmmoInClip` para verificar a quantidade atual do clipe
+- Use NPC_GetAmmoInClip para verificar a quantidade atual do clipe
 - Afeta apenas o pente da arma atual, não a munição total
 
 ## Funções Relacionadas

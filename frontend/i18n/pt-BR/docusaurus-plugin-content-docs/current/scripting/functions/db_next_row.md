@@ -99,7 +99,7 @@ Usando um **identificador inválido** seu servidor irá crashar! Pegue um **iden
 - [db_get_field_assoc_int](db_get_field_assoc_int): Obtém conteúdo do campo como inteiro pelo nome
 - [db_get_field_float](db_get_field_float): Obtém conteúdo do campo como float pelo índice
 - [db_get_field_assoc_float](db_get_field_assoc_float): Obtém conteúdo do campo como float pelo nome
-- [db_get_mem_handle](db_get_mem_handle): Obtém handle de memória do banco aberto com `db_open`
-- [db_get_result_mem_handle](db_get_result_mem_handle): Obtém handle de memória do resultado `db_query`
+- [db_get_mem_handle](db_get_mem_handle): Obtém handle de memória do banco aberto com db_open
+- [db_get_result_mem_handle](db_get_result_mem_handle): Obtém handle de memória do resultado db_query
 - [db_debug_openfiles](db_debug_openfiles): Número de conexões abertas
 - [db_debug_openresults](db_debug_openresults): Número de resultados abertos

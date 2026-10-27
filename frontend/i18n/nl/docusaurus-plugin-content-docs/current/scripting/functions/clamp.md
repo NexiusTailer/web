@@ -17,7 +17,7 @@ Dwing een waarde binnen een bereik te vallen.
 
 ## Retourneert
 
-`value` als die tussen `min`–`max` ligt, anders `min` of `max`.
+**value** als die tussen `min`–`max` ligt, anders **min** of **max**.
 
 ## Voorbeeld
 

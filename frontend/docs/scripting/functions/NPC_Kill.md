@@ -11,11 +11,11 @@ tags: ["npc", "death", "kill"]
 
 Kills an NPC with a specific weapon/reason.
 
-| Name     | Description                                                                               |
-| -------- | ----------------------------------------------------------------------------------------- |
-| npcid    | The ID of the NPC to kill                                                                 |
-| killerid | The ID of the player who killed the NPC (optional, use `INVALID_PLAYER_ID` for no killer) |
-| reason   | The weapon ID or reason for death (default: 255 for suicide)                              |
+| Name     | Description                                                                             |
+| -------- | --------------------------------------------------------------------------------------- |
+| npcid    | The ID of the NPC to kill                                                               |
+| killerid | The ID of the player who killed the NPC (optional, use INVALID_PLAYER_ID for no killer) |
+| reason   | The weapon ID or reason for death (default: 255 for suicide)                            |
 
 ## Returns
 
@@ -46,8 +46,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Use `INVALID_PLAYER_ID` for `killerid` if there is no killer
-- The `reason` parameter uses weapon IDs (WEAPON enum)
+- Use `INVALID_PLAYER_ID` for killerid if there is no killer
+- The reason parameter uses weapon IDs (WEAPON enum)
 - This triggers the [OnNPCDeath](../callbacks/OnNPCDeath) callback
 
 ## Related Functions

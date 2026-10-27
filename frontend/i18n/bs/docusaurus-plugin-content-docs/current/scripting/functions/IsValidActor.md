@@ -44,5 +44,5 @@ public OnGameModeInit()
 ## Srodne Funkcije
 
 - [CreateActor](CreateActor): Kreiraj aktora.
-- [GetActorPoolSize](GetActorPoolSize): Dobij najveći `actorid` na serveru.
+- [GetActorPoolSize](GetActorPoolSize): Dobij najveći actorid na serveru.
 - [SetActorHealth](SetActorHealth): Postavi zdravlje aktoru.

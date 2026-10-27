@@ -9,22 +9,22 @@ tags: ["player", "3dtextlabel"]
 
 Kreira 3D Text Label samo za jednog određenog igrača.
 
-| Ime             | Deskripcija                                                                     |
-| --------------- | ------------------------------------------------------------------------------- |
-| playerid        | Igrač koji bi trebao vidjeti novokreirani 3D Text Label.                        |
-| text[]          | Tekst za prikazati.                                                             |
-| color           | Boja teksta.                                                                    |
-| x               | X kordinata (ili pomak ako je priložen)                                         |
-| y               | Y kordinata (ili pomak ako je priložen)                                         |
-| z               | Z kordinata (ili pomak ako je priložen)                                         |
-| DrawDistance    | Udaljenost od mjesta na kojem možete vidjeti 3D text label                      |
-| attachedplayer  | Igrač za kojeg žeite prikvačiti 3D text label. (Ako nema: `INVALID_PLAYER_ID`)  |
-| attachedvehicle | Vozilo za koje žeite prikvačiti 3D text label. (Ako nema: `INVALID_VEHICLE_ID`) |
-| testLOS         | 0/1 Testirajte vidokrug tako da se ovaj tekst ne može vidjeti kroz objekte      |
+| Ime             | Deskripcija                                                                   |
+| --------------- | ----------------------------------------------------------------------------- |
+| playerid        | Igrač koji bi trebao vidjeti novokreirani 3D Text Label.                      |
+| text[]          | Tekst za prikazati.                                                           |
+| color           | Boja teksta.                                                                  |
+| x               | X kordinata (ili pomak ako je priložen)                                       |
+| y               | Y kordinata (ili pomak ako je priložen)                                       |
+| z               | Z kordinata (ili pomak ako je priložen)                                       |
+| DrawDistance    | Udaljenost od mjesta na kojem možete vidjeti 3D text label                    |
+| attachedplayer  | Igrač za kojeg žeite prikvačiti 3D text label. (Ako nema: INVALID_PLAYER_ID)  |
+| attachedvehicle | Vozilo za koje žeite prikvačiti 3D text label. (Ako nema: INVALID_VEHICLE_ID) |
+| testLOS         | 0/1 Testirajte vidokrug tako da se ovaj tekst ne može vidjeti kroz objekte    |
 
 ## Returns
 
-ID novokreiranog 3D Text Labela, ili `INVALID_3DTEXT_ID` ako je dostignut **Player** 3D Text Label limit (`MAX_3DTEXT_PLAYER`).
+ID novokreiranog 3D Text Labela, ili INVALID_3DTEXT_ID ako je dostignut **Player** 3D Text Label limit (MAX_3DTEXT_PLAYER).
 
 ## Primjeri
 
@@ -51,7 +51,7 @@ drawdistance se čini da je mnogo manja prilikom spectateanja
 
 :::warning
 
-Ako je `text[]` prazan, server/clients pored teksta če možda crashati!
+Ako je text[] prazan, server/clients pored teksta če možda crashati!
 
 :::
 

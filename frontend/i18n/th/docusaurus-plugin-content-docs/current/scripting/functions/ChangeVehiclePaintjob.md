@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## คำอธิบาย
 
-Change a vehicle's paintjob (for plain colors see `ChangeVehicleColor`).
+Change a vehicle's paintjob (for plain colors see ChangeVehicleColor).
 
 | Name       | Description                                                  |
 | ---------- | ------------------------------------------------------------ |

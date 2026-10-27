@@ -18,7 +18,7 @@ Obtém o estado do trem de pouso de uma aeronave NPC.
 
 ## Retornos
 
-Retorna o estado do trem de pouso da aeronave NPC (`LANDING_GEAR_STATE_DOWN` ou `LANDING_GEAR_STATE_UP`).
+Retorna o estado do trem de pouso da aeronave NPC (LANDING_GEAR_STATE_DOWN ou LANDING_GEAR_STATE_UP).
 
 ## Exemplos
 
@@ -52,9 +52,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Só funciona quando o NPC está pilotando uma aeronave
-- Retorna o estado atual do trem de pouso definido por `NPC_SetVehicleGearState`
-- Usa as mesmas constantes que [Estados do trem de pouso do veículo](../resources/landinggearstate): `LANDING_GEAR_STATE_DOWN` e `LANDING_GEAR_STATE_UP`
-- Este é o equivalente NPC de `GetPlayerLandingGearState`
+- Retorna o estado atual do trem de pouso definido por NPC_SetVehicleGearState
+- Usa as mesmas constantes que [Estados do trem de pouso do veículo](../resources/landinggearstate): LANDING_GEAR_STATE_DOWN e LANDING_GEAR_STATE_UP
+- Este é o equivalente NPC de GetPlayerLandingGearState
 
 ## Funções Relacionadas
 

@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Shoot time is measured in milliseconds between shots
-- Use `NPC_GetWeaponShootTime` to check current shoot time
+- Use NPC_GetWeaponShootTime to check current shoot time
 
 ## Related Functions
 

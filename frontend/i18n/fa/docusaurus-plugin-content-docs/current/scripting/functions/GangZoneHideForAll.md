@@ -7,7 +7,7 @@ tags: ["gangzone"]
 
 ## توضیحات
 
-`GangZoneHideForAll` یه gangzone رو از همه بازیکن‌ها مخفی میکنه.
+GangZoneHideForAll یه gangzone رو از همه بازیکن‌ها مخفی میکنه.
 
 | نام    | توضیحات                   |
 | ------ | ------------------------- |

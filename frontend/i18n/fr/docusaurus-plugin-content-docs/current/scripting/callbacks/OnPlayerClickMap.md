@@ -7,7 +7,7 @@ tags: [player, ClickMap, Map, target, waypoint]
 
 ## Paramètres
 
-`OnPlayerClickMap` est appelé quand un joueur place un point (clic droit) sur la map dans le menu pause.
+OnPlayerClickMap est appelé quand un joueur place un point (clic droit) sur la map dans le menu pause.
 
 | Nom              | Description                                                                               |
 | ---------------- | ----------------------------------------------------------------------------------------- |

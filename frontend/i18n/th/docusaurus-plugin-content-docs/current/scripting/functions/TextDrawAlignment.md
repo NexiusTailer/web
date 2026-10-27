@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::note
 
-- For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at `TextDrawTextSize`, also position coordinate become position of center of textdraw and not left/top edges.
+- For alignment 2 (center) the x and y values of TextSize need to be swapped, see notes at TextDrawTextSize, also position coordinate become position of center of textdraw and not left/top edges.
 - If the textdraw is already shown, it must be re-shown (TextDrawShowForAll/TextDrawShowForPlayer) to show the changes of this function.
 
 :::

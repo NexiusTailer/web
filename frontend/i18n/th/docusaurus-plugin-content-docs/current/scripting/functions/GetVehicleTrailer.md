@@ -34,6 +34,6 @@ This function does not work for trains.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `AttachTrailerToVehicle`: Attach a trailer to a vehicle.
-- `DetachTrailerFromVehicle`: Detach a trailer from a vehicle.
-- `IsTrailerAttachedToVehicle`: Check if a trailer is attached to a vehicle.
+- AttachTrailerToVehicle: Attach a trailer to a vehicle.
+- DetachTrailerFromVehicle: Detach a trailer from a vehicle.
+- IsTrailerAttachedToVehicle: Check if a trailer is attached to a vehicle.

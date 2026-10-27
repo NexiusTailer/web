@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Restore the camera to a place behind the player, after using a function like `SetPlayerCameraPos`.
+Restore the camera to a place behind the player, after using a function like SetPlayerCameraPos.
 
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |
@@ -27,5 +27,5 @@ SetCameraBehindPlayer(playerid);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerCameraPos`: Set a player's camera position.
-- `SetPlayerCameraLookAt`: Set where a player's camera should face.
+- SetPlayerCameraPos: Set a player's camera position.
+- SetPlayerCameraLookAt: Set where a player's camera should face.

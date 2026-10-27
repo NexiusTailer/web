@@ -7,11 +7,11 @@ tags: []
 
 ## Beschreibung
 
-Löscht ein mit `CreatePickup` erstelltes Pickup.
+Löscht ein mit CreatePickup erstelltes Pickup.
 
-| Name   | Beschreibung                                                              |
-| ------ | ------------------------------------------------------------------------- |
-| pickup | Die ID des Pickups, dass gelöscht wird (Rückgabewert bei `CreatePickup`). |
+| Name   | Beschreibung                                                            |
+| ------ | ----------------------------------------------------------------------- |
+| pickup | Die ID des Pickups, dass gelöscht wird (Rückgabewert bei CreatePickup). |
 
 ## Rückgabe(return value)
 

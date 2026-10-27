@@ -38,6 +38,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerVelocity`: Set a player's velocity.
-- `SetVehicleVelocity`: Set a vehicle's velocity.
-- `GetVehicleVelocity`: Get a vehicle's velocity.
+- SetPlayerVelocity: Set a player's velocity.
+- SetVehicleVelocity: Set a vehicle's velocity.
+- GetVehicleVelocity: Get a vehicle's velocity.

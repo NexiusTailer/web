@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Returns true only during the actual reload animation
 - Reloading is automatic when ammo in clip runs out
-- Use `NPC_EnableReloading` to control reload behavior
+- Use NPC_EnableReloading to control reload behavior
 
 ## Related Functions
 

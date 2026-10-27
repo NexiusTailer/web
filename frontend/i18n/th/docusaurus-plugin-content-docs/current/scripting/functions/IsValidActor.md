@@ -44,5 +44,5 @@ public OnGameModeInit()
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
 - [CreateActor](CreateActor): Create an actor.
-- [GetActorPoolSize](GetActorPoolSize): Gets the highest `actorid` created on the server.
+- [GetActorPoolSize](GetActorPoolSize): Gets the highest actorid created on the server.
 - [SetActorHealth](SetActorHealth): Set the health of an actor.

@@ -40,6 +40,6 @@ This function does not work in the current SA:MP version!
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `CreatePickup`: Create a pickup.
-- `GivePlayerMoney`: Give a player money.
-- `OnPlayerDeath`: Called when a player dies.
+- CreatePickup: Create a pickup.
+- GivePlayerMoney: Give a player money.
+- OnPlayerDeath: Called when a player dies.

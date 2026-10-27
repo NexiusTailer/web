@@ -11,12 +11,12 @@ tags: ["object"]
 
 Get the move target position of an object.
 
-| Name           | Description                                                                       |
-| -------------- | --------------------------------------------------------------------------------- |
-| objectid       | The ID of the object to get the move target position of.                          |
-| &Float:targetX | A float variable in which to store the `targetX` coordinate, passed by reference. |
-| &Float:targetY | A float variable in which to store the `targetY` coordinate, passed by reference. |
-| &Float:targetZ | A float variable in which to store the `targetZ` coordinate, passed by reference. |
+| Name           | Description                                                                     |
+| -------------- | ------------------------------------------------------------------------------- |
+| objectid       | The ID of the object to get the move target position of.                        |
+| &Float:targetX | A float variable in which to store the targetX coordinate, passed by reference. |
+| &Float:targetY | A float variable in which to store the targetY coordinate, passed by reference. |
+| &Float:targetZ | A float variable in which to store the targetZ coordinate, passed by reference. |
 
 ## Returns
 

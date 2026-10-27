@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Load recordings before using them with `NPC_StartPlayback`
+- Load recordings before using them with NPC_StartPlayback
 
 :::warning
 

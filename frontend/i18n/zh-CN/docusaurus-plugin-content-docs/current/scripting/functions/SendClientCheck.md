@@ -67,4 +67,4 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## 相关回调
 
-- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): 当 `SendClientCheck` 请求完成时触发
+- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): 当 SendClientCheck 请求完成时触发

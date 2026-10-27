@@ -7,7 +7,7 @@ tags: ["gangzone"]
 
 ## Deskripcija
 
-`GangZoneHideForAll` sakriva gangzonu za sve igrače.
+GangZoneHideForAll sakriva gangzonu za sve igrače.
 
 | Ime  | Deskripcija     |
 | ---- | --------------- |

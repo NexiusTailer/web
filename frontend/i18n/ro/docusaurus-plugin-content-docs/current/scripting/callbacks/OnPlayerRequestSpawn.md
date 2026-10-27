@@ -15,7 +15,7 @@ Apelat atunci când un jucător încearcă să apară prin selecția clasei, fie
 
 ## Returnări
 
-Este întotdeauna numit primul în filterscript-uri, așa că returnarea 0 acolo blochează și alte scripturi să-l vadă.
+Este întotdeauna numit primul în filterscript-uri, așa că returnarea **0** acolo blochează și alte scripturi să-l vadă.
 
 ## Exemple
 
@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-Pentru a împiedica jucătorii să apară cu anumite clase, ultima clasă vizualizată trebuie salvată într-o variabilă în `OnPlayerRequestClass`.
+Pentru a împiedica jucătorii să apară cu anumite clase, ultima clasă vizualizată trebuie salvată într-o variabilă în OnPlayerRequestClass.
 
 :::
 

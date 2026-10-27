@@ -45,4 +45,4 @@ if (strcmp(cmdtext, "/drunk", true) == 0)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetPlayerDrunkLevel`: Returns the current drunk level of a player.
+- GetPlayerDrunkLevel: Returns the current drunk level of a player.

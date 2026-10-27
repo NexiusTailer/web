@@ -8,9 +8,9 @@ description: Uzak sunucu yönetimi.
 
 1. Bir metin düzenleyicisi açın.
 2. Aşağıdaki satırı yazın: `rcon.exe IP PORT RCON-PASS` (IP/PORT/PASS'ı sunucu bilgilerinizle değiştirin)
-3. Dosyayı `rcon.bat` olarak kaydedin.
+3. Dosyayı **rcon.bat** olarak kaydedin.
 4. Dosyayı `rcon.exe` dosyasının bulunduğu sunucu dizinine koyun.
-5. `rcon.bat` dosyasını çalıştırın.
+5. **rcon.bat** dosyasını çalıştırın.
 6. İstediğiniz komutu girin.
 
 ![Rcon konsolu](https://assets.open.mp/assets/images/server/rcon.jpg)

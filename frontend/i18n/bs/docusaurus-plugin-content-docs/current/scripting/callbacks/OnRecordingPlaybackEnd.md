@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa `StartRecordingPlayback` došao do kraja.
+Ovaj callback je pozvan kada snimljeni fajl koji je reproduciran sa "StartRecordingPlayback" došao do kraja.
 
 ## Primjeri
 

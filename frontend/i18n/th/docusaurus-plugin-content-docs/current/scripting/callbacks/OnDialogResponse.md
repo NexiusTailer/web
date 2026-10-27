@@ -7,12 +7,12 @@ tags: []
 
 ## คำอธิบาย
 
-Callback นี้ถูกเรียกเมื่อผู้เล่นตอบสนองกับกล่องโต้ตอบที่แสดงโดยใช้ `ShowPlayerDialog` ไม่ว่าจะ คลิกปุ่ม, กด ENTER/ESC หรือดับเบิลคลิกที่รายการไอเท(หากใช้กล่องโต้ตอบแบบรายการ)
+Callback นี้ถูกเรียกเมื่อผู้เล่นตอบสนองกับกล่องโต้ตอบที่แสดงโดยใช้ ShowPlayerDialog ไม่ว่าจะ คลิกปุ่ม, กด ENTER/ESC หรือดับเบิลคลิกที่รายการไอเท(หากใช้กล่องโต้ตอบแบบรายการ)
 
 | ชื่อ        | คำอธิบาย                                                                                           |
 | ----------- | -------------------------------------------------------------------------------------------------- |
 | playerid    | ไอดีของผู้เล่นที่ตอบสนองกับกล่องโต้ตอบ                                                             |
-| dialogid    | ไอดีของกล่องโต้ตอบที่ผู้เล่นตอบสนองที่มาจาก `ShowPlayerDialog`                                     |
+| dialogid    | ไอดีของกล่องโต้ตอบที่ผู้เล่นตอบสนองที่มาจาก ShowPlayerDialog                                       |
 | response    | **1** สำหรับปุ่มซ้าย และ **0** จากปุ่มขวา (หากมีแค่ปุ่มเดียว จะเป็น 1 เสมอ)                        |
 | listitem    | ไอดีของรายการไอเทมที่ถูกเลือกโดยผู้เล่น (เริ่มจาก 0) (แค่กล่องโต้ตอบรูปแบบรายการ นอกนั้นจะเป็น -1) |
 | inputtext[] | ข้อความที่ถูกป้อนเข้ามาโดยผู้เล่นหรือรายการไอเทมที่ถูกเลือก                                        |
@@ -23,7 +23,7 @@ Callback นี้ถูกเรียกเมื่อผู้เล่น�
 
 ## ตัวอย่าง
 
-**`DIALOG_STYLE_MSGBOX`**
+**DIALOG_STYLE_MSGBOX**
 
 ```c
 // กำหนดไอดีกล่องโต้ตอบ เพื่อให้เราสามารถควบคุมการตอบสนองได้
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_INPUT`**
+**DIALOG_STYLE_INPUT**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -88,7 +88,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_LIST`**
+**DIALOG_STYLE_LIST**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -117,7 +117,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_TABLIST_HEADERS`**
+**DIALOG_STYLE_TABLIST_HEADERS**
 
 ```c
 #define DIALOG_WEAPONS 3

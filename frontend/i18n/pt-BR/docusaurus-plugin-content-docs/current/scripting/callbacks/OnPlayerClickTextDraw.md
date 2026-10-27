@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Esta callback é chamada quando um jogador clica em uma textdraw ou cancela a seleção pressionando ESC.
 
-| Nome      | Descrição                                                                              |
-| --------- | -------------------------------------------------------------------------------------- |
-| playerid  | O ID do jogador que clicou na TextDraw                                                 |
-| clickedid | O ID da TextDraw que recebeu o clique. `INVALID_TEXT_DRAW` Se a seleção for cancelada. |
+| Nome      | Descrição                                                                            |
+| --------- | ------------------------------------------------------------------------------------ |
+| playerid  | O ID do jogador que clicou na TextDraw                                               |
+| clickedid | O ID da TextDraw que recebeu o clique. INVALID_TEXT_DRAW Se a seleção for cancelada. |
 
 ## Retorno
 
@@ -70,7 +70,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-A área 'clicável' é definida pelo `TextDrawTextSize`. Os parâmetros de X e Y passados pela função não devem ser "0" ou negativo. Não utilize `CancelSelectTextDraw` incondicionalmente dentro desta callback. Isso resultaria em um loop infinito.
+A área 'clicável' é definida pelo TextDrawTextSize. Os parâmetros de X e Y passados pela função não devem ser "0" ou negativo. Não utilize CancelSelectTextDraw incondicionalmente dentro desta callback. Isso resultaria em um loop infinito.
 
 :::
 

@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-`floatcmp` can be used to compare float values to each other, to validate the comparison.
+floatcmp can be used to compare float values to each other, to validate the comparison.
 
 | Name  | Description                        |
 | ----- | ---------------------------------- |

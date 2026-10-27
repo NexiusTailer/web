@@ -7,7 +7,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## คำอธิบาย
 
-Check if the player is inside their current set race checkpoint (`SetPlayerRaceCheckpoint`).
+Check if the player is inside their current set race checkpoint (SetPlayerRaceCheckpoint).
 
 | Name     | Description                    |
 | -------- | ------------------------------ |

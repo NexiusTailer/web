@@ -32,8 +32,8 @@ SetPlayerCameraPos(playerid, 652.23, 457.21, 10.84);
 
 :::tip
 
-- ممکنه لازم باشه `SetPlayerCameraLookAt` رو هم با این تابع استفاده کنی تا درست کار کنه.
-- از `SetCameraBehindPlayer` استفاده کن تا دوربین رو به پشت بازیکن برگردونی.
+- ممکنه لازم باشه SetPlayerCameraLookAt رو هم با این تابع استفاده کنی تا درست کار کنه.
+- از SetCameraBehindPlayer استفاده کن تا دوربین رو به پشت بازیکن برگردونی.
 
 :::
 

@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-This callback is called when a recorded file being reproduced with `StartRecordingPlayback` has reached to its end.
+This callback is called when a recorded file being reproduced with StartRecordingPlayback has reached to its end.
 
 | Name | Description |
 | ---- | ----------- |
@@ -23,5 +23,5 @@ public OnRecordingPlaybackEnd()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `StartRecordingPlayback`: Starts reproducing an already recorded _.rec_ file.
-- `StopRecordingPlayback`: Stops reproducing a _.rec_ file.
+- StartRecordingPlayback: Starts reproducing an already recorded _.rec_ file.
+- StopRecordingPlayback: Stops reproducing a _.rec_ file.

@@ -56,8 +56,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - This won't return data if used with [NPC_SetAnimation](NPC_SetAnimation)
-- All parameters except `npcid` are passed by reference and will be modified
-- If the NPC has no active animation, `animationId` will be 0
+- All parameters except npcid are passed by reference and will be modified
+- If the NPC has no active animation, animationId will be 0
 
 ## Related Functions
 

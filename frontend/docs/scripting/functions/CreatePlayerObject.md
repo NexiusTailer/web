@@ -23,7 +23,7 @@ Creates an object which will be visible to only one player.
 
 ## Returns
 
-The ID of the object that was created, or `INVALID_OBJECT_ID` if the object limit (`MAX_OBJECTS`) was reached.
+The ID of the object that was created, or INVALID_OBJECT_ID if the object limit (MAX_OBJECTS) was reached.
 
 ## Examples
 

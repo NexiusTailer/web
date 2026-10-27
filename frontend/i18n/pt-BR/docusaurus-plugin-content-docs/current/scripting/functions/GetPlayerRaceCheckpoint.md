@@ -12,16 +12,16 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 Obtenha a localização do ponto de verificação da corrida atual.
 
-| Nome           | Descrição                                                                              |
-| -------------- | -------------------------------------------------------------------------------------- |
-| playerid       | O ID do jogador do qual obter a posição do ponto de verificação.                       |
+| Nome | Descrição |
+| -------------- | ---------------------------------------------------------------------------------- |
+| playerid | O ID do jogador do qual obter a posição do ponto de verificação.                            |
 | &Float:centreX | Uma variável flutuante na qual armazenar a coordenada centerX, passada por referência. |
 | &Float:centreY | Uma variável flutuante na qual armazenar a coordenada centerY, passada por referência. |
 | &Float:centreZ | Uma variável flutuante na qual armazenar a coordenada centerZ, passada por referência. |
-| &Float:nextX   | Uma variável float na qual armazenar a coordenada `nextX`, passada por referência.     |
-| &Float:nextY   | Uma variável flutuante na qual armazenar a coordenada `nextY`, passada por referência. |
-| &Float:nextZ   | Uma variável float na qual armazenar a coordenada `nextZ`, passada por referência.     |
-| &Float:radius  | Uma variável flutuante na qual armazenar o raio, passada por referência.               |
+| &Float:nextX | Uma variável float na qual armazenar a coordenada nextX, passada por referência.   |
+| &Float:nextY | Uma variável flutuante na qual armazenar a coordenada nextY, passada por referência.   |
+| &Float:nextZ | Uma variável float na qual armazenar a coordenada nextZ, passada por referência.   |
+| &Float:radius | Uma variável flutuante na qual armazenar o raio, passada por referência.             |
 
 ## Retornos
 

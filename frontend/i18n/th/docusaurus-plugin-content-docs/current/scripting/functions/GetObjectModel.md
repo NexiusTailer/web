@@ -13,7 +13,7 @@ tags: []
 
 ## คำอธิบาย
 
-Get the model ID of an object (`CreateObject`).
+Get the model ID of an object (CreateObject).
 
 | Name     | Description                              |
 | -------- | ---------------------------------------- |

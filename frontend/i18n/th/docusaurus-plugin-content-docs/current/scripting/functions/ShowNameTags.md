@@ -32,12 +32,12 @@ public OnGameModeInit()
 
 :::warning
 
-This function can only be used in `OnGameModeInit`. For other times, see `ShowPlayerNameTagForPlayer`.
+This function can only be used in OnGameModeInit. For other times, see ShowPlayerNameTagForPlayer.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `DisableNameTagLOS`: Disable nametag Line-Of-Sight checking.
-- `ShowPlayerNameTagForPlayer`: Show or hide a nametag for a certain player.
-- `ShowPlayerMarkers`: Decide if the server should show markers on the radar.
+- DisableNameTagLOS: Disable nametag Line-Of-Sight checking.
+- ShowPlayerNameTagForPlayer: Show or hide a nametag for a certain player.
+- ShowPlayerMarkers: Decide if the server should show markers on the radar.

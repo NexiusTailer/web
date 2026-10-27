@@ -10,10 +10,10 @@ tags: ["player"]
 
 Defina a equipe de um jogador.
 
-| Nome     | Descrição                                                                                 |
-| -------- | ----------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador cujo time você deseja definir.                                            |
-| teamid   | A equipe para colocar o jogador. Use `NO_TEAM` para remover o jogador de qualquer equipe. |
+| Nome | Descrição |
+| -------- | ------------------------------------------------------------------------------ |
+| playerid | O ID do jogador cujo time você deseja definir.                              |
+| teamid | A equipe para colocar o jogador. Use NO_TEAM para remover o jogador de qualquer equipe. |
 
 ## Retornos
 

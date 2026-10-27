@@ -23,7 +23,7 @@ Acest callback este apelat atunci când clientul unui jucător actualizează/sin
 
 ## Returnări
 
-Este întotdeauna numit primul în filterscript-uri, așa că returnarea 0 acolo blochează și alte scripturi să-l vadă.
+Este întotdeauna numit primul în filterscript-uri, așa că returnarea **0** acolo blochează și alte scripturi să-l vadă.
 
 ## Exemple
 
@@ -45,7 +45,7 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-Acest apel invers este apelat foarte frecvent pe secundă per vehicul neocupat. Ar trebui să vă abțineți de la implementarea unor calcule intensive sau operațiuni intensive de scriere/citire a fișierelor în acest apel invers. `GetVehiclePos` va returna coordonatele vechi ale vehiculului înainte de această actualizare.
+Acest apel invers este apelat foarte frecvent pe secundă per vehicul neocupat. Ar trebui să vă abțineți de la implementarea unor calcule intensive sau operațiuni intensive de scriere/citire a fișierelor în acest apel invers. GetVehiclePos va returna coordonatele vechi ale vehiculului înainte de această actualizare.
 
 :::
 

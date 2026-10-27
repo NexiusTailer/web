@@ -37,9 +37,9 @@ printf("Version: %f", GetSVarFloat("Version"));
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetSVarInt`: Set an integer for a server variable.
-- `GetSVarInt`: Get a player server as an integer.
-- `SetSVarString`: Set a string for a server variable.
-- `GetSVarString`: Get the previously set string from a server variable.
-- `GetSVarFloat`: Get the previously set float from a server variable.
-- `DeleteSVar`: Delete a server variable.
+- SetSVarInt: Set an integer for a server variable.
+- GetSVarInt: Get a player server as an integer.
+- SetSVarString: Set a string for a server variable.
+- GetSVarString: Get the previously set string from a server variable.
+- GetSVarFloat: Get the previously set float from a server variable.
+- DeleteSVar: Delete a server variable.

@@ -22,7 +22,7 @@ tags: ["player", "object"]
 
 `true` - تابع با موفقیت اجرا شد.
 
-`false` - تابع در اجرا ناکام بود. `playerid` یا `objectid` مشخص شده وجود نداره.
+`false` - تابع در اجرا ناکام بود. playerid یا objectid مشخص شده وجود نداره.
 
 ## مثال‌ها
 

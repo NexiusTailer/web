@@ -7,7 +7,7 @@ tags: []
 
 ## Descriere
 
-Acest callback este apelat atunci când un fișier înregistrat care este reprodus cu `StartRecordingPlayback` a ajuns la final.
+Acest callback este apelat atunci când un fișier înregistrat care este reprodus cu StartRecordingPlayback a ajuns la final.
 
 ## Exemple
 

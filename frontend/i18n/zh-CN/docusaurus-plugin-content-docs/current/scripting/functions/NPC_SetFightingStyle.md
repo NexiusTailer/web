@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 战斗风格影响近身攻击动画和伤害
-- 使用 `NPC_GetFightingStyle` 检查当前风格
+- 使用 NPC_GetFightingStyle 检查当前风格
 - 风格影响攻击动画和战斗效果
 
 ## 相关函数

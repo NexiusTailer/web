@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-Ta funkcja od wersji 0.3d jest przestarzała. Sprawdź `OnPlayerClickMap`.
+Ta funkcja od wersji 0.3d jest przestarzała. Sprawdź OnPlayerClickMap.
 
 :::
 

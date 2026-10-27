@@ -10,7 +10,7 @@ Gebruikt door [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) en [
 
 :::
 
-| Definitie                      | Waarde |
-| ------------------------------ | ------ |
-| `UNKNOWN_VEHICLE_PANEL_STATUS` | -1     |
-| `VEHICLE_PANEL_STATUS_NONE`    | 0      |
+| Definitie                    | Waarde |
+| ---------------------------- | ------ |
+| UNKNOWN_VEHICLE_PANEL_STATUS | -1     |
+| VEHICLE_PANEL_STATUS_NONE    | 0      |

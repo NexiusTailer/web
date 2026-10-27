@@ -32,4 +32,4 @@ printf("The infernus is %.1fm wide, %.1fm long and %.1fm high", X, Y, Z);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetVehicleModel`: Get the model id of a vehicle.
+- GetVehicleModel: Get the model id of a vehicle.

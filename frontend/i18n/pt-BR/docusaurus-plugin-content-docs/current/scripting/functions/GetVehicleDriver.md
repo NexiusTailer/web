@@ -10,7 +10,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Obtenha o `playerid` da pessoa que dirige o veículo.
+Obtenha o playerid da pessoa que dirige o veículo.
 
 ## Parâmetros
 

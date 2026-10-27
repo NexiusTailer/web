@@ -65,7 +65,7 @@ stackoverflow.com
 
 **Pergunta:** O que é um arquivo de definição de módulo (.def)?
 
-- **Resposta:** Um arquivo de definição de módulo é um arquivo especial no IDE Visual Studio que fornece ao _linker_ informações sobre o programa que está sendo vinculado. Quando se trata de escrever plugins para SA-MP, geralmente usamos apenas a declaração `EXPORTS`, que fornece informações sobre as funções exportadas. Vamos abordar essa declaração mais adiante no artigo.
+- **Resposta:** Um arquivo de definição de módulo é um arquivo especial no IDE Visual Studio que fornece ao _linker_ informações sobre o programa que está sendo vinculado. Quando se trata de escrever plugins para SA-MP, geralmente usamos apenas a declaração "EXPORTS", que fornece informações sobre as funções exportadas. Vamos abordar essa declaração mais adiante no artigo.
 
 **Pergunta:** Quando eu lançar um plugin, ele precisa ter o código-fonte junto?
 
@@ -188,8 +188,8 @@ Atualmente, há 6 funções que precisam ser exportadas. Usamos 5 delas no proje
 
 | Funções              | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Supports()**       | Esta função informa ao servidor quais recursos nosso plugin terá com base no valor retornado. Geralmente, usamos apenas 3 flags de suporte em plugins: `SUPPORTS_VERSION`, `SUPPORTS_AMX_NATIVES` e `SUPPORTS_PROCESS_TICK`.                                                                                                                                                                                                                                                              |
-| **Load(void\*\*)**   | A função Load é bem simples. Ela é chamada quando o plugin é carregado e recebe um array de endereços que o plugin usará para funcionar. Os dois índices que normalmente usamos são `PLUGIN_DATA_AMX_EXPORTS` e `PLUGIN_DATA_LOGPRINTF`.                                                                                                                                                                                                                                                  |
+| **Supports()**       | Esta função informa ao servidor quais recursos nosso plugin terá com base no valor retornado. Geralmente, usamos apenas 3 flags de suporte em plugins: **SUPPORTS_VERSION**, **SUPPORTS_AMX_NATIVES** e **SUPPORTS_PROCESS_TICK**.                                                                                                                                                                                                                                                        |
+| **Load(void\*\*)**   | A função Load é bem simples. Ela é chamada quando o plugin é carregado e recebe um array de endereços que o plugin usará para funcionar. Os dois índices que normalmente usamos são **PLUGIN_DATA_AMX_EXPORTS** e **PLUGIN_DATA_LOGPRINTF**.                                                                                                                                                                                                                                              |
 | **Unload()**         | Unload é chamada quando o plugin é descarregado (quando o servidor é encerrado).                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **AmxLoad(AMX\*)**   | Esta função é chamada sempre que uma nova instância AMX é carregada no servidor. Isso acontece para cada filterscript/modo de jogo! Por isso, não é uma boa ideia armazenar uma única instância AMX para todo o plugin; em vez disso, use uma fila/lista/vetor. Nesta função, também registramos as funções nativas que queremos disponibilizar para o PAWN.                                                                                                                              |
 | **AmxUnload(AMX\*)** | Esta função é chamada sempre que uma instância AMX é descarregada. Se você armazena instâncias AMX, certifique-se de removê-las. Caso contrário, terá instâncias para modos de jogo/filterscripts inexistentes.                                                                                                                                                                                                                                                                           |
@@ -201,15 +201,15 @@ Agora vem a parte divertida, onde analisamos o código! Você provavelmente nota
 
 | Definições/Estruturas       | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **cell**                    | Um `cell` é um typedef utilizado para portabilidade. O PAWN oferece suporte para inteiros de 16, 32 e 64 bits. O typedef `cell` sempre terá o tamanho correto, enquanto `int` pode não ter. Geralmente, com plugins SA-MP, este typedef será sempre um inteiro de 32 bits. **Nota:** Existe também um typedef `ucell` para inteiros sem sinal, mas ele é pouco usado.                                                                                    |
+| **cell**                    | Um "cell" é um typedef utilizado para portabilidade. O PAWN oferece suporte para inteiros de 16, 32 e 64 bits. O typedef "cell" sempre terá o tamanho correto, enquanto "int" pode não ter. Geralmente, com plugins SA-MP, este typedef será sempre um inteiro de 32 bits. **Nota:** Existe também um typedef "ucell" para inteiros sem sinal, mas ele é pouco usado.                                                                                    |
 | **AMX_NATIVE_CALL**         | Define a convenção de chamada que nossas funções nativas irão usar. Atualmente, está definida como nada, então o padrão será utilizado.                                                                                                                                                                                                                                                                                                                  |
 | **AMX**                     | O nome desta estrutura é autoexplicativo, é uma instância AMX. Esta estrutura contém diversas informações relacionadas aos segmentos de dados, juntamente com outras informações relevantes do amx. Esta estrutura deve estar presente em todas as declarações de funções nativas, juntamente com um ponteiro cell para os parâmetros passados; sem essas informações, não sabemos qual script está chamando nossa função nativa, nem o que foi passado. |
-| **PLUGIN_EXPORT**           | Este é definido como `PLUGIN_EXTERN_C`.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **PLUGIN_EXPORT**           | Este é definido como "PLUGIN_EXTERN_C".                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **PLUGIN_EXTERN_C**         | Se estiver usando um compilador C++, isto é definido como "extern "C"". Isso garante compatibilidade com C. O C++ oferece recursos como sobrecarga de funções, então informações adicionais como o número/tamanho dos argumentos são armazenadas no nome da função, o que é chamado de "name mangling". Este define informa ao C++ para usar a ligação no estilo C, evitando o name mangling do C++.                                                     |
 | **PLUGIN_CALL**             | Esta definição informa ao C/C++ qual convenção de chamada usar para nossas funções exportadas. Se você usa um compilador para Windows, isto é definido como \_\_stdcall. Caso contrário, é definido como nada, e a convenção padrão é usada.                                                                                                                                                                                                             |
-| **SUPPORTS_VERSION**        | Esta definição deve ser usada em uma máscara de bits que é retornada pela função `Supports()`. Este flag é usado para verificar a compatibilidade com o servidor.                                                                                                                                                                                                                                                                                        |
-| **SUPPORTS_AMX_NATIVES**    | Esta é outra definição que deve ser usada pela função `Supports()`. Qualquer plugin que use funções AMX deve usar este flag! Sem ele, você terá um erro de execução 19 devido às suas nativas não se registrarem com o servidor (amx_Register).                                                                                                                                                                                                          |
-| **SUPPORTS_PROCESS_TICK**   | Nosso último flag para a função `Supports()`. Se você for usar a função `ProcessTick()`, é preciso adicioná-lo à máscara de bits retornada pela função `Supports()`.                                                                                                                                                                                                                                                                                     |
+| **SUPPORTS_VERSION**        | Esta definição deve ser usada em uma máscara de bits que é retornada pela função "Supports()". Este flag é usado para verificar a compatibilidade com o servidor.                                                                                                                                                                                                                                                                                        |
+| **SUPPORTS_AMX_NATIVES**    | Esta é outra definição que deve ser usada pela função "Supports()". Qualquer plugin que use funções AMX deve usar este flag! Sem ele, você terá um erro de execução 19 devido às suas nativas não se registrarem com o servidor (amx_Register).                                                                                                                                                                                                          |
+| **SUPPORTS_PROCESS_TICK**   | Nosso último flag para a função "Supports()". Se você for usar a função "ProcessTick()", é preciso adicioná-lo à máscara de bits retornada pela função "Supports()".                                                                                                                                                                                                                                                                                     |
 | **PLUGIN_DATA_AMX_EXPORTS** | Este é usado como um índice para o array multidimensional que é passado no Load. Este índice específico contém a tabela de funções AMX. Todos os plugins devem usar este índice para atribuir o endereço da tabela de funções a pAMXFunctions.                                                                                                                                                                                                           |
 | **PLUGIN_DATA_LOGPRINTF**   | Outro índice a ser usado com o array multidimensional passado no Load. Este índice contém o endereço da função logprintf, que imprime informações e as salva no arquivo de log do servidor. Se o seu plugin usar essa função, você deve usar esse índice para atribuir o endereço ao ponteiro de função logprintf.                                                                                                                                       |
 | **AMX_NATIVE_INFO**         | Esta struct é usada junto com amx_Register. Contém uma string com o nome da nova função nativa e um ponteiro para seu endereço.                                                                                                                                                                                                                                                                                                                          |
@@ -246,7 +246,7 @@ int amx_Allot(AMX *amx, int cells, cell *amx_addr, cell **phys_addr);
 
 ## amx_ctof
 
-\- Converte `cell` para `float`
+\- Converte “cell” para “float”
 
 ### Sintaxe
 
@@ -256,11 +256,11 @@ int amx_Allot(AMX *amx, int cells, cell *amx_addr, cell **phys_addr);
 
 | Parâmetro | Descrição                                           |
 | --------- | --------------------------------------------------- |
-| **c**     | Valor a ser convertido do tipo `cell` para `float`. |
+| **c**     | Valor a ser convertido do tipo “cell” para “float”. |
 
 **Retorna:** O mesmo padrão de bits, agora como um tipo de ponto flutuante.
 
-**Notas:** Esta macro converte um tipo `cell` para um tipo `float` sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato IEEE 754 seja o mais próximo possível do valor inteiro original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao recuperar um valor de ponto flutuante de uma célula, o padrão de bits não deve ser alterado.
+**Notas:** Esta macro converte um tipo “cell” para um tipo “float” sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato IEEE 754 seja o mais próximo possível do valor inteiro original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao recuperar um valor de ponto flutuante de uma célula, o padrão de bits não deve ser alterado.
 
 **Veja também:** [amx_ftoc](#amx_ftoc)
 
@@ -304,7 +304,7 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 ## amx_ftoc
 
-\- Converte `float` para `cell`
+\- Converte “float” para “cell”
 
 ### Sintaxe
 
@@ -314,11 +314,11 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 | Parâmetro | Descrição                                             |
 | --------- | ----------------------------------------------------- |
-| **f**     | O valor a ser convertido do tipo `float` para `cell`. |
+| **f**     | O valor a ser convertido do tipo “float” para “cell”. |
 
-**Retorna:** O mesmo padrão de bits, agora como um tipo `cell`.
+**Retorna:** O mesmo padrão de bits, agora como um tipo “cell”.
 
-**Notas:** Esta macro converte um tipo `float` para um tipo `cell` sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato inteiro seja o valor truncado do valor racional original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao armazenar um valor de ponto flutuante em uma célula, o padrão de bits não deve ser alterado.
+**Notas:** Esta macro converte um tipo “float” para um tipo “cell” sem alterar o padrão de bits. Um cast normal em C/C++ altera a representação de memória da expressão para que seu valor numérico em formato inteiro seja o valor truncado do valor racional original. O parser e a máquina abstrata PAWN armazenam valores de ponto flutuante em uma célula — ao armazenar um valor de ponto flutuante em uma célula, o padrão de bits não deve ser alterado.
 
 **Veja também:** [amx_ctof](#amx_ctof)
 
@@ -383,11 +383,11 @@ int amx_Push(AMX *amx, cell value);
 int amx_PushArray(AMX *amx, cell *amx_addr, cell **phys_addr, const cell array[], int numcells);
 ```
 
-| Parâmetro     | Descrição                                                                                                                                                                 |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **amx**       | A máquina abstrata.                                                                                                                                                       |
-| **amx_addr**  | O endereço da célula alocada que o programa Pawn (que roda na máquina abstrata) pode acessar; necessário para liberar o bloco de memória. Esse parâmetro pode ser `NULL`. |
-| **phys_addr** | O endereço da célula para que programas em C/C++ possam acessá-la. Esse parâmetro pode ser `NULL`.                                                                        |
+| Parâmetro     | Descrição                                                                                                                                                               |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **amx**       | A máquina abstrata.                                                                                                                                                     |
+| **amx_addr**  | O endereço da célula alocada que o programa Pawn (que roda na máquina abstrata) pode acessar; necessário para liberar o bloco de memória. Esse parâmetro pode ser NULL. |
+| **phys_addr** | O endereço da célula para que programas em C/C++ possam acessá-la. Esse parâmetro pode ser NULL.                                                                        |
 
 **Notas:** Quaisquer parâmetros para uma função pública devem ser empilhados na função antes de chamar `amx_Exec`. Se uma função pública possui múltiplos argumentos, estes devem ser empilhados na ordem inversa. A função aloca memória para o array dentro do "heap" da máquina abstrata. Esta memória deve ser liberada com `amx_Release`. Veja a função `amx_Allot` para mais detalhes sobre os parâmetros `amx_addr` e `phys_addr`.
 
@@ -406,8 +406,8 @@ int amx_PushString(AMX *amx, cell *amx_addr, cell **phys_addr, const char *strin
 | Parâmetro     | Descrição                                                                                                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **amx**       | A máquina abstrata.                                                                                                                                                              |
-| **amx_addr**  | O endereço da célula alocada que o programa Pawn (que roda na máquina abstrata) pode acessar; necessário para liberar o bloco de memória. Esse parâmetro pode ser `NULL`.        |
-| **phys_addr** | O endereço da célula para que programas em C/C++ possam acessá-la. Esse parâmetro pode ser `NULL`.                                                                               |
+| **amx_addr**  | O endereço da célula alocada que o programa Pawn (que roda na máquina abstrata) pode acessar; necessário para liberar o bloco de memória. Esse parâmetro pode ser NULL.          |
+| **phys_addr** | O endereço da célula para que programas em C/C++ possam acessá-la. Esse parâmetro pode ser NULL.                                                                                 |
 | **string**    | A string a ser passada para a função pública.                                                                                                                                    |
 | **pack**      | Valor não-zero para converter a string de origem em uma string compactada na máquina abstrata, ou zero para converter a string de origem em uma string de células.               |
 | **use_wchar** | Um valor não-zero interpreta o argumento da string como um ponteiro para “caracteres largos”, ou seja, `wchar_t`, independente de seu tipo `char`. Isso permite strings Unicode. |
@@ -426,15 +426,15 @@ int amx_PushString(AMX *amx, cell *amx_addr, cell **phys_addr, const char *strin
 int amx_Register(AMX *amx, AMX_NATIVE_INFO *list, int number);
 ```
 
-| Parâmetro  | Descrição                                                                                                                                                                                             |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **amx**    | A máquina abstrata.                                                                                                                                                                                   |
-| **list**   | Um array de estruturas onde cada estrutura mantém um ponteiro para o nome de uma função nativa e um ponteiro para a função. O array é opcionalmente finalizado com uma estrutura de ponteiros `NULL`. |
-| **number** | O número de estruturas no array `list`, ou -1 se o array termina com uma estrutura contendo dois ponteiros `NULL`.                                                                                    |
+| Parâmetro  | Descrição                                                                                                                                                                                           |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **amx**    | A máquina abstrata.                                                                                                                                                                                 |
+| **list**   | Um array de estruturas onde cada estrutura mantém um ponteiro para o nome de uma função nativa e um ponteiro para a função. O array é opcionalmente finalizado com uma estrutura de ponteiros NULL. |
+| **number** | O número de estruturas no array `list`, ou -1 se o array termina com uma estrutura contendo dois ponteiros NULL.                                                                                    |
 
 **Notas:** Em caso de sucesso, essa função retorna 0 (`AMX_ERR_NONE`). Se a função retornar o código de erro `AMX_ERR_NOTFOUND`, uma ou mais funções nativas usadas pelo programa Pawn não foram encontradas na lista fornecida. É possível chamar `amx_Register` novamente para registrar listas adicionais de funções.
 
-Para verificar se todas as funções nativas usadas no script compilado foram registradas, chame `amx_Register` com o parâmetro `list` definido como `NULL`. Esta chamada não registrará novas funções nativas, mas ainda retornará `AMX_ERR_NOTFOUND` se alguma função nativa estiver desregistrada.
+Para verificar se todas as funções nativas usadas no script compilado foram registradas, chame `amx_Register` com o parâmetro `list` definido como NULL. Esta chamada não registrará novas funções nativas, mas ainda retornará `AMX_ERR_NOTFOUND` se alguma função nativa estiver desregistrada.
 
 **Veja também:** amx_NativeInfo+
 

@@ -11,14 +11,14 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Gets the rotation and zoom of a 3D model preview player-textdraw.
 
-| Name              | Description                                                                       |
-| ----------------- | --------------------------------------------------------------------------------- |
-| playerid          | The ID of the player.                                                             |
-| PlayerText:textid | The ID of the player-textdraw to get rotation and zoom of.                        |
-| &Float:rotationX  | A float variable into which to store `rotationX` coordinate, passed by reference. |
-| &Float:rotationY  | A float variable into which to store `rotationY` coordinate, passed by reference. |
-| &Float:rotationZ  | A float variable into which to store `rotationZ` coordinate, passed by reference. |
-| &Float:zoom       | A float variable into which to store zoom value, passed by reference.             |
+| Name              | Description                                                                     |
+| ----------------- | ------------------------------------------------------------------------------- |
+| playerid          | The ID of the player.                                                           |
+| PlayerText:textid | The ID of the player-textdraw to get rotation and zoom of.                      |
+| &Float:rotationX  | A float variable into which to store rotationX coordinate, passed by reference. |
+| &Float:rotationY  | A float variable into which to store rotationY coordinate, passed by reference. |
+| &Float:rotationZ  | A float variable into which to store rotationZ coordinate, passed by reference. |
+| &Float:zoom       | A float variable into which to store zoom value, passed by reference.           |
 
 ## Examples
 

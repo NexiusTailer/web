@@ -9,11 +9,11 @@ tags: ["player"]
 
 Bu geri çağırma bir oyuncu öldüğünde, intihar ettiğinde ya da başka bir oyuncu tarafından öldürüldüğünde çağırılır.
 
-| Parametre     | Açıklama                                                                                      |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| playerid      | Ölen oyuncunun ID'si.                                                                         |
-| killerid      | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa `INVALID_PLAYER_ID` değeri döndürülür. |
-| WEAPON:reason | Oyuncunun ölüm sebebinin ID'si.                                                               |
+| Parametre     | Açıklama                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------- |
+| playerid      | Ölen oyuncunun ID'si.                                                                       |
+| killerid      | Öldüren oyuncunun ID'si, eğer öldüren bir oyuncu yoksa INVALID_PLAYER_ID değeri döndürülür. |
+| WEAPON:reason | Oyuncunun ölüm sebebinin ID'si.                                                             |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -49,16 +49,16 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-- Herhangi bir ateş kaynağından gelen hasarlarda(örnek: molotov, 18) `weaponid` değeri 37 (flame thrower) olarak döndürülür.
+- Herhangi bir ateş kaynağından gelen hasarlarda(örnek: molotov, 18) weaponid değeri 37 (flame thrower) olarak döndürülür.
 - Herhangi bir patlama kaynağından gelen hasarlarda (örnek: roketatar, el bombası) weapondid değeri 51 olarak geri döndürülür.
-- `SendDeathMessage` fonksiyonunu kullanmadan önce killerid'nin geçerli olup olmadığını kontrol etmenize gerek yok. `INVALID_PLAYER_ID` geçerli bir `killerid` ID parametresidir.
-- Yalnızca `playerid` tarafından çağırılabilir. (anti fake death için bilmeniz iyi olur.)
+- SendDeathMessage fonksiyonunu kullanmadan önce killerid'nin geçerli olup olmadığını kontrol etmenize gerek yok. INVALID_PLAYER_ID geçerli bir killerid ID parametresidir.
+- Yalnızca **playerid** tarafından çağırılabilir. (anti fake death için bilmeniz iyi olur.)
 
 :::
 
 :::warning
 
-Bir dizi içerisinde kullanmadan önce killerid'nin geçerli olup olmadığını kontrol ETMELİSİNİZ, yoksa `OnPlayerDeath` scriptinin çökmesine neden olur (Bütün script değil). Bunun nedeni INVALID_PLAYER_ID'nin 65535 olarak belirlenmiş olmasıdır ve bu değer MAX_PLAYERS'dan yüksek olacağı için scripti çökertir.
+Bir dizi içerisinde kullanmadan önce killerid'nin geçerli olup olmadığını kontrol ETMELİSİNİZ, yoksa OnPlayerDeath scriptinin çökmesine neden olur (Bütün script değil). Bunun nedeni INVALID_PLAYER_ID'nin 65535 olarak belirlenmiş olmasıdır ve bu değer MAX_PLAYERS'dan yüksek olacağı için scripti çökertir.
 
 :::
 

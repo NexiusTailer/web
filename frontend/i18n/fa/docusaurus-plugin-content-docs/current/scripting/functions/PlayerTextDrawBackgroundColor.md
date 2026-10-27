@@ -37,7 +37,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-اگه از [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) با اندازه > 0 استفاده کنی، رنگ outline با رنگی که در `PlayerTextDrawBackgroundColour` استفاده شده مطابقت می‌کنه. تغییر مقدار رنگ به نظر می‌رسه که رنگ استفاده شده در `PlayerTextDrawColour` رو تغییر می‌ده.
+اگه از [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) با اندازه > 0 استفاده کنی، رنگ outline با رنگی که در PlayerTextDrawBackgroundColour استفاده شده مطابقت می‌کنه. تغییر مقدار رنگ به نظر می‌رسه که رنگ استفاده شده در PlayerTextDrawColour رو تغییر می‌ده.
 
 :::
 
@@ -50,7 +50,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): تنظیم تراز یک player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): تنظیم فونت یک player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): تنظیم اندازه حروف متن در یک player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): فعال/غیرفعال کردن outline روی یک player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): تنظیم سایه روی یک player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): تنظیم فاصله متن در یک player-textdraw به نسبت متناسب.

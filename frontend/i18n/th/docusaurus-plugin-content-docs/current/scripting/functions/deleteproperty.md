@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Delete an earlier set property (`setproperty`).
+Delete an earlier set property (setproperty).
 
 | Name   | Description                                                                    |
 | ------ | ------------------------------------------------------------------------------ |

@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-اگه از [TextDrawSetOutline](TextDrawSetOutline) با اندازه > 0 استفاده کنی، رنگ outline با رنگی که توی `TextDrawBackgroundColour` استفاده کردی یکی میشه. تغییر مقدار colour به نظر میرسه رنگی که توی `TextDrawColour` استفاده میشه رو تغییر میده.
+اگه از [TextDrawSetOutline](TextDrawSetOutline) با اندازه > 0 استفاده کنی، رنگ outline با رنگی که توی TextDrawBackgroundColour استفاده کردی یکی میشه. تغییر مقدار colour به نظر میرسه رنگی که توی TextDrawColour استفاده میشه رو تغییر میده.
 
 :::
 

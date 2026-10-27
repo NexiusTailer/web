@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Os estilos de luta afetam as animações e os danos do combate corpo a corpo
 - Cada estilo tem diferentes animações de socos e chutes
-- O estilo de luta padrão é `FIGHT_STYLE_NORMAL`
+- O estilo de luta padrão é FIGHT_STYLE_NORMAL
 
 ## Funções Relacionadas
 

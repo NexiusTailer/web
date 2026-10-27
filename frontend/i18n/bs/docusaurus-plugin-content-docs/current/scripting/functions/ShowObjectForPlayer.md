@@ -22,7 +22,7 @@ Prikazuje objekat igraču koji je sakriven sa [HideObjectForPlayer](HideObjectFo
 
 `true` - Funkcija uspješno izvršena.
 
-`false` - Funkcija neuspješno izvršena. Navedeni `playerid` ili `objectid` ne postoji.
+`false` - Funkcija neuspješno izvršena. Navedeni playerid ili objectid ne postoji.
 
 ## Primjeri
 

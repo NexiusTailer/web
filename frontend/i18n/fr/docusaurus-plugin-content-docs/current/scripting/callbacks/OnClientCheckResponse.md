@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Ce rappel est appelé lorsque la demande `SendClientCheck` est terminée.
+Ce rappel est appelé lorsque la demande SendClientCheck est terminée.
 
 | Nom      | Description                        |
 | -------- | ---------------------------------- |

@@ -162,7 +162,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 :::note نکته
 
-- شبیه `DIALOG_STYLE_INPUT`.
+- شبیه **DIALOG_STYLE_INPUT**.
 
 :::
 
@@ -216,7 +216,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 :::note نکته
 
-- شبیه `DIALOG_STYLE_LIST`.
+- شبیه **DIALOG_STYLE_LIST**.
 
 :::
 
@@ -272,7 +272,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 :::note نکته
 
-- شبیه `DIALOG_STYLE_LIST`.
+- شبیه **DIALOG_STYLE_LIST**.
 
 :::
 

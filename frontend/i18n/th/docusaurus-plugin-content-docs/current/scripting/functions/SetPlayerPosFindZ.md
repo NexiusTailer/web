@@ -38,5 +38,5 @@ This function does not work if the new coordinates are far away from where the p
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerPos`: Set a player's position.
-- `OnPlayerClickMap`: Called when a player sets a waypoint/target on the pause menu map.
+- SetPlayerPos: Set a player's position.
+- OnPlayerClickMap: Called when a player sets a waypoint/target on the pause menu map.

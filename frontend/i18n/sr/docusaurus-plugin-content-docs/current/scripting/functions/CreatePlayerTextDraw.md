@@ -61,7 +61,7 @@ Key mapping кодови ( као што су `~k~~VEHICLE_ENTER_EXIT~` ) не �
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Поставља поређај текста у player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Поставља фонт текста у player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Поставља величину слова у тексту player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Поставља величину кутије player-textdraw (или кликабл област за `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Поставља величину кутије player-textdraw (или кликабл област за PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Укључује/искључује контурну линију на player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Поставља сенку на player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Скалира размак текста у player-textdraw на пропорционални однос.
@@ -72,7 +72,7 @@ Key mapping кодови ( као што су `~k~~VEHICLE_ENTER_EXIT~` ) не �
 - [IsPlayerTextDrawVisible](IsPlayerTextDrawVisible): Проверава да ли је player-textdraw приказан играчу.
 - [IsValidPlayerTextDraw](IsValidPlayerTextDraw): Проверава да ли је player-textdraw валидан.
 - [PlayerTextDrawBackgroundColour](PlayerTextDrawBackgroundColour): Подешава боју позадине player-textdraw.
-- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): Поставља боју кутије текстуалне ознаке (`PlayerTextDrawUseBox`).
+- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): Поставља боју кутије текстуалне ознаке (PlayerTextDrawUseBox).
 - [PlayerTextDrawColour](PlayerTextDrawColour): Поставља боју текста у player-textdraw.
 - [PlayerTextDrawGetAlignment](PlayerTextDrawGetAlignment): Добија поређај текста у player-textdraw.
 - [PlayerTextDrawGetBackgroundColour](PlayerTextDrawGetBackgroundColour): Добија боју позадине player-textdraw.

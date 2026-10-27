@@ -44,7 +44,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-[ShowNameTags](ShowNameTags) باید روی 'true' تنظیم بشه تا بتونی name tag ها رو با `ShowPlayerNameTagForPlayer` نشون بدی، یعنی برای مؤثر بودن باید از قبل `ShowPlayerNameTagForPlayer(forplayerid, playerid, 0)` رو انجام بدی ([OnPlayerStreamIn](../callbacks/OnPlayerStreamIn) جای خوبی هست).
+[ShowNameTags](ShowNameTags) باید روی 'true' تنظیم بشه تا بتونی name tag ها رو با ShowPlayerNameTagForPlayer نشون بدی، یعنی برای مؤثر بودن باید از قبل ShowPlayerNameTagForPlayer(forplayerid, playerid, 0) رو انجام بدی ([OnPlayerStreamIn](../callbacks/OnPlayerStreamIn) جای خوبی هست).
 
 :::
 

@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-This function, as of 0.3.7 R2, is deprecated. Please see `GetConsoleVarAsBool`
+This function, as of 0.3.7 R2, is deprecated. Please see GetConsoleVarAsBool
 
 :::
 
@@ -47,5 +47,5 @@ Type 'varlist' in the server console to display a list of available server varia
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetServerVarAsString`: Retreive a server variable as a string.
-- `GetServerVarAsInt`: Retreive a server variable as an integer.
+- GetServerVarAsString: Retreive a server variable as a string.
+- GetServerVarAsInt: Retreive a server variable as an integer.

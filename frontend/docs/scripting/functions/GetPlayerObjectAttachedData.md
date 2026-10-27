@@ -11,13 +11,13 @@ tags: ["player", "object", "playerobject"]
 
 Get the attachment data of a player-object.
 
-| Name           | Description                                                               |
-| -------------- | ------------------------------------------------------------------------- |
-| playerid       | The ID of the player                                                      |
-| objectid       | The ID of the player-object to get the attachment data of                 |
-| &parentVehicle | A variable in which to store the `parentVehicle` ID, passed by reference. |
-| &parentObject  | A variable in which to store the `parentObject` ID, passed by reference.  |
-| &parentPlayer  | A variable in which to store the `parentPlayer` ID, passed by reference.  |
+| Name           | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| playerid       | The ID of the player                                                    |
+| objectid       | The ID of the player-object to get the attachment data of               |
+| &parentVehicle | A variable in which to store the parentVehicle ID, passed by reference. |
+| &parentObject  | A variable in which to store the parentObject ID, passed by reference.  |
+| &parentPlayer  | A variable in which to store the parentPlayer ID, passed by reference.  |
 
 ## Returns
 

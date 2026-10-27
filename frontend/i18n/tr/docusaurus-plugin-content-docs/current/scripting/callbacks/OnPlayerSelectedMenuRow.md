@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## Açıklama
 
-Bu fonksiyon, bir oyuncu menüden bir öğe seçtiğinde (`ShowMenuForPlayer`) çağrılır.
+Bu fonksiyon, bir oyuncu menüden bir öğe seçtiğinde (ShowMenuForPlayer) çağrılır.
 
 | Parametre | Açıklama                                        |
 | --------- | ----------------------------------------------- |
@@ -49,7 +49,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 :::note
 
-Menü ID'si bu fonksiyona aktarılmaz. `GetPlayerMenu`, oyuncunun hangi menüde bir öğe seçtiğini belirlemek için kullanılmalıdır.
+Menü ID'si bu fonksiyona aktarılmaz. GetPlayerMenu, oyuncunun hangi menüde bir öğe seçtiğini belirlemek için kullanılmalıdır.
 
 :::
 

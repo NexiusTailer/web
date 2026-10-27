@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-The same as `AttachObjectToPlayer` but for objects which were created for player.
+The same as AttachObjectToPlayer but for objects which were created for player.
 
 | Name          | Description                                                        |
 | ------------- | ------------------------------------------------------------------ |
 | objectplayer  | The id of the player which is linked with the object.              |
-| objectid      | The `objectid` you want to attach to the player.                   |
+| objectid      | The objectid you want to attach to the player.                     |
 | attachid      | The id of the player you want to attach to the object.             |
 | Float:OffsetX | The distance between the player and the object in the X direction. |
 | Float:OffsetY | The distance between the player and the object in the Y direction. |

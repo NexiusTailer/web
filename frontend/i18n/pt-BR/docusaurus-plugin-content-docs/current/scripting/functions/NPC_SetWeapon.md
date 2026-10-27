@@ -50,8 +50,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Definir uma arma equipará o NPC com essa arma
-- Use `NPC_SetAmmo` para fornecer munição para a arma
-- Use `NPC_GetWeapon` para verificar a arma atual
+- Use NPC_SetAmmo para fornecer munição para a arma
+- Use NPC_GetWeapon para verificar a arma atual
 
 ## Funções Relacionadas
 

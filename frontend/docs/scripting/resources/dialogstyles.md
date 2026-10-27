@@ -140,7 +140,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 :::note
 
-- Similar to `DIALOG_STYLE_INPUT`.
+- Similar to **DIALOG_STYLE_INPUT**.
 
 :::
 
@@ -182,7 +182,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = -1, inputtext =
 
 :::note
 
-- Similar to `DIALOG_STYLE_LIST`.
+- Similar to **DIALOG_STYLE_LIST**.
 
 :::
 
@@ -227,7 +227,7 @@ playerid = 0, dialogid = YOUR_DIALOGID, response = 0, listitem = 1, inputtext = 
 
 :::note
 
-- Similar to `DIALOG_STYLE_LIST`.
+- Similar to **DIALOG_STYLE_LIST**.
 
 :::
 

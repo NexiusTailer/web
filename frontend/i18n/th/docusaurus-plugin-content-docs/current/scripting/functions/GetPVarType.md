@@ -18,12 +18,12 @@ Gets the type (integer, float or string) of a player variable.
 
 Returns the type of the PVar. See table below.
 
-| ID  | Type                                                                   |
-| --- | ---------------------------------------------------------------------- |
-| 0   | `PLAYER_VARTYPE_NONE` (player variable with given name does not exist) |
-| 1   | `PLAYER_VARTYPE_INT`                                                   |
-| 2   | `PLAYER_VARTYPE_STRING`                                                |
-| 3   | `PLAYER_VARTYPE_FLOAT`                                                 |
+| ID  | Type                                                                 |
+| --- | -------------------------------------------------------------------- |
+| 0   | PLAYER_VARTYPE_NONE (player variable with given name does not exist) |
+| 1   | PLAYER_VARTYPE_INT                                                   |
+| 2   | PLAYER_VARTYPE_STRING                                                |
+| 3   | PLAYER_VARTYPE_FLOAT                                                 |
 
 ## ตัวอย่าง
 
@@ -58,10 +58,10 @@ stock PrintPVar(playerid, varname[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPVarInt`: Set an integer for a player variable.
-- `GetPVarInt`: Get the previously set integer from a player variable.
-- `SetPVarString`: Set a string for a player variable.
-- `GetPVarString`: Get the previously set string from a player variable.
-- `SetPVarFloat`: Set a float for a player variable.
-- `GetPVarFloat`: Get the previously set float from a player variable.
-- `DeletePVar`: Delete a player variable.
+- SetPVarInt: Set an integer for a player variable.
+- GetPVarInt: Get the previously set integer from a player variable.
+- SetPVarString: Set a string for a player variable.
+- GetPVarString: Get the previously set string from a player variable.
+- SetPVarFloat: Set a float for a player variable.
+- GetPVarFloat: Get the previously set float from a player variable.
+- DeletePVar: Delete a player variable.

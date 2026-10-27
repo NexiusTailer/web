@@ -26,14 +26,14 @@ description: پیشرفت توسعه open.mp و گزارش تغییرات.
 
 **تعمیرات:**
 
-- تعمیر مشکل کوچک `SetPlayerSkin` در کلاینت‌های موبایل.
-- تعمیر مقدار برگشتی `GetTickCount` برای ویندوز.
+- تعمیر مشکل کوچک SetPlayerSkin در کلاینت‌های موبایل.
+- تعمیر مقدار برگشتی GetTickCount برای ویندوز.
 - تعمیر کرش هنگام نابودی خودرو در برخی رویدادها و callback های Pawn.
-- تعمیر مقدار برگشتی معکوس در `GetVehicleLandingGearState`.
+- تعمیر مقدار برگشتی معکوس در GetVehicleLandingGearState.
 - تعمیر ماندن تصادفی بازیکنان در لیست بازیکنان در لانچرها حتی اگر سرور را ترک کنند.
 - بررسی‌های اعتبار بیشتر برای تریلرها و همگام‌سازی تریلر.
 - تعمیر کرش مربوط به اشیاء متحرک.
-- تعمیر ریست شدن داده‌های خودروی بازیکن قبل از فراخوانی `OnPlayerDeath`.
+- تعمیر ریست شدن داده‌های خودروی بازیکن قبل از فراخوانی OnPlayerDeath.
 
 <br />
 
@@ -61,7 +61,7 @@ description: پیشرفت توسعه open.mp و گزارش تغییرات.
 
 **تغییرات:**
 
-- حذف `OnPlayerConnect` و `OnPlayerDisconnect` غیرضروری هنگام بارگذاری (یا عدم بارگذاری) اسکریپت جانبی (filterscript). به جای آن callback های [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) و [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) معرفی شدند.
+- حذف OnPlayerConnect و OnPlayerDisconnect غیرضروری هنگام بارگذاری (یا عدم بارگذاری) اسکریپت جانبی (filterscript). به جای آن callback های [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) و [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) معرفی شدند.
 - حذف تعداد زیادی هشدار runtime برای deprecated شدن native های pawn.
 - بررسی اعتبار URL CDN.
 - توقف پخش همگام‌سازی تماشاگر.
@@ -72,7 +72,7 @@ description: پیشرفت توسعه open.mp و گزارش تغییرات.
 **تعمیرات:**
 
 - تعمیر کرش معروف RakNet که از ابتدا با آن مواجه بودیم و چند سرور را متأثر می‌کرد.
-- تعمیر عدم نمایش رشته در موارد نادر استفاده از `format`.
+- تعمیر عدم نمایش رشته در موارد نادر استفاده از format.
 - تعمیر مشکل crashdetect که نمی‌توانست نام فایل و شماره خط را هنگام بارگذاری بیش از یک اسکریپت پیدا کند.
 - تعمیر بسیاری از کرش‌های RakNet و مدیریت حافظه داخلی ایمن‌تر.
 - تعمیر چندین مشکل اتصال و پاکسازی مناسب استخر بازیکنان داخلی.
@@ -106,7 +106,7 @@ description: پیشرفت توسعه open.mp و گزارش تغییرات.
 
 - چند تعمیر امنیتی.
 - سیستم اعلام‌کننده حالا به طور پیش‌فرض از IPv4 استفاده می‌کند، به جای استفاده از IPv6 وقتی در دسترس است.
-- تعمیر برگشت رنگ‌ها در قالب نادرست و `modelid` در `Get(Player)ObjectMaterial(Text)`.
+- تعمیر برگشت رنگ‌ها در قالب نادرست و modelid در `Get(Player)ObjectMaterial(Text)`.
 - تعمیر برگشت integer به جای float در `Get(Player)Gravity`.
 - اعتبارسنجی دلایل آسیب (سلاح‌ها) در مکان‌های مختلف.
 - همگام‌سازی ban ها تا چندین بازیکن در صورت نیاز همزمان ban شوند.
@@ -164,58 +164,58 @@ Release Candidate 2 (RC2) از سرور open.mp.
 
 **توابع منسوخ شده:**
 
-- `GetPlayer3DTextLabelVirtualW`
-- `SetPlayer3DTextLabelDrawDist`
-- `GetPlayer3DTextLabelDrawDist`
-- `SendClientMessagef`
-- `GameTextForPlayerf`
-- `SendPlayerMessageToPlayerf`
-- `SendClientMessageToAllf`
-- `GameTextForAllf`
-- `SendPlayerMessageToAllf`
-- `SendRconCommandf`
-- `AllowAdminTeleport`
-- `GetPlayerPoolSize`
-- `GetVehiclePoolSize`
-- `GetActorPoolSize`
-- `GetServerVarAsString`
-- `GetServerVarAsFloat`
-- `TextDrawColor`
-- `TextDrawBoxColor`
-- `TextDrawBackgroundColor`
-- `TextDrawSetPreviewVehCol`
-- `PlayerTextDrawColor`
-- `PlayerTextDrawBoxColor`
-- `PlayerTextDrawBackgroundColor`
-- `PlayerTextDrawSetPreviewVehCol`
-- `TextDrawGetColor`
-- `TextDrawGetBoxColor`
-- `TextDrawGetBackgroundColor`
-- `TextDrawGetPreviewVehCol`
-- `PlayerTextDrawGetColor`
-- `PlayerTextDrawGetBoxColor`
-- `PlayerTextDrawGetBackgroundCol`
-- `PlayerTextDrawGetPreviewVehCol`
-- `db_num_rows`
-- `db_get_mem_handle`
-- `db_get_result_mem_handle`
-- `SelectObject`
-- `EditObject`
-- `EditPlayerObject`
-- `CancelEdit`
-- `SetObjectsDefaultCameraCol`
-- `SetObjectNoCameraCol`
-- `IsObjectNoCameraCol`
-- `SetPlayerObjectNoCameraCol`
-- `IsPlayerObjectNoCameraCol`
-- `GetPlayerCameraTargetPlayerObj`
-- `GetObjectTarget`
-- `GetPlayerObjectTarget`
-- `GetPlayerDialog`
-- `fmkdir`
-- `dcreate`
-- `GetVehicleTower`
-- `ChangeVehicleColor`
+- GetPlayer3DTextLabelVirtualW
+- SetPlayer3DTextLabelDrawDist
+- GetPlayer3DTextLabelDrawDist
+- SendClientMessagef
+- GameTextForPlayerf
+- SendPlayerMessageToPlayerf
+- SendClientMessageToAllf
+- GameTextForAllf
+- SendPlayerMessageToAllf
+- SendRconCommandf
+- AllowAdminTeleport
+- GetPlayerPoolSize
+- GetVehiclePoolSize
+- GetActorPoolSize
+- GetServerVarAsString
+- GetServerVarAsFloat
+- TextDrawColor
+- TextDrawBoxColor
+- TextDrawBackgroundColor
+- TextDrawSetPreviewVehCol
+- PlayerTextDrawColor
+- PlayerTextDrawBoxColor
+- PlayerTextDrawBackgroundColor
+- PlayerTextDrawSetPreviewVehCol
+- TextDrawGetColor
+- TextDrawGetBoxColor
+- TextDrawGetBackgroundColor
+- TextDrawGetPreviewVehCol
+- PlayerTextDrawGetColor
+- PlayerTextDrawGetBoxColor
+- PlayerTextDrawGetBackgroundCol
+- PlayerTextDrawGetPreviewVehCol
+- db_num_rows
+- db_get_mem_handle
+- db_get_result_mem_handle
+- SelectObject
+- EditObject
+- EditPlayerObject
+- CancelEdit
+- SetObjectsDefaultCameraCol
+- SetObjectNoCameraCol
+- IsObjectNoCameraCol
+- SetPlayerObjectNoCameraCol
+- IsPlayerObjectNoCameraCol
+- GetPlayerCameraTargetPlayerObj
+- GetObjectTarget
+- GetPlayerObjectTarget
+- GetPlayerDialog
+- fmkdir
+- dcreate
+- GetVehicleTower
+- ChangeVehicleColor
 
 **تعمیرات:**
 

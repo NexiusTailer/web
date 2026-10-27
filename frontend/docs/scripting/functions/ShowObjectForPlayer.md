@@ -22,7 +22,7 @@ Show an object for a player that is hidden with [HideObjectForPlayer](HideObject
 
 `true` - The function was executed successfully.
 
-`false` - The function failed to execute. The `playerid` or `objectid` specified does not exist.
+`false` - The function failed to execute. The playerid or objectid specified does not exist.
 
 ## Examples
 

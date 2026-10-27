@@ -23,7 +23,7 @@ new PlayerColors[] = {
 
 Для начала, поместите этот массив в начале вашего скрипта.
 
-Далее, поместите следующий код в коллбэк `OnPlayerConnect`:
+Далее, поместите следующий код в коллбэк OnPlayerConnect:
 
 ```c
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);

@@ -84,7 +84,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-Lorsque vous utilisez `EDIT_RESPONSE_UPDATE`, sachez que la callback ne sera pas appelée lors de la publication d'une édition en cours entraînant une désynchronisation de la dernière édition de 'EDIT_RESPONSE_UPDATE' par rapport à la position actuelle des objets.
+Lorsque vous utilisez 'EDIT_RESPONSE_UPDATE', sachez que la callback ne sera pas appelée lors de la publication d'une édition en cours entraînant une désynchronisation de la dernière édition de 'EDIT_RESPONSE_UPDATE' par rapport à la position actuelle des objets.
 
 :::
 

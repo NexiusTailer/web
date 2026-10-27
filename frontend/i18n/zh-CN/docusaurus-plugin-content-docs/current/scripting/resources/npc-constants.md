@@ -9,70 +9,70 @@ tags: ["npc", "常量"]
 
 ## 限制
 
-| 值   | 常量            | 说明         |
-| ---- | --------------- | ------------ |
-| 1000 | `MAX_NPCS`      | NPC 最大数量 |
-| 64   | `NPC_MAX_NODES` | 最大节点数量 |
+| 值   | 常量          | 说明         |
+| ---- | ------------- | ------------ |
+| 1000 | MAX_NPCS      | NPC 最大数量 |
+| 64   | NPC_MAX_NODES | 最大节点数量 |
 
 ## 无效常量
 
-| 值  | 常量                | 说明          |
-| --- | ------------------- | ------------- |
-| -1  | `INVALID_NPC_ID`    | 无效的 NPC ID |
-| -1  | `INVALID_PATH_ID`   | 无效的路径 ID |
-| -1  | `INVALID_NODE_ID`   | 无效的节点 ID |
-| -1  | `INVALID_RECORD_ID` | 无效的录制 ID |
+| 值  | 常量              | 说明          |
+| --- | ----------------- | ------------- |
+| -1  | INVALID_NPC_ID    | 无效的 NPC ID |
+| -1  | INVALID_PATH_ID   | 无效的路径 ID |
+| -1  | INVALID_NODE_ID   | 无效的节点 ID |
+| -1  | INVALID_RECORD_ID | 无效的录制 ID |
 
 ## 移动类型
 
 用于 [NPC_Move](../functions/NPC_Move)、[NPC_MoveByPath](../functions/NPC_MoveByPath)、[NPC_EnterVehicle](../functions/NPC_EnterVehicle) 和 [NPC_PlayNode](../functions/NPC_PlayNode) 等函数。
 
-| 值  | 常量                    | 说明                                   |
-| --- | ----------------------- | -------------------------------------- |
-| -1  | `UNKNOWN_NPC_MOVE_TYPE` | 未知移动类型                           |
-| 0   | `NPC_MOVE_TYPE_NONE`    | 无移动                                 |
-| 1   | `NPC_MOVE_TYPE_WALK`    | NPC 步行前往目标                       |
-| 2   | `NPC_MOVE_TYPE_JOG`     | NPC 慢跑前往目标（大多数函数的默认值） |
-| 3   | `NPC_MOVE_TYPE_SPRINT`  | NPC 冲刺前往目标                       |
-| 4   | `NPC_MOVE_TYPE_DRIVE`   | NPC 驾驶前往目标（车辆移动）           |
-| 5   | `NPC_MOVE_TYPE_AUTO`    | 自动移动类型                           |
+| 值  | 常量                  | 说明                                   |
+| --- | --------------------- | -------------------------------------- |
+| -1  | UNKNOWN_NPC_MOVE_TYPE | 未知移动类型                           |
+| 0   | NPC_MOVE_TYPE_NONE    | 无移动                                 |
+| 1   | NPC_MOVE_TYPE_WALK    | NPC 步行前往目标                       |
+| 2   | NPC_MOVE_TYPE_JOG     | NPC 慢跑前往目标（大多数函数的默认值） |
+| 3   | NPC_MOVE_TYPE_SPRINT  | NPC 冲刺前往目标                       |
+| 4   | NPC_MOVE_TYPE_DRIVE   | NPC 驾驶前往目标（车辆移动）           |
+| 5   | NPC_MOVE_TYPE_AUTO    | 自动移动类型                           |
 
 ## 移动速度
 
 用于移动函数以控制 NPC 速度。
 
-| 值        | 常量                    | 说明                   |
-| --------- | ----------------------- | ---------------------- |
-| -1.0      | `NPC_MOVE_SPEED_AUTO`   | 基于移动类型的自动速度 |
-| 0.1552086 | `NPC_MOVE_SPEED_WALK`   | 步行速度               |
-| 0.56444   | `NPC_MOVE_SPEED_JOG`    | 慢跑速度               |
-| 0.926784  | `NPC_MOVE_SPEED_SPRINT` | 冲刺速度               |
+| 值        | 常量                  | 说明                   |
+| --------- | --------------------- | ---------------------- |
+| -1.0      | NPC_MOVE_SPEED_AUTO   | 基于移动类型的自动速度 |
+| 0.1552086 | NPC_MOVE_SPEED_WALK   | 步行速度               |
+| 0.56444   | NPC_MOVE_SPEED_JOG    | 慢跑速度               |
+| 0.926784  | NPC_MOVE_SPEED_SPRINT | 冲刺速度               |
 
 ## 实体检查标志
 
 用于 [NPC_AimAt](../functions/NPC_AimAt)、[NPC_AimAtPlayer](../functions/NPC_AimAtPlayer) 和 [NPC_Shoot](../functions/NPC_Shoot) 的碰撞检测。
 
-| 值  | 常量                            | 说明                         |
-| --- | ------------------------------- | ---------------------------- |
-| 0   | `NPC_ENTITY_CHECK_NONE`         | 无碰撞检查                   |
-| 1   | `NPC_ENTITY_CHECK_PLAYER`       | 检查与玩家的碰撞             |
-| 2   | `NPC_ENTITY_CHECK_NPC`          | 检查与其他 NPC 的碰撞        |
-| 4   | `NPC_ENTITY_CHECK_ACTOR`        | 检查与演员的碰撞             |
-| 8   | `NPC_ENTITY_CHECK_VEHICLE`      | 检查与车辆的碰撞             |
-| 16  | `NPC_ENTITY_CHECK_OBJECT`       | 检查与物体的碰撞             |
-| 32  | `NPC_ENTITY_CHECK_POBJECT_ORIG` | 检查与玩家物体的碰撞（原始） |
-| 64  | `NPC_ENTITY_CHECK_POBJECT_TARG` | 检查与玩家物体的碰撞（目标） |
-| 128 | `NPC_ENTITY_CHECK_MAP`          | 检查与地图的碰撞             |
-| 255 | `NPC_ENTITY_CHECK_ALL`          | 检查与所有实体的碰撞         |
+| 值  | 常量                          | 说明                         |
+| --- | ----------------------------- | ---------------------------- |
+| 0   | NPC_ENTITY_CHECK_NONE         | 无碰撞检查                   |
+| 1   | NPC_ENTITY_CHECK_PLAYER       | 检查与玩家的碰撞             |
+| 2   | NPC_ENTITY_CHECK_NPC          | 检查与其他 NPC 的碰撞        |
+| 4   | NPC_ENTITY_CHECK_ACTOR        | 检查与演员的碰撞             |
+| 8   | NPC_ENTITY_CHECK_VEHICLE      | 检查与车辆的碰撞             |
+| 16  | NPC_ENTITY_CHECK_OBJECT       | 检查与物体的碰撞             |
+| 32  | NPC_ENTITY_CHECK_POBJECT_ORIG | 检查与玩家物体的碰撞（原始） |
+| 64  | NPC_ENTITY_CHECK_POBJECT_TARG | 检查与玩家物体的碰撞（目标） |
+| 128 | NPC_ENTITY_CHECK_MAP          | 检查与地图的碰撞             |
+| 255 | NPC_ENTITY_CHECK_ALL          | 检查与所有实体的碰撞         |
 
 ## 子弹命中类型
 
 用于 [NPC_Shoot](../functions/NPC_Shoot) 以指定命中的目标类型。
 
-| 常量                     | 说明       |
-| ------------------------ | ---------- |
-| `BULLET_HIT_TYPE_NONE`   | 无特定目标 |
-| `BULLET_HIT_TYPE_PLAYER` | 玩家目标   |
+| 常量                   | 说明       |
+| ---------------------- | ---------- |
+| BULLET_HIT_TYPE_NONE   | 无特定目标 |
+| BULLET_HIT_TYPE_PLAYER | 玩家目标   |
 
 ## 示例
 

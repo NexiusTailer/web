@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 数量不能超过武器的最大弹匣容量
 - 设置为 0 将要求 NPC 在射击前重新装弹
-- 使用 `NPC_GetAmmoInClip` 检查当前弹匣数量
+- 使用 NPC_GetAmmoInClip 检查当前弹匣数量
 - 仅影响当前武器的弹匣，不影响总弹药
 
 ## 相关函数

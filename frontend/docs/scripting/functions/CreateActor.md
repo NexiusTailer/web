@@ -23,7 +23,7 @@ Create a static 'actor' in the world. These 'actors' are like NPCs, however they
 
 The created Actor ID (start at 0).
 
-`INVALID_ACTOR_ID` (65535) If the actor limit (1000) is reached.
+INVALID_ACTOR_ID (65535) If the actor limit (1000) is reached.
 
 ## Examples
 
@@ -54,7 +54,7 @@ public OnGameModeExit()
 
 :::warning
 
-- Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs. Actors are limited to 1000 (`MAX_ACTORS`).
+- Actors are completely separate from NPCs. They do NOT use player IDs/slots on the server and CANNOT be handled like NPCs. Actors are limited to 1000 (MAX_ACTORS).
 - Actors can be pushed by vehicles, use a timer to put them back at their positions.
 
 :::
@@ -81,7 +81,7 @@ public OnGameModeExit()
 - [SetActorInvulnerable](SetActorInvulnerable): Set actor invulnerable.
 - [IsActorInvulnerable](IsActorInvulnerable): Check if actor is invulnerable.
 - [IsValidActor](IsValidActor): Check if actor id is valid.
-- [GetActorPoolSize](GetActorPoolSize): Gets the highest `actorid` created on the server.
+- [GetActorPoolSize](GetActorPoolSize): Gets the highest actorid created on the server.
 - [GetPlayerTargetActor](GetPlayerTargetActor): Gets id of an actor which is aimed by certain player.
 
 ## Related Callbacks

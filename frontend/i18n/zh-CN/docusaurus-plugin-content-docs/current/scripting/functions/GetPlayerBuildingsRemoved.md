@@ -9,7 +9,7 @@ tags: ["玩家"]
 
 ## 描述
 
-获取玩家通过 `RemoveBuildingForPlayer` 函数已移除的建筑数量。
+获取玩家通过 RemoveBuildingForPlayer 函数已移除的建筑数量。
 
 | 参数     | 说明              |
 | -------- | ----------------- |

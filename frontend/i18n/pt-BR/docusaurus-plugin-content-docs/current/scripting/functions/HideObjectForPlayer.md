@@ -23,7 +23,7 @@ Esconda um objeto para um jogador.
 
 `true` – A função foi executada com sucesso.
 
-`false` - Falha na execução da função. O `playerid` ou `objectid` especificado não existe.
+`false` - Falha na execução da função. O playerid ou objectid especificado não existe.
 
 ## Exemplos
 

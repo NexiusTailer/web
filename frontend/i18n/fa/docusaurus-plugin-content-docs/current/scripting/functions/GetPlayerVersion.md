@@ -47,7 +47,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-رشته‌ای که نسخه در آن ذخیره می‌شود خالی خواهد بود اگر `playerid` یک NPC باشد.
+رشته‌ای که نسخه در آن ذخیره می‌شود خالی خواهد بود اگر playerid یک NPC باشد.
 
 :::
 

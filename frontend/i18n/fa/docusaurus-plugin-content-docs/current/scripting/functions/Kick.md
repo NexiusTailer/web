@@ -21,7 +21,7 @@ tags: ["player", "administration"]
 
 :::warning
 
-هر کاری که مستقیماً قبل از `Kick` انجام بشه (مثل فرستادن پیام با [SendClientMessage](SendClientMessage)) به بازیکن نمی‌رسه. باید از timer استفاده کرد تا kick رو تاخیر بندازه.
+هر کاری که مستقیماً قبل از Kick انجام بشه (مثل فرستادن پیام با [SendClientMessage](SendClientMessage)) به بازیکن نمی‌رسه. باید از timer استفاده کرد تا kick رو تاخیر بندازه.
 
 :::
 

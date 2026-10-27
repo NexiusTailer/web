@@ -6,7 +6,7 @@ tags: []
 
 ## Descripción
 
-Este callback se llama cuando un objeto es movido después de usar `MoveObject` (cuando este termina de moverse).
+Este callback se llama cuando un objeto es movido después de usar MoveObject (cuando este termina de moverse).
 
 | Nombre   | Descripción                      |
 | -------- | -------------------------------- |
@@ -30,7 +30,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-`SetObjectPos` no funciona cuando es usado en este callback. Para solucionarlo, vuelva a crear el objeto.
+SetObjectPos no funciona cuando es usado en este callback. Para solucionarlo, vuelva a crear el objeto.
 
 :::
 

@@ -33,7 +33,7 @@ DeleteSVar("SomeVarName");
 
 :::note
 
-Quando a variável é excluída, tentativas de recuperar o valor irão retornar **0** (para integers/floats e `NULL` para strings).
+Quando a variável é excluída, tentativas de recuperar o valor irão retornar **0** (para integers/floats e **NULL** para strings).
 
 :::
 

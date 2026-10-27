@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Essa callback **só é chamada** quando um veículo **re**nasce. `CreateVehicle` e `AddStaticVehicleEx` **não chamarão** essa callback.
+Essa callback **só é chamada** quando um veículo **re**nasce. CreateVehicle e AddStaticVehicleEx **não chamarão** essa callback.
 
 :::
 

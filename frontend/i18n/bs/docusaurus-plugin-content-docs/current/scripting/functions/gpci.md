@@ -29,7 +29,7 @@ Ova funkcija će vratiti vrijednost stringa korisničkog CI.
 
 :::warning
 
-Morate dodati `native gpci(playerid, serial [], len);` na vrhu vaše skripte prije upotrebe bilo kojih CI funkcija.
+Morate dodati 'native gpci(playerid, serial [], len);' na vrhu vaše skripte prije upotrebe bilo kojih CI funkcija.
 
 :::
 

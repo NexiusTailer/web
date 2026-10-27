@@ -419,26 +419,26 @@ Bu sayfa open.mp'ye eklenen tüm fonksiyonları ve callbackleri içerir
 
 ## String
 
-| İsim       |
-| ---------- |
-| `strcopy`  |
-| `strequal` |
+| İsim     |
+| -------- |
+| strcopy  |
+| strequal |
 
 ## Float
 
-| İsim       |
-| ---------- |
-| `strfloat` |
+| İsim     |
+| -------- |
+| strfloat |
 
 ## File
 
-| İsim         |
-| ------------ |
-| `ftell`      |
-| `fstat`      |
-| `frename`    |
-| `filecrc`    |
-| `fflush`     |
-| `fcreatedir` |
-| `fcopy`      |
-| `fattrib`    |
+| İsim       |
+| ---------- |
+| ftell      |
+| fstat      |
+| frename    |
+| filecrc    |
+| fflush     |
+| fcreatedir |
+| fcopy      |
+| fattrib    |

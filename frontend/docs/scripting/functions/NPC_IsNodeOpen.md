@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Nodes must be opened with `NPC_OpenNode` before use
+- Nodes must be opened with NPC_OpenNode before use
 - Only open nodes can be played by NPCs
 - Use this to check node availability before assigning to NPCs
 

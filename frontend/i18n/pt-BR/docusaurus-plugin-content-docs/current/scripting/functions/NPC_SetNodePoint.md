@@ -54,7 +54,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - O nó deve ser aberto antes de definir pontos
 - Os índices de pontos normalmente começam em 0
-- Use `NPC_GetNodePointPosition` para recuperar coordenadas de ponto
+- Use NPC_GetNodePointPosition para recuperar coordenadas de ponto
 
 ## Funções Relacionadas
 

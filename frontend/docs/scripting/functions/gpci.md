@@ -68,7 +68,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-In SA-MP server you must add `native gpci(playerid, serial[], len);` at the top of your script before using any CI functions.
+In SA-MP server you must add 'native gpci(playerid, serial[], len);' at the top of your script before using any CI functions.
 
 :::
 

@@ -23,7 +23,7 @@ Essa callback é executada quando o cliente do jogador faz o update/sincroniza a
 
 ## Retornos
 
-Sempre execurada primeiro nos filterscripts, retorne 0 para impedir que outros scripts a vejam.
+Sempre execurada primeiro nos filterscripts, retorne **0** para impedir que outros scripts a vejam.
 
 ## Exemplos
 
@@ -45,6 +45,6 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-Essa callback é executada com frequência a cada segundo, por veículo não ocupado. Você deve evitar realizar grandes operações de gravação e leitura de arquivos. A função `GetVehiclePos` irá retornar coordenadas antigas da posição do veículo (antes do update).
+Essa callback é executada com frequência a cada segundo, por veículo não ocupado. Você deve evitar realizar grandes operações de gravação e leitura de arquivos. A função GetVehiclePos irá retornar coordenadas antigas da posição do veículo (antes do update).
 
 :::

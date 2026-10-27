@@ -13,16 +13,16 @@ tags: ["object"]
 
 دریافت داده‌های متریال از یک شاخص از آبجکت.
 
-| نام                | توضیحات                                                          |
-| ------------------ | ---------------------------------------------------------------- |
-| objectid           | شناسه آبجکت.                                                     |
-| materialIndex      | شاخص متریال روی آبجکت. (0 تا 15)                                 |
-| &modelid           | متغیری برای ذخیره شناسه مدل، به صورت مرجع ارسال می‌شود.          |
-| textureLibrary[]   | آرایه‌ای برای ذخیره `textureLibrary`، به صورت مرجع ارسال می‌شود. |
-| textureLibrarySize | اندازه `textureLibrary`.                                         |
-| textureName[]      | آرایه‌ای برای ذخیره `textureName`، به صورت مرجع ارسال می‌شود.    |
-| textureNameSize    | اندازه `textureName`.                                            |
-| &materialColour    | متغیری برای ذخیره `materialColour`، به صورت مرجع ارسال می‌شود.   |
+| نام                | توضیحات                                                        |
+| ------------------ | -------------------------------------------------------------- |
+| objectid           | شناسه آبجکت.                                                   |
+| materialIndex      | شاخص متریال روی آبجکت. (0 تا 15)                               |
+| &modelid           | متغیری برای ذخیره شناسه مدل، به صورت مرجع ارسال می‌شود.        |
+| textureLibrary[]   | آرایه‌ای برای ذخیره textureLibrary، به صورت مرجع ارسال می‌شود. |
+| textureLibrarySize | اندازه textureLibrary.                                         |
+| textureName[]      | آرایه‌ای برای ذخیره textureName، به صورت مرجع ارسال می‌شود.    |
+| textureNameSize    | اندازه textureName.                                            |
+| &materialColour    | متغیری برای ذخیره materialColour، به صورت مرجع ارسال می‌شود.   |
 
 ## مقادیر بازگشتی
 

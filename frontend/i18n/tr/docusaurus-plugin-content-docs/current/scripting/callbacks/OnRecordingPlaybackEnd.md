@@ -7,7 +7,7 @@ tags: []
 
 ## Açıklama
 
-Bu geri çağırma, `StartRecordingPlayback` ile oynatılan bir kaydın sonuna gelindiğinde çağrılır.
+Bu geri çağırma, StartRecordingPlayback ile oynatılan bir kaydın sonuna gelindiğinde çağrılır.
 
 ## Örnek
 

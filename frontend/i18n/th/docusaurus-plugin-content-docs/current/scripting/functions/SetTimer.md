@@ -47,12 +47,12 @@ public message()
 
 :::note
 
-- Timer IDs are never used twice. You can use `KillTimer` on a timer ID and it won't matter if it's running or not.
+- Timer IDs are never used twice. You can use KillTimer on a timer ID and it won't matter if it's running or not.
 - The function that should be called, must be public, meaning it has to be forwarded.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetTimerEx`: Set a timer with parameters.
-- `KillTimer`: Stop a timer.
+- SetTimerEx: Set a timer with parameters.
+- KillTimer: Stop a timer.

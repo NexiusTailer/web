@@ -18,9 +18,9 @@ Dodaje novog prilagođenog karaktera za preuzimanje. Fajlovi modela će biti poh
 | Ime     | Deskripcija                                                                                                                                        |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | Osnovni [skin model ID](../resources/skins) za korištenje (ponašanje karaktera i originalnog karaktera za upotrebu kada preuzimanje nije uspjelo). |
-| newid   | Novi skin model ID između 20001 i 30000 (10000 slotova) da bi se kasnije koristio sa `SetPlayerSkin`.                                              |
-| dffname | Ime **.dff** collision modela fajla koji se nalazi u `models` server folderu po zadanim postavkama (`artpath` postavka).                           |
-| txdname | Ime **.txd** texture modela fajla koji se nalazi u `models` server folderu po zadanim postavkama (`artpath` postavka).                             |
+| newid   | Novi skin model ID između 20001 i 30000 (10000 slotova) da bi se kasnije koristio sa SetPlayerSkin.                                                |
+| dffname | Ime **.dff** collision modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                           |
+| txdname | Ime **.txd** texture modela fajla koji se nalazi u '`models`' server folderu po zadanim postavkama (artpath postavka).                             |
 
 ## Returns
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-`useartwork` mora biti omogućen (u server settings) da bi ovo radilo
+**useartwork** mora biti omogućen (u server settings) da bi ovo radilo
 
 :::
 

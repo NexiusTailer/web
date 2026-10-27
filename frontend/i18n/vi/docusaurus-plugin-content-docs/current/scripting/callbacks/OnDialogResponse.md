@@ -7,12 +7,12 @@ tags: ["dialog"]
 
 ## Mô Tả
 
-Callback này được gọi khi một người chơi phản hồi một hộp thoại được hiển thị bằng cách sử dụng `ShowPlayerDialog`, bằng cách nhấp vào nút, nhấn ENTER/ESC hoặc nhấp đúp vào một mục trong danh sách (nếu sử dụng hộp thoại kiểu danh sách).
+Callback này được gọi khi một người chơi phản hồi một hộp thoại được hiển thị bằng cách sử dụng ShowPlayerDialog, bằng cách nhấp vào nút, nhấn ENTER/ESC hoặc nhấp đúp vào một mục trong danh sách (nếu sử dụng hộp thoại kiểu danh sách).
 
 | Tên         | Mô Tả                                                                                                                          |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | playerid    | ID của người chơi đã phản hồi hộp thoại.                                                                                       |
-| dialogid    | ID của hộp thoại mà người chơi đã phản hồi, được gán trong `ShowPlayerDialog`.                                                 |
+| dialogid    | ID của hộp thoại mà người chơi đã phản hồi, được gán trong ShowPlayerDialog.                                                   |
 | response    | **1** cho nút trái và **0** cho nút phải (nếu chỉ có một nút được hiển thị, luôn luôn là 1)                                    |
 | listitem    | ID của mục trong danh sách được người chơi chọn (bắt đầu từ 0) (chỉ nếu sử dụng hộp thoại kiểu danh sách, nếu không sẽ là -1). |
 | inputtext[] | Văn bản được nhập vào ô nhập bởi người chơi hoặc văn bản của mục trong danh sách đã chọn.                                      |
@@ -23,7 +23,7 @@ Callback này luôn được gọi đầu tiên trong filterscripts, vì vậy t
 
 ## Ví Dụ
 
-**`DIALOG_STYLE_MSGBOX`**
+**DIALOG_STYLE_MSGBOX**
 
 ```c
 // Định nghĩa ID của hộp thoại để chúng ta có thể xử lý các phản hồi
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_INPUT`**
+**DIALOG_STYLE_INPUT**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -88,7 +88,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_LIST`**
+**DIALOG_STYLE_LIST**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -126,7 +126,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_TABLIST_HEADERS`**
+**DIALOG_STYLE_TABLIST_HEADERS**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -179,7 +179,7 @@ Các tham số có thể chứa các giá trị khác nhau, dựa trên kiểu h
 
 :::tip
 
-Thật phù hợp khi chuyển đổi qua các `dialogid` khác nhau, nếu bạn có nhiều dialog.
+Thật phù hợp khi chuyển đổi qua các dialogid khác nhau, nếu bạn có nhiều dialog.
 
 :::
 

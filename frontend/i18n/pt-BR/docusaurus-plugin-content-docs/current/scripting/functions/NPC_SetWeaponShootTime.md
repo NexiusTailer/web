@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - O tempo de filmagem é medido em milissegundos entre os disparos
-- Use `NPC_GetWeaponShootTime` para verificar o tempo de filmagem atual
+- Use NPC_GetWeaponShootTime para verificar o tempo de filmagem atual
 
 ## Funções Relacionadas
 

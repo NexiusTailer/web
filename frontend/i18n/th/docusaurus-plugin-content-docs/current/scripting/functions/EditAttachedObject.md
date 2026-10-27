@@ -48,7 +48,7 @@ You can move the camera while editing by pressing and holding the **spacebar** (
 
 :::warning
 
-Players will be able to scale objects up to a very large or negative value size. Limits should be put in place using `OnPlayerEditAttachedObject` to abort the edit.
+Players will be able to scale objects up to a very large or negative value size. Limits should be put in place using OnPlayerEditAttachedObject to abort the edit.
 
 :::
 

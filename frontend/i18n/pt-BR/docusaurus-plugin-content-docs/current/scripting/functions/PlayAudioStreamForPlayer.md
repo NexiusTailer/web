@@ -10,15 +10,15 @@ tags: ["player"]
 
 Reproduza um 'stream de áudio' para um jogador. Arquivos de áudio normais também funcionam (por exemplo, MP3).
 
-| Nome           | Descrição                                                                                                                                            |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid       | O ID do jogador para reproduzir o áudio.                                                                                                             |
-| const url[]    | O URL para jogar. Os formatos válidos são mp3 e ogg/vorbis. Um link para um arquivo .pls (lista de reprodução) reproduzirá essa lista de reprodução. |
-| Float:posX     | A posição X na qual o áudio será reproduzido. Padrão 0.0. Não tem efeito a menos que `usepos` esteja definido como (true).                           |
-| Float:posY     | A posição Y na qual reproduzir o áudio. Padrão 0.0. Não tem efeito a menos que `usepos` esteja definido como (true).                                 |
-| Float:posZ     | A posição Z na qual o áudio será reproduzido. Padrão 0.0. Não tem efeito a menos que `usepos` esteja definido como (true).                           |
-| Float:distance | A distância na qual o áudio será ouvido. Não tem efeito a menos que `usepos` esteja definido como (true).                                            |
-| bool:usepos    | Use as posições e distância especificadas. Padrão desabilitado (false).                                                                              |
+| Nome | Descrição |
+| -------------- | ---------------------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador para reproduzir o áudio.                                                                      |
+| const url[] | O URL para jogar. Os formatos válidos são mp3 e ogg/vorbis. Um link para um arquivo .pls (lista de reprodução) reproduzirá essa lista de reprodução. |
+| Float:posX | A posição X na qual o áudio será reproduzido. Padrão 0.0. Não tem efeito a menos que usepos esteja definido como (true).            |
+| Float:posY | A posição Y na qual reproduzir o áudio. Padrão 0.0. Não tem efeito a menos que usepos esteja definido como (true).            |
+| Float:posZ | A posição Z na qual o áudio será reproduzido. Padrão 0.0. Não tem efeito a menos que usepos esteja definido como (true).            |
+| Float:distance | A distância na qual o áudio será ouvido. Não tem efeito a menos que usepos esteja definido como (true).                   |
+| bool:usepos | Use as posições e distância especificadas. Padrão desabilitado (false).                                              |
 
 ## Retornos
 

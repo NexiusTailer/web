@@ -72,12 +72,12 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Cuando un jugador presiona ESC para cancelar la selección de un textdraw, `OnPlayerClickTextDraw` es llamado con un textdraw ID `INVALID_TEXT_DRAW`. En estos casos, `OnPlayerClickPlayerTextDraw` no se llamará.
+Cuando un jugador presiona ESC para cancelar la selección de un textdraw, OnPlayerClickTextDraw es llamado con un textdraw ID 'INVALID_TEXT_DRAW'. En estos casos, OnPlayerClickPlayerTextDraw no se llamará.
 
 :::
 
 ## Funciones Relacionadas
 
-- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Establece si un player-textdraw es seleccionable mediante `SelectTextDraw`.
+- [PlayerTextDrawSetSelectable](../functions/PlayerTextDrawSetSelectable): Establece si un player-textdraw es seleccionable mediante SelectTextDraw.
 - [OnPlayerClickTextDraw](OnPlayerClickTextDraw): Se llama cuando un jugador clickea en un textdraw.
 - [OnPlayerClickPlayer](OnPlayerClickPlayer): Se llama cuando un jugador clickea en otro (scoreboard).

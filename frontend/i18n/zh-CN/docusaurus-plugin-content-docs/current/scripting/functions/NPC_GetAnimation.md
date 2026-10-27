@@ -56,8 +56,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 如果与 [NPC_SetAnimation](NPC_SetAnimation) 一起使用，此函数不会返回数据
-- 除 `npcid` 外的所有参数都通过引用传递，将被修改
-- 如果 NPC 没有活动动画，`animationId` 将为 0
+- 除 npcid 外的所有参数都通过引用传递，将被修改
+- 如果 NPC 没有活动动画，animationId 将为 0
 
 ## 相关函数
 

@@ -9,7 +9,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Gets the highest `vehicleid` currently in use on the server. Note that in SA:MP this function is broken and will return `0` even when there are no vehicles. open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_VEHICLES` or `foreach`.
+Gets the highest vehicleid currently in use on the server. Note that in SA:MP this function is broken and will return `0` even when there are no vehicles. open.mp correct this to return `-1`, but also deprecate the function in favour of `MAX_VEHICLES` or `foreach`.
 
 ## Examples
 
@@ -26,4 +26,4 @@ RepairAllVehicles()
 
 ## Related Functions
 
-- [GetPlayerPoolSize](GetPlayerPoolSize): Gets the highest `playerid` connected to the server.
+- [GetPlayerPoolSize](GetPlayerPoolSize): Gets the highest playerid connected to the server.

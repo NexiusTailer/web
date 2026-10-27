@@ -47,7 +47,7 @@ A versão de um cliente pode ter até 24 caracteres, caso contrário a conexão 
 
 :::warning
 
-A string na qual a versão é armazenada estará vazia se `playerid` for NPC.
+A string na qual a versão é armazenada estará vazia se playerid for NPC.
 
 :::
 

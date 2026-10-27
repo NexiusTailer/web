@@ -61,7 +61,7 @@ Warning: client exceeded 'messageholelimit' (<type>) <ip>:<port> (<count>) Limit
 Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit: x (messageholelimit)
 ```
 
-نشان داده می‌شود زمانی اتفاق می‌افتد که 'پیام‌های خارج از ترتیب' از تنظیم `messageholelimit` دوباره استفاده می‌کند.
+نشان داده می‌شود زمانی اتفاق می‌افتد که 'پیام‌های خارج از ترتیب' از تنظیم messageholelimit دوباره استفاده می‌کند.
 
 برای اطلاعات بیشتر در مورد این موضوع، به [اینجا](ControllingServer#دستورات-rcon) مراجعه کنید
 

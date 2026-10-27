@@ -19,7 +19,7 @@ tags: ["演员", "动画"]
 | float:delta              | 动画播放速度（建议使用 4.1）                                                                   |
 | bool:loop                | 是否循环播放：true 循环播放，false 单次播放                                                    |
 | bool:lockX               | X 轴位置锁定：false 在动画结束后恢复原始 X 坐标（适用于移动类动画），true 保持动画结束时的位置 |
-| bool:lockY               | Y 轴位置锁定（参数设置应与 `lockX` 保持一致）                                                  |
+| bool:lockY               | Y 轴位置锁定（参数设置应与 lockX 保持一致）                                                    |
 | bool:freeze              | 动画结束后冻结演员：true 冻结演员，false 不冻结                                                |
 | time                     | 动画持续时间（毫秒），**0** 表示无限循环                                                       |
 
@@ -55,7 +55,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-必须通过 `ApplyAnimation` 为玩家预加载动画资源库，否则演员动画将在下次执行时生效
+必须通过 ApplyAnimation 为玩家预加载动画资源库，否则演员动画将在下次执行时生效
 
 :::
 

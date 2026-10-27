@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Opis
 
-`OnPlayerClickMap` se pokliče, ko si igralec postavi tarčo(target/waypoint) na zemljevidu menija za premor (desni klik).
+OnPlayerClickMap se pokliče, ko si igralec postavi tarčo(target/waypoint) na zemljevidu menija za premor (desni klik).
 
 | Ime      | Opis                                                                                        |
 | -------- | ------------------------------------------------------------------------------------------- |

@@ -8,9 +8,9 @@ description: Administrare server de la distanță.
 
 1. Deschideți un editor de text.
 2. Scrieți în rândul următor: `rcon.exe IP PORT RCON-PASS` (Înlocuiți IP / PORT / PASS cu detaliile serverului)
-3. Saveți fișierul ca `rcon.bat`
+3. Saveți fișierul ca **rcon.bat**
 4. Introduceți fișierul în directorul GTA unde se află `rcon.exe`.
-5. Executa `rcon.bat`
+5. Executa **rcon.bat**
 6. Introduceți comanda care vă place.
 
 ![Consola RCON](https://assets.open.mp/assets/images/server/rcon.jpg)

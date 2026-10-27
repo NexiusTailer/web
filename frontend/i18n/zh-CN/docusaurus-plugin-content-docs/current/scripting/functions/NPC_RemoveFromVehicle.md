@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - NPC 会立即出现在车辆外，没有退出动画
-- 使用 `NPC_ExitVehicle` 进行带动画的退出
+- 使用 NPC_ExitVehicle 进行带动画的退出
 - 如果 NPC 不在车辆中则返回 false
 - NPC 位置将设置在车辆附近
 

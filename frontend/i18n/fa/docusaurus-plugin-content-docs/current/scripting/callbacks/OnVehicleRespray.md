@@ -18,7 +18,7 @@ tags: ["vehicle"]
 
 ## مقادیر برگشتی
 
-همیشه اول در gamemode فراخوانده می‌شود بنابراین برگرداندن 0 در آنجا سایر filterscript ها را نیز از پردازش آن مسدود می‌کند.
+همیشه اول در gamemode فراخوانده می‌شود بنابراین برگرداندن **0** در آنجا سایر filterscript ها را نیز از پردازش آن مسدود می‌کند.
 
 ## مثال‌ها
 
@@ -36,7 +36,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-این کالبک توسط `ChangeVehicleColor` فراخوانده نمی‌شود. گمراه‌کننده است، این کالبک برای pay 'n' spray فراخوانده نمی‌شود (فقط modshop ها).
+این کالبک توسط ChangeVehicleColor فراخوانده نمی‌شود. گمراه‌کننده است، این کالبک برای pay 'n' spray فراخوانده نمی‌شود (فقط modshop ها).
 
 رفع اینجا: https://pastebin.com/G81da7N1
 

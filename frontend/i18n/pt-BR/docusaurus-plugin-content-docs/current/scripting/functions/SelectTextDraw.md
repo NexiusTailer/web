@@ -44,8 +44,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Funções Relacionadas
 
 - [CancelSelectTextDraw](CancelSelectTextDraw): Cancele a seleção do textdraw com o mouse
-- [TextDrawSetSelectable](TextDrawSetSelectable): Define se um textdraw é selecionável por meio de `SelectTextDraw`
-- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Define se um player-textdraw pode ser selecionado por meio de `SelectTextDraw`
+- [TextDrawSetSelectable](TextDrawSetSelectable): Define se um textdraw é selecionável por meio de **SelectTextDraw**
+- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Define se um player-textdraw pode ser selecionado por meio de **SelectTextDraw**
 
 ## Callbacks Relacionadas
 

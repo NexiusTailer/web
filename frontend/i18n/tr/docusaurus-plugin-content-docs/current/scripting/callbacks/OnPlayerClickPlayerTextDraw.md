@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Bir oyuncu textdraw seçimini ESC'ye basarak iptal ettiğinde 'INVALID_TEXT_DRAW' ID'si ile `OnPlayerClickTextDraw` çağırılır. `OnPlayerClickPlayerTextDraw` çağırılmaz.
+Bir oyuncu textdraw seçimini ESC'ye basarak iptal ettiğinde 'INVALID_TEXT_DRAW' ID'si ile OnPlayerClickTextDraw çağırılır. OnPlayerClickPlayerTextDraw çağırılmaz.
 
 :::
 

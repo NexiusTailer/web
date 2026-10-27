@@ -46,7 +46,7 @@ Klijentska verzija može imati najviše 24 znaka, inače će veza biti odbijena 
 
 :::warning
 
-Niz u kojem se verzija čuva bit će prazan ako je `playerid` NPC.
+Niz u kojem se verzija čuva bit će prazan ako je playerid NPC.
 
 :::
 

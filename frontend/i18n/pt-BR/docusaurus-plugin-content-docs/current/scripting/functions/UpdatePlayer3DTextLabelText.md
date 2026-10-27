@@ -26,7 +26,7 @@ Esta função não retorna nenhum valor específico.
 
 :::warning
 
-Se `text[]` estiver vazio, o servidor/clientes próximos ao texto podem travar! (Corrigido em open.mp)
+Se text[] estiver vazio, o servidor/clientes próximos ao texto podem travar! (Corrigido em open.mp)
 
 :::
 

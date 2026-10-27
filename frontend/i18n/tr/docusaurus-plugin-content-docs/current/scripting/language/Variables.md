@@ -40,7 +40,7 @@ Yukarıda tanımlanan her bir değişkenin varsayılan olarak bir değeri vardı
 new letters = 25;
 ```
 
-Yukarıdaki örnekte, `letters` adında bir değişken bildiriliyor ve değeri 25 olarak atanıyor. Bir değeri doğrudan bildirim sırasında atamanın yanı sıra, kodun daha sonraki bölümlerinde de yapabilirsiniz:
+Yukarıdaki örnekte, 'letters' adında bir değişken bildiriliyor ve değeri 25 olarak atanıyor. Bir değeri doğrudan bildirim sırasında atamanın yanı sıra, kodun daha sonraki bölümlerinde de yapabilirsiniz:
 
 ```c
 new letters;
@@ -106,7 +106,7 @@ public OnPlayerConnect(playerid)
 
 Yukarıdaki kodu derlemeye çalışırsanız, derleyici, bir yerel değişkenin tamamen farklı bir kod bloğunda kullanılması nedeniyle bir hata gösterecektir. Not: Eğer iç içe geçmiş bir kod bloğu ise değişkene oradan erişilebilir.
 
-Bir şeyi unutmamanız gereken önemli bir şey, kapsamlarının iç içe girmesi durumunda değişkenlere aynı isimleri veremezsiniz. Örneğin, zaten genel bir kapsamdaki `score` adında bir değişkeniniz varsa, aynı adı taşıyan başka bir değişkeni genel kapsamda ve yerel bir kapsamda bildirmemelisiniz ve bu aynı şekilde geçerlidir (zaten yerel bir değişkeniniz varsa, aynı adı taşıyan bir genel değişkeni bildirmekten kaçının).
+Bir şeyi unutmamanız gereken önemli bir şey, kapsamlarının iç içe girmesi durumunda değişkenlere aynı isimleri veremezsiniz. Örneğin, zaten genel bir kapsamdaki 'score' adında bir değişkeniniz varsa, aynı adı taşıyan başka bir değişkeni genel kapsamda ve yerel bir kapsamda bildirmemelisiniz ve bu aynı şekilde geçerlidir (zaten yerel bir değişkeniniz varsa, aynı adı taşıyan bir genel değişkeni bildirmekten kaçının).
 
 ```c
 #include <a_samp>

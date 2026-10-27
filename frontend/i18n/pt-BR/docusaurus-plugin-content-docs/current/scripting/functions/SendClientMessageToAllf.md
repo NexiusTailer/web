@@ -18,7 +18,7 @@ A função [SendClientMessageToAll](SendClientMessageToAll) agora está integrad
 
 ## Descrição
 
-Exibe uma mensagem formatada no chat para todos os jogadores. Este é um equivalente multijogador de `SendClientMessage`.
+Exibe uma mensagem formatada no chat para todos os jogadores. Este é um equivalente multijogador de SendClientMessage.
 
 | Nome | Descrição |
 | ----------------- | ------------------------------------------------- |

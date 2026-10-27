@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika pemain spawn. (misalnya saat sudah memanggil fungsi `SpawnPlayer`)
+Callback ini akan terpanggil ketika pemain spawn. (misalnya saat sudah memanggil fungsi SpawnPlayer)
 
 | Nama     | Deskripsi                     |
 | -------- | ----------------------------- |

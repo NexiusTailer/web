@@ -14,7 +14,7 @@ Trình khởi chạy của chúng tôi hiện cũng đã nhận được bản c
 
 **Tính năng mới:**
 
-- Thêm biến cấu hình `logo` máy chủ vào [config.json](server/config.json), cho phép máy chủ đặt logo hiển thị trong trình khởi chạy và trạng thái discord của chúng tôi.
+- Thêm biến cấu hình logo máy chủ vào [config.json](server/config.json), cho phép máy chủ đặt logo hiển thị trong trình khởi chạy và trạng thái discord của chúng tôi.
 - Thêm nhiều kiểm tra tính hợp lệ dữ liệu hơn cho phản hồi hộp thoại.
 - Thêm kiểm tra tính hợp lệ cho các hàng menu.
 - Thêm lỗi HTTP có thể đọc được bằng con người.
@@ -23,7 +23,7 @@ Trình khởi chạy của chúng tôi hiện cũng đã nhận được bản c
 
 **Sự thay đổi:**
 
-- Xóa `OnPlayerConnect` và `OnPlayerDisconnect` không cần thiết khi một tập lệnh phụ (filterscript) được (hủy) tải. Thay vào đó, giới thiệu các lệnh gọi lại [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) và [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer).
+- Xóa OnPlayerConnect và OnPlayerDisconnect không cần thiết khi một tập lệnh phụ (filterscript) được (hủy) tải. Thay vào đó, giới thiệu các lệnh gọi lại [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) và [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer).
 - Xóa một loạt lệnh ngừng sử dụng gốc của pawn khỏi các cảnh báo thời gian chạy.
 - Kiểm tra tính hợp lệ của URL CDN.
 - Dừng phát đồng bộ hóa khán giả.
@@ -63,7 +63,7 @@ Chúng tôi khuyến khích mọi máy chủ open.mp cập nhật lên phiên b�
 
 - Một số bản sửa lỗi bảo mật.
 - Hệ thống thông báo hiện sử dụng IPv4 theo mặc định, thay vì sử dụng IPv6 khi có sẵn.
-- Sửa lỗi `Get(Player)ObjectMaterial(Text)` trả về màu sắc theo định dạng và `modelid` không đúng.
+- Sửa lỗi `Get(Player)ObjectMaterial(Text)` trả về màu sắc theo định dạng và modelid không đúng.
 - Sửa lỗi `Get(Player)Gravity` trả về số nguyên thay vì số thực.
 - Xác thực lý do gây sát thương (vũ khí) ở nhiều nơi khác nhau.
 - Đồng bộ hóa lệnh cấm để nhiều người chơi bị cấm cùng lúc nếu cần.
@@ -119,58 +119,58 @@ Phiên bản ứng viên phát hành 2 (RC2) của máy chủ open.mp.
 
 **Các function lỗi thời:**
 
-- `GetPlayer3DTextLabelVirtualW`
-- `SetPlayer3DTextLabelDrawDist`
-- `GetPlayer3DTextLabelDrawDist`
-- `SendClientMessagef`
-- `GameTextForPlayerf`
-- `SendPlayerMessageToPlayerf`
-- `SendClientMessageToAllf`
-- `GameTextForAllf`
-- `SendPlayerMessageToAllf`
-- `SendRconCommandf`
-- `AllowAdminTeleport`
-- `GetPlayerPoolSize`
-- `GetVehiclePoolSize`
-- `GetActorPoolSize`
-- `GetServerVarAsString`
-- `GetServerVarAsFloat`
-- `TextDrawColor`
-- `TextDrawBoxColor`
-- `TextDrawBackgroundColor`
-- `TextDrawSetPreviewVehCol`
-- `PlayerTextDrawColor`
-- `PlayerTextDrawBoxColor`
-- `PlayerTextDrawBackgroundColor`
-- `PlayerTextDrawSetPreviewVehCol`
-- `TextDrawGetColor`
-- `TextDrawGetBoxColor`
-- `TextDrawGetBackgroundColor`
-- `TextDrawGetPreviewVehCol`
-- `PlayerTextDrawGetColor`
-- `PlayerTextDrawGetBoxColor`
-- `PlayerTextDrawGetBackgroundCol`
-- `PlayerTextDrawGetPreviewVehCol`
-- `db_num_rows`
-- `db_get_mem_handle`
-- `db_get_result_mem_handle`
-- `SelectObject`
-- `EditObject`
-- `EditPlayerObject`
-- `CancelEdit`
-- `SetObjectsDefaultCameraCol`
-- `SetObjectNoCameraCol`
-- `IsObjectNoCameraCol`
-- `SetPlayerObjectNoCameraCol`
-- `IsPlayerObjectNoCameraCol`
-- `GetPlayerCameraTargetPlayerObj`
-- `GetObjectTarget`
-- `GetPlayerObjectTarget`
-- `GetPlayerDialog`
-- `fmkdir`
-- `dcreate`
-- `GetVehicleTower`
-- `ChangeVehicleColor`
+- GetPlayer3DTextLabelVirtualW
+- SetPlayer3DTextLabelDrawDist
+- GetPlayer3DTextLabelDrawDist
+- SendClientMessagef
+- GameTextForPlayerf
+- SendPlayerMessageToPlayerf
+- SendClientMessageToAllf
+- GameTextForAllf
+- SendPlayerMessageToAllf
+- SendRconCommandf
+- AllowAdminTeleport
+- GetPlayerPoolSize
+- GetVehiclePoolSize
+- GetActorPoolSize
+- GetServerVarAsString
+- GetServerVarAsFloat
+- TextDrawColor
+- TextDrawBoxColor
+- TextDrawBackgroundColor
+- TextDrawSetPreviewVehCol
+- PlayerTextDrawColor
+- PlayerTextDrawBoxColor
+- PlayerTextDrawBackgroundColor
+- PlayerTextDrawSetPreviewVehCol
+- TextDrawGetColor
+- TextDrawGetBoxColor
+- TextDrawGetBackgroundColor
+- TextDrawGetPreviewVehCol
+- PlayerTextDrawGetColor
+- PlayerTextDrawGetBoxColor
+- PlayerTextDrawGetBackgroundCol
+- PlayerTextDrawGetPreviewVehCol
+- db_num_rows
+- db_get_mem_handle
+- db_get_result_mem_handle
+- SelectObject
+- EditObject
+- EditPlayerObject
+- CancelEdit
+- SetObjectsDefaultCameraCol
+- SetObjectNoCameraCol
+- IsObjectNoCameraCol
+- SetPlayerObjectNoCameraCol
+- IsPlayerObjectNoCameraCol
+- GetPlayerCameraTargetPlayerObj
+- GetObjectTarget
+- GetPlayerObjectTarget
+- GetPlayerDialog
+- fmkdir
+- dcreate
+- GetVehicleTower
+- ChangeVehicleColor
 
 **Sửa lỗi:**
 

@@ -84,7 +84,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Las ediciones deberían descartarse si `response` fue '0' (cancelado). Esto debe hacerse almacenando los valores en un array ANTES de usar `EditAttachedObject`.
+Las ediciones deberían descartarse si response fue '0' (cancelado). Esto debe hacerse almacenando los valores en un array ANTES de usar EditAttachedObject.
 
 :::
 

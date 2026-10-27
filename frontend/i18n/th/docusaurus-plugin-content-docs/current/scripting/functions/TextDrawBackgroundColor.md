@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## คำอธิบาย
 
-Adjusts the text draw area background color (the outline/shadow - NOT the box. For box color, see `TextDrawBoxColor`).
+Adjusts the text draw area background color (the outline/shadow - NOT the box. For box color, see TextDrawBoxColor).
 
 | Name  | Description                                           |
 | ----- | ----------------------------------------------------- |
@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::note
 
-If `TextDrawSetOutline` is used with size > 0, the outline color will match the color used in `TextDrawBackgroundColor`. Changing the value of `color` seems to alter the color used in `TextDrawColor`
+If TextDrawSetOutline is used with size > 0, the outline color will match the color used in TextDrawBackgroundColor. Changing the value of color seems to alter the color used in TextDrawColor
 
 :::
 

@@ -11,19 +11,19 @@ tags: ["actor"]
 
 Get the animation the actor is currently performing.
 
-| Name               | Description                                                                  |
-| ------------------ | ---------------------------------------------------------------------------- |
-| actorid            | The ID of the actor to get the animation of.                                 |
-| animationLibrary[] | An array into which to store the `animationLibrary` in, passed by reference. |
-| librarySize        | The size of the `animationLibrary` array.                                    |
-| animationName[]    | An array into which to store the `animationName` in, passed by reference.    |
-| nameSize           | The size of the `animationName` array.                                       |
-| &Float:delta       | A float variable into which to store the delta in, passed by reference.      |
-| &bool:loop         | A boolean variable into which to store the loop in, passed by reference.     |
-| &bool:lockX        | A float variable into which to store the `lockX` in, passed by reference.    |
-| &bool:lockY        | A float variable into which to store the `lockY` in, passed by reference.    |
-| &bool:freeze       | A boolean variable into which to store the freeze in, passed by reference.   |
-| &time              | A variable into which to store the time in, passed by reference.             |
+| Name               | Description                                                                |
+| ------------------ | -------------------------------------------------------------------------- |
+| actorid            | The ID of the actor to get the animation of.                               |
+| animationLibrary[] | An array into which to store the animationLibrary in, passed by reference. |
+| librarySize        | The size of the animationLibrary array.                                    |
+| animationName[]    | An array into which to store the animationName in, passed by reference.    |
+| nameSize           | The size of the animationName array.                                       |
+| &Float:delta       | A float variable into which to store the delta in, passed by reference.    |
+| &bool:loop         | A boolean variable into which to store the loop in, passed by reference.   |
+| &bool:lockX        | A float variable into which to store the lockX in, passed by reference.    |
+| &bool:lockY        | A float variable into which to store the lockY in, passed by reference.    |
+| &bool:freeze       | A boolean variable into which to store the freeze in, passed by reference. |
+| &time              | A variable into which to store the time in, passed by reference.           |
 
 ## Return Values
 

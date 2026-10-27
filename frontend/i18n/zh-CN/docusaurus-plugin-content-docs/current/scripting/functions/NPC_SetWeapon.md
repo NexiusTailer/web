@@ -50,8 +50,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 设置武器将为 NPC 装备该武器
-- 使用 `NPC_SetAmmo` 为武器提供弹药
-- 使用 `NPC_GetWeapon` 检查当前武器
+- 使用 NPC_SetAmmo 为武器提供弹药
+- 使用 NPC_GetWeapon 检查当前武器
 
 ## 相关函数
 

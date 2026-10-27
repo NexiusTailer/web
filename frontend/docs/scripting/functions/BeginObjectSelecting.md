@@ -9,7 +9,7 @@ tags: ["object"]
 
 ## Description
 
-Display the cursor and allow the player to select an object. `OnPlayerSelectObject` is called when the player selects an object.
+Display the cursor and allow the player to select an object. OnPlayerSelectObject is called when the player selects an object.
 
 | Name     | Description                                                   |
 | -------- | ------------------------------------------------------------- |

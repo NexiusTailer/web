@@ -85,7 +85,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Edit harus dibatalkan jika responsenya 0. Ini harus dilakukan dengan menyimpan offset dll. dalam array SEBELUM menggunakan `EditAttachedObject`.
+Edit harus dibatalkan jika responsenya 0. Ini harus dilakukan dengan menyimpan offset dll. dalam array SEBELUM menggunakan EditAttachedObject.
 
 :::
 

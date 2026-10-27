@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Node IDs range from 0 to 63
 - Nodes must be opened before NPCs can use them for navigation
 - Opening a node loads its data and makes it accessible
-- Use `NPC_IsNodeOpen` to check if a node is already open
+- Use NPC_IsNodeOpen to check if a node is already open
 
 ## Related Functions
 

@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Todos os parâmetros exceto `npcid` são passados por referência e serão modificados
+- Todos os parâmetros exceto npcid são passados por referência e serão modificados
 - Os estados-chave são armazenados como sinalizadores de bits
 - Use operações bit a bit para verificar chaves individuais
 - Isso reflete o estado de entrada atual do NPC

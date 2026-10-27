@@ -25,8 +25,8 @@ Bu fonksiyon, objeleri diğer objelere bağlar.
 
 **1**: Fonksiyon başarıyla çalıştı.
 
-**0**: Fonksiyon çalışmadı. Bu, ilk (bağlanacak - `objectid`) objenin mevcut olmadığı anlamına gelir.
-Bağlanılacak ana objenin (bağlanılacak - `attachtoid`) oluşturulup oluşturulmadığının herhangi bir kontrolü yoktur.
+**0**: Fonksiyon çalışmadı. Bu, ilk (bağlanacak - objectid) objenin mevcut olmadığı anlamına gelir.
+Bağlanılacak ana objenin (bağlanılacak - attachtoid) oluşturulup oluşturulmadığının herhangi bir kontrolü yoktur.
 
 ## Örnekler
 

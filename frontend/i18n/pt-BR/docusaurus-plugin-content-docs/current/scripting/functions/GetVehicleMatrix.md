@@ -14,18 +14,18 @@ Obtém a matriz de rotação real do veículo.
 
 ## Parâmetros
 
-| Nome          | Descrição                                                                               |
-| ------------- | --------------------------------------------------------------------------------------- |
-| vehicleid     | O ID do veículo.                                                                        |
-| &Float:rightX | Uma variável flutuante na qual armazenar a coordenada `rightX`, passada por referência. |
-| &Float:rightY | Uma variável flutuante na qual armazenar a coordenada `rightY`, passada por referência. |
-| &Float:rightZ | Uma variável flutuante na qual armazenar a coordenada `rightZ`, passada por referência. |
-| &Float:upX    | Uma variável float na qual armazenar a coordenada `upX`, passada por referência.        |
-| &Float:upY    | Uma variável float na qual armazenar a coordenada `upY`, passada por referência.        |
-| &Float:upZ    | Uma variável float na qual armazenar a coordenada `upZ`, passada por referência.        |
-| &Float:atX    | Uma variável float na qual armazenar a coordenada `atX`, passada por referência.        |
-| &Float:atY    | Uma variável float na qual armazenar a coordenada `atY`, passada por referência.        |
-| &Float:atZ    | Uma variável float na qual armazenar a coordenada `atZ`, passada por referência.        |
+| Nome | Descrição |
+| ------------- | ------------------------------------------------------------------------------ |
+| vehicleid | O ID do veículo.                                                         |
+| &Float:rightX | Uma variável flutuante na qual armazenar a coordenada rightX, passada por referência. |
+| &Float:rightY | Uma variável flutuante na qual armazenar a coordenada rightY, passada por referência. |
+| &Float:rightZ | Uma variável flutuante na qual armazenar a coordenada rightZ, passada por referência. |
+| &Float:upX | Uma variável float na qual armazenar a coordenada upX, passada por referência.    |
+| &Float:upY | Uma variável float na qual armazenar a coordenada upY, passada por referência.    |
+| &Float:upZ | Uma variável float na qual armazenar a coordenada upZ, passada por referência.    |
+| &Float:atX | Uma variável float na qual armazenar a coordenada atX, passada por referência.    |
+| &Float:atY | Uma variável float na qual armazenar a coordenada atY, passada por referência.    |
+| &Float:atZ | Uma variável float na qual armazenar a coordenada atZ, passada por referência.    |
 
 ## Retornos
 

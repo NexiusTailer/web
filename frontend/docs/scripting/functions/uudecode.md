@@ -9,11 +9,11 @@ tags: ["string", "encryption"]
 
 Decode an UU-encoded string.
 
-| Name                      | Description                                    |
-| ------------------------- | ---------------------------------------------- |
-| dest[]                    | The destination for the decoded string array.  |
-| const source[]            | The UU-encoded source string.                  |
-| maxlength = sizeof (dest) | The maximum length of `dest` that can be used. |
+| Name                      | Description                                   |
+| ------------------------- | --------------------------------------------- |
+| dest[]                    | The destination for the decoded string array. |
+| const source[]            | The UU-encoded source string.                 |
+| maxlength = sizeof (dest) | The maximum length of dest that can be used.  |
 
 ## Returns
 

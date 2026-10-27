@@ -6,7 +6,7 @@ tags: ["player", "checkpoint"]
 
 ## Descripción
 
-Este callback se llama cuando un jugador sale del checkpoint establecido a él por `SetPlayerCheckpoint`. Sólo se puede establecer un checkpoint al mismo tiempo al jugador.
+Este callback se llama cuando un jugador sale del checkpoint establecido a él por SetPlayerCheckpoint. Sólo se puede establecer un checkpoint al mismo tiempo al jugador.
 
 | Nombre   | Descripción                                   |
 | -------- | --------------------------------------------- |

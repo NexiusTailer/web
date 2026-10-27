@@ -42,7 +42,7 @@ public OnGameModeInit()
 
 :::warning
 
-`TextDrawSetSelectable` باید قبل از نشون دادن textdraw به بازیکنا استفاده بشه تا قابل انتخاب باشه.
+TextDrawSetSelectable باید قبل از نشون دادن textdraw به بازیکنا استفاده بشه تا قابل انتخاب باشه.
 
 :::
 

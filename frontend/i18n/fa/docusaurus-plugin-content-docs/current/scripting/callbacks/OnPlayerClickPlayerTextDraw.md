@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## توضیحات
 
-این کالبک زمانی فراخوانده می‌شود که یک بازیکن روی یک player-textdraw کلیک کند. زمانی که بازیکن حالت انتخاب را لغو کند (ESC) فراخوانده نمی‌شود - اما `OnPlayerClickTextDraw` فراخوانده می‌شود.
+این کالبک زمانی فراخوانده می‌شود که یک بازیکن روی یک player-textdraw کلیک کند. زمانی که بازیکن حالت انتخاب را لغو کند (ESC) فراخوانده نمی‌شود - اما OnPlayerClickTextDraw فراخوانده می‌شود.
 
 | نام                     | توضیحات                                                |
 | ----------------------- | ------------------------------------------------------ |
@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-وقتی بازیکن ESC را فشار می‌دهد تا انتخاب textdraw را لغو کند، [OnPlayerClickTextDraw](OnPlayerClickTextDraw) با شناسه textdraw برابر `INVALID_TEXT_DRAW` فراخوانده می‌شود. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) نیز فراخوانده نخواهد شد.
+وقتی بازیکن ESC را فشار می‌دهد تا انتخاب textdraw را لغو کند، [OnPlayerClickTextDraw](OnPlayerClickTextDraw) با شناسه textdraw برابر 'INVALID_TEXT_DRAW' فراخوانده می‌شود. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) نیز فراخوانده نخواهد شد.
 
 :::
 

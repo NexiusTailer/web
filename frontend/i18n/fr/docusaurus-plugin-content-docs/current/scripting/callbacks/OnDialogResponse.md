@@ -7,12 +7,12 @@ tags: [Dialog, DIALOG_STYLE_LIST, OnDialogReponse, listitem, dialogid]
 
 ## Paramètres
 
-Cette callback est appelée lorsqu'un joueur lorsqu'un joueur répond à une boîte de dialogue affichée à l'aide de `ShowPlayerDialog` en cliquant sur un bouton, en appuyant sur ENTRÉE / ÉCHAP ou en double-cliquant sur un élément de liste (si vous utilisez un `DIALOG_STYLE_LIST`).
+Cette callback est appelée lorsqu'un joueur lorsqu'un joueur répond à une boîte de dialogue affichée à l'aide de ShowPlayerDialog en cliquant sur un bouton, en appuyant sur ENTRÉE / ÉCHAP ou en double-cliquant sur un élément de liste (si vous utilisez un `DIALOG_STYLE_LIST`).
 
 | Nom                  | Description                                                                                                             |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `int` playerid       | ID du joueur qui a répondu au dialog                                                                                    |
-| `int` dialogid       | ID du dialog auquel le joueur répond, assigné dans `ShowPlayerDialog`                                                   |
+| `int` dialogid       | ID du dialog auquel le joueur répond, assigné dans ShowPlayerDialog                                                     |
 | `int` response       | **1** pour le bouton de gauche, **0** pour celui de droite (s'il n'y a qu'un bouton apparent = toujours 1)              |
 | `int` listitem       | ID de l'item sélectionné par le joueur \_(commence à 0, seulement dans les `DIALOG_STYLE_LIST`, pour le reste c'est -1) |
 | `string` inputtext[] | Texte inséré dans la boîte de saisie par le joueur, ou le texte de l'élément de l'item sélectionné                      |

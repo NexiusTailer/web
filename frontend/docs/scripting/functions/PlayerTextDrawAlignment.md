@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- For alignment 2 (`TEXT_DRAW_ALIGN_CENTER`) the x and y values of TextSize need to be swapped, see notes at [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
+- For alignment 2 (TEXT_DRAW_ALIGN_CENTER) the x and y values of TextSize need to be swapped, see notes at [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
 - If the textdraw is already shown for the player, it must be re-shown ([PlayerTextDrawShow](PlayerTextDrawShow)) to show the changes of this function.
 
 :::
@@ -57,7 +57,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Set the font of a player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Set the letter size of the text in a player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Set the size of a player-textdraw box (or clickable area for `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Set the size of a player-textdraw box (or clickable area for PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Toggle the outline on a player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Set the shadow on a player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Scale the text spacing in a player-textdraw to a proportional ratio.

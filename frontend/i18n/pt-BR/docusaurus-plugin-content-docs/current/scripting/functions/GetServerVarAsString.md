@@ -8,7 +8,7 @@ tags: []
 
 :::warning
 
-Esta função, a partir de 0.3.7 R2, está obsoleta. Consulte `GetConsoleVarAsString`
+Esta função, a partir de 0.3.7 R2, está obsoleta. Consulte GetConsoleVarAsString
 
 :::
 
@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-Quando _filterscripts_ ou _plugins_ são especificados como `varname`, esta função retorna apenas o nome do primeiro filterscript ou plugin especificado. Isso é um bug.
+Quando _filterscripts_ ou _plugins_ são especificados como varname, esta função retorna apenas o nome do primeiro filterscript ou plugin especificado. Isso é um bug.
 
 :::
 

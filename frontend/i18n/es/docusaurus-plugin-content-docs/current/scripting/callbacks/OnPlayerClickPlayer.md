@@ -18,7 +18,7 @@ Se llama cuando un jugador hace doble click a un jugador en el scoreboard (menú
 
 **1** - Prevendrá a otros filterscripts de recibir este callback.
 
-0 - Indica que este callback será pasado al siguiente filterscript.
+**0** - Indica que este callback será pasado al siguiente filterscript.
 
 Siempre se llama primero en filterscripts.
 
@@ -38,7 +38,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Actualmente hay un solo origen/source (0 - `CLICK_SOURCE_SCOREBOARD`). La existencia de este argumento sugiere que más origenes pueden ser soportados en el futuro.
+Actualmente hay un solo origen/source (0 - CLICK_SOURCE_SCOREBOARD). La existencia de este argumento sugiere que más origenes pueden ser soportados en el futuro.
 
 :::
 

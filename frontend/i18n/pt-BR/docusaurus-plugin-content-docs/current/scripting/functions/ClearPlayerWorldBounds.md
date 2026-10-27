@@ -41,7 +41,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-Os limites do mundo de um jogador também podem ser redefinidos configurando-os para 20000.0000, -20000.0000, 20000.0000, -20000.0000. Esses são os valores padrão. No entanto, sugerimos usar `ClearPlayerWorldBounds` para redefinir os limites do mundo do jogador para maior clareza.
+Os limites do mundo de um jogador também podem ser redefinidos configurando-os para 20000.0000, -20000.0000, 20000.0000, -20000.0000. Esses são os valores padrão. No entanto, sugerimos usar ClearPlayerWorldBounds para redefinir os limites do mundo do jogador para maior clareza.
 
 :::
 

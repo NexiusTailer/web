@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Get the player's current game time. Set by `SetWorldTime`, or by the game automatically if `TogglePlayerClock` is used.
+Get the player's current game time. Set by SetWorldTime, or by the game automatically if TogglePlayerClock is used.
 
 | Name     | Description                                                    |
 | -------- | -------------------------------------------------------------- |
@@ -36,6 +36,6 @@ if (hour == 13 && minutes == 37)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerTime`: Set a player's time.
-- `SetWorldTime`: Set the global server time.
-- `TogglePlayerClock`: Toggle the clock in the top-right corner.
+- SetPlayerTime: Set a player's time.
+- SetWorldTime: Set the global server time.
+- TogglePlayerClock: Toggle the clock in the top-right corner.

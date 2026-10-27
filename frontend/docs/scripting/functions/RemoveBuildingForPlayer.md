@@ -47,14 +47,14 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-You can use **-1** for the `modelid` to remove all objects within the specified radius.
+You can use **-1** for the modelid to remove all objects within the specified radius.
 
 :::
 
 :::warning
 
 - There appears to be a limit of around 1000 lines/objects. There is no workaround.
-- When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on `OnPlayerConnect`.
+- When removing the same object for a player, they will crash. Commonly, players crash when reconnecting to the server because the server removes buildings on OnPlayerConnect.
 
 :::
 

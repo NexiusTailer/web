@@ -24,7 +24,7 @@ Postavi ikonu/marker na mapu igrača. Može se koristiti da označite lokacije k
 
 **1**: Funkcija uspješno izvršena.
 
-**0**: Funkcija neuspješno izvršena. Igrač nije konektovan.
+0: Funkcija neuspješno izvršena. Igrač nije konektovan.
 
 ## Primjeri
 

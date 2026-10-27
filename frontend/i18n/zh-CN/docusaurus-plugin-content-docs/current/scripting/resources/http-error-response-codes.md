@@ -10,14 +10,14 @@ description: HTTP 错误响应代码说明
 
 :::
 
-| 代码 | 错误类型                        | 说明                                                                 |
-| ---- | ------------------------------- | -------------------------------------------------------------------- |
-| 1    | `HTTP_ERROR_BAD_HOST`           | 表示 HTTP 请求中使用的 URL 无效或无法通过 DNS 服务器解析             |
-| 2    | `HTTP_ERROR_NO_SOCKET`          | 表示建立 HTTP 请求时网络套接字连接失败                               |
-| 3    | `HTTP_ERROR_CANT_CONNECT`       | 表示客户端无法连接到服务器（可能由网络问题或服务器不可用导致）       |
-| 4    | `HTTP_ERROR_CANT_WRITE`         | 表示 HTTP 请求期间数据写入失败（可能由客户端、服务器或网络问题引起） |
-| 5    | `HTTP_ERROR_CONTENT_TOO_BIG`    | 表示请求内容大小超过服务器允许的最大限制                             |
-| 6    | `HTTP_ERROR_MALFORMED_RESPONSE` | 表示服务器返回的 HTTP 响应格式异常（不符合 HTTP 协议标准）           |
+| 代码 | 错误类型                      | 说明                                                                 |
+| ---- | ----------------------------- | -------------------------------------------------------------------- |
+| 1    | HTTP_ERROR_BAD_HOST           | 表示 HTTP 请求中使用的 URL 无效或无法通过 DNS 服务器解析             |
+| 2    | HTTP_ERROR_NO_SOCKET          | 表示建立 HTTP 请求时网络套接字连接失败                               |
+| 3    | HTTP_ERROR_CANT_CONNECT       | 表示客户端无法连接到服务器（可能由网络问题或服务器不可用导致）       |
+| 4    | HTTP_ERROR_CANT_WRITE         | 表示 HTTP 请求期间数据写入失败（可能由客户端、服务器或网络问题引起） |
+| 5    | HTTP_ERROR_CONTENT_TOO_BIG    | 表示请求内容大小超过服务器允许的最大限制                             |
+| 6    | HTTP_ERROR_MALFORMED_RESPONSE | 表示服务器返回的 HTTP 响应格式异常（不符合 HTTP 协议标准）           |
 
 ## 常见 HTTP 状态码分类
 

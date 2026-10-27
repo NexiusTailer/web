@@ -11,8 +11,8 @@ Aqui você pode encontrar todos os tipos de gravação que podem ser usados por 
 
 :::
 
-| Value | Definition                     |
-| ----- | ------------------------------ |
-| 0     | `PLAYER_RECORDING_TYPE_NONE`   |
-| 1     | `PLAYER_RECORDING_TYPE_DRIVER` |
-| 2     | `PLAYER_RECORDING_TYPE_ONFOOT` |
+| Value | Definition                   |
+| ----- | ---------------------------- |
+| 0     | PLAYER_RECORDING_TYPE_NONE   |
+| 1     | PLAYER_RECORDING_TYPE_DRIVER |
+| 2     | PLAYER_RECORDING_TYPE_ONFOOT |

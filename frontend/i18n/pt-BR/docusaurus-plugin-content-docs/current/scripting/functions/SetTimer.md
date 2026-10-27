@@ -55,9 +55,9 @@ public OneSecondTimer()
 
 ## Definições
 
-| Definition      | Valor |
-| --------------- | ----- |
-| `INVALID_TIMER` | 0     |
+| Definition | Valor |
+| ------------- | ----- |
+| INVALID_TIMER | 0 |
 
 ## Funções Relacionadas
 

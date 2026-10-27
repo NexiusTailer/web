@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Ovaj callback se poziva kada igrač klikne na textdraw ili napusti select mode pritiskom na tipku 'Escape'.
 
-| Ime       | Deskripcija                                                                                  |
-| --------- | -------------------------------------------------------------------------------------------- |
-| playerid  | ID igrača koji je kliknuo na textdraw.                                                       |
-| clickedid | ID textdraw-a kojeg je igrač kliknuo. `INVALID_TEXT_DRAW` ako je igrač napustio select mode. |
+| Ime       | Deskripcija                                                                                |
+| --------- | ------------------------------------------------------------------------------------------ |
+| playerid  | ID igrača koji je kliknuo na textdraw.                                                     |
+| clickedid | ID textdraw-a kojeg je igrač kliknuo. INVALID_TEXT_DRAW ako je igrač napustio select mode. |
 
 ## Returns
 
@@ -64,7 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Klikljivo područje je definirano preko `TextDrawTextSize`. Parametri x i y prosljeđeni toj funkciji ne smiju biti nula ili negativni. Ne koristi `CancelSelectTextDraw` bezuslovno unutar ovog callback-a. To rezultira beskonačnom petljom.
+Klikljivo područje je definirano preko TextDrawTextSize. Parametri x i y prosljeđeni toj funkciji ne smiju biti nula ili negativni. Ne koristi CancelSelectTextDraw bezuslovno unutar ovog callback-a. To rezultira beskonačnom petljom.
 
 :::
 

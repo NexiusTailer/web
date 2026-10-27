@@ -45,7 +45,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-Textdraw MORA koristiti tip fonta `TEXT_DRAW_FONT_MODEL_PREVIEW` kako bi ova funkcija imala efekta.
+Textdraw MORA koristiti tip fonta TEXT_DRAW_FONT_MODEL_PREVIEW kako bi ova funkcija imala efekta.
 
 :::
 

@@ -7,9 +7,9 @@ description: Administrasi server jarak jauh.
 
 1. Buka sebuah editor teks.
 2. Tulis di baris pertama seperti ini: `rcon.exe IP PORT RCON-PASS` (Ganti IP/PORT/PASS dengan informasi server Anda)
-3. Simpah file dengan nama `rcon.bat`
+3. Simpah file dengan nama **rcon.bat**
 4. Letakkan file tersebut di direktori GTA di mana `rcon.exe` berada.
-5. Jalankan `rcon.bat`
+5. Jalankan **rcon.bat**
 6. Masukkan perintah sesuai keinginan Anda.
 
 ![Konsol RCON](https://assets.open.mp/assets/images/server/rcon.jpg)

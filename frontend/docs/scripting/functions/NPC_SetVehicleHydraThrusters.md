@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Only works with Hydra aircraft (vehicle ID 520)
 - Direction 0 = forward thrusters (jet mode)
 - Direction 1 = downward thrusters (VTOL mode)
-- Use `NPC_GetVehicleHydraThrusters` to check current direction
+- Use NPC_GetVehicleHydraThrusters to check current direction
 
 ## Related Functions
 

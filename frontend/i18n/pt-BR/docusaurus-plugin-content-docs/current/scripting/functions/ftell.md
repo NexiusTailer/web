@@ -12,9 +12,9 @@ tags: ["file management"]
 
 Obtenha a posição atual no arquivo.
 
-| Nome        | Descrição                                            |
-| ----------- | ---------------------------------------------------- |
-| File:handle | O identificador do arquivo. (retornado por `fopen`). |
+| Nome | Descrição |
+| ----------- | -------------------------------------------- |
+| File:handle | O identificador do arquivo. (retornado por fopen). |
 
 ## Retornos
 

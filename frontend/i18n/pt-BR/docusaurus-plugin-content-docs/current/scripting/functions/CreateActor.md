@@ -23,7 +23,7 @@ Cria um 'ator' estático no mundo. Estes 'atores' são como NPCs, porém têm fu
 
 O ID do ator criado (começando em 0).
 
-`INVALID_ACTOR_ID` (65535) se o limite de atores (1000) for atingido.
+INVALID_ACTOR_ID (65535) se o limite de atores (1000) for atingido.
 
 ## Exemplos
 
@@ -54,7 +54,7 @@ public OnGameModeExit()
 
 :::warning
 
-- Atores são completamente separados dos NPCs. Eles NÃO usam IDs/slots de jogadores no servidor e NÃO PODEM ser manipulados como NPCs. Atores são limitados a 1000 (`MAX_ACTORS`).
+- Atores são completamente separados dos NPCs. Eles NÃO usam IDs/slots de jogadores no servidor e NÃO PODEM ser manipulados como NPCs. Atores são limitados a 1000 (MAX_ACTORS).
 - Atores podem ser empurrados por veículos, use um timer para colocá-los de volta em suas posições.
 
 :::
@@ -81,7 +81,7 @@ public OnGameModeExit()
 - [SetActorInvulnerable](SetActorInvulnerable): Define o ator como invulnerável.
 - [IsActorInvulnerable](IsActorInvulnerable): Verifica se o ator é invulnerável.
 - [IsValidActor](IsValidActor): Verifica se o ID do ator é válido.
-- [GetActorPoolSize](GetActorPoolSize): Obtém o maior `actorid` criado no servidor.
+- [GetActorPoolSize](GetActorPoolSize): Obtém o maior actorid criado no servidor.
 - [GetPlayerTargetActor](GetPlayerTargetActor): Obtém o ID de um ator que está sendo mirado por um determinado jogador.
 
 ## Callbacks Relacionados

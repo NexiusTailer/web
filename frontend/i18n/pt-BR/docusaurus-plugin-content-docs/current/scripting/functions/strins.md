@@ -10,12 +10,12 @@ tags: ["string"]
 
 Insira uma string em outra string.
 
-| Nome                        | Descrição                                      |
-| --------------------------- | ---------------------------------------------- |
-| string[]                    | A string na qual você deseja inserir `substr`. |
-| const substr[]              | A string que você deseja inserir na string.    |
-| pos                         | A posição para começar a inserir.              |
-| maxlength = sizeof (string) | O tamanho máximo a ser inserido.               |
+| Nome | Descrição |
+| --------------------------- | ------------------------------------------ |
+| string[] | A string na qual você deseja inserir substr.
+| const substr[] | A string que você deseja inserir na string. |
+| pos | A posição para começar a inserir.           |
+| maxlength = sizeof (string) | O tamanho máximo a ser inserido.                |
 
 ## Retornos
 

@@ -9,10 +9,10 @@ tags: []
 
 Write text into a file.
 
-| Name   | Description                                               |
-| ------ | --------------------------------------------------------- |
-| handle | The handle of the file to write to (returned by `fopen`). |
-| string | The string of text to write in to the file.               |
+| Name   | Description                                             |
+| ------ | ------------------------------------------------------- |
+| handle | The handle of the file to write to (returned by fopen). |
+| string | The string of text to write in to the file.             |
 
 ## ส่งคืน
 
@@ -105,7 +105,7 @@ This functions writes to the file in UTF-8, which does not support some localize
 
 :::warning
 
-Using an **invalid handle** will crash your server! Get a **valid handle** by using `fopen` or `ftemp`.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
 
 :::
 

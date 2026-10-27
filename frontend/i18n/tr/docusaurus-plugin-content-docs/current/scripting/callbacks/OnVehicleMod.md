@@ -17,7 +17,7 @@ Bu fonksiyon, herhangi bir araca modifiye uygulandığında çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-Oyun modunda her zaman ilk olarak çağrılır, bu nedenle 0 döndürülürse, diğer filterscriptleri görmesi engellenir.
+Oyun modunda her zaman ilk olarak çağrılır, bu nedenle **0** döndürülürse, diğer filterscriptleri görmesi engellenir.
 
 ## Örnek
 
@@ -39,7 +39,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Bu fonksiyon `AddVehicleComponent` tarafından ÇAĞRILMAZ.
+Bu fonksiyon AddVehicleComponent tarafından ÇAĞRILMAZ.
 
 :::
 

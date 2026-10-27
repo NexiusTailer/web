@@ -8,9 +8,9 @@ description: Remote server administation.
 
 1. உரை திருத்தியைத் திறக்கவும்.
 2. பின்வரும் வரியில் எழுதவும்: `rcon.exe IP PORT RCON-PASS` (உங்கள் சேவையக விவரங்களுடன் IP/PORT/PASS ஐ மாற்றவும்)
-3. கோப்பை `rcon.bat` ஆக சேமிக்கவும்
+3. கோப்பை **rcon.bat** ஆக சேமிக்கவும்
 4. `rcon.exe` அமைந்துள்ள உங்கள் GTA கோப்பகத்தில் கோப்பை வைக்கவும்.
-5. `rcon.bat` ஐ இயக்கவும்
+5. **rcon.bat** ஐ இயக்கவும்
 6. நீங்கள் விரும்பும் கட்டளையை உள்ளிடவும்.
 
 ![Rcon console](https://assets.open.mp/assets/images/server/rcon.jpg)

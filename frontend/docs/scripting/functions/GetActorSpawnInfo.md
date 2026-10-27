@@ -11,14 +11,14 @@ tags: ["actor"]
 
 Get the initial spawn point of the actor.
 
-| Name              | Description                                                                    |
-| ----------------- | ------------------------------------------------------------------------------ |
-| actorid           | The ID of the actor to get the spawn point of                                  |
-| &skin             | A variable into which to store the skin in, passed by reference.               |
-| &Float:spawnX     | A float variable into which to store the `spawnX` in, passed by reference.     |
-| &Float:spawnY     | A float variable into which to store the `spawnY` in, passed by reference.     |
-| &Float:spawnZ     | A float variable into which to store the `spawnZ` in, passed by reference.     |
-| &Float:spawnAngle | A float variable into which to store the `spawnAngle` in, passed by reference. |
+| Name              | Description                                                                  |
+| ----------------- | ---------------------------------------------------------------------------- |
+| actorid           | The ID of the actor to get the spawn point of                                |
+| &skin             | A variable into which to store the skin in, passed by reference.             |
+| &Float:spawnX     | A float variable into which to store the spawnX in, passed by reference.     |
+| &Float:spawnY     | A float variable into which to store the spawnY in, passed by reference.     |
+| &Float:spawnZ     | A float variable into which to store the spawnZ in, passed by reference.     |
+| &Float:spawnAngle | A float variable into which to store the spawnAngle in, passed by reference. |
 
 ## Return Values
 

@@ -42,7 +42,7 @@ public OnEnterExitModShop(playerid, enterexit, interiorid)
 
 ## Callbacks Relacionados
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnEnterExitModShop`:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnEnterExitModShop:
 
 - [OnVehicleMod](OnVehicleMod): Este callback es llamado cuando un vehículo es modificado.
 - [OnVehicleRespray](OnVehicleRespray): Este callback es llamado cuando un jugador sale del taller de modificaciones, incluso si los colores no fueron modificados.
@@ -50,7 +50,7 @@ Los siguientes callbacks pueden ser útiles, ya que están relacionados de algun
 
 ## Funciones Relacionadas
 
-Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con `OnEnterExitModShop`:
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnEnterExitModShop:
 
 - [IsPlayerInModShop](../functions/IsPlayerInModShop): Verifica que un jugador esté en una tienda de modificaciones.
 - [AddVehicleComponent](../functions/AddVehicleComponent): Añade un componente a un vehículo.

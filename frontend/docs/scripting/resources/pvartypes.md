@@ -9,9 +9,9 @@ Types of player variables (also called pvar types) used in [Per-player variable 
 
 :::
 
-| ID  | Definition              |
-| --- | ----------------------- |
-| 0   | `PLAYER_VARTYPE_NONE`   |
-| 1   | `PLAYER_VARTYPE_INT`    |
-| 2   | `PLAYER_VARTYPE_STRING` |
-| 3   | `PLAYER_VARTYPE_FLOAT`  |
+| ID  | Definition            |
+| --- | --------------------- |
+| 0   | PLAYER_VARTYPE_NONE   |
+| 1   | PLAYER_VARTYPE_INT    |
+| 2   | PLAYER_VARTYPE_STRING |
+| 3   | PLAYER_VARTYPE_FLOAT  |

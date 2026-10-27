@@ -7,11 +7,11 @@ tags: []
 
 ## คำอธิบาย
 
-Checks if the given `objectid` is moving.
+Checks if the given objectid is moving.
 
-| Name     | Description                                    |
-| -------- | ---------------------------------------------- |
-| objectid | The `objectid` you want to check if is moving. |
+| Name     | Description                                  |
+| -------- | -------------------------------------------- |
+| objectid | The objectid you want to check if is moving. |
 
 ## ส่งคืน
 

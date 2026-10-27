@@ -12,7 +12,7 @@ Terpanggil ketika pemain mengklik dua kali pemain yang berada di scoreboard.
 | Name            | Description                                                    |
 | --------------- | -------------------------------------------------------------- |
 | playerid        | ID dari pemain yang mengklik pemain yang berada di scoreboard. |
-| clickedplayerid | ID dari pemain yang di klik oleh `playerid`.                   |
+| clickedplayerid | ID dari pemain yang di klik oleh playerid.                     |
 | source          | Sumber yang player klik.                                       |
 
 ## Returns
@@ -39,7 +39,7 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, CLICK_SOURCE:source)
 
 :::note
 
-Saat ini hanya ada satu 'source' (0 - `CLICK_SOURCE_SCOREBOARD`). Keberadaan argumen ini menunjukkan akan adanya sumber lain yang akan didukung di masa depan nanti.
+Saat ini hanya ada satu 'source' (0 - CLICK_SOURCE_SCOREBOARD). Keberadaan argumen ini menunjukkan akan adanya sumber lain yang akan didukung di masa depan nanti.
 
 :::
 

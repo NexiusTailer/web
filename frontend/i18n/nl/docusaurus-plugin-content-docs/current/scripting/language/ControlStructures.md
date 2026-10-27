@@ -19,9 +19,9 @@ if (a == 5)
 }
 ```
 
-De code tussen de haakjes na `if` heet de conditie. Er zijn verschillende dingen waarop je kunt testen (zie operators).
+De code tussen de haakjes na "if" heet de conditie. Er zijn verschillende dingen waarop je kunt testen (zie operators).
 
-In het bovenstaande voorbeeld zijn zowel `a` als 5 symbolen. Functies kunnen ook symbolen zijn:
+In het bovenstaande voorbeeld zijn zowel "a" als 5 symbolen. Functies kunnen ook symbolen zijn:
 
 ```c
 if (SomeFunction() == 5)
@@ -260,7 +260,7 @@ a = (b == 1) ? (2) : ((b == 2) ? (3) : ((b == 3) ? (4) : (5)));
 
 ### while
 
-`while`-lussen voeren code uit zolang de conditie waar is. De conditie is hetzelfde type als bij if en wordt herhaaldelijk gecontroleerd:
+"while"-lussen voeren code uit zolang de conditie waar is. De conditie is hetzelfde type als bij if en wordt herhaaldelijk gecontroleerd:
 
 ```c
 new
@@ -275,7 +275,7 @@ while (a < 10)
 
 ### for()
 
-Een `for`-lus is een compacte vorm van een `while`. Een for-statement heeft drie delen: initialisatie, conditie en finalisatie:
+Een "for"-lus is een compacte vorm van een "while". Een for-statement heeft drie delen: initialisatie, conditie en finalisatie:
 
 ```c
 for (new a = 9; a < 10; a++)

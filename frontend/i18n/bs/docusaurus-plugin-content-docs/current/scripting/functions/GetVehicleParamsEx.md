@@ -41,7 +41,7 @@ GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, object
 
 :::note
 
-Ako se parametar ne postavi (`SetVehicleParamsEx` se prethodno nije koristio), vrijednost će biti -1 ('unset').
+Ako se parametar ne postavi (SetVehicleParamsEx se prethodno nije koristio), vrijednost će biti -1 ('unset').
 
 :::
 

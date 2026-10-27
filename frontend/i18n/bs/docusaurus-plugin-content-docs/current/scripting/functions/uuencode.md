@@ -14,7 +14,7 @@ Kodirajte string u UU dekodirani string.
 | dest[]         | Odredišni string za kodirani tok.                         |
 | const source[] | Izvor, nekodirani string.                                 |
 | numbytes       | Broj bajtova za kodiranje, ovaj ne smije biti veći od 45. |
-| maxlength      | Maksimalna dužina `dest[]` niza.                          |
+| maxlength      | Maksimalna dužina dest[] niza.                            |
 
 ## Returns
 

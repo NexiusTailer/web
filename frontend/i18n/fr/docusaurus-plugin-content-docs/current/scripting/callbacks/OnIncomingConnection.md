@@ -7,7 +7,7 @@ tags: [IP, connexion, joueur]
 
 ## Paramètres
 
-Cette callback est appelée quand une adresse IP tente de se connecter au serveur. Pour bloquer une connexion, utilisez `BlockIpAddress`
+Cette callback est appelée quand une adresse IP tente de se connecter au serveur. Pour bloquer une connexion, utilisez BlockIpAddress
 
 | Nom                   | Description                            |
 | --------------------- | -------------------------------------- |

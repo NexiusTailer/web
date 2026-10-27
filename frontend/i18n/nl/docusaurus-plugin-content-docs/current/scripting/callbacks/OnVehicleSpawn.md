@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Deze callback wordt **alleen** aangeroepen wanneer een voertuig **re**spawnt! `CreateVehicle` en `AddStaticVehicle(Ex)` **triggeren** deze callback **niet**.
+Deze callback wordt **alleen** aangeroepen wanneer een voertuig **re**spawnt! CreateVehicle en AddStaticVehicle(Ex) **triggeren** deze callback **niet**.
 
 :::
 

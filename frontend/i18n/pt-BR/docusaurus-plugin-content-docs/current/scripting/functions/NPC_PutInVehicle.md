@@ -61,7 +61,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - NPC aparecerá instantaneamente no veículo sem entrar na animação
-- Use `NPC_GetVehicleID` para verificar em qual veículo um NPC está
+- Use NPC_GetVehicleID para verificar em qual veículo um NPC está
 - O assento 0 é sempre o assento do motorista
 - Assento máximo ID depende do modelo do veículo
 

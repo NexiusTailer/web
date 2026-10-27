@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 使用 `SPECIAL_ACTION_NONE` 清除当前动作
+- 使用 SPECIAL_ACTION_NONE 清除当前动作
 - 某些动作可能与移动或其他活动冲突
 
 ## 相关函数

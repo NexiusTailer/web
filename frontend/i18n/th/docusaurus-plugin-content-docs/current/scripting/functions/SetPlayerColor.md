@@ -32,13 +32,13 @@ SetPlayerColor(playerid, 4278190335);
 
 :::note
 
-- This function will change player's color for everyone, even if player's color was changed with `SetPlayerMarkerForPlayer` for any other player.
-- If used under `OnPlayerConnect`, the affecting player will not see the color in the TAB menu.
+- This function will change player's color for everyone, even if player's color was changed with SetPlayerMarkerForPlayer for any other player.
+- If used under OnPlayerConnect, the affecting player will not see the color in the TAB menu.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerMarkerForPlayer`: Set a player's marker.
-- `GetPlayerColor`: Check the color of a player.
-- `ChangeVehicleColor`: Set the color of a vehicle.
+- SetPlayerMarkerForPlayer: Set a player's marker.
+- GetPlayerColor: Check the color of a player.
+- ChangeVehicleColor: Set the color of a vehicle.

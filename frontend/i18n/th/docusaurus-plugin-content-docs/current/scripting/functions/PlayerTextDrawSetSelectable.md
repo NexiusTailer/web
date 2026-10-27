@@ -47,7 +47,7 @@ Use [PlayerTextDrawTextSize](PlayerTextDrawTextSize) to define the clickable are
 
 :::warning
 
-`PlayerTextDrawSetSelectable` MUST be used BEFORE the textdraw is shown to the player.
+PlayerTextDrawSetSelectable MUST be used BEFORE the textdraw is shown to the player.
 
 :::
 

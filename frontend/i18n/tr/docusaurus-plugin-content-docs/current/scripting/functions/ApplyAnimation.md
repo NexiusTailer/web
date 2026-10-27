@@ -19,7 +19,7 @@ Bu fonksiyon oyuncuya bir animasyon uygulatmak için kullanılır.
 | lockx      | Eğer **0** seçilirse oyuncuyu animasyondan sonra önceki X koordinatına döndürür. **1** ise döndürmez. (Yürüme animasyonları vb. için) |
 | locky      | Üstteki ile aynı ancak Y ekseni için geçerli                                                                                          |
 | freeze     | Eğer 1 seçilirse oyuncu animasyon sonrasında dondurulur. Eğer 0 seçilirse oyuncu dondurulmaz                                          |
-| time       | Milisaniye cinsinden animasyon süresi (Eğer 0 seçilirse animasyon kaldırılana kadar oynatılır)                                        |
+| time       | Milisaniye cinsinden animasyon süresi (Eğer **0** seçilirse animasyon kaldırılana kadar oynatılır)                                        |
 | forcesync  | Görüş alanındaki oyunculara senkron etmek için 1'i seçin. 2 ise 1'le aynıdır ancak animasyon oynatılan kişiye senkron etmez.          |
 
 ## Çalışınca Vereceği Sonuçlar

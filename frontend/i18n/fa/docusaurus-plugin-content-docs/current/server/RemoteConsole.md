@@ -8,9 +8,9 @@ description: مدیریت راه دور سرور.
 
 1. یک ویرایشگر متن باز کنید.
 2. خط زیر را بنویسید: `rcon.exe IP PORT RCON-PASS` (IP/PORT/PASS را با جزئیات سرور خود جایگزین کنید)
-3. فایل را با نام `rcon.bat` ذخیره کنید
+3. فایل را با نام **rcon.bat** ذخیره کنید
 4. فایل را در دایرکتوری GTA خود جایی که `rcon.exe` قرار دارد قرار دهید.
-5. `rcon.bat` را اجرا کنید
+5. **rcon.bat** را اجرا کنید
 6. دستوری که دوست دارید وارد کنید.
 
 ![کنسول Rcon](https://assets.open.mp/assets/images/server/rcon.jpg)

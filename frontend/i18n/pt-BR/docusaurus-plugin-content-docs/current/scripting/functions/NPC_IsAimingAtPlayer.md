@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Retorna true somente quando NPC tem como alvo específico o determinado jogador
 - Use isto para verificar se um jogador está sendo alvo de um NPC
-- O NPC deve estar usando `NPC_AimAtPlayer` para que isso retorne true
+- O NPC deve estar usando NPC_AimAtPlayer para que isso retorne true
 
 ## Funções Relacionadas
 

@@ -23,7 +23,7 @@ Kreira objekat koji će biti vidljiv samo jednom igraču.
 
 ## Returns
 
-ID objekta koji je kreiran, ili `INVALID_OBJECT_ID` ako je dostignut limit objekata (`MAX_OBJECTS`).
+ID objekta koji je kreiran, ili INVALID_OBJECT_ID ako je dostignut limit objekata (MAX_OBJECTS).
 
 ## Primjeri
 

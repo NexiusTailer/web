@@ -51,7 +51,7 @@ public OnRconCommand(cmd[])
 - 当玩家输入指令时，`/rcon`前缀不会包含在cmd参数中
 - 在此回调中使用`print`函数会同时向玩家聊天框和服务器日志输出信息
 - 仅当玩家已登录RCON管理员时才会触发此回调
-- 玩家使用`/rcon login`登录时会触发[OnRconLoginAttempt](OnRconLoginAttempt)而非此回调
+- 玩家使用**/rcon login**登录时会触发[OnRconLoginAttempt](OnRconLoginAttempt)而非此回调
 
 :::
 

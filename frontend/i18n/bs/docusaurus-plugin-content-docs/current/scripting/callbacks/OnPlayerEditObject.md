@@ -86,7 +86,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-Kada koristite `EDIT_RESPONSE_UPDATE` budite svjesni da ovaj callback neče biti pozvan kada se uređivanje pušta u progres što rezultuje da posljednje ažuriranje `EDIT_RESPONSE_UPDATE` ne bude usklađen sa trenutnom pozicijom objekata.
+Kada koristite 'EDIT_RESPONSE_UPDATE' budite svjesni da ovaj callback neče biti pozvan kada se uređivanje pušta u progres što rezultuje da posljednje ažuriranje 'EDIT_RESPONSE_UPDATE' ne bude usklađen sa trenutnom pozicijom objekata.
 
 :::
 

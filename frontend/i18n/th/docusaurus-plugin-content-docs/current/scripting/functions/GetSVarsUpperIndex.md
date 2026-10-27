@@ -43,5 +43,5 @@ printf("There are %i server-variables set. Upper index (highest ID): %i.", sVarC
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetSVarNameAtIndex`: Get the server variable's name from its index.
-- `GetSVarType`: Get the type of the server variable.
+- GetSVarNameAtIndex: Get the server variable's name from its index.
+- GetSVarType: Get the type of the server variable.

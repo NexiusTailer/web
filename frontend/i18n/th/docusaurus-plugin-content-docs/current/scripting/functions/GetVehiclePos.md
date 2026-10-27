@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetVehicleDistanceFromPoint`: Get the distance between a vehicle and a point.
-- `SetVehiclePos`: Set the position of a vehicle.
-- `GetVehicleZAngle`: Check the current angle of a vehicle.
-- `GetVehicleRotation`: Get the rotation of a vehicle on the XYZ axis.
+- GetVehicleDistanceFromPoint: Get the distance between a vehicle and a point.
+- SetVehiclePos: Set the position of a vehicle.
+- GetVehicleZAngle: Check the current angle of a vehicle.
+- GetVehicleRotation: Get the rotation of a vehicle on the XYZ axis.

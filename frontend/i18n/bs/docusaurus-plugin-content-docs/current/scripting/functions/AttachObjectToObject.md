@@ -25,7 +25,7 @@ Možete koristiti ovu funkciju da prikvačite objekat za drugi objekat. Objekti 
 
 **1**: Funkcija uspješno izvršena.
 
-**0**: Funkcija nije uspjela da se izvrši. Ovo znali da prvi objekat (`objectid`) ne postoji. Ne postoje interne provjere da se potvrdi da li drugi objekat (`attachtoid`) postoji.
+**0**: Funkcija nije uspjela da se izvrši. Ovo znali da prvi objekat (objectid) ne postoji. Ne postoje interne provjere da se potvrdi da li drugi objekat (attachtoid) postoji.
 
 ## Primjeri
 
@@ -40,7 +40,7 @@ AttachObjectToObject(gObjectId, gAttachToId, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 
 :::note
 
-Oba objekta treba stvoriti prije pokušaja da ih prikačite. Ne postoji verzija ove funkcije player-objekta (`AttachPlayerObjectToObject`), što znači da je streameri neće podržati.
+Oba objekta treba stvoriti prije pokušaja da ih prikačite. Ne postoji verzija ove funkcije player-objekta (AttachPlayerObjectToObject), što znači da je streameri neće podržati.
 
 :::
 

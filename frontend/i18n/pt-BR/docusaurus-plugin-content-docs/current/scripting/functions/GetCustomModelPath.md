@@ -12,13 +12,13 @@ tags: ["custom model", "custom skin", "simple model"]
 
 Obtenha um caminho de modelo personalizado.
 
-| Nome      | Descrição                                                         |
-| --------- | ----------------------------------------------------------------- |
-| modelid   | O ID do modelo personalizado do qual obter o caminho.             |
-| dffPath[] | Uma matriz na qual armazenar o `dffPath`, passada por referência. |
-| dffSize   | O comprimento do `dffPath` que deve ser armazenado.               |
-| txdPath[] | Uma matriz na qual armazenar o `txdPath`, passado por referência. |
-| txdSize   | O comprimento do `txdPath` que deve ser armazenado.               |
+| Nome | Descrição |
+| --------- | --------------------------------------------------------------- |
+| modelid | O ID do modelo personalizado do qual obter o caminho.                           |
+| dffPath[] | Uma matriz na qual armazenar o dffPath, passada por referência. |
+| dffSize | O comprimento do dffPath que deve ser armazenado.                |
+| txdPath[] | Uma matriz na qual armazenar o txdPath, passado por referência. |
+| txdSize | O comprimento do txdPath que deve ser armazenado.                |
 
 ## Exemplos
 

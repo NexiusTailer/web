@@ -21,7 +21,7 @@ This function does not return any specific values.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetSVarType`: Get the type of the server variable.
-- `GetSVarInt`: Get a player server as an integer.
-- `GetSVarFloat`: Get the previously set float from a server variable.
-- `GetSVarString`: Get the previously set string from a server variable.
+- GetSVarType: Get the type of the server variable.
+- GetSVarInt: Get a player server as an integer.
+- GetSVarFloat: Get the previously set float from a server variable.
+- GetSVarString: Get the previously set string from a server variable.

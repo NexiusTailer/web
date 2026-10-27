@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 射击时间以每次射击之间的毫秒为单位
-- 使用 `NPC_GetWeaponShootTime` 检查当前射击时间
+- 使用 NPC_GetWeaponShootTime 检查当前射击时间
 
 ## 相关函数
 

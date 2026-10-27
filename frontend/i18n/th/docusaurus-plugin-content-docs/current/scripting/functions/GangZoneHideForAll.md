@@ -7,7 +7,7 @@ tags: ["gangzone"]
 
 ## คำอธิบาย
 
-`GangZoneHideForAll` hides a gangzone from all players.
+GangZoneHideForAll hides a gangzone from all players.
 
 | Name | Description       |
 | ---- | ----------------- |

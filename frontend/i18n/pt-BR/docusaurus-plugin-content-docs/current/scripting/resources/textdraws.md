@@ -86,7 +86,7 @@ Player-textdraws são criados apenas para um jogador específico. Até 256 textd
 - [IsPlayerTextDrawVisible](../functions/IsPlayerTextDrawVisible): Verifica se um player-textdraw é mostrado para o jogador.
 - [IsValidPlayerTextDraw](../functions/IsValidPlayerTextDraw): Verifica se um player-textdraw é válido.
 - [PlayerTextDrawBackgroundColour](../functions/PlayerTextDrawBackgroundColour): Ajusta a cor de fundo de um player-textdraw.
-- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Define a cor da caixa de um textdraw (`PlayerTextDrawUseBox`).
+- [PlayerTextDrawBoxColour](../functions/PlayerTextDrawBoxColour): Define a cor da caixa de um textdraw (PlayerTextDrawUseBox).
 - [PlayerTextDrawColour](../functions/PlayerTextDrawColour): Define a cor do texto de um player-textdraw.
 - [PlayerTextDrawGetAlignment](../functions/PlayerTextDrawGetAlignment): Obtém o alinhamento do texto de um player-textdraw.
 - [PlayerTextDrawGetBackgroundColour](../functions/PlayerTextDrawGetBackgroundColour): Obtém a cor de fundo de um player-textdraw.
@@ -140,7 +140,7 @@ IMPORTANT NOTE: Ainda é necessário um array para a variável, pois o ID dos te
 
 :::
 
-Os nomes das funções diferem apenas ligeiramente, com 'TextDraw' tornando-se 'PlayerTextDraw', com uma exceção: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) (`TextDrawSetString` torna-se `PlayerTextDrawSetString`).
+Os nomes das funções diferem apenas ligeiramente, com 'TextDraw' tornando-se 'PlayerTextDraw', com uma exceção: [CreatePlayerTextDraw](../functions/CreatePlayerTextDraw) ('TextDrawSetString' torna-se 'PlayerTextDrawSetString').
 
 ---
 
@@ -198,7 +198,7 @@ A partir de SA-MP 0.3d, uma nova fonte (id 4) pode ser definida. Isso é usado e
 
 ## Mostrando o desenho do texto
 
-Para este exemplo, o textdraw foi criado globalmente em `OnGameModeInit` e será mostrado ao jogador quando ele entrar no servidor.
+Para este exemplo, o textdraw foi criado globalmente em OnGameModeInit e será mostrado ao jogador quando ele entrar no servidor.
 
 Para mostrar um textdraw para um único jogador, a função [TextDrawShowForPlayer](../functions/TextDrawShowForPlayer) é usada.
 
@@ -215,7 +215,7 @@ Para mostrar um textdraw para um único jogador, a função [TextDrawShowForPlay
 
 Esta função não retorna nenhum valor específico.
 
-O `playerid` é passado por `OnPlayerConnect` e o desenho de texto ID é armazenado na variável `gMyText`.
+O playerid é passado por OnPlayerConnect e o desenho de texto ID é armazenado na variável 'gMyText'.
 
 ```c
 public OnGameModeInit()

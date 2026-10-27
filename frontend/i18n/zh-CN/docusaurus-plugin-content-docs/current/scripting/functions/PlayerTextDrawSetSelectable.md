@@ -53,8 +53,8 @@ public OnPlayerConnect(playerid)
 
 必须遵循以下调用顺序：
 
-1. 先调用 `PlayerTextDrawSetSelectable` 设置可选状态
-2. 再调用 `SelectTextDraw` 启用选择模式
+1. 先调用 PlayerTextDrawSetSelectable 设置可选状态
+2. 再调用 SelectTextDraw 启用选择模式
 3. 最后显示文本绘图
 
 :::

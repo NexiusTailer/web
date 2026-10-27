@@ -7,7 +7,7 @@ tags: ["gangzone"]
 
 ## Description
 
-Ang `GangZoneHideForAll` ay nagtatago ng gangzone mula sa lahat ng mga manlalaro.
+Ang GangZoneHideForAll ay nagtatago ng gangzone mula sa lahat ng mga manlalaro.
 
 | Name | Description          |
 | ---- | -------------------- |

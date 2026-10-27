@@ -12,7 +12,7 @@ Gets a player variable as a string.
 | Name           | Description                                                           |
 | -------------- | --------------------------------------------------------------------- |
 | playerid       | The ID of the player whose player variable to get.                    |
-| varname        | The name of the player variable, set by `SetPVarString`.              |
+| varname        | The name of the player variable, set by SetPVarString.                |
 | &string_return | The array in which to store the string value in, passed by reference. |
 | len            | The maximum length of the returned string.                            |
 
@@ -44,15 +44,15 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-If length of string is zero (value not set), `string_return` text will not be updated or set to anything and will remain with old data, neccesying that you clear the variable to blank value if `GetPVarString` returns 0 if that behavior is undesired
+If length of string is zero (value not set), string_return text will not be updated or set to anything and will remain with old data, neccesying that you clear the variable to blank value if GetPVarString returns 0 if that behavior is undesired
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPVarString`: Set a string for a player variable.
-- `SetPVarInt`: Set an integer for a player variable.
-- `GetPVarInt`: Get the previously set integer from a player variable.
-- `SetPVarFloat`: Set a float for a player variable.
-- `GetPVarFloat`: Get the previously set float from a player variable.
-- `DeletePVar`: Delete a player variable.
+- SetPVarString: Set a string for a player variable.
+- SetPVarInt: Set an integer for a player variable.
+- GetPVarInt: Get the previously set integer from a player variable.
+- SetPVarFloat: Set a float for a player variable.
+- GetPVarFloat: Get the previously set float from a player variable.
+- DeletePVar: Delete a player variable.

@@ -18,7 +18,7 @@ Get the type of an object. (global or player)
 
 ## Returns
 
-`0` - Function failed to execute. The `objectid` or `playerid` specified does not exist.
+`0` - Function failed to execute. The objectid or playerid specified does not exist.
 
 `1` - Global object.
 

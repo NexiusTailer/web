@@ -36,20 +36,20 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 
 :::note
 
-Este callback es llamado cuando un jugador **COMIENZA** a entrar a un vehículo, no cuando este ENTRÓ realmente. Vea `OnPlayerStateChange`. Este callback es igualmente llamado si al jugador se le niega la entrada (ej. el auto está cerrado o lleno).
+Este callback es llamado cuando un jugador **COMIENZA** a entrar a un vehículo, no cuando este ENTRÓ realmente. Vea OnPlayerStateChange. Este callback es igualmente llamado si al jugador se le niega la entrada (ej. el auto está cerrado o lleno).
 
 :::
 
 ## Callbacks Relacionados
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnPlayerEnterVehicle`:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnPlayerEnterVehicle:
 
 - [OnPlayerExitVehicle](OnPlayerExitVehicle): Llamado cuando un jugador sale de un vehiculo.
 - [OnPlayerStateChange](OnPlayerStateChange): Llamado cuando el estado del jugador cambia.
 
 ## Funciones Relacionadas
 
-Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con `OnPlayerEnterVehicle`:
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnPlayerEnterVehicle:
 
 - [PutPlayerInVehicle](../functions/PutPlayerInVehicle): Pone a un jugador adentro de un vehículo.
 - [GetPlayerVehicleSeat](../functions/GetPlayerVehicleSeat): Comprueba en qué asiento está un jugador.

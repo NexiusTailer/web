@@ -17,7 +17,7 @@ Este callback se llama cuando un jugador sale de un taller de modificación, sin
 
 ## Devoluciones
 
-0 - Prevendrá a filterscripts de recibir este callback.
+**0** - Prevendrá a filterscripts de recibir este callback.
 
 Siempre se llama primero en el gamemode.
 
@@ -37,7 +37,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Este callback no es llamado por `ChangeVehicleColor`. Engañosamente, este callback no se llama por pay 'n' spray (solo tiendas de modificación).
+Este callback no es llamado por ChangeVehicleColor. Engañosamente, este callback no se llama por pay 'n' spray (solo tiendas de modificación).
 
 Solución acá: https://pastebin.com/G81da7N1
 

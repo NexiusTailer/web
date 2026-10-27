@@ -34,7 +34,7 @@ This function does not return any specific values.
 
 The values for the placeholders follow in the exact same order as parameters in the call, i.e. `"I am %i years old"` - the `%i` will be replaced with an integer variable, which is the person's age.
 
-You may optionally put a number between the `%` and the letter of the placeholder code. This number indicates the field width; if the size of the parameter to print at the position of the placeholder is smaller than the field width, the field is expanded with spaces. To cut the number of decimal places beeing shown of a float, you can add `.<max number>` between the `%` and the `f`, i.e. `%.2f`.
+You may optionally put a number between the `%` and the letter of the placeholder code. This number indicates the field width; if the size of the parameter to print at the position of the placeholder is smaller than the field width, the field is expanded with spaces. To cut the number of decimal places beeing shown of a float, you can add '.\<max number\>' between the `%` and the `f`, i.e. `%.2f`.
 
 You can also specify a variable field width or precision by using an asterisk (`*`) instead of the number, for example `%*d` or `%.*f`. The width or precision is then taken from an extra argument, passed right before the value it applies to.
 

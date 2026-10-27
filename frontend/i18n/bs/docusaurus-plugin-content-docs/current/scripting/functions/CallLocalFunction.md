@@ -36,7 +36,7 @@ CallLocalFunction("publicFunc", "ifs", 420, 68.999999999, "Hello world");
 
 :::warning
 
-`CallLocalFunction` ruši server ako prosljeđuje prazan string.
+CallLocalFunction ruši server ako prosljeđuje prazan string.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Paramètres
 
-Appelée lorsqu'un joueur prend un pickup crée via `CreatePickup`.
+Appelée lorsqu'un joueur prend un pickup crée via CreatePickup.
 
 | Nom            | Description                          |
 | -------------- | ------------------------------------ |

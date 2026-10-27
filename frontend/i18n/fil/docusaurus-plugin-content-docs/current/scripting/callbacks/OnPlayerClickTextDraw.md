@@ -9,15 +9,15 @@ tags: ["player", "textdraw"]
 
 Ang callback na ito ay natatawag kapag ang player ay pumindot sa isang textdraw o nag cancel sa select mode gamit ang `ESC` key.
 
-| Name      | Description                                                                     |
-| --------- | ------------------------------------------------------------------------------- |
-| playerid  | The ID of the player that clicked on the textdraw.                              |
-| clickedid | The ID of the clicked textdraw. `INVALID_TEXT_DRAW` if selection was cancelled. |
-
-| Pangalan  | Deskripsyon                                                                   |
+| Name      | Description                                                                   |
 | --------- | ----------------------------------------------------------------------------- |
-| playerid  | Ang ID ng player na pumindot sa textdraw.                                     |
-| clickedid | Ang ID ng textdraw na pinindot ng player. `INVALID_TEXT_DRAW` kapag cinancel. |
+| playerid  | The ID of the player that clicked on the textdraw.                            |
+| clickedid | The ID of the clicked textdraw. INVALID_TEXT_DRAW if selection was cancelled. |
+
+| Pangalan  | Deskripsyon                                                                 |
+| --------- | --------------------------------------------------------------------------- |
+| playerid  | Ang ID ng player na pumindot sa textdraw.                                   |
+| clickedid | Ang ID ng textdraw na pinindot ng player. INVALID_TEXT_DRAW kapag cinancel. |
 
 ## Returns
 
@@ -70,7 +70,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Ang napipindot na area ay na dedefine sa `TextDrawTextSize`. Ang x at y na parameter ay napapass sa function na iyon at hindi eto pwedeng maging zero o negative. Wag gamitin ang CancelSelectTextdraw ng hindi alam ang gagawin o walang pasubali sa callback. Magreresulta ito sa infinite na loop.
+Ang napipindot na area ay na dedefine sa TextDrawTextSize. Ang x at y na parameter ay napapass sa function na iyon at hindi eto pwedeng maging zero o negative. Wag gamitin ang CancelSelectTextdraw ng hindi alam ang gagawin o walang pasubali sa callback. Magreresulta ito sa infinite na loop.
 
 :::
 

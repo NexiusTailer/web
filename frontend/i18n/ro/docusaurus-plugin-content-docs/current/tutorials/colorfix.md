@@ -22,7 +22,7 @@ new PlayerColors[] = {
 
 Primul loc care este in partea de sus a scriptului.
 
-Urmatorul loc este sub `OnPlayerConnect` callback:
+Urmatorul loc este sub OnPlayerConnect callback:
 
 ```c
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);

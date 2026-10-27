@@ -15,7 +15,7 @@ Check who a player is aiming at.
 
 ## ส่งคืน
 
-The ID of the target player, or `INVALID_PLAYER_ID` if none.
+The ID of the target player, or INVALID_PLAYER_ID if none.
 
 ## ตัวอย่าง
 
@@ -42,6 +42,6 @@ public OnPlayerUpdate(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetPlayerCameraFrontVector`: Get the player's camera front vector
-- `OnPlayerGiveDamage`: This callback is called when a player gives damage.
-- `OnPlayerTakeDamage`: This callback is called when a player takes damage.
+- GetPlayerCameraFrontVector: Get the player's camera front vector
+- OnPlayerGiveDamage: This callback is called when a player gives damage.
+- OnPlayerTakeDamage: This callback is called when a player takes damage.

@@ -42,19 +42,19 @@ Instruções de controle de fluxo (if, if–else, for, while, do–while e switc
     antes da chave de fechamento de uma instrução composta.
     Uma instrução vazia não termina com um ponto e vírgula.
 
-`assert` _expressão_
+**assert** _expressão_
 
     Aborta o programa com um erro em tempo de execução
     se a expressão resultar logicamente em "falso".
 
-**`break`**
+**break**
 
     Termina e sai da menor instrução do, for ou while
     que a contém de qualquer ponto dentro do loop
     que não seja o final lógico. A instrução break move o controle do programa
     para a próxima instrução fora do loop.
 
-**`continue`**
+**continue**
 
     Termina a iteração atual da menor instrução do, for ou while
     que a contém e move o controle do programa para a parte de condição do loop.
@@ -62,7 +62,7 @@ Instruções de controle de fluxo (if, if–else, for, while, do–while e switc
     o controle move para a terceira expressão na instrução for
     (e depois para a segunda expressão).
 
-`do` _instrução_ `while` ( _expressão_ )
+**do** _instrução_ **while** ( _expressão_ )
 
     Executa uma instrução antes da parte de condição (a cláusula while) ser avaliada.
     A instrução é repetida enquanto a condição for logicamente "verdadeira".
@@ -76,7 +76,7 @@ Instruções de controle de fluxo (if, if–else, for, while, do–while e switc
     ao aplicativo host, ou zero se nenhuma expressão exit estiver presente.
     O significado e propósito dos códigos de saída é definido pela implementação.
 
-`for` ( _expressão 1_ ; _expressão 2_ ; _expressão 3_ ) _instrução_
+**for** ( _expressão 1_ ; _expressão 2_ ; _expressão 3_ ) _instrução_
 
     Todas as três expressões são opcionais.
 
@@ -97,13 +97,13 @@ Instruções de controle de fluxo (if, if–else, for, while, do–while e switc
         para a próxima iteração (condicional) do loop.
         A instrução for( ; ; ) é equivalente a while (true).
 
-`goto` _rótulo_
+**goto** _rótulo_
 
     Move o controle do programa (incondicionalmente) para a instrução que segue o rótulo especificado.
     O rótulo deve estar dentro da mesma função que a
     instrução goto (uma instrução goto não pode saltar para fora de uma função).
 
-`if` ( _expressão_ ) _instrução 1_ `else` _instrução 2_
+**if** ( _expressão_ ) _instrução 1_ **else** _instrução 2_
 
     Executa a instrução 1 se a expressão resultar logicamente em "verdadeiro".
     A cláusula else da instrução if é opcional.
@@ -113,7 +113,7 @@ Instruções de controle de fluxo (if, if–else, for, while, do–while e switc
     Quando instruções if são aninhadas e cláusulas else estão presentes,
     um dado else é associado à instrução if precedente mais próxima no mesmo bloco.
 
-`return` _expressão_
+**return** _expressão_
 
     Termina a função atual e move o controle do programa
     para a instrução que segue a instrução de chamada.
@@ -124,18 +124,18 @@ Instruções de controle de fluxo (if, if–else, for, while, do–while e switc
     que a instrução return se estiver presente.
     Se ausente, o valor da função é zero.
 
-`sleep` _expressão_
+**sleep** _expressão_
 
     Aborta o programa, mas o deixa em um estado reiniciável.
-    A expressão é opcional. Se incluída, a instrução `sleep`
+    A expressão é opcional. Se incluída, a instrução sleep
     retorna o valor da expressão (mais a tag da expressão)
     ao aplicativo host. O significado e propósito
     dos códigos/tags de saída é definido pela implementação;
-    tipicamente, um aplicativo usa a instrução `sleep` para permitir
+    tipicamente, um aplicativo usa a instrução sleep para permitir
     multitarefa leve de vários programas pawn concorrentes,
     ou para implementar funções "latentes".
 
-`state` ( _expressão_ ) **automaton** :_nome_
+**state** ( _expressão_ ) **automaton** :_nome_
 
     Muda o estado atual no autômato especificado.
     A expressão entre parênteses é opcional; se ausente,
@@ -169,7 +169,7 @@ state gps:handshake
     A instrução state causa uma chamada implícita para a
     função entry para o estado indicado — se tal função entry existir.
 
-`switch` ( _expressão_ ) \{ _lista de cases_ \}
+**switch** ( _expressão_ ) \{ _lista de cases_ \}
 
     Transfere o controle para diferentes instruções dentro do corpo do switch dependendo
     do valor da expressão do switch.
@@ -221,7 +221,7 @@ switch (weekday(12,31,1999))
 
 ```
 
-`while` ( _expressão_ ) _instrução_
+**while** ( _expressão_ ) _instrução_
 
     Avalia a expressão e executa a instrução
     se o resultado da expressão for logicamente "verdadeiro".

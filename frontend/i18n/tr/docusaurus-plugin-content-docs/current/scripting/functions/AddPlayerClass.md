@@ -27,7 +27,7 @@ Class seçimine yeni bir class ekler. Kullanıcılar seçtikleri classın skinle
 
 Bu fonksiyon, geri dönüş olarak oluşturulan **classın ID** bilgisini verecektir.
 
-En fazla 320 class olabileceği için, en fazla olarak 319 dönüşünü verecektir.
+En fazla 320 class olabileceği için, en fazla olarak **319** dönüşünü verecektir.
 
 ## Örnekler
 

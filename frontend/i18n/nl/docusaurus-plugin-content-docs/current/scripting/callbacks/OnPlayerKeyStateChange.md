@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer de status van een [ondersteunde](../resources/keys) toets verandert (ingedrukt/losgelaten).<br/>Richtingstoetsen triggeren `OnPlayerKeyStateChange` niet (omhoog/omlaag/links/rechts).
+Deze callback wordt aangeroepen wanneer de status van een [ondersteunde](../resources/keys) toets verandert (ingedrukt/losgelaten).<br/>Richtingstoetsen triggeren OnPlayerKeyStateChange niet (omhoog/omlaag/links/rechts).
 
 | Naam        | Beschrijving                                                                                        |
 | ----------- | --------------------------------------------------------------------------------------------------- |
@@ -30,7 +30,7 @@ Deze callback kan ook door NPC’s worden aangeroepen.
 
 :::tip
 
-Richtingstoetsen triggeren `OnPlayerKeyStateChange` niet (omhoog/omlaag/links/rechts).<br/>Deze zijn alleen te detecteren met [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](../callbacks/OnPlayerUpdate) of een timer).
+Richtingstoetsen triggeren OnPlayerKeyStateChange niet (omhoog/omlaag/links/rechts).<br/>Deze zijn alleen te detecteren met [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](../callbacks/OnPlayerUpdate) of een timer).
 
 :::
 

@@ -9,13 +9,13 @@ tags: ["player"]
 
 Callback ini terpanggil ketika pemain menerima damage.
 
-| Nama            | Deskripsi                                                                   |
-| --------------- | --------------------------------------------------------------------------- |
-| playerid        | ID dari pemain yang mendapatkan damage.                                     |
-| issuerid        | ID dari pemain yang memberikan damage. `INVALID_PLAYER_ID` jika bunuh diri. |
-| Float:amount    | Jumlah damage yang diterima (darah and armour dikombinasikan).              |
-| WEAPON:weaponid | ID dari senjata atau alasan yang digunakan untuk memberi damage.            |
-| bodypart        | Bagian tubuh yang terkena.                                                  |
+| Nama            | Deskripsi                                                                 |
+| --------------- | ------------------------------------------------------------------------- |
+| playerid        | ID dari pemain yang mendapatkan damage.                                   |
+| issuerid        | ID dari pemain yang memberikan damage. INVALID_PLAYER_ID jika bunuh diri. |
+| Float:amount    | Jumlah damage yang diterima (darah and armour dikombinasikan).            |
+| WEAPON:weaponid | ID dari senjata atau alasan yang digunakan untuk memberi damage.          |
+| bodypart        | Bagian tubuh yang terkena.                                                |
 
 ## Returns
 
@@ -66,13 +66,13 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::note
 
-ID senjata akan mengembalikan nilai 37 (flame thrower) dari semua senjata yang menghasilkan api (Seperti molotov, 18). ID senjata akan mengembalikan nilai 51 dari semua senjata yang menghasilkan ledakan(Seperti RPG, grenade) `playerid` adalah satu-satunya yang dapat memanggil callback tersebut. Amount akan selalu memberikan damage maksimal yang bisa dilakukan oleh senjata, meskipun ketika darah yang tersisa kurang dari damage maksimal. Jadi ketika player mempunya 100.0 darah dan mendapatkan tembakan dari Desert Eagle sebagaimana memiliki damage 46.2, Ini hanya memerlukan 3 tembakan untuk membunuh pemain. 3 tembakan tersebut akan memberikan amout sebesar 46.2, meskipun saat tembakan terakhir mengenai, pemain hanya memiliki 7.6 darah tersisa.
+ID senjata akan mengembalikan nilai 37 (flame thrower) dari semua senjata yang menghasilkan api (Seperti molotov, 18). ID senjata akan mengembalikan nilai 51 dari semua senjata yang menghasilkan ledakan(Seperti RPG, grenade) **playerid** adalah satu-satunya yang dapat memanggil callback tersebut. Amount akan selalu memberikan damage maksimal yang bisa dilakukan oleh senjata, meskipun ketika darah yang tersisa kurang dari damage maksimal. Jadi ketika player mempunya 100.0 darah dan mendapatkan tembakan dari Desert Eagle sebagaimana memiliki damage 46.2, Ini hanya memerlukan 3 tembakan untuk membunuh pemain. 3 tembakan tersebut akan memberikan amout sebesar 46.2, meskipun saat tembakan terakhir mengenai, pemain hanya memiliki 7.6 darah tersisa.
 
 :::
 
 :::warning
 
-`GetPlayerHealth` dan `GetPlayerArmour` akan memberikan amount lama dari pemain sebelum memanggil callback ini. **Selalu** cek jika `issuerid` valid sebelum melakukan array index.
+GetPlayerHealth dan GetPlayerArmour akan memberikan amount lama dari pemain sebelum memanggil callback ini. **Selalu** cek jika issuerid valid sebelum melakukan array index.
 
 :::
 

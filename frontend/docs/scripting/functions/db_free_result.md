@@ -13,7 +13,7 @@ This function is deprecated. Please see [DB_FreeResultSet](DB_FreeResultSet).
 
 ## Description
 
-Frees result memory allocated from `db_query`.
+Frees result memory allocated from db_query.
 
 | Name              | Description                                              |
 | ----------------- | -------------------------------------------------------- |
@@ -108,7 +108,7 @@ public OnGameModeExit()
 - [db_get_field_assoc_int](db_get_field_assoc_int): Get content of field as an integer with specified name from current result row
 - [db_get_field_float](db_get_field_float): Get content of field as a float with specified ID from current result row
 - [db_get_field_assoc_float](db_get_field_assoc_float): Get content of field as a float with specified name from current result row
-- [db_get_mem_handle](db_get_mem_handle): Get memory handle for an SQLite database that was opened with `db_open`.
-- [db_get_result_mem_handle](db_get_result_mem_handle): Get memory handle for an SQLite query that was executed with `db_query`.
+- [db_get_mem_handle](db_get_mem_handle): Get memory handle for an SQLite database that was opened with db_open.
+- [db_get_result_mem_handle](db_get_result_mem_handle): Get memory handle for an SQLite query that was executed with db_query.
 - [db_debug_openfiles](db_debug_openfiles): The function gets the number of open database connections for debugging purposes.
 - [db_debug_openresults](db_debug_openresults): The function gets the number of open database results.

@@ -9,10 +9,10 @@ tags: ["player"]
 
 چک می‌کنه که آیا یه بازیکن در کلاینت بازیکن دیگه stream شده یا نه.
 
-| نام         | توضیحات                                                        |
-| ----------- | -------------------------------------------------------------- |
-| playerid    | ID بازیکنی که باید چک بشه که stream شده یا نه.                 |
-| forplayerid | ID بازیکنی که باید چک بشه که `playerid` براش stream شده یا نه. |
+| نام         | توضیحات                                                      |
+| ----------- | ------------------------------------------------------------ |
+| playerid    | ID بازیکنی که باید چک بشه که stream شده یا نه.               |
+| forplayerid | ID بازیکنی که باید چک بشه که playerid براش stream شده یا نه. |
 
 ## مقادیر برگشتی
 
@@ -33,9 +33,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**سرور SA-MP:** بازیکنان اگه بیشتر از 200.0 متر فاصله داشته باشن stream out می‌شن (ببین [server.cfg](../../server/server.cfg) - `stream_distance`)
+**سرور SA-MP:** بازیکنان اگه بیشتر از 200.0 متر فاصله داشته باشن stream out می‌شن (ببین [server.cfg](../../server/server.cfg) - **stream_distance**)
 
-**سرور open.mp:** بازیکنان اگه بیشتر از 200.0 متر فاصله داشته باشن stream out می‌شن (ببین [config.json](../../server/config.json) - `network.stream_radius`)
+**سرور open.mp:** بازیکنان اگه بیشتر از 200.0 متر فاصله داشته باشن stream out می‌شن (ببین [config.json](../../server/config.json) - **network.stream_radius**)
 
 :::
 

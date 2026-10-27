@@ -37,7 +37,7 @@ Esta função não retorna nenhum valor específico.
 
 Os valores dos placeholders seguem exatamente a mesma ordem dos parâmetros na chamada, ou seja, `"I am %i years old"` - o `%i` será substituído por uma variável inteira, que é a idade da pessoa.
 
-Opcionalmente, você pode colocar um número entre `%` e a letra do código do espaço reservado. Este número indica a largura do campo; se o tamanho do parâmetro a ser impresso na posição do placeholder for menor que a largura do campo, o campo será expandido com espaços. Para reduzir o número de casas decimais mostradas em um ponto flutuante, você pode adicionar `.<max number>` entre `%` e `f`, ou seja, `%.2f`.
+Opcionalmente, você pode colocar um número entre `%` e a letra do código do espaço reservado. Este número indica a largura do campo; se o tamanho do parâmetro a ser impresso na posição do placeholder for menor que a largura do campo, o campo será expandido com espaços. Para reduzir o número de casas decimais mostradas em um ponto flutuante, você pode adicionar '.\<max number\>' entre `%` e `f`, ou seja, `%.2f`.
 
 ## Exemplos
 

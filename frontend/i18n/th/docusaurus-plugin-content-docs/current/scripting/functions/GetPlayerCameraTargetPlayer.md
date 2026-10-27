@@ -13,7 +13,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Allows you to retrieve the ID of the player the `playerid` is looking at.
+Allows you to retrieve the ID of the player the playerid is looking at.
 
 | Name     | Description                   |
 | -------- | ----------------------------- |
@@ -21,7 +21,7 @@ Allows you to retrieve the ID of the player the `playerid` is looking at.
 
 ## ส่งคืน
 
-The ID of the player the `playerid` is looking at
+The ID of the player the playerid is looking at
 
 ## ตัวอย่าง
 
@@ -38,7 +38,7 @@ if (IsPlayerAdmin(playerTarget))
 
 :::warning
 
-Do not confuse this function with `GetPlayerTargetPlayer`. `GetPlayerTargetPlayer` returns the ID of the player `playerid` is _aiming_ at (with a weapon). `GetPlayerCameraTargetPlayer` returns the ID of the player `playerid` is _looking_ at (reference point is the **center of the screen**).
+Do not confuse this function with GetPlayerTargetPlayer. GetPlayerTargetPlayer returns the ID of the player playerid is _aiming_ at (with a weapon). GetPlayerCameraTargetPlayer returns the ID of the player playerid is _looking_ at (reference point is the **center of the screen**).
 
 :::
 

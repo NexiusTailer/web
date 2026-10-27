@@ -18,7 +18,7 @@ Ovaj callback je pozvan kada igrač napusti mod shop (respray mod shop), bilo da
 
 ## Returns
 
-Uvijek je pozvan prvo u gamemodeu tako da će return-ovanje 0 ovdje blokirati ostale skripte da ga vide.
+Uvijek je pozvan prvo u gamemodeu tako da će return-ovanje **0** ovdje blokirati ostale skripte da ga vide.
 
 ## Primjeri
 

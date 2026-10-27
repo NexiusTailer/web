@@ -15,7 +15,7 @@ tags: ["player", "actor"]
 | --------------- | ----------------------------------------------------------- |
 | playerid        | شناسه بازیکنی که آسیب زده است.                              |
 | damaged_actorid | شناسه اکتوری که آسیب دیده است.                              |
-| Float:amount    | مقدار سلامتی/زره که `damaged_actorid` از دست داده است.      |
+| Float:amount    | مقدار سلامتی/زره که damaged_actorid از دست داده است.        |
 | WEAPON:weaponid | دلیلی که باعث آسیب شده است.                                 |
 | bodypart        | [قسمت بدن](../resources/bodyparts) که مورد اصابت قرار گرفته |
 

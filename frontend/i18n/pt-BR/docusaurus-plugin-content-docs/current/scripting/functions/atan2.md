@@ -7,7 +7,7 @@ tags: ["math"]
 
 :::warning
 
-Note que o valor `y` é o primeiro parâmetro e o valor `x` é o segundo parâmetro. Isso ocorre porque a notação matemática é y/x (isto é, y dividido por x) e a convenção é escrever os operandos na ordem da operação que é executada sobre eles.
+Note que o valor y é o primeiro parâmetro e o valor x é o segundo parâmetro. Isso ocorre porque a notação matemática é y/x (isto é, y dividido por x) e a convenção é escrever os operandos na ordem da operação que é executada sobre eles.
 
 :::
 

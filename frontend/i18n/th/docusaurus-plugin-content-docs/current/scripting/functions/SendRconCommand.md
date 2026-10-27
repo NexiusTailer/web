@@ -21,9 +21,9 @@ This function always returns **1**.
 
 :::note
 
-- Does not support **login**, due to the lack of a `playerid` parameter.
+- Does not support **login**, due to the lack of a 'playerid' parameter.
 - 'password 0' will remove the server's password if one is set.
-- This function will result in `OnRconCommand` being called.
+- This function will result in OnRconCommand being called.
 
 :::
 
@@ -43,9 +43,9 @@ SendRconCommand(szCmd);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `IsPlayerAdmin`: Checks if a player is logged into RCON.
+- IsPlayerAdmin: Checks if a player is logged into RCON.
 
 ## Related Callbacks
 
-- `OnRconCommand`: Called when an RCON command is sent.
-- `OnRconLoginAttempt`: Called when an attempt to login to RCON is made.
+- OnRconCommand: Called when an RCON command is sent.
+- OnRconLoginAttempt: Called when an attempt to login to RCON is made.

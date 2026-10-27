@@ -10,17 +10,17 @@ tags: ["player", "interpolate"]
 
 Mova a câmera de um jogador de uma posição para outra, dentro do tempo definido. Útil para cenas cortadas com script
 
-| Nome         | Descrição                                                                                                                         |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| playerid     | O ID do jogador para o qual a câmera deve ser movida                                                                              |
-| Float:fromX  | A posição X da qual a câmera deve começar a se mover                                                                              |
-| Float:fromY  | A posição Y da qual a câmera deve começar a se mover                                                                              |
-| Float:fromZ  | A posição Z da qual a câmera deve começar a se mover                                                                              |
-| Float:toX    | A posição X para a qual a câmera deve se mover                                                                                    |
-| Float:toY    | A posição Y para a qual a câmera deve se mover                                                                                    |
-| Float:toZ    | A posição Z para a qual a câmera deve se mover                                                                                    |
-| time         | Tempo em milissegundos                                                                                                            |
-| CAM_MOVE:cut | O [jumpcut](../resources/cameracutstyles) a ser usado. O padrão é `CAMERA_CUT`. Defina como `CAMERA_MOVE` para um movimento suave |
+| Nome | Descrição |
+| ------------ | -------------------------------------------------------------------------------------------------------------------- |
+| playerid | O ID do jogador para o qual a câmera deve ser movida |
+| Float:fromX | A posição X da qual a câmera deve começar a se mover |
+| Float:fromY | A posição Y da qual a câmera deve começar a se mover |
+| Float:fromZ | A posição Z da qual a câmera deve começar a se mover |
+| Float:toX | A posição X para a qual a câmera deve se mover |
+| Float:toY | A posição Y para a qual a câmera deve se mover |
+| Float:toZ | A posição Z para a qual a câmera deve se mover |
+| time | Tempo em milissegundos |
+| CAM_MOVE:cut | O [jumpcut](../resources/cameracutstyles) a ser usado. O padrão é CAMERA_CUT. Defina como CAMERA_MOVE para um movimento suave |
 
 ## Retornos
 

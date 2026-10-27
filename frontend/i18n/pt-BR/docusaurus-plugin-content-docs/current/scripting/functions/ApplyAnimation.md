@@ -35,7 +35,7 @@ ApplyAnimation(playerid, "PED", "WALK_DRUNK", 4.1, 1, 1, 1, 1, 1, 1);
 
 :::note
 
-O parâmetro opcional `forcesync`, cujo padrão é 0, na maioria dos casos não é necessário pois os jogadores sincronizam as animações. O parâmetro `forcesync` pode forçar todos os jogadores que consigam ver o `playerid` a reproduzir a animação, independentemente do jogador estar executando a animação. Isso é útil em circunstâncias em que o jogador não consiga sincronizar a animação sozinho. Por exemplo, eles podem estar em pausa.
+O parâmetro opcional 'forcesync', cujo padrão é 0, na maioria dos casos não é necessário pois os jogadores sincronizam as animações. O parâmetro 'forcesync' pode forçar todos os jogadores que consigam ver o 'playerid' a reproduzir a animação, independentemente do jogador estar executando a animação. Isso é útil em circunstâncias em que o jogador não consiga sincronizar a animação sozinho. Por exemplo, eles podem estar em pausa.
 
 :::
 

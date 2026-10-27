@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Toggle whether a player is in spectator mode or not. While in spectator mode a player can spectate (watch) other players and vehicles. After using this function, either `PlayerSpectatePlayer` or `PlayerSpectateVehicle` needs to be used.
+Toggle whether a player is in spectator mode or not. While in spectator mode a player can spectate (watch) other players and vehicles. After using this function, either PlayerSpectatePlayer or PlayerSpectateVehicle needs to be used.
 
 | Name     | Description                                     |
 | -------- | ----------------------------------------------- |
@@ -35,7 +35,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-When spectator mode is disabled, `OnPlayerSpawn` will automatically be called, if you wish to restore player to state before spectating, you will have to handle that in `OnPlayerSpawn`. Note also, that player can also go to class selection before if they used F4 during spectate, a player also CAN die in spectate mode due to various glitches.
+When spectator mode is disabled, OnPlayerSpawn will automatically be called, if you wish to restore player to state before spectating, you will have to handle that in OnPlayerSpawn. Note also, that player can also go to class selection before if they used F4 during spectate, a player also CAN die in spectate mode due to various glitches.
 
 :::
 

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descriere
 
-Acest callback este apelat atunci când un obiect player este mutat după `MovePlayerObject` (când se oprește din mișcare).
+Acest callback este apelat atunci când un obiect player este mutat după MovePlayerObject (când se oprește din mișcare).
 
 | Name     | Descriere                                  |
 | -------- | ------------------------------------------ |

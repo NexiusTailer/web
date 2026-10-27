@@ -13,7 +13,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Gets the highest `playerid` currently in use on the server.
+Gets the highest playerid currently in use on the server.
 
 | Name | Description |
 | ---- | ----------- |
@@ -33,5 +33,5 @@ FreezeAll()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetVehiclePoolSize`: Gets the highest `vehicleid` currently in use on the server.
-- `GetMaxPlayers`: Gets the maximum number of players that can join the server.
+- GetVehiclePoolSize: Gets the highest vehicleid currently in use on the server.
+- GetMaxPlayers: Gets the maximum number of players that can join the server.

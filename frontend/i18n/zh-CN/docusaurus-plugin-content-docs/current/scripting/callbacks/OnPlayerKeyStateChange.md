@@ -7,7 +7,7 @@ tags: ["玩家"]
 
 ## 描述
 
-当玩家操作任何[受支持按键](../resources/keys)的状态发生改变（按下/释放）时触发此回调。<br/>方向键（上/下/左/右）不会触发 `OnPlayerKeyStateChange`。
+当玩家操作任何[受支持按键](../resources/keys)的状态发生改变（按下/释放）时触发此回调。<br/>方向键（上/下/左/右）不会触发 OnPlayerKeyStateChange。
 
 | 参数     | 说明                                                       |
 | -------- | ---------------------------------------------------------- |
@@ -30,7 +30,7 @@ NPC 也会触发此回调
 
 :::tip
 
-方向键（上/下/左/右）不会触发 `OnPlayerKeyStateChange`<br/>需通过[GetPlayerKeys](../functions/GetPlayerKeys)在[OnPlayerUpdate](OnPlayerUpdate)或定时器中检测
+方向键（上/下/左/右）不会触发 OnPlayerKeyStateChange<br/>需通过[GetPlayerKeys](../functions/GetPlayerKeys)在[OnPlayerUpdate](OnPlayerUpdate)或定时器中检测
 
 :::
 
@@ -58,7 +58,7 @@ NPC 也会触发此回调
 if (newkeys == KEY_FIRE)
 ```
 
-该代码在玩家同时蹲下时失效，因为 `newkeys` 此时包含 `KEY_FIRE` | `KEY_CROUCH`
+该代码在玩家同时蹲下时失效，因为 newkeys 此时包含 KEY_FIRE | KEY_CROUCH
 
 ### 正确检测方式
 
@@ -255,13 +255,13 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 
 HOLDING 检测持续按住状态，PRESSED 检测刚按下状态，RELEASED 检测刚释放状态。通过位掩码的二进制运算实现精确判断：
 
-`KEY_SPRINT` 二进制表示：
+KEY_SPRINT 二进制表示：
 
 ```
 0b00001000
 ```
 
-`KEY_JUMP` 二进制表示：
+KEY_JUMP 二进制表示：
 
 ```
 0b00100000

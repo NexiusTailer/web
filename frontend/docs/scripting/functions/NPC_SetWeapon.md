@@ -50,8 +50,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Setting a weapon will equip the NPC with that weapon
-- Use `NPC_SetAmmo` to provide ammunition for the weapon
-- Use `NPC_GetWeapon` to check current weapon
+- Use NPC_SetAmmo to provide ammunition for the weapon
+- Use NPC_GetWeapon to check current weapon
 
 ## Related Functions
 

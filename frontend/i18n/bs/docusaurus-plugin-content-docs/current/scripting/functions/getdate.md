@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Dobij trenutni datum servera koji će biti pohranjen u varijablama `&year`, `&month` i `&day`.
+Dobij trenutni datum servera koji će biti pohranjen u varijablama &year, &month i &day.
 
 | Ime     | Deskripcija                                                  |
 | ------- | ------------------------------------------------------------ |

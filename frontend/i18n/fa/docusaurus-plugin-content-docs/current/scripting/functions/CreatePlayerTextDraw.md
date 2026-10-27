@@ -68,7 +68,7 @@ Player-textdraw ها هنگام قطع اتصال بازیکن خودکار حذ
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): تنظیم تراز player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): تنظیم فونت player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): تنظیم اندازه حروف متن در player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): تغییر وضعیت outline در player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): تنظیم سایه player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): مقیاس کردن فاصله متن در player-textdraw به نسبت متناسب.
@@ -79,7 +79,7 @@ Player-textdraw ها هنگام قطع اتصال بازیکن خودکار حذ
 - [IsPlayerTextDrawVisible](IsPlayerTextDrawVisible): بررسی اینکه آیا player-textdraw برای بازیکن نمایش داده می‌شود.
 - [IsValidPlayerTextDraw](IsValidPlayerTextDraw): بررسی معتبر بودن player-textdraw.
 - [PlayerTextDrawBackgroundColour](PlayerTextDrawBackgroundColour): تنظیم رنگ پس‌زمینه player-textdraw.
-- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): تنظیم رنگ جعبه textdraw (`PlayerTextDrawUseBox`).
+- [PlayerTextDrawBoxColour](PlayerTextDrawBoxColour): تنظیم رنگ جعبه textdraw (PlayerTextDrawUseBox).
 - [PlayerTextDrawColour](PlayerTextDrawColour): تنظیم رنگ متن player-textdraw.
 - [PlayerTextDrawGetAlignment](PlayerTextDrawGetAlignment): دریافت تراز متن player-textdraw.
 - [PlayerTextDrawGetBackgroundColour](PlayerTextDrawGetBackgroundColour): دریافت رنگ پس‌زمینه player-textdraw.

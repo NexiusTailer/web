@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 在近战攻击动画期间返回 true
-- 近战攻击通过 `NPC_MeleeAttack` 启动
+- 近战攻击通过 NPC_MeleeAttack 启动
 
 ## 相关函数
 

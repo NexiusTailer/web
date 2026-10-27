@@ -72,7 +72,7 @@ Ok, agora que criamos um menu completo com itens, o que deve acontecer quando vo
 new Menu:CurrentMenu = GetPlayerMenu(playerid);
 ```
 
-Agora, quando alguém seleciona algo no menu, o `menuid` será salvo em `CurrentMenu`.
+Agora, quando alguém seleciona algo no menu, o menuid será salvo em `CurrentMenu`.
 
 Agora precisamos verificar se o menu em que selecionaram é o menu que queremos:
 

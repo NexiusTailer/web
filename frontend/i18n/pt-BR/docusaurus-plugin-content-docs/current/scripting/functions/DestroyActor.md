@@ -9,11 +9,11 @@ Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anter
 
 ## Descrição
 
-Destrói um ator que foi criado com `CreateActor`.
+Destrói um ator que foi criado com CreateActor.
 
-| Nome    | Descrição                                                  |
-| ------- | ---------------------------------------------------------- |
-| actorid | O ID do ator a ser destruído. Retornado por `CreateActor`. |
+| Nome    | Descrição                                                |
+| ------- | -------------------------------------------------------- |
+| actorid | O ID do ator a ser destruído. Retornado por CreateActor. |
 
 ## Retorno
 

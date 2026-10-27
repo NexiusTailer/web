@@ -7,7 +7,7 @@ tags: ["gangzone"]
 
 ## Deskripcija
 
-`GangZoneFlashForAll` treperi gangzonu za sve igrače.
+GangZoneFlashForAll treperi gangzonu za sve igrače.
 
 | Ime        | Deskripcija                                                                                                  |
 | ---------- | ------------------------------------------------------------------------------------------------------------ |

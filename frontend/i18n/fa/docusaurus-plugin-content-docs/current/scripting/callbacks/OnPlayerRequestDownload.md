@@ -74,7 +74,7 @@ public OnPlayerRequestDownload(playerid, DOWNLOAD_REQUEST:type, crc)
 
 - [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): پیدا کردن فایل مدل کاستوم اسکین یا شیء ساده موجود.
 - [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): پیدا کردن فایل تکسچر کاستوم اسکین یا شیء ساده موجود.
-- [RedirectDownload](../functions/RedirectDownload): هدایت دانلود `AddCharModel` یا `AddSimpleModel` بازیکن به یک صفحه وب HTTP مشخص
+- [RedirectDownload](../functions/RedirectDownload): هدایت دانلود AddCharModel یا AddSimpleModel بازیکن به یک صفحه وب HTTP مشخص
 
 ## منابع مرتبط
 

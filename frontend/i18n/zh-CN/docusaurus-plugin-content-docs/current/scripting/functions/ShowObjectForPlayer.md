@@ -22,7 +22,7 @@ tags: ["玩家", "物体"]
 
 `true` - 函数执行成功。
 
-`false` - 函数执行失败。指定的 `playerid` 或 `objectid` 不存在。
+`false` - 函数执行失败。指定的 playerid 或 objectid 不存在。
 
 ## 示例
 

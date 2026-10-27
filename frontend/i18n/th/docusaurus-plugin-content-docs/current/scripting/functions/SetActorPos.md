@@ -15,12 +15,12 @@ tags: []
 
 Set the position of an actor.
 
-| Name    | Description                                                            |
-| ------- | ---------------------------------------------------------------------- |
-| actorid | The ID of the actor to set the position of. Returned by `CreateActor`. |
-| X       | The X coordinate to position the actor at.                             |
-| Y       | The Y coordinate to position the actor at.                             |
-| Z       | The Z coordinate to position the actor at.                             |
+| Name    | Description                                                          |
+| ------- | -------------------------------------------------------------------- |
+| actorid | The ID of the actor to set the position of. Returned by CreateActor. |
+| X       | The X coordinate to position the actor at.                           |
+| Y       | The Y coordinate to position the actor at.                           |
+| Z       | The Z coordinate to position the actor at.                           |
 
 ## ส่งคืน
 
@@ -47,11 +47,11 @@ SetActorPos(MyActor, 1.0, 2.0, 3.0);
 
 :::note
 
-When creating an actor with `CreateActor`, you specify it's position. You do not need to use this function unless you want to change its position later.
+When creating an actor with CreateActor, you specify it's position. You do not need to use this function unless you want to change its position later.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetActorPos`: Get the position of an actor.
-- `CreateActor`: Create an actor (static NPC).
+- GetActorPos: Get the position of an actor.
+- CreateActor: Create an actor (static NPC).

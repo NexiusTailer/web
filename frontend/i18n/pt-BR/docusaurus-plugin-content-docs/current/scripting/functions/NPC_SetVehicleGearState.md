@@ -12,10 +12,10 @@ tags: ["npc", "vehicle", "aircraft", "landing gear"]
 
 Define o estado do trem de pouso da aeronave NPC ao pilotar uma aeronave.
 
-| Nome      | Descrição                                                                                       |
-| --------- | ----------------------------------------------------------------------------------------------- |
-| npcid     | O ID do NPC                                                                                     |
-| gearstate | O estado do trem de pouso a ser definido (`LANDING_GEAR_STATE_DOWN` ou `LANDING_GEAR_STATE_UP`) |
+| Nome | Descrição |
+| --------- | -------------------------------------------------------------------------------- |
+| npcid | O ID do NPC |
+| gearstate | O estado do trem de pouso a ser definido (LANDING_GEAR_STATE_DOWN ou LANDING_GEAR_STATE_UP) |
 
 ## Retornos
 
@@ -48,8 +48,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Só funciona quando NPC está pilotando uma aeronave
-- Usa as mesmas constantes que [Estados do trem de pouso do veículo](../resources/landinggearstate): `LANDING_GEAR_STATE_DOWN` e `LANDING_GEAR_STATE_UP`
-- Verifique o estado atual do trem de pouso com `NPC_GetVehicleGearState`
+- Usa as mesmas constantes que [Estados do trem de pouso do veículo](../resources/landinggearstate): LANDING_GEAR_STATE_DOWN e LANDING_GEAR_STATE_UP
+- Verifique o estado atual do trem de pouso com NPC_GetVehicleGearState
 
 ## Funções Relacionadas
 

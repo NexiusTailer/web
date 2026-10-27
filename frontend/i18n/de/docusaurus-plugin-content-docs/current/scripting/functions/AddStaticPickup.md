@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-Diese Funktion gibt keine ID zurück, mit der auf das Objekt zugegriffen werden kann (z.B. in `OnPlayerPickUpPickup`). Nutze stattdessen `CreatePickup` wenn du mit der ID arbeiten möchtest.
+Diese Funktion gibt keine ID zurück, mit der auf das Objekt zugegriffen werden kann (z.B. in OnPlayerPickUpPickup). Nutze stattdessen CreatePickup wenn du mit der ID arbeiten möchtest.
 
 :::
 

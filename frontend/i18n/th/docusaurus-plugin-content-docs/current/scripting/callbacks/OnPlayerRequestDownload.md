@@ -65,4 +65,4 @@ public OnPlayerRequestDownload(playerid, type, crc)
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Called when a player finishes downloading custom models.
 - [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Find an existing custom skin or simple object model file.
 - [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Find an existing custom skin or simple object texture file.
-- `RedirectDownload`: Redirect a player's custom `AddCharModel` or `AddSimpleModel` download to a specific HTTP webpage.
+- RedirectDownload: Redirect a player's custom AddCharModel or AddSimpleModel download to a specific HTTP webpage.

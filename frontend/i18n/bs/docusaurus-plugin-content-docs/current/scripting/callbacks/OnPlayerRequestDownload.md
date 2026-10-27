@@ -65,4 +65,4 @@ public OnPlayerRequestDownload(playerid, type, crc)
 - [OnPlayerFinishedDownloading](OnPlayerFinishedDownloading): Pozvano kada igrač završi sa preuzimanjem custom modela.
 - [FindModelFileNameFromCRC](../functions/FindModelFileNameFromCRC): Pronađite postojeću prilagođenu kožu ili datoteku jednostavnog objektnog modela.
 - [FindTextureFileNameFromCRC](../functions/FindTextureFileNameFromCRC): Pronađite postojeću prilagođenu datoteku teksture kože ili jednostavnog objekta.
-- [RedirectDownload](../functions/RedirectDownload): Preusmjerite preuzimanje prilagođenog `AddCharModel` ili `AddSimpleModel` uređaja na određenu HTTP web stranicu.
+- [RedirectDownload](../functions/RedirectDownload): Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja na određenu HTTP web stranicu.

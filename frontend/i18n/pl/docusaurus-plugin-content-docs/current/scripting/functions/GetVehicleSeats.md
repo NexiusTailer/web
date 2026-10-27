@@ -9,7 +9,7 @@ tags: ["vehicle"]
 
 ## Opis
 
-Pobiera najwyższe `seatid` w pojeździe.
+Pobiera najwyższe seatid w pojeździe.
 
 | Name    | Description        |
 | ------- | ------------------ |
@@ -17,7 +17,7 @@ Pobiera najwyższe `seatid` w pojeździe.
 
 ## Wartości zwrotne
 
-Najwyższe `seatid` pojazdu.
+Najwyższe seatid pojazdu.
 
 **255** gdy model jest niepoprawny.
 

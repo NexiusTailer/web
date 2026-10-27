@@ -85,7 +85,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Edities moeten worden weggegooid als `response` '0' was (geannuleerd). Dit moet worden gedaan door de offsets etc. op te slaan in een array VOOR het gebruik van [EditAttachedObject](../functions/EditAttachedObject).
+Edities moeten worden weggegooid als response '0' was (geannuleerd). Dit moet worden gedaan door de offsets etc. op te slaan in een array VOOR het gebruik van [EditAttachedObject](../functions/EditAttachedObject).
 
 :::
 

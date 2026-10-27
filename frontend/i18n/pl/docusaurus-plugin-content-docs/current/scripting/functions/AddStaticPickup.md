@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-Ta funkcja nie zwraca ID pickupu, którego możesz użyć na przykład w `OnPlayerPickUpPickup`. Użyj `CreatePickup`, jeżeli chcesz przypisać ID.
+Ta funkcja nie zwraca ID pickupu, którego możesz użyć na przykład w OnPlayerPickUpPickup. Użyj CreatePickup, jeżeli chcesz przypisać ID.
 
 :::
 

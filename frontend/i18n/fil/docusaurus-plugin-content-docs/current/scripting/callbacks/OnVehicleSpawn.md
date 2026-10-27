@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Ang callback na ito ay tinatawag **lamang** kapag ang sasakyan ay **muling** umusbong! `CreateVehicle` at `AddStaticVehicle(Ex)` ay **hindi** magti-trigger ng callback na ito.
+Ang callback na ito ay tinatawag **lamang** kapag ang sasakyan ay **muling** umusbong! CreateVehicle at AddStaticVehicle(Ex) ay **hindi** magti-trigger ng callback na ito.
 
 :::
 

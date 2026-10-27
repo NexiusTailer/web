@@ -71,7 +71,7 @@ public UpdateVehicleHealthTextDraw(playerid)
 
 :::tip
 
-修改文本内容后无需重新调用 `PlayerTextDrawShow` 即可生效
+修改文本内容后无需重新调用 PlayerTextDrawShow 即可生效
 
 :::
 

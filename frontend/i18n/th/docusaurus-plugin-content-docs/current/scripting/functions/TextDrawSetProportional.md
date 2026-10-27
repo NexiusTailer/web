@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## คำอธิบาย
 
-Appears to scale text spacing to a proportional ratio. Useful when using `TextDrawLetterSize` to ensure the text has even character spacing.
+Appears to scale text spacing to a proportional ratio. Useful when using TextDrawLetterSize to ensure the text has even character spacing.
 
 | Name | Description                                          |
 | ---- | ---------------------------------------------------- |

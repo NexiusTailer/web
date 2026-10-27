@@ -8,7 +8,7 @@ tags: ["textdraw"]
 
 ## Descrição
 
-Ajusta a cor da caixa de texto (usado apenas se o parâmetro 'use' de `TextDrawUseBox` for 'true').
+Ajusta a cor da caixa de texto (usado apenas se o parâmetro 'use' de TextDrawUseBox for 'true').
 
 | Nome | Descrição |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

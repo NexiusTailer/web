@@ -81,7 +81,7 @@ public OnGameModeExit()
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): Obtém conteúdo do campo como inteiro pelo nome
 - [DB_GetFieldFloat](DB_GetFieldFloat): Obtém conteúdo do campo como float pelo índice
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): Obtém conteúdo do campo como float pelo nome
-- [DB_GetMemHandle](DB_GetMemHandle): Obtém handle de memória do banco aberto com `DB_Open`
-- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): Obtém handle de memória do resultado `DB_ExecuteQuery`
+- [DB_GetMemHandle](DB_GetMemHandle): Obtém handle de memória do banco aberto com DB_Open
+- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): Obtém handle de memória do resultado DB_ExecuteQuery
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): Número de conexões abertas
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): Número de resultados abertos

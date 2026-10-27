@@ -77,7 +77,7 @@ all return statements must specify an array with the same size and the same dime
 
 • Function arguments (call-by-value versus call-by-reference)
 
-The `faculty` function in the next program has one parameter which it uses
+The “faculty” function in the next program has one parameter which it uses
 in a loop to calculate the faculty of that number. What deserves attention is
 that the function modifies its argument.
 
@@ -108,11 +108,11 @@ faculty(n)
 
 ```
 
-Whatever (positive) value that `n` had at the entry of the while
-loop in function faculty, `n` will be zero at the end of the loop. In the case of the
-faculty function, the parameter is passed “by value”, so the change of `n`
-is local to the faculty function. In other words, function main passes `v` as
-input to function faculty, but upon return of faculty, `v` still has the same
+Whatever (positive) value that “n” had at the entry of the while
+loop in function faculty, “n” will be zero at the end of the loop. In the case of the
+faculty function, the parameter is passed “by value”, so the change of “n”
+is local to the faculty function. In other words, function main passes “v” as
+input to function faculty, but upon return of faculty, “v” still has the same
 value as before the function call.
 
 Arguments that occupy a single cell can be passed by value or by reference.
@@ -162,7 +162,7 @@ array initiallers: a literal string or the series of array indices enclosed in b
 (see page 99; the ellipsis for progressive initiallers cannot be used). Literal
 arrays can only have a single dimension.
 
-The following snippet calls addvector to add five to every element of the array `vect`:
+The following snippet calls addvector to add five to every element of the array “vect”:
 
 Listing: addvector usage
 
@@ -176,7 +176,7 @@ addvector(vect, {5, 5, 5}, 3)
 
 ```
 
-The invocation of function `printf` with the string "Hello world\n" in the first
+The invocation of function printf with the string "Hello world\n" in the first
 ubiquitous program is another example of passing a literal array to a function.
 
 ---
@@ -247,14 +247,14 @@ cedure call” syntax. You can use it only if:
 - the first parameter is on the same line as the function name, unless you use named parameters (see the next section).
 
 As you may observe, the procedure call syntax applies to cases where a function
-call behaves rather as a statement, like in the calls to `print` and `printf` in the
+call behaves rather as a statement, like in the calls to print and printf in the
 preceding example. The syntax is aimed at making such statements appear less
 cryptic and friendlier to read, but not that the use of the syntax is optional.
 
 As a side note, all parentheses in the example program presented in this section
-are required: the return values of the calls to `getvalue` are stored  
+are required: the return values of the calls to getvalue are stored  
 in two variables, and therefore an empty pair of parentheses must follow the function
-name. Function `getvalue` has optional parameters, but none are passed in this example program.
+name. Function getvalue has optional parameters, but none are passed in this example program.
 
 ---
 
@@ -429,11 +429,11 @@ addvector(a[], const b[] = {1, 1, 1}, size = 3)
 
 A default value of a function argument must be a constant, and its value is
 determined at the point of the function’s declaration. Using the  
-`sizeof` operator to set the default value of a function argument is a special case: the
+“sizeof” operator to set the default value of a function argument is a special case: the
 calculation of the value of the sizeof expression is delayed to the point of the
 function call and it takes the size of the actual argument rather than that of
 the formal argument. When the function is used several times in a program,
-with different arguments, the outcome of the `sizeof` expression is potentially
+with different arguments, the outcome of the “sizeof” expression is potentially
 different at every call —which means that the “default value” of the function
 argument may change.
 
@@ -498,12 +498,12 @@ the random numbers should be stored, and the upper bound “52”. The number of
 random numbers to draw (“10”) is passed implicitly to FillRandom.
 
 The definition of function FillRandom below main specifies for its third param-
-eter `Number = sizeof Series`, where “Series” refers to the first parameter
+eter “Number = sizeof Series”, where “Series” refers to the first parameter
 of the function. Due to the special case of a “sizeof default value”, the
 default value of the Number argument is not the size of the formal argument Series,
 but that of the actual argument at the point of the function call: HandOfCards.
 
-Note that inside function FillRandom, asking the `sizeof` the function ar-
+Note that inside function FillRandom, asking the “sizeof” the function ar-
 gument Series would (still) evaluate in zero, because the Series array  
 is declared with unspecified length (see page 109 for the behaviour of sizeof).
 Using sizeof as a default value for a function argument is a specific case. If
@@ -613,7 +613,7 @@ intersection(dest[rectangle], const src1[rectangle], const src2[rectangle])
 A function that takes a variable number of arguments, uses the “ellipsis” oper-
 ator (“...”) in the function header to denote the position of the first variable
 argument. The function can access the arguments with the predefined func-
-tions `numargs`, `getarg` and `setarg` (see page 124).
+tions numargs, getarg and setarg (see page 124).
 
 Function sum returns the summation of all of its parameters.
 It uses a variable length parameter list.
@@ -645,8 +645,8 @@ new v = sum(1, 2, 3, 4, 5)
 A tag may precede the ellipsis to enforce that all subsequent parameters have the same tag, but otherwise there is no error
 checking with a variable argument list and this feature should therefore be used with caution.
 
-The functions `getarg` and `setarg` assume that the argument is passed “by
-reference”. When using `getarg` on normal function parameters (instead of
+The functions getarg and setarg assume that the argument is passed “by
+reference”. When using getarg on normal function parameters (instead of
 variable arguments) one should be cautious of this, as neither the compiler nor
 the abstract machine can check this. Actual parameters that are passed
 as part of a “variable argument list” are always passed by reference.
@@ -795,7 +795,7 @@ one of the public functions. A function library may have a main function to
 perform one-time initialization at startup.
 
 To make a function public, prefix the function name with the keyword public.
-For example, a text editor may call the public function `onkey` for every key
+For example, a text editor may call the public function “onkey” for every key
 that the user typed in, so that the user can change (or reject) keystrokes. The
 onkey function below would replace every “~” character (code 126 in the ISO
 Latin-1 character set) by the “hard space” code in the ANSI character table:
@@ -849,11 +849,11 @@ values in public function arguments only pops up in the case that you wish to ca
 When the function name is prefixed with the keyword static, the scope of the
 function is restricted to the file that the function resides in.
 
-The static attribute can be combined with the `stock` attribute.
+The static attribute can be combined with the “stock” attribute.
 
 ### • Stock functions
 
-A `stock` function is a function that the pawn parser must “plug into” the
+A “stock” function is a function that the pawn parser must “plug into” the
 program when it is used, and that it may simply “remove” from the program
 (without warning) when it is not used. Stock functions allow a compiler or
 interpreter to optimize the memory footprint and the file size of a (compiled)
@@ -861,17 +861,17 @@ pawn program: any stock function that is not referred to, is completely skipped
 —as if it were lacking from the source file.
 
 A typical use of stock functions, hence, is in the creation of a set of
-“library” functions. A collection of general purpose functions, all marked as `stock` may
+“library” functions. A collection of general purpose functions, all marked as “stock” may
 be put in a separate include file, which is then included in any pawn  
 script. Only the library functions that are actually used get “linked” in.
 
 To declare a stock function, prefix the function name with the keyword stock.
-Public functions and native functions cannot be declared `stock`.
+Public functions and native functions cannot be declared “stock”.
 
 When a stock function calls other functions, it is usually a good practice to
-declare those other functions as `stock` too —with the exception of  
+declare those other functions as “stock” too —with the exception of  
 native functions. Similarly, any global variables that are used by a stock
-function should in most cases also be defined `stock`. The removal of unused (stock)
+function should in most cases also be defined “stock”. The removal of unused (stock)
 functions can cause a chain reaction in which other functions and global vari-
 ables are not longer accessed either. Those functions are then removed as well,
 thereby continuing the chain reaction until only the functions that are used,
@@ -905,7 +905,7 @@ native openfile(const name[])
 
 ```
 
-The names `getparam`, `multiply_matrix` and `openfile` are the internal
+The names “getparam”, “multiply_matrix” and “openfile” are the internal
 names of the native functions; these are the names by which the  
 functions are known in the pawn program. Optionally, you may also set an external
 name for the native function, which is the name of the function as the “host application” knows it.
@@ -953,8 +953,8 @@ Tags: 68 The meaning of a value in a cell depends on the particular application 
 not always be a signed integer value. pawn allows to attach a “meaning” to a cell with its “tag” mechanism.
 
 Based on tags, pawn also allows you to redefine operators for cells  
-with a specific purpose. The example below defines a tag `ones` and an  
-operator to add two `ones` values together (the example also implements  
+with a specific purpose. The example below defines a tag “ones” and an  
+operator to add two “ones” values together (the example also implements  
 operators for subtraction and negation). The example was inspired by the checksum
 algorithm of several protocols in the TCP/IP protocol suite: it simulates one’s
 complement arithmetic by adding the carry bit of an arithmetic overflow back
@@ -1026,7 +1026,7 @@ stock ones: operator-(ones: a, ones: b)
 
 ```
 
-The notable line in the example is the line `chksum = chksum + value` in
+The notable line in the example is the line “chksum = chksum + value” in
 the loop in function main. Since both the variables chksum and value have
 the tag ones, the “+” operator refers to the user-defined operator  
 (instead of the default “+” operator). User-defined operators are merely a notational
@@ -1062,7 +1062,7 @@ A redefined operator must adhere to the following restrictions:
 
 In the example given above, both arguments of the binary operators have the
 same tag. This is not required; you may, for example, define a  
-binary “+” operator that adds an integer value to a `ones:` number.
+binary “+” operator that adds an integer value to a “ones:” number.
 
 Au fond, the operation of the pawn parser is to look up the tag(s)
 of the operand(s) that the operator works on and to look up whether a user-defined
@@ -1071,8 +1071,8 @@ the parser recognizes special situations and provides the following features:
 
 The parser recognizes operators like “+=” as a sequence of “+” and  
 “=” and it will call a user-defined operator “+” if available and/or a user-defined
-operator “=”. In the example program, the line `chksum = chksum + value`
-might have been abbreviated to `chksum += value`.
+operator “=”. In the example program, the line “chksum = chksum + value”
+might have been abbreviated to “chksum += value”.
 
 The parser recognizes commutative operators (“+”, “\*”, “==”, and “!=”)
 and it will swap the operands of a commutative operator if that produces
@@ -1089,13 +1089,13 @@ operator should not be commutative).
 
 - Prefix and postfix operators are handled automatically. You only need to define one user operator for the “++” and “--” operators for a tag.
 
-- The parser calls the “!” operator implicitly in case of a test without explicit comparison. For example, in the statement `if (var) ...` when `var` has tag `ones:`, the user-defined operator “!” will be called for var. The “!” operator thus doubles as a “test for zero” operator. (In one’s complement arithmetic, both the “all-ones” and the “all-zeros” bit patterns represent zero.)
+- The parser calls the “!” operator implicitly in case of a test without explicit comparison. For example, in the statement “if (var) ...” when “var” has tag “ones:”, the user-defined operator “!” will be called for var. The “!” operator thus doubles as a “test for zero” operator. (In one’s complement arithmetic, both the “all-ones” and the “all-zeros” bit patterns represent zero.)
 
 - The user-defined assignment operator is implicitly called for a function argument that is passed “by value” when the tag names of the formal and the actual arguments match the tag names of the left and right hand sides of the operator. In other words, the pawn parser simulates that “pass by value” happens through assignment. The user-defined operator is not called for function arguments that are passed “by reference”.
 
 - If you wish to forbid an operation, you can “forward declare” the operator without ever defining it (see page 82). This will flag an error when the user-defined operator is invoked. For example, to forbid the “%” operator (remainder after division) on floating point values, you can add the line: `forward Float: operator%(Float: a, Float: b)`
 
-User-defined operators can optionally be declared `stock` or `native`. In the case of a native operator function, the definition should include an external name. For example (when, on the host’s side, the native function is called float_add):
+User-defined operators can optionally be declared “stock” or “native”. In the case of a native operator function, the definition should include an external name. For example (when, on the host’s side, the native function is called float_add):
 
 Listing: native operator+ function
 
@@ -1129,7 +1129,7 @@ parser uses the tags of the argument and the return value to find a matching use
 The example function above is a typical application for a user-defined assign-
 ment operator: to automatically coerce/convert an untagged value to a tagged
 value, and to optionally change the memory representation of the value in the
-process. Specifically, the statement `new ones:A = -5` causes the user-defined
+process. Specifically, the statement “new ones:A = -5” causes the user-defined
 operator to run, and for the constant -5 the operator will return “~(- -5)”, or ~5, or −6.∗
 
 ---
@@ -1208,7 +1208,7 @@ native Fixed: operator=(oper) = fixed
 
 ```
 
-With this definition, you can say `new Fixed: fract = 3` and the value
+With this definition, you can say “new Fixed: fract = 3” and the value
 will be transformed to 3.000 when it is stored in variable fract. As explained
 in the section on user-defined operators, the assignment operator also runs for
 function arguments that are passed by value. In the expression “new Fixed:

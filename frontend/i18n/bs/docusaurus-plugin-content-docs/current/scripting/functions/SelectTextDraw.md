@@ -44,7 +44,7 @@ TEKST će biti istaknut kada zadržite pokazivač, a NE okvir (ako je jedan prik
 ## Srodne Funkcije
 
 - [CancelSelectTextDraw](CancelSelectTextDraw): Prekida selekciju textdrawa sa mišem.
-- [TextDrawSetSelectable](TextDrawSetSelectable): Postavlja da li je textdraw klikljiv prilikom `SelectTextDraw`.
-- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Postavlja da li je player-textdraw klikljiv prilikom `SelectTextDraw`.
+- [TextDrawSetSelectable](TextDrawSetSelectable): Postavlja da li je textdraw klikljiv prilikom **SelectTextDraw**.
+- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): Postavlja da li je player-textdraw klikljiv prilikom **SelectTextDraw**.
 - [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw): Pozvano kada igrač klikne na textdraw.
 - [OnPlayerClickPlayerTextDraw](../callbacks/OnPlayerClickPlayerTextDraw): Pozvano kada igrač klikne na player-textdraw.

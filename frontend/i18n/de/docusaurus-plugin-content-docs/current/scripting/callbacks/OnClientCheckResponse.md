@@ -7,7 +7,7 @@ tags: []
 
 ## Beschreibung
 
-Dieses Callback wird ausgeführt wenn ein `SendClientCheck` Request abgeschlossen ist.
+Dieses Callback wird ausgeführt wenn ein SendClientCheck Request abgeschlossen ist.
 
 | Name     | Beschreibung                            |
 | -------- | --------------------------------------- |

@@ -45,7 +45,7 @@ public OnPlayerConnect(playerid)
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): 创建玩家文本绘图
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): 销毁玩家文本绘图
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): 设置玩家文本绘图文本尺寸（或 `PlayerTextDrawSetSelectable` 的可点击区域）
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): 设置玩家文本绘图文本尺寸（或 PlayerTextDrawSetSelectable 的可点击区域）
 - [PlayerTextDrawColor](PlayerTextDrawColor): 设置玩家文本绘图的文本颜色
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): 设置玩家文本绘图方框颜色
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): 设置玩家文本绘图背景颜色

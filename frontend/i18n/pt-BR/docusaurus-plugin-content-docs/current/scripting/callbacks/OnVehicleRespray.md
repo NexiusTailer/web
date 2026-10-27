@@ -18,7 +18,7 @@ Essa callback é chamada quando um jogador sai de uma Garagem de Personalizaçã
 
 ## Retornos
 
-Sempre é chamada primeiro no Gamemode então retornar 0 lá bloqueia Filterscripts de chamarem ela.
+Sempre é chamada primeiro no Gamemode então retornar **0** lá bloqueia Filterscripts de chamarem ela.
 
 ## Exemplos
 
@@ -36,7 +36,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Essa callback não é chamada ao usar `ChangeVehicleColor`. Estranhamente, não é chamada também ao ir em uma Oficina de Pintura (só Garagens de Personalização).
+Essa callback não é chamada ao usar ChangeVehicleColor. Estranhamente, não é chamada também ao ir em uma Oficina de Pintura (só Garagens de Personalização).
 
 Código para conserto: https://pastebin.com/G81da7N1
 

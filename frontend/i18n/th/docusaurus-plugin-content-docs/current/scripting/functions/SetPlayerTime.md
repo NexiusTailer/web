@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Sets the game time for a player. If a player's clock is enabled (`TogglePlayerClock`) the time displayed by it will update automatically.
+Sets the game time for a player. If a player's clock is enabled (TogglePlayerClock) the time displayed by it will update automatically.
 
 | Name     | Description                                   |
 | -------- | --------------------------------------------- |
@@ -32,12 +32,12 @@ SetPlayerTime(playerid, 0, 0); // Midnight
 
 :::note
 
-Using this function under `OnPlayerConnect` doesn't work.
+Using this function under OnPlayerConnect doesn't work.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetWorldTime`: Set the global server time.
-- `GetPlayerTime`: Get the time of a player.
-- `TogglePlayerClock`: Toggle the clock in the top-right corner.
+- SetWorldTime: Set the global server time.
+- GetPlayerTime: Get the time of a player.
+- TogglePlayerClock: Toggle the clock in the top-right corner.

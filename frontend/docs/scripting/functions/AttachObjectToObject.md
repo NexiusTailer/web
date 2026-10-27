@@ -25,7 +25,7 @@ You can use this function to attach objects to other objects. The objects will f
 
 **true** - The function executed successfully.
 
-**false** - The function failed to execute. This means the first object (`objectid`) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
+**false** - The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
 
 ## Examples
 

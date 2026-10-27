@@ -51,5 +51,5 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetVehicleZAngle`: Check the current angle of a vehicle.
-- `SetVehiclePos`: Set the position of a vehicle.
+- GetVehicleZAngle: Check the current angle of a vehicle.
+- SetVehiclePos: Set the position of a vehicle.

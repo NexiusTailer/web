@@ -12,13 +12,13 @@ tags: ["player"]
 
 Obtenha os limites mundiais de um jogador.
 
-| Nome        | Descrição                                                                             |
-| ----------- | ------------------------------------------------------------------------------------- |
-| playerid    | O ID do jogador.                                                                      |
-| &Float:maxX | Uma variável float na qual armazenar a coordenada `maxX`, passada por referência.     |
-| &Float:minX | Uma variável flutuante na qual armazenar a coordenada `minX`, passada por referência. |
-| &Float:maxY | Uma variável flutuante na qual armazenar a coordenada `maxY`, passada por referência. |
-| &Float:minY | Uma variável flutuante na qual armazenar a coordenada `minY`, passada por referência. |
+| Nome | Descrição |
+| ----------- | ---------------------------------------------------------------------------- |
+| playerid | O ID do jogador.                                                        |
+| &Float:maxX | Uma variável float na qual armazenar a coordenada maxX, passada por referência. |
+| &Float:minX | Uma variável flutuante na qual armazenar a coordenada minX, passada por referência. |
+| &Float:maxY | Uma variável flutuante na qual armazenar a coordenada maxY, passada por referência. |
+| &Float:minY | Uma variável flutuante na qual armazenar a coordenada minY, passada por referência. |
 
 ## Retornos
 

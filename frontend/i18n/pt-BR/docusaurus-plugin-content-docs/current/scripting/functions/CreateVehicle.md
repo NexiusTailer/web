@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Descrição
 
-Cria um veículo no mundo. Pode ser usado no lugar de `AddStaticVehicleEx` a qualquer momento no script.
+Cria um veículo no mundo. Pode ser usado no lugar de AddStaticVehicleEx a qualquer momento no script.
 
 | Nome                                   | Descrição                                                                                                                      |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -23,9 +23,9 @@ Cria um veículo no mundo. Pode ser usado no lugar de `AddStaticVehicleEx` a qua
 
 ## Retornos
 
-O ID do veículo criado (1 até `MAX_VEHICLES`).
+O ID do veículo criado (1 até MAX_VEHICLES).
 
-`INVALID_VEHICLE_ID` (65535) se o veículo não for criado (limite de veículos atingido ou modelo de veículo inválido).
+INVALID_VEHICLE_ID (65535) se o veículo não for criado (limite de veículos atingido ou modelo de veículo inválido).
 
 **0** se o veículo não for criado (IDs 538 ou 537 passado, que são trens).
 

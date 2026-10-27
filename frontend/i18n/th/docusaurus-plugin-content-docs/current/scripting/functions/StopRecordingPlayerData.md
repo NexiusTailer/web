@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Stops all the recordings that had been started with `StartRecordingPlayerData` for a specific player.
+Stops all the recordings that had been started with StartRecordingPlayerData for a specific player.
 
 | Name     | Description                                    |
 | -------- | ---------------------------------------------- |

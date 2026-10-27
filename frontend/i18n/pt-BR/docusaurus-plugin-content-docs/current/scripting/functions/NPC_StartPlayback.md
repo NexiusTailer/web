@@ -67,8 +67,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - O arquivo de gravação deve existir no diretório `npcmodes\recordings`
-- Se `autoUnload` for true, a gravação será descarregada quando a reprodução terminar
-- Use `NPC_StartPlaybackEx` para melhor controle com gravações pré-carregadas
+- Se autoUnload for true, a gravação será descarregada quando a reprodução terminar
+- Use NPC_StartPlaybackEx para melhor controle com gravações pré-carregadas
 
 ## Funções Relacionadas
 

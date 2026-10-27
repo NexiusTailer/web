@@ -11,13 +11,13 @@ tags: ["custom model", "custom skin", "simple model"]
 
 Get a custom model path.
 
-| Name      | Description                                                       |
-| --------- | ----------------------------------------------------------------- |
-| modelid   | The custom model id to get path from.                             |
-| dffPath[] | An array in which to store the `dffPath` in, passed by reference. |
-| dffSize   | The length of the `dffPath` that should be stored.                |
-| txdPath[] | An array in which to store the `txdPath` in, passed by reference. |
-| txdSize   | The length of the `txdPath` that should be stored.                |
+| Name      | Description                                                     |
+| --------- | --------------------------------------------------------------- |
+| modelid   | The custom model id to get path from.                           |
+| dffPath[] | An array in which to store the dffPath in, passed by reference. |
+| dffSize   | The length of the dffPath that should be stored.                |
+| txdPath[] | An array in which to store the txdPath in, passed by reference. |
+| txdSize   | The length of the txdPath that should be stored.                |
 
 ## Examples
 

@@ -33,5 +33,5 @@ public OnPlayerUpdate(playerid)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetPlayerSpecialAction`: Set a player's special action.
-- `GetPlayerState`: Get a player's current state.
+- SetPlayerSpecialAction: Set a player's special action.
+- GetPlayerState: Get a player's current state.

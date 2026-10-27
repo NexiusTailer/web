@@ -29,14 +29,14 @@ strunpack(string, pstring);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `ispacked`: Check if the given string is packed.
-- `strpack`: This function can be used to pack a string.
-- `strcmp`: Compare two strings to see if they are the same.
-- `strfind`: Search for a substring in a string.
+- ispacked: Check if the given string is packed.
+- strpack: This function can be used to pack a string.
+- strcmp: Compare two strings to see if they are the same.
+- strfind: Search for a substring in a string.
 - strtok: Search for a variable typed after a space.
-- `strdel`: Delete part/all of a string.
-- `strins`: Put a string into another string.
-- `strlen`: Check the length of a string.
-- `strmid`: Extract characters from a string.
-- `strval`: Find the value of a string.
-- `strcat`: Contact two strings into a destination reference.
+- strdel: Delete part/all of a string.
+- strins: Put a string into another string.
+- strlen: Check the length of a string.
+- strmid: Extract characters from a string.
+- strval: Find the value of a string.
+- strcat: Contact two strings into a destination reference.

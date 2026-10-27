@@ -15,7 +15,7 @@ Dobij ID vozila na kojem igrač surfa (zapeo za krovu vozila).
 
 ## Returns
 
-ID vozila kojim igrač surfuje. Ako ne surfaju vozilom ili ako vozilo surfa nema vozača, `INVALID_VEHICLE_ID`. Ako navedeni uređaj nije povezan, `INVALID_VEHICLE_ID` također.
+ID vozila kojim igrač surfuje. Ako ne surfaju vozilom ili ako vozilo surfa nema vozača, INVALID_VEHICLE_ID. Ako navedeni uređaj nije povezan, INVALID_VEHICLE_ID također.
 
 ## Primjeri
 

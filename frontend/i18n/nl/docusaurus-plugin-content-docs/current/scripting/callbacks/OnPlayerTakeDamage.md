@@ -9,13 +9,13 @@ tags: ["player"]
 
 Deze callback wordt aangeroepen wanneer een speler schade ontvangt.
 
-| Naam            | Beschrijving                                                                         |
-| --------------- | ------------------------------------------------------------------------------------ |
-| playerid        | Het ID van de speler die schade ontving.                                             |
-| issuerid        | Het ID van de speler die de schade veroorzaakte. `INVALID_PLAYER_ID` bij zelfschade. |
-| Float:amount    | De hoeveelheid ontvangen schade (health en armor gecombineerd).                      |
-| WEAPON:weaponid | Het ID van het wapen/de reden voor de schade.                                        |
-| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat geraakt werd.                         |
+| Naam            | Beschrijving                                                                       |
+| --------------- | ---------------------------------------------------------------------------------- |
+| playerid        | Het ID van de speler die schade ontving.                                           |
+| issuerid        | Het ID van de speler die de schade veroorzaakte. INVALID_PLAYER_ID bij zelfschade. |
+| Float:amount    | De hoeveelheid ontvangen schade (health en armor gecombineerd).                    |
+| WEAPON:weaponid | Het ID van het wapen/de reden voor de schade.                                      |
+| bodypart        | Het [lichaamsdeel](../resources/bodyparts) dat geraakt werd.                       |
 
 ## Returns
 
@@ -66,17 +66,17 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::note
 
-- `weaponid` is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
-- `weaponid` is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).
-- `playerid` is de enige die de callback kan aanroepen.
-- `amount` is altijd de maximale schade die `weaponid` kan doen, zelfs als er minder health over is (zie uitleg bij Desert Eagle 46.2).
+- weaponid is 37 (flamethrower) voor vuurbronnen (bijv. molotov, 18).
+- weaponid is 51 voor wapens die explosies veroorzaken (bijv. RPG, granaat).
+- **playerid** is de enige die de callback kan aanroepen.
+- amount is altijd de maximale schade die weaponid kan doen, zelfs als er minder health over is (zie uitleg bij Desert Eagle 46.2).
 
 :::
 
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) en [GetPlayerArmour](../functions/GetPlayerArmour) geven de oude waarden terug vóór deze callback.
-- Controleer **altijd** of `issuerid` geldig is voordat je het als array-index gebruikt.
+- Controleer **altijd** of issuerid geldig is voordat je het als array-index gebruikt.
 
 :::
 

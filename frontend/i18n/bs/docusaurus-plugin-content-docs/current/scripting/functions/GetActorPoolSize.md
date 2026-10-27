@@ -9,7 +9,7 @@ tags: ["actor"]
 
 ## Deskripcija
 
-Dobij najviši `actorid` kreiran na serveru. Imajte na umu da je u SA:MP-u ova funkcija pokvarena i da će returnati `0` čak i kada nema actora. open.mp ispravljaju ovo te returnaju (vraćaju) `-1`, ali također odbijaju funkciju u korist `MAX_ACTORS` ili `foreach` plugina.
+Dobij najviši actorid kreiran na serveru. Imajte na umu da je u SA:MP-u ova funkcija pokvarena i da će returnati `0` čak i kada nema actora. open.mp ispravljaju ovo te returnaju (vraćaju) `-1`, ali također odbijaju funkciju u korist `MAX_ACTORS` ili `foreach` plugina.
 
 ## Primjeri
 

@@ -45,7 +45,7 @@ Essas declarações oferecem melhor checagem e permitem tags. No caso de strings
 
 Macros com substituição podem ter até 10 parâmetros. Um uso comum é simular funções pequenas:
 
-Listing: the `min` macro
+Listing: the “min” macro
 
 ```c
 
@@ -57,7 +57,7 @@ Se você veio de C/C++, reconhecerá o hábito de cercar argumentos e a express�
 
 Se a macro for usada assim:
 
-Listing: bad usage of the `min` macro
+Listing: bad usage of the “min” macro
 
 ```c
 
@@ -122,8 +122,8 @@ new c = a(8)
 
 ```
 
-will evaluate to “new c = (1+(2\*(8)))”, even though the macro `b` was not
-defined at the time of the definition of `a`.
+will evaluate to “new c = (1+(2\*(8)))”, even though the macro “b” was not
+defined at the time of the definition of “a”.
 
 As regras para matching são:
 

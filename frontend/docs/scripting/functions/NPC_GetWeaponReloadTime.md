@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Returns the current custom reload time setting
-- Use `NPC_GetWeaponActualReloadTime` to get the default game reload time
+- Use NPC_GetWeaponActualReloadTime to get the default game reload time
 - Reload time affects how long the NPC takes to reload the weapon
 
 ## Related Functions

@@ -9,7 +9,7 @@ tags: ["vehicle"]
 
 ## Description
 
-Get the `playerid` of the person driving the vehicle.
+Get the playerid of the person driving the vehicle.
 
 ## Parameters
 

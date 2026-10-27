@@ -36,4 +36,4 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetPlayerScore`: Get the score of a player.
+- GetPlayerScore: Get the score of a player.

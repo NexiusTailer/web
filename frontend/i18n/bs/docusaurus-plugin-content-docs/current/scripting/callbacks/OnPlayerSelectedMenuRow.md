@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## Deskripcija
 
-Ovaj callback je pozvan kada igrač selektuje određenu stavku (item) iz menija (`ShowMenuForPlayer`).
+Ovaj callback je pozvan kada igrač selektuje određenu stavku (item) iz menija (ShowMenuForPlayer).
 
 | Ime      | Deskripcija                                           |
 | -------- | ----------------------------------------------------- |
@@ -49,7 +49,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 :::note
 
-ID menija nije proslijeđen ovom callbacku. `GetPlayerMenu` se mora koristiti kako bi se odredilo na kojem meniju je igrač selektovao stavku.
+ID menija nije proslijeđen ovom callbacku. GetPlayerMenu se mora koristiti kako bi se odredilo na kojem meniju je igrač selektovao stavku.
 
 :::
 

@@ -7,12 +7,12 @@ tags: []
 
 ## Deskripcija
 
-Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan `ShowPlayerDialog` funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
+Ovaj callback se poziva kada igrač odgovori na dijalog koji je pozvan ShowPlayerDialog funkcijom bilo klikom dugmeta, klikom ENTER7ESC tipke ili duplim klikom na list item (ukoliko koristite list style dijalog).
 
 | Ime         | Deskripcija                                                                                                                            |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID igrača koji je odgovorio na dijalog.                                                                                                |
-| dialogid    | ID dijaloga na koji je igrač odgovorio, dodijeljenog pozivanjem `ShowPlayerDialog` funkcije.                                           |
+| dialogid    | ID dijaloga na koji je igrač odgovorio, dodijeljenog pozivanjem ShowPlayerDialog funkcije.                                             |
 | response    | **1** za lijevo i **0** za desno dugme (ako je samo jedno dugme prikazano, uvijek 1)                                                   |
 | listitem    | ID list item-a koji je selektovan od strane igrača (počinje od 0) (samo ukoliko koristite list style dijalog, u suprotnom će biti -1). |
 | inputtext[] | Tekst upisan u input box od strane igrača text selektovanog list item-a.                                                               |
@@ -23,7 +23,7 @@ Uvijek je pozvana prva u filterskripti tako da return-ovanje 1 tu blokira ostale
 
 ## Primjeri
 
-**`DIALOG_STYLE_MSGBOX`**
+**DIALOG_STYLE_MSGBOX**
 
 ```c
 // Definiramo ID dijaloga kako bismo mogli upravljati odgovorima
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_INPUT`**
+**DIALOG_STYLE_INPUT**
 
 ```c
 // definiramo drugi dijalog, dajemo mu za jednu veću vrijednost od prošlog
@@ -89,7 +89,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_LIST`**
+**DIALOG_STYLE_LIST**
 
 ```c
 // definiramo treci dijalog, ponovno je vrijednost veca od vrijednosti proslog dijaloga
@@ -119,7 +119,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**`DIALOG_STYLE_TABLIST_HEADERS`**
+**DIALOG_STYLE_TABLIST_HEADERS**
 
 ```c
 // ovo je drugi nacin za prikaz i upravljanje za treci dijalog

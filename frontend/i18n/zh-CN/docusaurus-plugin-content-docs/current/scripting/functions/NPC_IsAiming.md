@@ -46,8 +46,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 当 NPC 正在进行瞄准目标时返回 true
 - 使用此函数检查 NPC 是否处于战斗模式
-- 瞄准可以通过 `NPC_AimAt` 或 `NPC_AimAtPlayer` 启动
-- NPC 会持续瞄准直到使用 `NPC_StopAim` 停止
+- 瞄准可以通过 NPC_AimAt 或 NPC_AimAtPlayer 启动
+- NPC 会持续瞄准直到使用 NPC_StopAim 停止
 
 ## 相关函数
 

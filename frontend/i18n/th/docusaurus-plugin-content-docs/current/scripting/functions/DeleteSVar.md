@@ -33,7 +33,7 @@ DeleteSVar("SomeVarName");
 
 :::note
 
-Once a variable is deleted, attempts to retrieve the value will return **0** (for integers and floats and `NULL` for strings.
+Once a variable is deleted, attempts to retrieve the value will return **0** (for integers and floats and **NULL** for strings.
 
 :::
 

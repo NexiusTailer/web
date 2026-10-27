@@ -10,12 +10,12 @@ tags: ["string", "encryption"]
 
 Codifique uma string em uma string decodificada por UU.
 
-| Nome                      | Descrição                                                  |
-| ------------------------- | ---------------------------------------------------------- |
-| dest[]                    | A cadeia de destino do fluxo codificado.                   |
-| const source[]            | A string de origem não codificada.                         |
-| numbytes                  | O número de bytes a serem codificados não deve exceder 45. |
-| maxlength = sizeof (dest) | O comprimento máximo da matriz `dest[]`.                   |
+| Nome | Descrição |
+| ------------------------- | --------------------------------------------------------- |
+| dest[] | A cadeia de destino do fluxo codificado.            |
+| const source[] | A string de origem não codificada.                           |
+| numbytes | O número de bytes a serem codificados não deve exceder 45. |
+| maxlength = sizeof (dest) | O comprimento máximo da matriz dest[].                   |
 
 ## Retornos
 

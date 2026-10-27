@@ -217,7 +217,7 @@ Bu, sınırın çok küçük olup olmadığını derlediğinizde kontrol eder ve
 #endif
 ```
 
-Tekrar sabit bir kontrol, bir uyarı verecek olsa da, iki `printf` derlenir ve sadece birinin çalışacağını BİLİYORUZ. #if bu durumda şu şekildedir:
+Tekrar sabit bir kontrol, bir uyarı verecek olsa da, iki printf derlenir ve sadece birinin çalışacağını BİLİYORUZ. #if bu durumda şu şekildedir:
 
 ```c
 #define LIMIT 10
@@ -229,7 +229,7 @@ Tekrar sabit bir kontrol, bir uyarı verecek olsa da, iki `printf` derlenir ve s
 #endif
 ```
 
-Bu şekilde yalnızca gerekli olan `printf` derlenir ve diğeri, değişiklik yaparlarsa ve tekrar derlerlerse kodlarında bulunur, ancak gerekli değildir. Bu şekilde ayrıca anlamsız if her seferinde kodunuz çalıştırılmaz, her zaman iyidir.
+Bu şekilde yalnızca gerekli olan printf derlenir ve diğeri, değişiklik yaparlarsa ve tekrar derlerlerse kodlarında bulunur, ancak gerekli değildir. Bu şekilde ayrıca anlamsız if her seferinde kodunuz çalıştırılmaz, her zaman iyidir.
 
 ## `#include`
 

@@ -61,7 +61,7 @@ Warning: client exceeded 'messageholelimit' (<type>) <ip>:<port> (<count>) Limit
 Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit: x (messageholelimit)
 ```
 
-当乱序消息数量触发 `messageholelimit` 设置时出现。
+当乱序消息数量触发 messageholelimit 设置时出现。
 
 更多信息请参阅[此文档](ControllingServer#rcon-命令)
 

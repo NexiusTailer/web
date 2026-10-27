@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Interrompe todas as animações atuais e retorna NPC ao estado inativo
-- Equivalente a ligar para `NPC_ClearAnimations`
+- Equivalente a ligar para NPC_ClearAnimations
 
 ## Funções Relacionadas
 

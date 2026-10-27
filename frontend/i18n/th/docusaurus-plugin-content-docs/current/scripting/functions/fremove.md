@@ -29,7 +29,7 @@ fremove("Example.txt");
 
 :::note
 
-Files that are currently open (`fopen`) must be closed first (`fclose`) to be deleted.
+Files that are currently open (fopen) must be closed first (fclose) to be deleted.
 
 :::
 

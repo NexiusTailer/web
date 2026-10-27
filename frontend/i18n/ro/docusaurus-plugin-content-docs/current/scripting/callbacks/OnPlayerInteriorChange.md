@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descriere
 
-Apelat când un jucător schimbă interiorul. Poate fi declanșat de `SetPlayerInterior` sau atunci când un jucător intră/iese dintr-o clădire.
+Apelat când un jucător schimbă interiorul. Poate fi declanșat de SetPlayerInterior sau atunci când un jucător intră/iese dintr-o clădire.
 
 | Nume          | Descriere                                  |
 | ------------- | ------------------------------------------ |

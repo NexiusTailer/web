@@ -11,21 +11,21 @@ tags: ["player", "object", "playerobject"]
 
 دریافت داده‌های متن متریال از یک index از player-object.
 
-| نام                                       | توضیحات                                                                  |
-| ----------------------------------------- | ------------------------------------------------------------------------ |
-| playerid                                  | ID بازیکن.                                                               |
-| objectid                                  | ID player-object.                                                        |
-| materialIndex                             | index متریال در object. (0 تا 15)                                        |
-| text[]                                    | آرایه‌ای برای ذخیره متن، به صورت reference پاس داده می‌شود.              |
-| textSize                                  | اندازه متن.                                                              |
-| &OBJECT_MATERIAL_SIZE:materialSize        | متغیری برای ذخیره `materialSize`، به صورت reference پاس داده می‌شود.     |
-| fontFace[]                                | آرایه‌ای برای ذخیره `fontFace`، به صورت reference پاس داده می‌شود.       |
-| fontFaceSize                              | اندازه `fontFace`.                                                       |
-| &fontSize                                 | متغیری برای ذخیره `fontSize`، به صورت reference پاس داده می‌شود.         |
-| &bool:bold                                | متغیر boolean برای ذخیره bold، به صورت reference پاس داده می‌شود.        |
-| &fontColour                               | متغیری برای ذخیره `fontColour`، به صورت reference پاس داده می‌شود.       |
-| &backgroundColour                         | متغیری برای ذخیره `backgroundColour`، به صورت reference پاس داده می‌شود. |
-| &OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | متغیری برای ذخیره `textAlignment`، به صورت reference پاس داده می‌شود.    |
+| نام                                       | توضیحات                                                                |
+| ----------------------------------------- | ---------------------------------------------------------------------- |
+| playerid                                  | ID بازیکن.                                                             |
+| objectid                                  | ID player-object.                                                      |
+| materialIndex                             | index متریال در object. (0 تا 15)                                      |
+| text[]                                    | آرایه‌ای برای ذخیره متن، به صورت reference پاس داده می‌شود.            |
+| textSize                                  | اندازه متن.                                                            |
+| &OBJECT_MATERIAL_SIZE:materialSize        | متغیری برای ذخیره materialSize، به صورت reference پاس داده می‌شود.     |
+| fontFace[]                                | آرایه‌ای برای ذخیره fontFace، به صورت reference پاس داده می‌شود.       |
+| fontFaceSize                              | اندازه fontFace.                                                       |
+| &fontSize                                 | متغیری برای ذخیره fontSize، به صورت reference پاس داده می‌شود.         |
+| &bool:bold                                | متغیر boolean برای ذخیره bold، به صورت reference پاس داده می‌شود.      |
+| &fontColour                               | متغیری برای ذخیره fontColour، به صورت reference پاس داده می‌شود.       |
+| &backgroundColour                         | متغیری برای ذخیره backgroundColour، به صورت reference پاس داده می‌شود. |
+| &OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | متغیری برای ذخیره textAlignment، به صورت reference پاس داده می‌شود.    |
 
 ## مقادیر برگشتی
 

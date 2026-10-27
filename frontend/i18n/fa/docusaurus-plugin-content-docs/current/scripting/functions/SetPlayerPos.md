@@ -41,7 +41,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::tip
 
-- اگر بازیکن در خودرو باشد، از [RemovePlayerFromVehicle](RemovePlayerFromVehicle) قبل از `SetPlayerPos` استفاده کنید.
+- اگر بازیکن در خودرو باشد، از [RemovePlayerFromVehicle](RemovePlayerFromVehicle) قبل از SetPlayerPos استفاده کنید.
 
 :::
 

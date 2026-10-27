@@ -42,7 +42,7 @@ Use [TextDrawTextSize](TextDrawTextSize) to define the clickable area.
 
 :::warning
 
-`TextDrawSetSelectable` must be used BEFORE the textdraw is shown to players for it to be selectable.
+TextDrawSetSelectable must be used BEFORE the textdraw is shown to players for it to be selectable.
 
 :::
 

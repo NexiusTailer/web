@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Munição infinita evita que o NPC fique sem munição
 - A contagem de munição ainda pode diminuir, mas a funcionalidade da arma permanece
-- Pode ser alternado com `NPC_EnableInfiniteAmmo`
+- Pode ser alternado com NPC_EnableInfiniteAmmo
 
 ## Funções Relacionadas
 

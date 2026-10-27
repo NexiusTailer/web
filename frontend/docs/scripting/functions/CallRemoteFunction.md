@@ -50,7 +50,7 @@ CallRemoteFunction("CallMe", "is", 69, "this is a string");
 
 :::warning
 
-`CallRemoteFunction` crashes the server if it's passing an empty string. (Fixed in open.mp)
+CallRemoteFunction crashes the server if it's passing an empty string. (Fixed in open.mp)
 
 :::
 

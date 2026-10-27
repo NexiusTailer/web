@@ -11,10 +11,10 @@ tags: ["npc", "vehicle", "aircraft", "landing gear"]
 
 Sets an NPC's aircraft landing gear state when piloting an aircraft.
 
-| Name      | Description                                                                          |
-| --------- | ------------------------------------------------------------------------------------ |
-| npcid     | The ID of the NPC                                                                    |
-| gearstate | The landing gear state to set (`LANDING_GEAR_STATE_DOWN` or `LANDING_GEAR_STATE_UP`) |
+| Name      | Description                                                                      |
+| --------- | -------------------------------------------------------------------------------- |
+| npcid     | The ID of the NPC                                                                |
+| gearstate | The landing gear state to set (LANDING_GEAR_STATE_DOWN or LANDING_GEAR_STATE_UP) |
 
 ## Returns
 
@@ -48,8 +48,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Only works when NPC is piloting an aircraft
-- Uses the same constants as [Vehicle Landing Gear States](../resources/landinggearstate): `LANDING_GEAR_STATE_DOWN` and `LANDING_GEAR_STATE_UP`
-- Check current landing gear state with `NPC_GetVehicleGearState`
+- Uses the same constants as [Vehicle Landing Gear States](../resources/landinggearstate): LANDING_GEAR_STATE_DOWN and LANDING_GEAR_STATE_UP
+- Check current landing gear state with NPC_GetVehicleGearState
 
 ## Related Functions
 

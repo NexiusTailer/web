@@ -23,7 +23,7 @@ This callback is called when a player's client updates/syncs the position of a v
 
 ## ส่งคืน
 
-It is always called first in filterscripts so returning 0 there also blocks other scripts from seeing it.
+It is always called first in filterscripts so returning **0** there also blocks other scripts from seeing it.
 
 ## ตัวอย่าง
 
@@ -45,7 +45,7 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-This callback is called very frequently per second per unoccupied vehicle. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback. `GetVehiclePos` will return the old coordinates of the vehicle before this update.
+This callback is called very frequently per second per unoccupied vehicle. You should refrain from implementing intensive calculations or intensive file writing/reading operations in this callback. GetVehiclePos will return the old coordinates of the vehicle before this update.
 
 :::
 

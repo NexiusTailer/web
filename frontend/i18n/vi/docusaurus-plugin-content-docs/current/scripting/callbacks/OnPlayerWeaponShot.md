@@ -43,10 +43,10 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 
 :::note
 
-Callback này chỉ được gọi khi bù trừ độ trễ (lag compensation) được **bật**. Nếu `hittype` là:
+Callback này chỉ được gọi khi bù trừ độ trễ (lag compensation) được **bật**. Nếu **hittype** là:
 
-- `BULLET_HIT_TYPE_NONE`: các tham số `fX`, `fY` và `fZ` là tọa độ bình thường, sẽ trả về 0.0 cho các tọa độ nếu không có gì bị bắn trúng (ví dụ: vật thể ở xa mà viên đạn không thể đến);
-- Các loại khác: `fX`, `fY` và `fZ` là độ dịch chuyển tương đối với `hitid`.
+- `BULLET_HIT_TYPE_NONE`: các tham số **fX**, **fY** và **fZ** là tọa độ bình thường, sẽ trả về 0.0 cho các tọa độ nếu không có gì bị bắn trúng (ví dụ: vật thể ở xa mà viên đạn không thể đến);
+- Các loại khác: **fX**, **fY** và **fZ** là độ dịch chuyển tương đối với `hitid`.
 
 :::
 
@@ -59,7 +59,7 @@ Callback này chỉ được gọi khi bù trừ độ trễ (lag compensation) 
 :::warning
 
 - Không được gọi nếu bạn bắn từ xe như là tài xế hoặc nếu bạn đang nhìn ra sau với ngắm mục tiêu bật (bắn lên không trung).
-- Nó được gọi với `BULLET_HIT_TYPE_VEHICLE` với `hitid` chính xác (`vehicleid` của người chơi bị bắn) nếu bạn đang bắn một người chơi đang ở trong xe. Nó sẽ không được gọi với `BULLET_HIT_TYPE_PLAYER` tại tất cả.
+- Nó được gọi với `BULLET_HIT_TYPE_VEHICLE` với `hitid` chính xác (vehicleid của người chơi bị bắn) nếu bạn đang bắn một người chơi đang ở trong xe. Nó sẽ không được gọi với `BULLET_HIT_TYPE_PLAYER` tại tất cả.
 - **Đã được sửa một phần trong SA-MP 0.3.7**: Nếu dữ liệu vũ khí giả được gửi bởi người dùng độc hại, các client của người chơi khác có thể bị treo hoặc bị sập. Để chống lại điều này, hãy kiểm tra xem `weaponid` được báo cáo có thực sự bắn đạn hay không.
 
 :::

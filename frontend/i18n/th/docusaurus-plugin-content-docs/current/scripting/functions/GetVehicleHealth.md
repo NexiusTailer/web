@@ -50,6 +50,6 @@ if (strcmp(cmdtext, "/repair", true) == 0)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetVehicleHealth`: Set the health of a vehicle.
-- `GetPlayerHealth`: Find out how much health a player has.
-- `GetPlayerArmour`: Find out how much armour a player has.
+- SetVehicleHealth: Set the health of a vehicle.
+- GetPlayerHealth: Find out how much health a player has.
+- GetPlayerArmour: Find out how much armour a player has.

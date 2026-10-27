@@ -11,11 +11,11 @@ tags: ["sqlite"]
 
 ## توضیحات
 
-به ردیف بعدی در نتیجه‌ای که از `db_query` برگردونده شده میره.
+به ردیف بعدی در نتیجه‌ای که از db_query برگردونده شده میره.
 
-| اسم               | توضیح                                    |
-| ----------------- | ---------------------------------------- |
-| DBResult:dbresult | نتیجه‌ای که از `db_query` برگردونده شده. |
+| اسم               | توضیح                                  |
+| ----------------- | -------------------------------------- |
+| DBResult:dbresult | نتیجه‌ای که از db_query برگردونده شده. |
 
 ## مقادیر برگشتی
 
@@ -69,7 +69,7 @@ db_free_result(db_result);
 
 :::warning
 
-نتایج باید بعد از اتمام کار با `db_free_result` آزاد بشن. عدم انجام این کار باعث memory leak میشه.
+نتایج باید بعد از اتمام کار با db_free_result آزاد بشن. عدم انجام این کار باعث memory leak میشه.
 
 :::
 
@@ -78,7 +78,7 @@ db_free_result(db_result);
 - [db_open](db_open): باز کردن اتصال به پایگاه داده SQLite
 - [db_close](db_close): بستن اتصال به پایگاه داده SQLite
 - [db_query](db_query): کوئری زدن به پایگاه داده SQLite
-- [db_free_result](db_free_result): آزاد کردن حافظه نتیجه از `db_query`
+- [db_free_result](db_free_result): آزاد کردن حافظه نتیجه از db_query
 - [db_num_rows](db_num_rows): گرفتن تعداد ردیف‌های موجود در نتیجه
 - [db_num_fields](db_num_fields): گرفتن تعداد فیلدهای موجود در نتیجه
 

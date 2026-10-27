@@ -18,7 +18,7 @@ Coloque um ícone/marcador no mapa de um jogador. Pode ser usado para marcar loc
 | Float:y       | A coordenada Y na qual colocar o ícone do mapa.                                                                                                                 |
 | Float:z       | A coordenada Z na qual colocar o ícone do mapa.                                                                                                                 |
 | markerType    | O [ícone](../resources/mapicons) a ser definido.                                                                                                                |
-| colour        | A cor do ícone, como um número inteiro ou hexadecimal no formato de cor **RGBA**. Deve ser usado apenas com o ícone quadrado (ID: **0**).                       |
+| colour        | A cor do ícone, como um número inteiro ou hexadecimal no formato de cor **RGBA**. Deve ser usado apenas com o ícone quadrado (ID: 0).                       |
 | MAPICON:style | O [estilo](../resources/mapiconstyles) do ícone.                                                                                                                |
 
 ## Retornos

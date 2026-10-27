@@ -11,7 +11,7 @@ tags: []
 
 | 参数名 | 说明                                                                                            |
 | ------ | ----------------------------------------------------------------------------------------------- |
-| killer | 凶手玩家 ID（可使用 `INVALID_PLAYER_ID` 表示无凶手）                                            |
+| killer | 凶手玩家 ID（可使用 INVALID_PLAYER_ID 表示无凶手）                                              |
 | killee | 死亡玩家的 ID                                                                                   |
 | weapon | 死亡原因（不一定是武器 ID），可使用特殊图标（ICON_CONNECT 连接图标和 ICON_DISCONNECT 断开图标） |
 
@@ -23,7 +23,7 @@ tags: []
 
 当死亡原因无效时，会显示默认骷髅交叉骨图标
 
-`killerid` 为无效值（`INVALID_PLAYER_ID`）是有效参数
+killerid 为无效值（`INVALID_PLAYER_ID`）是有效参数
 
 ## 示例代码
 

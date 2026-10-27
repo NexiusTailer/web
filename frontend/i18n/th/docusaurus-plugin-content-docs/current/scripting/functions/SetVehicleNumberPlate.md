@@ -48,6 +48,6 @@ SetVehicleNumberPlate(vehicleid, "ABCD 123");
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `SetVehicleToRespawn`: Respawn a vehicle.
-- `ChangeVehicleColor`: Set the color of a vehicle.
-- `ChangeVehiclePaintjob`: Change the paintjob on a vehicle.
+- SetVehicleToRespawn: Respawn a vehicle.
+- ChangeVehicleColor: Set the color of a vehicle.
+- ChangeVehiclePaintjob: Change the paintjob on a vehicle.

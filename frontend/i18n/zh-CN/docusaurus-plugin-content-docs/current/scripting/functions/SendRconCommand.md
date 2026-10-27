@@ -39,7 +39,7 @@ SendRconCommand("game.map %s", szMapName);
 
 :::note
 
-- 因缺少 `playerid` 参数，不支持**登录**操作
+- 因缺少 playerid 参数，不支持**登录**操作
 - 'password 0'命令将清除服务器已设置的密码
 - 该命令会触发[OnRconCommand](../callbacks/OnRconCommand)回调
 

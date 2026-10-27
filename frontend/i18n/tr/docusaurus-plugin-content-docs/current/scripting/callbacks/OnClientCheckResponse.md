@@ -7,7 +7,7 @@ tags: []
 
 ## Açıklama
 
-Bir `SendClientCheck` isteği tamamlandığında bu geri çağırma çağrılır.
+Bir SendClientCheck isteği tamamlandığında bu geri çağırma çağrılır.
 
 | Paramtre | Açıklama                        |
 | -------- | ------------------------------- |

@@ -44,8 +44,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## توابع مرتبط
 
 - [CancelSelectTextDraw](CancelSelectTextDraw): لغو انتخاب textdraw با موس
-- [TextDrawSetSelectable](TextDrawSetSelectable): تنظیم اینکه آیا textdraw از طریق `SelectTextDraw` قابل انتخابه یا نه
-- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): تنظیم اینکه آیا player-textdraw از طریق `SelectTextDraw` قابل انتخابه یا نه
+- [TextDrawSetSelectable](TextDrawSetSelectable): تنظیم اینکه آیا textdraw از طریق **SelectTextDraw** قابل انتخابه یا نه
+- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): تنظیم اینکه آیا player-textdraw از طریق **SelectTextDraw** قابل انتخابه یا نه
 
 ## کالبک‌های مرتبط
 

@@ -7,7 +7,7 @@ tags: []
 
 ## Açıklama
 
-Bu geri çağırma obje hareket etmeyi (`MoveObject`) bıraktıktan sonra çağrılır.
+Bu geri çağırma obje hareket etmeyi (MoveObject) bıraktıktan sonra çağrılır.
 
 | Parametre | Açıklama             |
 | --------- | -------------------- |
@@ -31,7 +31,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-`SetObjectPos` bu geri çağırma içerisinde çalışmaz. Bunu düzeltmek için objeyi yeniden oluşturun.
+SetObjectPos bu geri çağırma içerisinde çalışmaz. Bunu düzeltmek için objeyi yeniden oluşturun.
 
 :::
 

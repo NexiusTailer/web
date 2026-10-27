@@ -21,7 +21,7 @@ Bu fonksiyon aktörlere animasyon uygulatmak için kullanılır.
 | lockx      | Eğer 0 seçilirse aktör animasyon bittikten sonra başlamadan önceki koordinatlarına döner             |
 | locky      | Üsttekinin aynısı ancak Y ekseni için geçerlidir                                                     |
 | freeze     | Eğer 1 seçilirse animasyon sonunda aktör dondurulur, hareket edemez. 0 ise tam tersidir              |
-| time       | Milisaniye cinsinden animasyon süresi. Eğer 0 seçilirse sonsuz kez animasyon oynatılır               |
+| time       | Milisaniye cinsinden animasyon süresi. Eğer **0** seçilirse sonsuz kez animasyon oynatılır               |
 
 ## Çalışınca Vereceği Sonuçlar
 

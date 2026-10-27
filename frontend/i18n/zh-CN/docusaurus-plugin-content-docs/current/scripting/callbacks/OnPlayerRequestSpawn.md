@@ -15,7 +15,7 @@ tags: ["玩家", "职业"]
 
 ## 返回值
 
-此回调始终在滤镜脚本中优先触发，返回 0 将阻止其他脚本处理
+此回调始终在滤镜脚本中优先触发，返回 **0** 将阻止其他脚本处理
 
 ## 示例
 
@@ -37,7 +37,7 @@ public OnPlayerRequestSpawn(playerid)
 
 :::tip
 
-如需限制玩家使用特定职业生成，需在 `OnPlayerRequestClass` 回调中保存最后查看的职业类别
+如需限制玩家使用特定职业生成，需在 OnPlayerRequestClass 回调中保存最后查看的职业类别
 
 :::
 

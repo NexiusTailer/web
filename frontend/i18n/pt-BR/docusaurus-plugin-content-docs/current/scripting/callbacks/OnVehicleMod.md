@@ -17,7 +17,7 @@ Essa callback é executada quando um veículo é modificado.
 
 ## Retornos
 
-Sempre executada primeiro no gamemode, retornar 0 irá impedir outros filterscripts de acessar a mesma.
+Sempre executada primeiro no gamemode, retornar **0** irá impedir outros filterscripts de acessar a mesma.
 
 ## Exemplos
 
@@ -39,7 +39,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Essa callback NÃO É EXECUTADA ao utilizar a função `AddVehicleComponent`.
+Essa callback NÃO É EXECUTADA ao utilizar a função AddVehicleComponent.
 
 :::
 

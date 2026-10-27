@@ -36,14 +36,14 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Esta função chama [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) com `INVALID_TEXT_DRAW` (65535). Usar esta função dentro de `OnPlayerClickTextDraw` sem capturar este caso fará com que os clientes entrem em um loop infinito.
+Esta função chama [OnPlayerClickTextDraw](../callbacks/OnPlayerClickTextDraw) com INVALID_TEXT_DRAW (65535). Usar esta função dentro de OnPlayerClickTextDraw sem capturar este caso fará com que os clientes entrem em um loop infinito.
 
 :::
 
 ## Funções Relacionadas
 
 - [SelectTextDraw](SelectTextDraw): Habilita o mouse, para que o jogador possa selecionar um textdraw
-- [TextDrawSetSelectable](TextDrawSetSelectable): Define se um textdraw é selecionável através de `SelectTextDraw`
+- [TextDrawSetSelectable](TextDrawSetSelectable): Define se um textdraw é selecionável através de SelectTextDraw
 
 ## Callbacks Relacionadas
 

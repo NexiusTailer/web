@@ -31,7 +31,7 @@ You can use this function to attach objects to other objects. The objects will f
 
 **1**: The function executed successfully.
 
-**0**: The function failed to execute. This means the first object (`objectid`) does not exist. There are no internal checks to verify that the second object (`attachtoid`) exists.
+**0**: The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (attachtoid) exists.
 
 ## ตัวอย่าง
 
@@ -47,7 +47,7 @@ AttachObjectToObject(objectid, attachtoid, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1);
 :::note
 
 - Both objects need to be created before attempting to attach them.
-- There is no player-object version of this function in SA-MP. But there is `AttachPlayerObjectToObject` in open.mp
+- There is no player-object version of this function in SA-MP. But there is AttachPlayerObjectToObject in open.mp
 
 :::
 

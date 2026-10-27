@@ -47,7 +47,7 @@ public OnGameModeInit()
 
 :::warning
 
-In SA-MP Server this function is not defined by default. Add `native Float:GetGravity();` under the inclusion of a_samp.inc to use it.
+In SA-MP Server this function is not defined by default. Add 'native Float:GetGravity();' under the inclusion of a_samp.inc to use it.
 
 :::
 

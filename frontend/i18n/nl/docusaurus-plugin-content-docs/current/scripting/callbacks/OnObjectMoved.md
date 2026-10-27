@@ -7,7 +7,7 @@ tags: ["object"]
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een object is verplaatst na `MoveObject` (wanneer het stopt met bewegen).
+Deze callback wordt aangeroepen wanneer een object is verplaatst na MoveObject (wanneer het stopt met bewegen).
 
 | Naam     | Beschrijving                     |
 | -------- | -------------------------------- |

@@ -46,19 +46,19 @@ public OnRconLoginAttempt(ip[], password[], success)
 :::note
 
 - Este callback se llama solo cuando _/rcon login_ se usa adentro del juego.
-- Este callback solo se llama cuando el jugador no está logeado aún. Cuando el jugador está logeado (como RCON obviamente), `OnRconCommand` es llamado en su lugar.
+- Este callback solo se llama cuando el jugador no está logeado aún. Cuando el jugador está logeado (como RCON obviamente), OnRconCommand es llamado en su lugar.
 
 :::
 
 ## Callbacks Relacionados
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnRconLoginAttempt`:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnRconLoginAttempt:
 
 - [OnRconCommand](OnRconCommand): Llamado cuando se envia un comando desde la rcon.
 
 ## Funciones Relacionadas
 
-Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con `OnRconLoginAttempt`:
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnRconLoginAttempt:
 
 - [IsPlayerAdmin](../functions/IsPlayerAdmin): Comprueba si un jugador está identificado como RCON.
 - [SendRconCommand](../functions/SendRconCommand): Envía un comando RCON desde el script.

@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Infinite ammo prevents the NPC from running out of ammunition
 - The ammo count may still display as decreasing but weapon functionality remains
-- Can be toggled with `NPC_EnableInfiniteAmmo`
+- Can be toggled with NPC_EnableInfiniteAmmo
 
 ## Related Functions
 

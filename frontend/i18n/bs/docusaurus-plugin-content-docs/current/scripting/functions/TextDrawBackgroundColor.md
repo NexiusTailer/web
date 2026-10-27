@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Deskripcija
 
-Prilagođava boju pozadine područja za textdraw (obris / sjena - NE box. Za boju boxa, pogledajte `TextDrawBoxColor`).
+Prilagođava boju pozadine područja za textdraw (obris / sjena - NE box. Za boju boxa, pogledajte TextDrawBoxColor).
 
 | Ime   | Deskripcija                              |
 | ----- | ---------------------------------------- |
@@ -36,7 +36,7 @@ public OnGameModeInit()
 
 :::note
 
-Ako je `TextDrawSetOutline` korišten sa veličinom > 0, boja outline-a će se uklopiti sa bojom korištenom u `TextDrawBackgroundColor`. Mijenjanjem vrijednosti boje se čini kao da mijenja boju korištenu u `TextDrawColor`.
+Ako je TextDrawSetOutline korišten sa veličinom > 0, boja outline-a će se uklopiti sa bojom korištenom u TextDrawBackgroundColor. Mijenjanjem vrijednosti boje se čini kao da mijenja boju korištenu u TextDrawColor.
 
 :::
 

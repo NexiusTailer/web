@@ -11,15 +11,15 @@ tags: ["玩家"]
 
 ## 状态列表
 
-| ID  | 宏定义                                 | 状态描述                                       |
-| --- | -------------------------------------- | ---------------------------------------------- |
-| 0   | `PLAYER_STATE_NONE`                    | 初始化过程中使用的默认状态                     |
-| 1   | `PLAYER_STATE_ONFOOT`                  | 玩家处于步行状态                               |
-| 2   | `PLAYER_STATE_DRIVER`                  | 玩家正在驾驶车辆                               |
-| 3   | `PLAYER_STATE_PASSENGER`               | 玩家作为车辆乘客                               |
-| 4   | `PLAYER_STATE_EXIT_VEHICLE`            | 玩家正在离开车辆（主要用于内部处理）           |
-| 5   | `PLAYER_STATE_ENTER_VEHICLE_DRIVER`    | 玩家正以驾驶员身份进入车辆（主要用于内部处理） |
-| 6   | `PLAYER_STATE_ENTER_VEHICLE_PASSENGER` | 玩家正以乘客身份进入车辆（主要用于内部处理）   |
-| 7   | `PLAYER_STATE_WASTED`                  | 玩家处于死亡状态或角色选择界面                 |
-| 8   | `PLAYER_STATE_SPAWNED`                 | 玩家已重生                                     |
-| 9   | `PLAYER_STATE_SPECTATING`              | 玩家处于观战模式                               |
+| ID  | 宏定义                               | 状态描述                                       |
+| --- | ------------------------------------ | ---------------------------------------------- |
+| 0   | PLAYER_STATE_NONE                    | 初始化过程中使用的默认状态                     |
+| 1   | PLAYER_STATE_ONFOOT                  | 玩家处于步行状态                               |
+| 2   | PLAYER_STATE_DRIVER                  | 玩家正在驾驶车辆                               |
+| 3   | PLAYER_STATE_PASSENGER               | 玩家作为车辆乘客                               |
+| 4   | PLAYER_STATE_EXIT_VEHICLE            | 玩家正在离开车辆（主要用于内部处理）           |
+| 5   | PLAYER_STATE_ENTER_VEHICLE_DRIVER    | 玩家正以驾驶员身份进入车辆（主要用于内部处理） |
+| 6   | PLAYER_STATE_ENTER_VEHICLE_PASSENGER | 玩家正以乘客身份进入车辆（主要用于内部处理）   |
+| 7   | PLAYER_STATE_WASTED                  | 玩家处于死亡状态或角色选择界面                 |
+| 8   | PLAYER_STATE_SPAWNED                 | 玩家已重生                                     |
+| 9   | PLAYER_STATE_SPECTATING              | 玩家处于观战模式                               |

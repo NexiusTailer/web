@@ -18,7 +18,7 @@ Obtém o veículo ID do veículo atual de um NPC.
 
 ## Retornos
 
-Devolve o veículo ID em que NPC está, ou `INVALID_VEHICLE_ID` se não estiver em nenhum veículo.
+Devolve o veículo ID em que NPC está, ou INVALID_VEHICLE_ID se não estiver em nenhum veículo.
 
 ## Exemplos
 
@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Retorna `INVALID_VEHICLE_ID` se o NPC não estiver em nenhum veículo
+- Retorna INVALID_VEHICLE_ID se o NPC não estiver em nenhum veículo
 
 ## Funções Relacionadas
 

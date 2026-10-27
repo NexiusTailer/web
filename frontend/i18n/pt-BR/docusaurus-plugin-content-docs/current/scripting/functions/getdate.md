@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Retorna a data atual do servidor, que será armazenada nas variáveis `&ano`, `&mes` e `&dia`
+Retorna a data atual do servidor, que será armazenada nas variáveis &ano, &mes e &dia
 
 | Nome   | Descrição                                                      |
 | ------ | -------------------------------------------------------------- |

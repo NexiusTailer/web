@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see `GetPlayerCameraPos`.
+This function will return the current direction of player's aiming in 3-D space, the coords are relative to the camera position, see GetPlayerCameraPos.
 
 | Name     | Description                                                        |
 | -------- | ------------------------------------------------------------------ |

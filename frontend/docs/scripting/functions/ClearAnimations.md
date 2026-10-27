@@ -9,10 +9,10 @@ tags: ["player", "animation"]
 
 Clears all animations for the given player (it also cancels all current tasks such as jetpacking, parachuting, entering vehicles, driving (removes player out of vehicle), swimming, etc).
 
-| Name                 | Description                                                                                                              |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| playerid             | The ID of the player to clear the animations of.                                                                         |
-| FORCE_SYNC:forceSync | Set to `SYNC_ALL` to force `playerid` to sync the animation with other players in streaming radius (default=`SYNC_NONE`) |
+| Name                 | Description                                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| playerid             | The ID of the player to clear the animations of.                                                                     |
+| FORCE_SYNC:forceSync | Set to `SYNC_ALL` to force playerid to sync the animation with other players in streaming radius (default=SYNC_NONE) |
 
 ## Returns
 
@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- `ClearAnimations` doesn't do anything when the animation ends if we pass 'true' for the freeze parameter in `ApplyAnimation`.
+- ClearAnimations doesn't do anything when the animation ends if we pass 'true' for the freeze parameter in ApplyAnimation.
 - Unlike some other ways to remove player from a vehicle, this will also reset the vehicle's velocity to zero, instantly stopping the car. Player will appear on top of the vehicle with the same location as he was in his car seat.
 
 :::

@@ -11,15 +11,15 @@ From a server developer standpoint having both "player states" and "special acti
 
 ## States
 
-| ID  | Macro                                  | Description                                                                        |
-| --- | -------------------------------------- | ---------------------------------------------------------------------------------- |
-| 0   | `PLAYER_STATE_NONE`                    | The default player state which is used while initializing                          |
-| 1   | `PLAYER_STATE_ONFOOT`                  | The player is on foot                                                              |
-| 2   | `PLAYER_STATE_DRIVER`                  | The player is driving a vehicle                                                    |
-| 3   | `PLAYER_STATE_PASSENGER`               | The player is in a vehicle as a passenger                                          |
-| 4   | `PLAYER_STATE_EXIT_VEHICLE`            | The player is exiting a vehicle. It is primarily used internally                   |
-| 5   | `PLAYER_STATE_ENTER_VEHICLE_DRIVER`    | The player is entering a vehicle as the driver. It is primarily used internally    |
-| 6   | `PLAYER_STATE_ENTER_VEHICLE_PASSENGER` | The player is entering a vehicle as the passenger. It is primarily used internally |
-| 7   | `PLAYER_STATE_WASTED`                  | The player is either dead or in class selection                                    |
-| 8   | `PLAYER_STATE_SPAWNED`                 | The player is just spawned                                                         |
-| 9   | `PLAYER_STATE_SPECTATING`              | The player is in spectator mode                                                    |
+| ID  | Macro                                | Description                                                                        |
+| --- | ------------------------------------ | ---------------------------------------------------------------------------------- |
+| 0   | PLAYER_STATE_NONE                    | The default player state which is used while initializing                          |
+| 1   | PLAYER_STATE_ONFOOT                  | The player is on foot                                                              |
+| 2   | PLAYER_STATE_DRIVER                  | The player is driving a vehicle                                                    |
+| 3   | PLAYER_STATE_PASSENGER               | The player is in a vehicle as a passenger                                          |
+| 4   | PLAYER_STATE_EXIT_VEHICLE            | The player is exiting a vehicle. It is primarily used internally                   |
+| 5   | PLAYER_STATE_ENTER_VEHICLE_DRIVER    | The player is entering a vehicle as the driver. It is primarily used internally    |
+| 6   | PLAYER_STATE_ENTER_VEHICLE_PASSENGER | The player is entering a vehicle as the passenger. It is primarily used internally |
+| 7   | PLAYER_STATE_WASTED                  | The player is either dead or in class selection                                    |
+| 8   | PLAYER_STATE_SPAWNED                 | The player is just spawned                                                         |
+| 9   | PLAYER_STATE_SPECTATING              | The player is in spectator mode                                                    |

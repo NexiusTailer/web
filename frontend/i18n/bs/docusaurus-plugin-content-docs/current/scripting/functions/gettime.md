@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Dobij trenutno vrijeme servera koje će biti pohranjeno u varijablama `&hour`, `&minute` and `&second`.
+Dobij trenutno vrijeme servera koje će biti pohranjeno u varijablama &hour, &minute and &second.
 
 | Ime       | Deskripcija                                              |
 | --------- | -------------------------------------------------------- |

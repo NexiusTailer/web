@@ -7,15 +7,15 @@ tags: ["player"]
 
 ## Deskripcija
 
-Postavi smjer u kojem će gledati kamera igrača. Generalno namijenjeno korištenju u kombinaciji s `SetPlayerCameraPos`.
+Postavi smjer u kojem će gledati kamera igrača. Generalno namijenjeno korištenju u kombinaciji s SetPlayerCameraPos.
 
-| Ime      | Deskripcija                                                                                                                                            |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| playerid | ID player whose camera to set.                                                                                                                         |
-| Float:x  | X kordinata na koju će igračeva kamera gledati.                                                                                                        |
-| Float:y  | Y kordinata na koju će igračeva kamera gledati.                                                                                                        |
-| Float:z  | Z kordinata na koju će igračeva kamera gledati.                                                                                                        |
-| cut      | [Stil](../resources/cameracutstyles) promjene. Može se koristiti za interpolaciju (lagana promjena) Od stare do nove pozicije koristeći `CAMERA_MOVE`. |
+| Ime      | Deskripcija                                                                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid | ID player whose camera to set.                                                                                                                       |
+| Float:x  | X kordinata na koju će igračeva kamera gledati.                                                                                                      |
+| Float:y  | Y kordinata na koju će igračeva kamera gledati.                                                                                                      |
+| Float:z  | Z kordinata na koju će igračeva kamera gledati.                                                                                                      |
+| cut      | [Stil](../resources/cameracutstyles) promjene. Može se koristiti za interpolaciju (lagana promjena) Od stare do nove pozicije koristeći CAMERA_MOVE. |
 
 ## Returns
 

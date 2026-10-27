@@ -11,15 +11,15 @@ tags: ["3dtextlabel"]
 
 داده‌های attached شده به 3D text label رو میگیره.
 
-| نام              | توضیحات                                                                   |
-| ---------------- | ------------------------------------------------------------------------- |
-| Text3D:textid    | ID 3D text label که میخوایم داده‌های attached اش رو بگیریم.               |
-| &parentPlayerid  | یه متغیر که `parentPlayerid` رو توش ذخیره میکنیم، با reference پاس میشه.  |
-| &parentVehicleid | یه متغیر که `parentVehicleid` رو توش ذخیره میکنیم، با reference پاس میشه. |
+| نام              | توضیحات                                                                 |
+| ---------------- | ----------------------------------------------------------------------- |
+| Text3D:textid    | ID 3D text label که میخوایم داده‌های attached اش رو بگیریم.             |
+| &parentPlayerid  | یه متغیر که parentPlayerid رو توش ذخیره میکنیم، با reference پاس میشه.  |
+| &parentVehicleid | یه متغیر که parentVehicleid رو توش ذخیره میکنیم، با reference پاس میشه. |
 
 ## مثال‌ها
 
-یه مثال برای `parentPlayerid`:
+یه مثال برای **parentPlayerid**:
 
 ```c
 new Text3D:gMyLabel;
@@ -32,7 +32,7 @@ Attach3DTextLabelToPlayer(gMyLabel, playerid, 0.0, 0.0, 0.7);
 Get3DTextLabelAttachedData(gMyLabel, parentPlayerid, parentVehicleid);
 ```
 
-یه مثال برای `parentVehicleid`:
+یه مثال برای **parentVehicleid**:
 
 ```c
 new Text3D:gVehicle3dText[MAX_VEHICLES];

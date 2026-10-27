@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Shows a textdraw for a specific player.
 
-| Name     | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| playerid | The ID of the player to show the textdraw for.                |
-| text     | The ID of the textdraw to show. Returned by `TextDrawCreate`. |
+| Name     | Description                                                 |
+| -------- | ----------------------------------------------------------- |
+| playerid | The ID of the player to show the textdraw for.              |
+| text     | The ID of the textdraw to show. Returned by TextDrawCreate. |
 
 ## ส่งคืน
 

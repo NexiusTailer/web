@@ -86,7 +86,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-Când utilizați `EDIT_RESPONSE_UPDATE`, rețineți că acest callback nu va fi apelat la eliberarea unei editări în curs, ceea ce duce la desincronizarea ultimei actualizări a `EDIT_RESPONSE_UPDATE` cu poziția curentă a obiectelor.
+Când utilizați „EDIT_RESPONSE_UPDATE”, rețineți că acest callback nu va fi apelat la eliberarea unei editări în curs, ceea ce duce la desincronizarea ultimei actualizări a „EDIT_RESPONSE_UPDATE” cu poziția curentă a obiectelor.
 
 :::
 

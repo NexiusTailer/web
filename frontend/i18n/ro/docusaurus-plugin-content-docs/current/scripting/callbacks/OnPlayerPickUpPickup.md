@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## Descriere
 
-Apelat atunci când un jucător preia un pick-up creat cu `CreatePickup`.
+Apelat atunci când un jucător preia un pick-up creat cu CreatePickup.
 
-| Nume     | Descriere                                    |
-| -------- | -------------------------------------------- |
-| playerid | ID-ul jucătorului care a ridicat pickup-ul.  |
-| pickupid | ID-ul ridicării, returnat de `CreatePickup`. |
+| Nume     | Descriere                                   |
+| -------- | ------------------------------------------- |
+| playerid | ID-ul jucătorului care a ridicat pickup-ul. |
+| pickupid | ID-ul ridicării, returnat de CreatePickup.  |
 
 ## Returnări
 

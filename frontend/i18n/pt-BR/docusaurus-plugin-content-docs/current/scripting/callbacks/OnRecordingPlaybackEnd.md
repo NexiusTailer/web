@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Essa callback é executada quando uma gravação de NPC reproduzida com a função `StartRecordingPlayback` finaliza sua reprodução.
+Essa callback é executada quando uma gravação de NPC reproduzida com a função StartRecordingPlayback finaliza sua reprodução.
 
 ## Exemplos
 

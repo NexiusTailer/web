@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Deskripcija
 
-Creates a vehicle in the world. Can be used in place of `AddStaticVehicleEx` at any time in the script.
+Creates a vehicle in the world. Can be used in place of AddStaticVehicleEx at any time in the script.
 
 | Ime                                   | Deskripcija                                                                                                                         |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,9 +23,9 @@ Creates a vehicle in the world. Can be used in place of `AddStaticVehicleEx` at 
 
 ## Returns
 
-ID vozila koji je kreiran (1 do `MAX_VEHICLES`).
+ID vozila koji je kreiran (1 do MAX_VEHICLES).
 
-`INVALID_VEHICLE_ID` (65535) ako vozilo nije kreirano (dostignut je limit vozila ili unesen nevažeći model vozila).
+INVALID_VEHICLE_ID (65535) ako vozilo nije kreirano (dostignut je limit vozila ili unesen nevažeći model vozila).
 
 **0** Ako vozilo nije kreirano (Prošla su vozila 538 ili 537, a to su vozovi).
 
@@ -44,7 +44,7 @@ public OnGameModeInit()
 
 :::warning
 
-Vozovi se mogu dodati samo sa `AddStaticVehicle` i `AddStaticVehicleEx`.
+Vozovi se mogu dodati samo sa AddStaticVehicle i AddStaticVehicleEx.
 
 :::
 

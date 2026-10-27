@@ -11,13 +11,13 @@ tags: ["player", "object", "playerobject"]
 
 Get the move target rotation of a player-object.
 
-| Name             | Description                                                                         |
-| ---------------- | ----------------------------------------------------------------------------------- |
-| playerid         | The ID of the player.                                                               |
-| objectid         | The ID of the player-object to get the move target rotation of.                     |
-| &Float:rotationX | A float variable in which to store the `rotationX` coordinate, passed by reference. |
-| &Float:rotationY | A float variable in which to store the `rotationY` coordinate, passed by reference. |
-| &Float:rotationZ | A float variable in which to store the `rotationZ` coordinate, passed by reference. |
+| Name             | Description                                                                       |
+| ---------------- | --------------------------------------------------------------------------------- |
+| playerid         | The ID of the player.                                                             |
+| objectid         | The ID of the player-object to get the move target rotation of.                   |
+| &Float:rotationX | A float variable in which to store the rotationX coordinate, passed by reference. |
+| &Float:rotationY | A float variable in which to store the rotationY coordinate, passed by reference. |
+| &Float:rotationZ | A float variable in which to store the rotationZ coordinate, passed by reference. |
 
 ## Returns
 

@@ -57,7 +57,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Todos os parâmetros coordenados e `stopRange` são passados por referência
+- Todos os parâmetros coordenados e stopRange são passados por referência
 - Os índices de pontos começam em 0
 - Retorna false se o caminho ou índice de ponto for inválido
 

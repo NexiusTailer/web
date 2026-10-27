@@ -12,13 +12,13 @@ tags: ["npc", "movement", "path"]
 
 Faz com que um NPC siga um caminho predefinido com várias opções de movimento.
 
-| Nome      | Descrição                                               |
-| --------- | ------------------------------------------------------- |
-| npcid     | O ID do NPC                                             |
-| pathid    | O ID do caminho a seguir                                |
-| moveType  | O tipo de movimento (padrão: `NPC_MOVE_TYPE_JOG`)       |
-| moveSpeed | Velocidade de movimento (padrão: `NPC_MOVE_SPEED_AUTO`) |
-| reversed  | Se deve seguir o caminho inverso (padrão: false)        |
+| Nome | Descrição |
+| --------- | -------------------------------------------------- |
+| npcid | O ID do NPC |
+| pathid | O ID do caminho a seguir |
+| moveType | O tipo de movimento (padrão: NPC_MOVE_TYPE_JOG) |
+| moveSpeed | Velocidade de movimento (padrão: NPC_MOVE_SPEED_AUTO) |
+| reversed | Se deve seguir o caminho inverso (padrão: false) |
 
 ## Retornos
 

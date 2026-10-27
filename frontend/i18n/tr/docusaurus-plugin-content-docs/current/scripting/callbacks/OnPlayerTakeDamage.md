@@ -9,13 +9,13 @@ tags: ["player"]
 
 Bu fonksiyon, oyuncu hasar aldığında çağrılır.
 
-| Parametre       | Açıklama                                                                                               |
-| --------------- | ------------------------------------------------------------------------------------------------------ |
-| playerid        | Hasar alan oyuncunun ID'si.                                                                            |
-| issuerid        | Hasarı veren oyuncunun ID'si. Eğer kişi kendi kendine hasar vermişse `INVALID_PLAYER_ID` olarak geçer. |
-| Float:amount    | Oyuncunun aldığı hasar miktarı. (can ve zırh birbirine kombinlidir)                                    |
-| WEAPON:weaponid | Hasarı veren silahın ID'si.                                                                            |
-| bodypart        | Vurulan vücut bölgesi.                                                                                 |
+| Parametre       | Açıklama                                                                                             |
+| --------------- | ---------------------------------------------------------------------------------------------------- |
+| playerid        | Hasar alan oyuncunun ID'si.                                                                          |
+| issuerid        | Hasarı veren oyuncunun ID'si. Eğer kişi kendi kendine hasar vermişse INVALID_PLAYER_ID olarak geçer. |
+| Float:amount    | Oyuncunun aldığı hasar miktarı. (can ve zırh birbirine kombinlidir)                                  |
+| WEAPON:weaponid | Hasarı veren silahın ID'si.                                                                          |
+| bodypart        | Vurulan vücut bölgesi.                                                                               |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -66,13 +66,13 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::note
 
-Eğer hasar bir ateş kaynağındansa (molotof, vb.) `weaponid` 37(flame thrower) olarak döner. Eğer hasar bir patlama kaynağıysa `weaponid` 51 olarak döner. Hasar miktarı, kalan sağlık maksimum hasardan daha az olsa bile her zaman silahın verebileceği maksimum hasardır. Yani bir oyuncu 100.0 cana sahipse ve hasar değeri 46.2 olan Desert Eagle ile vurulduğunda, o oyuncuyu öldürmek için 3 atış gerekir. Son mermi isabet ettiğinde oyuncunun sadece 7.6 sağlığı kalmasına rağmen, son atışta diğe mermiler gibi 46.2'lik bir hasar miktarı gösterecektir.
+Eğer hasar bir ateş kaynağındansa (molotof, vb.) weaponid 37(flame thrower) olarak döner. Eğer hasar bir patlama kaynağıysa weaponid 51 olarak döner. Hasar miktarı, kalan sağlık maksimum hasardan daha az olsa bile her zaman silahın verebileceği maksimum hasardır. Yani bir oyuncu 100.0 cana sahipse ve hasar değeri 46.2 olan Desert Eagle ile vurulduğunda, o oyuncuyu öldürmek için 3 atış gerekir. Son mermi isabet ettiğinde oyuncunun sadece 7.6 sağlığı kalmasına rağmen, son atışta diğe mermiler gibi 46.2'lik bir hasar miktarı gösterecektir.
 
 :::
 
 :::warning
 
-`GetPlayerHealth` ve `GetPlayerArmour`, bu fonksiyon çağrılmadan önce oyuncunun eski miktarlarını döndürecektir. Bir dizi dizini kullanmadan önce **daima** issuerid'in geçerli olup olmadığını kontrol edin.
+GetPlayerHealth ve GetPlayerArmour, bu fonksiyon çağrılmadan önce oyuncunun eski miktarlarını döndürecektir. Bir dizi dizini kullanmadan önce **daima** issuerid'in geçerli olup olmadığını kontrol edin.
 
 :::
 

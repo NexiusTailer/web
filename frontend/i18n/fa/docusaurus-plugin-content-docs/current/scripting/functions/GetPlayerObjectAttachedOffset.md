@@ -11,16 +11,16 @@ tags: ["player", "object", "playerobject"]
 
 دریافت offset اتصال و چرخش یک player-object.
 
-| نام              | توضیحات                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| playerid         | ID بازیکن.                                                                    |
-| objectid         | ID player-object برای دریافت offset و چرخشش.                                  |
-| &Float:offsetX   | متغیر float برای ذخیره مختصات `offsetX`، به صورت reference پاس داده می‌شود.   |
-| &Float:offsetY   | متغیر float برای ذخیره مختصات `offsetY`، به صورت reference پاس داده می‌شود.   |
-| &Float:offsetZ   | متغیر float برای ذخیره مختصات `offsetZ`، به صورت reference پاس داده می‌شود.   |
-| &Float:rotationX | متغیر float برای ذخیره مختصات `rotationX`، به صورت reference پاس داده می‌شود. |
-| &Float:rotationY | متغیر float برای ذخیره مختصات `rotationY`، به صورت reference پاس داده می‌شود. |
-| &Float:rotationZ | متغیر float برای ذخیره مختصات `rotationZ`، به صورت reference پاس داده می‌شود. |
+| نام              | توضیحات                                                                     |
+| ---------------- | --------------------------------------------------------------------------- |
+| playerid         | ID بازیکن.                                                                  |
+| objectid         | ID player-object برای دریافت offset و چرخشش.                                |
+| &Float:offsetX   | متغیر float برای ذخیره مختصات offsetX، به صورت reference پاس داده می‌شود.   |
+| &Float:offsetY   | متغیر float برای ذخیره مختصات offsetY، به صورت reference پاس داده می‌شود.   |
+| &Float:offsetZ   | متغیر float برای ذخیره مختصات offsetZ، به صورت reference پاس داده می‌شود.   |
+| &Float:rotationX | متغیر float برای ذخیره مختصات rotationX، به صورت reference پاس داده می‌شود. |
+| &Float:rotationY | متغیر float برای ذخیره مختصات rotationY، به صورت reference پاس داده می‌شود. |
+| &Float:rotationZ | متغیر float برای ذخیره مختصات rotationZ، به صورت reference پاس داده می‌شود. |
 
 ## مقادیر برگشتی
 

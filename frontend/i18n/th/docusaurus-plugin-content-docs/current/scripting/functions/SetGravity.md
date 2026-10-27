@@ -39,6 +39,6 @@ Default gravity is 0.008.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetGravity`: Get the currently set gravity.
-- `SetWeather`: Set the global weather.
-- `SetWorldTime`: Set the global server time.
+- GetGravity: Get the currently set gravity.
+- SetWeather: Set the global weather.
+- SetWorldTime: Set the global server time.

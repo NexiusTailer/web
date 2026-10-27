@@ -6,7 +6,7 @@ tags: []
 
 ## Description
 
-Este callback se llama cuando un archivo grabado siendo reproduciendo con `StartRecordingPlayback` llega a su fin.
+Este callback se llama cuando un archivo grabado siendo reproduciendo con StartRecordingPlayback llega a su fin.
 
 ## Ejemplos
 
@@ -19,7 +19,7 @@ public OnRecordingPlaybackEnd()
 
 ## Funciones Relacionadas
 
-Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con `OnRecordingPlaybackEnd`:
+Las siguientes funciones pueden ser útiles, ya que están relacionadas de alguna forma u otra con OnRecordingPlaybackEnd:
 
-- `StartRecordingPlayback`: Inicia la reproducción de un archivo.
-- `StopRecordingPlayback`: Detiene de reproducir un archivo.
+- StartRecordingPlayback: Inicia la reproducción de un archivo.
+- StopRecordingPlayback: Detiene de reproducir un archivo.

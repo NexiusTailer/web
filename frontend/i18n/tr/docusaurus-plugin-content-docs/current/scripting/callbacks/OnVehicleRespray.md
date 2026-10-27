@@ -18,7 +18,7 @@ Bu geri çağırma, aracın renkleri değişmemiş olsa bile oyuncu bir mod mağ
 
 ## Çalışınca Vereceği Sonuçlar
 
-Her zaman ilk olarak oyun modunda çağrılır, bu yüzden 0 döndürerek diğer filterscriptslerin görmesini engeller.
+Her zaman ilk olarak oyun modunda çağrılır, bu yüzden **0** döndürerek diğer filterscriptslerin görmesini engeller.
 
 ## Örnek
 
@@ -36,7 +36,7 @@ public OnVehicleRespray(playerid, vehicleid, color1, color2)
 
 :::note
 
-Bu geri çağırma `ChangeVehicleColor` tarafından çağrılamaz. Pay 'n' Spray için kullanılamaz, sadece mod mağazaları için kullanılabilir.
+Bu geri çağırma ChangeVehicleColor tarafından çağrılamaz. Pay 'n' Spray için kullanılamaz, sadece mod mağazaları için kullanılabilir.
 
 Buradan düzeltilebilir: https://pastebin.com/G81da7N1
 

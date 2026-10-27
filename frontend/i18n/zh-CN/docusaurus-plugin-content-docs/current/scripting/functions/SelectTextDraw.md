@@ -44,8 +44,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 相关函数
 
 - [CancelSelectTextDraw](CancelSelectTextDraw): 取消鼠标文本绘图选择模式
-- [TextDrawSetSelectable](TextDrawSetSelectable): 设置文本绘图是否可通过 `SelectTextDraw` 选择
-- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): 设置玩家专属文本绘图是否可通过 `SelectTextDraw` 选择
+- [TextDrawSetSelectable](TextDrawSetSelectable): 设置文本绘图是否可通过 **SelectTextDraw** 选择
+- [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable): 设置玩家专属文本绘图是否可通过 **SelectTextDraw** 选择
 
 ## 相关回调
 

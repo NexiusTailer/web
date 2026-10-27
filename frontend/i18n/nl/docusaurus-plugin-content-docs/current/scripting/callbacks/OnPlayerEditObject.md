@@ -86,7 +86,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-Bij gebruik van `EDIT_RESPONSE_UPDATE` wordt deze callback niet aangeroepen bij het loslaten van een lopende edit; de laatste update kan daarom uit sync zijn met de daadwerkelijke positie.
+Bij gebruik van 'EDIT_RESPONSE_UPDATE' wordt deze callback niet aangeroepen bij het loslaten van een lopende edit; de laatste update kan daarom uit sync zijn met de daadwerkelijke positie.
 
 :::
 

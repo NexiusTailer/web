@@ -11,9 +11,9 @@ tags: ["file management"]
 
 Flush a file to disk (ensure all writes are complete). Actually just calls [flength](flength) as that has to force a flush to be accurate.
 
-| Name        | Description                                    |
-| ----------- | ---------------------------------------------- |
-| File:handle | The handle of the file. (returned by `fopen`). |
+| Name        | Description                                  |
+| ----------- | -------------------------------------------- |
+| File:handle | The handle of the file. (returned by fopen). |
 
 ## Returns
 

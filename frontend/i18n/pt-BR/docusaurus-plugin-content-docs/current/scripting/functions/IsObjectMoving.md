@@ -8,11 +8,11 @@ tags: ["object"]
 
 ## Descrição
 
-Verifica se o `objectid` fornecido está se movendo.
+Verifica se o objectid fornecido está se movendo.
 
-| Nome     | Descrição                                                    |
-| -------- | ------------------------------------------------------------ |
-| objectid | O `objectid` que você deseja verificar se está em movimento. |
+| Nome | Descrição |
+| -------- | -------------------------------------------- |
+| objectid | O objectid que você deseja verificar se está em movimento. |
 
 ## Retornos
 

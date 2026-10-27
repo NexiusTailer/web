@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Attaches a player's camera to a player-object. The player is able to move their camera while it is attached to an object. Can be used with `MovePlayerObject` and `AttachPlayerObjectToVehicle`.
+Attaches a player's camera to a player-object. The player is able to move their camera while it is attached to an object. Can be used with MovePlayerObject and AttachPlayerObjectToVehicle.
 
 | Name           | Description                                                                    |
 | -------------- | ------------------------------------------------------------------------------ |

@@ -74,7 +74,7 @@ public OnPlayerConnect(playerid)
 - [PlayerGangZoneStopFlash](PlayerGangZoneStopFlash): توقف چشمک زدن گنگ زون بازیکن.
 - [PlayerGangZoneGetColour](PlayerGangZoneGetColour): دریافت رنگ گنگ زون بازیکن.
 - [PlayerGangZoneGetFlashColour](PlayerGangZoneGetFlashColour): دریافت رنگ چشمک زدن گنگ زون بازیکن.
-- [PlayerGangZoneGetPos](PlayerGangZoneGetPos): دریافت موقعیت گنگ زون، نمایش داده شده با مختصات `minX`، `minY`، `maxX`، `maxY`.
+- [PlayerGangZoneGetPos](PlayerGangZoneGetPos): دریافت موقعیت گنگ زون، نمایش داده شده با مختصات minX، minY، maxX، maxY.
 - [IsValidPlayerGangZone](IsValidPlayerGangZone): بررسی معتبر بودن گنگ زون بازیکن.
 - [IsPlayerInPlayerGangZone](IsPlayerInPlayerGangZone): بررسی اینکه آیا بازیکن در گنگ زون بازیکن است.
 - [IsPlayerGangZoneVisible](IsPlayerGangZoneVisible): بررسی اینکه آیا گنگ زون بازیکن قابل مشاهده است.

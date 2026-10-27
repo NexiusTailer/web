@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Returns true during the melee attack animation
-- Melee attacks are started with `NPC_MeleeAttack`
+- Melee attacks are started with NPC_MeleeAttack
 
 ## Related Functions
 

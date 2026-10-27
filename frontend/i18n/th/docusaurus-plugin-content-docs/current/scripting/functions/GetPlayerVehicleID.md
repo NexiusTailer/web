@@ -7,7 +7,7 @@ tags: ["player", "vehicle"]
 
 ## คำอธิบาย
 
-This function gets the ID of the vehicle the player is currently in. **Note:** **NOT** the model id of the vehicle. See `GetVehicleModel` for that.
+This function gets the ID of the vehicle the player is currently in. **Note:** **NOT** the model id of the vehicle. See GetVehicleModel for that.
 
 | Name     | Description                                                        |
 | -------- | ------------------------------------------------------------------ |
@@ -31,7 +31,7 @@ if (vehicle > 0)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `IsPlayerInVehicle`: Check if a player is in a certain vehicle.
-- `IsPlayerInAnyVehicle`: Check if a player is in any vehicle.
-- `GetPlayerVehicleSeat`: Check what seat a player is in.
-- `GetVehicleModel`: Get the model id of a vehicle.
+- IsPlayerInVehicle: Check if a player is in a certain vehicle.
+- IsPlayerInAnyVehicle: Check if a player is in any vehicle.
+- GetPlayerVehicleSeat: Check what seat a player is in.
+- GetVehicleModel: Get the model id of a vehicle.

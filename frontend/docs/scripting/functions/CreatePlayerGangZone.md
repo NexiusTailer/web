@@ -74,7 +74,7 @@ This function merely CREATES the gangzone, you must use [PlayerGangZoneShow](Pla
 - [PlayerGangZoneStopFlash](PlayerGangZoneStopFlash): Stop player gangzone flash.
 - [PlayerGangZoneGetColour](PlayerGangZoneGetColour): Get the colour of a player gangzone.
 - [PlayerGangZoneGetFlashColour](PlayerGangZoneGetFlashColour): Get the flashing colour of a player gangzone.
-- [PlayerGangZoneGetPos](PlayerGangZoneGetPos): Get the position of a gangzone, represented by `minX`, `minY`, `maxX`, `maxY` coordinates.
+- [PlayerGangZoneGetPos](PlayerGangZoneGetPos): Get the position of a gangzone, represented by minX, minY, maxX, maxY coordinates.
 - [IsValidPlayerGangZone](IsValidPlayerGangZone): Check if the player gangzone valid.
 - [IsPlayerInPlayerGangZone](IsPlayerInPlayerGangZone): Check if the player in player gangzone.
 - [IsPlayerGangZoneVisible](IsPlayerGangZoneVisible): Check if the player gangzone is visible.

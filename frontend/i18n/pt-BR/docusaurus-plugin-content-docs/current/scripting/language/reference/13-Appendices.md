@@ -29,7 +29,7 @@ Quando o compilador encontra um erro em um arquivo, ele emite uma mensagem e, de
 | 011 | invalid outside functions - inválido fora de funções. Uma instrução ou expressão deve estar dentro da definição de uma função.                                                                                 |
 | 012 | invalid function call, not a valid address - chamada de função inválida, não um endereço válido. A função é apenas declarada, mas nunca definida.                                                              |
 | 013 | no entry point (no public functions) - sem ponto de entrada (nenhuma função pública). O arquivo contém apenas código inativo ou apenas constantes.                                                             |
-| 014 | invalid statement; not in switch - instrução inválida; não está em switch. Os rótulos `case` e `default` existem apenas nas instruções switch.                                                                 |
+| 014 | invalid statement; not in switch - instrução inválida; não está em switch. Os rótulos "case" e "default" existem apenas nas instruções switch.                                                                 |
 | 015 | "default" must be the last clause in switch statement - "default" deve ser a última cláusula em uma instrução switch.                                                                                          |
 | 016 | multiple defaults in "switch" - vários defaults em "switch". Apenas uma cláusula default é permitida.                                                                                                          |
 | 017 | undefined symbol string - símbolo indefinido. Uma string literal está mal formada.                                                                                                                             |
@@ -233,7 +233,7 @@ que podem ser alterados por uma diretiva ou opção de linha de comando:
 
 - O ponto e vírgula para encerrar instruções é opcional; a opção/diretiva pode tornar ponto e vírgula obrigatórios ou pode desabilitá-los completamente.
 
-- As palavras-chaves `return` e `sizeof` também podem funcionar sem parênteses (os parênteses seriam apenas parte da expressão); uma opção/diretiva pode forçar parênteses obrigatórios.
+- As palavras-chaves "return" e "sizeof" também podem funcionar sem parênteses (os parênteses seriam apenas parte da expressão); uma opção/diretiva pode forçar parênteses obrigatórios.
 
 ### Variáveis de ambiente
 

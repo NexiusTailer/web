@@ -29,6 +29,6 @@ SetPlayerInterior(playerid, 0);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GetPlayerInterior`: Get the current interior of a player.
-- `LinkVehicleToInterior`: Change the interior that a vehicle is seen in.
-- `OnPlayerInteriorChange`: Called when a player changes interior.
+- GetPlayerInterior: Get the current interior of a player.
+- LinkVehicleToInterior: Change the interior that a vehicle is seen in.
+- OnPlayerInteriorChange: Called when a player changes interior.

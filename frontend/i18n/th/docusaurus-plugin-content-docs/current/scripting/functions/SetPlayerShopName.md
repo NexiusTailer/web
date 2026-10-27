@@ -45,5 +45,5 @@ This function does not support casino scripts.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `DisableInteriorEnterExits`: Disable the yellow door markers.
-- `SetPlayerInterior`: Set a player's interior.
+- DisableInteriorEnterExits: Disable the yellow door markers.
+- SetPlayerInterior: Set a player's interior.

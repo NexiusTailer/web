@@ -12,15 +12,15 @@ tags: ["object"]
 
 Obtenha o deslocamento e a rotação do anexo de um objeto.
 
-| Nome             | Descrição                                                                                  |
-| ---------------- | ------------------------------------------------------------------------------------------ |
-| objectid         | O ID do objeto do qual obter o deslocamento e a rotação.                                   |
-| &Float:offsetX   | Uma variável float na qual armazenar a coordenada `offsetX`, passada por referência.       |
-| &Float:offsetY   | Uma variável float na qual armazenar a coordenada `offsetY`, passada por referência.       |
-| &Float:offsetZ   | Uma variável float na qual armazenar a coordenada `offsetZ`, passada por referência.       |
-| &Float:rotationX | Uma variável flutuante na qual armazenar a coordenada rotaçãoX, passada por referência.    |
+| Nome | Descrição |
+| ---------------- | --------------------------------------------------------------------------------- |
+| objectid | O ID do objeto do qual obter o deslocamento e a rotação.                           |
+| &Float:offsetX | Uma variável float na qual armazenar a coordenada offsetX, passada por referência.   |
+| &Float:offsetY | Uma variável float na qual armazenar a coordenada offsetY, passada por referência.   |
+| &Float:offsetZ | Uma variável float na qual armazenar a coordenada offsetZ, passada por referência.   |
+| &Float:rotationX | Uma variável flutuante na qual armazenar a coordenada rotaçãoX, passada por referência. |
 | &Float:rotationY | Uma variável flutuante na qual armazenar a coordenada de rotaçãoY, passada por referência. |
-| &Float:rotationZ | Uma variável flutuante na qual armazenar a coordenada rotaçãoZ, passada por referência.    |
+| &Float:rotationZ | Uma variável flutuante na qual armazenar a coordenada rotaçãoZ, passada por referência. |
 
 ## Retornos
 

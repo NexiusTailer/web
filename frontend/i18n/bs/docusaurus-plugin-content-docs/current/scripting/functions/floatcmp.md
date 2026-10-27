@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-`floatcmp` se može koristiti za međusobno uspoređivanje vrijednosti plutajućeg stanja, kako bi se potvrdila usporedba.
+floatcmp se može koristiti za međusobno uspoređivanje vrijednosti plutajućeg stanja, kako bi se potvrdila usporedba.
 
 | Ime   | Deskripcija                          |
 | ----- | ------------------------------------ |

@@ -26,4 +26,4 @@ RepairAllVehicles()
 ```
 ## Funções Relacionadas
 
-- [GetPlayerPoolSize](GetPlayerPoolSize): Obtém o maior `playerid` conectado ao servidor.
+- [GetPlayerPoolSize](GetPlayerPoolSize): Obtém o maior playerid conectado ao servidor.

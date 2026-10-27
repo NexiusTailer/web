@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Recording must be loaded with `NPC_LoadRecord` before it becomes valid
+- Recording must be loaded with NPC_LoadRecord before it becomes valid
 - Invalid recordings cannot be used for playback
 
 ## Related Functions

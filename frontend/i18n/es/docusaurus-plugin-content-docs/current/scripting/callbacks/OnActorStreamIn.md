@@ -37,6 +37,6 @@ public OnActorStreamIn(actorid, forplayerid)
 
 ## Funciones Relacionadas
 
-Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con `OnActorStreamIn`:
+Los siguientes callbacks pueden ser útiles, ya que están relacionados de alguna forma u otra con OnActorStreamIn:
 
 - [OnActorStreamOut](OnActorStreamOut): Este callback es llamado cuando un actor deja de transmitirse (deja de ser visible) por el cliente de un jugador.

@@ -18,7 +18,7 @@ Obtém o veículo em que um NPC está entrando no momento.
 
 ## Retornos
 
-Devolve o veículo ID em que NPC está entrando, ou `INVALID_VEHICLE_ID` caso não esteja entrando em nenhum veículo.
+Devolve o veículo ID em que NPC está entrando, ou INVALID_VEHICLE_ID caso não esteja entrando em nenhum veículo.
 
 ## Exemplos
 
@@ -84,7 +84,7 @@ public CheckNPCEnteringVehicle(playerid)
 ```
 ## Notas
 
-- Retorna `INVALID_VEHICLE_ID` se NPC não estiver entrando em um veículo no momento
+- Retorna INVALID_VEHICLE_ID se NPC não estiver entrando em um veículo no momento
 - Isso é diferente do veículo em que o NPC já está
 - O NPC deve estar em processo de digitação para que isso retorne um ID válido
 

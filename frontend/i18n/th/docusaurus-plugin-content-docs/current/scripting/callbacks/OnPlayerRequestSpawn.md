@@ -43,7 +43,7 @@ NPC สามารถเรียก Callback นี้ได้
 
 :::tip
 
-To prevent players from spawning with certain classes, the last viewed class must be saved in a variable in `OnPlayerRequestClass`.
+To prevent players from spawning with certain classes, the last viewed class must be saved in a variable in OnPlayerRequestClass.
 
 :::
 

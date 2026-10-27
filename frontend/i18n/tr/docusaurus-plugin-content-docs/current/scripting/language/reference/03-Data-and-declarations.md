@@ -46,7 +46,7 @@ Statik global bir değişken, normal bir global değişkenle aynı şekilde davr
 
 ### • Stok bildirimleri
 
-Bir global değişken `stock` olarak bildirilebilir. Stok bir bildiri, değişkenin programda kullanılmadığı ortaya çıkarsa, analizci tarafından kaldırılabilir veya görmezden gelinebilir.
+Bir global değişken "stock" olarak bildirilebilir. Stok bir bildiri, değişkenin programda kullanılmadığı ortaya çıkarsa, analizci tarafından kaldırılabilir veya görmezden gelinebilir.
 
 Stok değişkenler, stok işlevleriyle birleştirildiğinde kullanışlıdır. Bir genel değişken aynı şekilde "stok" olarak da bildirilebilir — genel değişkenlerin "genel stok" olarak bildirilmesi, betikin gerçekten kullandığı yalnızca bu değişkenlerin P-code dosyasında sona ermesini sağlar.
 
@@ -102,9 +102,9 @@ Bir sabit değişkenin kullanılabileceği üç tipik durum şunlardır:
 
 ### • Diziler (tek boyutlu)
 
-`name[constant]` sözdizimi, name'in `constant` eleman içeren bir dizi olduğunu belirtir, her bir eleman tek bir hücredir. Name, kendi seçtiğiniz bir tanımlayıcı adının yerine geçen bir yer tutucudur ve constant pozitif, sıfırdan farklı bir değerdir; constant bulunmayabilir. Köşeli parantezler arasında bir değer yoksa, öğelerin sayısı, başlatıcılardaki sayının eşit olduğu sayıya ayarlanır —aşağıdaki örneğe bakın.
+name[constant] sözdizimi, name'in "constant" eleman içeren bir dizi olduğunu belirtir, her bir eleman tek bir hücredir. Name, kendi seçtiğiniz bir tanımlayıcı adının yerine geçen bir yer tutucudur ve constant pozitif, sıfırdan farklı bir değerdir; constant bulunmayabilir. Köşeli parantezler arasında bir değer yoksa, öğelerin sayısı, başlatıcılardaki sayının eşit olduğu sayıya ayarlanır —aşağıdaki örneğe bakın.
 
-Dizi indeks aralığı "sıfır tabanlıdır", yani ilk öğe `name[0]`'da ve son öğe `name[constant-1]`'de bulunur.
+Dizi indeks aralığı "sıfır tabanlıdır", yani ilk öğe name[0]'da ve son öğe name[constant-1]'de bulunur.
 
 ### • Başlatma
 
@@ -182,7 +182,7 @@ new msg[message] = { !"new message", 1 }
 
 ```
 
-Başlatıcı, bir dize (bir harf dizisi) ve bir değer içerir; bunlar sırasıyla `text` ve `priority` alanlarına gider.
+Başlatıcı, bir dize (bir harf dizisi) ve bir değer içerir; bunlar sırasıyla "text" ve "priority" alanlarına gider.
 
 ### • Çok boyutlu diziler
 
@@ -207,13 +207,13 @@ new f[][] = { "Tamam", "İptal" }
 
 ---
 
-Son iki bildirimin (değişken `e` ve `f`) gösterdiği gibi, bir dizinin son boyutu belirtilmemiş bir uzunluğa sahip olabilir, bu durumda her alt dizi için uzunluk, ilgili başlatıcıdan belirlenir. Her alt dizi farklı bir boyuta sahip olabilir; bu özel örnekte, `e[1][5]` "İptal" kelimesinin "l" harfini içerir, ancak `e[0][5]` geçersizdir çünkü `e[0]` alt dizisinin uzunluğu sadece üç hücre içerir ("O", "K" ve bir sıfır terminatorü).
+Son iki bildirimin (değişken "e" ve "f") gösterdiği gibi, bir dizinin son boyutu belirtilmemiş bir uzunluğa sahip olabilir, bu durumda her alt dizi için uzunluk, ilgili başlatıcıdan belirlenir. Her alt dizi farklı bir boyuta sahip olabilir; bu özel örnekte, "e[1][5]" "İptal" kelimesinin "l" harfini içerir, ancak "e[0][5]" geçersizdir çünkü "e[0]" alt dizisinin uzunluğu sadece üç hücre içerir ("O", "K" ve bir sıfır terminatorü).
 
-`e` ve `f` dizileri için bildirimler arasındaki fark, major boyutun başlatıcının sayısını saydırmamıza izin verip vermemektedir — `sizeof f` 2'ye, `sizeof e` (sizeof operatörü hakkındaki sonraki bölüme bakınız) eşittir.
+"e" ve "f" dizileri için bildirimler arasındaki fark, major boyutun başlatıcının sayısını saydırmamıza izin verip vermemektedir — "sizeof f" 2'ye, "sizeof e" (sizeof operatörü hakkındaki sonraki bölüme bakınız) eşittir.
 
 ### • Diziler ve sizeof operatörü
 
-Sizeof operatörü bir değişkenin "eleman" sayısını döndürür. Basit (bileşik olmayan) bir değişken için sizeof'un sonucu her zaman 1'dir, çünkü bir eleman için bir hücredir. Bir boyuta sahip bir dizi bir dizi hücre içerir ve sizeof operatörü bu sayıyı döndürür. Aşağıdaki örnekte, `msg` dizisi dört karakter içerir (her biri bir hücrede) ve bir sıfır terminator içerir, bu nedenle bu kod parçası "ekran" da "5" yazdırır:
+Sizeof operatörü bir değişkenin "eleman" sayısını döndürür. Basit (bileşik olmayan) bir değişken için sizeof'un sonucu her zaman 1'dir, çünkü bir eleman için bir hücredir. Bir boyuta sahip bir dizi bir dizi hücre içerir ve sizeof operatörü bu sayıyı döndürür. Aşağıdaki örnekte, "msg" dizisi dört karakter içerir (her biri bir hücrede) ve bir sıfır terminator içerir, bu nedenle bu kod parçası "ekran" da "5" yazdırır:
 
 Listeleme: sizeof operatörü
 
@@ -298,7 +298,7 @@ for (new i = 0; rectangle:i < rectangle; ++i)
 
 ```
 
-`my_rect` adlı dizinin bildiriminden sonra, `my_rect[top]` ile dizinin ikinci alanına erişebilirsiniz, ancak `my_rect[1]` ifadesi bir derleyici uyarısı (bir uyarı veya hata mesajı) verecektir. Bir etiket geçersiz kılma (veya bir etiket dönüştürme), bir işlevi, bir sabiti veya bir değişkeni istenen etiket adına ayarlar. Önceki örnekteki son iki satırdaki for döngüsü bu durumu gösterir: döngü değişkeni olan i, basit, etiketsiz bir hücredir ve onu my_rect dizisinde bir dizin olarak kullanmadan önce etiket olan rectangle'ye dönüştürülmelidir. Enum yapısı, `rectangle` adında hem bir sabit hem de bir etiket oluşturmuştur.
+"my_rect" adlı dizinin bildiriminden sonra, "my_rect[top]" ile dizinin ikinci alanına erişebilirsiniz, ancak "my_rect[1]" ifadesi bir derleyici uyarısı (bir uyarı veya hata mesajı) verecektir. Bir etiket geçersiz kılma (veya bir etiket dönüştürme), bir işlevi, bir sabiti veya bir değişkeni istenen etiket adına ayarlar. Önceki örnekteki son iki satırdaki for döngüsü bu durumu gösterir: döngü değişkeni olan i, basit, etiketsiz bir hücredir ve onu my_rect dizisinde bir dizin olarak kullanmadan önce etiket olan rectangle'ye dönüştürülmelidir. Enum yapısı, "rectangle" adında hem bir sabit hem de bir etiket oluşturmuştur.
 
 Şimdiye kadar tanıtılan etiket adları küçük harfle başlamıştır; bunlar "zayıf" etiketlerdir. Büyük harfle başlayan etiket adları ise "güçlü" etiketlerdir. Zayıf ve güçlü etiketler arasındaki fark, zayıf etiketlerin bazı durumlarda pawn ayrıştırıcı tarafından örtbas edilebileceği (yani, zayıf bir şekilde etiketlenmiş bir ifade etiketsiz bir ifade haline gelebilir) durumlarda bulunmaktadır. Etiket kontrol mekanizması aşağıdaki durumları doğrular:
 
@@ -308,7 +308,7 @@ for (new i = 0; rectangle:i < rectangle; ++i)
 
 - İşlevlere argüman geçme, atama kurallarını takip eder. Derleyici, bir işlev tanımındaki formel parametrenin bir etiketi varsa ve işlev çağrısındaki gerçek parametre (fonksiyon çağrısı içinde) etiketsiz veya farklı bir etikete sahipse bir hata mesajı verir. Ancak formel parametre etiketsizse, herhangi bir zayıf etiketle bir parametreyi kabul eder.
 
-- Bir dizi, her boyut için bir etiket belirleyebilir, bkz. yukarıdaki `my_rect` örneği. Etiket kontrol dizinleri için ikili operatör etiket kontrolü kurallarını izler: zayıf ve güçlü etiketler arasında fark yoktur.
+- Bir dizi, her boyut için bir etiket belirleyebilir, bkz. yukarıdaki "my_rect" örneği. Etiket kontrol dizinleri için ikili operatör etiket kontrolü kurallarını izler: zayıf ve güçlü etiketler arasında fark yoktur.
 
 ---
 

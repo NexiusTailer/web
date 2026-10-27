@@ -50,7 +50,7 @@ public OnPlayerConnect(playerid)
 生效条件需同时满足：
 
 1. 使用`TEXT_DRAW_FONT_MODEL_PREVIEW`字体类型
-2. 已通过 `PlayerTextDrawSetPreviewModel` 设置车辆模型
+2. 已通过 PlayerTextDrawSetPreviewModel 设置车辆模型
 
 :::
 

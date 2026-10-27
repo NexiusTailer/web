@@ -10,10 +10,10 @@ tags: ["player"]
 
 Verifica se um jogador está sendo transmitido no cliente de outro player.
 
-| Nome        | Descrição                                                       |
-| ----------- | --------------------------------------------------------------- |
-| playerid    | O ID do jogador a ser verificado é transmitido.                 |
-| forplayerid | O ID do jogador para verificar se o `playerid` foi transmitido. |
+| Nome | Descrição |
+| ----------- | ------------------------------------------------------------- |
+| playerid | O ID do jogador a ser verificado é transmitido. |
+| forplayerid | O ID do jogador para verificar se o playerid foi transmitido. |
 
 ## Retornos
 
@@ -33,9 +33,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**Servidor SA-MP:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [server.cfg](../../server/server.cfg) - `stream_distance`)
+**Servidor SA-MP:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [server.cfg](../../server/server.cfg) - **stream_distance**)
 
-**servidor open.mp:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [config.json](../../server/config.json) - `network.stream_radius`)
+**servidor open.mp:** Os jogadores transmitem se estiverem a mais de 200.0 metros de distância (consulte [config.json](../../server/config.json) - **network.stream_radius**)
 
 :::
 

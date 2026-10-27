@@ -41,5 +41,5 @@ The format string or its output should not exceed 1024 characters. Anything beyo
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `print`: Print a basic message to the server logs and console.
-- `format`: Format a string.
+- print: Print a basic message to the server logs and console.
+- format: Format a string.

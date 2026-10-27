@@ -27,7 +27,7 @@ floatsqroot(25.0); // Returns 5, because 5x5 = 25
 
 :::note
 
-This function raises a “domain” error if the input value is negative. You may use `floatabs` to get the absolute (positive) value.
+This function raises a “domain” error if the input value is negative. You may use floatabs to get the absolute (positive) value.
 
 :::
 

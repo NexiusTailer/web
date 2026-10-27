@@ -7,11 +7,11 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Called when a player changes interior. Can be triggered by `SetPlayerInterior` or when a player enter/exits a building.
+Called when a player changes interior. Can be triggered by SetPlayerInterior or when a player enter/exits a building.
 
 | Name          | Description                            |
 | ------------- | -------------------------------------- |
-| playerid      | The `playerid` who changed interior.   |
+| playerid      | The playerid who changed interior.     |
 | newinteriorid | The interior the player is now in.     |
 | oldinteriorid | The interior the player was in before. |
 

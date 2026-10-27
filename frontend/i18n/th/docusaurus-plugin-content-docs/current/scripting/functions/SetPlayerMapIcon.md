@@ -24,7 +24,7 @@ Place an icon/marker on a player's map. Can be used to mark locations such as ba
 
 **1**: The function executed successfully.
 
-**0**: The function failed to execute. Player is not connected.
+0: The function failed to execute. Player is not connected.
 
 ## ตัวอย่าง
 

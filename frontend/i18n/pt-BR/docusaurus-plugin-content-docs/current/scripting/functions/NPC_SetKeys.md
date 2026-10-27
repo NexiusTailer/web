@@ -75,7 +75,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - As chaves afetam o comportamento do NPC em veículos e a pé
-- Use `NPC_GetKeys` para verificar os estados principais atuais
+- Use NPC_GetKeys para verificar os estados principais atuais
 - Os estados principais persistem até serem alterados ou redefinições de estado NPC
 
 ## Funções Relacionadas

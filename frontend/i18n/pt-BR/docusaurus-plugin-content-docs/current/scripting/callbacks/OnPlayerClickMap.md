@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-`OnPlayerClickMap` é chamado quando um jogador pocisiona um ponto no mapa do menu de pausa (clicando com botão direito).
+OnPlayerClickMap é chamado quando um jogador pocisiona um ponto no mapa do menu de pausa (clicando com botão direito).
 
 | Nome     | Descrição                                                         |
 | -------- | ----------------------------------------------------------------- |

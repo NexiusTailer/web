@@ -35,7 +35,7 @@
     characters a. . . z, A. . . Z, 0. . . 9, _ or @; the first character may not be
     a digit. The characters @ and _ by themselves are not valid identifiers,
 
-    i.e. `_Up` is a valid identifier, but “_” is not.
+    i.e. “_Up” is a valid identifier, but “_” is not.
 
     pawn is case sensitive.
 
@@ -90,7 +90,7 @@ tional number starts with one or more digits, contains a dec-
 imal point and has at least one digit following the decimal
 point. For example, “12.0” and “0.75” are valid rational num-
 bers. Optionally, an exponent may be appended to the rational
-number; the exponent notation is the letter `e` (lower case)
+number; the exponent notation is the letter “e” (lower case)
 followed by a signed integer numeric constant. For example,
 “3.12e4” is a valid rational number with an exponent.
 
@@ -119,8 +119,8 @@ stants are assumed to be numeric constants.
 | ’\’’             | ’   | single quote                               |
 | ’\"’             | "   | double quote                               |
 | ’\%              | %   | percent sign                               |
-| ’\ddd;’          |     | character code with decimal code `ddd`     |
-| ’\xhhh;’         |     | character code with hexadecimal code `hhh` |
+| ’\ddd;’          |     | character code with decimal code “ddd”     |
+| ’\xhhh;’         |     | character code with hexadecimal code “hhh” |
 
 The semicolon after the ddd; and xhhh; codes is optional.
 Its purpose is to give the escape sequence sequence an explicit
@@ -214,15 +214,15 @@ A source file declares symbolic constants with the const and the enum
 instructions. The const keyword declares a single constant and the
 enum defines a list of —usually— sequential constants sharing the same tag name.
 
-`const` _identifier = constant expression_
+**const** _identifier = constant expression_
 
 Creates a symbolic constant with the value of the constant
 expression on the right hand of the assignment operator. The
 constant can be used at any place where a literal number is
 valid (for example: in expressions, in array declarations and in
-directives like `#if` and `#assert`).
+directives like “#if” and “#assert”).
 
-`enum` _name (increment) \{ constant list \}_
+**enum** _name (increment) \{ constant list \}_
 
 The enum instruction creates a series of constants with incre-
 menting values. The constant list is a series of identifiers sep-
@@ -250,19 +250,19 @@ notation.
 The symbols in the constant list may have an explicit tag,
 which should precede the symbol name.
 
-The `name` token that follows the enum keyword is optional. If it
+The name token that follows the enum keyword is optional. If it
 is included, and if the symbol names does not have an explicit
 tag, this name is used as the tag name for every symbol in the
 constant list. In addition, the enum command creates an extra
-constant with `name` for the constant name and the tag name.
+constant with name for the constant name and the tag name.
 The value of the last constant is the value of the last symbol in
 the constant list plus the increment value of that last constant.
 
-The increment token that follows the optional `name` token is
+The increment token that follows the optional name token is
 also optional. If included, it specifies a different post-increment
 rule. By default, an enum increments the value of every succe-
 sive constant with 1, but you may specify a different rule with
-the syntax `(operator constant)`, where operator must be +=,
+the syntax “(operator constant)”, where operator must be +=,
 
 \*= or \<\<=. The += operator creates an additive increment, the
 

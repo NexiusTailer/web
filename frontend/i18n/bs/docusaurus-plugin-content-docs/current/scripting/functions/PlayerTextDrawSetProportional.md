@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Deskripcija
 
-Prilagođava razmak između teksta proporcionalnom omjeru. Korisno pri korišćenju `PlayerTextDrawLetterSize` kako bi se osiguralo da tekst ima ravnomjeran razmak između karaktera.
+Prilagođava razmak između teksta proporcionalnom omjeru. Korisno pri korišćenju PlayerTextDrawLetterSize kako bi se osiguralo da tekst ima ravnomjeran razmak između karaktera.
 
 | Ime      | Deskripcija                                                        |
 | -------- | ------------------------------------------------------------------ |
@@ -29,7 +29,7 @@ Ova funkcija ne returna (vraća) nikakve posebne vrijednosti.
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): Postavi poravnanje player-textdrawa.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Postavi font player-textdrawa.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Postavi veličinu slova u tekstu player-textdrawa.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Postavi veličinu box-a player-textdrawa (ili dijela koji reaguje na klik za PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Omogući/onemogući korišćenje outline-a za player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Postavi sjenu na player-textdraw.
 - [PlayerTextDrawUseBox](PlayerTextDrawUseBox): Omogući/onemogući korišćenje box-a za player-textdraw.

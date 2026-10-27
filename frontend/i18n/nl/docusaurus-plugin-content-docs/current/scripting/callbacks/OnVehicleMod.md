@@ -17,7 +17,7 @@ Deze callback wordt aangeroepen wanneer een voertuig wordt gemod.
 
 ## Returns
 
-Wordt altijd als eerste aangeroepen in gamemode; return 0 blokkeert ook andere filterscripts.
+Wordt altijd als eerste aangeroepen in gamemode; return **0** blokkeert ook andere filterscripts.
 
 ## Voorbeelden
 
@@ -40,7 +40,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Deze callback wordt NIET aangeroepen door `AddVehicleComponent`.
+Deze callback wordt NIET aangeroepen door AddVehicleComponent.
 
 :::
 

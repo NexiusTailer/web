@@ -9,15 +9,15 @@ tags: ["player"]
 
 Prikazuje igraču za sinkroni (samo jedan po jedan) dijaloški box.
 
-| Ime       | Deskripcija                                                                                                                                                                    |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| playerid  | ID igrača za prikazati dijalog.                                                                                                                                                |
-| dialogid  | ID kojem treba dodijeliti ovaj dijalog, tako da se odgovori mogu obraditi. Maksimalni `dialogid` je 32767. Upotreba negativnih vrijednosti zatvorit će svaki otvoreni dijalog. |
-| style     | [Stil](../resources/dialogstyles) dijaloga.                                                                                                                                    |
-| caption[] | Naslov na vrhu dijaloga. Dužina opisa ne može premašiti više od 64 znaka prije nego što se počne odsjeći.                                                                      |
-| info[]    | Tekst za prikaz u glavnom dijaloškom okviru. Koristite \n za započinjanje novog retka i \t za tabeliranje.                                                                     |
-| button1[] | Tekst na lijevom dugmetu.                                                                                                                                                      |
-| button2[] | Tekst na desnom dugmetu. Ostavite ga praznog ( "" ) da ga sakrijete.                                                                                                           |
+| Ime       | Deskripcija                                                                                                                                                                  |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | ID igrača za prikazati dijalog.                                                                                                                                              |
+| dialogid  | ID kojem treba dodijeliti ovaj dijalog, tako da se odgovori mogu obraditi. Maksimalni dialogid je 32767. Upotreba negativnih vrijednosti zatvorit će svaki otvoreni dijalog. |
+| style     | [Stil](../resources/dialogstyles) dijaloga.                                                                                                                                  |
+| caption[] | Naslov na vrhu dijaloga. Dužina opisa ne može premašiti više od 64 znaka prije nego što se počne odsjeći.                                                                    |
+| info[]    | Tekst za prikaz u glavnom dijaloškom okviru. Koristite \n za započinjanje novog retka i \t za tabeliranje.                                                                   |
+| button1[] | Tekst na lijevom dugmetu.                                                                                                                                                    |
+| button2[] | Tekst na desnom dugmetu. Ostavite ga praznog ( "" ) da ga sakrijete.                                                                                                         |
 
 ## Returns
 

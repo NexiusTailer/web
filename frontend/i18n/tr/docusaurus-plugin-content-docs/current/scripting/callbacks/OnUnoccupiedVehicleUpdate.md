@@ -23,7 +23,7 @@ Bu fonksiyon, oyuncunun istemcisi sürmediği bir aracın konumunu güncellediğ
 
 ## Çalışınca Vereceği Sonuçlar
 
-Filterscript dosyalarında her zaman ilk olarak çağrılır, bu nedenle 0 döndürmek diğer komut dosyalarının da görmesini engeller.
+Filterscript dosyalarında her zaman ilk olarak çağrılır, bu nedenle **0** döndürmek diğer komut dosyalarının da görmesini engeller.
 
 ## Örnek
 
@@ -45,7 +45,7 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 :::warning
 
-Bu fonksiyon, kullanılmayan araç başına saniyede çok sık çağrılır. Çağırdığınızda yoğun hesaplamalar veya yoğun dosya yazma / okuma işlemleri yapmaktan kaçınmalısınız. `GetVehiclePos`, araç değerleri güncellenmeden önce aracın eski koordinatlarını döndürecektir.
+Bu fonksiyon, kullanılmayan araç başına saniyede çok sık çağrılır. Çağırdığınızda yoğun hesaplamalar veya yoğun dosya yazma / okuma işlemleri yapmaktan kaçınmalısınız. GetVehiclePos, araç değerleri güncellenmeden önce aracın eski koordinatlarını döndürecektir.
 
 :::
 

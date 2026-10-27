@@ -51,6 +51,6 @@ public OnGameModeInit()
 
 ## Связанные функции
 
-- [AddPlayerClassEx](AddPlayerClassEx): Добавляет класс с указанной командой (`teamid`).
+- [AddPlayerClassEx](AddPlayerClassEx): Добавляет класс с указанной командой (teamid).
 - [SetSpawnInfo](SetSpawnInfo): Установка информации для спавна игрока.
 - [SetPlayerSkin](SetPlayerSkin): Устанавливает скин игрока.

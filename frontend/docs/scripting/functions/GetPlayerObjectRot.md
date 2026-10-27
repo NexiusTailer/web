@@ -9,13 +9,13 @@ tags: ["player"]
 
 Use this function to get the object's current rotation. The rotation is saved by reference in three rotationX/rotationY/rotationZ variables.
 
-| Name             | Description                                                     |
-| ---------------- | --------------------------------------------------------------- |
-| playerid         | The player you associated this object to.                       |
-| objectid         | The `objectid` of the object you want to get the rotation from. |
-| &Float:rotationX | The variable to store the X rotation, passed by reference.      |
-| &Float:rotationY | The variable to store the Y rotation, passed by reference.      |
-| &Float:rotationZ | The variable to store the Z rotation, passed by reference.      |
+| Name             | Description                                                   |
+| ---------------- | ------------------------------------------------------------- |
+| playerid         | The player you associated this object to.                     |
+| objectid         | The objectid of the object you want to get the rotation from. |
+| &Float:rotationX | The variable to store the X rotation, passed by reference.    |
+| &Float:rotationY | The variable to store the Y rotation, passed by reference.    |
+| &Float:rotationZ | The variable to store the Z rotation, passed by reference.    |
 
 ## Returns
 

@@ -7,7 +7,7 @@ tags: []
 
 ## Descriere
 
-Acest callback este apelat când se finalizează o solicitare `SendClientCheck`.
+Acest callback este apelat când se finalizează o solicitare SendClientCheck.
 
 | Name     | Description                    |
 | -------- | ------------------------------ |

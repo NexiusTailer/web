@@ -14,9 +14,9 @@ Ajoute un nouveau modèle de personnage personnalisé à télécharger. Les fich
 | Nom     | Description                                                                                                                                 |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | baseid  | L'ID du modèle de skin de base à utiliser (comportement du personnage et personnage d'origine à utiliser lorsque le téléchargement échoue). |
-| newid   | Le nouvel ID de modèle de skin allait de 20 000 à 30 000 (10 000 emplacements) à utiliser ultérieurement avec `SetPlayerSkin`               |
-| dffname | Nom du fichier de collision de modèles **.dff** situé dans le dossier du serveur de modèles par défaut (paramètre `artpath`).               |
-| txdname | Nom du fichier de texture de modèle **.txd** situé dans le dossier du serveur de modèles par défaut (paramètre `artpath`).                  |
+| newid   | Le nouvel ID de modèle de skin allait de 20 000 à 30 000 (10 000 emplacements) à utiliser ultérieurement avec SetPlayerSkin                 |
+| dffname | Nom du fichier de collision de modèles **.dff** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                 |
+| txdname | Nom du fichier de texture de modèle **.txd** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                    |
 
 ## Retour
 
@@ -39,7 +39,7 @@ public OnGameModeInit()
 
 :::note
 
-`useartwork` doit d'abord être activé dans les paramètres du serveur pour que cela fonctionne
+**useartwork** doit d'abord être activé dans les paramètres du serveur pour que cela fonctionne
 
 :::
 

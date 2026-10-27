@@ -120,7 +120,7 @@ Khi viết một đoạn văn chứa tên hàm, số, biểu thức hoặc bất
 
 - ❌
 
-  > Hàm `fopen` sẽ trả về một giá trị có thẻ kiểu File:, không có vấn đề gì trên dòng đó vì giá trị trả về đang được lưu vào một biến cũng có thẻ kiểu File: (lưu ý các trường hợp cũng giống nhau). Tuy nhiên trên dòng tiếp theo giá trị 4 được thêm vào tay cầm tệp. 4 không có thẻ [...]
+  > Hàm fopen sẽ trả về một giá trị có thẻ kiểu File:, không có vấn đề gì trên dòng đó vì giá trị trả về đang được lưu vào một biến cũng có thẻ kiểu File: (lưu ý các trường hợp cũng giống nhau). Tuy nhiên trên dòng tiếp theo giá trị 4 được thêm vào tay cầm tệp. 4 không có thẻ [...]
 
 - ✔
 

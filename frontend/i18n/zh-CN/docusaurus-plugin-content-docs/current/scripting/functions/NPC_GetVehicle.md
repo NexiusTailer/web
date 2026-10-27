@@ -17,7 +17,7 @@ tags: ["npc", "车辆"]
 
 ## 返回值
 
-返回 NPC 所在的车辆 ID，若未在任何车辆中则返回 `INVALID_VEHICLE_ID`。
+返回 NPC 所在的车辆 ID，若未在任何车辆中则返回 INVALID_VEHICLE_ID。
 
 ## 示例
 
@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 若 NPC 未在任何车辆中则返回 `INVALID_VEHICLE_ID`
+- 若 NPC 未在任何车辆中则返回 INVALID_VEHICLE_ID
 
 ## 相关函数
 

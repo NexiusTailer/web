@@ -9,9 +9,9 @@ Typen server‑variabelen (svars) gebruikt door [GetSVarType](../functions/GetSV
 
 :::
 
-| ID  | Definitie               |
-| --- | ----------------------- |
-| 0   | `SERVER_VARTYPE_NONE`   |
-| 1   | `SERVER_VARTYPE_INT`    |
-| 2   | `SERVER_VARTYPE_STRING` |
-| 3   | `SERVER_VARTYPE_FLOAT`  |
+| ID  | Definitie             |
+| --- | --------------------- |
+| 0   | SERVER_VARTYPE_NONE   |
+| 1   | SERVER_VARTYPE_INT    |
+| 2   | SERVER_VARTYPE_STRING |
+| 3   | SERVER_VARTYPE_FLOAT  |

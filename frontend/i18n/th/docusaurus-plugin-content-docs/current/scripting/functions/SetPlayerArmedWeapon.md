@@ -48,11 +48,11 @@ public OnPlayerStateChange(playerid, PLAYER_STATE:newstate, PLAYER_STATE:oldstat
 
 :::note
 
-This function _arms_ a player with a weapon they **already have**; it does not _give_ them a new weapon. See `GivePlayerWeapon`.
+This function _arms_ a player with a weapon they **already have**; it does not _give_ them a new weapon. See GivePlayerWeapon.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GivePlayerWeapon`: Give a player a weapon.
-- `GetPlayerWeapon`: Check what weapon a player is currently holding.
+- GivePlayerWeapon: Give a player a weapon.
+- GetPlayerWeapon: Check what weapon a player is currently holding.

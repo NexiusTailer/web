@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - NPC will instantly appear outside the vehicle without exit animation
-- Use `NPC_ExitVehicle` for animated exit
+- Use NPC_ExitVehicle for animated exit
 - Returns false if NPC is not in a vehicle
 - NPC position will be set near the vehicle
 

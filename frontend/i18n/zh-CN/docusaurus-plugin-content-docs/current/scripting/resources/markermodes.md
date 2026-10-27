@@ -9,8 +9,8 @@ sidebar_label: 标记模式
 
 :::
 
-| ID  | 定义                                 |
-| --- | ------------------------------------ |
-| 0   | `PLAYER_MARKERS_MODE_OFF`(关闭)      |
-| 1   | `PLAYER_MARKERS_MODE_GLOBAL`(全局)   |
-| 2   | `PLAYER_MARKERS_MODE_STREAMED`(流式) |
+| ID  | 定义                               |
+| --- | ---------------------------------- |
+| 0   | PLAYER_MARKERS_MODE_OFF(关闭)      |
+| 1   | PLAYER_MARKERS_MODE_GLOBAL(全局)   |
+| 2   | PLAYER_MARKERS_MODE_STREAMED(流式) |

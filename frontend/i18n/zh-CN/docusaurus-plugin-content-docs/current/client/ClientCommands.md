@@ -16,14 +16,14 @@ description: 所有客户端命令列表。
 | /fpslimit      | 设置游戏帧率上限（FPS）。数值越高游戏越流畅。若在图形选项中关闭帧率限制则此命令无效。可设置范围 20-90，默认 50。对应 sa-mp.cfg 文件的 'fpslimit' 选项。                                        |
 | /pagesize      | 设置聊天窗口显示的行数（10-20 行），默认显示 10 行。对应 sa-mp.cfg 文件的 'pagesize' 选项。                                                                                                    |
 | /headmove      | 控制玩家头部是否随视角转动（本地生效，其他玩家仍会看到头部转动）。对应 sa-mp.cfg 文件的 'disableheadmove' 选项。                                                                               |
-| /timestamp     | 切换聊天框消息时间戳显示（显示本地计算机时间而非服务器时间）。对应 sa-mp.cfg 文件的 `timestamp` 选项。                                                                                         |
+| /timestamp     | 切换聊天框消息时间戳显示（显示本地计算机时间而非服务器时间）。对应 sa-mp.cfg 文件的 'timestamp' 选项。                                                                                         |
 | /dl            | 调试标签（Debug Labels）功能开关。开启后会在车辆上显示调试信息，包括：车辆 ID、模型、耐久度、预加载状态、与玩家距离、拖挂信息、可用座位、当前位置和生成坐标。                                  |
 | /nametagstatus | 切换暂停玩家昵称标签旁沙漏图标显示（默认开启）。包括最小化游戏（alt-tab）、暂停菜单（ESC）、断线（崩溃/超时）和截图导致游戏冻结超过 3 秒的情况。对应 sa-mp.cfg 文件的 'nonametagstatus' 选项。 |
 | /mem           | 显示当前内存使用量（通常仅显示 128 MB）。                                                                                                                                                      |
 | /audiomsg      | 切换音频流 URL 加载提示信息显示。对应 sa-mp.cfg 文件的 'audiomsgoff' 选项。                                                                                                                    |
 | /fontsize      | 调整 UI 字体大小（聊天框/对话框等），有效范围-3 至 5。                                                                                                                                         |
 | /ctd           | 该命令在 SA-MP 0.3.7 RC2 版本加入。启用玩家视角目标的客户端调试功能。                                                                                                                          |
-| /rcon          | 主要用于服务器管理。执行远程控制台命令（RCON 是内置管理员系统，全称[远程控制](../server/ControllingServer#使用-rcon)）。                                                                       |
+| /rcon          | **主要用于服务器管理**。执行远程控制台命令（RCON 是内置管理员系统，全称[远程控制](../server/ControllingServer#使用-rcon)）。                                                                       |
 | /hudscalefix   | 该命令在 SA-MP 0.3.7 R3 版本加入。启用/禁用雷达比例修正，使宽屏分辨率下雷达显示更协调（解决'彩蛋式显示'问题）。对应 sa-mp.cfg 文件的 'nohudscale' 选项。                                       |
 
 ## 配置文件 sa-mp.cfg

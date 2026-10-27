@@ -7,11 +7,11 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This callback is called when a player object is moved after `MovePlayerObject` (when it stops moving).
+This callback is called when a player object is moved after MovePlayerObject (when it stops moving).
 
 | Name     | Description                                |
 | -------- | ------------------------------------------ |
-| playerid | The `playerid` the object is assigned to   |
+| playerid | The playerid the object is assigned to     |
 | objectid | The ID of the player object that was moved |
 
 ## ส่งคืน

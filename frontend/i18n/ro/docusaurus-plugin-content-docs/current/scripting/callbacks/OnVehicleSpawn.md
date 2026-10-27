@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Acest callback se numește **doar** când vehiculul **re**apare! `CreateVehicle` și `AddStaticVehicle(Ex)` **nu** vor declanșa acest apel invers.
+Acest callback se numește **doar** când vehiculul **re**apare! CreateVehicle și AddStaticVehicle(Ex) **nu** vor declanșa acest apel invers.
 
 :::
 

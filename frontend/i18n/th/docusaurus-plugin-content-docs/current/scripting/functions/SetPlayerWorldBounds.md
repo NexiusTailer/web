@@ -59,4 +59,4 @@ This function doesn't work in interiors!
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `GangZoneCreate`: Create a gangzone.
+- GangZoneCreate: Create a gangzone.

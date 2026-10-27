@@ -9,7 +9,7 @@ tags: []
 
 ## Description
 
-Kunin ang model ID ng isang object (`CreateObject`).
+Kunin ang model ID ng isang object (CreateObject).
 
 | Name     | Description                           |
 | -------- | ------------------------------------- |

@@ -32,7 +32,7 @@ For full changelog please read it from [here](https://github.com/openmultiplayer
 **NPC & Gameplay Improvements:**
 
 - NPC IDs now allocate from highest to lowest, preventing conflicts and improving predictability.
-- Deprecated `ConnectNPC` in favor of the new built-in NPC system.
+- Deprecated ConnectNPC in favor of the new built-in NPC system.
 - Forced train creation to always use 4 consecutive IDs, fixing long-standing inconsistencies.
 - Fixed train passenger synchronization issues.
 
@@ -43,7 +43,7 @@ For full changelog please read it from [here](https://github.com/openmultiplayer
 - Fixed crashes related to gangzones in the checking list during server restarts.
 - Fixed random occurrences of player state being set to None after spectating.
 - Fixed stdin lock on Linux during server shutdown.
-- Fixed `chatlogging` not affecting death messages.
+- Fixed chatlogging not affecting death messages.
 - Removed the legacy Fixes component due to instability, redundancy, and its functionality being superseded by newer systems.
 - Numerous small Pawn native fixes for improved correctness and usability.
 
@@ -86,14 +86,14 @@ For full changelog please read it from [here](https://github.com/openmultiplayer
 
 **Fixes:**
 
-- Fix a small issue for `SetPlayerSkin` in mobile clients.
-- Fix `GetTickCount` return value for Windows.
+- Fix a small issue for SetPlayerSkin in mobile clients.
+- Fix GetTickCount return value for Windows.
 - Fix crash when destroying a vehicle in some events and Pawn callbacks.
-- Fix inverted return value in `GetVehicleLandingGearState`.
+- Fix inverted return value in GetVehicleLandingGearState.
 - Fix players randomly staying in the player list in launchers even if they leave the server.
 - More validity checks for trailers and trailer sync.
 - Fix crash related to moving objects.
-- Fix player vehicle data resetting before `OnPlayerDeath` is called.
+- Fix player vehicle data resetting before OnPlayerDeath is called.
 
 </details>
 
@@ -123,7 +123,7 @@ Our launcher also now received a new update which you can get by simply opening 
 
 **Changes:**
 
-- Remove unnecessary `OnPlayerConnect` and `OnPlayerDisconnect` when a side script (filterscript) is (un)loaded. Instead introduced [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) and [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) callbacks.
+- Remove unnecessary OnPlayerConnect and OnPlayerDisconnect when a side script (filterscript) is (un)loaded. Instead introduced [OnScriptLoadPlayer](scripting/callbacks/OnScriptLoadPlayer) and [OnScriptUnloadPlayer](scripting/callbacks/OnScriptUnloadPlayer) callbacks.
 - Remove bunch of pawn native deprecation from runtime warnings.
 - Check CDN URL validity.
 - Stop spectator sync being broadcasted.
@@ -134,7 +134,7 @@ Our launcher also now received a new update which you can get by simply opening 
 **Fixes:**
 
 - Fix the infamous RakNet crash we've been dealing with since the beginning, affecting a few servers.
-- Fix string not shown in rare cases of using `format`.
+- Fix string not shown in rare cases of using format.
 - Fix the problem with crashdetect not being able to find file name and line number when more than one script was loaded.
 - Fix a lot of RakNet crashes and safer internal memory management.
 - Fix several connection issues and proper internal player pool cleanups.
@@ -168,7 +168,7 @@ We encourage every open.mp server to update to this version. There has been not 
 
 - A few security fixes.
 - Announcer system now uses IPv4 by default, instead of using IPv6 when it's available.
-- Fix `Get(Player)ObjectMaterial(Text)` returning colours in the wrong format and `modelid`.
+- Fix `Get(Player)ObjectMaterial(Text)` returning colours in the wrong format and modelid.
 - Fix `Get(Player)Gravity` returning integer instead of float.
 - Validate damage reasons (weapons) in various places.
 - Synchronize bans so multiple players are banned at once if needed.
@@ -226,58 +226,58 @@ Release Candidate 2 (RC2) of the open.mp server.
 
 **Deprecated functions:**
 
-- `GetPlayer3DTextLabelVirtualW`
-- `SetPlayer3DTextLabelDrawDist`
-- `GetPlayer3DTextLabelDrawDist`
-- `SendClientMessagef`
-- `GameTextForPlayerf`
-- `SendPlayerMessageToPlayerf`
-- `SendClientMessageToAllf`
-- `GameTextForAllf`
-- `SendPlayerMessageToAllf`
-- `SendRconCommandf`
-- `AllowAdminTeleport`
-- `GetPlayerPoolSize`
-- `GetVehiclePoolSize`
-- `GetActorPoolSize`
-- `GetServerVarAsString`
-- `GetServerVarAsFloat`
-- `TextDrawColor`
-- `TextDrawBoxColor`
-- `TextDrawBackgroundColor`
-- `TextDrawSetPreviewVehCol`
-- `PlayerTextDrawColor`
-- `PlayerTextDrawBoxColor`
-- `PlayerTextDrawBackgroundColor`
-- `PlayerTextDrawSetPreviewVehCol`
-- `TextDrawGetColor`
-- `TextDrawGetBoxColor`
-- `TextDrawGetBackgroundColor`
-- `TextDrawGetPreviewVehCol`
-- `PlayerTextDrawGetColor`
-- `PlayerTextDrawGetBoxColor`
-- `PlayerTextDrawGetBackgroundCol`
-- `PlayerTextDrawGetPreviewVehCol`
-- `db_num_rows`
-- `db_get_mem_handle`
-- `db_get_result_mem_handle`
-- `SelectObject`
-- `EditObject`
-- `EditPlayerObject`
-- `CancelEdit`
-- `SetObjectsDefaultCameraCol`
-- `SetObjectNoCameraCol`
-- `IsObjectNoCameraCol`
-- `SetPlayerObjectNoCameraCol`
-- `IsPlayerObjectNoCameraCol`
-- `GetPlayerCameraTargetPlayerObj`
-- `GetObjectTarget`
-- `GetPlayerObjectTarget`
-- `GetPlayerDialog`
-- `fmkdir`
-- `dcreate`
-- `GetVehicleTower`
-- `ChangeVehicleColor`
+- GetPlayer3DTextLabelVirtualW
+- SetPlayer3DTextLabelDrawDist
+- GetPlayer3DTextLabelDrawDist
+- SendClientMessagef
+- GameTextForPlayerf
+- SendPlayerMessageToPlayerf
+- SendClientMessageToAllf
+- GameTextForAllf
+- SendPlayerMessageToAllf
+- SendRconCommandf
+- AllowAdminTeleport
+- GetPlayerPoolSize
+- GetVehiclePoolSize
+- GetActorPoolSize
+- GetServerVarAsString
+- GetServerVarAsFloat
+- TextDrawColor
+- TextDrawBoxColor
+- TextDrawBackgroundColor
+- TextDrawSetPreviewVehCol
+- PlayerTextDrawColor
+- PlayerTextDrawBoxColor
+- PlayerTextDrawBackgroundColor
+- PlayerTextDrawSetPreviewVehCol
+- TextDrawGetColor
+- TextDrawGetBoxColor
+- TextDrawGetBackgroundColor
+- TextDrawGetPreviewVehCol
+- PlayerTextDrawGetColor
+- PlayerTextDrawGetBoxColor
+- PlayerTextDrawGetBackgroundCol
+- PlayerTextDrawGetPreviewVehCol
+- db_num_rows
+- db_get_mem_handle
+- db_get_result_mem_handle
+- SelectObject
+- EditObject
+- EditPlayerObject
+- CancelEdit
+- SetObjectsDefaultCameraCol
+- SetObjectNoCameraCol
+- IsObjectNoCameraCol
+- SetPlayerObjectNoCameraCol
+- IsPlayerObjectNoCameraCol
+- GetPlayerCameraTargetPlayerObj
+- GetObjectTarget
+- GetPlayerObjectTarget
+- GetPlayerDialog
+- fmkdir
+- dcreate
+- GetVehicleTower
+- ChangeVehicleColor
 
 **Fixes:**
 

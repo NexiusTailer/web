@@ -74,7 +74,7 @@ Esta função apenas CRIA a gangzone, você deve usar [PlayerGangZoneShow](Playe
 - [PlayerGangZoneStopFlash](PlayerGangZoneStopFlash): Para o piscar da gangzone de jogador.
 - [PlayerGangZoneGetColour](PlayerGangZoneGetColour): Obtém a cor de uma gangzone de jogador.
 - [PlayerGangZoneGetFlashColour](PlayerGangZoneGetFlashColour): Obtém a cor piscante de uma gangzone de jogador.
-- [PlayerGangZoneGetPos](PlayerGangZoneGetPos): Obtém a posição de uma gangzone, representada pelas coordenadas `minX`, `minY`, `maxX`, `maxY`.
+- [PlayerGangZoneGetPos](PlayerGangZoneGetPos): Obtém a posição de uma gangzone, representada pelas coordenadas minX, minY, maxX, maxY.
 - [IsValidPlayerGangZone](IsValidPlayerGangZone): Verifica se a gangzone de jogador é válida.
 - [IsPlayerInPlayerGangZone](IsPlayerInPlayerGangZone): Verifica se o jogador está na gangzone de jogador.
 - [IsPlayerGangZoneVisible](IsPlayerGangZoneVisible): Verifica se a gangzone de jogador está visível.

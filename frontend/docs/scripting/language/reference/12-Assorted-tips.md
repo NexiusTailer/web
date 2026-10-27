@@ -49,7 +49,7 @@ is an unpacked string.
 
 The code snippet below returns true if the input string is packed and false otherwise:
 
-Listing: `ispacked` function
+Listing: ispacked function
 
 ```c
 
@@ -68,7 +68,7 @@ the character index operator (“{ }”) to work on packed strings.
 For example, a routine that returns the length in characters of any  
 string (packed or unpacked) is:
 
-Listing: my `strlen` function
+Listing: my strlen function
 
 ```c
 
@@ -329,8 +329,8 @@ x = valencia                    /* ok */
 
 ```
 
-The first assignment causes a “tag mismatch” diagnostic as it assigns an `orange`
-tagged variable to a variable with an `apple` tag. The second assignment
+The first assignment causes a “tag mismatch” diagnostic as it assigns an “orange”
+tagged variable to a variable with an “apple” tag. The second assignment
 puts the untagged value of x into a tagged variable, which causes again a diagnostic.
 When the untagged variable is on the left hand of the assignment
 operator, as in the third assignment, there is no warning or error message. As
@@ -390,7 +390,7 @@ else
 
 ```
 
-Through the `#pragma rational`, all rational numbers receive the `float`
+Through the “#pragma rational”, all rational numbers receive the “float”
 tag name and these numbers are encoded in the 4-byte IEEE 754 format. The
 snippet declares two variables, limit and value, both of which are untagged
 (this is the error). Although the literal values -5.0 and -1.0 are implicitly
@@ -427,19 +427,19 @@ Forgetting the Float: tag name in the declaration of the variables
 limit or value immediately gives a “tag mismatch” diagnostic, because the literal
 values -5.0 and -1.0 now have a strong tag name.
 
-`printf` is a general purpose function that can print strings and values in
-various formats. To be general purpose, `printf` accepts arguments with any weak tag
-name, be it apple:’s, orange:’s, or something else. The `printf`
+printf is a general purpose function that can print strings and values in
+various formats. To be general purpose, printf accepts arguments with any weak tag
+name, be it apple:’s, orange:’s, or something else. The printf
 function does this by accepting untagged arguments —weak tags are dropped when an
 untagged argument is expected. Strong tags, however, are never dropped, and
-in the above snippet (which uses the original definition of `printf`), I
+in the above snippet (which uses the original definition of printf), I
 needed to put an empty tag override, “\_:”, before the variables value and limit in
-the first `printf` call.
+the first printf call.
 
 There is an alternative to untagging expressions with strong tag names in general
 purpose functions: adjust the definition of the function to accept both
 all weak tags and a selective set of strong tag names. The PAWN language supports
-multiple tag names for every function arguments. The original definition of `printf` (from the file console.inc) is:
+multiple tag names for every function arguments. The original definition of printf (from the file console.inc) is:
 
 ```c
 
@@ -448,13 +448,13 @@ native printf(const format[], ...);
 ```
 
 By adding both a Float: tag and an empty tag in front of the ellipsis (“...”),
-`printf` will accept arguments with the Float: tag name, arguments without
+printf will accept arguments with the Float: tag name, arguments without
 a tag name and arguments that have a weak tag name. To specify plural tag
 names, enclose all tag names without their final colon between braces with a
 comma separating the tag names (see the example below). It is necessary to
-add the empty tag specification to the list of tag names, because `printf` would
+add the empty tag specification to the list of tag names, because printf would
 otherwise only accept arguments with a Float: tag name. Below is the new
-definition of the function `printf`:
+definition of the function printf:
 
 ```c
 
@@ -474,7 +474,7 @@ had, when the argument accepts plural tags. Checking the tag of the formal
 argument (in the body of the function) is of no avail, because it will always
 have the first tag in the tag list in the declaration of the function argument.
 You can check the tag of the actual argument by adding an extra argument
-to the function, and set its default value to be the `tagof` of the argument
+to the function, and set its default value to be the “tagof” of the argument
 in question. Similar to the sizeof operator, the tagof operator has a special
 meaning when it is applied in a default value of
 a function argument: the expression is evaluated at the point of the function call,

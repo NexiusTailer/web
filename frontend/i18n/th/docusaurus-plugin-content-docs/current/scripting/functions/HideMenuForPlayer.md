@@ -9,10 +9,10 @@ tags: ["player", "menu"]
 
 Hides a menu for a player.
 
-| Name     | Description                                                                                   |
-| -------- | --------------------------------------------------------------------------------------------- |
-| menuid   | The ID of the menu to hide. Returned by `CreateMenu` and passed to `OnPlayerSelectedMenuRow`. |
-| playerid | The ID of the player that the menu will be hidden for.                                        |
+| Name     | Description                                                                               |
+| -------- | ----------------------------------------------------------------------------------------- |
+| menuid   | The ID of the menu to hide. Returned by CreateMenu and passed to OnPlayerSelectedMenuRow. |
+| playerid | The ID of the player that the menu will be hidden for.                                    |
 
 ## ส่งคืน
 
@@ -41,10 +41,10 @@ Crashes the both server and player if an invalid menu ID given. (Fixed in open.m
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `ShowMenuForPlayer`: Show a menu for a player.
-- `AddMenuItem`: Add an item to a menu.
-- `SetMenuColumnHeader`: Set the header for one of the columns in a menu.
-- `CreateMenu`: Create a menu.
+- ShowMenuForPlayer: Show a menu for a player.
+- AddMenuItem: Add an item to a menu.
+- SetMenuColumnHeader: Set the header for one of the columns in a menu.
+- CreateMenu: Create a menu.
 
 - [CreateMenu](CreateMenu): Create a menu.
 - [AddMenuItem](AddMenuItem): Adds an item to a specified menu.

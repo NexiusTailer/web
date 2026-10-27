@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- Para o alinhamento 2 (`TEXT_DRAW_ALIGN_CENTER`), os valores xey de TextSize precisam ser trocados, consulte as notas em [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
+- Para o alinhamento 2 (TEXT_DRAW_ALIGN_CENTER), os valores xey de TextSize precisam ser trocados, consulte as notas em [PlayerTextDrawTextSize](PlayerTextDrawTextSize).
 - Caso o textdraw já esteja sendo mostrado para o jogador, ele deve ser mostrado novamente ([PlayerTextDrawShow](PlayerTextDrawShow)) para mostrar as alterações desta função.
 
 :::
@@ -57,7 +57,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Defina a cor de fundo de um player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): Defina a fonte de um player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): Defina o tamanho da letra do texto em um player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Defina o tamanho de uma caixa de desenho de texto do jogador (ou área clicável para `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Defina o tamanho de uma caixa de desenho de texto do jogador (ou área clicável para PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): Alterna o contorno em um player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): Defina a sombra em um player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): Dimensione o espaçamento do texto em um player-textdraw para uma proporção proporcional.

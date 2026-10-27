@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Deskripcija
 
-Oslobađa memoriju rezultata dodijeljenu iz `db_query`.
+Oslobađa memoriju rezultata dodijeljenu iz db_query.
 
 | Ime               | Deskripcija                                                      |
 | ----------------- | ---------------------------------------------------------------- |
@@ -104,9 +104,9 @@ Upotreba nevaljanog upravitelja databaze koja nije nula srušit će vaš server!
 - [db_next_row](db_next_row): Pređi na sljedeći red.
 - [db_num_fields](db_num_fields): Dobij broj polja u rezultatu.
 - [db_field_name](db_field_name): Return/vraća ime polja na posebnom indexu.
-- [db_get_field](db_get_field): Preuzmite sadržaj polja iz `db_query`.
+- [db_get_field](db_get_field): Preuzmite sadržaj polja iz db_query.
 - [db_get_field_assoc](db_get_field_assoc): Dobij sadržaj polja kao string s navedenim imenom polja.
-- [db_get_field_int](db_get_field_int): Dobijte sadržaj polja kao cijeli broj iz `db_query`.
+- [db_get_field_int](db_get_field_int): Dobijte sadržaj polja kao cijeli broj iz db_query.
 - [db_get_field_assoc_int](db_get_field_assoc_int): Dobijte sadržaj polja kao cijeli broj s navedenim imenom iz trenutnog reda rezultata.
 - [db_get_field_float](db_get_field_float): Dobijte sadržaj polja kao float broj s navedenim imenom iz trenutnog reda rezultata.
 - [db_get_field_assoc_float](db_get_field_assoc_float): Dobij sadržaj polja kao float broj s navedenim imenom polja.

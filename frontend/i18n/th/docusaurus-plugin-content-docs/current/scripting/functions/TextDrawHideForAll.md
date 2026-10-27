@@ -9,9 +9,9 @@ tags: ["textdraw"]
 
 Hides a text draw for all players.
 
-| Name | Description                                                    |
-| ---- | -------------------------------------------------------------- |
-| text | The ID of the textdraw to hide (returned by `TextDrawCreate`). |
+| Name | Description                                                  |
+| ---- | ------------------------------------------------------------ |
+| text | The ID of the textdraw to hide (returned by TextDrawCreate). |
 
 ## ส่งคืน
 

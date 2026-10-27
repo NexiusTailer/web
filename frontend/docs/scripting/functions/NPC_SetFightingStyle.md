@@ -51,7 +51,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Fighting styles affect melee attack animations and damage
-- Use `NPC_GetFightingStyle` to check current style
+- Use NPC_GetFightingStyle to check current style
 - Style affects both attack animations and combat effectiveness
 
 ## Related Functions

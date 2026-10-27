@@ -68,7 +68,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-در سرور SA-MP باید `native gpci(playerid, serial[], len);` رو در بالای اسکریپت اضافه کنید قبل از استفاده از هر تابع CI.
+در سرور SA-MP باید 'native gpci(playerid, serial[], len);' رو در بالای اسکریپت اضافه کنید قبل از استفاده از هر تابع CI.
 
 :::
 

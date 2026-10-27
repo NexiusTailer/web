@@ -12,12 +12,12 @@ tags: ["object"]
 
 Obtenha a posição alvo do movimento de um objeto.
 
-| Nome           | Descrição                                                                                |
-| -------------- | ---------------------------------------------------------------------------------------- |
-| objectid       | O ID do objeto do qual obter a posição de destino da movimentação.                       |
-| &Float:targetX | Uma variável flutuante na qual armazenar a coordenada `targetX`, passada por referência. |
-| &Float:targetY | Uma variável flutuante na qual armazenar a coordenada `targetY`, passada por referência. |
-| &Float:targetZ | Uma variável flutuante na qual armazenar a coordenada `targetZ`, passada por referência. |
+| Nome | Descrição |
+| -------------- | ------------------------------------------------------------------------------- |
+| objectid | O ID do objeto do qual obter a posição de destino da movimentação.                        |
+| &Float:targetX | Uma variável flutuante na qual armazenar a coordenada targetX, passada por referência. |
+| &Float:targetY | Uma variável flutuante na qual armazenar a coordenada targetY, passada por referência. |
+| &Float:targetZ | Uma variável flutuante na qual armazenar a coordenada targetZ, passada por referência. |
 
 ## Retornos
 

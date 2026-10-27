@@ -86,7 +86,7 @@ Berikut adalah daftar warna asli kendaraan yang digunakan oleh setiap jenis mobi
 
 **coastg:** 56,15, 56,53
 
-**comet:** 73,45, 12,12, 2,2, 6,6, 4,4, 46,46, 53,53
+comet: 73,45, 12,12, 2,2, 6,6, 4,4, 46,46, 53,53
 
 **copcarla:** 0,1
 

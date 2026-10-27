@@ -19,7 +19,7 @@ Obtenha uma propriedade específica da memória, a string é retornada como uma 
 
 ## Retornos
 
-O valor de uma propriedade quando o nome é passado; preenche o argumento `string` quando o valor é passado. Se a propriedade não existir, esta função retornará zero.
+O valor de uma propriedade quando o nome é passado; preenche o argumento string quando o valor é passado. Se a propriedade não existir, esta função retornará zero.
 
 ## Exemplos
 

@@ -7,7 +7,7 @@ tags: []
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een IP-adres een verbinding met de server probeert te maken. Gebruik `BlockIpAddress` om inkomende verbindingen te blokkeren.
+Deze callback wordt aangeroepen wanneer een IP-adres een verbinding met de server probeert te maken. Gebruik BlockIpAddress om inkomende verbindingen te blokkeren.
 
 | Naam         | Beschrijving                                         |
 | ------------ | ---------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een speler van interior verandert. Kan getriggerd worden door `SetPlayerInterior` of bij het betreden/verlaten van een gebouw.
+Deze callback wordt aangeroepen wanneer een speler van interior verandert. Kan getriggerd worden door SetPlayerInterior of bij het betreden/verlaten van een gebouw.
 
 | Naam          | Beschrijving                               |
 | ------------- | ------------------------------------------ |

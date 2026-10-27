@@ -11,9 +11,9 @@ tags: []
 
 I-clear ang anumang mga animation na inilapat sa isang aktor.
 
-| Name    | Description                                                                  |
-| ------- | ---------------------------------------------------------------------------- |
-| actorid | Ang ID ng aktor (ni-return ni `CreateActor`) para i-clear ang mga animation. |
+| Name    | Description                                                                |
+| ------- | -------------------------------------------------------------------------- |
+| actorid | Ang ID ng aktor (ni-return ni CreateActor) para i-clear ang mga animation. |
 
 ## Returns
 

@@ -18,7 +18,7 @@ tags:
 
 ## Paramètres
 
-Cette callback est appelée quand un objet s'est arrêté de bouger après un `MoveObject`.
+Cette callback est appelée quand un objet s'est arrêté de bouger après un MoveObject.
 
 | Nom            | Description                          |
 | -------------- | ------------------------------------ |
@@ -42,7 +42,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-`SetObjectPos` ne fonctionne pas dans cette callback. Il faut recréer l'objet pour éviter ce problème.
+SetObjectPos ne fonctionne pas dans cette callback. Il faut recréer l'objet pour éviter ce problème.
 
 :::
 

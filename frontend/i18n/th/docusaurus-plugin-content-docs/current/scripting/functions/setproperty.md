@@ -12,7 +12,7 @@ Add a new property or change an existing property.
 | Name     | Description                                                                                                                          |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | id       | The virtual machine to use, you should keep this zero.                                                                               |
-| name[]   | Used in combination with `value` when storing integers; don't use this if you want to store a string.                                |
+| name[]   | Used in combination with _value_ when storing integers; don't use this if you want to store a string.                                |
 | value    | The integer value to store **or** the property's unique ID if storing a string. Use the hash-function to calculate it from a string. |
 | string[] | The value of the property, as a string. Don't use this if you want to store an integer.                                              |
 
@@ -48,6 +48,6 @@ setproperty(.value = 123984334, .string = ":)");
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- `getproperty`: Get the value of a property.
-- `deleteproperty`: Delete a property.
-- `existproperty`: Check if a property exists.
+- getproperty: Get the value of a property.
+- deleteproperty: Delete a property.
+- existproperty: Check if a property exists.

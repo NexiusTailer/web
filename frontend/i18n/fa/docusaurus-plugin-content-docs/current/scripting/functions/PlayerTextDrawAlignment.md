@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- برای تراز 2 (`TEXT_DRAW_ALIGN_CENTER`) مقادیر x و y در TextSize باید جابجا بشن، نکات [PlayerTextDrawTextSize](PlayerTextDrawTextSize) رو ببین.
+- برای تراز 2 (TEXT_DRAW_ALIGN_CENTER) مقادیر x و y در TextSize باید جابجا بشن، نکات [PlayerTextDrawTextSize](PlayerTextDrawTextSize) رو ببین.
 - اگه textdraw از قبل برای بازیکن نمایش داده می‌شه، باید دوباره نمایش داده بشه ([PlayerTextDrawShow](PlayerTextDrawShow)) تا تغییرات این تابع اعمال بشن.
 
 :::
@@ -57,7 +57,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): تنظیم رنگ پس زمینه یک player-textdraw.
 - [PlayerTextDrawFont](PlayerTextDrawFont): تنظیم فونت یک player-textdraw.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): تنظیم اندازه حروف متن در یک player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای `PlayerTextDrawSetSelectable`).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه player-textdraw (یا منطقه قابل کلیک برای PlayerTextDrawSetSelectable).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): فعال/غیرفعال کردن outline روی یک player-textdraw.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): تنظیم سایه روی یک player-textdraw.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): تنظیم فاصله متن در یک player-textdraw به نسبت متناسب.

@@ -7,7 +7,7 @@ tags: ["textdraw"]
 
 ## Deskripcija
 
-Prilagođava razmak između teksta proporcionalnom omjeru. Korisno kada se koristi `TextDrawLetterSize` kako bi se osiguralo da tekst ima ravnomjeran razmak između znakova.
+Prilagođava razmak između teksta proporcionalnom omjeru. Korisno kada se koristi TextDrawLetterSize kako bi se osiguralo da tekst ima ravnomjeran razmak između znakova.
 
 | Ime  | Deskripcija                                                |
 | ---- | ---------------------------------------------------------- |

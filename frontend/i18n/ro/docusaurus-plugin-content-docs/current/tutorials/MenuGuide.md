@@ -36,7 +36,7 @@ Acum o explicație despre argumentele [CreateMenu](../scripting/functions/Create
 
 ## Adăugați câteva elemente de meniu
 
-Ok, acum avem meniul, dar avem nevoie de câteva elemente, sub care puteți alege în meniu. Le adăugați sub `CreateMenu` pe care l-am creat mai devreme.
+Ok, acum avem meniul, dar avem nevoie de câteva elemente, sub care puteți alege în meniu. Le adăugați sub „CreateMenu” pe care l-am creat mai devreme.
 
 ```c
 AddMenuItem(teleportmenu, 0, "LS");

@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Descriere
 
-Adaugă un vehicul 'static' (modelele sunt preîncărcate pentru jucători) la modul de joc. Diferă de la `AddStaticVehicle` într-un singur mod: permite setarea unui timp de respawn pentru când vehiculul este lăsat neocupat de șofer.
+Adaugă un vehicul 'static' (modelele sunt preîncărcate pentru jucători) la modul de joc. Diferă de la AddStaticVehicle într-un singur mod: permite setarea unui timp de respawn pentru când vehiculul este lăsat neocupat de șofer.
 
 | Nume                                  | Descriere                                                                                                                                                                |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -23,9 +23,9 @@ Adaugă un vehicul 'static' (modelele sunt preîncărcate pentru jucători) la m
 
 ## Se intoarce
 
-Codul vehiculului vehiculului creat (1 - `MAX_VEHICLES`).
+Codul vehiculului vehiculului creat (1 - MAX_VEHICLES).
 
-`INVALID_VEHICLE_ID` (65535) dacă vehiculul nu a fost creat (limita vehiculului a fost atinsă sau ID-ul modelului vehiculului nevalid a fost trecut).
+INVALID_VEHICLE_ID (65535) dacă vehiculul nu a fost creat (limita vehiculului a fost atinsă sau ID-ul modelului vehiculului nevalid a fost trecut).
 
 ## Exemple
 

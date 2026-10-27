@@ -15,7 +15,7 @@ Provjeri na koga igrač cilja.
 
 ## Returns
 
-ID ciljanog igrača, ili `INVALID_PLAYER_ID` ako ga nema.
+ID ciljanog igrača, ili INVALID_PLAYER_ID ako ga nema.
 
 ## Primjeri
 

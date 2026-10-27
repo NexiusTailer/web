@@ -7,7 +7,7 @@ tags: []
 
 ## Mô Tả
 
-Callback này được gọi khi một gamemode kết thúc, qua 'gmx', khi máy chủ bị tắt, hoặc `GameModeExit`.
+Callback này được gọi khi một gamemode kết thúc, qua 'gmx', khi máy chủ bị tắt, hoặc GameModeExit.
 
 ## Trả Về
 

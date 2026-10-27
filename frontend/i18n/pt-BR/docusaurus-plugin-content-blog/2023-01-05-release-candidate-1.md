@@ -56,7 +56,7 @@ Uma lista completa do que está disponível:
 - Mais avisos para problemas anteriormente não detectados. Quanto mais problemas o compilador puder encontrar, menos você precisa encontrar.
 - Uma ferramenta *upgrader* para adicionar tags e `const` ao código do usuário e corrigir vários novos avisos.
 - Nomenclatura mais consistente. Cada native foi examinada de perto e comparada para garantir o máximo nível de similaridade e intuitividade na nomenclatura.
-- Adicionado `{Float, _}:...` em todos os lugares. O que isso significa? Significa quase não precisar mais de `format`[^2] - pense em y_va, mas nativamente.
+- Adicionado `{Float, _}:...` em todos os lugares. O que isso significa? Significa quase não precisar mais de `format()`[^2] - pense em y_va, mas nativamente.
 - `-O2`, o nível mais alto de otimização do pawn, funciona ao usar o novo compilador e a nova VM. Alguns includes podem precisar ser atualizados, mas alguns já foram. Para ajudar nisso...
 - A macro `__optimisation` foi adicionada para que o código possa se configurar quando compilado com -O2.
 
@@ -75,7 +75,7 @@ https://github.com/openmultiplayer/upgrade
 
 [^1]: Quase todas elas.
 
-[^2]: Quase não precisar mais de `format`.
+[^2]: Quase não precisar mais de `format()`.
 
 ## SDK
 

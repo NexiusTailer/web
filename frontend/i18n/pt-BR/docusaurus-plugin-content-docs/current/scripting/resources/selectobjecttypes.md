@@ -9,7 +9,7 @@ Aqui você pode encontrar todos os tipos de seleção de objeto usados por [OnPl
 
 :::
 
-| Value | Definition                    |
-| ----- | ----------------------------- |
-| 1     | `SELECT_OBJECT_GLOBAL_OBJECT` |
-| 2     | `SELECT_OBJECT_PLAYER_OBJECT` |
+| Value | Definition                  |
+| ----- | --------------------------- |
+| 1     | SELECT_OBJECT_GLOBAL_OBJECT |
+| 2     | SELECT_OBJECT_PLAYER_OBJECT |

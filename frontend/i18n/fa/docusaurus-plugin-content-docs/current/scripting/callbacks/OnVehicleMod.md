@@ -17,7 +17,7 @@ tags: ["vehicle"]
 
 ## مقادیر برگشتی
 
-همیشه اول در gamemode فراخوانده می‌شود بنابراین برگرداندن 0 در آنجا سایر filterscript ها را نیز از پردازش آن مسدود می‌کند.
+همیشه اول در gamemode فراخوانده می‌شود بنابراین برگرداندن **0** در آنجا سایر filterscript ها را نیز از پردازش آن مسدود می‌کند.
 
 ## مثال‌ها
 
@@ -40,7 +40,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-این کالبک توسط `AddVehicleComponent` فراخوانده نمی‌شود.
+این کالبک توسط AddVehicleComponent فراخوانده نمی‌شود.
 
 :::
 
