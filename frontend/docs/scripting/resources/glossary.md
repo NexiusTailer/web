@@ -16,7 +16,7 @@ tags: []
 | Component    | The open.mp equivalent of a plugin, loaded from the `components` folder                                 |
 | Include      | Pieces of script placed in .inc files to be included in Filterscripts/Gamemodes using `#include <name>` |
 | Native       | A function provided by the server or a plugin that can be called from PAWN                              |
-| Callback     | A function automatically called by the server when a specific event occurs (e.g. OnPlayerConnect)       |
+| Callback     | A function automatically called by the server when a specific event occurs (e.g. `OnPlayerConnect`)     |
 | AMX          | The compiled file (.amx) produced from a .pwn source file, which the server actually runs               |
 | Tick         | One millisecond of server time, as counted by [GetTickCount](../functions/GetTickCount)                 |
 

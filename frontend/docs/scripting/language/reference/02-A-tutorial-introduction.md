@@ -20,19 +20,19 @@ main()
 This manual assumes that you know how to run a pawn program; if not, please
 consult the application manual (more hints are at page 168).
 
-A pawn program starts execution in an “entry” function\* —in nearly all examples of this manual, this entry function is called “main”. Here, the function
+A pawn program starts execution in an “entry” function\* —in nearly all examples of this manual, this entry function is called `main`. Here, the function
 main contains only a single instruction, which is at the line below the function
 head itself. Line breaks and indenting are insignificant; the invocation of the
-function print could equally well be on the same line as the head of function main.
+function `print` could equally well be on the same line as the head of function main.
 
 The definition of a function requires that a pair of parentheses follow the function name. If a function takes parameters, their declarations appear between
 the parentheses. The function main does not take any parentheses. The rules
 are different for a function invocation (or a function call); parentheses are
-optional in the call to the print function.
+optional in the call to the `print` function.
 
-The single argument of the print function is a string, which must be enclosed
+The single argument of the `print` function is a string, which must be enclosed
 in double quotes. The characters \n near the end of the string form an escape
-sequence, in this case they indicate a “newline” symbol. When print encounters the newline escape sequence, it advances the cursor to the first column of
+sequence, in this case they indicate a “newline” symbol. When `print` encounters the newline escape sequence, it advances the cursor to the first column of
 the next line. One has to use the \n escape sequence to insert a “newline” into
 the string, because a string may not wrap over multiple lines.
 
@@ -47,9 +47,9 @@ the string, because a string may not wrap over multiple lines.
 ---
 
 pawn is a “case sensitive” language: upper and lower case letters are considered
-to be different letters. It would be an error to spell the function printf in the
+to be different letters. It would be an error to spell the function `printf` in the
 above example as “PrintF”. Keywords and predefined symbols, like the name
-of function “main”, must be typed in lower case.
+of function `main`, must be typed in lower case.
 
 If you know the C language, you may feel that the above example does not
 look much like the equivalent “Hello world” program in C/C++. pawn can
@@ -83,7 +83,7 @@ format language and other indenting styles are just as good.
 Because pawn is designed to be an extension language for applications,
 the function set/library that a pawn program has at its disposal depends on the
 host application. As a result, the pawn language has no intrinsic knowledge
-of any function. The print function, used in this first example, must be made
+of any function. The `print` function, used in this first example, must be made
 available by the host application and be “declared” to the pawn parser.
 
 ---
@@ -95,11 +95,11 @@ available by the host application and be “declared” to the pawn parser.
 ---
 
 It is assumed, however, that all host applications provide a minimal set of common
-functions, like print and printf.
+functions, like `print` and `printf`.
 
 In some environments, the display or terminal must be enabled before any text
 can be output onto it. If this is the case, you must add a call to the function
-“console” before the first call to function print or printf. The console
+`console` before the first call to function `print` or `printf`. The console
 function also allows you to specify device characteristics, such as the number
 of lines and columns of the display. The example programs in this
 manual do not use the console functions, because many platforms do not require or provide it.
@@ -131,7 +131,7 @@ main()
 }
 ```
 
-Function main now contains more than just a single “print” statement. When
+Function main now contains more than just a single `print` statement. When
 the body of a function contains more than one statement, these statements
 must be embodied in braces —the “\{” and “\}” characters. This groups the instructions to a single compound statement. The notion of grouping statements
 in a compound statement applies as well to the bodies of if–else and loop instructions.
@@ -147,20 +147,20 @@ to assign a value to the variable already at the moment of its creation.
 ---
 
 Variables must be declared before they are used in an expression.
-The getvalue function (also common predefined function)
+The `getvalue` function (also common predefined function)
 reads in a value from the keyboard and returns the result. Note that pawn
 is a typeless language, all variables are numeric
 cells that can hold a signed integral value.
 
-The getvalue function name is followed by a pair of parentheses. These are
-required because the value that getvalue returns is stored in a variable. Normally, the function’s arguments (or parameters) would appear between
-the parentheses, but getvalue (as used in this program) does not take any
+The `getvalue` function name is followed by a pair of parentheses. These are
+required because the value that `getvalue` returns is stored in a variable. Normally, the function’s arguments (or parameters) would appear between
+the parentheses, but `getvalue` (as used in this program) does not take any
 explicit arguments. If you do not assign the result of a function to a variable
 or use it in a expression in another way, the parentheses are optional. For
-example, the result of the print and printf statements are not used. You
+example, the result of the `print` and `printf` statements are not used. You
 may still use parentheses around the arguments, but it is not required.
 
-Loop instructions, like “while”, repeat a single instruction as long as the loop
+Loop instructions, like `while`, repeat a single instruction as long as the loop
 condition (the expression between parentheses) is “true”. One can
 execute multiple instructions in a loop by grouping them in a compound statement.
 The if–else instruction has one instruction for the “true” clause and one for the “false”.
@@ -169,34 +169,34 @@ Observe that some statements, like while and if–else, contain (or
 “fold around”) another instruction —in the case of if–else even two other instructions.
 The complete bundle is, again, a single instruction. That is:
 
-- the assignment statements “a = a - b” below the if and “b = b - a” below the else are statements;
+- the assignment statements `a = a - b` below the if and `b = b - a` below the else are statements;
 - the if–else statement folds around these two assignment statements and forms a single statement of itself;
 - the while statement folds around the if–else statement and forms, again, a single statement.
 
 It is common to make the nesting of the statements explicit by indenting any
 sub-statements below a statement in the source text. In the “Greatest Common
 Divisor” example, the left margin indent increases by four space characters
-after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both printf invocations and the
+after the while statement, and again after the if and else keywords. Statements that belong to the same level, such as both `printf` invocations and the
 while loop, have the same indentation.
 
-The loop condition for the while loop is “(a != b)”; the symbol != is the
+The loop condition for the while loop is `(a != b)`; the symbol != is the
 “not equal to” operator. That is, the if–else instruction is repeated
-until “a” equals “b”. It is good practice to indent the instructions that run under
+until `a` equals `b`. It is good practice to indent the instructions that run under
 control of another statement, as is done in the preceding example.
 
 ---
 
-The call to printf, near the bottom of the example, differs from the print call
-right below the opening brace (“\{”). The “f” in printf stands for “formatted”,
+The call to `printf`, near the bottom of the example, differs from the `print` call
+right below the opening brace (“\{”). The “f” in `printf` stands for “formatted”,
 which means that the function can format and print numeric values and other
 data (in a user-specified format), as well as literal text. The %d symbol in the
 string is a token that indicates the position and the format that the subsequent
-argument to function printf should be printed. At run time, the token %d is
-replaced by the value of variable “a” (the second argument of printf).
+argument to function `printf` should be printed. At run time, the token %d is
+replaced by the value of variable `a` (the second argument of `printf`).
 
-Function print can only print text; it is quicker than printf. If you want to
-print a literal “%” at the display, you have to use print, or you have to double
-it in the string that you give to printf. That is:
+Function `print` can only print text; it is quicker than `printf`. If you want to
+print a literal “%” at the display, you have to use `print`, or you have to double
+it in the string that you give to `printf`. That is:
 
 `print "20% of the personnel accounts for 80% of the costs\n"`
 
@@ -255,7 +255,7 @@ primes below 500, there is now only one line to change.
 Like simple variables, arrays may be initialized upon creation. pawn offers a
 convenient shorthand to initialize all elements to a fixed value:
 all hundred
-elements of the “series” array are set to true —without requiring that the
+elements of the `series` array are set to true —without requiring that the
 programmer types in the word “true” a hundred times. The symbols true
 and false are predefined constants.
 
@@ -339,7 +339,7 @@ receives an input value through a parameter and it returns a value (it has a
 “result”).
 
 Function parameters are declared in the function header; the single parameter
-in this example is “n”. Inside the function, a parameter behaves as a
+in this example is `n`. Inside the function, a parameter behaves as a
 local variable, but one whose value is passed from the outside at
 the call to the function.
 
@@ -353,7 +353,7 @@ It need not appear at the very end of the function; early exits are permitted.
 ---
 
 The main function of the Fibonacci example calls predefined “native” functions,
-like getvalue and printf, as well as the user-defined function fibonacci.
+like `getvalue` and `printf`, as well as the user-defined function fibonacci.
 From the perspective of calling a function (as in function main), there is no
 difference between user-defined and native functions.
 
@@ -478,7 +478,7 @@ JulianToDate(jdn, &day, &month, &year)
 
 Function main starts with creating variables to hold the day, month and year,
 and the calculated Julian Day number. Then it reads in a date —three calls to
-getvalue— and calls function DateToJulian to calculate the day number. After calculating the result, main prints the date that you entered and the Julian
+`getvalue`— and calls function DateToJulian to calculate the day number. After calculating the result, main prints the date that you entered and the Julian
 Day number for that date. Now, let us focus on function DateToJulian. . .
 
 Near the top of function DateToJulian, it increments the year value if it is
@@ -605,16 +605,16 @@ support is enabled, pawn supports values with a fractional part behind
 the decimal point.
 
 The only other non-trivial change from earlier programs is that the format
-string for the printf function now has variable placeholders denoted with
+string for the `printf` function now has variable placeholders denoted with
 “%r” instead of “%d”. The placeholder %r prints a rational number at
 the position; %d is only for integers (“whole numbers”).
 
 I used the include file “rational” rather than “float” or “fixed” in an
 attempt to make the example program portable. If you know that the host
 application supports floating point arithmetic, it may be more convenient to
-“#include” the definitions from the file float and use the tag Float: instead
+`#include` the definitions from the file float and use the tag Float: instead
 of Rational —when doing so, you should also replace %r by %f in the call to
-printf. For details on fixed point and floating point support, please see the
+`printf`. For details on fixed point and floating point support, please see the
 application notes “Fixed Point Support Library” and “Floating Point Support
 Library” that are available separately.
 
@@ -659,7 +659,7 @@ rot13(string[])
 }
 ```
 
-In the function header of rot13, the parameter “string” is declared as an
+In the function header of rot13, the parameter `string` is declared as an
 array, but without specifying the size of the array —there is no value between
 the square brackets. When you specify a size for an array in a function header,
 it must match the size of the actual parameter in the function call. Omitting
@@ -668,14 +668,14 @@ allows the function to be called with arrays of any size. You must then have
 some other means of determining the (maximum) size of the array. In the case
 of a string parameter, one can simply search for the zero terminator.
 
-The for loop that walks over the string is typical for string processing functions. Note that the loop condition is “string[index]”. The rule for true/
+The for loop that walks over the string is typical for string processing functions. Note that the loop condition is `string[index]`. The rule for true/
 false conditions in pawn is that any value is “true”, except zero. That is,
 when the array cell at string[index] is zero, it is “false” and the loop aborts.
 
 The ROT13 algorithm rotates only letters; digits, punctuation and special
 characters are left unaltered. Additionally, upper and lower case letters must
 be handled separately. Inside the for loop, two if statements filter out the
-characters of interest. The way that the second if is chained to the “else”
+characters of interest. The way that the second if is chained to the `else`
 clause of the first if is noteworthy, as it is a typical method of
 testing for multiple non-overlapping conditions.
 
@@ -690,16 +690,16 @@ them by value requires a copy of this data structure to be made, taking both mem
 `A function that takes an array as an argument and that does not change it, may mark the argument as “const”; see page 72`
 
 Due to this rule, function rot13 can modify its function
-parameter (called “string” in the example) without needing to declare as a
+parameter (called `string` in the example) without needing to declare as a
 reference argument.
 
 Another point of interest are the conditions in the two if statements. The first
-if, for example, holds the condition `“'a' <= string[index] <= 'z'”`, which
+if, for example, holds the condition `'a' <= string[index] <= 'z'`, which
 means that the expression is true if (and only if) both `'a' <= string[index]`
 and `string[index] <= 'z'` are true. In the combined expression, the relational operators are said to be “chained”, as they chain multiple comparisons
 in one condition.
 
-Finally, note how the last printf in function main uses the escape sequence
+Finally, note how the last `printf` in function main uses the escape sequence
 \" to print a double quote. Normally a double quote ends the literal string;
 the escape sequence “\"” inserts a double quote into the string.
 
@@ -762,12 +762,12 @@ strtok(const string[], &index)
 `Escape sequence: 99`
 
 Function main first displays a message and retrieves a string that
-the user must type. Then it enters a loop: writing “for (;;)” creates a loop
+the user must type. Then it enters a loop: writing `for (;;)` creates a loop
 without initialisation, without increment and without test —it is an infinite loop,
 
-equivalent to “while (true)”. However, where the pawn parser will give you
-a warning if you type “while (true)” (something along the line “redundant
-test expression; always true”), “for (;;)” passes the parser without warning.
+equivalent to `while (true)`. However, where the pawn parser will give you
+a warning if you type `while (true)` (something along the line “redundant
+test expression; always true”), `for (;;)` passes the parser without warning.
 
 A typical use for an infinite loop is a case where you need a loop
 with the test in the middle —a hybrid between a while and a do. . . while loop, so to
@@ -784,7 +784,7 @@ declaration of variable word), pawn supports array assignment and functions
 returning arrays. The pawn parser verifies that the array that strtok returns
 has the same size and dimensions as the variable that it is assigned into.
 
-Function strlen is a native function (predefined), but strtok is not: it must be
+Function `strlen` is a native function (predefined), but strtok is not: it must be
 implemented by ourselves. The function strtok was inspired by the function of
 the same name from C/C++, but it does not modify the source string. Instead
 
@@ -915,9 +915,9 @@ from the console and inserts them in a queue. The while loop below
 that extracts element by element from the queue and prints the information on the
 screen. The point to note, is that the for loop stores both the string and the
 priority number (an integer) in the same variable msg; indeed, function main
-declares only a single variable. Function getstring stores the message text
+declares only a single variable. Function `getstring` stores the message text
 that you type starting at array msg[text] while the priority value is stored
-(by an assignment a few lines lower) in msg[priority]. The printf function
+(by an assignment a few lines lower) in msg[priority]. The `printf` function
 in the while loop reads the string and the value from those positions as well.
 
 At the same time, the msg array is an entity on itself: it is passed in its
@@ -948,12 +948,12 @@ insert and extract can.
 Function extract returns the messages with the highest priority via its function argument item. That is, it changes its function argument by copying the
 first element of the queue array into item. Function insert copies in the other
 direction and it does not change its function argument item. In such a case,
-it is advised to mark the function argument as “const”. This helps the pawn
+it is advised to mark the function argument as `const`. This helps the pawn
 parser to both check for errors and to generate better (more compact, quicker) code.
 
-A final remark on this latest sample is the call to getstring in function main:
+A final remark on this latest sample is the call to `getstring` in function main:
 note how the parameters are attributed with a description. The first parameter is labeled “.string”, the second “.maxlength” and the third “.pack”.
-Function getstring receives “named parameters” rather than positional parameters. The order in which named parameters are listed is not important.
+Function `getstring` receives “named parameters” rather than positional parameters. The order in which named parameters are listed is not important.
 Named parameters are convenient in specifying —and deciphering— long parameter lists.
 
 ---
@@ -1021,7 +1021,7 @@ element, create a set with just one element and take the intersection. If the
 result is 0 (the empty set) the element is not in the set. Bit numbering starts
 typically at zero; the lowest bit is bit 0 and the highest bit in a 32-bit cell
 is bit 31. To make a cell with only bit 7 set, shift the value 1 left by seven
-—or in a pawn expression: `“1 << 7”`.
+—or in a pawn expression: `1 << 7`.
 
 Below is the program that implements the algorithm described earlier to find
 all points that can be reached from a specific departure in a given number of
@@ -1084,7 +1084,7 @@ The enum statement just below the header of the main function declares the
 constants for the nodes A to G, but with a twist. Usually, the enum starts
 counting from zero; here, the value of the first constant, A, is explicitly set to
 
-1. More noteworthy is the expression `“(<<= 1)”` between the enum keyword
+1. More noteworthy is the expression `(<<= 1)` between the enum keyword
    and the opening brace that starts the constant list: it specifies a “bit
    shifting” increment. By default, every constant in an enum list gets a value that is
    1 above its predecessor, but you can specify every successive constant
@@ -1092,7 +1092,7 @@ counting from zero; here, the value of the first constant, A, is explicitly set 
 
 - its predecessor incremented by any value (not just 1) —e.g., “(+= 5)”;
 - its predecessor multiplied by any value —e.g., “(\*= 3)”;
-- its predecessor bit-shifted to the left by any value —e.g., `“(<<= 1)”`;
+- its predecessor bit-shifted to the left by any value —e.g., `(<<= 1)`;
 
 Note that, in binary arithmetic, shifting left by one bit amounts to the same
 as multiplying by two, meaning that `(*= 2)` and `(<<= 1)` do the same thing.
@@ -1232,7 +1232,7 @@ that, together, build the rpn calculator. When programs or scripts get larger,
 it is usually advised to spread the implementation over several files, in
 order to make maintenance easier.
 
-Function main first puts up a prompt and calls the native function getstring
+Function main first puts up a prompt and calls the native function `getstring`
 to read an expression that the user types. Then it calls the custom function
 rpncalc to do the real work. Function rpncalc is implemented in the
 file rpnparse.inc, reproduced below:
@@ -1316,7 +1316,7 @@ gettoken(const string[], &index)
 The rpn calculator uses rational number support and rpnparse.inc includes
 the “rational” file for that purpose. Almost all of the operations on rational
 numbers is hidden in the arithmetic. The only direct references to
-rational numbers are the “%r” format code in the printf statement near the bottom
+rational numbers are the “%r” format code in the `printf` statement near the bottom
 of function rpncalc and the call to rationalstr halfway function gettoken.
 
 The first remarkable element in the file rpnparse.inc is the enum
@@ -1329,7 +1329,7 @@ than just create an array with 22 cells:
 
 /\* The tag name of the enumeration overrules the tag name of the array variable, if any. The field variable is untagged, but field[t_value] has the tag Rational:, because the enumeration element t_value is declared as such. This, hence, allows you to create an array whose elements have different tag names.
 
-/\* When the enumeration element has a size, the array element indicated with that element is sometimes treated as a sub-array. In rpncalc, expression “field[t_type]” is a single cell, “field[t_value]” is a single cell, but “field[t_word]” is a one-dimensional array of 20 cells. We see that specifically in the line:
+/\* When the enumeration element has a size, the array element indicated with that element is sometimes treated as a sub-array. In rpncalc, expression `field[t_type]` is a single cell, `field[t_value]` is a single cell, but `field[t_word]` is a one-dimensional array of 20 cells. We see that specifically in the line:
 
     printf "Unknown operator '%s'\n", field[t_word]
 
@@ -1356,7 +1356,7 @@ field[t_word] = word
 
 where word is an array of 20 cells and field is an array of 22 cells.
 However, as the t_word enumeration field is declared as having a size of 20 cells,
-“field[t_word]” is considered a sub-array of 20 cells, precisely matching the
+`field[t_word]` is considered a sub-array of 20 cells, precisely matching the
 array size of word.
 
 Listing: strtok.inc
@@ -1454,7 +1454,7 @@ it is better to make any file include the definitions of the libraries that it
 depends on.
 
 Notice how the two global variables stack and stackidx are declared
-as “static” variables; using the keyword static instead of new. Doing this makes
+as `static` variables; using the keyword static instead of new. Doing this makes
 the global variables “visible” in that file only. For all other files in a
 larger project, the symbols stack and stackidx are invisible and they cannot (accidentally) modify the variables. It also allows the other modules to declare
 their own private variables with these names, so it avoids name clashing.
@@ -1510,7 +1510,7 @@ your program is being called from the outside and it is required to
 respond appropriately and promptly.
 
 pawn does not specify a standard library, and so there is no guarantee that in
-a particular implementation, functions like printf and getvalue. Although
+a particular implementation, functions like `printf` and `getvalue`. Although
 it is suggested that every implementation provides a minimal console/terminal
 interface with a these functions, their availability is ultimately
 implementation-dependent. The same holds for the public functions —the entry points for a
@@ -1659,7 +1659,7 @@ echo(key)
 
 The bulk of the above script handles gathering received key-presses
 into a string and sending that string after seeing the enter key. The “Escape” key
-ends the program. The function echo serves to give visual feedback of what
+ends the program. The function `echo` serves to give visual feedback of what
 the user types: it builds a zero-terminated string from the key and prints it.
 
 Despite its simplicity, this script has the interesting property that there is
@@ -1813,10 +1813,10 @@ As is apparent in the script, state changes may be conditional. The condition
 is optional, and you can also use the common if–else construct to change states.
 
 Being state-dependent is not reserved for the event functions. Other functions
-may have state declarations as well, as the echo function demonstrates. When
+may have state declarations as well, as the `echo` function demonstrates. When
 a function would have the same implementation for several states, you
 just need to write a single implementation and mention all applicable states. For
-function echo there are two implementations to handle the four states.†
+function `echo` there are two implementations to handle the four states.†
 
 That said, an automaton must be prepared to handle all events in any state.
 Typically, the automaton has neither control over which events arrive nor over
@@ -2218,7 +2218,7 @@ the implementation. As a result, you can implement preconditions, postconditions
 invariants with a single construct: the “assertion”. For preconditions, write
 assertions at the very start of the routine; for invariants, write an assertion
 where the invariant should hold; for post conditions, write an assertion before
-each “return” statement or at the end of the function.
+each `return` statement or at the end of the function.
 
 In pawn, the instruction is called assert; it is a simple statement that
 contains a test. If the test outcome is ”true”, nothing happens. If the outcome is
@@ -2463,7 +2463,7 @@ function/variable/constant. The parser also generates few tags of its own:
 
 | name       | info                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| attribute  | Attributes for a function, such as “native” or “stock”.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| attribute  | Attributes for a function, such as `native` or `stock`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | automaton  | The automaton that the function belongs to (if any).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | dependency | The names of the symbols (other functions, global variables and/global constants) that the function requires. If desired, a call tree can be constructed from the dependencies.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | param      | Function parameters. When you add a parameter description in a documentation comment, this description is combined with the auto-generated content for the parameter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

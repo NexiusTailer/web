@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Retorna true somente durante a animação de recarga real
 - A recarga é automática quando a munição do clipe acaba
-- Use NPC_EnableReloading para controlar o comportamento de recarga
+- Use `NPC_EnableReloading` para controlar o comportamento de recarga
 
 ## Funções Relacionadas
 

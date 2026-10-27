@@ -42,7 +42,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Stops all current animations and returns NPC to idle state
-- Equivalent to calling NPC_ClearAnimations
+- Equivalent to calling `NPC_ClearAnimations`
 
 ## Related Functions
 

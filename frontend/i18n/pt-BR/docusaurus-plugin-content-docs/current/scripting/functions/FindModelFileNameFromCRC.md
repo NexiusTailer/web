@@ -9,7 +9,7 @@ tags: ["custom model", "custom skin", "simple model"]
 
 ## Descrição
 
-Encontra um arquivo de modelo existente de skin customizada ou objeto simples. Os arquivos de modelo ficam na pasta `models` do servidor por padrão (configuração artpath).
+Encontra um arquivo de modelo existente de skin customizada ou objeto simples. Os arquivos de modelo ficam na pasta `models` do servidor por padrão (configuração `artpath`).
 
 | Name                   | Description                                                                 |
 | ---------------------- | --------------------------------------------------------------------------- |

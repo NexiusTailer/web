@@ -50,7 +50,7 @@ CallRemoteFunction("CallMe", "is", 69, "esta é uma string");
 
 :::warning
 
-CallRemoteFunction trava o servidor se estiver passando uma string vazia. (Corrigido no open.mp)
+`CallRemoteFunction` trava o servidor se estiver passando uma string vazia. (Corrigido no open.mp)
 
 :::
 

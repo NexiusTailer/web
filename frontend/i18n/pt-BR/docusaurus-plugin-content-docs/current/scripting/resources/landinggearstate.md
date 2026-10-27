@@ -10,7 +10,7 @@ Estados do trem de pouso de veículo usados pelas funções [GetVehicleLandingGe
 
 :::
 
-| Definition              | ID  |
-| ----------------------- | --- |
-| LANDING_GEAR_STATE_DOWN | 0   |
-| LANDING_GEAR_STATE_UP   | 1   |
+| Definition                | ID  |
+| ------------------------- | --- |
+| `LANDING_GEAR_STATE_DOWN` | 0   |
+| `LANDING_GEAR_STATE_UP`   | 1   |

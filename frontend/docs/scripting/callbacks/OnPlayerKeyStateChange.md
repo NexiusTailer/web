@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Description
 
-This callback is called when the state of any [supported](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).
+This callback is called when the state of any [supported](../resources/keys) key is changed (pressed/released).<br/>Directional keys do not trigger `OnPlayerKeyStateChange` (up/down/left/right).
 
 | Name        | Description                                                                                   |
 | ----------- | --------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ This callback is called when the state of any [supported](../resources/keys) key
 
 :::tip
 
-Directional keys do not trigger OnPlayerKeyStateChange (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](OnPlayerUpdate) or a timer).
+Directional keys do not trigger `OnPlayerKeyStateChange` (up/down/left/right).<br/>They can only be detected with [GetPlayerKeys](../functions/GetPlayerKeys) (in [OnPlayerUpdate](OnPlayerUpdate) or a timer).
 
 :::
 
@@ -54,7 +54,7 @@ Let's presume that you want to detect when a player presses their FIRE button, t
 if (newkeys == KEY_FIRE)
 ```
 
-This code may even work in your testing, but it is wrong and your testing is insufficient. Try crouching and pressing fire - your code will instantly stop working. Why? Because "newkeys" is no longer the same as "KEY_FIRE", it is the same as "KEY_FIRE" COMBINED WITH "KEY_CROUCH".
+This code may even work in your testing, but it is wrong and your testing is insufficient. Try crouching and pressing fire - your code will instantly stop working. Why? Because `newkeys` is no longer the same as `KEY_FIRE`, it is the same as `KEY_FIRE` COMBINED WITH `KEY_CROUCH`.
 
 ### How to check for a key
 
@@ -66,11 +66,11 @@ if (newkeys & KEY_FIRE)
 
 Note that the single <strong>&</strong> is correct - this is a bitwise AND, not a logical AND, which is what the two ampersands are called.
 
-Now if you test this code it will work whether you are crouching or standing when you press the fire key. However there is still one slight problem - it will fire as long as you are holding the key. OnPlayerKeyStateChange is called every time a key changes and that code is true whenever the the fire key is held down. If you press fire the code will fire, if that key is held and you press crouch - that code will fire again because a key (crouch) has changed and fire is still held down How do you detect when a key is first pressed, but not trigger again when it's still held and another key changes?
+Now if you test this code it will work whether you are crouching or standing when you press the fire key. However there is still one slight problem - it will fire as long as you are holding the key. `OnPlayerKeyStateChange` is called every time a key changes and that code is true whenever the the fire key is held down. If you press fire the code will fire, if that key is held and you press crouch - that code will fire again because a key (crouch) has changed and fire is still held down How do you detect when a key is first pressed, but not trigger again when it's still held and another key changes?
 
 ### How to check for a key that has been pressed
 
-This is where "oldkeys" comes in. To check if a key has just been pressed you need to first check whether it is set in "newkeys" - meaning it's held down, and then check that it's NOT in "oldkeys" - meaning it's only just been held down. The following code does this:
+This is where `oldkeys` comes in. To check if a key has just been pressed you need to first check whether it is set in `newkeys` - meaning it's held down, and then check that it's NOT in `oldkeys` - meaning it's only just been held down. The following code does this:
 
 ```c
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE))
@@ -100,13 +100,13 @@ However if you want to detect when they FIRST press fire and crouch the followin
 if ((newkeys & KEY_FIRE) && !(oldkeys & KEY_FIRE) && (newkeys & KEY_CROUCH) && !(oldkeys & KEY_CROUCH))
 ```
 
-Why not? Because OnPlayerKeyStateChange is called every time a single key changes. So they press "KEY_FIRE" - OnPlayerKeyStateChange is called with "KEY_FIRE" in "newkeys" and not in "oldkeys", then they press "KEY_CROUCH" - OnPlayerKeyStateChange is called with "KEY_CROUCH" and "KEY_FIRE" in "newkeys", but "KEY_FIRE" is now also in "oldkeys" as it's already been pressed, so "!(oldkeys & KEY_FIRE)" will fail. Fortunately the solution is very simple (in fact simpler than the original code):
+Why not? Because `OnPlayerKeyStateChange` is called every time a single key changes. So they press `KEY_FIRE` - `OnPlayerKeyStateChange` is called with `KEY_FIRE` in `newkeys` and not in `oldkeys`, then they press `KEY_CROUCH` - `OnPlayerKeyStateChange` is called with `KEY_CROUCH` and `KEY_FIRE` in `newkeys`, but `KEY_FIRE` is now also in `oldkeys` as it's already been pressed, so `!(oldkeys & KEY_FIRE)` will fail. Fortunately the solution is very simple (in fact simpler than the original code):
 
 ```c
 if ((newkeys & (KEY_FIRE | KEY_CROUCH)) == (KEY_FIRE | KEY_CROUCH) && (oldkeys & (KEY_FIRE | KEY_CROUCH)) != (KEY_FIRE | KEY_CROUCH))
 ```
 
-This may look complicated, but it checks that both keys are set in "newkeys" and that both the keys were not set in "oldkeys", if one of them was set in "oldkeys" that doesn't matter as not both of them were. All these things can be simplified greatly with defines.
+This may look complicated, but it checks that both keys are set in `newkeys` and that both the keys were not set in `oldkeys`, if one of them was set in `oldkeys` that doesn't matter as not both of them were. All these things can be simplified greatly with defines.
 
 ## Simplification
 
@@ -267,13 +267,13 @@ public OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
 
 You don't need to worry about HOW it's done, just that it is. HOLDING detects if they're pressing a key (or keys), regardless of wether they were pressing it before, PRESSED detects if they only just pressed the key(s) and RELEASED detects if they just released a key(s). However if you want to know more - read on.
 
-The reason why you need to do it this way, not just using & or ==, is to detect exactly the keys you want while ignoring others which may or may not be pressed. In binary KEY_SPRINT is:
+The reason why you need to do it this way, not just using & or ==, is to detect exactly the keys you want while ignoring others which may or may not be pressed. In binary `KEY_SPRINT` is:
 
 ```
 0b00001000
 ```
 
-and KEY_JUMP is:
+and `KEY_JUMP` is:
 
 ```
 0b00100000
@@ -285,7 +285,7 @@ thus ORing them into the wanted keys (we could also add them in this example but
 0b00101000
 ```
 
-If we were only using & and OnPlayerKeyStateChange was called for a player pressing jump we would get the following code:
+If we were only using & and `OnPlayerKeyStateChange` was called for a player pressing jump we would get the following code:
 
 ```
 newkeys = 0b00100000
@@ -323,4 +323,4 @@ ANDed   = 0b00101000
 
 Wanted and ANDed are the same so comparing them as equal will result in a true result, which again is correct.
 
-So using this method we can accurately check if certain keys are pressed ignoring all other keys which may or may not be pressed. the oldkeys check just uses != instead of == to ensure that the required keys were not previously pressed, so we know one of them was just pressed.
+So using this method we can accurately check if certain keys are pressed ignoring all other keys which may or may not be pressed. the `oldkeys` check just uses != instead of == to ensure that the required keys were not previously pressed, so we know one of them was just pressed.

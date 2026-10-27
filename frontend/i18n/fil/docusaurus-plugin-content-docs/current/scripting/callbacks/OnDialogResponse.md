@@ -7,15 +7,15 @@ tags: []
 
 ## Deskripsyon
 
-Ang callback na ito ay na cacall kapag ang player ay nag respond sa isang dialog na ipinakita gamit ang ShowPlayerDialog gamit ang pag click sa isang button, pagpindot ng `ENTER/ESC` o pag `Double Click` sa isang laman ng list. (kung ang dialog ay DIALOG_STYLE_LIST).
+Ang callback na ito ay na cacall kapag ang player ay nag respond sa isang dialog na ipinakita gamit ang `ShowPlayerDialog` gamit ang pag click sa isang button, pagpindot ng `ENTER/ESC` o pag `Double Click` sa isang laman ng list. (kung ang dialog ay `DIALOG_STYLE_LIST`).
 
-| Pangala     | Deskripsyon                                                                                                                                           |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid    | Ang ID ng player na nag respond sa dialog.                                                                                                            |
-| dialogid    | Ang ID ng dialog na pinag respond ng player, naka assign ito sa ShowPlayerDialog.                                                                     |
-| response    | **1** para sa unang button (kaliwa) at **0** para sa pangalawang button (kanan), kung isa lang ang button, ang 1 ang magagamit.                       |
-| listitem    | Ang ID ng nilalaman ng list na pinili ng isang player (nag uumpisa sa 0) (kapag lamang gumagamit ng DIALOG_STYLE_LIST, kung hindi ito ay magiging -1. |
-| inputtext[] | Ang text/sulat na nilagay ng player sa input box o ang piniling nilalaman ng list.                                                                    |
+| Pangala     | Deskripsyon                                                                                                                                             |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid    | Ang ID ng player na nag respond sa dialog.                                                                                                              |
+| dialogid    | Ang ID ng dialog na pinag respond ng player, naka assign ito sa `ShowPlayerDialog`.                                                                     |
+| response    | **1** para sa unang button (kaliwa) at **0** para sa pangalawang button (kanan), kung isa lang ang button, ang 1 ang magagamit.                         |
+| listitem    | Ang ID ng nilalaman ng list na pinili ng isang player (nag uumpisa sa 0) (kapag lamang gumagamit ng `DIALOG_STYLE_LIST`, kung hindi ito ay magiging -1. |
+| inputtext[] | Ang text/sulat na nilagay ng player sa input box o ang piniling nilalaman ng list.                                                                      |
 
 ## Returns
 
@@ -23,7 +23,7 @@ Lagi itong na cacall una sa mga filterscript kaya kapag nag return ng 1 binobloc
 
 ## Mga Halimbawa
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Dito ilalagay ang ID ng isang dialog
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 // Panagalawang halimbawa
@@ -89,7 +89,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 // Pangatlong halimbawa
@@ -119,7 +119,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 // Pangatlong halimbawa pero ibang paraan at ibang mga baril

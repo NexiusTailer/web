@@ -44,5 +44,5 @@ Angles are reversed in GTA:SA; 90 degrees would be _East_ in the real world, but
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerFacingAngle: Check where a player is facing.
-- SetPlayerPos: Set a player's position.
+- `GetPlayerFacingAngle`: Check where a player is facing.
+- `SetPlayerPos`: Set a player's position.

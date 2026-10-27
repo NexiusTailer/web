@@ -39,7 +39,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Os nós devem ser abertos com NPC_OpenNode antes do uso
+- Os nós devem ser abertos com `NPC_OpenNode` antes do uso
 - Somente nós abertos podem ser reproduzidos por NPCs
 - Use isto para verificar a disponibilidade do nó antes de atribuir a NPCs
 

@@ -38,19 +38,19 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-This function may not return accurate data when used under OnPlayerDisconnect if the player has quit normally. It usually returns accurate data if the player has been kicked or has timed out.
+This function may not return accurate data when used under `OnPlayerDisconnect` if the player has quit normally. It usually returns accurate data if the player has been kicked or has timed out.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetNetworkStats: Gets the servers networkstats and saves it into a string.
-- NetStats_GetConnectedTime: Get the time that a player has been connected for.
-- NetStats_MessagesReceived: Get the number of network messages the server has received from the player.
-- NetStats_BytesReceived: Get the amount of information (in bytes) that the server has received from the player.
-- NetStats_MessagesSent: Get the number of network messages the server has sent to the player.
-- NetStats_BytesSent: Get the amount of information (in bytes) that the server has sent to the player.
-- NetStats_MessagesRecvPerSecond: Get the number of network messages the server has received from the player in the last second.
-- NetStats_PacketLossPercent: Get a player's packet loss percent.
-- NetStats_ConnectionStatus: Get a player's connection status.
-- NetStats_GetIpPort: Get a player's IP **and port**.
+- `GetNetworkStats`: Gets the servers networkstats and saves it into a string.
+- `NetStats_GetConnectedTime`: Get the time that a player has been connected for.
+- `NetStats_MessagesReceived`: Get the number of network messages the server has received from the player.
+- `NetStats_BytesReceived`: Get the amount of information (in bytes) that the server has received from the player.
+- `NetStats_MessagesSent`: Get the number of network messages the server has sent to the player.
+- `NetStats_BytesSent`: Get the amount of information (in bytes) that the server has sent to the player.
+- `NetStats_MessagesRecvPerSecond`: Get the number of network messages the server has received from the player in the last second.
+- `NetStats_PacketLossPercent`: Get a player's packet loss percent.
+- `NetStats_ConnectionStatus`: Get a player's connection status.
+- `NetStats_GetIpPort`: Get a player's IP **and port**.

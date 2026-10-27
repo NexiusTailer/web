@@ -50,5 +50,5 @@ Color embedding can be used for multiple colors in the text.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetObjectMaterialText: Replace the texture of an object with text.
-- SetPlayerObjectMaterial: Replace the texture of a player object with the texture from another model in the game.
+- `SetObjectMaterialText`: Replace the texture of an object with text.
+- `SetPlayerObjectMaterial`: Replace the texture of a player object with the texture from another model in the game.

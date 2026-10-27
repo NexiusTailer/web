@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## 注意事项
 
-- 在使用 NPC_StartPlayback 之前加载录制
+- 在使用 `NPC_StartPlayback` 之前加载录制
 
 :::warning
 

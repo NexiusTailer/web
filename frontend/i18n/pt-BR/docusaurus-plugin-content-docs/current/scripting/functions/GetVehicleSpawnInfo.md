@@ -14,15 +14,15 @@ Obtém a localização e as cores do spawn do veículo.
 
 ## Parâmetros
 
-| Nome | Descrição |
-| ------------- | ------------------------------------------------------------------------------ |
-| vehicleid | O ID do veículo.                                                         |
-| &Float:spawnX | Uma variável float na qual armazenar a coordenada spawnX, passada por referência. |
-| &Float:spawnY | Uma variável float na qual armazenar a coordenada spawnY, passada por referência. |
-| &Float:spawnZ | Uma variável float na qual armazenar a coordenada spawnZ, passada por referência. |
-| &Float:angle | Uma variável flutuante na qual armazenar a coordenada do ângulo, passada por referência.  |
-| &colour1 | Uma variável na qual armazenar o valor color1, passado por referência.           |
-| &colour2 | Uma variável na qual armazenar o valor color2, passado por referência.           |
+| Nome          | Descrição                                                                                |
+| ------------- | ---------------------------------------------------------------------------------------- |
+| vehicleid     | O ID do veículo.                                                                         |
+| &Float:spawnX | Uma variável float na qual armazenar a coordenada `spawnX`, passada por referência.      |
+| &Float:spawnY | Uma variável float na qual armazenar a coordenada `spawnY`, passada por referência.      |
+| &Float:spawnZ | Uma variável float na qual armazenar a coordenada `spawnZ`, passada por referência.      |
+| &Float:angle  | Uma variável flutuante na qual armazenar a coordenada do ângulo, passada por referência. |
+| &colour1      | Uma variável na qual armazenar o valor color1, passado por referência.                   |
+| &colour2      | Uma variável na qual armazenar o valor color2, passado por referência.                   |
 
 ## Exemplos
 

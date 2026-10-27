@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Displays a message in chat to all players. This is a multi-player equivalent of SendClientMessage.
+Displays a message in chat to all players. This is a multi-player equivalent of `SendClientMessage`.
 
 | Name            | Description                                       |
 | --------------- | ------------------------------------------------- |
@@ -43,5 +43,5 @@ Avoid using format specifiers in your messages without formatting the string tha
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SendClientMessage: Send a message to a certain player.
-- SendPlayerMessageToAll: Force a player to send text for all players.
+- `SendClientMessage`: Send a message to a certain player.
+- `SendPlayerMessageToAll`: Force a player to send text for all players.

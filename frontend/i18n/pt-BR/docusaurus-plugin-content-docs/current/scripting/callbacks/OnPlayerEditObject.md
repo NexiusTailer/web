@@ -86,7 +86,7 @@ public OnPlayerEditObject(playerid, playerobject, objectid, EDIT_RESPONSE:respon
 
 :::warning
 
-Ao usar 'EDIT_RESPONSE_UPDATE' fique ciente que esta callback não será chamada quando sair de uma edição em progresso resultando na última atualização do 'EDIT_RESPONSE_UPDATE' ficando fora de sincronia com os objetos.
+Ao usar `EDIT_RESPONSE_UPDATE` fique ciente que esta callback não será chamada quando sair de uma edição em progresso resultando na última atualização do `EDIT_RESPONSE_UPDATE` ficando fora de sincronia com os objetos.
 
 :::
 

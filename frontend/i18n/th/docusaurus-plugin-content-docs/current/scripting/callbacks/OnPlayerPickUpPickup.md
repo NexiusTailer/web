@@ -7,12 +7,12 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Called when a player picks up a pickup created with CreatePickup.
+Called when a player picks up a pickup created with `CreatePickup`.
 
-| Name     | Description                                     |
-| -------- | ----------------------------------------------- |
-| playerid | The ID of the player that picked up the pickup. |
-| pickupid | The ID of the pickup, returned by CreatePickup. |
+| Name     | Description                                       |
+| -------- | ------------------------------------------------- |
+| playerid | The ID of the player that picked up the pickup.   |
+| pickupid | The ID of the pickup, returned by `CreatePickup`. |
 
 ## ส่งคืน
 

@@ -13,12 +13,12 @@ This function was added in SA-MP 0.3d and will not work in earlier versions!
 
 ## คำอธิบาย
 
-Checks if the given player objectid is moving.
+Checks if the given player `objectid` is moving.
 
-| Name     | Description                                          |
-| -------- | ---------------------------------------------------- |
-| playerid | The ID of the player whose player-object is checked. |
-| objectid | The player objectid you want to check if is moving.  |
+| Name     | Description                                           |
+| -------- | ----------------------------------------------------- |
+| playerid | The ID of the player whose player-object is checked.  |
+| objectid | The player `objectid` you want to check if is moving. |
 
 ## ส่งคืน
 

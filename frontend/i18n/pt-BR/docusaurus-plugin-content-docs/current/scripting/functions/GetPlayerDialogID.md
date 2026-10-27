@@ -20,7 +20,7 @@ Obtenha o ID da caixa de diálogo atualmente exibida ao jogador.
 
 Retorna a caixa de diálogo ID.
 
-Ou **INVALID_DIALOG_ID** se o jogador não estiver conectado ou não tiver nenhuma caixa de diálogo aberta.
+Ou `INVALID_DIALOG_ID` se o jogador não estiver conectado ou não tiver nenhuma caixa de diálogo aberta.
 
 ## Exemplos
 

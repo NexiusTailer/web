@@ -35,7 +35,7 @@ printf("money: %d", GetPVarInt(playerid, "Money"));
 
 :::note
 
-As variáveis não são redefinidas até que [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) seja chamado, portanto, os valores ainda estarão acessíveis em OnPlayerDisconnect.
+As variáveis não são redefinidas até que [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect) seja chamado, portanto, os valores ainda estarão acessíveis em `OnPlayerDisconnect`.
 
 :::
 

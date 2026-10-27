@@ -7,12 +7,12 @@ tags: []
 
 ## Descriere
 
-Acest callback este apelat când un jucător răspunde unui dialog afișat prin ShowPlayerDialog, după apăsarea unui buton, apăsarea de ENTER/ESC sau dublu-click pe un element al unei liste (dacă s-a folosit un dialog de tip listă).
+Acest callback este apelat când un jucător răspunde unui dialog afișat prin `ShowPlayerDialog`, după apăsarea unui buton, apăsarea de ENTER/ESC sau dublu-click pe un element al unei liste (dacă s-a folosit un dialog de tip listă).
 
 | Nume        | Descriere                                                                                                                    |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | playerid    | ID-ul jucătorului care a răspuns dialogului.                                                                                 |
-| dialogid    | ID-ul dialogului căruia jucătorul i-a răspuns, atribuit în ShowPlayerDialog.                                                 |
+| dialogid    | ID-ul dialogului căruia jucătorul i-a răspuns, atribuit în `ShowPlayerDialog`.                                               |
 | response    | **1** pentru butonul din stânga, **0** pentru butonul din dreapta (dacă numai un buton este afișat atunci mereu 1)           |
 | listitem    | ID-ul elementului din listă selectat (începe de la 0) (doar dacă s-a folosit un dialog de tip listă, altfel va fi mereu -1). |
 | inputtext[] | Textul inserat de către jucător în căsuța de intrare, sau textul elementului din listă selectat.                             |
@@ -23,7 +23,7 @@ Mereu este apelat primul în filterscript-uri deci returnează 1 și blochează 
 
 ## Exemple
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Definim ID-ul dialogului pentru a putea prelucra răspunsurile
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -88,7 +88,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -117,7 +117,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3

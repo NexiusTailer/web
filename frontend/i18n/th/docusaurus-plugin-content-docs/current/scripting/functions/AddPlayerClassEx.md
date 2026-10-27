@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This function is exactly the same as the AddPlayerClass function, with the addition of a team parameter.
+This function is exactly the same as the `AddPlayerClass` function, with the addition of a `team` parameter.
 
 | Name          | Description                                                 |
 | ------------- | ----------------------------------------------------------- |

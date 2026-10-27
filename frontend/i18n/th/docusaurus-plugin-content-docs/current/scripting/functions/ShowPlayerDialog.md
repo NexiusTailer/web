@@ -9,15 +9,15 @@ tags: ["player"]
 
 Shows the player a synchronous (only one at a time) dialog box.
 
-| Name      | Description                                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| playerid  | The ID of the player to show the dialog to.                                                                                             |
-| dialogid  | An ID to assign this dialog to, so responses can be processed. Max dialogid is 32767. Using negative values will close any open dialog. |
-| style     | The style of the dialog.                                                                                                                |
-| caption[] | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.       |
-| info[]    | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                  |
-| button1[] | The text on the left button.                                                                                                            |
-| button2[] | The text on the right button. Leave it blank ( "" ) to hide it.                                                                         |
+| Name      | Description                                                                                                                               |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid  | The ID of the player to show the dialog to.                                                                                               |
+| dialogid  | An ID to assign this dialog to, so responses can be processed. Max `dialogid` is 32767. Using negative values will close any open dialog. |
+| style     | The style of the dialog.                                                                                                                  |
+| caption[] | The title at the top of the dialog. The length of the caption can not exceed more than 64 characters before it starts to cut off.         |
+| info[]    | The text to display in the main dialog. Use \n to start a new line and \t to tabulate.                                                    |
+| button1[] | The text on the left button.                                                                                                              |
+| button2[] | The text on the right button. Leave it blank ( "" ) to hide it.                                                                           |
 
 ## ส่งคืน
 
@@ -67,11 +67,11 @@ ShowPlayerDialog(playerid, DIALOG_WEAPONS, DIALOG_STYLE_TABLIST_HEADERS, "Buy We
 :::tip
 
 - It is recommended to use enumerations (see above) or definitions (#define) to determine which IDs dialogs have, to avoid confusion in the future. You should never use literal numbers for IDs - it gets confusing.
-- Use color embedding for multiple colors in the text. Using **-1** as _dialogid_ closes all dialogs currently shown on the client's screen.
+- Use color embedding for multiple colors in the text. Using **-1** as `dialogid` closes all dialogs currently shown on the client's screen.
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- TextDrawShowForPlayer: Show a textdraw for a certain player.
-- OnDialogResponse: Called when a player responds to a dialog.
+- `TextDrawShowForPlayer`: Show a textdraw for a certain player.
+- `OnDialogResponse`: Called when a player responds to a dialog.

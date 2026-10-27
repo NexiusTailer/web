@@ -15,8 +15,8 @@ tags: ["npc", "节点", "导航"]
 | ------------- | ----------------------------------------------- |
 | npcid         | NPC 的 ID                                       |
 | nodeId        | 要导航的节点的 ID                               |
-| moveType      | 移动类型（默认: NPC_MOVE_TYPE_JOG）             |
-| Float:speed   | 移动速度（默认: NPC_MOVE_SPEED_AUTO）           |
+| moveType      | 移动类型（默认: `NPC_MOVE_TYPE_JOG`）           |
+| Float:speed   | 移动速度（默认: `NPC_MOVE_SPEED_AUTO`）         |
 | Float:radius  | 考虑为到达的节点周围半径（默认: 0.0）           |
 | bool:setangle | 是否在导航期间更新 NPC 的朝向角度（默认: true） |
 

@@ -7,7 +7,7 @@ tags: []
 
 ## Açıklama
 
-Bu geri çağırma, bir oyuncu ShowPlayerDialog kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
+Bu geri çağırma, bir oyuncu `ShowPlayerDialog` kullanılarak gösterilen bir dialog içerisinde bir butona tıkladığında, ENTER / esc tuşlarına bastığında veya liste dialogu içerisindeki bir seçeneğe çift tıkladığında(bu seçenek için dialog'un stili list olmalıdır) tetiklenir.
 
 | Parametre   | Açıklama                                                                                                                                                       |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,7 +23,7 @@ Filterscriptler içerisinde 1 olarak döndürmek diğer filterscripts'lerin bunu
 
 ## Örnek
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Dialog ID'sini tanımlayalım.
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 // Tekrar dialog ID'sini tanımlıyoruz.
@@ -89,7 +89,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -118,7 +118,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3

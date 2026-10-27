@@ -10,70 +10,70 @@ Esta página lista todas as constantes específicas para funções NPC em open.m
 
 ## Limites
 
-| Valor | Constante     | Descrição             |
-| ----- | ------------- | --------------------- |
-| 1000  | MAX_NPCS      | Número máximo de NPCs |
-| 64    | NPC_MAX_NODES | Número máximo de nós  |
+| Valor | Constante       | Descrição             |
+| ----- | --------------- | --------------------- |
+| 1000  | `MAX_NPCS`      | Número máximo de NPCs |
+| 64    | `NPC_MAX_NODES` | Número máximo de nós  |
 
 ## Constantes inválidas
 
-| Valor | Constante | Descrição |
-| ----- | ----------------- | -------------------- |
-| -1 | INVALID_NPC_ID | NPC ID inválido |
-| -1 | INVALID_PATH_ID | Caminho inválido ID |
-| -1 | INVALID_NODE_ID | Nó inválido ID |
-| -1 | INVALID_RECORD_ID | Gravação inválida ID |
+| Valor | Constante           | Descrição            |
+| ----- | ------------------- | -------------------- |
+| -1    | `INVALID_NPC_ID`    | NPC ID inválido      |
+| -1    | `INVALID_PATH_ID`   | Caminho inválido ID  |
+| -1    | `INVALID_NODE_ID`   | Nó inválido ID       |
+| -1    | `INVALID_RECORD_ID` | Gravação inválida ID |
 
 ## Tipos de movimento
 
 Usado por funções como [NPC_Move](../functions/NPC_Move), [NPC_MoveByPath](../functions/NPC_MoveByPath), [NPC_EnterVehicle](../functions/NPC_EnterVehicle) e [NPC_PlayNode](../functions/NPC_PlayNode).
 
-| Valor | Constante | Descrição |
-| ----- | --------------------- | ---------------------------------------------------- |
-| -1 | UNKNOWN_NPC_MOVE_TYPE | Tipo de movimento desconhecido |
-| 0 | NPC_MOVE_TYPE_NONE | Nenhum movimento |
-| 1 | NPC_MOVE_TYPE_WALK | NPC caminha até o destino |
-| 2 | NPC_MOVE_TYPE_JOG | NPC avança para o destino (padrão para a maioria das funções) |
-| 3 | NPC_MOVE_TYPE_SPRINT | NPC corre para o destino |
-| 4 | NPC_MOVE_TYPE_DRIVE | NPC dirige até o destino (movimento do veículo) |
-| 5 | NPC_MOVE_TYPE_AUTO | Tipo de movimento automático |
+| Valor | Constante               | Descrição                                                     |
+| ----- | ----------------------- | ------------------------------------------------------------- |
+| -1    | `UNKNOWN_NPC_MOVE_TYPE` | Tipo de movimento desconhecido                                |
+| 0     | `NPC_MOVE_TYPE_NONE`    | Nenhum movimento                                              |
+| 1     | `NPC_MOVE_TYPE_WALK`    | NPC caminha até o destino                                     |
+| 2     | `NPC_MOVE_TYPE_JOG`     | NPC avança para o destino (padrão para a maioria das funções) |
+| 3     | `NPC_MOVE_TYPE_SPRINT`  | NPC corre para o destino                                      |
+| 4     | `NPC_MOVE_TYPE_DRIVE`   | NPC dirige até o destino (movimento do veículo)               |
+| 5     | `NPC_MOVE_TYPE_AUTO`    | Tipo de movimento automático                                  |
 
 ## Velocidade de Movimento
 
 Usado por funções de movimento para controlar a velocidade NPC.
 
-| Valor     | Constante             | Descrição                                          |
-| --------- | --------------------- | -------------------------------------------------- |
-| -1.0      | NPC_MOVE_SPEED_AUTO   | Velocidade automática baseada no tipo de movimento |
-| 0.1552086 | NPC_MOVE_SPEED_WALK   | Velocidade de caminhada                            |
-| 0.56444   | NPC_MOVE_SPEED_JOG    | Velocidade de trote                                |
-| 0.926784  | NPC_MOVE_SPEED_SPRINT | Velocidade de corrida                              |
+| Valor     | Constante               | Descrição                                          |
+| --------- | ----------------------- | -------------------------------------------------- |
+| -1.0      | `NPC_MOVE_SPEED_AUTO`   | Velocidade automática baseada no tipo de movimento |
+| 0.1552086 | `NPC_MOVE_SPEED_WALK`   | Velocidade de caminhada                            |
+| 0.56444   | `NPC_MOVE_SPEED_JOG`    | Velocidade de trote                                |
+| 0.926784  | `NPC_MOVE_SPEED_SPRINT` | Velocidade de corrida                              |
 
 ## Sinalizadores de verificação de entidade
 
 Usado por [NPC_AimAt](../functions/NPC_AimAt), [NPC_AimAtPlayer](../functions/NPC_AimAtPlayer) e [NPC_Shoot](../functions/NPC_Shoot) para detecção de colisão.
 
-| Valor | Constante | Descrição |
-| ----- | ----------------------------- | ----------------------------------------------- |
-| 0 | NPC_ENTITY_CHECK_NONE | Sem verificação de colisão |
-| 1 | NPC_ENTITY_CHECK_PLAYER | Verifique colisões com jogadores |
-| 2 | NPC_ENTITY_CHECK_NPC | Verifique colisões com NPCs |
-| 4 | NPC_ENTITY_CHECK_ACTOR | Verifique colisões com atores |
-| 8 | NPC_ENTITY_CHECK_VEHICLE | Verifique colisões com veículos |
-| 16 | NPC_ENTITY_CHECK_OBJECT | Verifique colisões com objetos |
-| 32 | NPC_ENTITY_CHECK_POBJECT_ORIG | Verifique colisões com objetos do jogador (original) |
-| 64 | NPC_ENTITY_CHECK_POBJECT_TARG | Verifique colisões com objetos do jogador (alvo) |
-| 128 | NPC_ENTITY_CHECK_MAP | Verifique as colisões com o mapa |
-| 255 | NPC_ENTITY_CHECK_ALL | Verifique colisões com todas as entidades |
+| Valor | Constante                       | Descrição                                            |
+| ----- | ------------------------------- | ---------------------------------------------------- |
+| 0     | `NPC_ENTITY_CHECK_NONE`         | Sem verificação de colisão                           |
+| 1     | `NPC_ENTITY_CHECK_PLAYER`       | Verifique colisões com jogadores                     |
+| 2     | `NPC_ENTITY_CHECK_NPC`          | Verifique colisões com NPCs                          |
+| 4     | `NPC_ENTITY_CHECK_ACTOR`        | Verifique colisões com atores                        |
+| 8     | `NPC_ENTITY_CHECK_VEHICLE`      | Verifique colisões com veículos                      |
+| 16    | `NPC_ENTITY_CHECK_OBJECT`       | Verifique colisões com objetos                       |
+| 32    | `NPC_ENTITY_CHECK_POBJECT_ORIG` | Verifique colisões com objetos do jogador (original) |
+| 64    | `NPC_ENTITY_CHECK_POBJECT_TARG` | Verifique colisões com objetos do jogador (alvo)     |
+| 128   | `NPC_ENTITY_CHECK_MAP`          | Verifique as colisões com o mapa                     |
+| 255   | `NPC_ENTITY_CHECK_ALL`          | Verifique colisões com todas as entidades            |
 
 ## Tipos de acertos de bala
 
 Usado por [NPC_Shoot](../functions/NPC_Shoot) para especificar que tipo de alvo está sendo atingido.
 
-| Constant | Descrição |
-| ---------------------- | ------------------ |
-| BULLET_HIT_TYPE_NONE | Nenhum alvo específico |
-| BULLET_HIT_TYPE_PLAYER | Alvo do jogador |
+| Constant                 | Descrição              |
+| ------------------------ | ---------------------- |
+| `BULLET_HIT_TYPE_NONE`   | Nenhum alvo específico |
+| `BULLET_HIT_TYPE_PLAYER` | Alvo do jogador        |
 
 ## Exemplos
 

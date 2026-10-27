@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- Returns INVALID_OBJECT_ID if the NPC is not surfing on any player object
+- Returns `INVALID_OBJECT_ID` if the NPC is not surfing on any player object
 - This function only checks for player-specific objects, not global objects
 
 ## Related Functions

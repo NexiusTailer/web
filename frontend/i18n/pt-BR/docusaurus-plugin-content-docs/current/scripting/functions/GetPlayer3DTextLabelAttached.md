@@ -16,16 +16,16 @@ Esta função está obsoleta. Consulte [GetPlayer3DTextLabelAttachedData](GetPla
 
 Obtém os dados anexados ao rótulo de texto 3D do jogador.
 
-| Nome | Descrição |
-| ------------------- | ------------------------------------------------------------------------ |
-| playerid | O ID do jogador.                                                    |
-| PlayerText3D:textid | O ID da etiqueta de texto 3D do jogador para obter os dados anexados.        |
-| &parentPlayerid | Uma variável na qual armazenar o parentPlayerid, passado por referência.  |
-| &parentVehicleid | Uma variável na qual armazenar o parentVehicleid, passado por referência. |
+| Nome                | Descrição                                                                   |
+| ------------------- | --------------------------------------------------------------------------- |
+| playerid            | O ID do jogador.                                                            |
+| PlayerText3D:textid | O ID da etiqueta de texto 3D do jogador para obter os dados anexados.       |
+| &parentPlayerid     | Uma variável na qual armazenar o `parentPlayerid`, passado por referência.  |
+| &parentVehicleid    | Uma variável na qual armazenar o `parentVehicleid`, passado por referência. |
 
 ## Exemplos
 
-Um exemplo para parentPlayerid:
+Um exemplo para `parentPlayerid`:
 
 ```c
 new PlayerText3D:playerTextId;
@@ -41,7 +41,7 @@ playerTextId = CreatePlayer3DTextLabel(playerid, "Hello\nI'm at your position", 
 GetPlayer3DTextLabelAttached(playerid, playerTextId, parentPlayerid, parentVehicleid);
 // O `parentPlayerid` será '37'
 ```
-Um exemplo para parentVehicleid:
+Um exemplo para `parentVehicleid`:
 
 ```c
 new PlayerText3D:gVehicle3dText[MAX_VEHICLES];

@@ -67,8 +67,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 录制文件必须存在于 `npcmodes\recordings` 目录中
-- 如果 autoUnload 为 true，回放结束时录制文件将被卸载
-- 使用 NPC_StartPlaybackEx 可以通过预加载的录制获得更好的控制
+- 如果 `autoUnload` 为 true，回放结束时录制文件将被卸载
+- 使用 `NPC_StartPlaybackEx` 可以通过预加载的录制获得更好的控制
 
 ## 相关函数
 

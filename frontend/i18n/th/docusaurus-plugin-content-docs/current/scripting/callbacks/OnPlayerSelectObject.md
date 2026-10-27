@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-This callback is called when a player selects an object after SelectObject has been used.
+This callback is called when a player selects an object after `SelectObject` has been used.
 
 | Name     | Description                                             |
 | -------- | ------------------------------------------------------- |

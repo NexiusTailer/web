@@ -7,7 +7,7 @@ tags: ["sqlite"]
 
 ## Descrição
 
-Obtém o conteúdo de um campo como um número inteiro a partir de DB_ExecuteQuery.
+Obtém o conteúdo de um campo como um número inteiro a partir de `DB_ExecuteQuery`.
 
 | Nome            | Descrição                           |
 | --------------- | ----------------------------------- |
@@ -153,7 +153,7 @@ public OnGameModeExit()
 - [DB_Open](DB_Open_Modern): Abre uma conexão com um banco de dados SQLite
 - [DB_Close](DB_Close_Modern): Fecha a conexão com um banco de dados SQLite
 - [DB_ExecuteQuery](DB_ExecuteQuery): Consulta um banco de dados SQLite
-- [DB_FreeResultSet](DB_FreeResultSet): Libera a memória do resultado de uma DB_ExecuteQuery
+- [DB_FreeResultSet](DB_FreeResultSet): Libera a memória do resultado de uma `DB_ExecuteQuery`
 - [DB_GetRowCount](DB_GetRowCount): Obtém o número de linhas em um resultado
 - [DB_SelectNextRow](DB_SelectNextRow): Move para a próxima linha
 - [DB_GetFieldCount](DB_GetFieldCount): Obtém o número de campos em um resultado
@@ -164,7 +164,7 @@ public OnGameModeExit()
 - [DB_GetFieldIntByName](DB_GetFieldIntByName): Obtém o conteúdo do campo como um inteiro com nome especificado da linha de resultado atual
 - [DB_GetFieldFloat](DB_GetFieldFloat): Obtém o conteúdo do campo como um float com ID especificado da linha de resultado atual
 - [DB_GetFieldFloatByName](DB_GetFieldFloatByName): Obtém o conteúdo do campo como um float com nome especificado da linha de resultado atual
-- [DB_GetMemHandle](DB_GetMemHandle): Obtém o handle de memória para um banco de dados SQLite que foi aberto com db_open.
-- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): Obtém o handle de memória para uma consulta SQLite que foi executada com DB_ExecuteQuery.
+- [DB_GetMemHandle](DB_GetMemHandle): Obtém o handle de memória para um banco de dados SQLite que foi aberto com `db_open`.
+- [DB_GetLegacyDBResult](DB_GetLegacyDBResult): Obtém o handle de memória para uma consulta SQLite que foi executada com `DB_ExecuteQuery`.
 - [DB_GetDatabaseConnectionCount](DB_GetDatabaseConnectionCount): Obtém o número de conexões de banco de dados abertas para fins de depuração.
 - [DB_GetDatabaseResultSetCount](DB_GetDatabaseResultSetCount): Obtém o número de resultados de banco de dados abertos.

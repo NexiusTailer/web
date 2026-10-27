@@ -159,7 +159,7 @@ public OnGameModeExit()
 - [db_open](db_open): اتصال به پایگاه داده SQLite را باز می‌کند
 - [db_close](db_close): اتصال به پایگاه داده SQLite را می‌بندد
 - [db_query](db_query): کوئری روی پایگاه داده SQLite اجرا می‌کند
-- [db_free_result](db_free_result): حافظه نتیجه از db_query را آزاد می‌کند
+- [db_free_result](db_free_result): حافظه نتیجه از `db_query` را آزاد می‌کند
 - [db_num_rows](db_num_rows): تعداد ردیف‌ها در نتیجه را دریافت می‌کند
 - [db_next_row](db_next_row): به ردیف بعدی می‌رود
 - [db_num_fields](db_num_fields): تعداد فیلدها در نتیجه را دریافت می‌کند
@@ -169,7 +169,7 @@ public OnGameModeExit()
 - [db_get_field_int](db_get_field_int): محتوای فیلد به عنوان عدد صحیح با ID مشخص از ردیف فعلی را دریافت می‌کند
 - [db_get_field_assoc_int](db_get_field_assoc_int): محتوای فیلد به عنوان عدد صحیح با نام مشخص از ردیف فعلی را دریافت می‌کند
 - [db_get_field_assoc_float](db_get_field_assoc_float): محتوای فیلد به عنوان عدد اعشاری با نام مشخص از ردیف فعلی را دریافت می‌کند
-- [db_get_mem_handle](db_get_mem_handle): هندل حافظه برای پایگاه داده SQLite که با db_open باز شده را دریافت می‌کند
-- [db_get_result_mem_handle](db_get_result_mem_handle): هندل حافظه برای کوئری SQLite که با db_query اجرا شده را دریافت می‌کند
+- [db_get_mem_handle](db_get_mem_handle): هندل حافظه برای پایگاه داده SQLite که با `db_open` باز شده را دریافت می‌کند
+- [db_get_result_mem_handle](db_get_result_mem_handle): هندل حافظه برای کوئری SQLite که با `db_query` اجرا شده را دریافت می‌کند
 - [db_debug_openfiles](db_debug_openfiles): تعداد اتصالات باز پایگاه داده را برای اهداف دیباگ دریافت می‌کند
 - [db_debug_openresults](db_debug_openresults): تعداد نتایج باز پایگاه داده را دریافت می‌کند

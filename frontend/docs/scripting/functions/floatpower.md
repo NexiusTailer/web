@@ -16,7 +16,7 @@ Raises the given value to the power of the exponent.
 
 ## Returns
 
-The result of 'value' to the power of 'exponent'.
+The result of `value` to the power of `exponent`.
 
 ## Examples
 

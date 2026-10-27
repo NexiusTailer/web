@@ -12,7 +12,7 @@ Gebruikt door [GetVehicleDamageStatus](../functions/GetVehicleDamageStatus) en [
 
 | Definitie                                                                 | Waarde     |
 | ------------------------------------------------------------------------- | ---------- |
-| UNKNOWN_VEHICLE_DOOR_STATUS                                               | -1         |
+| `UNKNOWN_VEHICLE_DOOR_STATUS`                                             | -1         |
 | VEHICLE_DOOR_STATUS_NONE **/** CARDOOR_NONE                               | 0          |
 | VEHICLE_DOOR_STATUS_BONNET_OPEN **/** CARDOOR_BONNET_OPEN                 | 0x00000001 |
 | VEHICLE_DOOR_STATUS_BONNET_DAMAGED **/** CARDOOR_BONNET_DAMAGED           | 0x00000002 |

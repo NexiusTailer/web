@@ -11,13 +11,13 @@ tags: ["player"]
 
 Esta callback é chamada quando o jogador causa dano a um ator.
 
-| Nome            | Descrição                                                 |
-| --------------- | --------------------------------------------------------- |
-| playerid        | ID do jogador que realizou o dano.                        |
-| damaged_actorid | ID do ator que recebeu o dano.                            |
-| Float:amount    | A quantidade de vida/colete que o damaged_actorid perdeu. |
-| WEAPON:weaponid | O motivo que causou o dano.                               |
-| bodypart        | A parte do corpo que foi acertada                         |
+| Nome            | Descrição                                                   |
+| --------------- | ----------------------------------------------------------- |
+| playerid        | ID do jogador que realizou o dano.                          |
+| damaged_actorid | ID do ator que recebeu o dano.                              |
+| Float:amount    | A quantidade de vida/colete que o `damaged_actorid` perdeu. |
+| WEAPON:weaponid | O motivo que causou o dano.                                 |
+| bodypart        | A parte do corpo que foi acertada                           |
 
 ## Retorno
 

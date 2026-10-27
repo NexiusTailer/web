@@ -14,7 +14,7 @@ The 5 most recent kills are shown on the right side of players' screens. Pressin
 | Name     | Description                                                                                                                 |
 | -------- | --------------------------------------------------------------------------------------------------------------------------- |
 | playerid | The ID of the player to send the death message to.                                                                          |
-| killer   | The ID of the killer (can be INVALID_PLAYER_ID).                                                                            |
+| killer   | The ID of the killer (can be `INVALID_PLAYER_ID`).                                                                          |
 | killee   | The ID of the player that died.                                                                                             |
 | weapon   | The reason (not always a weapon) for the victim's death. Special icons can also be used (ICON_CONNECT and ICON_DISCONNECT). |
 

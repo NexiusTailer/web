@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Retorna true somente durante a entrada da animação/processo
 - Assim que NPC estiver totalmente dentro, isso retornará false
-- O NPC deve ter sido instruído para entrar com NPC_EnterVehicle
+- O NPC deve ter sido instruído para entrar com `NPC_EnterVehicle`
 
 ## Funções Relacionadas
 

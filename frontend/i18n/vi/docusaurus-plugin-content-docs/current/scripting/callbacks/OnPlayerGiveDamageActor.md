@@ -15,7 +15,7 @@ Callback này được gọi khi một người chơi gây thiệt hại cho m�
 | --------------- | --------------------------------------------------- |
 | playerid        | ID của người chơi đã gây thiệt hại.                 |
 | damaged_actorid | ID của diễn viên nhận thiệt hại.                    |
-| Float:amount    | Số lượng máu/giáp mà damaged_actorid đã mất.        |
+| Float:amount    | Số lượng máu/giáp mà `damaged_actorid` đã mất.      |
 | WEAPON:weaponid | Nguyên nhân gây thiệt hại.                          |
 | bodypart        | [Phần cơ thể](../resources/bodyparts) bị trúng đạn. |
 

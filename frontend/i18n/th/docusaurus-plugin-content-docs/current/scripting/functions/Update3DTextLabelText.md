@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::warning
 
-If text[] is empty, the server/clients next to the text might crash! (Fixed in open.mp)
+If `text[]` is empty, the server/clients next to the text might crash! (Fixed in open.mp)
 
 :::
 

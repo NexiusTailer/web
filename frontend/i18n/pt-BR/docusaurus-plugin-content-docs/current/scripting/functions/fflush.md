@@ -12,9 +12,9 @@ tags: ["file management"]
 
 Descarregue um arquivo no disco (certifique-se de que todas as gravações foram concluídas). Na verdade, apenas chama [flength](flength) pois isso precisa forçar um flush para ser preciso.
 
-| Nome | Descrição |
-| ----------- | -------------------------------------------- |
-| File:handle | O identificador do arquivo. (retornado por fopen). |
+| Nome        | Descrição                                            |
+| ----------- | ---------------------------------------------------- |
+| File:handle | O identificador do arquivo. (retornado por `fopen`). |
 
 ## Retornos
 

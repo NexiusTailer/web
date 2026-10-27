@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 ## Opis
 
-Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu. Różnica pomiędzy AddStaticVehicle polega na tym, że ta funkcja umożliwia ustawienie czasu respawnu pojazdu, gdy kierowca go porzuci.
+Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do gamemodu. Różnica pomiędzy `AddStaticVehicle` polega na tym, że ta funkcja umożliwia ustawienie czasu respawnu pojazdu, gdy kierowca go porzuci.
 
 | Nazwa                                 | Opis                                                                                                                                                 |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,9 +23,9 @@ Dodaje „statyczny” pojazd (pojazdy są wstępnie ładowane dla graczy) do ga
 
 ## Zwracane wartości
 
-ID stworzonego pojazdu (pomiędzy 1, a MAX_VEHICLES).
+ID stworzonego pojazdu (pomiędzy 1, a `MAX_VEHICLES`).
 
-INVALID_VEHICLE_ID (65535) jeżeli pojazd nie został utworzony (osiągnięto limit pojazdów lub podano nieprawidłowe ID modelu).
+`INVALID_VEHICLE_ID` (65535) jeżeli pojazd nie został utworzony (osiągnięto limit pojazdów lub podano nieprawidłowe ID modelu).
 
 ## Przykłady
 

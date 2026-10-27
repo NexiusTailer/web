@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Cette callback est appelée quand un joueur clique sur un textdraw ou le quitte avec la touche ECHAP.
 
-| Nom            | Description                                                         |
-| -------------- | ------------------------------------------------------------------- |
-| `int` playerid | ID du joueur qui clique sur le textdraw.                            |
-| `int`clickedid | ID du textdraw cliqué. INVALID_TEXT_DRAW si le textdraw est quitté. |
+| Nom            | Description                                                           |
+| -------------- | --------------------------------------------------------------------- |
+| `int` playerid | ID du joueur qui clique sur le textdraw.                              |
+| `int`clickedid | ID du textdraw cliqué. `INVALID_TEXT_DRAW` si le textdraw est quitté. |
 
 ## Valeur de retour
 
@@ -64,9 +64,9 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-La zone cliquable est définie par TextDrawTextSize. Les paramètres x et y ne doivent pas retourner une valeur de 0 ou une valeur négative.
+La zone cliquable est définie par `TextDrawTextSize`. Les paramètres x et y ne doivent pas retourner une valeur de 0 ou une valeur négative.
 
-N'utilisez pas CancelSelectTextDraw sans condition dans cette callback. Il en résulterait une loop infinie.
+N'utilisez pas `CancelSelectTextDraw` sans condition dans cette callback. Il en résulterait une loop infinie.
 
 :::
 

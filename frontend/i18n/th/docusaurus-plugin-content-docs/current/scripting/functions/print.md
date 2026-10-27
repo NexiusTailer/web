@@ -29,4 +29,4 @@ public OnGameModeInit()
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- printf: Print a formatted message into the server logs and console.
+- `printf`: Print a formatted message into the server logs and console.

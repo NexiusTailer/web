@@ -12,7 +12,7 @@ Dodaje smrt 'killfeedu' s desne strane ekrana za jednog igrača.
 | Ime      | Deskripcija                                                                                                           |
 | -------- | --------------------------------------------------------------------------------------------------------------------- |
 | playerid | ID igrača za poslati smrt killfeedu.                                                                                  |
-| killer   | ID ubice (može biti INVALID_PLAYER_ID).                                                                               |
+| killer   | ID ubice (može biti `INVALID_PLAYER_ID`).                                                                             |
 | killee   | ID igrača koji je umro.                                                                                               |
 | weapon   | Razlog (ne uvijek oružje) smrti žrtve. Specijalne se ikonice također mogu koristiti (ICON_CONNECT i ICON_DISCONNECT). |
 

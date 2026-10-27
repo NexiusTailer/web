@@ -75,7 +75,7 @@ description: File konfigurasi server.
 | logqueries     | bool   | 0          | Tidak     | Tidak | Menyalakan jika semua query terkirim ke server oleh pemain yang seharusnya tercatat. Ubah menjadi 1 untuk menyalakan atau 0 untuk mematikan. Ini sangat berguna ketika terjadi serangan DDoS.                                                                                                                                                                                                                                      |
 | chatlogging    | int\*  | 1          | Tidak     | Tidak | Menyalakan jika obrolan pemain ingin dimunculkan di konsol server. Berguna untuk menghentikan pencatatan menjadi menumpuk, atau jika Anda memiliki pencatatan obrolan di skrip. Ubah menjadi 1 untuk menyalakan atau 0 untuk mematikan.                                                                                                                                                                                            |
 | db_logging     | int\*  | 0          | Tidak     | Tidak | Mencatat kesalahan fungsi db\_\* sqlite di konsol server.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.7 R2 dan tidak memiliki efek apapun di versi sebelumnya.                                                                                                                                                                                                                                          |
-| db_log_queries | int\*  | 0          | Tidak     | Tidak | Mencatat semua pemanggilan db_query sqlite, termasuk string query-nya.                                                                                                                                                                                                                                                                                                                                                             |
+| db_log_queries | int\*  | 0          | Tidak     | Tidak | Mencatat semua pemanggilan `db_query` sqlite, termasuk string query-nya.                                                                                                                                                                                                                                                                                                                                                           |
 
 > [*] Beberapa pengaturan memiliki tipe yang berbeda dari yang Anda mungkin pikirkan.
 
@@ -89,7 +89,7 @@ description: File konfigurasi server.
 | stream_distance\* | float | 200.0      | Tidak     | Tidak | Jarak dalam bidang datar X,Y pemain akan mengalir di entitas server. Nilai maksimumnya adalah **400.0** dan nilai mimumnya adalah **50.0**. Semakin tinggi nilainya, maka pemain dapat melihat entitas server dengan jarak lebih besar, namun membutuhkan proses klien lebih banyak dan berpotensi membutuhkan lebih banyak bandwidth. |
 | stream_rate\*     | int   | 1000       | Tidak     | Tidak | Waktu dalam milisekon sebelum menerima aloiran entitas server diuji ulang oleh setiap player. Nilai maksimumnya adalah **5000** dan nilai minimumnya adalah **500**. Semakin rendah nilainya, maka akan menambah pemrosessan server karena harus memeriksa ulang kondisi aliran lebih sering ke setiap pemain.                         |
 
-> [*] Nilai onfoor_rate, incar_rate, dan weapon_rate lebih rendah akan meningkatkan performa singkron, namun menggunakan bandwidth lebih banyak.
+> [*] Nilai onfoor_rate, `incar_rate`, dan `weapon_rate` lebih rendah akan meningkatkan performa singkron, namun menggunakan bandwidth lebih banyak.
 
 ## NPC
 
@@ -102,14 +102,14 @@ description: File konfigurasi server.
 | Pengaturan  | Tipe   | Nilai awal | Read-only | Rule  | Efek                                                                                                                                                                                                                   |
 | ----------- | ------ | ---------- | --------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lagcompmode | int    | 1          | Ya        | Tidak | 0: Mematikan kompensasi lag sepenuhnya.<br /><br />1: Menyalakan kompensasi lag sepenuhnya.<br /><br />2: Menyalakan kompensasi lag hanya untuk posisi. Ini artinya lag pada rotasi pemain tidak akan dikompensasikan. |
-| lagcomp     | string | On         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **On** atau **Off**, tergantung pada pengaturan **lagcompmode**.                                                                                                                 |
+| lagcomp     | string | On         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **On** atau **Off**, tergantung pada pengaturan `lagcompmode`.                                                                                                                   |
 
 ## Model kustom
 
 | Pengaturan | Tipe   | Nilai awal | Read-only | Rule  | Efek                                                                                                                                                                                                                                                       |
 | ---------- | ------ | ---------- | --------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | useartwork | bool   | 0          | Ya        | Tidak | Menyalakan jika server menggunakan model kustom dari folder _model_. Ubah menjadi 1 untuk menyalakan atau 0 untuk mematikan.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya. |
-| artwork    | string | No         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **No** or **Yes**, tergantung pada pengaturan **useartwork**.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya.                          |
+| artwork    | string | No         | Ya        | Ya    | Kemungkinan diatur secara otomatis ke **No** or **Yes**, tergantung pada pengaturan `useartwork`.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya.                            |
 | artpath    | string | models     | Ya        | Tidak | Lokasi model kustom.<br /><br />**CATATAN:** Variabel server telah ditambahkan di versi 0.3.DL dan tidak memiliki efek apapun di versi sebelumnya.                                                                                                         |
 
 ## Lainnya
@@ -121,7 +121,7 @@ description: File konfigurasi server.
 
 ## Catatan
 
-- Nilai-nilai yang ditandai dengan "Read-only" (yang tampil dengan `/rcon varlist`) tidak bisa diubah ketika server sedang jalan. Nilai yang selain dari itu dapat diubah (sementara) dengan mengubahnya melalui SendRconCommand.
+- Nilai-nilai yang ditandai dengan "Read-only" (yang tampil dengan `/rcon varlist`) tidak bisa diubah ketika server sedang jalan. Nilai yang selain dari itu dapat diubah (sementara) dengan mengubahnya melalui `SendRconCommand`.
 - Nilai-nilai yang ditandai dengan "Rule" (yang tampil dengan `/rcon varlist`) ditampilkan di penjelajah server di bagian Rules.
 - Skrip tidak harus berada di folder _gamemodes_ atau _filterscripts_. Informasi di server.cfg adalah sebuah direktori, dan maka dari itu bisa menggunakan "..".
 

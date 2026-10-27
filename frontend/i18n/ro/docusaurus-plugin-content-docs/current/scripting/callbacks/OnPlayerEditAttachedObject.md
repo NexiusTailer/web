@@ -85,7 +85,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 
 :::warning
 
-Edițiile ar trebui eliminate dacă răspunsul a fost „0” (anulat). Acest lucru trebuie făcut prin stocarea offset-urilor etc. într-o matrice ÎNAINTE de a utiliza EditAttachedObject.
+Edițiile ar trebui eliminate dacă răspunsul a fost „0” (anulat). Acest lucru trebuie făcut prin stocarea offset-urilor etc. într-o matrice ÎNAINTE de a utiliza `EditAttachedObject`.
 
 :::
 

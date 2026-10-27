@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika NPC melihat sebuah ClientMessage. Ini akan terjadi setiap fungsi SendClientMessageToAll digunakan dan setiap fungsi SendClientMessage di kirimkan kepada NPC. Callback ini tidak akan terpanggil ketika seseorang berkata sesuatu. Untuk versi seperti ini dengan player text, lihat NPC:OnPlayerText.
+Callback ini akan terpanggil ketika NPC melihat sebuah ClientMessage. Ini akan terjadi setiap fungsi `SendClientMessageToAll` digunakan dan setiap fungsi `SendClientMessage` di kirimkan kepada NPC. Callback ini tidak akan terpanggil ketika seseorang berkata sesuatu. Untuk versi seperti ini dengan player text, lihat NPC:OnPlayerText.
 
 | Nama   | Deskripsi                  |
 | ------ | -------------------------- |

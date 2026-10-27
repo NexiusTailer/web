@@ -26,12 +26,12 @@ new iValue = strval(string); // iValue is now '250'
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- strcmp: Compare two strings to see if they are the same.
-- strfind: Search for a substring in a string.
+- `strcmp`: Compare two strings to see if they are the same.
+- `strfind`: Search for a substring in a string.
 - strtok: Search for a variable typed after a space.
-- strdel: Delete part/all of a string.
-- strins: Put a string into another string.
-- strlen: Check the length of a string.
-- strmid: Extract characters from a string.
-- strpack: Pack a string into a destination.
-- strcat: Concatenate two strings into a destination reference.
+- `strdel`: Delete part/all of a string.
+- `strins`: Put a string into another string.
+- `strlen`: Check the length of a string.
+- `strmid`: Extract characters from a string.
+- `strpack`: Pack a string into a destination.
+- `strcat`: Concatenate two strings into a destination reference.

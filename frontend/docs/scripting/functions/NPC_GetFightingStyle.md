@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - Fighting styles affect melee combat animations and damage
 - Each style has different punch and kick animations
-- The default fighting style is FIGHT_STYLE_NORMAL
+- The default fighting style is `FIGHT_STYLE_NORMAL`
 
 ## Related Functions
 

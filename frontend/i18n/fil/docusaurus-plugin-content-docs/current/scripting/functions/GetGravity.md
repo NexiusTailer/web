@@ -23,7 +23,7 @@ printf("Current gravity: %f", GetGravity());
 
 :::warning
 
-Ang function na ito ay hindi tinukoy bilang default. Magdagdag ng 'native Float:GetGravity();' sa ilalim ng inclusion ng a_samp.inc para gamitin ito.
+Ang function na ito ay hindi tinukoy bilang default. Magdagdag ng `native Float:GetGravity();` sa ilalim ng inclusion ng a_samp.inc para gamitin ito.
 
 :::
 

@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 This callback is called when a player clicks on a textdraw or cancels the select mode with the Escape key.
 
-| Name           | Description                                                                   |
-| -------------- | ----------------------------------------------------------------------------- |
-| playerid       | The ID of the player that clicked on the textdraw.                            |
-| Text:clickedid | The ID of the clicked textdraw. INVALID_TEXT_DRAW if selection was cancelled. |
+| Name           | Description                                                                     |
+| -------------- | ------------------------------------------------------------------------------- |
+| playerid       | The ID of the player that clicked on the textdraw.                              |
+| Text:clickedid | The ID of the clicked textdraw. `INVALID_TEXT_DRAW` if selection was cancelled. |
 
 ## Returns
 

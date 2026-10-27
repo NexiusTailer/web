@@ -49,4 +49,4 @@ public OnGameModeExit()
 
 ## Related Functions
 
-- [GetVehicleDriver](GetVehicleDriver): Get the playerid of the person driving the vehicle.
+- [GetVehicleDriver](GetVehicleDriver): Get the `playerid` of the person driving the vehicle.

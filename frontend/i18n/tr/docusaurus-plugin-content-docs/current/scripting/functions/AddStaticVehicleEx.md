@@ -7,7 +7,7 @@ tags: []
 
 ## Açıklama
 
-Oyun modunda oyuncular için modeli daha önceden yüklenmiş olan statik araç oluşturmanızı sağlar. AddStaticVehicle fonksiyonundan tek farkı vardır: sürücü aracı boş bıraktıktan sonra girdiğiniz parametre sayesinde aracın ne kadar süre sonra respawn olacağını ayarlayabilirsiniz.
+Oyun modunda oyuncular için modeli daha önceden yüklenmiş olan statik araç oluşturmanızı sağlar. `AddStaticVehicle` fonksiyonundan tek farkı vardır: sürücü aracı boş bıraktıktan sonra girdiğiniz parametre sayesinde aracın ne kadar süre sonra respawn olacağını ayarlayabilirsiniz.
 
 | İsim                 | Açıklama                                                                |
 | -------------------- | ----------------------------------------------------------------------- |
@@ -23,7 +23,7 @@ Oyun modunda oyuncular için modeli daha önceden yüklenmiş olan statik araç 
 
 ## Çalışınca Vereceği Sonuçlar
 
-Oluşturulan aracın ID'si: (1 - MAX_VEHICLES) araç oluşturuldu.
+Oluşturulan aracın ID'si: (1 - `MAX_VEHICLES`) araç oluşturuldu.
 
 Geçersiz araç ID'si (65535): araç oluşturulamadı. (hatalı model ya da araç limiti aşıldığı için).
 

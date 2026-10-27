@@ -40,13 +40,13 @@ public OnPlayerSpawn(playerid)
 :::note
 
 - Only one object may be attached per player.
-- This function is separate from the CreateObject / CreatePlayerObject pools.
+- This function is separate from the `CreateObject` / `CreatePlayerObject` pools.
 
 :::
 
 :::warning
 
-This function was removed in SA-MP 0.3c. check SetPlayerAttachedObject
+This function was removed in SA-MP 0.3c. check `SetPlayerAttachedObject`
 
 :::
 

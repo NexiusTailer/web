@@ -9,10 +9,10 @@ tags: ["player", "animation"]
 
 Limpa todas as animações para o jogador especificado (também cancela todas as tarefas atuais como jetpack, paraquedas, entrar em veículos, dirigir (remove o jogador do veículo), nadar, etc).
 
-| Nome                 | Descrição                                                                                                                           |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| playerid             | O ID do jogador para limpar as animações.                                                                                           |
-| FORCE_SYNC:forceSync | Defina como `SYNC_ALL` para forçar o playerid a sincronizar a animação com outros jogadores no raio de streaming (padrão=SYNC_NONE) |
+| Nome                 | Descrição                                                                                                                               |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| playerid             | O ID do jogador para limpar as animações.                                                                                               |
+| FORCE_SYNC:forceSync | Defina como `SYNC_ALL` para forçar o `playerid` a sincronizar a animação com outros jogadores no raio de streaming (padrão=`SYNC_NONE`) |
 
 ## Retorno
 
@@ -36,7 +36,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::note
 
-- ClearAnimations não faz nada quando a animação termina se passarmos 'true' para o parâmetro freeze em ApplyAnimation.
+- `ClearAnimations` não faz nada quando a animação termina se passarmos 'true' para o parâmetro freeze em `ApplyAnimation`.
 - Ao contrário de outras maneiras de remover o jogador de um veículo, isso também redefinirá a velocidade do veículo para zero, parando instantaneamente o carro. O jogador aparecerá no topo do veículo com a mesma localização que estava no assento do carro.
 
 :::

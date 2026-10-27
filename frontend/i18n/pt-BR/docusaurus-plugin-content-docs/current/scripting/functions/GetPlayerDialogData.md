@@ -12,18 +12,18 @@ tags: ["player", "dialog"]
 
 Obtenha os dados da caixa de diálogo exibida atualmente ao jogador.
 
-| Nome | Descrição |
-| ------------------- | ----------------------------------------------------------------------- |
-| playerid | O ID do jogador para obter os dados.                                   |
-| &DIALOG_STYLE:style | Uma variável na qual armazenar o estilo, passada por referência.          |
-| title[] | Uma variável de matriz na qual armazenar o título, passada por referência.   |
-| titleSize | O tamanho da matriz de títulos.                                            |
-| body[] | Uma variável de matriz na qual armazenar o corpo, passada por referência.    |
-| bodySize | O tamanho da matriz do corpo.                                             |
-| button1[] | Uma variável de matriz na qual armazenar o button1, passada por referência. |
-| button1Size | O tamanho da matriz button1.                                          |
-| button2[] | Uma variável de matriz na qual armazenar o button2, passada por referência. |
-| button2Size | O tamanho da matriz button2.                                          |
+| Nome                | Descrição                                                                     |
+| ------------------- | ----------------------------------------------------------------------------- |
+| playerid            | O ID do jogador para obter os dados.                                          |
+| &DIALOG_STYLE:style | Uma variável na qual armazenar o estilo, passada por referência.              |
+| title[]             | Uma variável de matriz na qual armazenar o título, passada por referência.    |
+| titleSize           | O tamanho da matriz de títulos.                                               |
+| body[]              | Uma variável de matriz na qual armazenar o corpo, passada por referência.     |
+| bodySize            | O tamanho da matriz do corpo.                                                 |
+| button1[]           | Uma variável de matriz na qual armazenar o `button1`, passada por referência. |
+| button1Size         | O tamanho da matriz `button1`.                                                |
+| button2[]           | Uma variável de matriz na qual armazenar o `button2`, passada por referência. |
+| button2Size         | O tamanho da matriz `button2`.                                                |
 
 ## Retornos
 

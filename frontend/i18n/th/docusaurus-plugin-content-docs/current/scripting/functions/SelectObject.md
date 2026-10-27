@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Display the cursor and allow the player to select an object. OnPlayerSelectObject is called when the player selects an object.
+Display the cursor and allow the player to select an object. `OnPlayerSelectObject` is called when the player selects an object.
 
 | Name     | Description                                                   |
 | -------- | ------------------------------------------------------------- |
@@ -34,11 +34,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- CreateObject: Create an object.
-- DestroyObject: Destroy an object.
-- MoveObject: Move an object.
-- EditObject: Edit an object.
-- EditPlayerObject: Edit an object.
-- EditAttachedObject: Edit an attached object.
-- CancelEdit: Cancel the edition of an object.
-- OnPlayerSelectObject: Called when a player selected an object.
+- `CreateObject`: Create an object.
+- `DestroyObject`: Destroy an object.
+- `MoveObject`: Move an object.
+- `EditObject`: Edit an object.
+- `EditPlayerObject`: Edit an object.
+- `EditAttachedObject`: Edit an attached object.
+- `CancelEdit`: Cancel the edition of an object.
+- `OnPlayerSelectObject`: Called when a player selected an object.

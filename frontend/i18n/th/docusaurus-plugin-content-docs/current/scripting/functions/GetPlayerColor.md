@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## คำอธิบาย
 
-Gets the color of the player's name and radar marker. Only works after SetPlayerColor.
+Gets the color of the player's name and radar marker. Only works after `SetPlayerColor`.
 
 | Name     | Description                               |
 | -------- | ----------------------------------------- |
@@ -32,7 +32,7 @@ SendClientMessage(playerid, -1, output);
 
 :::warning
 
-GetPlayerColor will return nothing (0) unless SetPlayerColor has been used first. Click HERE for a fix.
+`GetPlayerColor` will return nothing (0) unless `SetPlayerColor` has been used first. Click HERE for a fix.
 
 :::
 

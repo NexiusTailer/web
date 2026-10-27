@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 - 战斗风格影响近战动画和伤害
 - 每种风格都有不同的拳击和踢腿动画
-- 默认战斗风格为 FIGHT_STYLE_NORMAL
+- 默认战斗风格为 `FIGHT_STYLE_NORMAL`
 
 ## 相关函数
 

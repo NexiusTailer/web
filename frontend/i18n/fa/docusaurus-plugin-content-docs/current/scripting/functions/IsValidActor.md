@@ -41,5 +41,5 @@ public OnGameModeInit()
 ## توابع مرتبط
 
 - [CreateActor](CreateActor): ساخت یه actor.
-- [GetActorPoolSize](GetActorPoolSize): دریافت بالاترین actorid که در سرور ساخته شده.
+- [GetActorPoolSize](GetActorPoolSize): دریافت بالاترین `actorid` که در سرور ساخته شده.
 - [SetActorHealth](SetActorHealth): تنظیم سلامت یه actor.

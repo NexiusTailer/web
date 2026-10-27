@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Retorna true durante a animação do ataque corpo a corpo
-- Ataques corpo a corpo são iniciados com NPC_MeleeAttack
+- Ataques corpo a corpo são iniciados com `NPC_MeleeAttack`
 
 ## Funções Relacionadas
 

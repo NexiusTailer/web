@@ -36,7 +36,7 @@ public OnPlayerStreamOut(playerid, forplayerid)
 
 :::warning
 
-OnPlayerStreamOut се не позива за оба играча када се играч одвеже са сервера.
+`OnPlayerStreamOut` се не позива за оба играча када се играч одвеже са сервера.
 
 :::
 

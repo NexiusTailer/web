@@ -6,7 +6,7 @@ tags: ["player", "menu"]
 
 ## Descripción
 
-Este callback se llama cuando un jugador selecciona un item de un menú (ShowMenuForPlayer).
+Este callback se llama cuando un jugador selecciona un item de un menú (`ShowMenuForPlayer`).
 
 | Nombre   | Descripción                                          |
 | -------- | ---------------------------------------------------- |
@@ -48,7 +48,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 :::note
 
-El ID del menú no se pasa a este callback. Debes usar GetPlayerMenu para determinar en cuál menú el jugador seleccionó un item.
+El ID del menú no se pasa a este callback. Debes usar `GetPlayerMenu` para determinar en cuál menú el jugador seleccionó un item.
 
 :::
 

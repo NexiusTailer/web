@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Uključite ili isključite da li je igrač u režimu spectatora/gledatelja. Dok je u spectator režimu igrač može gledati ostale igrače i vozila. Nakon korištenja ove funkcije ili PlayerSpectatePlayer ili PlayerSpectateVehicle mora biti korišten.
+Uključite ili isključite da li je igrač u režimu spectatora/gledatelja. Dok je u spectator režimu igrač može gledati ostale igrače i vozila. Nakon korištenja ove funkcije ili `PlayerSpectatePlayer` ili `PlayerSpectateVehicle` mora biti korišten.
 
 | Ime      | Deskripcija                                           |
 | -------- | ----------------------------------------------------- |
@@ -35,7 +35,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::note
 
-Kada je režim gledatelja onemogućen, automatski će se pozvati OnPlayerSpawn, ako želite vratiti stanje igrača u stanje prije gledanja, morat ćete to riješiti u OnPlayerSpawn. Takođe imajte na umu da taj igrač također može ići na odabir klase prije nego što je koristio F4 za vrijeme gledanja, igrač također MOŽE umrijeti u režimu spektakularnosti zbog različitih kvarova.
+Kada je režim gledatelja onemogućen, automatski će se pozvati `OnPlayerSpawn`, ako želite vratiti stanje igrača u stanje prije gledanja, morat ćete to riješiti u `OnPlayerSpawn`. Takođe imajte na umu da taj igrač također može ići na odabir klase prije nego što je koristio F4 za vrijeme gledanja, igrač također MOŽE umrijeti u režimu spektakularnosti zbog različitih kvarova.
 
 :::
 

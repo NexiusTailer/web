@@ -50,7 +50,7 @@ CallRemoteFunction("CallMe", "is", 69, "this is a string");
 
 :::warning
 
-CallRemoteFunction اگر رشته خالی پاس دهد سرور را کرش می‌کند. (در open.mp اصلاح شده است)
+`CallRemoteFunction` اگر رشته خالی پاس دهد سرور را کرش می‌کند. (در open.mp اصلاح شده است)
 
 :::
 

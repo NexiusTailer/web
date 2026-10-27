@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 ## Notes
 
-- All parameters except npcid are passed by reference and will be modified
+- All parameters except `npcid` are passed by reference and will be modified
 - Key states are stored as bit flags
 - Use bitwise operations to check individual keys
 - This reflects the NPC's current input state

@@ -7,7 +7,7 @@ tags: []
 
 :::warning
 
-این تابع از نسخه 0.3.7 R2 deprecated شده. لطفاً GetConsoleVarAsString رو ببین
+این تابع از نسخه 0.3.7 R2 deprecated شده. لطفاً `GetConsoleVarAsString` رو ببین
 
 :::
 
@@ -40,7 +40,7 @@ public OnGameModeInit()
 
 :::warning
 
-وقتی _filterscripts_ یا _plugins_ به عنوان varname مشخص می‌شه، این تابع فقط اسم اولین filterscript یا plugin مشخص شده رو برمی‌گردونه. این یه bug هست.
+وقتی _filterscripts_ یا _plugins_ به عنوان `varname` مشخص می‌شه، این تابع فقط اسم اولین filterscript یا plugin مشخص شده رو برمی‌گردونه. این یه bug هست.
 
 :::
 

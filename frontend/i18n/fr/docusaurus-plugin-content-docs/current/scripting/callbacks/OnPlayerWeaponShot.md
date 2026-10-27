@@ -46,7 +46,7 @@ public OnPlayerWeaponShot(playerid, WEAPON:weaponid, BULLET_HIT_TYPE:hittype, hi
 Si la cible est :
 
 - `BULLET_HIT_TYPE_NONE` : les variables `fX`, `fY` et `fZ` seront égales à des coordonnées normales ;
-- Autre : Les variables `fX`, `fY` et `fZ` seront généralement décalés du centre de **hitid**.
+- Autre : Les variables `fX`, `fY` et `fZ` seront généralement décalés du centre de `hitid`.
 
 :::
 

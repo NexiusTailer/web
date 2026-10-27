@@ -7,7 +7,7 @@ tags: ["player", "checkpoint"]
 
 ## Descriere
 
-Acest callback este apelat atunci când un jucător părăsește punctul de control setat pentru el de SetPlayerCheckpoint. Numai un singur punct de control poate fi setat la un moment dat.
+Acest callback este apelat atunci când un jucător părăsește punctul de control setat pentru el de `SetPlayerCheckpoint`. Numai un singur punct de control poate fi setat la un moment dat.
 
 | Nume     | Descriere                                            |
 | -------- | ---------------------------------------------------- |

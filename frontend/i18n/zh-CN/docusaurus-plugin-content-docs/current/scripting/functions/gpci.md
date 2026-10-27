@@ -68,7 +68,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-在 SA-MP 服务器使用时，必须在脚本顶部添加 'native gpci(playerid, serial[], len);' 声明
+在 SA-MP 服务器使用时，必须在脚本顶部添加 `native gpci(playerid, serial[], len);` 声明
 
 :::
 

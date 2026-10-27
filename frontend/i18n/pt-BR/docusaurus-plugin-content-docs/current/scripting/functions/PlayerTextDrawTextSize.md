@@ -10,12 +10,12 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 Altere o tamanho de um player-textdraw (caixa se [PlayerTextDrawUseBox](PlayerTextDrawUseBox) estiver habilitado e/ou área clicável para uso com [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable)).
 
-| Nome | Descrição |
-| ----------------- | -------------------------------------------------------------------------------------- |
-| playerid | O ID do jogador cujo player-textdraw definirá o tamanho de |
-| PlayerText:textid | O ID do player-textdraw para definir o tamanho.                                      |
-| Float:width | O tamanho no eixo X (esquerda/direita) seguindo a mesma grade de 640x480 de TextDrawCreate. |
-| Float:height | O tamanho no eixo Y (para cima/para baixo) seguindo a mesma grade de 640x480 de TextDrawCreate.    |
+| Nome              | Descrição                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------- |
+| playerid          | O ID do jogador cujo player-textdraw definirá o tamanho de                                        |
+| PlayerText:textid | O ID do player-textdraw para definir o tamanho.                                                   |
+| Float:width       | O tamanho no eixo X (esquerda/direita) seguindo a mesma grade de 640x480 de `TextDrawCreate`.     |
+| Float:height      | O tamanho no eixo Y (para cima/para baixo) seguindo a mesma grade de 640x480 de `TextDrawCreate`. |
 
 ## Retornos
 
@@ -44,7 +44,7 @@ public OnPlayerConnect(playerid)
   - 2 (centro): precisam ser invertidos (trocar os dois) e o valor de x é a largura total da caixa.
   - 3 (direita): x e y são as coordenadas do canto mais esquerdo da caixa
 - Usar o tipo de fonte 4 (sprite) e 5 (visualização do modelo) converte X e Y desta função das coordenadas de canto para WIDTH e HEIGHT (offsets).
-- A caixa TextDraw inicia 10.0 unidades para cima e 5.0 para a esquerda como origem (coordenada TextDrawCreate).
+- A caixa TextDraw inicia 10.0 unidades para cima e 5.0 para a esquerda como origem (coordenada `TextDrawCreate`).
 - Esta função define a área clicável para uso com [PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable), independentemente de uma caixa ser mostrada ou não.
 
 :::

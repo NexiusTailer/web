@@ -45,8 +45,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Funciona apenas quando NPC está reproduzindo ativamente um nó
-- A navegação do nó pausado pode ser retomada com NPC_ResumePlayingNode
-- Use NPC_IsPlayingNodePaused para verificar o estado de pausa
+- A navegação do nó pausado pode ser retomada com `NPC_ResumePlayingNode`
+- Use `NPC_IsPlayingNodePaused` para verificar o estado de pausa
 
 ## Funções Relacionadas
 

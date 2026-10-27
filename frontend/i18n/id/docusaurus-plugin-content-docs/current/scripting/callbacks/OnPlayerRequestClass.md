@@ -9,10 +9,10 @@ tags: ["player"]
 
 Callback ini akan terpanggil ketika seorang pemain mengubah kelas pada pemilihan kelas (dan saat pemilihan kelas pertama kali muncul).
 
-| Nama     | Deskripsi                                                          |
-| -------- | ------------------------------------------------------------------ |
-| playerid | ID pemain yang mengubah kelas                                      |
-| classid  | ID kelas yang saat ini dilihat (dikembalikan oleh AddPlayerClass). |
+| Nama     | Deskripsi                                                            |
+| -------- | -------------------------------------------------------------------- |
+| playerid | ID pemain yang mengubah kelas                                        |
+| classid  | ID kelas yang saat ini dilihat (dikembalikan oleh `AddPlayerClass`). |
 
 ## Returns
 

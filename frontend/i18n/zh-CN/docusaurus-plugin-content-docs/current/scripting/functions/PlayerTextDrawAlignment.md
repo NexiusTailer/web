@@ -43,7 +43,7 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- 使用居中对齐(TEXT_DRAW_ALIGN_CENTER)时，必须交换[PlayerTextDrawTextSize](PlayerTextDrawTextSize)的 x 和 y 参数值
+- 使用居中对齐(`TEXT_DRAW_ALIGN_CENTER`)时，必须交换[PlayerTextDrawTextSize](PlayerTextDrawTextSize)的 x 和 y 参数值
 - 若文本绘图已对玩家显示，需重新调用[PlayerTextDrawShow](PlayerTextDrawShow)才能使更改生效
 
 :::

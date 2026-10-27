@@ -61,7 +61,7 @@ Warning: client exceeded 'messageholelimit' (<type>) <ip>:<port> (<count>) Limit
 Warning: Too many out-of-order messages from player <ip>:<port> (<count>) Limit: x (messageholelimit)
 ```
 
-Случается, 'когда сообщения, вышедшие из строя' ('out of order messages') используют настройку messageholelimit.
+Случается, 'когда сообщения, вышедшие из строя' ('out of order messages') используют настройку `messageholelimit`.
 
 За подробностями перейдите [сюда](ControllingServer#rcon-команды)
 

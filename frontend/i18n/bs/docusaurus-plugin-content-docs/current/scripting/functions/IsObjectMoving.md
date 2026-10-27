@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripcija
 
-Provjerava da li se zadati objectid kreće.
+Provjerava da li se zadati `objectid` kreće.
 
 | Ime      | Deskripcija                                      |
 | -------- | ------------------------------------------------ |

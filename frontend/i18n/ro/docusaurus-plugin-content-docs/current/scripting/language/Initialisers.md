@@ -35,7 +35,7 @@ public OnPlayerConnect(playerid)
 }
 ```
 
-Aceasta va crea o matrice cu două sloturi pentru fiecare jucător. În cel la care face referire E_MY_ARRAY_MONEY va pune 0 atunci când un jucător se conectează și 5 în E_MY_ARRAY_GUN. Fără o enumere ar arăta astfel:
+Aceasta va crea o matrice cu două sloturi pentru fiecare jucător. În cel la care face referire `E_MY_ARRAY_MONEY` va pune 0 atunci când un jucător se conectează și 5 în `E_MY_ARRAY_GUN`. Fără o enumere ar arăta astfel:
 
 ```c
 new
@@ -94,7 +94,7 @@ enum E_EXAMPLE
 }
 ```
 
-Prima valoare (E_EXAMPLE_0) este 0 (implicit dacă nu este specificată nicio altă valoare), deci a doua valoare (E_EXAMPLE_1) este 1 (0 + 1) și a treia valoare (E_EXAMPLE_2) este 2 (1 + 1). Aceasta face ca valoarea E_EXAMPLE 3 (2 + 1), numele enumului să fie și ultima valoare din enum. Dacă schimbăm modificatorul obținem valori diferite:
+Prima valoare (`E_EXAMPLE_0`) este 0 (implicit dacă nu este specificată nicio altă valoare), deci a doua valoare (`E_EXAMPLE_1`) este 1 (0 + 1) și a treia valoare (`E_EXAMPLE_2`) este 2 (1 + 1). Aceasta face ca valoarea `E_EXAMPLE` 3 (2 + 1), numele enumului să fie și ultima valoare din enum. Dacă schimbăm modificatorul obținem valori diferite:
 
 ```c
 enum E_EXAMPLE (+= 5)
@@ -105,7 +105,7 @@ enum E_EXAMPLE (+= 5)
 }
 ```
 
-In that example every value is the last value + 5 so, starting from 0 again, we get: E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 5, E_EXAMPLE_2 = 10, E_EXAMPLE = 15. If you were to declare an array of:
+In that example every value is the last value + 5 so, starting from 0 again, we get: `E_EXAMPLE_0` = 0, `E_EXAMPLE_1` = 5, `E_EXAMPLE_2` = 10, `E_EXAMPLE` = 15. If you were to declare an array of:
 
 ```c
 new
@@ -181,7 +181,7 @@ enum E_EXAMPLE
 }
 ```
 
-Acest lucru ar face E_EXAMPLE_0 = 0, E_EXAMPLE_1 = 10, E_EXAMPLE_2 = 11 și E_EXAMPLE = 12, contrar credinței populare de 0, 1, 2 și 3.
+Acest lucru ar face `E_EXAMPLE_0` = 0, `E_EXAMPLE_1` = 10, `E_EXAMPLE_2` = 11 și `E_EXAMPLE` = 12, contrar credinței populare de 0, 1, 2 și 3.
 
 articolele enumere pot avea, de asemenea, etichete, deci pentru un exemplu original:
 
@@ -314,7 +314,7 @@ enum (<<= 1)
 }
 ```
 
-Acum TEAM_COP este 1, TEAM_ROBBER este 2, TEAM_CIV este 4 etc, care în binar este 0b00000001, 0b00000010 și 0b00000100. Aceasta înseamnă că, dacă echipa unui jucător este de 3, atunci se află atât în echipa de polițiști, cât și în echipa de tâlhari. Poate suna inutil, dar deschide posibilități:
+Acum `TEAM_COP` este 1, `TEAM_ROBBER` este 2, `TEAM_CIV` este 4 etc, care în binar este 0b00000001, 0b00000010 și 0b00000100. Aceasta înseamnă că, dacă echipa unui jucător este de 3, atunci se află atât în echipa de polițiști, cât și în echipa de tâlhari. Poate suna inutil, dar deschide posibilități:
 
 ```c
 enum (<<= 1)
@@ -353,7 +353,7 @@ Foarte simplu și foarte util.
 
 ## `forward`
 
-forward îi spune compilatorului că o funcție vine mai târziu. Este necesar pentru toate funcțiile publice, totuși poate fi utilizat în alte locuri. Utilizarea sa este „forward” urmată de numele complet și parametrii funcției pe care doriți să o redirecționați, urmată de un punct și virgulă:
+forward îi spune compilatorului că o funcție vine mai târziu. Este necesar pentru toate funcțiile publice, totuși poate fi utilizat în alte locuri. Utilizarea sa este `forward` urmată de numele complet și parametrii funcției pe care doriți să o redirecționați, urmată de un punct și virgulă:
 
 ```c
 forward MyPublicFunction(playerid, const string[]);
@@ -436,7 +436,7 @@ Celălalt lucru interesant pe care îl poți face cu nativ este funcțiile de re
 native my_print(const string[]) = print;
 ```
 
-Acum funcția de tipărire nu există de fapt. Se află încă în SA: MP, iar compilatorul știe că este numele real datorită părții "= print", dar dacă încercați să o apelați în PAWN, veți primi o eroare, deoarece ați redenumit printul intern la my_print. Deoarece imprimarea nu există acum, o puteți defini la fel ca orice altă funcție:
+Acum funcția de tipărire nu există de fapt. Se află încă în SA: MP, iar compilatorul știe că este numele real datorită părții `= print`, dar dacă încercați să o apelați în PAWN, veți primi o eroare, deoarece ați redenumit printul intern la my_print. Deoarece imprimarea nu există acum, o puteți defini la fel ca orice altă funcție:
 
 ```c
 print(const string[])
@@ -446,7 +446,7 @@ print(const string[])
 }
 ```
 
-Acum, de fiecare dată când print () este utilizat într-un script, funcția dvs. va fi apelată în locul originalului și puteți face ceea ce doriți. În acest caz este imprimat mai întâi un alt mesaj, apoi mesajul original.
+Acum, de fiecare dată când `print` este utilizat într-un script, funcția dvs. va fi apelată în locul originalului și puteți face ceea ce doriți. În acest caz este imprimat mai întâi un alt mesaj, apoi mesajul original.
 
 ## `new`
 
@@ -589,7 +589,7 @@ Va da pur și simplu 42, nimic de-a face cu adăugarea.
 
 public este utilizat pentru a face o funcție vizibilă mașinii virtuale, adică permite serverului SA: MP să apeleze direct funcția, în loc să permită apelarea funcției numai din interiorul scriptului PAWN. De asemenea, puteți face variabile publice pentru a le citi și scrie valorile de pe server, totuși acest lucru nu este folosit niciodată în SA: MP (deși s-ar putea să îl puteți utiliza dintr-un plugin, nu am încercat niciodată) (puteți combina și acest lucru cu const pentru a crea o variabilă care poate fi modificată DOAR de pe server).
 
-O funcție publică are numele său text stocat în fișierul amx, spre deosebire de funcțiile normale care își au adresa stocată doar pentru salturi, ceea ce reprezintă un alt dezavantaj al decompilării. Aceasta este astfel încât să puteți apela funcția după nume din afara scriptului, vă permite, de asemenea, să apelați funcțiile după nume din interiorul scriptului, ieșind și reintroducându-l. Un apel de funcție nativă este aproape opusul unui apel de funcție publică, apelează o funcție din afara scriptului din interiorul scriptului, spre deosebire de apelarea unei funcții din interiorul scriptului din afara scriptului. Dacă combinați cele două, veți obține funcții precum SetTimer, SetTimerEx, CallRemoteFunction și CallLocalFunction care apelează funcții după nume, nu adresă.
+O funcție publică are numele său text stocat în fișierul amx, spre deosebire de funcțiile normale care își au adresa stocată doar pentru salturi, ceea ce reprezintă un alt dezavantaj al decompilării. Aceasta este astfel încât să puteți apela funcția după nume din afara scriptului, vă permite, de asemenea, să apelați funcțiile după nume din interiorul scriptului, ieșind și reintroducându-l. Un apel de funcție nativă este aproape opusul unui apel de funcție publică, apelează o funcție din afara scriptului din interiorul scriptului, spre deosebire de apelarea unei funcții din interiorul scriptului din afara scriptului. Dacă combinați cele două, veți obține funcții precum `SetTimer`, `SetTimerEx`, `CallRemoteFunction` și `CallLocalFunction` care apelează funcții după nume, nu adresă.
 
 Apelarea unei funcții după nume:
 
@@ -607,7 +607,7 @@ public MyPublicFunc()
 }
 ```
 
-Funcțiile public prefixate fie cu „public”, fie cu „@” și, așa cum se menționează în secțiunea forward, toate necesită redirecționare:
+Funcțiile public prefixate fie cu `public`, fie cu „@” și, așa cum se menționează în secțiunea forward, toate necesită redirecționare:
 
 ```c
 forward MyPublicFunc();
@@ -630,7 +630,7 @@ public MyPublicFunc()
 }
 ```
 
-Evident, acest exemplu a introdus SetTimerEx pentru a apela „MyOtherPublicFunc” după 5 secunde și a-i da valoarea întreagă 7 pentru a imprima.
+Evident, acest exemplu a introdus `SetTimerEx` pentru a apela `MyOtherPublicFunc` după 5 secunde și a-i da valoarea întreagă 7 pentru a imprima.
 
 main, utilizat în majoritatea acestor exemple, este similar cu o funcție publică prin aceea că poate fi apelată din afara scriptului, totuși nu este o funcție publică - are doar o adresă cunoscută specială, astfel încât serverul să știe unde să treacă la rulați-l.
 
@@ -661,7 +661,7 @@ public MyPublicFunc()
 }
 ```
 
-Acest lucru este, evident, mult mai rapid decât utilizarea CallLocalFunction sau a altui nativ.
+Acest lucru este, evident, mult mai rapid decât utilizarea `CallLocalFunction` sau a altui nativ.
 
 ## `static`
 
@@ -771,7 +771,7 @@ De fiecare dată când funcția este numită i este resetată la 0, astfel înc�
 1
 ```
 
-Dacă înlocuim „noul” cu „static” obținem:
+Dacă înlocuim „noul” cu `static` obținem:
 
 ```c
 main()
@@ -805,7 +805,7 @@ MyFunc()
 4
 ```
 
-Valoarea dată în declarație (dacă este dată una, ca și variabilele statice noi, implicite la 0) este valoarea atribuită variabilei la prima apelare a funcției. Deci, dacă „static i = 5;” au fost folosite în schimb, rezultatul ar fi:
+Valoarea dată în declarație (dacă este dată una, ca și variabilele statice noi, implicite la 0) este valoarea atribuită variabilei la prima apelare a funcției. Deci, dacă `static i = 5;` au fost folosite în schimb, rezultatul ar fi:
 
 ```c
 5

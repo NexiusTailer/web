@@ -17,7 +17,7 @@ tags: ["player", "vehicle"]
 
 ## مقادیر بازگشتی
 
-**true** - تابع با موفقیت اجرا شد. توجه کن که موفقیت حتی وقتی هم گزارش می‌شه که بازیکن در حالت تماشا نباشه (TogglePlayerSpectating)، اما چیزی اتفاق نمی‌افته. ابتدا حتماً باید از TogglePlayerSpectating استفاده کنی.
+**true** - تابع با موفقیت اجرا شد. توجه کن که موفقیت حتی وقتی هم گزارش می‌شه که بازیکن در حالت تماشا نباشه (`TogglePlayerSpectating`)، اما چیزی اتفاق نمی‌افته. ابتدا حتماً باید از `TogglePlayerSpectating` استفاده کنی.
 
 **false** - تابع اجرا نشد. بازیکن، وسیله نقلیه، یا هر دوتاشون وجود ندارن.
 
@@ -32,8 +32,8 @@ PlayerSpectateVehicle(playerid, vehicleid);
 
 :::warning
 
-- ترتیب خیلی مهم هست! مطمئن شو که ابتدا از TogglePlayerSpectating استفاده می‌کنی و بعد PlayerSpectateVehicle.
-- playerid و vehicleid باید در همون interior و virtual world باشن تا این تابع درست کار کنه.
+- ترتیب خیلی مهم هست! مطمئن شو که ابتدا از `TogglePlayerSpectating` استفاده می‌کنی و بعد `PlayerSpectateVehicle`.
+- `playerid` و `vehicleid` باید در همون interior و virtual world باشن تا این تابع درست کار کنه.
 
 :::
 

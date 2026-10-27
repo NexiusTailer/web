@@ -234,7 +234,7 @@ Again this is a constant check, which will give a warning, but both prints will 
 #endif
 ```
 
-That way only the printf which is required will be compiled and the other one will still be in your source code incase they change LIMIT and recompile, but won't be included in the code as it's not needed. This way also means the pointless if isn't run every time your code is run, which is always good.
+That way only the `printf` which is required will be compiled and the other one will still be in your source code incase they change LIMIT and recompile, but won't be included in the code as it's not needed. This way also means the pointless if isn't run every time your code is run, which is always good.
 
 ## `#include`
 
@@ -339,7 +339,7 @@ printf("%d", MOO);
 printf("%d", MOO);
 ```
 
-That will fail to compile as MOO doesn't exist anymore by the time the second printf is reached.
+That will fail to compile as MOO doesn't exist anymore by the time the second `printf` is reached.
 
 ```c
 enum {

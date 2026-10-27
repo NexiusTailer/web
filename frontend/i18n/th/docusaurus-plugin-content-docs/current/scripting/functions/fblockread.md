@@ -11,7 +11,7 @@ This function allows you to read data from a file, without encoding and line ter
 
 | Name                 | Description                           |
 | -------------------- | ------------------------------------- |
-| handle               | File handle to use, opened by fopen() |
+| handle               | File handle to use, opened by `fopen` |
 | buffer               | The buffer to save the read data in.  |
 | size = sizeof buffer | The number of cells to read.          |
 
@@ -77,7 +77,7 @@ else
 
 :::warning
 
-Using an **invalid handle** will crash your server! Get a **valid handle** by using fopen or ftemp.
+Using an **invalid handle** will crash your server! Get a **valid handle** by using `fopen` or `ftemp`.
 
 :::
 

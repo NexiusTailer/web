@@ -31,7 +31,7 @@ valstr(string, value); // string agora é "250"
 
 :::warning
 
-Passar um valor alto para esta função pode fazer com que o servidor congele/trave. Correções estão disponíveis. Abaixo está uma correção que pode ser colocada diretamente no seu script (antes que valstr seja usado em qualquer lugar). open.mp inclui essa correção.
+Passar um valor alto para esta função pode fazer com que o servidor congele/trave. Correções estão disponíveis. Abaixo está uma correção que pode ser colocada diretamente no seu script (antes que `valstr` seja usado em qualquer lugar). open.mp inclui essa correção.
 
 ```c
 // correção de valstr por Slice

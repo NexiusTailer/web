@@ -10,11 +10,11 @@ Son similiares a [SVars](servervariablesystem), pero son por jugador. Ver los 2 
 
 ## Ventajas
 
-El nuevo sistema introducido en SA-MP 0.3a R5, tiene varias ventajas importantes sobre la creación de un array de tamaño MAX_PLAYERS.
+El nuevo sistema introducido en SA-MP 0.3a R5, tiene varias ventajas importantes sobre la creación de un array de tamaño `MAX_PLAYERS`.
 
 - Los PVars pueden ser compartidos/accesibles entre de gamemode y filterscripts, haciendo más fácil modularizar tu código.
 
-- Las PVars se borran automáticamente cuando un jugador abandona el servidor (después de OnPlayerDisconnect), lo que significa que no tienes que reiniciar manualmente las variables para el siguiente jugador que se una.
+- Las PVars se borran automáticamente cuando un jugador abandona el servidor (después de `OnPlayerDisconnect`), lo que significa que no tienes que reiniciar manualmente las variables para el siguiente jugador que se una.
 
 - No hay necesidad de complejos enums o estructuras de información de jugador.
 

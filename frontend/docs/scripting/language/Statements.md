@@ -126,7 +126,7 @@ Will produce:
 9
 ```
 
-A continue after the print will basically do nothing. In a for loop continue jumps to the third statement in the for statement (in this example the "i++;" bit), this is different to how it behaves in a while loop:
+A continue after the `print` will basically do nothing. In a for loop continue jumps to the third statement in the for statement (in this example the `i++;` bit), this is different to how it behaves in a while loop:
 
 ```c
 new
@@ -142,7 +142,7 @@ while (i < 10)
 }
 ```
 
-This will produce an infinate loop as continue will jump to AFTER the "i++;" and go back to the "while (i < 10)" part. At this time, "i" will still be 5 as "i++;" was never called, and so continue will be called again and "i" will be stuck at 5 forever.
+This will produce an infinate loop as continue will jump to AFTER the `i++;` and go back to the `while (i < 10)` part. At this time, `i` will still be 5 as `i++;` was never called, and so continue will be called again and `i` will be stuck at 5 forever.
 
 ## `default`
 
@@ -163,7 +163,7 @@ do
 while (i < 10);
 ```
 
-"i" is clearly not less that 10 but this loop will produce:
+`i` is clearly not less that 10 but this loop will produce:
 
 ```c
 10
@@ -293,7 +293,7 @@ The initialisation in this loop is:
 new i = 0;
 ```
 
-The semicolon marks the end of the initialisation. This declares a new variable, called i, which can only be used with this loop. Next comparison is done. This compares i to MAX_PLAYERS (default 500 - see #define) and if it is less continues. Then the contents of the loop is run. Initially this will print "0". Finally the update is done "i++", this increases the value of i. Now a complete itteration is done, the loop loops, as its name implies, and goes back to the comparison stage (initialisation is only done once per call).
+The semicolon marks the end of the initialisation. This declares a new variable, called i, which can only be used with this loop. Next comparison is done. This compares i to `MAX_PLAYERS` (default 500 - see #define) and if it is less continues. Then the contents of the loop is run. Initially this will print "0". Finally the update is done `i++`, this increases the value of i. Now a complete itteration is done, the loop loops, as its name implies, and goes back to the comparison stage (initialisation is only done once per call).
 
 The result of this loop is all the numbers from 0 to 499 inclusive being printed out. The equivalent while loop (ignoring the effects of continue) would be:
 
@@ -328,7 +328,7 @@ for (new i = 0; i < MAX_PLAYERS; i++)
 printf("%d", i);
 ```
 
-That will produce an error as "i" doesn't exist after the loop ends. However:
+That will produce an error as `i` doesn't exist after the loop ends. However:
 
 ```c
 new
@@ -340,7 +340,7 @@ for ( ; i < MAX_PLAYERS; i++)
 printf("%d", i);
 ```
 
-Is fine as "i" is not declared in the loop. You could also initialise "i" in the loop but not declare it there:
+Is fine as `i` is not declared in the loop. You could also initialise `i` in the loop but not declare it there:
 
 ```c
 new
@@ -614,7 +614,7 @@ Is also not allowed as the default return is nothing.
 
 ## `sleep`
 
-sleep is a psudo-function which makes execution pause for a given number of milliseconds:
+`sleep` is a psudo-function which makes execution pause for a given number of milliseconds:
 
 ```c
 printf("Time 0s");
@@ -701,4 +701,4 @@ while (i < 10)
 }
 ```
 
-See **do** and **for** more information.
+See `do` and `for` more information.

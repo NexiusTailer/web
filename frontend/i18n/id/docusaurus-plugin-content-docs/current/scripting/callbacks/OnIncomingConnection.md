@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika sebuah IP address mencoba untuk koneksi kedalam server. Untuk memblokir koneksi yang ingin masuk, gunakan BlockIpAddress.
+Callback ini akan terpanggil ketika sebuah IP address mencoba untuk koneksi kedalam server. Untuk memblokir koneksi yang ingin masuk, gunakan `BlockIpAddress`.
 
 | Nama         | Deskripsi                                         |
 | ------------ | ------------------------------------------------- |

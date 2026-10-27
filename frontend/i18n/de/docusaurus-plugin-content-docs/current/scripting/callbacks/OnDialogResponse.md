@@ -12,7 +12,7 @@ Dieses Callback wird ausgeführt wenn ein Spieler einem Dialog antwortet(benutzt
 | Name        | Beschreibung                                                                                      |
 | ----------- | ------------------------------------------------------------------------------------------------- |
 | playerid    | ID des Spielers der den Dialog benutzt.                                                           |
-| dialogid    | ID des Dialogs der vom Spieler genutzt wird, zugewiesen in ShowPlayerDialog.                      |
+| dialogid    | ID des Dialogs der vom Spieler genutzt wird, zugewiesen in `ShowPlayerDialog`.                    |
 | response    | **1** für den linken Button **0** für den rechten Button (Gibt es nur einen Button, dann immer 1) |
 | listitem    | ID des ausgewählten List-Items (Start bei 0) (Nur bei List-Style Dialogen, ansonsten -1).         |
 | inputtext[] | Der vom Spieler eingefügte Text oder Text des ausgewählten List-Items.                            |
@@ -23,7 +23,7 @@ Wird in Filterscripts immer zuerst ausgeführt. Bei Nutzung von return 1 können
 
 ## Beispiele
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Definieren der Dialog ID, mit der wie Antworten bearbeiten können
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -88,7 +88,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WAFFEN 3
@@ -117,7 +117,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WAFFEN 3

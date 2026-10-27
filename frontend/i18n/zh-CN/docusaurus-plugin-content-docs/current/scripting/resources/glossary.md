@@ -16,7 +16,7 @@ tags: []
 | 组件(Component)        | open.mp 中对应插件的概念，从 `components` 文件夹加载                         |
 | 包含文件(Include)      | 放置在 .inc 文件中，通过 `#include <名称>` 引入到滤镜脚本/游戏模式的脚本片段 |
 | 原生函数(Native)       | 由服务器或插件提供的函数，可从 PAWN 中调用                                   |
-| 回调函数(Callback)     | 当特定事件发生时（如 OnPlayerConnect），由服务器自动调用的函数               |
+| 回调函数(Callback)     | 当特定事件发生时（如 `OnPlayerConnect`），由服务器自动调用的函数             |
 | AMX                    | 从 .pwn 源文件编译生成的 .amx 文件，是服务器实际运行的文件                   |
 | Tick                   | 服务器时间的一毫秒，由 [GetTickCount](../functions/GetTickCount) 计数        |
 

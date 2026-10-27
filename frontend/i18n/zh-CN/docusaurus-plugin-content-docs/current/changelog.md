@@ -32,7 +32,7 @@ description: open.mp开发进度与更新日志。
 **NPC 与游戏性改进：**
 
 - NPC ID 分配机制调整为从高到低分配，避免冲突并提高可预测性。
-- 弃用 ConnectNPC，全面转向新的内置 NPC 系统。
+- 弃用 `ConnectNPC`，全面转向新的内置 NPC 系统。
 - 强制列车创建时始终使用连续 4 个 ID，修复了长期存在的逻辑不一致问题。
 - 修复列车乘客同步问题。
 
@@ -87,13 +87,13 @@ description: open.mp开发进度与更新日志。
 **问题修复:**
 
 - 修复移动端玩家设置皮肤的小问题
-- 修正 Windows 系统 GetTickCount 返回值
+- 修正 Windows 系统 `GetTickCount` 返回值
 - 修复特定事件和 Pawn 回调中销毁车辆导致的崩溃
-- 修正 GetVehicleLandingGearState 返回值反转问题
+- 修正 `GetVehicleLandingGearState` 返回值反转问题
 - 修复玩家退出后启动器列表残留问题
 - 增强拖车和拖车同步的校验机制
 - 修复移动物体相关的崩溃问题
-- 修正 OnPlayerDeath 回调前玩家车辆数据重置问题
+- 修正 `OnPlayerDeath` 回调前玩家车辆数据重置问题
 
 </details>
 
@@ -230,58 +230,58 @@ open.mp 服务器第二候选发布版(RC2)
 
 **废弃函数:**
 
-- GetPlayer3DTextLabelVirtualW
-- SetPlayer3DTextLabelDrawDist
-- GetPlayer3DTextLabelDrawDist
-- SendClientMessagef
-- GameTextForPlayerf
-- SendPlayerMessageToPlayerf
-- SendClientMessageToAllf
-- GameTextForAllf
-- SendPlayerMessageToAllf
-- SendRconCommandf
-- AllowAdminTeleport
-- GetPlayerPoolSize
-- GetVehiclePoolSize
-- GetActorPoolSize
-- GetServerVarAsString
-- GetServerVarAsFloat
-- TextDrawColor
-- TextDrawBoxColor
-- TextDrawBackgroundColor
-- TextDrawSetPreviewVehCol
-- PlayerTextDrawColor
-- PlayerTextDrawBoxColor
-- PlayerTextDrawBackgroundColor
-- PlayerTextDrawSetPreviewVehCol
-- TextDrawGetColor
-- TextDrawGetBoxColor
-- TextDrawGetBackgroundColor
-- TextDrawGetPreviewVehCol
-- PlayerTextDrawGetColor
-- PlayerTextDrawGetBoxColor
-- PlayerTextDrawGetBackgroundCol
-- PlayerTextDrawGetPreviewVehCol
-- db_num_rows
-- db_get_mem_handle
-- db_get_result_mem_handle
-- SelectObject
-- EditObject
-- EditPlayerObject
-- CancelEdit
-- SetObjectsDefaultCameraCol
-- SetObjectNoCameraCol
-- IsObjectNoCameraCol
-- SetPlayerObjectNoCameraCol
-- IsPlayerObjectNoCameraCol
-- GetPlayerCameraTargetPlayerObj
-- GetObjectTarget
-- GetPlayerObjectTarget
-- GetPlayerDialog
-- fmkdir
-- dcreate
-- GetVehicleTower
-- ChangeVehicleColor
+- `GetPlayer3DTextLabelVirtualW`
+- `SetPlayer3DTextLabelDrawDist`
+- `GetPlayer3DTextLabelDrawDist`
+- `SendClientMessagef`
+- `GameTextForPlayerf`
+- `SendPlayerMessageToPlayerf`
+- `SendClientMessageToAllf`
+- `GameTextForAllf`
+- `SendPlayerMessageToAllf`
+- `SendRconCommandf`
+- `AllowAdminTeleport`
+- `GetPlayerPoolSize`
+- `GetVehiclePoolSize`
+- `GetActorPoolSize`
+- `GetServerVarAsString`
+- `GetServerVarAsFloat`
+- `TextDrawColor`
+- `TextDrawBoxColor`
+- `TextDrawBackgroundColor`
+- `TextDrawSetPreviewVehCol`
+- `PlayerTextDrawColor`
+- `PlayerTextDrawBoxColor`
+- `PlayerTextDrawBackgroundColor`
+- `PlayerTextDrawSetPreviewVehCol`
+- `TextDrawGetColor`
+- `TextDrawGetBoxColor`
+- `TextDrawGetBackgroundColor`
+- `TextDrawGetPreviewVehCol`
+- `PlayerTextDrawGetColor`
+- `PlayerTextDrawGetBoxColor`
+- `PlayerTextDrawGetBackgroundCol`
+- `PlayerTextDrawGetPreviewVehCol`
+- `db_num_rows`
+- `db_get_mem_handle`
+- `db_get_result_mem_handle`
+- `SelectObject`
+- `EditObject`
+- `EditPlayerObject`
+- `CancelEdit`
+- `SetObjectsDefaultCameraCol`
+- `SetObjectNoCameraCol`
+- `IsObjectNoCameraCol`
+- `SetPlayerObjectNoCameraCol`
+- `IsPlayerObjectNoCameraCol`
+- `GetPlayerCameraTargetPlayerObj`
+- `GetObjectTarget`
+- `GetPlayerObjectTarget`
+- `GetPlayerDialog`
+- `fmkdir`
+- `dcreate`
+- `GetVehicleTower`
+- `ChangeVehicleColor`
 
 **问题修复:**
 

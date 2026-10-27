@@ -9,7 +9,7 @@ tags: []
 
 ## توضیحات
 
-این کالبک زمانی که بازیکن با "ShowPlayerDialog" از طریق کلیک روی دکمه یا فشردن دکمه ESC/ENTER یا کلیک بر روی آیتم(در صورتی که نوع دیالوگ لیست باشد) پاسخ بدهد فرا خوانده میشود
+این کالبک زمانی که بازیکن با `ShowPlayerDialog` از طریق کلیک روی دکمه یا فشردن دکمه ESC/ENTER یا کلیک بر روی آیتم(در صورتی که نوع دیالوگ لیست باشد) پاسخ بدهد فرا خوانده میشود
 
 | اسم         | توضیح                                                                                                                                |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -27,7 +27,7 @@ tags: []
 
 </div>
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Tarif kardane id dialog ke mikhahim ejra shavad
@@ -55,7 +55,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -92,7 +92,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -121,7 +121,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3

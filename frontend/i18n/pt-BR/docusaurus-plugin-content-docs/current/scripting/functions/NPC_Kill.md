@@ -12,11 +12,11 @@ tags: ["npc", "death", "kill"]
 
 Mata um NPC com uma arma/motivo específico.
 
-| Nome | Descrição |
-| -------- | --------------------------------------------------------------------------------------- |
-| npcid | O ID do NPC para matar |
-| killerid | O ID do jogador que matou o NPC (opcional, use INVALID_PLAYER_ID para nenhum assassino) |
-| reason | A arma ID ou motivo da morte (padrão: 255 para suicídio) |
+| Nome     | Descrição                                                                                 |
+| -------- | ----------------------------------------------------------------------------------------- |
+| npcid    | O ID do NPC para matar                                                                    |
+| killerid | O ID do jogador que matou o NPC (opcional, use `INVALID_PLAYER_ID` para nenhum assassino) |
+| reason   | A arma ID ou motivo da morte (padrão: 255 para suicídio)                                  |
 
 ## Retornos
 
@@ -46,7 +46,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ```
 ## Notas
 
-- Use `INVALID_PLAYER_ID` para killerid se não houver assassino
+- Use `INVALID_PLAYER_ID` para `killerid` se não houver assassino
 - O parâmetro razão usa a arma IDs (WEAPON enum)
 - Isso aciona o callback [OnNPCDeath](../callbacks/OnNPCDeath)
 

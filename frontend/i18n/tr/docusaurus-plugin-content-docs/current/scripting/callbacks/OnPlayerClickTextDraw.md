@@ -9,10 +9,10 @@ tags: ["player", "textdraw"]
 
 Bu geri çağırma bir oyuncu bir textdrawa tıkladığında ya da ESC tuşu ile seçim modunu iptal ettiğinde çağırılır.
 
-| Parametre | Açıklama                                                                                |
-| --------- | --------------------------------------------------------------------------------------- |
-| playerid  | Textdrawa tıklayan oyuncunun ID'si.                                                     |
-| clickedid | Tıklanan textdraw ID'si. Eğer seçim iptal edilirse INVALID_TEXT_DRAW değeri döndürülür. |
+| Parametre | Açıklama                                                                                  |
+| --------- | ----------------------------------------------------------------------------------------- |
+| playerid  | Textdrawa tıklayan oyuncunun ID'si.                                                       |
+| clickedid | Tıklanan textdraw ID'si. Eğer seçim iptal edilirse `INVALID_TEXT_DRAW` değeri döndürülür. |
 
 ## Çalışınca Vereceği Sonuçlar
 
@@ -64,7 +64,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 
 :::warning
 
-Tıklanılabilir bölge TextDrawTextSize tarafından belirlenir. X ve Y parametreleri sıfır ya da negatif bir değer olmamalıdır. Bu geri çağırmada CancelSelectTextDraw koşulsuz olarak kullanmayın, bu sonsuz bir döngü ile sonuçlanır.
+Tıklanılabilir bölge `TextDrawTextSize` tarafından belirlenir. X ve Y parametreleri sıfır ya da negatif bir değer olmamalıdır. Bu geri çağırmada `CancelSelectTextDraw` koşulsuz olarak kullanmayın, bu sonsuz bir döngü ile sonuçlanır.
 
 :::
 

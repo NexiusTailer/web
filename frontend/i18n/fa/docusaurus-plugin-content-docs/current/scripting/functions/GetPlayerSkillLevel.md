@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-پارامتر skill ID اسلحه نیست، بلکه نوع مهارت است. [اینجا کلیک کنید](../resources/weaponskills) برای لیست انواع مهارت.
+پارامتر `skill` ID اسلحه نیست، بلکه نوع مهارت است. [اینجا کلیک کنید](../resources/weaponskills) برای لیست انواع مهارت.
 
 :::
 

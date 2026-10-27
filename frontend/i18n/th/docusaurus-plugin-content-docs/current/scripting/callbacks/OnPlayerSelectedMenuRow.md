@@ -7,7 +7,7 @@ tags: ["player", "menu"]
 
 ## คำอธิบาย
 
-This callback is called when a player selects an item from a menu (ShowMenuForPlayer).
+This callback is called when a player selects an item from a menu (`ShowMenuForPlayer`).
 
 | Name     | Description                                                 |
 | -------- | ----------------------------------------------------------- |
@@ -49,7 +49,7 @@ public OnPlayerSelectedMenuRow(playerid, row)
 
 :::note
 
-The menu ID is not passed to this callback. GetPlayerMenu must be used to determine which menu the player selected an item on.
+The menu ID is not passed to this callback. `GetPlayerMenu` must be used to determine which menu the player selected an item on.
 
 :::
 

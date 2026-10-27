@@ -46,7 +46,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **扩展道路标识**
 
-下方限速标识包含透明材质覆盖层（索引 3），可配合 SetObjectMaterialText或 SetPlayerObjectMaterialText函数使用。
+下方限速标识包含透明材质覆盖层（索引 3），可配合 `SetObjectMaterialText`或 `SetPlayerObjectMaterialText`函数使用。
 
 ```
 11699	SAMPRoadSign46
@@ -250,7 +250,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **旧式笔记本电脑**
 
-提供开启与闭合两种状态。可通过 SetObjectMaterial函数修改索引 1 的屏幕材质，TXD 文件包含三种屏幕样式（参见下图）：
+提供开启与闭合两种状态。可通过 `SetObjectMaterial`函数修改索引 1 的屏幕材质，TXD 文件包含三种屏幕样式（参见下图）：
 
 - LaptopScreen1 = GTASA 地图界面（默认）
 - LaptopScreen2 = 文本界面
@@ -429,7 +429,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 19979	SAMPRoadSign32
 ```
 
-以下两个标识包含透明材质覆盖层（索引 3），可配合 SetObjectMaterialText或 SetPlayerObjectMaterialText函数使用：
+以下两个标识包含透明材质覆盖层（索引 3），可配合 `SetObjectMaterialText`或 `SetPlayerObjectMaterialText`函数使用：
 
 ```
 19980	SAMPRoadSign33
@@ -544,7 +544,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **卡里古拉赌场金库门（改良版）**
 
-优化枢轴点以适配 MoveObject函数，并修复夜间顶点着色问题。原物体 ID 为 2634。
+优化枢轴点以适配 `MoveObject`函数，并修复夜间顶点着色问题。原物体 ID 为 2634。
 
 ```
 19799	CaligulasVaultDoor
@@ -566,7 +566,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **静态门体**
 
-与 ID 1502 物体相同但改为静态属性，可通过 MoveObject函数实现开关动画。
+与 ID 1502 物体相同但改为静态属性，可通过 `MoveObject`函数实现开关动画。
 
 ```
 19802	GenDoorINT04Static
@@ -588,7 +588,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **提取物品系列**
 
-下方白板物体包含透明材质覆盖层（索引 1），可配合 SetObjectMaterialText或 SetPlayerObjectMaterialText函数使用：
+下方白板物体包含透明材质覆盖层（索引 1），可配合 `SetObjectMaterialText`或 `SetPlayerObjectMaterialText`函数使用：
 
 ```
 19805	Whiteboard1
@@ -662,7 +662,7 @@ description: 本页面包含由SA-MP添加的自定义物体列表。
 
 ### **货运波比平台**
 
-该平台可通过 AttachObjectToVehicle 函数附加至货运波比直升机侧部，用于载人运输。
+该平台可通过 `AttachObjectToVehicle` 函数附加至货运波比直升机侧部，用于载人运输。
 
 ```
 19848	CargoBobPlatform1

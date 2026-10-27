@@ -47,7 +47,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - Retorna a configuração atual do tempo de recarga personalizado
-- Use NPC_GetWeaponActualReloadTime para obter o tempo de recarga padrão do jogo
+- Use `NPC_GetWeaponActualReloadTime` para obter o tempo de recarga padrão do jogo
 - O tempo de recarga afeta quanto tempo o NPC leva para recarregar a arma
 
 ## Funções Relacionadas

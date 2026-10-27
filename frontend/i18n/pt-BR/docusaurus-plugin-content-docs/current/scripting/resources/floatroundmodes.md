@@ -6,7 +6,7 @@ description: Os modos de arredondamento usados com floatround.
 
 :::info
 
-Uma lista de possíveis modos de floatround que podem ser usados por [floatround](../functions/floatround).
+Uma lista de possíveis modos de `floatround` que podem ser usados por [floatround](../functions/floatround).
 
 :::
 

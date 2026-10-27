@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Ovaj callback je pozvan **samo** kada se vozilo **re**spawnuje! CreateVehicle i AddStaticVehicle(Ex) **NEĆE** pokretati ovaj callback.
+Ovaj callback je pozvan **samo** kada se vozilo **re**spawnuje! `CreateVehicle` i `AddStaticVehicle(Ex)` **NEĆE** pokretati ovaj callback.
 
 :::
 

@@ -85,7 +85,7 @@ The result of an assignment expression is the value of the left operand after th
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | =     | v = e                                                                                                                                                                                             |
 |       | assigns the value of e to variable v.                                                                                                                                                             |
-|       | If "v" is an array, it must have an explicit size and "e" must be an array of the same size; "e" may be a string or a literal array.                                                              |
+|       | If `v` is an array, it must have an explicit size and `e` must be an array of the same size; `e` may be a string or a literal array.                                                              |
 | Note  | the following operators combine an assignment with an arithmetic or a bitwise operation; the result of the expression is the value of the left operand after the arithmetic or bitwise operation. |
 | +=    | v += e                                                                                                                                                                                            |
 |       | increments v with a.                                                                                                                                                                              |
@@ -132,7 +132,7 @@ A logical "false" is represented by an integer value of 0; a logical "true" is r
 
 ### • Boolean
 
-A logical "false" is represented by an integer value of 0; a logical "true" is represented by any value other than 0. Value results of Boolean expressions are either 0 or 1, and their tag is set to "bool".
+A logical "false" is represented by an integer value of 0; a logical "true" is represented by any value other than 0. Value results of Boolean expressions are either 0 or 1, and their tag is set to `bool`.
 
 | Sign | Description                                                                                                                                    |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -167,7 +167,7 @@ A logical "false" is represented by an integer value of 0; a logical "true" is r
 |         | results in the size in "elements" of the specified variable. For simple variables and for arrays with a single dimension, an element is a cell.                                                                                                        |
 |         | When used in a default value for a function argument, the expression is evaluation at the point of the function call, instead of in the function definition.                                                                                           |
 | state   | state s                                                                                                                                                                                                                                                |
-|         | where "s" is the name of a state that is optionally prefixed with the automaton name, this operator results in the value 1 if the automatons is in the indicated state and in 0 otherwise.                                                             |
+|         | where `s` is the name of a state that is optionally prefixed with the automaton name, this operator results in the value 1 if the automatons is in the indicated state and in 0 otherwise.                                                             |
 |         | The tag of this expression is bool:.                                                                                                                                                                                                                   |
 | tagof   | tagof s                                                                                                                                                                                                                                                |
 |         | results in the a unique number that represents the tag of the variable, the constant, the function result or the tag label.                                                                                                                            |

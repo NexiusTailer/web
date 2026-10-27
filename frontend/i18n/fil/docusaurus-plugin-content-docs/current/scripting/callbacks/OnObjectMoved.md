@@ -7,7 +7,7 @@ tags: []
 
 ## Description
 
-Ang callback na ito ay itinatawag kapag ang object ay iginalaw pagkatapos ang MoveObject (kapag natapos na itong gumalaw).
+Ang callback na ito ay itinatawag kapag ang object ay iginalaw pagkatapos ang `MoveObject` (kapag natapos na itong gumalaw).
 
 | Name     | Description                  |
 | -------- | ---------------------------- |
@@ -31,7 +31,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-Ang SetObjectPos ay hindi gumagana kapag ginamit sa callback na ito. Upang ito'y maayos, gawin muli o i-recreate ang object.
+Ang `SetObjectPos` ay hindi gumagana kapag ginamit sa callback na ito. Upang ito'y maayos, gawin muli o i-recreate ang object.
 
 :::
 

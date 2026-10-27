@@ -67,4 +67,4 @@ public OnClientCheckResponse(playerid, actionid, memaddr, retndata)
 
 ## Related Callbacks
 
-- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): called when a SendClientCheck request completes.
+- [OnClientCheckResponse](../callbacks/OnClientCheckResponse): called when a `SendClientCheck` request completes.

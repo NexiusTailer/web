@@ -7,12 +7,12 @@ tags: ["dialog"]
 
 ## Beschrijving
 
-Deze callback wordt aangeroepen wanneer een speler reageert op een dialog die is getoond met ShowPlayerDialog. De reactie kan zijn door op een knop te klikken, ENTER/ESC te drukken, of dubbelklikken op een lijstitem (bij een lijst-stijl dialog).
+Deze callback wordt aangeroepen wanneer een speler reageert op een dialog die is getoond met `ShowPlayerDialog`. De reactie kan zijn door op een knop te klikken, ENTER/ESC te drukken, of dubbelklikken op een lijstitem (bij een lijst-stijl dialog).
 
 | Naam        | Beschrijving                                                                                      |
 | ----------- | ------------------------------------------------------------------------------------------------- |
 | playerid    | Het ID van de speler die reageerde op de dialog.                                                  |
-| dialogid    | Het ID van de dialog waarop de speler reageerde, zoals meegegeven in ShowPlayerDialog.            |
+| dialogid    | Het ID van de dialog waarop de speler reageerde, zoals meegegeven in `ShowPlayerDialog`.          |
 | response    | **1** voor de linker knop, en **0** voor de rechter knop (bij één knop is het altijd 1).          |
 | listitem    | Het ID van het door de speler geselecteerde lijstitem (start bij 0). Bij niet-lijst dialogs: -1.  |
 | inputtext[] | De tekst die in de invoervak door de speler is ingevoerd, of de tekst van het geselecteerde item. |
@@ -23,7 +23,7 @@ Deze callback wordt altijd als eerste aangeroepen in filterscripts. Return 1 blo
 
 ## Voorbeelden
 
-**DIALOG_STYLE_MSGBOX**
+**`DIALOG_STYLE_MSGBOX`**
 
 ```c
 // Define the dialog ID for handling responses
@@ -51,7 +51,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_INPUT**
+**`DIALOG_STYLE_INPUT`**
 
 ```c
 #define DIALOG_LOGIN 2
@@ -88,7 +88,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_LIST**
+**`DIALOG_STYLE_LIST`**
 
 ```c
 #define DIALOG_WEAPONS 3
@@ -126,7 +126,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 ```
 
-**DIALOG_STYLE_TABLIST_HEADERS**
+**`DIALOG_STYLE_TABLIST_HEADERS`**
 
 ```c
 #define DIALOG_WEAPONS 3

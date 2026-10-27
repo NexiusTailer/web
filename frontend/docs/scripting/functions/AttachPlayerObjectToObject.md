@@ -28,7 +28,7 @@ You can use this function to attach player-objects to other player-objects. The 
 
 `true` - The function executed successfully.
 
-`false` - The function failed to execute. This means the first object (objectid) does not exist. There are no internal checks to verify that the second object (parentid) exists.
+`false` - The function failed to execute. This means the first object (`objectid`) does not exist. There are no internal checks to verify that the second object (`parentid`) exists.
 
 ## Examples
 

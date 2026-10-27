@@ -10,7 +10,7 @@ tags: ["player", "camera"]
 
 ## Descrição
 
-Permite recuperar o ID do jogador que o playerid está visualizando.
+Permite recuperar o ID do jogador que o `playerid` está visualizando.
 
 | Nome | Descrição |
 | -------- | ----------------------------- |
@@ -18,7 +18,7 @@ Permite recuperar o ID do jogador que o playerid está visualizando.
 
 ## Retornos
 
-O ID do jogador que o playerid está olhando
+O ID do jogador que o `playerid` está olhando
 
 ## Exemplos
 
@@ -34,7 +34,7 @@ if (IsPlayerAdmin(playerTarget))
 
 :::warning
 
-Não confunda esta função com GetPlayerTargetPlayer. GetPlayerTargetPlayer retorna o ID do jogador que playerid está atacando (com uma arma). GetPlayerCameraTargetPlayer retorna o ID do jogador que o playerid está _olhando_ (o ponto de referência é o **centro da tela**).
+Não confunda esta função com `GetPlayerTargetPlayer`. `GetPlayerTargetPlayer` retorna o ID do jogador que `playerid` está atacando (com uma arma). `GetPlayerCameraTargetPlayer` retorna o ID do jogador que o `playerid` está _olhando_ (o ponto de referência é o **centro da tela**).
 
 :::
 

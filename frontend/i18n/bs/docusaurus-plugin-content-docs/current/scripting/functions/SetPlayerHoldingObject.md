@@ -40,7 +40,7 @@ public OnPlayerSpawn(playerid)
 :::note
 
 - Po igraču se može prikačiti samo jedan predmet.
-- Ova je funkcija odvojena od spremišta CreateObject / CreatePlayerObject.
+- Ova je funkcija odvojena od spremišta `CreateObject` / `CreatePlayerObject`.
 
 :::
 

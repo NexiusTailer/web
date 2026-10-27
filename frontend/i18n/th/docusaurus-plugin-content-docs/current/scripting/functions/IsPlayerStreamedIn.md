@@ -9,10 +9,10 @@ tags: ["player"]
 
 Checks if a player is streamed in another player's client.
 
-| Name        | Description                                                   |
-| ----------- | ------------------------------------------------------------- |
-| playerid    | The ID of the player to check is streamed in.                 |
-| forplayerid | The ID of the player to check if playerid is streamed in for. |
+| Name        | Description                                                     |
+| ----------- | --------------------------------------------------------------- |
+| playerid    | The ID of the player to check is streamed in.                   |
+| forplayerid | The ID of the player to check if `playerid` is streamed in for. |
 
 ## ส่งคืน
 
@@ -33,9 +33,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**SA-MP server:** Players stream out if they are more than 200.0 meters away (see server.cfg - stream_distance)
+**SA-MP server:** Players stream out if they are more than 200.0 meters away (see server.cfg - `stream_distance`)
 
-**open.mp server:** Players stream out if they are more than 200.0 meters away (see config.json - network.stream_radius)
+**open.mp server:** Players stream out if they are more than 200.0 meters away (see config.json - `network.stream_radius`)
 
 :::
 

@@ -11,10 +11,10 @@ tags: ["npc", "车辆", "飞机", "起落架"]
 
 设置 NPC 驾驶飞机时的起落架状态。
 
-| 参数      | 说明                                                                   |
-| --------- | ---------------------------------------------------------------------- |
-| npcid     | NPC 的 ID                                                              |
-| gearstate | 要设置的起落架状态（LANDING_GEAR_STATE_DOWN 或 LANDING_GEAR_STATE_UP） |
+| 参数      | 说明                                                                       |
+| --------- | -------------------------------------------------------------------------- |
+| npcid     | NPC 的 ID                                                                  |
+| gearstate | 要设置的起落架状态（`LANDING_GEAR_STATE_DOWN` 或 `LANDING_GEAR_STATE_UP`） |
 
 ## 返回值
 
@@ -48,8 +48,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 仅在 NPC 驾驶飞机时有效
-- 使用与[飞机起落架状态](../resources/landinggearstate)相同的常量：LANDING_GEAR_STATE_DOWN 和 LANDING_GEAR_STATE_UP
-- 使用 NPC_GetVehicleGearState 检查当前起落架状态
+- 使用与[飞机起落架状态](../resources/landinggearstate)相同的常量：`LANDING_GEAR_STATE_DOWN` 和 `LANDING_GEAR_STATE_UP`
+- 使用 `NPC_GetVehicleGearState` 检查当前起落架状态
 
 ## 相关函数
 

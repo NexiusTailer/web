@@ -10,11 +10,11 @@ Hal ini mirip dengan [SVars](servervariablesystem), namun dalam basis per-player
 
 ## Keuntungan
 
-Sistem baru diperkenalkan di SA-MP 0.3a R5 server di update dengan beberapa keuntungan besar dalam membuat array sized MAX_PLAYERS.
+Sistem baru diperkenalkan di SA-MP 0.3a R5 server di update dengan beberapa keuntungan besar dalam membuat array sized `MAX_PLAYERS`.
 
 - PVars dapat di bagi/akses keseluruh skrip gamemode dan filterscripts, memudahkan anda untuk memodularisasikan kodingan anda.
 
-- PVars akan otomatis terhapus setelah player logout dari server (setelah OnPlayerDisconnect), berarti anda tidak perlu mereset secara manual variable untuk player selanjutnya bergabung.
+- PVars akan otomatis terhapus setelah player logout dari server (setelah `OnPlayerDisconnect`), berarti anda tidak perlu mereset secara manual variable untuk player selanjutnya bergabung.
 
 - Tidak perlu struktur info enums/player yang kompleks.
 

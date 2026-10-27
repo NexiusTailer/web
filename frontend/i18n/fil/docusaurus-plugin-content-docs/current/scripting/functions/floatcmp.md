@@ -7,7 +7,7 @@ tags: ["math", "floating-point"]
 
 ## Description
 
-Ang floatcmp ay maaaring gamitin upang ihambing ang mga halaga ng float sa bawat isa, upang mapatunayan ang paghahambing.
+Ang `floatcmp` ay maaaring gamitin upang ihambing ang mga halaga ng float sa bawat isa, upang mapatunayan ang paghahambing.
 
 | Name  | Description                                |
 | ----- | ------------------------------------------ |

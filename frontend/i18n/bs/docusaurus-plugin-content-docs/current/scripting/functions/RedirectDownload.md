@@ -13,7 +13,7 @@ This function was added in SA-MP 0.3.DL R1 and neće raditi u ranijim verzijama!
 
 ## Deskripcija
 
-Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja na određenu HTTP web stranicu.
+Preusmjerite preuzimanje prilagođenog `AddCharModel` ili `AddSimpleModel` uređaja na određenu HTTP web stranicu.
 
 ## Parameters
 

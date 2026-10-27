@@ -23,7 +23,7 @@ new PlayerColors[] = {
 
 请将上述数组置于脚本顶部。
 
-在 OnPlayerConnect 回调函数中添加以下代码：
+在 `OnPlayerConnect` 回调函数中添加以下代码：
 
 ```pawn
 SetPlayerColor(playerid, PlayerColors[playerid % sizeof PlayerColors]);

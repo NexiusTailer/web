@@ -11,13 +11,13 @@ tags: ["player", "object", "playerobject"]
 
 دریافت موقعیت هدف حرکت یک player-object.
 
-| نام            | توضیحات                                                                   |
-| -------------- | ------------------------------------------------------------------------- |
-| playerid       | ID بازیکن.                                                                |
-| objectid       | ID player-object برای دریافت موقعیت هدف حرکتش.                            |
-| &Float:targetX | متغیر float برای ذخیره مختصات targetX، به صورت reference پاس داده می‌شود. |
-| &Float:targetY | متغیر float برای ذخیره مختصات targetY، به صورت reference پاس داده می‌شود. |
-| &Float:targetZ | متغیر float برای ذخیره مختصات targetZ، به صورت reference پاس داده می‌شود. |
+| نام            | توضیحات                                                                     |
+| -------------- | --------------------------------------------------------------------------- |
+| playerid       | ID بازیکن.                                                                  |
+| objectid       | ID player-object برای دریافت موقعیت هدف حرکتش.                              |
+| &Float:targetX | متغیر float برای ذخیره مختصات `targetX`، به صورت reference پاس داده می‌شود. |
+| &Float:targetY | متغیر float برای ذخیره مختصات `targetY`، به صورت reference پاس داده می‌شود. |
+| &Float:targetZ | متغیر float برای ذخیره مختصات `targetZ`، به صورت reference پاس داده می‌شود. |
 
 ## مقادیر برگشتی
 

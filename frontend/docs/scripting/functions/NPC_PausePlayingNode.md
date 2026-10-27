@@ -45,8 +45,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notes
 
 - Only works when NPC is actively playing a node
-- Paused node navigation can be resumed with NPC_ResumePlayingNode
-- Use NPC_IsPlayingNodePaused to check pause state
+- Paused node navigation can be resumed with `NPC_ResumePlayingNode`
+- Use `NPC_IsPlayingNodePaused` to check pause state
 
 ## Related Functions
 

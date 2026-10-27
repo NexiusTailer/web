@@ -10,7 +10,7 @@ tags: ["player", "gangzone", "playergangzone"]
 
 ## Descrição
 
-Obtenha a posição de uma gangzone, representada pelas coordenadas minX, minY, maxX, maxY.
+Obtenha a posição de uma gangzone, representada pelas coordenadas `minX`, `minY`, `maxX`, `maxY`.
 
 | Nome | Descrição |
 | ----------- | ----------------------------------------------------------- |

@@ -7,7 +7,7 @@ tags: []
 
 ## Descrição
 
-Esta função pode ser usada para mudar as informações de spawn de um jogador específico. Permite definir automaticamente no spawn, as armas, time, skin, e posição de um jogador, é normalmente usado em minijogos ou sistemas automáticos de spawn. Esta função é mais segura contra crashes do que usar SetPlayerSkin em OnPlayerSpawn e/ou OnPlayerRequestClass, embora isso tenha sido corrigido na versão 0.2.
+Esta função pode ser usada para mudar as informações de spawn de um jogador específico. Permite definir automaticamente no spawn, as armas, time, skin, e posição de um jogador, é normalmente usado em minijogos ou sistemas automáticos de spawn. Esta função é mais segura contra crashes do que usar `SetPlayerSkin` em `OnPlayerSpawn` e/ou `OnPlayerRequestClass`, embora isso tenha sido corrigido na versão 0.2.
 
 | Nome           | Descrição                                                          |
 | -------------- | ------------------------------------------------------------------ |

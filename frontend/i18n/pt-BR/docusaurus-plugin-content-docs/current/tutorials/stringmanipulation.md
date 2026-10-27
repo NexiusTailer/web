@@ -1055,7 +1055,7 @@ Placeholders ou especificadores são caracteres escapados por um sinal de porcen
 ```
 Os atributos entre colchetes são todos opcionais e cabe a você usuário mantê-los ou não, o que realmente define um especificador do formato amplamente conhecido de **%type**, a parte do tipo é substituída por um caractere para representar um determinado tipo de saída; (_inteiro, flutuante... etc_).
 
-Placeholders são usados apenas em funções que aceitam parâmetros, portanto funções como print não terão efeito, uma alternativa é o `printf` mais avançado.
+Placeholders são usados apenas em funções que aceitam parâmetros, portanto funções como `print` não terão efeito, uma alternativa é o `printf` mais avançado.
 
 Vejamos os diferentes tipos de saída que podem ser usados:
 

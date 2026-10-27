@@ -137,7 +137,7 @@ new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 
 :::
 
-函数命名规则：全局函数中的'TextDraw'改为'PlayerTextDraw'（例如 [创建玩家文本绘图](../functions/CreatePlayerTextDraw)），但字符串设置函数例外（'TextDrawSetString' 变为 'PlayerTextDrawSetString'）。
+函数命名规则：全局函数中的'TextDraw'改为'PlayerTextDraw'（例如 [创建玩家文本绘图](../functions/CreatePlayerTextDraw)），但字符串设置函数例外（`TextDrawSetString` 变为 `PlayerTextDrawSetString`）。
 
 ---
 
@@ -151,7 +151,7 @@ new PlayerText:gMyPlayerText = PlayerText:INVALID_TEXT_DRAW;
 
 **参数：**
 
-TextDrawCreate(Float:x, Float:y, text[])
+`TextDrawCreate(Float:x, Float:y, text[])`
 
 | 参数   | 说明                |
 | ------ | ------------------- |
@@ -200,7 +200,7 @@ SA-MP 0.3d 版本新增第四种字体（ID 4），需配合 [TextDrawCreate](..
 
 **参数：**
 
-TextDrawShowForPlayer(playerid, Text:text)
+`TextDrawShowForPlayer(playerid, Text:text)`
 
 | 参数     | 说明                |
 | -------- | ------------------- |

@@ -35,7 +35,7 @@ SendClientMessage(playerid, 0xFFFFFFFF, string);
 
 :::note
 
-Angles returned when inside a vehicle is rarely correct. To get the correct facing angle while inside a vehicle, use GetVehicleZAngle.
+Angles returned when inside a vehicle is rarely correct. To get the correct facing angle while inside a vehicle, use `GetVehicleZAngle`.
 
 :::
 

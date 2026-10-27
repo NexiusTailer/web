@@ -48,7 +48,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## 注意事项
 
 - 仅适用于火车（模型 537、538）
-- 使用 NPC_GetVehicleTrainSpeed 检查当前速度
+- 使用 `NPC_GetVehicleTrainSpeed` 检查当前速度
 - 将速度设置为 0 会停止火车
 
 ## 相关函数

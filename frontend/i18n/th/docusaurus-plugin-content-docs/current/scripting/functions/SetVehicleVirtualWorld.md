@@ -27,5 +27,5 @@ SetPlayerVirtualWorld(playerid, 10);
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetVehicleVirtualWorld: Check what virtual world a vehicle is in.
-- SetPlayerVirtualWorld: Set the virtual world of a player.
+- `GetVehicleVirtualWorld`: Check what virtual world a vehicle is in.
+- `SetPlayerVirtualWorld`: Set the virtual world of a player.

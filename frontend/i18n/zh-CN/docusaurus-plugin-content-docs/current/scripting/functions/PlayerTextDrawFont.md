@@ -58,8 +58,8 @@ public OnPlayerConnect(playerid)
 
 :::tip
 
-- 使用 TEXT_DRAW_FONT_SPRITE_DRAW 时可加载.txd 精灵图集
-- 设置字体值为 4-16 区间时需配合 PlayerTextDrawSetPreviewModel 使用模型预览功能
+- 使用 `TEXT_DRAW_FONT_SPRITE_DRAW` 时可加载.txd 精灵图集
+- 设置字体值为 4-16 区间时需配合 `PlayerTextDrawSetPreviewModel` 使用模型预览功能
 
 :::
 
@@ -79,7 +79,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): 设置玩家文本绘图的背景颜色
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): 设置玩家文本绘图对齐方式
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): 设置玩家文本绘图的字符尺寸
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): 设置玩家文本绘图方框尺寸（或 PlayerTextDrawSetSelectable 的可点击区域）
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): 设置玩家文本绘图方框尺寸（或 `PlayerTextDrawSetSelectable` 的可点击区域）
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): 切换玩家文本绘图的轮廓显示
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): 设置玩家文本绘图的阴影效果
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): 按比例缩放玩家文本绘图的文字间距

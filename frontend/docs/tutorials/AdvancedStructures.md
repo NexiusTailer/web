@@ -48,7 +48,7 @@ MyFunction()
 }
 ```
 
-Obviously you would replace the "gMyArray[i]" expression with your own indication of a slot in use.
+Obviously you would replace the `gMyArray[i]` expression with your own indication of a slot in use.
 
 ### List
 

@@ -39,8 +39,8 @@ public OnPlayerConnect(playerid)
 
 :::note
 
-- اگر [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) با اندازه > 0 استفاده شود، رنگ حاشیه با رنگ استفاده شده در PlayerTextDrawBackgroundColour مطابقت خواهد داشت.
-- تغییر مقدار رنگ به نظر می‌رسد که رنگ استفاده شده در PlayerTextDrawColour را تغییر می‌دهد.
+- اگر [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline) با اندازه > 0 استفاده شود، رنگ حاشیه با رنگ استفاده شده در `PlayerTextDrawBackgroundColour` مطابقت خواهد داشت.
+- تغییر مقدار رنگ به نظر می‌رسد که رنگ استفاده شده در `PlayerTextDrawColour` را تغییر می‌دهد.
 
 :::
 
@@ -53,7 +53,7 @@ public OnPlayerConnect(playerid)
 - [PlayerTextDrawAlignment](PlayerTextDrawAlignment): تنظیم چینش یک textdraw بازیکن.
 - [PlayerTextDrawFont](PlayerTextDrawFont): تنظیم فونت یک textdraw بازیکن.
 - [PlayerTextDrawLetterSize](PlayerTextDrawLetterSize): تنظیم اندازه حروف متن در یک textdraw بازیکن.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه textdraw بازیکن (یا ناحیه قابل کلیک برای PlayerTextDrawSetSelectable).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): تنظیم اندازه جعبه textdraw بازیکن (یا ناحیه قابل کلیک برای `PlayerTextDrawSetSelectable`).
 - [PlayerTextDrawSetOutline](PlayerTextDrawSetOutline): تغییر وضعیت حاشیه روی یک textdraw بازیکن.
 - [PlayerTextDrawSetShadow](PlayerTextDrawSetShadow): تنظیم سایه روی یک textdraw بازیکن.
 - [PlayerTextDrawSetProportional](PlayerTextDrawSetProportional): تنظیم فاصله متن در یک textdraw بازیکن به نسبت متناسب.

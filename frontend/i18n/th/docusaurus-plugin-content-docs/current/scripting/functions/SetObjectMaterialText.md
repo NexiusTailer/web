@@ -57,5 +57,5 @@ You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetPlayerObjectMaterialText: Replace the texture of a player object with text.
-- SetObjectMaterial: Replace the texture of an object with the texture from another model in the game.
+- `SetPlayerObjectMaterialText`: Replace the texture of a player object with text.
+- `SetObjectMaterial`: Replace the texture of an object with the texture from another model in the game.

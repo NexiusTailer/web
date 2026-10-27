@@ -89,7 +89,7 @@ description: Serverconfiguratiebestand.
 | stream_distance\* | float | 200.0         | Nee       | Nee  | De afstand op het X,Y-vlak waarop spelers server-entiteiten binnen streamen. Maximaal **400.0**, minimaal **50.0**. Hoger = grotere zichtafstand maar meer clientverwerking en mogelijk meer bandbreedte.                                |
 | stream_rate\*     | int   | 1000          | Nee       | Nee  | Tijd in milliseconden voordat het instreamen van server-entiteiten per speler opnieuw wordt getest. Maximaal **5000**, minimaal **500**. Lager = meer serververwerking omdat streamcondities vaker per speler moeten worden herberekend. |
 
-> [*] Lagere waarden voor onfoot_rate, incar_rate en weapon_rate verbeteren de synchronisatie maar gebruiken meer bandbreedte.
+> [*] Lagere waarden voor `onfoot_rate`, `incar_rate` en `weapon_rate` verbeteren de synchronisatie maar gebruiken meer bandbreedte.
 
 ## NPC's
 
@@ -102,15 +102,15 @@ description: Serverconfiguratiebestand.
 | Key         | Type   | Default value | Read-only | Rule | Effect                                                                                                                                                |
 | ----------- | ------ | ------------- | --------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lagcompmode | int    | 1             | Ja        | Nee  | 0: Volledig uitschakelen.<br /><br />1: Volledig inschakelen.<br /><br />2: Alleen positiecompensatie (rotatie van spelers wordt niet gecompenseerd). |
-| lagcomp     | string | On            | Ja        | Ja   | Waarschijnlijk automatisch ingesteld op **On** of **Off** afhankelijk van **lagcompmode**.                                                            |
+| lagcomp     | string | On            | Ja        | Ja   | Waarschijnlijk automatisch ingesteld op **On** of **Off** afhankelijk van `lagcompmode`.                                                              |
 
 ## Zelfgemaakte modellen
 
-| Instelling | Type   | Standaardwaarde | Alleen-lezen | Regel | Effect                                                                                                                                                                      |
-| ---------- | ------ | --------------- | ------------ | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| useartwork | bool   | 0               | Ja           | Nee   | Schakelt het gebruik van aangepaste modellen uit de map `models` in. 1 = aan, 0 = uit.<br /><br />**LET OP:** Toegevoegd in 0.3.8; heeft geen effect in eerdere versies.    |
-| artwork    | string | No              | Ja           | Ja    | Waarschijnlijk automatisch ingesteld op **No** of **Yes** afhankelijk van **useartwork**.<br /><br />**LET OP:** Toegevoegd in 0.3.8; heeft geen effect in eerdere versies. |
-| artpath    | string | models          | Ja           | Nee   | Het pad waar de aangepaste modellen staan.<br /><br />**LET OP:** Toegevoegd in 0.3.8; heeft geen effect in eerdere versies.                                                |
+| Instelling | Type   | Standaardwaarde | Alleen-lezen | Regel | Effect                                                                                                                                                                    |
+| ---------- | ------ | --------------- | ------------ | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| useartwork | bool   | 0               | Ja           | Nee   | Schakelt het gebruik van aangepaste modellen uit de map `models` in. 1 = aan, 0 = uit.<br /><br />**LET OP:** Toegevoegd in 0.3.8; heeft geen effect in eerdere versies.  |
+| artwork    | string | No              | Ja           | Ja    | Waarschijnlijk automatisch ingesteld op **No** of **Yes** afhankelijk van `useartwork`.<br /><br />**LET OP:** Toegevoegd in 0.3.8; heeft geen effect in eerdere versies. |
+| artpath    | string | models          | Ja           | Nee   | Het pad waar de aangepaste modellen staan.<br /><br />**LET OP:** Toegevoegd in 0.3.8; heeft geen effect in eerdere versies.                                              |
 
 ## Overig
 

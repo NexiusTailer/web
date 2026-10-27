@@ -33,9 +33,9 @@ if (IsPlayerStreamedIn(playerid, 0))
 
 :::note
 
-**SA-MP server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi server.cfg - stream_distance)
+**SA-MP server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi server.cfg - `stream_distance`)
 
-**open.mp server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi config.json - network.stream_radius)
+**open.mp server:** Igrači nestaju ako su udaljeni više od 150 metara (vidi config.json - `network.stream_radius`)
 
 :::
 

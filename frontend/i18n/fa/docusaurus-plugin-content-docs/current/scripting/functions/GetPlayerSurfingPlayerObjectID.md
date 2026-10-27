@@ -17,7 +17,7 @@ ID player-objectی که بازیکن روی آن surfing می‌کند را بر
 
 ## مقادیر برگشتی
 
-ID moving objectی که بازیکن روی آن surfing می‌کند. اگر بازیکن روی moving object surfing نکند، INVALID_OBJECT_ID برمی‌گرداند
+ID moving objectی که بازیکن روی آن surfing می‌کند. اگر بازیکن روی moving object surfing نکند، `INVALID_OBJECT_ID` برمی‌گرداند
 
 ## مثال‌ها
 

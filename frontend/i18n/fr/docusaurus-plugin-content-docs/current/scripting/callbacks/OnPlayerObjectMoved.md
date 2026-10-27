@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Paramètres
 
-Cette callback est appelée quand l'objet d'un joueur a été déplacé après un MovePlayerObject _(quand l'objet s'arrête de bouger)_.
+Cette callback est appelée quand l'objet d'un joueur a été déplacé après un `MovePlayerObject` _(quand l'objet s'arrête de bouger)_.
 
 | Nom            | Description                                 |
 | -------------- | ------------------------------------------- |

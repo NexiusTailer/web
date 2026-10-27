@@ -7,7 +7,7 @@ tags: []
 
 ## Deskripsi
 
-Callback ini akan terpanggil ketika sebuah object berpindah setelah MoveObject (ketika selesai bergerak).
+Callback ini akan terpanggil ketika sebuah object berpindah setelah `MoveObject` (ketika selesai bergerak).
 
 | Nama     | Deskripsi                              |
 | -------- | -------------------------------------- |
@@ -31,7 +31,7 @@ public OnObjectMoved(objectid)
 
 :::note
 
-SetObjectPos tidak akan bekerja ketika menggunakan callback ini. Untuk memperbaiki, buatlah ulang objectnya.
+`SetObjectPos` tidak akan bekerja ketika menggunakan callback ini. Untuk memperbaiki, buatlah ulang objectnya.
 
 :::
 

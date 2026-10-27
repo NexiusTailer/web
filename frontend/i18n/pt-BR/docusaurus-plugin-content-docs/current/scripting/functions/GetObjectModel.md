@@ -9,7 +9,7 @@ Esta função foi adicionada no SA-MP 0.3.7 e não funcionará em versões anter
 
 ## Descrição
 
-Obtém o ID do modelo de um objeto (CreateObject).
+Obtém o ID do modelo de um objeto (`CreateObject`).
 
 | Nome     | Descrição                                     |
 | -------- | --------------------------------------------- |

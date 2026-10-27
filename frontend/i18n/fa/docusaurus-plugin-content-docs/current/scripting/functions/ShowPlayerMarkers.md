@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## توضیحات
 
-marker های پلیر (blip های روی radar) رو تغییر می‌ده. باید وقتی سرور شروع می‌شه استفاده بشه (OnGameModeInit). برای زمان‌های دیگه، [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer) رو ببین.
+marker های پلیر (blip های روی radar) رو تغییر می‌ده. باید وقتی سرور شروع می‌شه استفاده بشه (`OnGameModeInit`). برای زمان‌های دیگه، [SetPlayerMarkerForPlayer](SetPlayerMarkerForPlayer) رو ببین.
 
 | نام                      | توضیحات                                                                                                                                   |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,11 +29,11 @@ public OnGameModeInit()
 
 ## حالت‌های Marker
 
-| ID  | MODE                         |
-| --- | ---------------------------- |
-| 0   | PLAYER_MARKERS_MODE_OFF      |
-| 1   | PLAYER_MARKERS_MODE_GLOBAL   |
-| 2   | PLAYER_MARKERS_MODE_STREAMED |
+| ID  | MODE                           |
+| --- | ------------------------------ |
+| 0   | `PLAYER_MARKERS_MODE_OFF`      |
+| 1   | `PLAYER_MARKERS_MODE_GLOBAL`   |
+| 2   | `PLAYER_MARKERS_MODE_STREAMED` |
 
 ## نکات
 

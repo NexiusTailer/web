@@ -52,5 +52,5 @@ This function has no effect on unoccupied vehicles and does not affect trains.
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SetVehicleVelocity: Set a vehicle's velocity.
-- GetVehicleVelocity: Get a vehicle's velocity.
+- `SetVehicleVelocity`: Set a vehicle's velocity.
+- `GetVehicleVelocity`: Get a vehicle's velocity.

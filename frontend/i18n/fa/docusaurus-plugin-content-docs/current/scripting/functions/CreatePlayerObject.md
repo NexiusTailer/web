@@ -23,7 +23,7 @@ tags: ["player", "object", "playerobject"]
 
 ## مقادیر بازگشتی
 
-ID شیئی که ایجاد شد، یا INVALID_OBJECT_ID اگر به حداکثر اشیاء (MAX_OBJECTS) رسیده باشد.
+ID شیئی که ایجاد شد، یا `INVALID_OBJECT_ID` اگر به حداکثر اشیاء (`MAX_OBJECTS`) رسیده باشد.
 
 ## مثال‌ها
 

@@ -13,7 +13,7 @@ Ova funkcija je dodana u SA-MP 0.3.DL R1 i ne radi u nižim verzijama!
 
 ## Deskripcija
 
-Pronađite postojeću prilagođenu datoteku teksture kože ili jednostavnog objekta. Datoteke modela se prema zadanim postavkama nalaze u direktoriju poslužitelja modela (postavka artpath).
+Pronađite postojeću prilagođenu datoteku teksture kože ili jednostavnog objekta. Datoteke modela se prema zadanim postavkama nalaze u direktoriju poslužitelja modela (postavka `artpath`).
 
 | Ime         | Deskripcija                                                            |
 | ----------- | ---------------------------------------------------------------------- |

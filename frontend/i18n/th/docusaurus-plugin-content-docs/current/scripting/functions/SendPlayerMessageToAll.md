@@ -45,6 +45,6 @@ Avoid using format specifiers in your messages without formatting the string tha
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- SendPlayerMessageToPlayer: Force a player to send text for one player.
-- SendClientMessageToAll: Send a message to all players.
-- OnPlayerText: Called when a player sends a message via the chat.
+- `SendPlayerMessageToPlayer`: Force a player to send text for one player.
+- `SendClientMessageToAll`: Send a message to all players.
+- `OnPlayerText`: Called when a player sends a message via the chat.

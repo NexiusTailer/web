@@ -7,7 +7,7 @@ tags: ["vehicle"]
 
 :::warning
 
-Bu geri çağırma **sadece** araç **re**spawn edildiğinde çağrılır! CreateVehicle ve AddStaticVehicle(Ex) bu geri çağırmayı **tetiklemeyecektir**.
+Bu geri çağırma **sadece** araç **re**spawn edildiğinde çağrılır! `CreateVehicle` ve `AddStaticVehicle(Ex)` bu geri çağırmayı **tetiklemeyecektir**.
 
 :::
 

@@ -45,7 +45,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-The skill parameter is NOT the weapon ID, it is the skill type. Click [here](../resources/weaponskills) for a list of skill types.
+The `skill` parameter is NOT the weapon ID, it is the skill type. Click [here](../resources/weaponskills) for a list of skill types.
 
 :::
 

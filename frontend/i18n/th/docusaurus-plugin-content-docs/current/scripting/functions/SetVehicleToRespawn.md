@@ -32,5 +32,5 @@ for (new i = GetVehiclePoolSize(); i > 0; i--)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- CreateVehicle: Create a vehicle.
-- DestroyVehicle: Destroy a vehicle.
+- `CreateVehicle`: Create a vehicle.
+- `DestroyVehicle`: Destroy a vehicle.

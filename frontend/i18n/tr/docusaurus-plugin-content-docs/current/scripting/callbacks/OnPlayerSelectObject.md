@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Açıklama
 
-Bu fonksiyon, oyuncu SelectObject kullanıldıktan sonra bir obje seçtiğinde çağrılır.
+Bu fonksiyon, oyuncu `SelectObject` kullanıldıktan sonra bir obje seçtiğinde çağrılır.
 
 | Parametre | Açıklama                                                 |
 | --------- | -------------------------------------------------------- |

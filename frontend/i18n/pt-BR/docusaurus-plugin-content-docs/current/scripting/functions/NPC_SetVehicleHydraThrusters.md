@@ -50,7 +50,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - Funciona apenas com aeronaves Hydra (veículo ID 520)
 - Direção 0 = propulsores dianteiros (modo jato)
 - Direção 1 = propulsores descendentes (modo VTOL)
-- Use NPC_GetVehicleHydraThrusters para verificar a direção atual
+- Use `NPC_GetVehicleHydraThrusters` para verificar a direção atual
 
 ## Funções Relacionadas
 

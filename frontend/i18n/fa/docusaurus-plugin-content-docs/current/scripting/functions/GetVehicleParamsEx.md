@@ -41,7 +41,7 @@ GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, object
 
 :::note
 
-اگه یه پارامتر تنظیم نشده باشه (SetVehicleParamsEx قبلاً استفاده نشده)، مقدار -1 ('تنظیم نشده') خواهد بود.
+اگه یه پارامتر تنظیم نشده باشه (`SetVehicleParamsEx` قبلاً استفاده نشده)، مقدار -1 ('تنظیم نشده') خواهد بود.
 
 :::
 

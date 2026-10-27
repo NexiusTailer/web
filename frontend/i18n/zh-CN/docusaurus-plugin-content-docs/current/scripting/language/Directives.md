@@ -337,7 +337,7 @@ printf("%d", MOO);
 printf("%d", MOO);
 ```
 
-该代码将在第二个 printf 处编译失败，因为 MOO 已被取消定义。
+该代码将在第二个 `printf` 处编译失败，因为 MOO 已被取消定义。
 
 ```c
 enum {

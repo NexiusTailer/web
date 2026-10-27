@@ -7,7 +7,7 @@ tags: ["player", "checkpoint", "racecheckpoint"]
 
 ## Deskripcija
 
-Provjerava ako je igrač unutar njihovog trenutno postavljenog race checkpointa/markera (SetPlayerRaceCheckpoint).
+Provjerava ako je igrač unutar njihovog trenutno postavljenog race checkpointa/markera (`SetPlayerRaceCheckpoint`).
 
 | Ime      | Deskripcija            |
 | -------- | ---------------------- |

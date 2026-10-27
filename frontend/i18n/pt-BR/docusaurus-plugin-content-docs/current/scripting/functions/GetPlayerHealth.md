@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Descrição
 
-A função GetPlayerHealth permite obter a vida de um jogador. Útil para detetar cheats, entre outras coisas.
+A função `GetPlayerHealth` permite obter a vida de um jogador. Útil para detetar cheats, entre outras coisas.
 
 | Nome          | Descrição                                          |
 | ------------- | -------------------------------------------------- |

@@ -45,7 +45,7 @@ public OnPlayerConnect(playerid)
 
 - [CreatePlayerTextDraw](CreatePlayerTextDraw): Create a player-textdraw.
 - [PlayerTextDrawDestroy](PlayerTextDrawDestroy): Destroy a player-textdraw.
-- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Set the size of a player-textdraw box (or clickable area for PlayerTextDrawSetSelectable).
+- [PlayerTextDrawTextSize](PlayerTextDrawTextSize): Set the size of a player-textdraw box (or clickable area for `PlayerTextDrawSetSelectable`).
 - [PlayerTextDrawColor](PlayerTextDrawColor): Set the color of the text in a player-textdraw.
 - [PlayerTextDrawBoxColor](PlayerTextDrawBoxColor): Set the color of a player-textdraw's box.
 - [PlayerTextDrawBackgroundColor](PlayerTextDrawBackgroundColor): Set the background color of a player-textdraw.

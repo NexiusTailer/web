@@ -40,7 +40,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
 
 :::note
 
-Callback này KHÔNG được gọi bởi AddVehicleComponent.
+Callback này KHÔNG được gọi bởi `AddVehicleComponent`.
 
 :::
 

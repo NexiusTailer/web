@@ -39,5 +39,5 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- ResetPlayerMoney: Set the money of a player to \$0.
-- GetPlayerMoney: Check how much money a player has.
+- `ResetPlayerMoney`: Set the money of a player to \$0.
+- `GetPlayerMoney`: Check how much money a player has.

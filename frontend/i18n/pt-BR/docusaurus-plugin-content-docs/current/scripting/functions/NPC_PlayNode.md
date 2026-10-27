@@ -12,13 +12,13 @@ tags: ["npc", "node", "navigation"]
 
 Faz um NPC navegar por nós de navegação predefinidos usando o sistema de navegação integrado do jogo.
 
-| Nome | Descrição |
-| ------------- | ---------------------------------------------------------------------- |
-| npcid | O ID do NPC |
-| nodeId | O ID do nó a ser navegado |
-| moveType | Tipo de movimento (padrão: NPC_MOVE_TYPE_JOG) |
-| Float:speed | Velocidade de movimento (padrão: NPC_MOVE_SPEED_AUTO) |
-| Float:radius | Raio em torno dos nós a considerar como alcançado (padrão: 0.0) |
+| Nome          | Descrição                                                                     |
+| ------------- | ----------------------------------------------------------------------------- |
+| npcid         | O ID do NPC                                                                   |
+| nodeId        | O ID do nó a ser navegado                                                     |
+| moveType      | Tipo de movimento (padrão: `NPC_MOVE_TYPE_JOG`)                               |
+| Float:speed   | Velocidade de movimento (padrão: `NPC_MOVE_SPEED_AUTO`)                       |
+| Float:radius  | Raio em torno dos nós a considerar como alcançado (padrão: 0.0)               |
 | bool:setangle | Se deve atualizar o ângulo de visão de NPC durante a navegação (padrão: true) |
 
 ## Retornos

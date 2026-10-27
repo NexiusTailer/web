@@ -9,13 +9,13 @@ tags: ["player"]
 
 Ovaj callback je pozvan kada igrač prvimi povredu (damage).
 
-| Ime             | Deskripcija                                                                        |
-| --------------- | ---------------------------------------------------------------------------------- |
-| playerid        | ID igrača koji je primio povredu (damage).                                         |
-| issuerid        | ID igrača koji je uzrokovao povredu. INVALID_PLAYER_ID ako je sam sebe povrijedio. |
-| Float:amount    | Količina povrede (damage-a) koje je igrač primio (health i armor kombinirano).     |
-| WEAPON:weaponid | ID oružja/razlog zbog kojeg je primio povredu (damage).                            |
-| bodypart        | Dio tijela u koji je igrač pogođen.                                                |
+| Ime             | Deskripcija                                                                          |
+| --------------- | ------------------------------------------------------------------------------------ |
+| playerid        | ID igrača koji je primio povredu (damage).                                           |
+| issuerid        | ID igrača koji je uzrokovao povredu. `INVALID_PLAYER_ID` ako je sam sebe povrijedio. |
+| Float:amount    | Količina povrede (damage-a) koje je igrač primio (health i armor kombinirano).       |
+| WEAPON:weaponid | ID oružja/razlog zbog kojeg je primio povredu (damage).                              |
+| bodypart        | Dio tijela u koji je igrač pogođen.                                                  |
 
 ## Returns
 
@@ -66,13 +66,13 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 
 :::note
 
-ID oružja (weaponid) će return-ovati 37 (flame thrower) od bilo kojeg izvora vatre (npr. molotov, 18) ID oružja (weaponid) će return-ovati 51 od bilo koje vrste eksplozije (npe. RPG, granata) **playerid** je jedini koji može pozvati ovaj callback. Količina je uvijek maksimalna povreda koju taj ID oružja (weaponid) može da dadne, iako je nivo healtha manji od maksimalne povrede. Tako da kada igrač ima 100.0 healtha i biva pogođen sa Desert Eagle-om koji daje damage vrijednosti 46.2, potrebna su 3 hica da se taj igrač ubije. Sva tri hica će priakzati količinu 46.2, iako zadnji kada zadnji hitac biva ispaljen, igrač ima samo 7.6 preostalog healtha.
+ID oružja (`weaponid`) će return-ovati 37 (flame thrower) od bilo kojeg izvora vatre (npr. molotov, 18) ID oružja (`weaponid`) će return-ovati 51 od bilo koje vrste eksplozije (npe. RPG, granata) `playerid` je jedini koji može pozvati ovaj callback. Količina je uvijek maksimalna povreda koju taj ID oružja (`weaponid`) može da dadne, iako je nivo healtha manji od maksimalne povrede. Tako da kada igrač ima 100.0 healtha i biva pogođen sa Desert Eagle-om koji daje damage vrijednosti 46.2, potrebna su 3 hica da se taj igrač ubije. Sva tri hica će priakzati količinu 46.2, iako zadnji kada zadnji hitac biva ispaljen, igrač ima samo 7.6 preostalog healtha.
 
 :::
 
 :::warning
 
-GetPlayerHealth i GetPlayerArmour će return-ovati stare vrijednosti igračevog healtha i armora prije ovog callbacka. **Uvijek** provjerite da li je issuerid validan prije nego ga koristite u array indexu.
+`GetPlayerHealth` i `GetPlayerArmour` će return-ovati stare vrijednosti igračevog healtha i armora prije ovog callbacka. **Uvijek** provjerite da li je `issuerid` validan prije nego ga koristite u array indexu.
 
 :::
 

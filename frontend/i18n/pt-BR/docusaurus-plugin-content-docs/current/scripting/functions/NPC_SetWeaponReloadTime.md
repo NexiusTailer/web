@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 ## Notas
 
 - O tempo de recarga é medido em milissegundos
-- Use NPC_GetWeaponReloadTime para verificar o tempo de recarga atual
+- Use `NPC_GetWeaponReloadTime` para verificar o tempo de recarga atual
 
 ## Funções Relacionadas
 

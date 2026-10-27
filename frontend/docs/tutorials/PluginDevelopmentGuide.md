@@ -58,7 +58,7 @@ stackoverflow.com
 
 **Question:** What is a module definition file (.def)?
 
-- **Answer:** A module definition file is a special file in the Visual Studio IDE that provides the linker with information about the program that's being linked. When it comes to writing plugins for SA-MP we only really use the "EXPORTS" statement which provides information about our exported functions. We'll be looking at this statement later in the article.
+- **Answer:** A module definition file is a special file in the Visual Studio IDE that provides the linker with information about the program that's being linked. When it comes to writing plugins for SA-MP we only really use the `EXPORTS` statement which provides information about our exported functions. We'll be looking at this statement later in the article.
 
 **Question:** When i release a plugin, does it have to have the source with it?
 
@@ -179,8 +179,8 @@ There are currently 6 functions that need to be exported. We use 5 of them insid
 
 | Functions            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Supports()**       | This function tells the server what capabilities our plugin will have based on what it returns. Generally we only use 3 support flags in plugins: **SUPPORTS_VERSION**, **SUPPORTS_AMX_NATIVES**, and **SUPPORTS_PROCESS_TICK**.                                                                                                                                                                                                                                                                         |
-| **Load(void\*\*)**   | The Load function is pretty straight forward. This is called when the plugin is loaded and gets passed an array of addresses that the plugin will use to function. The two indexes we typically use are **PLUGIN_DATA_AMX_EXPORTS**, and **PLUGIN_DATA_LOGPRINTF**.                                                                                                                                                                                                                                      |
+| **Supports()**       | This function tells the server what capabilities our plugin will have based on what it returns. Generally we only use 3 support flags in plugins: `SUPPORTS_VERSION`, `SUPPORTS_AMX_NATIVES`, and `SUPPORTS_PROCESS_TICK`.                                                                                                                                                                                                                                                                               |
+| **Load(void\*\*)**   | The Load function is pretty straight forward. This is called when the plugin is loaded and gets passed an array of addresses that the plugin will use to function. The two indexes we typically use are `PLUGIN_DATA_AMX_EXPORTS`, and `PLUGIN_DATA_LOGPRINTF`.                                                                                                                                                                                                                                          |
 | **Unload()**         | Unload is called when the plugin is unloaded (server is shutdown).                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **AmxLoad(AMX\*)**   | This is called when a new AMX instance is loaded into the server. This will be called for every filterscript/gamemode! Because of this it isn't a good idea to store a single AMX instance for the entire plugin, instead use a queue/list/vector. In this function we also register our custom native functions we wish to provide PAWN with.                                                                                                                                                           |
 | **AmxUnload(AMX\*)** | This function is called when ever an AMX instance is unloaded. If you store AMX instances, make sure you remove them. Otherwise you'll have instances to non-existing gamemodes/filterscripts.                                                                                                                                                                                                                                                                                                           |
@@ -192,15 +192,15 @@ Now comes the fun part, we get to take a look at the code! You'll probably notic
 
 | Defines/Structures          | Description                                                                                                                                                                                                                                                                                                                                                                                                             |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **cell**                    | A "cell" is a typedef that is simply there for portability. PAWN offers support for 16bit, 32bit, and 64bit integers. The typedef "cell" will always be the correct size while "int" might not be. Generally with SA-MP plugins, this typedef will always be a 32bit integer. **Note:** There is also a "ucell" typedef for unsigned integers, but this is hardly used.                                                 |
+| **cell**                    | A `cell` is a typedef that is simply there for portability. PAWN offers support for 16bit, 32bit, and 64bit integers. The typedef `cell` will always be the correct size while `int` might not be. Generally with SA-MP plugins, this typedef will always be a 32bit integer. **Note:** There is also a `ucell` typedef for unsigned integers, but this is hardly used.                                                 |
 | **AMX_NATIVE_CALL**         | This defines the calling convention that our native functions will use. At the moment its defined to nothing, so the default will be used.                                                                                                                                                                                                                                                                              |
 | **AMX**                     | The name of this structure should be pretty clear, its an AMX instance. This structure has tons of information relating to the data segments along with tons of other amx related information. This structure must be present in all native function declarations along with a cell pointer to the passed parameters; Without this info we dont know what script is calling our native, nor do we know what was passed. |
-| **PLUGIN_EXPORT**           | This is defined as "PLUGIN_EXTERN_C".                                                                                                                                                                                                                                                                                                                                                                                   |
+| **PLUGIN_EXPORT**           | This is defined as `PLUGIN_EXTERN_C`.                                                                                                                                                                                                                                                                                                                                                                                   |
 | **PLUGIN_EXTERN_C**         | If using a C++ compiler this is defined as "extern "C"". This is for compatibility with C. C++ offers things like function overloading so additional information like the number/size of arguments is stored with the function's name, this is refered to as "name mangling". When this define is used, it tells C++ to use C-style linkage and thus avoids C++ name mangling.                                          |
 | **PLUGIN_CALL**             | This define tells C/++ what calling convention to use for our exported functions. If you use a compiler targeting windows, this is defined as \_\_stdcall. Otherwise its defined as nothing and the default convention is used.                                                                                                                                                                                         |
-| **SUPPORTS_VERSION**        | This define is to be used in a bit mask that is returned by our "Supports()" function. This flag is used to check for compatibility with the server.                                                                                                                                                                                                                                                                    |
-| **SUPPORTS_AMX_NATIVES**    | This is yet another define that is to be used by our "Supports()" function. Any plugin that uses AMX functions must use this flag! Without this flag you'll get a run time 19 error due to your natives not registering with the server (amx_Register).                                                                                                                                                                 |
-| **SUPPORTS_PROCESS_TICK**   | Our last flag for our "Supports()" function. If you're going to be using the "ProcessTick()" function, you have to add this to our "Supports()" function's returned bit mask.                                                                                                                                                                                                                                           |
+| **SUPPORTS_VERSION**        | This define is to be used in a bit mask that is returned by our `Supports()` function. This flag is used to check for compatibility with the server.                                                                                                                                                                                                                                                                    |
+| **SUPPORTS_AMX_NATIVES**    | This is yet another define that is to be used by our `Supports()` function. Any plugin that uses AMX functions must use this flag! Without this flag you'll get a run time 19 error due to your natives not registering with the server (amx_Register).                                                                                                                                                                 |
+| **SUPPORTS_PROCESS_TICK**   | Our last flag for our `Supports()` function. If you're going to be using the `ProcessTick()` function, you have to add this to our `Supports()` function's returned bit mask.                                                                                                                                                                                                                                           |
 | **PLUGIN_DATA_AMX_EXPORTS** | This is used as an index to the multidimensional array that gets passed on Load. This particular index holds the AMX function table. All plugins must use this index to assign the address of the function table to pAMXFunctions.                                                                                                                                                                                      |
 | **PLUGIN_DATA_LOGPRINTF**   | Yet another index that is to be used with the multidimensional array that gets passed on Load. This index holds the address of the logprintf function which prints information and saves said information to the server's log file. If your plugin uses this function you must use this index to assign the address to the logprintf function pointer.                                                                  |
 | **AMX_NATIVE_INFO**         | This struct is used in conjunction with amx_Register. It contains a string that holds your new native's name, and a pointer to it's address.                                                                                                                                                                                                                                                                            |
@@ -273,7 +273,7 @@ amx_Allot allocates memory cells inside the abstract machine and it returns two 
 
 ## amx_ctof
 
-\- Cast “cell” to “float”
+\- Cast `cell` to `float`
 
 ### Syntax
 
@@ -283,11 +283,11 @@ amx_Allot allocates memory cells inside the abstract machine and it returns two 
 
 | Parameter | Description                                    |
 | --------- | ---------------------------------------------- |
-| **c**     | The value to cast from “cell” type to “float”. |
+| **c**     | The value to cast from `cell` type to `float`. |
 
 **Returns:** The same bit pattern, but now as a floating point type.
 
-**Notes:** This macro casts a “cell” type into a “float” type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in IEEE 754 format comes closest to the original integer value. The pawn parser and abstract machine store floating point values in a cell — when retrieving a floating point value from a cell, the bit pattern must not be changed.
+**Notes:** This macro casts a `cell` type into a `float` type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in IEEE 754 format comes closest to the original integer value. The pawn parser and abstract machine store floating point values in a cell — when retrieving a floating point value from a cell, the bit pattern must not be changed.
 
 **See also:** [amx_ftoc](#amx_ftoc)
 
@@ -304,7 +304,7 @@ amx_Allot allocates memory cells inside the abstract machine and it returns two 
 | Parameter  | Description                                                                                                                                                                                                                                   |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **amx**    | The abstract machine from which to call a function.                                                                                                                                                                                           |
-| **retval** | Will hold the return value of the called function uponreturn. This parameter may be NULL if you are notinterested in the return value.                                                                                                        |
+| **retval** | Will hold the return value of the called function uponreturn. This parameter may be `NULL` if you are notinterested in the return value.                                                                                                      |
 | **index**  | An index into the “public function table”; it indicatesthe function to execute. See amx_FindPublic formoreinformation. Use AMX_EXEC_MAIN to start executingat the main function, and AMX_EXEC_CONT to continueexecution from a “sleep state”. |
 
 **Notes:** This function runs the script, starting at the indicated function. It calls the callback function for any native function call that the code in the amx makes. amx_Exec assumes that all native functions are correctly initialized with amx_Register.
@@ -331,7 +331,7 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 ## amx_ftoc
 
-\- Cast “float” to “cell”
+\- Cast `float` to `cell`
 
 ### Syntax
 
@@ -341,11 +341,11 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 
 | Parameter | Description                                    |
 | --------- | ---------------------------------------------- |
-| **f**     | The value to cast from “float” type to “cell”. |
+| **f**     | The value to cast from `float` type to `cell`. |
 
-**Returns:** The same bit pattern, but now as a “cell” type.
+**Returns:** The same bit pattern, but now as a `cell` type.
 
-**Notes:** This macro casts a “float” type into a “cell” type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in integer format is the integral (truncated) value of the original rational value. The pawn parser and abstract machine store floating point values in a cell —when storing a floating point value in a cell, the bit pattern must not be changed.
+**Notes:** This macro casts a `float` type into a `cell` type without changing the bit pattern. A normal type cast in C/C++ changes the memory representation of the expression so that its numeric value in integer format is the integral (truncated) value of the original rational value. The pawn parser and abstract machine store floating point values in a cell —when storing a floating point value in a cell, the bit pattern must not be changed.
 
 **See also:** [amx_ctof](#amx_ctof)
 
@@ -359,11 +359,11 @@ int amx_FindPublic(AMX *amx, char *funcname, int *index);
 int amx_GetAddr(AMX *amx,cell amx_addr,cell **phys_addr);
 ```
 
-| Parameter     | Description                                                                                                                                                                                    |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **amx**       | The abstract machine.                                                                                                                                                                          |
-| **amx_addr**  | The address relative to the abstract machine.                                                                                                                                                  |
-| **phys_addr** | A pointer to the variable that will hold the memoryaddress of the indicated cell. If the amx_addr parame-ter is not a valid address inside the abstract machine,phys_addr will be set to NULL. |
+| Parameter     | Description                                                                                                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **amx**       | The abstract machine.                                                                                                                                                                            |
+| **amx_addr**  | The address relative to the abstract machine.                                                                                                                                                    |
+| **phys_addr** | A pointer to the variable that will hold the memoryaddress of the indicated cell. If the amx_addr parame-ter is not a valid address inside the abstract machine,phys_addr will be set to `NULL`. |
 
 **Notes:** This function returns the memory address of an address in the abstract machine. One typically uses this function in an extension module, because it allows you to access variables inside the abstract machine.
 
@@ -417,13 +417,13 @@ int amx_Push(AMX *amx, cell value);
 int amx_PushArray(AMX *amx, cell *amx_addr, cell **phys_addr, const cell array[], int numcells);
 ```
 
-| Parameter     | Description                                                                                                                                                              |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **amx**       | The abstract machine.                                                                                                                                                    |
-| **amx_addr**  | The address of the allocated cell as the pawn program (that runs in the abstract machine) can access it, needed to release the memory block. This parameter may be NULL. |
-| **phys_addr** | The address of the cell for C/C++ programs to access. This parameter may be NULL.                                                                                        |
-| **array**     | The array of values to pass to the public function. A single cell that must be passed by-reference is regarded as a single-cell array.                                   |
-| **numcells**  | The number of elements in the array.                                                                                                                                     |
+| Parameter     | Description                                                                                                                                                                |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **amx**       | The abstract machine.                                                                                                                                                      |
+| **amx_addr**  | The address of the allocated cell as the pawn program (that runs in the abstract machine) can access it, needed to release the memory block. This parameter may be `NULL`. |
+| **phys_addr** | The address of the cell for C/C++ programs to access. This parameter may be `NULL`.                                                                                        |
+| **array**     | The array of values to pass to the public function. A single cell that must be passed by-reference is regarded as a single-cell array.                                     |
+| **numcells**  | The number of elements in the array.                                                                                                                                       |
 
 **Notes:** Any parameters to a public function must be pushed to the function before calling amx_Exec. If a public function has multiple arguments, the arguments must be pushed int reverse order. The function allocates memory for the array inside the “heap” of the abstract machine. This memory must be freed with amx_Release. See function amx_Allot for details on the parameters amx_addr and phys_addr.
 
@@ -442,8 +442,8 @@ int amx PushString(AMX *amx, cell *amx_addr, cell **phys_addr, const char *strin
 | Parameter     | Description                                                                                                                                                                      |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **amx**       | The abstract machine.                                                                                                                                                            |
-| **amx_addr**  | The address of the allocated cell as the pawn program (that runs in the abstract machine) can access it, needed to release the memory block. This parameter may be NULL.         |
-| **phys_addr** | The address of the cell for C/C++ programs to access. This parameter may be NULL.                                                                                                |
+| **amx_addr**  | The address of the allocated cell as the pawn program (that runs in the abstract machine) can access it, needed to release the memory block. This parameter may be `NULL`.       |
+| **phys_addr** | The address of the cell for C/C++ programs to access. This parameter may be `NULL`.                                                                                              |
 | **string**    | The string to pass to the public function.                                                                                                                                       |
 | **pack**      | Non-zero to convert the source string to a packed string in the abstract machine, zero to convert the source string to a cell string.                                            |
 | **use_wchar** | A non-zero value interprets the string argument as a pointer to “wide characters” i.e. wchar_t, regardless of its char type. This allows the function to accept Unicode strings. |
@@ -462,15 +462,15 @@ int amx PushString(AMX *amx, cell *amx_addr, cell **phys_addr, const char *strin
 int amx Register(AMX *amx, AMX NATIVE INFO *list, int number);
 ```
 
-| Parameter  | Description                                                                                                                                                                                        |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **amx**    | The abstract machine.                                                                                                                                                                              |
-| **list**   | An array with structures where each structure holdsa pointer to the name of a native function and a function pointer. The list is optionally terminated with astructure holding two NULL pointers. |
-| **number** | The number of structures in the list array, or -1 if thelist ends with a structure holding two NULL pointers.                                                                                      |
+| Parameter  | Description                                                                                                                                                                                          |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **amx**    | The abstract machine.                                                                                                                                                                                |
+| **list**   | An array with structures where each structure holdsa pointer to the name of a native function and a function pointer. The list is optionally terminated with astructure holding two `NULL` pointers. |
+| **number** | The number of structures in the list array, or -1 if thelist ends with a structure holding two `NULL` pointers.                                                                                      |
 
-**Notes:** On success, this function returns 0 (AMX_ERR_NONE). If this function returns the error code AMX_ERR_NOTFOUND, one or more native functions that are used by the pawn program are not found in the provided list. You can call amx_Register again to register additional function lists.
+**Notes:** On success, this function returns 0 (`AMX_ERR_NONE`). If this function returns the error code `AMX_ERR_NOTFOUND`, one or more native functions that are used by the pawn program are not found in the provided list. You can call amx_Register again to register additional function lists.
 
-To check whether all native functions used in the compiled script have been registered, call amx_Register with the parameter list set to NULL. This call will not register any new native functions, but still return AMX_ERR_NOTFOUND if any native function is unregistered.
+To check whether all native functions used in the compiled script have been registered, call amx_Register with the parameter list set to `NULL`. This call will not register any new native functions, but still return `AMX_ERR_NOTFOUND` if any native function is unregistered.
 
 **See also:** amx_NativeInfo+
 
@@ -531,7 +531,7 @@ int amx_StrLen(const cell *cstring, int *length);
 | **cstring** | The string in the abstract machine.                     |
 | **length**  | This parameter will hold the string length upon return. |
 
-**Notes:** This function determines the length in characters of the string, not including the zero-terminating character (or cell). A packed string occupies less cells than its number if characters. If the cstring parameter is NULL, the length parameter is set to zero (0) and the function returns with an error code. For converting unpacked strings to UTF-8, function amx_UTF8Len may be more convenient.
+**Notes:** This function determines the length in characters of the string, not including the zero-terminating character (or cell). A packed string occupies less cells than its number if characters. If the cstring parameter is `NULL`, the length parameter is set to zero (0) and the function returns with an error code. For converting unpacked strings to UTF-8, function amx_UTF8Len may be more convenient.
 
 **See also:** [amx_GetAddr](#amx_getaddr), [amx_GetString](#amx_getstring), [amx_SetString](#amx_setstring), [amx_StrParam](#amx_strparam), amx_UTF8Len+
 
@@ -822,7 +822,7 @@ Before we can start calling SA-MP natives, we have to setup Invoke. The first th
 - Allocate memory for the invoke instance under Load.
 - Push back the amx_list member variable every time a new AMX instance is loaded under AmxLoad.
 - Every time a script gets unloaded, iterate through Invoke's amx_list, find the unloaded AMX instance, and erase it under AmxUnload.
-- Create a native that calls Invoke's "getAddresses" member function for PAWN to use when a filterscript or gamemode is loaded that uses our plugin.
+- Create a native that calls Invoke's `getAddresses` member function for PAWN to use when a filterscript or gamemode is loaded that uses our plugin.
 
 Thats about it for getting invoke setup for your plugin. The only thing left to do is to add the public PAWN function found in the invoke package (the txt file we spoke of earlier) to your plugin's include, and use the native from the last setup step when a script is loaded. Anyone who will be creating plugins for public release, i encourage you to look into THIS post. It allows for a clean seamless "hook" of the OnGameModeInit/OnFilterScriptInit callbacks so you can register SA-MP's native addresses while not forcing the end user to add a function into those callbacks themselves.
 
@@ -832,7 +832,7 @@ Thats about it for getting invoke setup for your plugin. The only thing left to 
 
 Sadly invoke isnt magic, and does require maintenance to add new natives or remove deprecated ones. The version from the previous section has all the natives from the 0.2.2 version of SA-MP, so its missing all the newer functions. For these two reasons i decided to add this section! If someone is nice enough to add all the missing natives i will update the invoke package and include them in the credits- if not, i suggest adding natives on an as needed basis.
 
-Inside of the invoke header you should see a big array of function names (the array is appropriately called "name") and a lot of static "Native" structure declarations. To add a native you simply have to add its name to the array of names, and declare a Native structure with the appropriate information- name, and parameter specifiers. There are a lot of available parameter specifiers available to use:
+Inside of the invoke header you should see a big array of function names (the array is appropriately called `name`) and a lot of static "Native" structure declarations. To add a native you simply have to add its name to the array of names, and declare a Native structure with the appropriate information- name, and parameter specifiers. There are a lot of available parameter specifiers available to use:
 
 ```cpp
 i = integer
@@ -846,7 +846,7 @@ p = string var (GetPlayerName etc.)
 
 #### Calling natives
 
-Invoke uses the variadic member function appropriately named "callNative" to call natives. The parameters for this function are a pointer to a Native structure (see previous section) containing info on the native function, and an ellipsis for all the parameters for said native function. The function returns the return value of the native that is being called. Here is an example function that calls multiple natives, with differing parameter types (int, reference, and string var).
+Invoke uses the variadic member function appropriately named `callNative` to call natives. The parameters for this function are a pointer to a Native structure (see previous section) containing info on the native function, and an ellipsis for all the parameters for said native function. The function returns the return value of the native that is being called. Here is an example function that calls multiple natives, with differing parameter types (int, reference, and string var).
 
 ```cpp
 //This function demonstrates: how to use invoke to call SA-MP natives.
@@ -880,7 +880,7 @@ cell AMX_NATIVE_CALL WhereIsPlayer(AMX* amx, cell* params)
 
 Using the invoke method, there is no 100% transparent hooking method when it comes to callbacks. Plugins that want to hook callbacks that are using invoke have go through PAWN to do so. You can create a native function that you can call inside the PAWN callback you wish to hook, and use that native as a sort of pseudo callback. You can do this in a manner that requires no work on the end user by using the ALS hooking method.
 
-The first step is obviously creating the native (remember to add it to our list of natives to register, and also add it in your include later on). The callback i decided to hook is OnPlayerConnect, so im gonna write a native function that has the same arguments as the callback, and then add the code that requires the callback (in this case a little joke).
+The first step is obviously creating the native (remember to add it to our list of natives to register, and also add it in your include later on). The callback i decided to hook is `OnPlayerConnect`, so im gonna write a native function that has the same arguments as the callback, and then add the code that requires the callback (in this case a little joke).
 
 ```cpp
 //This function demonstrates: how to write a native to act as a callback.
@@ -902,7 +902,7 @@ cell AMX_NATIVE_CALL TEST_Hook_OnPlayerConnnect(AMX* amx, cell* params)
 }
 ```
 
-TEST_Hook_OnPlayerConnnect will now act as our plugin's OnPlayerConnect callback. Since our plugin's name is "Test" and its rather short i decided to let that act as our prefix for hooking. You generally want something unique for your prefixes so you dont collide with other people's plugins/includes. **Note:** We still have to call this function from PAWN using the ALS method we spoke of earlier for user convenience. Since Y_Less does a great job of explaining the ALS method, there's really no point for me to go into details about it, i will simply provide hooking example for our TEST_Hook_OnPlayerConnect callback. This should be put in your plugins include file.
+TEST_Hook_OnPlayerConnnect will now act as our plugin's `OnPlayerConnect` callback. Since our plugin's name is "Test" and its rather short i decided to let that act as our prefix for hooking. You generally want something unique for your prefixes so you dont collide with other people's plugins/includes. **Note:** We still have to call this function from PAWN using the ALS method we spoke of earlier for user convenience. Since Y_Less does a great job of explaining the ALS method, there's really no point for me to go into details about it, i will simply provide hooking example for our TEST_Hook_OnPlayerConnect callback. This should be put in your plugins include file.
 
 ```cpp
 public OnPlayerConnect(playerid)

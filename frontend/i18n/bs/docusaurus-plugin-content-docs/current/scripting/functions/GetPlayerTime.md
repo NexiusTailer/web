@@ -7,7 +7,7 @@ tags: ["player"]
 
 ## Deskripcija
 
-Doznajte trenutno igračevo vrijeme igre. Postavlja SetWorldTime ili vraća vrijeme igre automatski ako se koristi TogglePlayerClock.
+Doznajte trenutno igračevo vrijeme igre. Postavlja `SetWorldTime` ili vraća vrijeme igre automatski ako se koristi `TogglePlayerClock`.
 
 | Ime      | Deskripcija                                             |
 | -------- | ------------------------------------------------------- |

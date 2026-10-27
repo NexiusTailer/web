@@ -7,7 +7,7 @@ tags: ["player", "textdraw", "playertextdraw"]
 
 ## Опис
 
-Ова функција се позива када играч кликне на текстдрава играча. Не позива се када играч откаже режим селекције (ESC) - међутим, OnPlayerClickTextDraw јесте.
+Ова функција се позива када играч кликне на текстдрава играча. Не позива се када играч откаже режим селекције (ESC) - међутим, `OnPlayerClickTextDraw` јесте.
 
 | Име                     | Опис                                        |
 | ----------------------- | ------------------------------------------- |
@@ -69,7 +69,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 
 :::warning
 
-Када играч притисне ESC да откаже избор текстдрава, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) се позива са ID-ом текстдрава 'INVALID_TEXT_DRAW'. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) такође неће бити позвана.
+Када играч притисне ESC да откаже избор текстдрава, [OnPlayerClickTextDraw](OnPlayerClickTextDraw) се позива са ID-ом текстдрава `INVALID_TEXT_DRAW`. [OnPlayerClickPlayerTextDraw](OnPlayerClickPlayerTextDraw) такође неће бити позвана.
 
 :::
 

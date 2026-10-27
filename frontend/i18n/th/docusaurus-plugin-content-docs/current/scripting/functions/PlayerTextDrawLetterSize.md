@@ -32,24 +32,24 @@ PlayerTextDrawLetterSize(playerid, MyTextDraw, 3.2, 5.1);
 :::tip
 
 - When using this function purely for the benefit of affecting the textdraw box, multiply 'Y' by 0.135 to convert to TextDrawTextSize-like measurements
-- Fonts appear to look the best with an X to Y ratio of 1 to 4 (e.g. if x is 0.5 then y should be 2).
+- Fonts appear to look the best with an X to Y ratio of 1 to 4 (e.g. if `x` is 0.5 then `y` should be 2).
 
 :::
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- CreatePlayerTextDraw: Create a player-textdraw.
-- PlayerTextDrawDestroy: Destroy a player-textdraw.
-- PlayerTextDrawColor: Set the color of the text in a player-textdraw.
-- PlayerTextDrawBoxColor: Set the color of a player-textdraw's box.
-- PlayerTextDrawBackgroundColor: Set the background color of a player-textdraw.
-- PlayerTextDrawAlignment: Set the alignment of a player-textdraw.
-- PlayerTextDrawFont: Set the font of a player-textdraw.
-- PlayerTextDrawTextSize: Set the size of a player-textdraw box (or clickable area for PlayerTextDrawSetSelectable).
-- PlayerTextDrawSetOutline: Toggle the outline on a player-textdraw.
-- PlayerTextDrawSetShadow: Set the shadow on a player-textdraw.
-- PlayerTextDrawSetProportional: Scale the text spacing in a player-textdraw to a proportional ratio.
-- PlayerTextDrawUseBox: Toggle the box on a player-textdraw.
-- PlayerTextDrawSetString: Set the text of a player-textdraw.
-- PlayerTextDrawShow: Show a player-textdraw.
-- PlayerTextDrawHide: Hide a player-textdraw.
+- `CreatePlayerTextDraw`: Create a player-textdraw.
+- `PlayerTextDrawDestroy`: Destroy a player-textdraw.
+- `PlayerTextDrawColor`: Set the color of the text in a player-textdraw.
+- `PlayerTextDrawBoxColor`: Set the color of a player-textdraw's box.
+- `PlayerTextDrawBackgroundColor`: Set the background color of a player-textdraw.
+- `PlayerTextDrawAlignment`: Set the alignment of a player-textdraw.
+- `PlayerTextDrawFont`: Set the font of a player-textdraw.
+- `PlayerTextDrawTextSize`: Set the size of a player-textdraw box (or clickable area for `PlayerTextDrawSetSelectable`).
+- `PlayerTextDrawSetOutline`: Toggle the outline on a player-textdraw.
+- `PlayerTextDrawSetShadow`: Set the shadow on a player-textdraw.
+- `PlayerTextDrawSetProportional`: Scale the text spacing in a player-textdraw to a proportional ratio.
+- `PlayerTextDrawUseBox`: Toggle the box on a player-textdraw.
+- `PlayerTextDrawSetString`: Set the text of a player-textdraw.
+- `PlayerTextDrawShow`: Show a player-textdraw.
+- `PlayerTextDrawHide`: Hide a player-textdraw.

@@ -11,7 +11,7 @@ This function allows you to read data from a file, without encoding and line ter
 
 | Name                   | Description                           |
 | ---------------------- | ------------------------------------- |
-| File:handle            | File handle to use, opened by fopen() |
+| File:handle            | File handle to use, opened by `fopen` |
 | buffer                 | The buffer to save the read data in.  |
 | size = sizeof (buffer) | The number of cells to read.          |
 

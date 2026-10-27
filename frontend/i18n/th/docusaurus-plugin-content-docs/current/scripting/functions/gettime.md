@@ -7,7 +7,7 @@ tags: []
 
 ## คำอธิบาย
 
-Get the current server time, which will be stored in the variables &hour, &minute and &second.
+Get the current server time, which will be stored in the variables `&hour`, `&minute` and `&second`.
 
 | Name      | Description                                                |
 | --------- | ---------------------------------------------------------- |
@@ -38,4 +38,4 @@ This function is useful for measuring time intervals by using its timestamp char
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- getdate: Get the current date of the server.
+- `getdate`: Get the current date of the server.

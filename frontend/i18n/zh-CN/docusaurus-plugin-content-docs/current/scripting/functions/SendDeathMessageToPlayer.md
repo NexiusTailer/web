@@ -12,7 +12,7 @@ tags: ["玩家"]
 | 参数名   | 说明                                                                                            |
 | -------- | ----------------------------------------------------------------------------------------------- |
 | playerid | 接收死亡信息的玩家 ID                                                                           |
-| killer   | 凶手玩家 ID（可使用 INVALID_PLAYER_ID 表示无凶手）                                              |
+| killer   | 凶手玩家 ID（可使用 `INVALID_PLAYER_ID` 表示无凶手）                                            |
 | killee   | 死亡玩家的 ID                                                                                   |
 | weapon   | 死亡原因（不一定是武器 ID），可使用特殊图标（ICON_CONNECT 连接图标和 ICON_DISCONNECT 断开图标） |
 

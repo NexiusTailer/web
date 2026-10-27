@@ -35,7 +35,7 @@ public OnGameModeInit()
 
 :::warning
 
-Ako je text[] prazan, server/client-i pored texta će možda crashovati.
+Ako je `text[]` prazan, server/client-i pored texta će možda crashovati.
 
 :::
 

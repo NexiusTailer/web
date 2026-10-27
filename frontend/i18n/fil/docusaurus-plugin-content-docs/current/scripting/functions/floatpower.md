@@ -16,7 +16,7 @@ Itinataas ang ibinigay na halaga sa kapangyarihan ng exponent.
 
 ## Returns
 
-Ang resulta ng 'value' sa power ng 'exponent'.
+Ang resulta ng `value` sa power ng `exponent`.
 
 ## Examples
 

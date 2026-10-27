@@ -39,4 +39,4 @@ This does not affect normal fist attacks - only special/secondary attacks (aim +
 
 ## ฟังก์ชั่นที่เกี่ยวข้องกัน
 
-- GetPlayerFightingStyle: Get a player's fighting style.
+- `GetPlayerFightingStyle`: Get a player's fighting style.

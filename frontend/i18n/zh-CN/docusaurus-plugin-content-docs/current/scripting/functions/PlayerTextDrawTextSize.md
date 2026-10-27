@@ -9,12 +9,12 @@ tags: ["玩家", "文本绘图", "玩家文本绘图"]
 
 设置玩家文本绘图的尺寸（当启用[PlayerTextDrawUseBox](PlayerTextDrawUseBox)时的方框尺寸，或用于[PlayerTextDrawSetSelectable](PlayerTextDrawSetSelectable)的可点击区域）
 
-| 参数              | 说明                                                                  |
-| ----------------- | --------------------------------------------------------------------- |
-| playerid          | 要设置尺寸的玩家 ID                                                   |
-| PlayerText:textid | 要设置尺寸的玩家文本绘图的 ID                                         |
-| Float:width       | X 轴尺寸（左右方向），遵循与 TextDrawCreate 相同的 640x480 网格坐标系 |
-| Float:height      | Y 轴尺寸（上下方向），遵循与 TextDrawCreate 相同的 640x480 网格坐标系 |
+| 参数              | 说明                                                                    |
+| ----------------- | ----------------------------------------------------------------------- |
+| playerid          | 要设置尺寸的玩家 ID                                                     |
+| PlayerText:textid | 要设置尺寸的玩家文本绘图的 ID                                           |
+| Float:width       | X 轴尺寸（左右方向），遵循与 `TextDrawCreate` 相同的 640x480 网格坐标系 |
+| Float:height      | Y 轴尺寸（上下方向），遵循与 `TextDrawCreate` 相同的 640x480 网格坐标系 |
 
 ## 返回值
 
@@ -42,7 +42,7 @@ public OnPlayerConnect(playerid)
 坐标含义根据对齐方式变化：
 
 - 对齐方式 1（左对齐）: width/height 表示方框右边界绝对坐标
-- 对齐方式 2（居中）: 需交换 width/height 参数，width 表示方框总宽度
+- 对齐方式 2（居中）: 需交换 width/height 参数，`width` 表示方框总宽度
 - 对齐方式 3（右对齐）: width/height 表示方框左边界起始坐标
 
 特殊字体处理：
@@ -51,7 +51,7 @@ public OnPlayerConnect(playerid)
 
 坐标系原点：
 
-- 方框坐标系原点位于 TextDrawCreate 坐标点向下 10.0 单位、向右 5.0 单位的位置
+- 方框坐标系原点位于 `TextDrawCreate` 坐标点向下 10.0 单位、向右 5.0 单位的位置
 
 交互区域定义：
 
