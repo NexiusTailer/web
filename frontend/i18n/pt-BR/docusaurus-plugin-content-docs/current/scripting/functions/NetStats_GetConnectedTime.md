@@ -18,7 +18,7 @@ Obtém a quantidade de tempo (em milissegundos) durante a qual um jogador esteve
 
 Esta função retorna a quantidade de tempo (em milissegundos) que um jogador esteve conectado ao servidor.
 
-0 é retornado se o jogador não estiver conectado.
+**0** é retornado se o jogador não estiver conectado.
 
 ## Exemplos
 
@@ -53,4 +53,4 @@ O valor de retorno não é zerado após alterar o modo de jogo (usando o comando
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Obtenha o número de mensagens de rede que o servidor recebeu do jogador no último segundo.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Obtenha a porcentagem de perda de pacotes de um jogador.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Obtenha o status de conexão de um jogador.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP e a porta de um jogador.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP **e a porta** de um jogador.

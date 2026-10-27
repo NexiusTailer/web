@@ -43,4 +43,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_BytesSent](NetStats_BytesSent): Dohvatite količinu informacija (u bajtovima) koje je poslužitelj poslao uređaju za reprodukciju.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Dobijte packet loss procenat igrača.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Dohvatite status veze igrača.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu i port igrača.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu **i port** igrača.

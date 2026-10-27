@@ -64,7 +64,7 @@ public OnPlayerUpdate(playerid)
 :::tip
 
 Bu fonksiyon oyuncunun aktöre bakıp bakmadığı kontrol eder.
-Eğer tam anlamıyla oyuncunun nişan alıp almadığını kontrol etmek için GetPlayerTargetActor fonksiyonunu kullanmanız gerekir.
+Eğer tam anlamıyla oyuncunun **nişan alıp almadığını** kontrol etmek için GetPlayerTargetActor fonksiyonunu kullanmanız gerekir.
 
 :::
 

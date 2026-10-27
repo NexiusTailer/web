@@ -22,5 +22,5 @@ public OnRecordingPlaybackEnd()
 
 Các hàm sau có thể hữu ích, vì chúng liên quan đến callback này theo một cách nào đó.
 
-- [StartRecordingPlayback](../functions/StartRecordingPlayback): Bắt đầu phát lại một tập tin .rec đã được ghi lại.
-- [StopRecordingPlayback](../functions/StopRecordingPlayback): Dừng phát lại một tập tin .rec.
+- [StartRecordingPlayback](../functions/StartRecordingPlayback): Bắt đầu phát lại một tập tin _.rec_ đã được ghi lại.
+- [StopRecordingPlayback](../functions/StopRecordingPlayback): Dừng phát lại một tập tin _.rec_.

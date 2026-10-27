@@ -58,7 +58,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_BytesSent](NetStats_BytesSent): 获取服务器发送的字节总数
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): 获取每秒接收的消息数量
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): 获取玩家丢包率百分比
-- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家 IP 地址与端口号
+- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家 IP 地址**与端口号**
 - [IsPlayerConnected](IsPlayerConnected): 检测玩家是否在线
 
 ## 相关回调

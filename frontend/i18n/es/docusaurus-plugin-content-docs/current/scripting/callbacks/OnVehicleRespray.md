@@ -45,7 +45,7 @@ Solución acá: https://pastebin.com/G81da7N1
 
 :::warning
 
-Bugs Conocidos: La vista previa de un componente dentro de una tienda de modificación podría llamar a este callback.
+**Bugs Conocidos:** La vista previa de un componente dentro de una tienda de modificación podría llamar a este callback.
 
 :::
 

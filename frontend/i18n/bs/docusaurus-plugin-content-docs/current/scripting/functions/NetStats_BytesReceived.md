@@ -15,7 +15,7 @@ Gets the amount of data (in bytes) that the server has received from the player.
 
 ## Returns
 
-This function returns the number of bytes the server has received from the player. 0 is returned if the Igrač nije konektovan.
+This function returns the number of bytes the server has received from the player. **0** is returned if the Igrač nije konektovan.
 
 ## Primjeri
 
@@ -43,4 +43,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Dohvatite broj mrežnih poruka koje je poslužitelj primio od igrača u posljednjoj sekundi.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Dobijte packet loss procenat igrača.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Dohvatite status veze igrača.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu i port igrača.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu **i port** igrača.

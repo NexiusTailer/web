@@ -16,7 +16,7 @@ Converta uma string em um número inteiro.
 
 ## Retornos
 
-O valor inteiro da string. '0 se a string não for numérica.
+O valor inteiro da string. '_0_ se a string não for numérica.
 
 ## Exemplos
 

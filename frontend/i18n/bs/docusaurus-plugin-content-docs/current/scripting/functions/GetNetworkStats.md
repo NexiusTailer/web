@@ -16,7 +16,7 @@ Funkcija koja dobiva mrežne statistike servera i pohranjuje ih u string (niz).
 
 ## Returns
 
-Ova funkcija uvijek returna (vraća) 1.
+Ova funkcija uvijek returna (vraća) **1**.
 
 ## Primjeri
 
@@ -64,4 +64,4 @@ KBits per second received: 2.7
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Dobij broj mrežnih poruka koje je server primio od igrača u posljednjoj sekundi.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Dobij procenat gubitka paketa (packet loss) igrača.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Dobij status veze igrača.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Dobij IP i port igrača.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Dobij IP **i port** igrača.

@@ -18,7 +18,7 @@ Obtém a quantidade de dados (em bytes) que o servidor recebeu do jogador.
 
 Esta função retorna o número de bytes que o servidor recebeu do jogador.
 
-0 é retornado se o jogador não estiver conectado.
+**0** é retornado se o jogador não estiver conectado.
 
 ## Exemplos
 
@@ -45,4 +45,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Obtenha o número de mensagens de rede que o servidor recebeu do jogador no último segundo.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Obtenha a porcentagem de perda de pacotes de um jogador.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): Obtenha o status de conexão de um jogador.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP e a porta de um jogador.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Obtenha o IP **e a porta** de um jogador.

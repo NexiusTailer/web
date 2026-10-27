@@ -16,7 +16,7 @@ tags: []
 
 ## 返回值
 
-此函数固定返回 1。
+此函数固定返回 **1**。
 
 ## 示例代码
 
@@ -66,4 +66,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): 获取服务器每秒从玩家接收的消息数量
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): 获取玩家的数据包丢失率
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): 获取玩家的连接状态
-- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家的 IP 地址和端口
+- [NetStats_GetIpPort](NetStats_GetIpPort): 获取玩家的 IP 地址**和端口**

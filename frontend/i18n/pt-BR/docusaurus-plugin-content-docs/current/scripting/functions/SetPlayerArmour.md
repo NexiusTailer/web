@@ -13,7 +13,7 @@ Defina o nível de armadura de um jogador.
 | Nome | Descrição |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid | O ID do jogador para definir a armadura.                                                                                              |
-| Float:armour | A quantidade de armadura a ser definida, como porcentagem (flutuante). Valores maiores que 100 são válidos, mas não serão exibidos na barra de blindagem do HUD. |
+| Float:armour | A quantidade de armadura a ser definida, como porcentagem (flutuante). Valores maiores que 100 são _válidos_, mas não serão exibidos na barra de blindagem do HUD. |
 
 ## Retornos
 

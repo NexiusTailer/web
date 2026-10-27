@@ -44,7 +44,7 @@ Código para conserto: https://pastebin.com/G81da7N1
 
 :::warning
 
-Bug(s) Notados: Visualizar certos componentes dentro da Garagem de Personalização podem chamar essa callback sem querer.
+**Bug(s) Notados:** Visualizar certos componentes dentro da Garagem de Personalização podem chamar essa callback sem querer.
 
 :::
 

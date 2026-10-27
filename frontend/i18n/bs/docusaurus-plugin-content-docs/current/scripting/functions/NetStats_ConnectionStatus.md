@@ -43,7 +43,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_BytesSent](NetStats_BytesSent): Dohvatite količinu informacija (u bajtovima) koje je poslužitelj poslao uređaju za reprodukciju.
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): Dohvatite broj mrežnih poruka koje je poslužitelj primio od igrača u posljednjoj sekundi.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): Dobijte packet loss procenat igrača.
-- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu i port igrača.
+- [NetStats_GetIpPort](NetStats_GetIpPort): Nabavite IP adresu **i port** igrača.
 - [IsPlayerConnected](IsPlayerConnected): Provjerava da li je igrač konektovan na server.
 - [OnPlayerConnect](../callbacks/OnPlayerConnect): Pozvano kada se igrač konektuje na server.
 - [OnPlayerDisconnect](../callbacks/OnPlayerDisconnect): Pozvano kada igrač napusti server.

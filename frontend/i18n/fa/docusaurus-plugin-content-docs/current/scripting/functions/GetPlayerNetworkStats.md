@@ -17,7 +17,7 @@ tags: ["player", "network monitoring"]
 
 ## مقادیر برگشتی
 
-این تابع همیشه 1 برمی‌گرداند.
+این تابع همیشه **1** برمی‌گرداند.
 
 ## مثال‌ها
 
@@ -53,4 +53,4 @@ public OnPlayerCommandText(playerid, cmdtext[])
 - [NetStats_MessagesRecvPerSecond](NetStats_MessagesRecvPerSecond): دریافت تعداد پیام‌های شبکه دریافت شده از بازیکن در ثانیه گذشته.
 - [NetStats_PacketLossPercent](NetStats_PacketLossPercent): دریافت درصد از دست رفتن بسته بازیکن.
 - [NetStats_ConnectionStatus](NetStats_ConnectionStatus): دریافت وضعیت اتصال بازیکن.
-- [NetStats_GetIpPort](NetStats_GetIpPort): دریافت IP و پورت بازیکن.
+- [NetStats_GetIpPort](NetStats_GetIpPort): دریافت IP **و پورت** بازیکن.

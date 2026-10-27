@@ -39,7 +39,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 
 :::tip
 
-- 使用未连接的有效玩家 ID 可以清除死亡信息
+- 使用**未连接**的有效玩家 ID 可以清除死亡信息
 - 需向单个玩家显示死亡信息时请使用[SendDeathMessageToPlayer](SendDeathMessageToPlayer)
 - 可通过 NPC 创建自定义死亡原因
 
