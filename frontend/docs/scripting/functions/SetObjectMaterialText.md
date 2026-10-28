@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
+You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 Text does not update after 16 calls against the same object.
 
 :::

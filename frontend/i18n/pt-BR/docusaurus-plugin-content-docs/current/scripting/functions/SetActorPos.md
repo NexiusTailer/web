@@ -20,9 +20,9 @@ Define a posição de um ator.
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: A função falhou ao ser executada. O ator especificado não existe.
+**0**: A função falhou ao ser executada. O ator especificado não existe.
 
 ## Exemplos
 

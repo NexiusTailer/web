@@ -17,9 +17,9 @@ Esta callback é chamada quando um jogador morre, tanto por suicídio ou por ser
 
 ## Retorno
 
-1 - Irá previnir que outro filterscript receba esta callback.
+**1** - Irá previnir que outro filterscript receba esta callback.
 
-0 - Indica que esta callback será passada para o próximo filterscript.
+**0** - Indica que esta callback será passada para o próximo filterscript.
 
 Sempre é chamada primeiro em filterscripts.
 
@@ -52,7 +52,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 - O motivo da morte retornará 37 (Lança Chamas) para qualquer fonte que utilize fogo (EX: Molotov).
 - O motivo da morte retornará 51 para qualquer fonte que utilize explosões (EX: RPG, granada).
 - Você não precisa verificar se o killerid é valido antes de usa-lo no SendDeathMessage. INVALID_PLAYER_ID é um parâmetro valido nesta função.
-- playerid é o único que pode chamar esta callback.
+- **playerid** é o único que pode chamar esta callback.
 
 :::
 

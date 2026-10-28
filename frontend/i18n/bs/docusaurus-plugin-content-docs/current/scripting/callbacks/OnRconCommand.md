@@ -15,7 +15,7 @@ Ovaj callback je pozvan kada je komanda poslana kroz server konzolu, upravljanje
 
 ## Returns
 
-Vijek je pozvan prvo u filterskriptama tako da će return-ovanje 0 ovdje blokirati gamemode da ga vidi.
+Vijek je pozvan prvo u filterskriptama tako da će return-ovanje **0** ovdje blokirati gamemode da ga vidi.
 
 ## Primjeri
 

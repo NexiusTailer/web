@@ -19,9 +19,9 @@ Callback này được gọi khi một người chơi bị nhận sát thương.
 
 ## Giá trị trả về
 
-1 - Callback sẽ không được gọi trong các filterscripts khác.
+**1** - Callback sẽ không được gọi trong các filterscripts khác.
 
-0 - Cho phép callback này được gọi trong các filterscripts khác.
+**0** - Cho phép callback này được gọi trong các filterscripts khác.
 
 Nó luôn được gọi đầu tiên trong filterscripts nên trả về 1 sẽ chặn các filterscripts khác không thấy được nó.
 
@@ -78,7 +78,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) và [GetPlayerArmour](../functions/GetPlayerArmour) sẽ trả về lượng máu và giáp cũ của người chơi trước khi callback này được gọi.
-- Luôn kiểm tra xem issuerid có hợp lệ trước khi sử dụng nó làm chỉ số mảng.
+- **Luôn** kiểm tra xem issuerid có hợp lệ trước khi sử dụng nó làm chỉ số mảng.
 
 :::
 

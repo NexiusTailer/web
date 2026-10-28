@@ -19,9 +19,9 @@ This callback is called when a player takes damage.
 
 ## Returns
 
-1 - Callback will not be called in other filterscripts.
+**1** - Callback will not be called in other filterscripts.
 
-0 - Allows this callback to be called in other filterscripts.
+**0** - Allows this callback to be called in other filterscripts.
 
 It is always called first in filterscripts so returning 1 there blocks other filterscripts from processing it.
 
@@ -82,7 +82,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) and [GetPlayerArmour](../functions/GetPlayerArmour) will return the old amounts of the player before this callback.
-- Always check if issuerid is valid before using it as an array index.
+- **Always** check if issuerid is valid before using it as an array index.
 
 :::
 
