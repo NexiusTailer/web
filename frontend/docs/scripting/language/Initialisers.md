@@ -446,7 +446,7 @@ print(const string[])
 }
 ```
 
-Now whenever print() is used in a script your function will be called instead of the original and you can do what you like. In this case another message is printed first then the original message.
+Now whenever `print` is used in a script your function will be called instead of the original and you can do what you like. In this case another message is printed first then the original message.
 
 ## `new`
 

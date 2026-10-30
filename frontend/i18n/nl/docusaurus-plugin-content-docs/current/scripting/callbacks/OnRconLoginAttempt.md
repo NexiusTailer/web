@@ -55,7 +55,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-- Deze callback wordt alleen aangeroepen wanneer _/rcon login_ in-game wordt gebruikt.
+- Deze callback wordt alleen aangeroepen wanneer `/rcon login` in-game wordt gebruikt.
 - Deze callback wordt alleen aangeroepen wanneer de speler nog niet is ingelogd. Zodra de speler is ingelogd, wordt [OnRconCommand](OnRconCommand) aangeroepen in plaats daarvan.
 
 :::

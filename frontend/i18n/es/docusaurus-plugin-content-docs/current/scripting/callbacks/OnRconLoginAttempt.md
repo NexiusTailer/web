@@ -45,7 +45,7 @@ public OnRconLoginAttempt(ip[], password[], success)
 
 :::note
 
-- Este callback se llama solo cuando _/rcon login_ se usa adentro del juego.
+- Este callback se llama solo cuando `/rcon login` se usa adentro del juego.
 - Este callback solo se llama cuando el jugador no está logeado aún. Cuando el jugador está logeado (como RCON obviamente), OnRconCommand es llamado en su lugar.
 
 :::

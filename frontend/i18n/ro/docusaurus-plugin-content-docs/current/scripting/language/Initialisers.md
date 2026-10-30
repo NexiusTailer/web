@@ -446,7 +446,7 @@ print(const string[])
 }
 ```
 
-Acum, de fiecare dată când print () este utilizat într-un script, funcția dvs. va fi apelată în locul originalului și puteți face ceea ce doriți. În acest caz este imprimat mai întâi un alt mesaj, apoi mesajul original.
+Acum, de fiecare dată când print este utilizat într-un script, funcția dvs. va fi apelată în locul originalului și puteți face ceea ce doriți. În acest caz este imprimat mai întâi un alt mesaj, apoi mesajul original.
 
 ## `new`
 

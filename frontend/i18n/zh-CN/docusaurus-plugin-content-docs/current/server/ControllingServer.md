@@ -74,7 +74,7 @@ bans.json 是用于存储封禁信息的文件，包括以下内容：
 
 其中 `IP_HERE` 是你想要封禁的 IP 地址。这种方法要比使用 RCON 命令 `banip` 花更长时间, 所以建议使用 RCON `banip`.
 
-##### Ban() 函数
+##### Ban 函数
 
 [Ban](../scripting/functions/Ban) 函数可用于从脚本中封禁玩家。[BanEx](../scripting/functions/BanEx) 函数将添加一个可选的原因，如下所示：
 

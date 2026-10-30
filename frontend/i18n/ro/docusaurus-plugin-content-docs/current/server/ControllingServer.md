@@ -73,7 +73,7 @@ Pentru a adăuga un ban, pur și simplu adăugați un obiect ca acesta în array
 
 Înlocuiți `IP_AICI` cu IP-ul pe care doriți să îl banați.
 
-##### Funcția Ban()
+##### Funcția Ban
 
 Funcția [Ban](../scripting/functions/Ban) poate fi folosită ca să banați un jucător din script. Funcția [BanEx](../scripting/functions/BanEx) este la fel, doar că puteți adăuga și un motiv:
 

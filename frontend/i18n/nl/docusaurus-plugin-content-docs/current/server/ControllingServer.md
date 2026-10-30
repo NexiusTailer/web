@@ -74,7 +74,7 @@ Een ban toevoegen doe je door een object in de JSON-array te plaatsen als:
 
 Op de plek van `IP_HERE` zet je het IP dat je wilt bannen.
 
-##### Ban() function
+##### Ban function
 
 De functie [Ban](../scripting/functions/Ban) kun je vanuit een script gebruiken om een speler te bannen. De functie [BanEx](../scripting/functions/BanEx) voegt optioneel een reden toe, zoals:
 
