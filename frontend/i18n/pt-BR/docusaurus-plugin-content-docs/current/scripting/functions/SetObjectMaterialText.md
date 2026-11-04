@@ -18,7 +18,7 @@ Substitua a textura de um objeto por texto.
 | OBJECT_MATERIAL_SIZE:materialsize | O [tamanho](../resources/materialtextsizes) do material.                      |
 | const fontFace[] | A fonte a ser usada.                                                                 |
 | fontSize | O tamanho do texto (MAX 255).                                                  |
-| bool:bold | Texto em negrito. Defina como true para negrito e false para não.                                  |
+| bool:bold | Texto em negrito. Defina como **true** para negrito e **false** para não.                                  |
 | fontColour | A cor do texto, no formato ARGB.                                           |
 | backgroundColour | A cor de fundo, no formato ARGB.                                            |
 | OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | O [alinhamento](../resources/materialtextalignment) do texto (padrão: esquerda). |
@@ -55,7 +55,7 @@ A [incorporação de cores](../resources/colorslist#color-embedding) pode ser us
 
 :::warning
 
-Você MUST usa o formato de cores ARGB, não RGBA como usado em mensagens de clientes, etc.
+Você MUST usa o formato de cores **ARGB**, não RGBA como usado em mensagens de clientes, etc.
 O texto não é atualizado após 16 chamadas no mesmo objeto.
 
 :::

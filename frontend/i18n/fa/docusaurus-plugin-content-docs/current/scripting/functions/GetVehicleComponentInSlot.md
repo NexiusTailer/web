@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Bug های شناخته شده:
+**Bug های شناخته شده:**
 
 - برای CARMODTYPE_STEREO کار نمی‌کنه.
 - هم front bull bars و هم front bumper کامپوننت‌ها در slot CARMODTYPE_FRONT_BUMPER ذخیره می‌شن. اگه یه وسیله نقلیه هر دوتاشون رو نصب داشته باشه، این تابع فقط اونی رو برمی‌گردونه که آخری نصب شده.

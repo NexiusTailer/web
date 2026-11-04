@@ -18,9 +18,9 @@ Dobij health actora
 
 ## Returns
 
-1 - uspješno
+**1** - uspješno
 
-0 - neuspješno (tj. actor nije kreiran).
+**0** - neuspješno (tj. actor nije kreiran).
 
 NAPOMENA: Health actora je pohranjen u navedenoj varijabli, a ne u returnanoj (povratnoj) vrijednosti.
 

@@ -16,9 +16,9 @@ Uključuje / isključuje da li igrač može kontrolirati svog lika ili ne.
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Navedeni igrač ne postoji.
 
 ## Primjeri
 

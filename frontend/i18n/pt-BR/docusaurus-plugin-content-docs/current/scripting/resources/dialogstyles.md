@@ -33,7 +33,7 @@ Visualização:
 
 - **\t** adiciona um TAB (mais espaço).
 - **\n** cria uma nova linha.
-- Cores embutidas não resetarão após \n ou \t
+- Cores embutidas não resetarão após **\n** ou **\t**
 
 :::
 

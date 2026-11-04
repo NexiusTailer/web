@@ -15,7 +15,7 @@ Kicks a player from the server. They will have to quit the game and re-connect i
 
 ## ส่งคืน
 
-This function always returns 1, even if the function failed to execute (player specified doesn't exist).
+This function always returns **1**, even if the function failed to execute (player specified doesn't exist).
 
 ## บันทึก
 

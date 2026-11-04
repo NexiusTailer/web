@@ -57,7 +57,7 @@ public OnPlayerConnect(playerid)
 
 :::warning
 
-已知缺陷：
+**已知缺陷**：
 
 - 当 X 或 Y 坐标小于-4096.0 或大于 4096.0 时，拾取物将不可见且不会触发 OnPlayerPickUpPlayerPickup 回调
 

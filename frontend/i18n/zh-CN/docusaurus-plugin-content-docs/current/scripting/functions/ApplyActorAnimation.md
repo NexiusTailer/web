@@ -17,11 +17,11 @@ tags: ["演员", "动画"]
 | const animationLibrary[] | 动画资源库名称                                                                                 |
 | const animationName[]    | 动画名称（需在指定资源库中存在）                                                               |
 | float:delta              | 动画播放速度（建议使用 4.1）                                                                   |
-| bool:loop                | 是否循环播放：true 循环播放，false 单次播放                                                    |
-| bool:lockX               | X 轴位置锁定：false 在动画结束后恢复原始 X 坐标（适用于移动类动画），true 保持动画结束时的位置 |
+| bool:loop                | 是否循环播放：**true** 循环播放，**false** 单次播放                                                    |
+| bool:lockX               | X 轴位置锁定：**false** 在动画结束后恢复原始 X 坐标（适用于移动类动画），**true** 保持动画结束时的位置 |
 | bool:lockY               | Y 轴位置锁定（参数设置应与 lockX 保持一致）                                                    |
-| bool:freeze              | 动画结束后冻结演员：true 冻结演员，false 不冻结                                                |
-| time                     | 动画持续时间（毫秒），0 表示无限循环                                                           |
+| bool:freeze              | 动画结束后冻结演员：**true** 冻结演员，**false** 不冻结                                                |
+| time                     | 动画持续时间（毫秒），**0** 表示无限循环                                                       |
 
 ## 返回值
 

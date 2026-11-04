@@ -23,9 +23,9 @@ Možete koristiti ovu funkciju da prikvačite objekat za drugi objekat. Objekti 
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija nije uspjela da se izvrši. Ovo znali da prvi objekat (objectid) ne postoji. Ne postoje interne provjere da se potvrdi da li drugi objekat (attachtoid) postoji.
+**0**: Funkcija nije uspjela da se izvrši. Ovo znali da prvi objekat (objectid) ne postoji. Ne postoje interne provjere da se potvrdi da li drugi objekat (attachtoid) postoji.
 
 ## Primjeri
 

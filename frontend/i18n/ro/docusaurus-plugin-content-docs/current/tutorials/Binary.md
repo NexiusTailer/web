@@ -238,7 +238,7 @@ A fost puțin ușor, să aruncăm o privire mai grea:
 00001000 //8
 ```
 
-Privirea exemplelor ar trebui să vă ofere o idee destul de bună despre ceea ce face acest operator. Compară două seturi de biți împreună, dacă ambele partajează un bit de 1, rezultatul va avea același bit activat. Dacă nu împart deloc biți, atunci rezultatul este 0.
+Privirea exemplelor ar trebui să vă ofere o idee destul de bună despre ceea ce face acest operator. Compară două seturi de biți împreună, dacă **ambele** partajează un bit de 1, rezultatul va avea același bit activat. Dacă nu împart deloc biți, atunci rezultatul este 0.
 
 ### Bitwise OR
 

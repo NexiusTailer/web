@@ -15,13 +15,13 @@ Callback này được gọi khi còi của một xe được bật hoặc tắt
 | --------- | --------------------------------------------- |
 | playerid  | ID của người chơi đã bật/tắt còi (người lái). |
 | vehicleid | ID của xe mà còi đã được bật/tắt.             |
-| newstate  | 0 nếu còi được tắt, 1 nếu còi được bật.       |
+| newstate  | **0** nếu còi được tắt, **1** nếu còi được bật.       |
 
 ## Trả về
 
-1 - Ngăn gamemode nhận callback này.
+**1** - Ngăn gamemode nhận callback này.
 
-0 - Cho biết rằng callback này sẽ được chuyển đến gamemode.
+**0** - Cho biết rằng callback này sẽ được chuyển đến gamemode.
 
 Luôn được gọi đầu tiên trong filterscripts.
 

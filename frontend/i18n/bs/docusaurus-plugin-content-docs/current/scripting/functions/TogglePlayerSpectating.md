@@ -16,9 +16,9 @@ Uključite ili isključite da li je igrač u režimu spectatora/gledatelja. Dok 
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena. Igrač ne postoji.
+**0**: Funkcija neuspješno izvršena. Igrač ne postoji.
 
 ## Primjeri
 

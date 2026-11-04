@@ -19,13 +19,13 @@ Ovaj callback je pozvan kada se uključi/isključi sirena vozila.
 | --------- | ------------------------------------------------------ |
 | playerid  | ID igrača koji je uključio/isključio sirenu (vozač).   |
 | vehicleid | ID vozila u kojem je sirena uključena/isključena.      |
-| newstate  | 0 ako je sirena isključena, 1 ako je sirena uključena. |
+| newstate  | **0** ako je sirena isključena, **1** ako je sirena uključena. |
 
 ## Returns
 
-1 - Spriječiti će da gamemode prima ovaj callback.
+**1** - Spriječiti će da gamemode prima ovaj callback.
 
-0 - Ukazuje da će ovaj callback biti proslijeđen do gamemodea.
+**0** - Ukazuje da će ovaj callback biti proslijeđen do gamemodea.
 
 Uvijek je pozvan prvo u filterskriptama.
 

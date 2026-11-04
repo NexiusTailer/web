@@ -17,16 +17,16 @@ Zamijeni teksturu objekta sa tekstom.
 | materialsize  | [Veličina](../resources/materialtextsizes) materijala.                                   |
 | fontface      | Font za koristiti.                                                                       |
 | fontsize      | Veličina teksta (MAX 255).                                                               |
-| bold          | Bold text. Postavi na 1 za bold (deblji font), 0 za ne.                                  |
+| bold          | Bold text. Postavi na **1** za bold (deblji font), **0** za ne.                                  |
 | fontcolor     | Boja teksta, u ARGB formatu.                                                             |
 | backcolor     | Boja pozadine, u ARGB formatu.                                                           |
 | textalignment | [Poravnanje](../resources/materialtextalignment) teksta (po zadanim postavkama: lijevo). |
 
 ## Returns
 
-1: Funkcija uspješno izvršena.
+**1**: Funkcija uspješno izvršena.
 
-0: Funkcija neuspješno izvršena.
+**0**: Funkcija neuspješno izvršena.
 
 ## Primjeri
 
@@ -51,7 +51,7 @@ Ugradnja boja može se koristiti za više boja u tekstu.
 
 :::warning
 
-MORAŠ koristiti ARGB format boje, ne RGBA kao što se koristi u klijent porukama i sl.
+MORAŠ koristiti **ARGB** format boje, ne RGBA kao što se koristi u klijent porukama i sl.
 
 :::
 

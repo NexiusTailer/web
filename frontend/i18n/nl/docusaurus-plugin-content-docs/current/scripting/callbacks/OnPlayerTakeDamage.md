@@ -19,9 +19,9 @@ Deze callback wordt aangeroepen wanneer een speler schade ontvangt.
 
 ## Returns
 
-1 - Callback wordt niet in andere filterscripts aangeroepen.
+**1** - Callback wordt niet in andere filterscripts aangeroepen.
 
-0 - Staat toe dat deze callback in andere filterscripts wordt aangeroepen.
+**0** - Staat toe dat deze callback in andere filterscripts wordt aangeroepen.
 
 Wordt altijd als eerste aangeroepen in filterscripts; return 1 blokkeert verdere verwerking.
 
@@ -76,7 +76,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) en [GetPlayerArmour](../functions/GetPlayerArmour) geven de oude waarden terug vóór deze callback.
-- Controleer altijd of issuerid geldig is voordat je het als array-index gebruikt.
+- Controleer **altijd** of issuerid geldig is voordat je het als array-index gebruikt.
 
 :::
 

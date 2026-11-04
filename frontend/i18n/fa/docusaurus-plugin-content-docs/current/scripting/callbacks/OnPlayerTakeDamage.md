@@ -19,9 +19,9 @@ tags: ["player"]
 
 ## مقادیر برگشتی
 
-1 - کالبک در filterscript های دیگر فراخوانده نخواهد شد.
+**1** - کالبک در filterscript های دیگر فراخوانده نخواهد شد.
 
-0 - اجازه می‌دهد این کالبک در filterscript های دیگر فراخوانده شود.
+**0** - اجازه می‌دهد این کالبک در filterscript های دیگر فراخوانده شود.
 
 همیشه اول در filterscript ها فراخوانده می‌شود بنابراین برگرداندن 1 در آنجا سایر filterscript ها را از پردازش آن مسدود می‌کند.
 
@@ -78,7 +78,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) و [GetPlayerArmour](../functions/GetPlayerArmour) مقادیر قدیمی بازیکن را قبل از این کالبک برخواهند گرداند.
-- همیشه قبل از استفاده از issuerid به عنوان ایندکس آرایه، بررسی کنید که معتبر است.
+- **همیشه** قبل از استفاده از issuerid به عنوان ایندکس آرایه، بررسی کنید که معتبر است.
 
 :::
 

@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Known Bug(s):
+**Known Bug(s):**
 
 - Doesn't work for CARMODTYPE_STEREO.
 - Both front bull bars and front bumper components are saved in the CARMODTYPE_FRONT_BUMPER slot. If a vehicle has both of them installed, this function will only return the one which was installed last.

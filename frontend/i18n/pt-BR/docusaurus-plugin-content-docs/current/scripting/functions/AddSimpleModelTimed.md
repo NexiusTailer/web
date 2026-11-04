@@ -16,16 +16,16 @@ Adiciona um novo modelo de objeto simples personalizado para download. Os arquiv
 | virtualworld | O ID do mundo virtual ao qual pretende colocar o modelo. Use -1 para todos os mundos.                                                            |
 | baseid       | O ID do modelo do objeto original a ser usado como base (objeto original é usado se o download falhar).                                          |
 | newid        | O ID do modelo do novo objeto. Varia entre -1000 a -30000 (29000 slots) para serem usados posteriormente com CreateObject ou CreatePlayerObject. |
-| dffname      | Nome do arquivo de extensão .dff localizado na pasta do servidor de modelos por padrão (configuração artpath).                                   |
-| txdname      | Nome do arquivo de textura de extensão .txd localizado na pasta do servidor de modelos por padrão (configuração artpath).                        |
+| dffname      | Nome do arquivo de extensão **.dff** localizado na pasta do servidor de modelos por padrão (configuração artpath).                               |
+| txdname      | Nome do arquivo de textura de extensão **.txd** localizado na pasta do servidor de modelos por padrão (configuração artpath).                    |
 | timeon       | O horário do jogo (em horas) em que este objeto irá aparecer.                                                                                    |
 | timeoff      | O horário do jogo (em horas) em que este objecto irá desaparecer.                                                                                |
 
 ## Retorno
 
-1: A função foi executada com sucesso.
+**1**: A função foi executada com sucesso.
 
-0: Falha ao executar a função.
+**0**: Falha ao executar a função.
 
 ## Exemplos
 
@@ -41,7 +41,7 @@ public OnGameModeInit()
 
 :::note
 
-"useartwork" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
+"**useartwork**" deve ser habilitado primeiro nas configurações do servidor para que essa função funcione.
 
 :::
 

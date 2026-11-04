@@ -19,14 +19,14 @@ Adds a new custom character model for download. The model files will be stored i
 | ------- | -------------------------------------------------------------------------------------------------------------- |
 | baseid  | The base skin model ID to use (behavior of the character & original character to use when download is failed). |
 | newid   | The new skin model ID ranged from 20000 to 30000 (10000 slots) to be used later with SetPlayerSkin             |
-| dffname | Name of the .dff model collision file located in models server folder by default (artpath setting).            |
-| txdname | Name of the .txd model texture file located in models server folder by default (artpath setting).              |
+| dffname | Name of the **.dff** model collision file located in models server folder by default (artpath setting).      |
+| txdname | Name of the **.txd** model texture file located in models server folder by default (artpath setting).        |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ตัวอย่าง
 
@@ -43,7 +43,7 @@ public OnGameModeInit()
 
 :::note
 
-useartwork must be enabled first in server settings in order for this to work
+**useartwork** must be enabled first in server settings in order for this to work
 
 :::
 

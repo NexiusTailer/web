@@ -15,7 +15,7 @@ Expulsa um jogador do servidor. Ele terá que sair do jogo e re-conectar caso qu
 
 ## Retorno
 
-Esta função sempre retorna 1, mesmo que a função falhe a ser executada (Jogador específico não existe).
+Esta função sempre retorna **1**, mesmo que a função falhe a ser executada (Jogador específico não existe).
 
 ## Notas
 

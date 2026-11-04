@@ -19,9 +19,9 @@ Bu fonksiyon, oyuncu hasar aldığında çağrılır.
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Fonksiyon, diğer filterscript kodlarında çağrılmaz.
+**1** - Fonksiyon, diğer filterscript kodlarında çağrılmaz.
 
-0 - Bu, fonksiyonun diğer filterscript kodlarında çağrılmasına izin verir.
+**0** - Bu, fonksiyonun diğer filterscript kodlarında çağrılmasına izin verir.
 
 Her zaman Filterscript komutlarında ilk olarak çağrılır, bu nedenle 1 döndürmek diğer Filterscript komutlarının görmesini engeller.
 
@@ -72,7 +72,7 @@ Eğer hasar bir ateş kaynağındansa (molotof, vb.) weaponid 37(flame thrower) 
 
 :::warning
 
-GetPlayerHealth ve GetPlayerArmour, bu fonksiyon çağrılmadan önce oyuncunun eski miktarlarını döndürecektir. Bir dizi dizini kullanmadan önce daima issuerid'in geçerli olup olmadığını kontrol edin.
+GetPlayerHealth ve GetPlayerArmour, bu fonksiyon çağrılmadan önce oyuncunun eski miktarlarını döndürecektir. Bir dizi dizini kullanmadan önce **daima** issuerid'in geçerli olup olmadığını kontrol edin.
 
 :::
 

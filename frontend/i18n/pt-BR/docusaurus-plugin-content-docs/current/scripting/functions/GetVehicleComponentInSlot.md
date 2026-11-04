@@ -49,7 +49,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Erros conhecidos:
+**Erros conhecidos:**
 
 - Não funciona para CARMODTYPE_STEREO.
 - Tanto as barras frontais quanto os componentes do pára-choque dianteiro são salvos no slot CARMODTYPE_FRONT_BUMPER. Se um veículo tiver os dois instalados, esta função retornará apenas aquele que foi instalado por último.

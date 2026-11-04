@@ -17,7 +17,7 @@ Replace the texture of an object with text.
 | OBJECT_MATERIAL_SIZE:materialsize        | The [size](../resources/materialtextsizes) of the material (default: 256x128).   |
 | const fontFace[]                         | The font to use (default: Arial).                                                |
 | fontSize                                 | The size of the text (default: 24) (MAX 255).                                    |
-| bool:bold                                | Bold text. Set to true for bold, false for not (default: true).                  |
+| bool:bold                                | Bold text. Set to **true** for bold, **false** for not (default: **true**).                  |
 | fontColour                               | The color of the text, in ARGB format (default: White).                          |
 | backgroundColour                         | The background color, in ARGB format (default: None (transparent)).              |
 | OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | The [alignment](../resources/materialtextalignment) of the text (default: left). |
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
+You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 Text does not update after 16 calls against the same object.
 
 :::

@@ -24,8 +24,8 @@ Preusmjerite preuzimanje prilagođenog AddCharModel ili AddSimpleModel uređaja 
 
 ## Return Values
 
-- 1: Funkcija uspješno izvršena.
-- 0: Funkcija neuspješno izvršena.
+- **1**: Funkcija uspješno izvršena.
+- **0**: Funkcija neuspješno izvršena.
 
 ## Primjer upotrebe iz dl_redirect filterskripte
 

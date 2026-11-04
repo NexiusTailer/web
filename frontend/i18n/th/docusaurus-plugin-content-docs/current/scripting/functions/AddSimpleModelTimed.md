@@ -20,16 +20,16 @@ Adds a new custom simple object model for download. The model files will be stor
 | virtualworld | The virtual world ID to make the model available at. Use -1 for all worlds.                                                 |
 | baseid       | The base object model ID to use (original object to use when download is failed).                                           |
 | newid        | The new object model ID ranged from -1000 to -30000 (29000 slots) to be used later with CreateObject or CreatePlayerObject. |
-| dffname      | Name of the .dff model collision file located in models server folder by default (artpath setting).                         |
-| txdname      | Name of the .txd model texture file located in models server folder by default (artpath setting).                           |
+| dffname      | Name of the **.dff** model collision file located in models server folder by default (artpath setting).                   |
+| txdname      | Name of the **.txd** model texture file located in models server folder by default (artpath setting).                     |
 | timeon       | The world game time (hour) this object will appear                                                                          |
 | timeoff      | The world game time (hour) this object will disappear                                                                       |
 
 ## ส่งคืน
 
-1: The function executed successfully.
+**1**: The function executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ตัวอย่าง
 
@@ -45,7 +45,7 @@ public OnGameModeInit()
 
 :::note
 
-- useartwork must be enabled first in server settings in order for this to work
+- **useartwork** must be enabled first in server settings in order for this to work
 - When virtualworld is set, the models will be downloaded once the player enters the specific world
 
 :::

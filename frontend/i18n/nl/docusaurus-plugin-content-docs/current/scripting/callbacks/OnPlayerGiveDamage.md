@@ -19,9 +19,9 @@ Deze callback wordt aangeroepen wanneer een speler schade toebrengt aan een ande
 
 ## Returns
 
-1 - Callback wordt niet in andere filterscripts aangeroepen.
+**1** - Callback wordt niet in andere filterscripts aangeroepen.
 
-0 - Staat toe dat deze callback in andere filterscripts wordt aangeroepen.
+**0** - Staat toe dat deze callback in andere filterscripts wordt aangeroepen.
 
 Wordt altijd als eerste aangeroepen in filterscripts; return 1 blokkeert verdere verwerking.
 

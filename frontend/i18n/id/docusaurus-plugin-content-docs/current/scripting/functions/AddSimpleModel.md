@@ -16,14 +16,14 @@ Menambahkan model simpel kustom objek diunggah. Model file bawaanya terletak pad
 | virtualworld | Virtual world ID untuk membuat model tersedia. Gunakan -1 untuk semua world.                                                  |
 | baseid       | Basis object model ID untuk digunakan (object original akan digunakan jika download gagal).                                   |
 | newid        | Object model ID baru berkisar dari -1000 ke -30000 (29000 slots) digunakan nanti dengan CreateObject atau Create PlayerObject |
-| dffname      | Nama dari .dff model file collision berlokasi di models server folder secara bawaan (artpath setting).                        |
-| txdname      | Nama dari .txd model tekstur file berlokasi di models server secara bawaan (artpath setting.                                  |
+| dffname      | Nama dari **.dff** model file collision berlokasi di models server folder secara bawaan (artpath setting).                  |
+| txdname      | Nama dari **.txd** model tekstur file berlokasi di models server secara bawaan (artpath setting.                            |
 
 ## Returns
 
-1: Function berhasil dijalankan.
+**1**: Function berhasil dijalankan.
 
-0: Function gagal dijalankan
+**0**: Function gagal dijalankan
 
 ## Examples
 

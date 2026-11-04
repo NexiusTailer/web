@@ -11,7 +11,7 @@ Creates a file in the "tmp", "temp" or root directory with random name for readi
 
 ## Returns
 
-The temporary file handle. 0 if failed.
+The temporary file handle. **0** if failed.
 
 ## Examples
 

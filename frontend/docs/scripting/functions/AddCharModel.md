@@ -15,8 +15,8 @@ Adds a new custom character model for download. The model files will be stored i
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | baseid                 | The base [skin model ID](../resources/skins) to use (behavior of the character & original character to use when download is failed). |
 | newid                  | The new skin model ID ranged from 20001 to 30000 (10000 slots) to be used later with SetPlayerSkin                                   |
-| const dff[]            | Name of the .dff model collision file located in models server folder by default (artpath setting).                                  |
-| const textureLibrary[] | Name of the .txd model texture file located in models server folder by default (artpath setting).                                    |
+| const dff[]            | Name of the **.dff** model collision file located in models server folder by default (artpath setting).                            |
+| const textureLibrary[] | Name of the **.txd** model texture file located in models server folder by default (artpath setting).                              |
 
 ## Returns
 

@@ -17,7 +17,7 @@ tags: ["object"]
 | OBJECT_MATERIAL_SIZE:materialsize        | [اندازه](../resources/materialtextsizes) متریال.                  |
 | const fontFace[]                         | فونت مورد استفاده.                                                |
 | fontSize                                 | اندازه متن (حداکثر ۲۵۵).                                          |
-| bool:bold                                | متن ضخیم. برای ضخیم true، برای غیرضخیم false تنظیم کنید.          |
+| bool:bold                                | متن ضخیم. برای ضخیم **true**، برای غیرضخیم **false** تنظیم کنید.          |
 | fontColour                               | رنگ متن، در فرمت ARGB.                                            |
 | backgroundColour                         | رنگ پس‌زمینه، در فرمت ARGB.                                       |
 | OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | [تراز](../resources/materialtextalignment) متن (پیش‌فرض: چپ‌چین). |
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-شما باید از فرمت رنگ ARGB استفاده کنید، نه RGBA که در پیام‌های کلاینت و غیره استفاده می‌شود.
+شما باید از فرمت رنگ **ARGB** استفاده کنید، نه RGBA که در پیام‌های کلاینت و غیره استفاده می‌شود.
 متن پس از ۱۶ فراخوانی در مقابل همان آبجکت به‌روزرسانی نمی‌شود.
 
 :::

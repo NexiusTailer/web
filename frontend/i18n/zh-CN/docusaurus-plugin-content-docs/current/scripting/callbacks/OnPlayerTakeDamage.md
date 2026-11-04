@@ -19,9 +19,9 @@ tags: ["玩家"]
 
 ## 返回值
 
-1 - 阻止其他滤镜脚本接收此回调。
+**1** - 阻止其他滤镜脚本接收此回调。
 
-0 - 允许此回调传递给其他滤镜脚本。
+**0** - 允许此回调传递给其他滤镜脚本。
 
 此回调始终在滤镜脚本中优先触发，返回1将阻止其他滤镜脚本处理该事件。
 
@@ -78,7 +78,7 @@ public OnPlayerTakeDamage(playerid, issuerid, Float:amount, WEAPON:weaponid, bod
 :::warning
 
 - [GetPlayerHealth](../functions/GetPlayerHealth) 和 [GetPlayerArmour](../functions/GetPlayerArmour) 将返回玩家受伤前的数值
-- 使用issuerid作为数组索引前请务必验证其有效性
+- 使用issuerid作为数组索引前请**务必**验证其有效性
 
 :::
 

@@ -15,13 +15,13 @@ Bu geri çağırma bir aracın siren durumu değiştiğinde çağrılır.
 | --------- | ------------------------------------------------ |
 | playerid  | Siren durumunu değiştiren oyuncu ID'si (sürücü). |
 | vehicleid | Siren durumu değiştirilen araç ID'si.            |
-| newstate  | 0 ise siren kapalı, 1 ise açık durumda.          |
+| newstate  | **0** ise siren kapalı, **1** ise açık durumda.          |
 
 ## Çalışınca Vereceği Sonuçlar
 
-1 - Oyun modunda bu geri çağırmanın kullanılmasını önler.
+**1** - Oyun modunda bu geri çağırmanın kullanılmasını önler.
 
-0 - Bu geri çağırmanın oyun modunda pas geçileceğini gösterir.
+**0** - Bu geri çağırmanın oyun modunda pas geçileceğini gösterir.
 
 Her zaman ilk filterscriptslerde çağrılır.
 

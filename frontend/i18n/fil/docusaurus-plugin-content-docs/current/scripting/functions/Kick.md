@@ -15,7 +15,7 @@ I-kick ang isang manlalaro mula sa server. Kakailanganin nilang umalis sa laro a
 
 ## Returns
 
-Ang function na ito ay palaging nagbabalik ng 1, kahit na ang function ay nabigong isagawa (ang tinukoy ng player ay hindi umiiral).
+Ang function na ito ay palaging nagbabalik ng **1**, kahit na ang function ay nabigong isagawa (ang tinukoy ng player ay hindi umiiral).
 
 ## Notes
 

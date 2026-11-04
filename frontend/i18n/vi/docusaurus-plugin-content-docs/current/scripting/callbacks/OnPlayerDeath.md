@@ -17,9 +17,9 @@ Callback này được gọi khi một người chơi chết, có thể là tự
 
 ## Trả Về
 
-0 - Sẽ ngăn các filterscripts khác nhận được callback này.
+**0** - Sẽ ngăn các filterscripts khác nhận được callback này.
 
-1 - Chỉ ra rằng callback này sẽ được chuyển đến filterscript tiếp theo.
+**1** - Chỉ ra rằng callback này sẽ được chuyển đến filterscript tiếp theo.
 
 Callback này luôn được gọi đầu tiên trong filterscripts.
 
@@ -52,7 +52,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason)
 - Lý do sẽ trả về 37 (vũ khí phun lửa) từ bất kỳ nguồn lửa nào (ví dụ: molotov, 18).
 - Lý do sẽ trả về 51 từ bất kỳ vũ khí nào tạo ra vụ nổ (ví dụ: RPG, grenade).
 - Bạn không cần kiểm tra xem killerid có hợp lệ không trước khi sử dụng nó trong [SendDeathMessage](../functions/SendDeathMessage). INVALID_PLAYER_ID là một tham số ID hợp lệ trong hàm đó.
-- playerid là người duy nhất có thể gọi callback này (hữu ích cho chống giả chết).
+- **playerid** là người duy nhất có thể gọi callback này (hữu ích cho chống giả chết).
 
 :::
 

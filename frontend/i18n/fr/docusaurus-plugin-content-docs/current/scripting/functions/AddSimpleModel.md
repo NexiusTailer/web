@@ -15,14 +15,14 @@ Ajoute un nouveau modèle d'objet simple personnalisé à télécharger. Les fic
 | virtualworld | L'identifiant du monde virtuel sur lequel rendre le modèle disponible. Utilisez -1 pour tous les mondes.                                               |
 | baseid       | ID de modèle d'objet de base à utiliser (objet d'origine à utiliser lorsque le téléchargement échoue).                                                 |
 | newid        | Le nouvel ID de modèle d'objet allait de -1000 à -30000 (29000 emplacements) pour être utilisé ultérieurement avec CreateObject ou CreatePlayerObject. |
-| dffname      | Nom du fichier de collision de modèles .dff situé dans le dossier du serveur de modèles par défaut (paramètre artpath)                                 |
-| txdname      | Nom du fichier de texture de modèle .txd situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                                   |
+| dffname      | Nom du fichier de collision de modèles **.dff** situé dans le dossier du serveur de modèles par défaut (paramètre artpath)                             |
+| txdname      | Nom du fichier de texture de modèle **.txd** situé dans le dossier du serveur de modèles par défaut (paramètre artpath).                               |
 
 ## Retour
 
-1 : La fonction s'est exécutée avec succès.
+**1** : La fonction s'est exécutée avec succès.
 
-0 : La fonction n'a pas pu s'exécuter.
+**0** : La fonction n'a pas pu s'exécuter.
 
 ## Exemples
 

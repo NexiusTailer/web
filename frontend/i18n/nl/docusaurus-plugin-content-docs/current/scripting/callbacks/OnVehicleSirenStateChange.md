@@ -15,13 +15,13 @@ Deze callback wordt aangeroepen wanneer de sirene van een voertuig wordt omgesch
 | --------- | ---------------------------------------------------------------- |
 | playerid  | Het ID van de speler die de sirene omschakelde (bestuurder).     |
 | vehicleid | Het ID van het voertuig waarvoor de sirene werd omgeschakeld.    |
-| newstate  | 0 als sirene werd uitgeschakeld, 1 als sirene werd ingeschakeld. |
+| newstate  | **0** als sirene werd uitgeschakeld, **1** als sirene werd ingeschakeld. |
 
 ## Returns
 
-1 - Voorkomt dat gamemode deze callback ontvangt.
+**1** - Voorkomt dat gamemode deze callback ontvangt.
 
-0 - Geeft aan dat deze callback wordt doorgegeven aan de gamemode.
+**0** - Geeft aan dat deze callback wordt doorgegeven aan de gamemode.
 
 Wordt altijd als eerste aangeroepen in filterscripts.
 

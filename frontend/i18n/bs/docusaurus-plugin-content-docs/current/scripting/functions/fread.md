@@ -18,7 +18,7 @@ Pročitajte jedan redak iz datoteke.
 
 ## Returns
 
-Dužina niza (pročitani tekst) kao cijeli broj.
+Dužina **niza** (pročitani tekst) kao cijeli broj.
 
 ## Primjeri
 
@@ -82,7 +82,7 @@ else
 
 :::warning
 
-Korištenje nevaljanog upravitelja srušit će vaš server! Nabavite važeći upravitelj pomoću fopen ili ftemp.
+Korištenje **nevaljanog upravitelja** srušit će vaš server! Nabavite **važeći upravitelj** pomoću fopen ili ftemp.
 
 :::
 

@@ -238,7 +238,7 @@ That was a little easy, lets take a look at a harder one:
 00001000 //8
 ```
 
-Looking at the examples should give you a pretty good idea what this operator does. It compares two bit sets together, if both of them share a bit of 1, the result will have the same bit turned on. If they share no bits at all, then the result is 0.
+Looking at the examples should give you a pretty good idea what this operator does. It compares two bit sets together, if **both** of them share a bit of 1, the result will have the same bit turned on. If they share no bits at all, then the result is 0.
 
 ### Bitwise OR
 

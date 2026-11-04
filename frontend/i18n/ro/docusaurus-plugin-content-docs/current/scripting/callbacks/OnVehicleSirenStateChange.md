@@ -15,13 +15,13 @@ Acest callback este apelat atunci când sirena unui vehicul este declansata.
 | --------- | ---------------------------------------------------------- |
 | playerid  | ID-ul jucătorului care a activat sirena (șofer).           |
 | vehicleid | ID-ul vehiculului pentru care a fost activată sirena.      |
-| newstate  | 0 dacă sirena a fost oprită, 1 dacă sirena a fost pornită. |
+| newstate  | **0** dacă sirena a fost oprită, **1** dacă sirena a fost pornită. |
 
 ## Returnări
 
-1 - Va împiedica modul de joc să primească acest apel invers.
+**1** - Va împiedica modul de joc să primească acest apel invers.
 
-0 - Indică faptul că acest apel invers va fi trecut în modul de joc.
+**0** - Indică faptul că acest apel invers va fi trecut în modul de joc.
 
 Este întotdeauna numit primul în filterscript-uri.
 

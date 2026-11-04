@@ -16,9 +16,9 @@ Checks if a player is in a specific vehicle.
 
 ## ส่งคืน
 
-1 - Player IS in the vehicle.
+**1** - Player IS in the vehicle.
 
-0 - Player is NOT in the vehicle.
+**0** - Player is NOT in the vehicle.
 
 ## ตัวอย่าง
 

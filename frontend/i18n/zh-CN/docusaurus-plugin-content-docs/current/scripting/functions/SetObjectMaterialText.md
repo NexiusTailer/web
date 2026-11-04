@@ -17,7 +17,7 @@ tags: ["物体"]
 | OBJECT_MATERIAL_SIZE:materialsize        | 材质[尺寸](../resources/materialtextsizes)                         |
 | const fontFace[]                         | 使用的字体名称                                                     |
 | fontSize                                 | 字体大小（最大 255）                                               |
-| bool:bold                                | 是否加粗（true 为加粗，false 为正常）                              |
+| bool:bold                                | 是否加粗（**true** 为加粗，**false** 为正常）                              |
 | fontColour                               | 文本颜色（ARGB 格式）                                              |
 | backgroundColour                         | 背景颜色（ARGB 格式）                                              |
 | OBJECT_MATERIAL_TEXT_ALIGN:textAlignment | 文本[对齐方式](../resources/materialtextalignment)（默认：左对齐） |
@@ -55,7 +55,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-必须使用 ARGB 颜色格式（不同于客户端消息使用的 RGBA 格式）
+必须使用 **ARGB** 颜色格式（不同于客户端消息使用的 RGBA 格式）
 同一物体最多只能应用 16 次材质文本修改
 
 :::

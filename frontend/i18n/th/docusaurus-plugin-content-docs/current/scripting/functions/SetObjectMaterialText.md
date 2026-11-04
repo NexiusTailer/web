@@ -17,16 +17,16 @@ Replace the texture of an object with text.
 | materialsize  | The [size](../resources/materialtextsizes) of the material.                      |
 | fontface      | The font to use.                                                                 |
 | fontsize      | The size of the text (MAX 255).                                                  |
-| bold          | Bold text. Set to 1 for bold, 0 for not.                                         |
+| bold          | Bold text. Set to **1** for bold, **0** for not.                                         |
 | fontcolor     | The color of the text, in ARGB format.                                           |
 | backcolor     | The background color, in ARGB format.                                            |
 | textalignment | The [alignment](../resources/materialtextalignment) of the text (default: left). |
 
 ## ส่งคืน
 
-1: The function was executed successfully.
+**1**: The function was executed successfully.
 
-0: The function failed to execute.
+**0**: The function failed to execute.
 
 ## ตัวอย่าง
 
@@ -51,7 +51,7 @@ Color embedding can be used for multiple colors in the text.
 
 :::warning
 
-You MUST use ARGB color format, not RGBA like used in client messages etc.
+You MUST use **ARGB** color format, not RGBA like used in client messages etc.
 
 :::
 
