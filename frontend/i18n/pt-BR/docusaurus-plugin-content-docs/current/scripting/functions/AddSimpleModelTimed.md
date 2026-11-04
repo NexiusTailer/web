@@ -9,7 +9,7 @@ Esta função foi adicionada no SA-MP 0.3.DL-R1 e não funcionará em versões a
 
 ## Descrição
 
-Adiciona um novo modelo de objeto simples personalizado para download. Os arquivos do modelo são armazenados em Documentos\GTA San Andreas User Files\SAMP\cache do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato CRC.
+Adiciona um novo modelo de objeto simples personalizado para download. Os arquivos do modelo são armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no formato CRC.
 
 | Nome         | Descrição                                                                                                                                        |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |

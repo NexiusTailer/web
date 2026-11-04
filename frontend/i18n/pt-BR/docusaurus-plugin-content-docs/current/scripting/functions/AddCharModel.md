@@ -13,7 +13,7 @@ Esta função foi adicionada no SA-MP 0.3.DL-R1 e não funcionará em versões a
 
 :::
 
-Adiciona um novo modelo de personagem personalizado para download. Os arquivos do modelo serão armazenados em Documentos\GTA San Andreas User Files\SAMP\cache do jogador sob a pasta IP e Porta do Servidor em um arquivo no [formato CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
+Adiciona um novo modelo de personagem personalizado para download. Os arquivos do modelo serão armazenados em `Documentos\GTA San Andreas User Files\SAMP\cache` do jogador sob a pasta IP e Porta do Servidor em um arquivo no [formato CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check).
 
 | Nome    | Descrição                                                                                                                              |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------- |

@@ -63,7 +63,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 :::warning
 
-Any action taken directly before Ban() (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the ban.
+Any action taken directly before Ban (such as sending a message with SendClientMessage) will not reach the player. A timer must be used to delay the ban.
 
 :::
 

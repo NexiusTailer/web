@@ -73,7 +73,7 @@ Untuk menambah sebuah pelarangan, tambahkan sebuah objek ke array JSON seperti i
 
 Di mana `ALAMAT_IP_DI_SINI`, adalah alamat IP yang ingin Anda larang.
 
-##### Fungsi Ban()
+##### Fungsi Ban
 
 Fungsi [Ban](../scripting/functions/Ban) dapat digunakan untuk melarang pemain dari sisi skrip. Fungsi [BanEx](../scripting/functions/BanEx) akan menambah alasan opsional seperti ini:
 

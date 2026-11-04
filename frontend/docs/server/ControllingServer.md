@@ -74,7 +74,7 @@ To add a ban, simply add an object to the JSON array like so:
 
 Where `IP_HERE` is, is where you put the IP you would like to ban. This method takes longer than the RCON `banip` command, so using `banip` is recommended.
 
-##### Ban() function
+##### Ban function
 
 The [Ban](../scripting/functions/Ban) function can be used to ban a player from a script. The [BanEx](../scripting/functions/BanEx) function will add an optional reason like so:
 

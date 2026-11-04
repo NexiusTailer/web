@@ -9,7 +9,7 @@ tags: []
 
 ## Descriere
 
-Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierele model vor fi stocate în documentele playerului \ GTA San Andreas User Files \ SAMP \ cache sub folderul Server IP și Port într-un nume de fișier CRC.
+Adaugă un nou model de obiect simplu personalizat pentru descărcare. Fișierele model vor fi stocate în `Documents\GTA San Andreas User Files\SAMP\cache` sub folderul Server IP și Port într-un nume de fișier CRC.
 
 | Nume         | Descriere                                                                                                                                            |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |

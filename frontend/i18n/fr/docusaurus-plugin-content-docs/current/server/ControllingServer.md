@@ -61,7 +61,7 @@ Pour ajouter un nouveau joueur à bannir, ajoutez simplement un objet au tableau
 
 `ADRESSE_IP` étant l'adresse IP du joueur à bannir.
 
-##### Fonction Ban()
+##### Fonction Ban
 
 La fonction [Ban](../scripting/functions/Ban) peut être utilisée pour bannir un joueur à partir d'un script. La fonction [BanEx](../scripting/functions/BanEx) ajoutera une raison facultative comme ceci :
 

@@ -74,7 +74,7 @@ Para adicionar um banido, basta colocar um objeto no array JSON como este:
 
 Onde `IP_AQUI` é onde você coloca o IP que gostaria de banir.
 
-##### Função Ban()
+##### Função Ban
 
 A função de [Ban](../scripting/functions/Ban) pode ser usada para banir um jogador de um script. O [BanEx](../scripting/functions/BanEx) irá adicionar uma opção como esta:
 
